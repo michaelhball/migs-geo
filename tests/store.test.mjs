@@ -228,18 +228,36 @@ test("typing accepts case/accents/aliases but does not accept a different place"
     }),
   );
 });
-test("new cards are interleaved with the shuffled due queue", () => {
+test("available new cards come before the shuffled due reviews", () => {
   const { store: s, setTime } = setup();
   s.setSettings({ modes: ["locate"], burySiblings: false });
   for (let i = 0; i < 4; i++) answer(s, 4);
-  for (const c of s.cards().filter((c) => c.reps > 0))
-    s.updateCard(c.id, { due: "2026-11-10T10:00:00" });
+  const studied = s.cards().filter((c) => c.reps > 0);
+  for (const c of studied) s.updateCard(c.id, { due: "2026-11-10T10:00:00" });
+  s.updateCard(studied[1].id, { due: "2026-11-09T10:00:00" });
   setTime("2026-11-11T10:00:00");
-  for (let i = 0; i < 3; i++) {
-    assert.equal(s.queue().next.state, 2);
-    answer(s, 4);
-  }
   assert.equal(s.queue().next.state, 0);
+  answer(s, 4);
+  const nextDue = s.queue().next.id;
+  assert.ok(studied.some((c) => c.id === nextDue));
+  assert.equal(
+    s.queue().next.id,
+    nextDue,
+    "Queue reads preserve the daily shuffled order.",
+  );
+  assert.equal(s.queue().next.state, 2);
+  s.db.close();
+});
+
+test("new cards precede due learning repeats until the daily allowance is used", () => {
+  const { store: s, advance } = setup();
+  const { q } = answer(s, 1);
+  advance(60000);
+  assert.equal(s.queue().counts.learning, 1);
+  assert.equal(s.question().card.state, 0);
+  s.setSettings({ newPerDay: 1 });
+  assert.equal(s.queue().counts.new, 0);
+  assert.equal(s.question().card.id, q.card.id);
   s.db.close();
 });
 

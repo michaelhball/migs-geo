@@ -394,10 +394,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       newCount = s.burySiblings
         ? new Set(fresh.map((c) => c.place_id)).size
         : fresh.length;
-    const next =
-      remaining && nextNew && (!due.length || today.length % 4 === 3)
-        ? nextNew
-        : nextDue;
+    const next = remaining && nextNew ? nextNew : nextDue;
     const waiting = eligible
       .filter((c) => [1, 3].includes(c.state) && c.due > +now)
       .sort((a, b) => a.due - b.due)[0];
