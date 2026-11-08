@@ -11,4 +11,5 @@
 !public/
 !public/**
 !data/
+data/**
 !data/places.json

@@ -1,6 +1,6 @@
 # Migs Geo API
 
-The UI, CLI, and agents use the same API at `http://127.0.0.1:4387/api`. It binds to loopback only; there is no cloud service, Anki dependency, or browser requirement. `GET /api/docs` returns the machine-readable OpenAPI contract. Requests that change data use `Content-Type: application/json`. Errors return a non-2xx status and `{ "error": "…" }`.
+The UI, CLI, and agents use the same API at `http://127.0.0.1:4387/api`. It binds to loopback by default; there is no cloud service, Anki dependency, or browser requirement. `GET /api/docs` returns the machine-readable OpenAPI contract. Requests that change data use `Content-Type: application/json`. Errors return a non-2xx status and `{ "error": "…" }`. Docker and future hosting configuration are described in [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ## CLI
 
@@ -20,7 +20,7 @@ Set `GEO_URL` for another local port. IDs are stable slugs in the bundled collec
 
 | Method | Path | Behavior |
 | --- | --- | --- |
-| GET | `/api/health` | Readiness and app version |
+| GET | `/api/health` | Readiness, app version, SQLite query status, and schema version |
 | GET | `/api/places` | Active places without geometry; `?geometry=true` includes shapes; `?archived=true` also includes archived places |
 | GET | `/api/places/:id` | Complete place, including geometry |
 | POST | `/api/places` | Create a place and both question cards |

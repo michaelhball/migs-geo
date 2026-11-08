@@ -48,10 +48,14 @@ const json = (res, data, status = 200) => {
   res.end(JSON.stringify(data));
 };
 async function body(req) {
+  // Decode through Node's StringDecoder so multibyte names survive chunk edges.
+  req.setEncoding("utf8");
   let raw = "";
+  let bytes = 0;
   for await (const c of req) {
+    bytes += Buffer.byteLength(c);
+    if (bytes > 40 * 1024 * 1024) throw Error("Request exceeds 40 MB.");
     raw += c;
-    if (raw.length > 40 * 1024 * 1024) throw Error("Request exceeds 40 MB.");
   }
   return raw ? JSON.parse(raw) : {};
 }

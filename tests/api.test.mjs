@@ -5,6 +5,7 @@ import { mkdtempSync, rmSync, readdirSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { request as httpRequest } from "node:http";
 
 test(
   "HTTP API supports an agent-driven collection, study, and backup workflow",
@@ -46,6 +47,34 @@ test(
       return { status: response.status, body: await response.json() };
     }
     assert.equal((await call("/health")).body.ok, true);
+    assert.equal((await call("/health")).body.database, "ok");
+    assert.equal((await call("/health")).body.schemaVersion, 1);
+    // Deliberately split the UTF-8 sequence for é across HTTP chunks.
+    const payload = Buffer.from(
+      JSON.stringify({
+        id: "unicode-test",
+        name: "Café 日本",
+        geometry: { type: "Point", coordinates: [1, 2] },
+      }),
+    );
+    const split = payload.indexOf(Buffer.from("é")) + 1;
+    const unicode = await new Promise((resolve, reject) => {
+      const req = httpRequest(
+        base + "/api/places",
+        { method: "POST", headers: { "Content-Type": "application/json" } },
+        (res) => {
+          let result = "";
+          res.setEncoding("utf8");
+          res.on("data", (chunk) => (result += chunk));
+          res.on("end", () => resolve(JSON.parse(result)));
+        },
+      );
+      req.on("error", reject);
+      req.write(payload.subarray(0, split));
+      req.end(payload.subarray(split));
+    });
+    assert.equal(unicode.name, "Café 日本");
+    await call("/places/unicode-test", "DELETE", {});
     const places = (await call("/places")).body;
     assert.equal(places.length, 319);
     assert.equal(places[0].geometry, undefined);

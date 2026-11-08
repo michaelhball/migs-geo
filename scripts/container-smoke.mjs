@@ -8,7 +8,7 @@ const image = process.argv[2] || "migs-geo:ci";
 const name = `migs-geo-test-${process.pid}-${Date.now()}`;
 const volume = `${name}-data`;
 const docker = (args, options = {}) =>
-  execFileSync("docker", args, { encoding: "utf8", ...options }).trim();
+  execFileSync("docker", args, { encoding: "utf8", ...options })?.trim() || "";
 async function healthy() {
   for (let i = 0; i < 60; i++) {
     const state = docker([

@@ -1,6 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { DatabaseSync } from "node:sqlite";
+import { mkdtempSync, readdirSync, rmSync } from "node:fs";
+import path from "node:path";
+import { tmpdir } from "node:os";
 import { createStore } from "../server/store.mjs";
 import { migrate, migrations, schemaVersion } from "../server/migrations.mjs";
 
@@ -59,4 +62,35 @@ test("opening a newer database with an older app fails explicitly", () => {
   db.exec(`PRAGMA user_version = ${schemaVersion + 1}`);
   assert.throws(() => migrate(db), /newer than this app supports/);
   db.close();
+});
+
+test("adopting an existing on-disk database keeps a pre-migration snapshot", () => {
+  const dir = mkdtempSync(path.join(tmpdir(), "migs-geo-migrate-"));
+  try {
+    const file = path.join(dir, "geography.sqlite");
+    let s = createStore(file);
+    s.setSettings({ newPerDay: 31 });
+    s.db.exec("PRAGMA user_version=0");
+    s.db.close();
+    s = createStore(file);
+    assert.equal(s.settings().newPerDay, 31);
+    assert.equal(s.health().schemaVersion, 1);
+    const backup = readdirSync(path.join(dir, "backups")).find((f) =>
+      f.includes("before-schema-v1"),
+    );
+    assert.ok(backup);
+    s.db.close();
+    const snapshot = new DatabaseSync(path.join(dir, "backups", backup), {
+      readOnly: true,
+    });
+    assert.equal(snapshot.prepare("PRAGMA user_version").get().user_version, 0);
+    assert.equal(
+      JSON.parse(snapshot.prepare("SELECT data FROM settings").get().data)
+        .newPerDay,
+      31,
+    );
+    snapshot.close();
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
 });
