@@ -1,5 +1,7 @@
 # Migs Geo
 
+[![Checks](https://github.com/michaelhball/migs-geo/actions/workflows/ci.yml/badge.svg)](https://github.com/michaelhball/migs-geo/actions/workflows/ci.yml)
+
 A local geography study app with an interactive, offline world map and spaced repetition. Pan, zoom, and click to answer. No account, cloud service, or Anki installation is needed.
 
 ## Run
@@ -15,6 +17,8 @@ npm start
 Open **http://127.0.0.1:4387**. For development, use `npm run dev`. All map assets and dependencies are local after installation. There are no remote map tiles, fonts, tracking scripts, or runtime API calls to external services.
 
 On macOS, double-click **Start Migs Geo.command** after installing dependencies. Keep that terminal window open while studying. `Ctrl+C` stops the server. `PORT` changes the local port; `GEO_DATA_DIR` changes the database location.
+
+Docker is also supported: `docker compose up --build -d --wait`. See [DEPLOYMENT.md](DEPLOYMENT.md) for persistent SQLite storage, schema migrations, backups, and the tested hosting setup.
 
 ## Features
 
@@ -72,7 +76,7 @@ npx tsc --noEmit
 npm run build
 ```
 
-Tests cover scheduling, daily limits, practice isolation, stale/duplicate submissions, undo, import rollback, persistence, map matching, and collection editing. Tests use temporary databases, never personal study data.
+Tests cover scheduling, daily limits, practice isolation, stale/duplicate submissions, undo, import rollback, persistence, map matching, collection editing, and SQLite migrations. Tests use temporary databases, never personal study data. GitHub Actions also builds and starts the production Docker image and verifies database persistence across a restart. See [deployment checks](DEPLOYMENT.md#continuous-integration).
 
 ## Sources and licenses
 

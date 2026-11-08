@@ -4,6 +4,7 @@ import path from "node:path";
 import { randomUUID } from "node:crypto";
 import { createEmptyCard, fsrs } from "ts-fsrs";
 import { booleanPointInPolygon } from "@turf/boolean-point-in-polygon";
+import { migrate, schemaVersion } from "./migrations.mjs";
 
 export const defaults = {
   newPerDay: 15,
@@ -155,14 +156,30 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
   if (filename !== ":memory:")
     mkdirSync(path.dirname(filename), { recursive: true });
   const db = new DatabaseSync(filename);
-  db.exec(`PRAGMA journal_mode=WAL; PRAGMA foreign_keys=ON; PRAGMA busy_timeout=5000;
- CREATE TABLE IF NOT EXISTS settings(id INTEGER PRIMARY KEY CHECK(id=1),data TEXT NOT NULL);
- CREATE TABLE IF NOT EXISTS meta(key TEXT PRIMARY KEY,value TEXT NOT NULL);
- CREATE TABLE IF NOT EXISTS places(id TEXT PRIMARY KEY,data TEXT NOT NULL,archived INTEGER NOT NULL DEFAULT 0);
- CREATE TABLE IF NOT EXISTS cards(id TEXT PRIMARY KEY,place_id TEXT NOT NULL REFERENCES places(id),mode TEXT NOT NULL,memory TEXT NOT NULL,due INTEGER NOT NULL,state INTEGER NOT NULL,reps INTEGER NOT NULL DEFAULT 0,suspended INTEGER NOT NULL DEFAULT 0,version INTEGER NOT NULL DEFAULT 0);
- CREATE INDEX IF NOT EXISTS cards_due ON cards(state,due);
- CREATE TABLE IF NOT EXISTS reviews(id TEXT PRIMARY KEY,card_id TEXT NOT NULL,place_id TEXT NOT NULL,at TEXT NOT NULL,day TEXT NOT NULL,grade INTEGER NOT NULL,correct INTEGER,is_new INTEGER NOT NULL,before_card TEXT NOT NULL,after_card TEXT NOT NULL,duration_ms INTEGER NOT NULL DEFAULT 0,undone INTEGER NOT NULL DEFAULT 0);
- CREATE INDEX IF NOT EXISTS reviews_day ON reviews(day,undone);`);
+  db.exec(
+    "PRAGMA journal_mode=WAL; PRAGMA foreign_keys=ON; PRAGMA busy_timeout=5000;",
+  );
+  const oldVersion = db.prepare("PRAGMA user_version").get().user_version;
+  if (
+    filename !== ":memory:" &&
+    oldVersion < schemaVersion &&
+    db.prepare("SELECT 1 FROM sqlite_master WHERE name='places'").get()
+  ) {
+    const backups = path.join(path.dirname(filename), "backups");
+    mkdirSync(backups, { recursive: true });
+    db.prepare("VACUUM INTO ?").run(
+      path.join(
+        backups,
+        `${Date.now()}-before-schema-v${schemaVersion}.sqlite`,
+      ),
+    );
+  }
+  try {
+    migrate(db);
+  } catch (error) {
+    db.close();
+    throw error;
+  }
   db.prepare("INSERT OR IGNORE INTO settings VALUES(1,?)").run(
     encode(defaults),
   );
@@ -656,6 +673,13 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     return { restored: true, places: ids.size, cards: cids.size };
   }
   return {
+    health: () => {
+      db.prepare("SELECT data FROM settings WHERE id=1").get();
+      return {
+        database: "ok",
+        schemaVersion: db.prepare("PRAGMA user_version").get().user_version,
+      };
+    },
     db,
     place,
     places,

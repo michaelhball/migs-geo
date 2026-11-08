@@ -1,0 +1,14 @@
+services:
+  geo:
+    build: .
+    ports:
+      - "127.0.0.1:4387:4387"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - geography:/data
+    restart: unless-stopped
+    stop_grace_period: 15s
+
+volumes:
+  geography:

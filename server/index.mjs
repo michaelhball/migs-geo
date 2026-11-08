@@ -10,8 +10,24 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createStore, localDay } from "./store.mjs";
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url))),
-  host = "127.0.0.1";
+  host = process.env.GEO_HOST || "127.0.0.1";
 let port = Number(process.env.PORT || 4387);
+const configuredOrigin = process.env.GEO_ORIGIN
+  ? new URL(process.env.GEO_ORIGIN)
+  : null;
+if (
+  configuredOrigin &&
+  (!["http:", "https:"].includes(configuredOrigin.protocol) ||
+    configuredOrigin.username ||
+    configuredOrigin.password ||
+    configuredOrigin.pathname !== "/" ||
+    configuredOrigin.search ||
+    configuredOrigin.hash)
+) {
+  throw Error(
+    "GEO_ORIGIN must be an exact HTTP(S) origin, for example https://geo.example.com.",
+  );
+}
 const runtime = process.env.GEO_DATA_DIR || path.join(root, "data/local");
 mkdirSync(path.join(runtime, "backups"), { recursive: true });
 const store = createStore(
@@ -49,7 +65,12 @@ async function api(req, res, url) {
     return json(res, { error: "Use Content-Type: application/json." }, 415);
   const input = ["POST", "PATCH", "PUT"].includes(m) ? await body(req) : {};
   if (p === "/api/health" && m === "GET")
-    return json(res, { ok: true, app: "migs-geo", version: 1, local: true });
+    return json(res, {
+      ok: true,
+      app: "migs-geo",
+      version: 1,
+      ...store.health(),
+    });
   if (p === "/api/stats" && m === "GET") return json(res, store.stats());
   if (p === "/api/settings")
     return json(
@@ -150,14 +171,15 @@ const mime = {
 };
 const server = http.createServer(async (req, res) => {
   try {
-    if (![`127.0.0.1:${port}`, `localhost:${port}`].includes(req.headers.host))
-      return json(res, { error: "Local requests only." }, 403);
-    if (
-      req.headers.origin &&
-      !["http://127.0.0.1:" + port, "http://localhost:" + port].includes(
-        req.headers.origin,
-      )
-    )
+    const origins = [
+      `http://127.0.0.1:${port}`,
+      `http://localhost:${port}`,
+      ...(configuredOrigin ? [configuredOrigin.origin] : []),
+    ];
+    const hosts = origins.map((origin) => new URL(origin).host);
+    if (!hosts.includes(req.headers.host))
+      return json(res, { error: "Unrecognized host. Check GEO_ORIGIN." }, 403);
+    if (req.headers.origin && !origins.includes(req.headers.origin))
       return json(
         res,
         { error: "Cross-origin requests are not allowed." },
