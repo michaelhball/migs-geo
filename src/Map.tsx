@@ -73,6 +73,9 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
       ],
       maxBoundsViscosity: 0.85,
       scrollWheelZoom: true,
+      // Trackpads need less movement than Leaflet's default 60 px per level.
+      wheelPxPerZoomLevel: 20,
+      wheelDebounceTime: 20,
       doubleClickZoom: false,
     });
     map.current = m;
