@@ -378,6 +378,7 @@ function App() {
                   }
                   onSelect={setPoint}
                   name={result?.place.name}
+                  revealed={!!result}
                   resetKey={question?.token || "home"}
                 />
                 <aside className="study-panel">

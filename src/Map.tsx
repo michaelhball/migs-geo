@@ -18,6 +18,7 @@ type Props = {
   explore?: boolean;
   name?: string;
   resetKey?: string;
+  revealed?: boolean;
 };
 export type MapHandle = { home: () => void; focus: () => void };
 let worldPromise: Promise<any> | undefined;
@@ -178,28 +179,36 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     if (!group) return;
     group.clearLayers();
     if (props.geometry) {
+      const color = props.revealed ? "#bc4141" : "#307058";
+      const fillColor = props.revealed ? "#df7771" : "#76a489";
       L.geoJSON(props.geometry, {
         pane: "answers",
         interactive: false,
         style: {
-          color: "#307058",
+          color,
           weight: 2,
-          fillColor: "#76a489",
+          fillColor,
           fillOpacity: 0.72,
         },
         pointToLayer: (_f, latlng) =>
           L.circleMarker(latlng, {
             pane: "answers",
             radius: 12,
-            color: "#307058",
+            color,
             weight: 2,
-            fillColor: "#76a489",
+            fillColor,
             fillOpacity: 0.7,
           }),
       }).addTo(group);
-      focus();
-    } else home();
-  }, [props.geometry, props.resetKey, ready]);
+    }
+  }, [props.geometry, props.revealed]);
+  useEffect(() => {
+    // Reveal only adds the answer overlay. Preserve the user's exact viewport
+    // and selection; the focus control remains available for deliberate zooming.
+    if (props.revealed) return;
+    if (props.geometry) focus();
+    else home();
+  }, [props.geometry, props.resetKey, props.revealed, ready]);
   useEffect(() => {
     pin.current?.clearLayers();
     if (props.point && pin.current) {
@@ -277,7 +286,15 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
         </div>
       )}
       <div className="map-legend">
-        <span className={props.geometry ? "legend-answer" : "legend-land"} />
+        <span
+          className={
+            props.geometry
+              ? props.revealed
+                ? "legend-revealed"
+                : "legend-answer"
+              : "legend-land"
+          }
+        />
         {props.geometry ? props.name || "Highlighted place" : "Unlabeled map"}
         {props.point && (
           <>

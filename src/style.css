@@ -308,6 +308,10 @@ main {
   background: #76a489;
   border: 1px solid #307058;
 }
+.legend-revealed {
+  background: #df7771;
+  border: 1px solid #bc4141;
+}
 .map-legend .legend-pin {
   border-radius: 50%;
   background: #bd673f;

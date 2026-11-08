@@ -25,6 +25,7 @@ Docker is also supported: `docker compose up --build -d --wait`. See [DEPLOYMENT
 - 319 places from Ultimate Geography, with 638 independent cards: place → map and map → place.
 - Countries, territories/islands, and bodies of water enabled by default. Broader regions can be enabled in Settings. No flags or capitals.
 - FSRS-6 scheduling: due reviews mixed with up to 15 new cards a day, learning steps, recall ratings, separate reverse-card scheduling, and undo.
+- Revealing an answer highlights it in red without moving the map or your selection. Zoom to the answer when you want using the map controls.
 - Practice without changing your review schedule.
 - Search, edit, add, pause, and resume places. Exact polygon editing is available through the API; the UI can add self-graded point locations.
 - SQLite persistence, automatic daily startup snapshots, JSON export, and atomic restore.
