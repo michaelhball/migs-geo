@@ -116,10 +116,12 @@ test("concurrent questions cannot overwrite newer card state", () => {
 });
 test("undo restores memory and daily allowance and preserves an audit record", () => {
   const { store: s } = setup();
-  const before = s.getCard("alpha:locate");
-  answer(s, 3);
+  const q = s.question();
+  const before = s.getCard(q.card.id);
+  s.check(q.token, { reveal: true });
+  s.review(q.token, 3);
   s.undo();
-  const restored = s.getCard("alpha:locate");
+  const restored = s.getCard(q.card.id);
   assert.deepEqual(restored.memory, before.memory);
   assert.equal(s.stats().today, 0);
   assert.equal(s.history()[0].undone, 1);
@@ -128,10 +130,10 @@ test("undo restores memory and daily allowance and preserves an audit record", (
 });
 test("place edits preserve scheduling, archive is reversible, and pause excludes scheduled study", () => {
   const { store: s } = setup(1);
-  answer(s, 4);
-  const memory = s.getCard("alpha:locate").memory;
+  const { q } = answer(s, 4);
+  const memory = s.getCard(q.card.id).memory;
   s.updatePlace("alpha", { name: "Renamed", aliases: ["Other name"] });
-  assert.deepEqual(s.getCard("alpha:locate").memory, memory);
+  assert.deepEqual(s.getCard(q.card.id).memory, memory);
   s.updatePlace("alpha", { archived: true });
   assert.equal(s.question().card, null);
   s.updatePlace("alpha", { archived: false });
@@ -142,15 +144,15 @@ test("place edits preserve scheduling, archive is reversible, and pause excludes
 });
 test("export/restore roundtrips progress and fails atomically for invalid geometry", () => {
   const { store: s } = setup();
-  answer(s, 3);
+  const { q } = answer(s, 3);
   const data = s.exportData();
   const restored = createStore(":memory:");
   restored.restore(data);
   assert.equal(restored.stats().reviews, 1);
   assert.equal(restored.places().length, 5);
   assert.deepEqual(
-    restored.getCard("alpha:locate").memory,
-    s.getCard("alpha:locate").memory,
+    restored.getCard(q.card.id).memory,
+    s.getCard(q.card.id).memory,
   );
   const bad = structuredClone(data);
   bad.places[0].geometry.coordinates[0][0] = [999, 0];
@@ -166,10 +168,16 @@ test("SQLite survives restart, and a restore is not overwritten by seed data", (
     let s = createStore(file, seed);
     answer(s, 3);
     s.setSettings({ newPerDay: 8 });
+    const nextId = s.question().card.id;
     s.db.close();
     s = createStore(file, seed);
     assert.equal(s.stats().reviews, 1);
     assert.equal(s.settings().newPerDay, 8);
+    assert.equal(
+      s.question().card.id,
+      nextId,
+      "Refreshing/restarting preserves the next shuffled new card.",
+    );
     const data = s.exportData();
     data.places = [];
     data.cards = [];
@@ -220,18 +228,99 @@ test("typing accepts case/accents/aliases but does not accept a different place"
     }),
   );
 });
-test("new cards are interleaved with due reviews and overdue reviews sort first", () => {
+test("new cards are interleaved with the shuffled due queue", () => {
   const { store: s, setTime } = setup();
   s.setSettings({ modes: ["locate"], burySiblings: false });
   for (let i = 0; i < 4; i++) answer(s, 4);
   for (const c of s.cards().filter((c) => c.reps > 0))
     s.updateCard(c.id, { due: "2026-11-10T10:00:00" });
   setTime("2026-11-11T10:00:00");
-  assert.equal(s.queue().next.state, 2);
-  answer(s, 3);
-  answer(s, 3);
-  answer(s, 3);
+  for (let i = 0; i < 3; i++) {
+    assert.equal(s.queue().next.state, 2);
+    answer(s, 4);
+  }
   assert.equal(s.queue().next.state, 0);
+  s.db.close();
+});
+
+test("new cards mix directions independently of names, without long one-way runs", () => {
+  const sameInitial = Array.from({ length: 30 }, (_, i) => ({
+    ...seed[0],
+    id: `alpha-${i}`,
+    name: `alpha-${i}`,
+  }));
+  const s = createStore(
+    ":memory:",
+    sameInitial,
+    () => new Date("2026-11-09T10:00:00"),
+  );
+  const directions = [],
+    seen = new Set();
+  for (let i = 0; i < 15; i++) {
+    const q = s.question();
+    assert.equal(
+      q.card.id,
+      s.question().card.id,
+      "Queue reads must not reshuffle the current card.",
+    );
+    assert.equal(q.card.state, 0);
+    const place = q.card.id.split(":")[0];
+    assert.ok(!seen.has(place));
+    seen.add(place);
+    directions.push(q.card.mode);
+    if (i >= 2)
+      assert.ok(
+        !(
+          directions[i] === directions[i - 1] &&
+          directions[i] === directions[i - 2]
+        ),
+        "Mix directions when both are available.",
+      );
+    s.check(q.token, { reveal: true });
+    s.review(q.token, 4);
+  }
+  assert.equal(new Set(directions).size, 2);
+  assert.equal(s.queue().counts.new, 0);
+  assert.equal(s.question().card, null);
+  s.db.close();
+});
+
+test("direction mixing respects a single enabled mode", () => {
+  const { store: s } = setup();
+  s.setSettings({ modes: ["identify"] });
+  for (let i = 0; i < 5; i++)
+    assert.equal(answer(s, 4).q.card.mode, "identify");
+  assert.equal(s.question().card, null);
+  s.db.close();
+});
+
+test("due reviews also mix directions, while respecting which cards are due", () => {
+  const { store: s, setTime } = setup();
+  s.setSettings({ newPerDay: 20, burySiblings: false });
+  for (let i = 0; i < 10; i++) answer(s, 4);
+  const dueCards = s.cards();
+  for (const c of dueCards) s.updateCard(c.id, { due: "2026-11-10T10:00:00" });
+  setTime("2026-11-11T10:00:00");
+  const remaining = new Map(dueCards.map((c) => [c.id, c.mode])),
+    modes = [];
+  for (let i = 0; i < 10; i++) {
+    const q = s.question();
+    assert.equal(q.card.state, 2);
+    assert.ok(remaining.has(q.card.id));
+    const last = modes.slice(-2);
+    if (
+      last.length === 2 &&
+      last[0] === last[1] &&
+      [...remaining.values()].some((mode) => mode !== last[0])
+    )
+      assert.notEqual(q.card.mode, last[0]);
+    remaining.delete(q.card.id);
+    modes.push(q.card.mode);
+    s.check(q.token, { reveal: true });
+    s.review(q.token, 4);
+  }
+  assert.equal(s.question().card, null);
+  assert.equal(new Set(modes).size, 2);
   s.db.close();
 });
 

@@ -77,7 +77,9 @@ For a naming question, use `"answer":{"text":"France"}`. To reveal, use `"answer
 
 ## Scheduling
 
-FSRS-6, through the pinned `ts-fsrs` dependency. Default target retention: 90%; learning: 1 minute / 10 minutes; relearning: 10 minutes. New limit: 15 cards per local calendar day. Review cards due at any time today are eligible; learning cards become eligible at their exact due time. Overdue reviews are ordered oldest first. Due learning takes priority, and one new card is mixed in after every three reviews when both are available. No daily review cap. By default, the reverse of a place studied today waits until tomorrow. Both directions keep separate scheduling state. The daily counter uses the server computer's local timezone and resets at midnight.
+FSRS-6, through the pinned `ts-fsrs` dependency. Default target retention: 90%; learning: 1 minute / 10 minutes; relearning: 10 minutes. New limit: 15 cards per local calendar day. Both new and due cards are shuffled independently of place names; the daily order is stable across queue reads and restarts. When both directions are available in the current group, the next card switches direction after two consecutive reviews in the same direction. This respects the enabled modes and sibling separation.
+
+Due learning and review cards are mixed in a shuffled queue, with a new card after every three reviews when both groups have cards. Review cards due at any time today are eligible; learning cards become eligible at their exact due time. No daily review cap. By default, the reverse of a place studied today waits until tomorrow. Both directions keep separate scheduling state. The daily counter uses the server computer's local timezone and resets at midnight.
 
 Practice, browsing, checks, and answer reveals do not change the schedule. Only a rating on a scheduled question does. Review dates and memory states persist across restarts. Suspended cards and archived places are excluded from scheduled study. Practice can intentionally include paused cards.
 

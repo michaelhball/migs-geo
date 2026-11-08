@@ -1,7 +1,7 @@
 import { DatabaseSync } from "node:sqlite";
 import { mkdirSync, existsSync } from "node:fs";
 import path from "node:path";
-import { randomUUID } from "node:crypto";
+import { createHash, randomUUID } from "node:crypto";
 import { createEmptyCard, fsrs } from "ts-fsrs";
 import { booleanPointInPolygon } from "@turf/boolean-point-in-polygon";
 import { migrate, schemaVersion } from "./migrations.mjs";
@@ -183,6 +183,28 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
   db.prepare("INSERT OR IGNORE INTO settings VALUES(1,?)").run(
     encode(defaults),
   );
+  db.prepare("INSERT OR IGNORE INTO meta VALUES('study_shuffle_seed',?)").run(
+    randomUUID(),
+  );
+  const shuffleSeed = db
+    .prepare("SELECT value FROM meta WHERE key='study_shuffle_seed'")
+    .get().value;
+  let shuffleDay,
+    shuffleRanks = new Map();
+  function shuffleRank(id, day) {
+    if (shuffleDay !== day) {
+      shuffleDay = day;
+      shuffleRanks.clear();
+    }
+    if (!shuffleRanks.has(id))
+      shuffleRanks.set(
+        id,
+        createHash("sha256")
+          .update(`${shuffleSeed}\0${day}\0${id}`)
+          .digest("hex"),
+      );
+    return shuffleRanks.get(id);
+  }
   const tx = (fn) => {
     db.exec("BEGIN IMMEDIATE");
     try {
@@ -319,12 +341,15 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       end = new Date(now);
     end.setHours(23, 59, 59, 999);
     const today = db
-        .prepare("SELECT * FROM reviews WHERE day=? AND undone=0")
+        .prepare(
+          "SELECT * FROM reviews WHERE day=? AND undone=0 ORDER BY rowid",
+        )
         .all(day),
       seenPlaces = new Set(today.map((r) => r.place_id)),
       seenCards = new Set(today.map((r) => r.card_id));
     const ps = new Map(places().map((p) => [p.id, p]));
-    const eligible = cards().filter((c) => {
+    const allCards = cards();
+    const eligible = allCards.filter((c) => {
       const p = ps.get(c.place_id);
       return (
         !c.suspended &&
@@ -341,15 +366,27 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     const review = eligible
       .filter((c) => c.state === 2 && c.due <= +end && !seenCards.has(c.id))
       .sort((a, b) => a.due - b.due);
+    const due = [...learning, ...review].sort((a, b) =>
+      shuffleRank(a.id, day).localeCompare(shuffleRank(b.id, day)),
+    );
     const fresh = eligible
       .filter((c) => c.state === 0)
-      .sort(
-        (a, b) =>
-          a.place_id.localeCompare(b.place_id) ||
-          (a.place_id.charCodeAt(0) % 2
-            ? b.mode.localeCompare(a.mode)
-            : a.mode.localeCompare(b.mode)),
+      .sort((a, b) =>
+        shuffleRank(a.id, day).localeCompare(shuffleRank(b.id, day)),
       );
+    // Keep the daily shuffle stable across queue reads and restarts, but avoid
+    // long runs of one direction whenever the other direction is available.
+    const cardModes = new Map(allCards.map((c) => [c.id, c.mode]));
+    const recentModes = today.slice(-2).map((r) => cardModes.get(r.card_id));
+    function mixedDirection(pool) {
+      const other =
+        recentModes.length === 2 && recentModes[0] === recentModes[1]
+          ? pool.find((c) => c.mode !== recentModes[0])
+          : undefined;
+      return other || pool[0];
+    }
+    const nextNew = mixedDirection(fresh),
+      nextDue = mixedDirection(due);
     const remaining = Math.max(
         0,
         s.newPerDay - today.filter((r) => r.is_new).length,
@@ -358,10 +395,9 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         ? new Set(fresh.map((c) => c.place_id)).size
         : fresh.length;
     const next =
-      learning[0] ||
-      (remaining && fresh.length && (!review.length || today.length % 4 === 3)
-        ? fresh[0]
-        : review[0]);
+      remaining && nextNew && (!due.length || today.length % 4 === 3)
+        ? nextNew
+        : nextDue;
     const waiting = eligible
       .filter((c) => [1, 3].includes(c.state) && c.due > +now)
       .sort((a, b) => a.due - b.due)[0];
