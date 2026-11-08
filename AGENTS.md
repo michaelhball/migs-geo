@@ -8,4 +8,4 @@ Keep personal progress and backups out of Git. `data/local/` is private runtime 
 
 Node.js 24+, React, Vite, Leaflet canvas rendering, SQLite, and FSRS-6. `npm test`, `npx tsc --noEmit`, and `npm run build` are the checks. Integration tests start an isolated loopback server and may require sandbox network approval. `npm start` serves the production build at `127.0.0.1:4387`; `npm run dev` enables development mode.
 
-The user has requested direct commits and pushes to `main`. Use that workflow unless a later task asks for a branch or PR. Commit only code and public reference data. Keep API documentation and tests current when changing behavior.
+The user explicitly wants lots of small, focused commits directly on `main` as changes are made. Commit each completed, validated behavior or fix separately, then push to `origin/main`; do not collect unrelated changes into one large commit or leave completed work uncommitted. Use a branch or PR only if a later task requests one. Commit only code and public reference data. Keep API documentation and tests current when changing behavior.
