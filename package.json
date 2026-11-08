@@ -1,0 +1,32 @@
+{
+  "name": "migs-geo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "node server/index.mjs --dev",
+    "build": "vite build",
+    "start": "node server/index.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "leaflet": "1.9.4",
+    "lucide-react": "^1.31.0",
+    "ts-fsrs": "^5.2.3",
+    "@turf/boolean-point-in-polygon": "^7.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.0.2",
+    "vite": "8.0.13",
+    "typescript": "5.9.3",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@types/leaflet": "^1.9.21",
+    "@types/node": "22.19.19"
+  }
+}

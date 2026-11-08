@@ -1,0 +1,2904 @@
+[
+  {
+    "id": "england",
+    "name": "England",
+    "info": "Constituent country of the United Kingdom.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "scotland",
+    "name": "Scotland",
+    "info": "Constituent country of the United Kingdom.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "united-kingdom",
+    "name": "United Kingdom",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "northern-ireland",
+    "name": "Northern Ireland",
+    "info": "Constituent country of the United Kingdom.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "france",
+    "name": "France",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "wales",
+    "name": "Wales",
+    "info": "Constituent country of the United Kingdom.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "georgia",
+    "name": "Georgia",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "germany",
+    "name": "Germany",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "greece",
+    "name": "Greece",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "greenland",
+    "name": "Greenland",
+    "info": "Constituent country in the Kingdom of Denmark.",
+    "tags": [
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "hungary",
+    "name": "Hungary",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "albania",
+    "name": "Albania",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "andorra",
+    "name": "Andorra",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "austria",
+    "name": "Austria",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "azerbaijan",
+    "name": "Azerbaijan",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "belarus",
+    "name": "Belarus",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "belgium",
+    "name": "Belgium",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "bosnia-and-herzegovina",
+    "name": "Bosnia and Herzegovina",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "bulgaria",
+    "name": "Bulgaria",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "croatia",
+    "name": "Croatia",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "czech-republic",
+    "name": "Czech Republic",
+    "info": "Also known as Czechia.",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "denmark",
+    "name": "Denmark",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "estonia",
+    "name": "Estonia",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "faroe-islands",
+    "name": "Faroe Islands",
+    "info": "Constituent country in the Kingdom of Denmark.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "finland",
+    "name": "Finland",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "iceland",
+    "name": "Iceland",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "ireland",
+    "name": "Ireland",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "italy",
+    "name": "Italy",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "latvia",
+    "name": "Latvia",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "liechtenstein",
+    "name": "Liechtenstein",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "lithuania",
+    "name": "Lithuania",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "luxembourg",
+    "name": "Luxembourg",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "north-macedonia",
+    "name": "North Macedonia",
+    "info": "Formerly known as Macedonia.",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "malta",
+    "name": "Malta",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "moldova",
+    "name": "Moldova",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "monaco",
+    "name": "Monaco",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "montenegro",
+    "name": "Montenegro",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "netherlands",
+    "name": "Netherlands",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "norway",
+    "name": "Norway",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "poland",
+    "name": "Poland",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "portugal",
+    "name": "Portugal",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "romania",
+    "name": "Romania",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "russia",
+    "name": "Russia",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "san-marino",
+    "name": "San Marino",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "serbia",
+    "name": "Serbia",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "slovakia",
+    "name": "Slovakia",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "slovenia",
+    "name": "Slovenia",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "spain",
+    "name": "Spain",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "sweden",
+    "name": "Sweden",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::European_Union",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "switzerland",
+    "name": "Switzerland",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "turkey",
+    "name": "Turkey",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Mediterranean",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "ukraine",
+    "name": "Ukraine",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "vatican-city",
+    "name": "Vatican City",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "armenia",
+    "name": "Armenia",
+    "info": "",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "cyprus",
+    "name": "Cyprus",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::European_Union",
+      "UG::Mediterranean",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "kazakhstan",
+    "name": "Kazakhstan",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "egypt",
+    "name": "Egypt",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Mediterranean",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "algeria",
+    "name": "Algeria",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "angola",
+    "name": "Angola",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "benin",
+    "name": "Benin",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "botswana",
+    "name": "Botswana",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "burkina-faso",
+    "name": "Burkina Faso",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "cameroon",
+    "name": "Cameroon",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "burundi",
+    "name": "Burundi",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "cape-verde",
+    "name": "Cape Verde",
+    "info": "Also known as Cabo Verde.",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "sao-tome-and-principe",
+    "name": "São Tomé and Príncipe",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "central-african-republic",
+    "name": "Central African Republic",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "chad",
+    "name": "Chad",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "equatorial-guinea",
+    "name": "Equatorial Guinea",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "kenya",
+    "name": "Kenya",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "comoros",
+    "name": "Comoros",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "ivory-coast",
+    "name": "Ivory Coast",
+    "info": "Officially Côte d'Ivoire.",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "democratic-republic-of-the-congo",
+    "name": "Democratic Republic of the Congo",
+    "info": "Formerly Zaire.",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "djibouti",
+    "name": "Djibouti",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "guinea-bissau",
+    "name": "Guinea-Bissau",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "eritrea",
+    "name": "Eritrea",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "ethiopia",
+    "name": "Ethiopia",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "gabon",
+    "name": "Gabon",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "the-gambia",
+    "name": "The Gambia",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "lesotho",
+    "name": "Lesotho",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "liberia",
+    "name": "Liberia",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "madagascar",
+    "name": "Madagascar",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "malawi",
+    "name": "Malawi",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "mali",
+    "name": "Mali",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "mauritania",
+    "name": "Mauritania",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "mauritius",
+    "name": "Mauritius",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "morocco",
+    "name": "Morocco",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "mozambique",
+    "name": "Mozambique",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "namibia",
+    "name": "Namibia",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "niger",
+    "name": "Niger",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "nigeria",
+    "name": "Nigeria",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "republic-of-the-congo",
+    "name": "Republic of the Congo",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "rwanda",
+    "name": "Rwanda",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "senegal",
+    "name": "Senegal",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "seychelles",
+    "name": "Seychelles",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "sierra-leone",
+    "name": "Sierra Leone",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "south-africa",
+    "name": "South Africa",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "sudan",
+    "name": "Sudan",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "eswatini",
+    "name": "Eswatini",
+    "info": "Known as Swaziland until 2018.",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "tanzania",
+    "name": "Tanzania",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "togo",
+    "name": "Togo",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "tunisia",
+    "name": "Tunisia",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "uganda",
+    "name": "Uganda",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "sahrawi-arab-democratic-republic",
+    "name": "Sahrawi Arab Democratic Republic",
+    "info": "Partially recognised state claimed by Morocco. Also known as Western Sahara.",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "zambia",
+    "name": "Zambia",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "zimbabwe",
+    "name": "Zimbabwe",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "canary-islands",
+    "name": "Canary Islands",
+    "info": "Autonomous community of Spain.",
+    "tags": [
+      "UG::Africa"
+    ]
+  },
+  {
+    "id": "afghanistan",
+    "name": "Afghanistan",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "bahrain",
+    "name": "Bahrain",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "bangladesh",
+    "name": "Bangladesh",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "bhutan",
+    "name": "Bhutan",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "brunei",
+    "name": "Brunei",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Southeast_Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "china",
+    "name": "China",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "cambodia",
+    "name": "Cambodia",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Southeast_Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "indonesia",
+    "name": "Indonesia",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Southeast_Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "india",
+    "name": "India",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "hong-kong",
+    "name": "Hong Kong",
+    "info": "Special Administrative Region of China.",
+    "tags": [
+      "UG::Asia"
+    ]
+  },
+  {
+    "id": "iran",
+    "name": "Iran",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "israel",
+    "name": "Israel",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Mediterranean",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "iraq",
+    "name": "Iraq",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "south-korea",
+    "name": "South Korea",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "north-korea",
+    "name": "North Korea",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "jordan",
+    "name": "Jordan",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "japan",
+    "name": "Japan",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "lebanon",
+    "name": "Lebanon",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Mediterranean",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "laos",
+    "name": "Laos",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Southeast_Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "kyrgyzstan",
+    "name": "Kyrgyzstan",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "kuwait",
+    "name": "Kuwait",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "myanmar",
+    "name": "Myanmar",
+    "info": "Also known as Burma.",
+    "tags": [
+      "UG::Asia",
+      "UG::Southeast_Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "mongolia",
+    "name": "Mongolia",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "maldives",
+    "name": "Maldives",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "malaysia",
+    "name": "Malaysia",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Southeast_Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "oman",
+    "name": "Oman",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "nepal",
+    "name": "Nepal",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "palestine",
+    "name": "Palestine",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Mediterranean",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "pakistan",
+    "name": "Pakistan",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "qatar",
+    "name": "Qatar",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "saudi-arabia",
+    "name": "Saudi Arabia",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "singapore",
+    "name": "Singapore",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Southeast_Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "syria",
+    "name": "Syria",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Mediterranean",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "taiwan",
+    "name": "Taiwan",
+    "info": "Partially recognised state claimed by China.",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "sri-lanka",
+    "name": "Sri Lanka",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "tajikistan",
+    "name": "Tajikistan",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "thailand",
+    "name": "Thailand",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Southeast_Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "east-timor",
+    "name": "East Timor",
+    "info": "Also known as Timor-Leste.",
+    "tags": [
+      "UG::Asia",
+      "UG::Southeast_Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "united-arab-emirates",
+    "name": "United Arab Emirates",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "turkmenistan",
+    "name": "Turkmenistan",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "yemen",
+    "name": "Yemen",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "vietnam",
+    "name": "Vietnam",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Southeast_Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "uzbekistan",
+    "name": "Uzbekistan",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "fiji",
+    "name": "Fiji",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "papua-new-guinea",
+    "name": "Papua New Guinea",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "australia",
+    "name": "Australia",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "solomon-islands",
+    "name": "Solomon Islands",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "argentina",
+    "name": "Argentina",
+    "info": "",
+    "tags": [
+      "UG::South_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "bolivia",
+    "name": "Bolivia",
+    "info": "",
+    "tags": [
+      "UG::South_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "brazil",
+    "name": "Brazil",
+    "info": "",
+    "tags": [
+      "UG::South_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "chile",
+    "name": "Chile",
+    "info": "",
+    "tags": [
+      "UG::South_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "colombia",
+    "name": "Colombia",
+    "info": "",
+    "tags": [
+      "UG::South_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "ecuador",
+    "name": "Ecuador",
+    "info": "",
+    "tags": [
+      "UG::South_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "guyana",
+    "name": "Guyana",
+    "info": "",
+    "tags": [
+      "UG::South_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "paraguay",
+    "name": "Paraguay",
+    "info": "",
+    "tags": [
+      "UG::South_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "peru",
+    "name": "Peru",
+    "info": "",
+    "tags": [
+      "UG::South_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "suriname",
+    "name": "Suriname",
+    "info": "",
+    "tags": [
+      "UG::South_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "uruguay",
+    "name": "Uruguay",
+    "info": "",
+    "tags": [
+      "UG::South_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "venezuela",
+    "name": "Venezuela",
+    "info": "",
+    "tags": [
+      "UG::South_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "cook-islands",
+    "name": "Cook Islands",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "federated-states-of-micronesia",
+    "name": "Federated States of Micronesia",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "guam",
+    "name": "Guam",
+    "info": "Unincorporated territory of the United States.",
+    "tags": [
+      "UG::Oceania"
+    ]
+  },
+  {
+    "id": "vanuatu",
+    "name": "Vanuatu",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "canada",
+    "name": "Canada",
+    "info": "",
+    "tags": [
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "united-states-of-america",
+    "name": "United States of America",
+    "info": "",
+    "tags": [
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "mexico",
+    "name": "Mexico",
+    "info": "",
+    "tags": [
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "puerto-rico",
+    "name": "Puerto Rico",
+    "info": "Unincorporated territory of the United States.",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "cuba",
+    "name": "Cuba",
+    "info": "",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "dominican-republic",
+    "name": "Dominican Republic",
+    "info": "",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "haiti",
+    "name": "Haiti",
+    "info": "",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "jamaica",
+    "name": "Jamaica",
+    "info": "",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "trinidad-and-tobago",
+    "name": "Trinidad and Tobago",
+    "info": "",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "bermuda",
+    "name": "Bermuda",
+    "info": "Overseas territory of the United Kingdom.",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "guadeloupe",
+    "name": "Guadeloupe",
+    "info": "Overseas department of France.",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "the-bahamas",
+    "name": "The Bahamas",
+    "info": "",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "barbados",
+    "name": "Barbados",
+    "info": "",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "belize",
+    "name": "Belize",
+    "info": "",
+    "tags": [
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "costa-rica",
+    "name": "Costa Rica",
+    "info": "",
+    "tags": [
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "el-salvador",
+    "name": "El Salvador",
+    "info": "",
+    "tags": [
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "guatemala",
+    "name": "Guatemala",
+    "info": "",
+    "tags": [
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "honduras",
+    "name": "Honduras",
+    "info": "",
+    "tags": [
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "nicaragua",
+    "name": "Nicaragua",
+    "info": "",
+    "tags": [
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "panama",
+    "name": "Panama",
+    "info": "",
+    "tags": [
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "antigua-and-barbuda",
+    "name": "Antigua and Barbuda",
+    "info": "",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "dominica",
+    "name": "Dominica",
+    "info": "",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "saint-vincent-and-the-grenadines",
+    "name": "Saint Vincent and the Grenadines",
+    "info": "",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "somalia",
+    "name": "Somalia",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "zanzibar",
+    "name": "Zanzibar",
+    "info": "Semi-autonomous region of Tanzania.",
+    "tags": [
+      "UG::Africa"
+    ]
+  },
+  {
+    "id": "ghana",
+    "name": "Ghana",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "guinea",
+    "name": "Guinea",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Sovereign_State",
+      "UG::West_Africa"
+    ]
+  },
+  {
+    "id": "new-zealand",
+    "name": "New Zealand",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "french-polynesia",
+    "name": "French Polynesia",
+    "info": "Overseas territory of France.",
+    "tags": [
+      "UG::Oceania"
+    ]
+  },
+  {
+    "id": "philippines",
+    "name": "Philippines",
+    "info": "",
+    "tags": [
+      "UG::Asia",
+      "UG::Southeast_Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "kosovo",
+    "name": "Kosovo",
+    "info": "Partially recognised state claimed by Serbia.",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "libya",
+    "name": "Libya",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::Mediterranean",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "palau",
+    "name": "Palau",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "saint-lucia",
+    "name": "Saint Lucia",
+    "info": "",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "bali",
+    "name": "Bali",
+    "info": "Island of Indonesia.",
+    "tags": [
+      "UG::Asia"
+    ]
+  },
+  {
+    "id": "grenada",
+    "name": "Grenada",
+    "info": "",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "british-virgin-islands",
+    "name": "British Virgin Islands",
+    "info": "Overseas territory of the United Kingdom.",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "turks-and-caicos-islands",
+    "name": "Turks and Caicos Islands",
+    "info": "Overseas territory of the United Kingdom.",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "cayman-islands",
+    "name": "Cayman Islands",
+    "info": "Overseas territory of the United Kingdom.",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "anguilla",
+    "name": "Anguilla",
+    "info": "Overseas territory of the United Kingdom.",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "azores",
+    "name": "Azores",
+    "info": "Autonomous region of Portugal.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "curacao",
+    "name": "Curaçao",
+    "info": "Constituent country of the Kingdom of the Netherlands.",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "french-guiana",
+    "name": "French Guiana",
+    "info": "Overseas department of France.",
+    "tags": [
+      "UG::South_America"
+    ]
+  },
+  {
+    "id": "gibraltar",
+    "name": "Gibraltar",
+    "info": "Overseas territory of the United Kingdom.",
+    "tags": [
+      "UG::Europe",
+      "UG::Mediterranean"
+    ]
+  },
+  {
+    "id": "guernsey",
+    "name": "Guernsey",
+    "info": "Crown dependency of the United Kingdom.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "isle-of-man",
+    "name": "Isle of Man",
+    "info": "Crown dependency of the United Kingdom.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "jersey",
+    "name": "Jersey",
+    "info": "Crown dependency of the United Kingdom.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "kiribati",
+    "name": "Kiribati",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "macau",
+    "name": "Macau",
+    "info": "Special Administrative Region of China.",
+    "tags": [
+      "UG::Asia"
+    ]
+  },
+  {
+    "id": "madeira",
+    "name": "Madeira",
+    "info": "Autonomous region of Portugal.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "marshall-islands",
+    "name": "Marshall Islands",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "nauru",
+    "name": "Nauru",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "new-caledonia",
+    "name": "New Caledonia",
+    "info": "Overseas territory of France.",
+    "tags": [
+      "UG::Oceania"
+    ]
+  },
+  {
+    "id": "niue",
+    "name": "Niue",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "northern-cyprus",
+    "name": "Northern Cyprus",
+    "info": "State recognised only by Turkey and claimed by Cyprus.",
+    "tags": [
+      "UG::Asia",
+      "UG::Mediterranean",
+      "UG::Middle_East",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "saint-kitts-and-nevis",
+    "name": "Saint Kitts and Nevis",
+    "info": "",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "samoa",
+    "name": "Samoa",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "somaliland",
+    "name": "Somaliland",
+    "info": "Independent state claimed by Somalia.",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "south-sudan",
+    "name": "South Sudan",
+    "info": "",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "tuvalu",
+    "name": "Tuvalu",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "united-states-virgin-islands",
+    "name": "United States Virgin Islands",
+    "info": "Unincorporated territory of the United States.",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "aland-islands",
+    "name": "Åland Islands",
+    "info": "Autonomous region of Finland.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "south-ossetia",
+    "name": "South Ossetia",
+    "info": "Independent state claimed by Georgia.",
+    "tags": [
+      "UG::Asia",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "american-samoa",
+    "name": "American Samoa",
+    "info": "Unincorporated territory of the United States.",
+    "tags": [
+      "UG::Oceania"
+    ]
+  },
+  {
+    "id": "northern-mariana-islands",
+    "name": "Northern Mariana Islands",
+    "info": "Unincorporated territory of the United States.",
+    "tags": [
+      "UG::Oceania"
+    ]
+  },
+  {
+    "id": "aruba",
+    "name": "Aruba",
+    "info": "Constituent country of the Kingdom of the Netherlands.",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "abkhazia",
+    "name": "Abkhazia",
+    "info": "Independent state claimed by Georgia.",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "sint-maarten",
+    "name": "Sint Maarten",
+    "info": "Constituent country of the Kingdom of the Netherlands.",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "tonga",
+    "name": "Tonga",
+    "info": "",
+    "tags": [
+      "UG::Oceania",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "transnistria",
+    "name": "Transnistria",
+    "info": "Independent state claimed by Moldova.",
+    "tags": [
+      "UG::Europe",
+      "UG::Sovereign_State"
+    ]
+  },
+  {
+    "id": "sardinia",
+    "name": "Sardinia",
+    "info": "Autonomous region of Italy.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "kaliningrad-oblast",
+    "name": "Kaliningrad Oblast",
+    "info": "Oblast (administrative region) of the Russian Federation.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "martinique",
+    "name": "Martinique",
+    "info": "Overseas department of France.",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "info": "Island of Indonesia.",
+    "tags": [
+      "UG::Asia"
+    ]
+  },
+  {
+    "id": "corsica",
+    "name": "Corsica",
+    "info": "Region of France.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "european-union",
+    "name": "European Union",
+    "info": "",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "gulf-of-mexico",
+    "name": "Gulf of Mexico",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "philippine-sea",
+    "name": "Philippine Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "southern-ocean",
+    "name": "Southern Ocean",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "gulf-of-thailand",
+    "name": "Gulf of Thailand",
+    "info": "Also known as the Gulf of Siam.",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "micronesia",
+    "name": "Micronesia",
+    "info": "Subregion of Oceania comprising thousands of small islands in the western Pacific Ocean.",
+    "tags": [
+      "UG::Oceania"
+    ]
+  },
+  {
+    "id": "pacific-ocean",
+    "name": "Pacific Ocean",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "atlantic-ocean",
+    "name": "Atlantic Ocean",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "indian-ocean",
+    "name": "Indian Ocean",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "arctic-ocean",
+    "name": "Arctic Ocean",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "hudson-bay",
+    "name": "Hudson Bay",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "labrador-sea",
+    "name": "Labrador Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "white-sea",
+    "name": "White Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "denmark-strait",
+    "name": "Denmark Strait",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "norwegian-sea",
+    "name": "Norwegian Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "baltic-sea",
+    "name": "Baltic Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "celtic-sea",
+    "name": "Celtic Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "english-channel",
+    "name": "English Channel",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "adriatic-sea",
+    "name": "Adriatic Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "bay-of-biscay",
+    "name": "Bay of Biscay",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "black-sea",
+    "name": "Black Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "aegean-sea",
+    "name": "Aegean Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "balkan-peninsula",
+    "name": "Balkan Peninsula",
+    "info": "",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "caspian-sea",
+    "name": "Caspian Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "mediterranean-sea",
+    "name": "Mediterranean Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "east-siberian-sea",
+    "name": "East Siberian Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "bering-strait",
+    "name": "Bering Strait",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "arabian-sea",
+    "name": "Arabian Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "red-sea",
+    "name": "Red Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "dead-sea",
+    "name": "Dead Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "bay-of-bengal",
+    "name": "Bay of Bengal",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "sea-of-japan",
+    "name": "Sea of Japan",
+    "info": "A naming dispute exists between the sea's bordering countries, with South Korea notably supporting the name East Sea.",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "yellow-sea",
+    "name": "Yellow Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "coral-sea",
+    "name": "Coral Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "south-china-sea",
+    "name": "South China Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "tasman-sea",
+    "name": "Tasman Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "gulf-of-carpentaria",
+    "name": "Gulf of Carpentaria",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "aral-sea",
+    "name": "Aral Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "persian-gulf",
+    "name": "Persian Gulf",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "caribbean-sea",
+    "name": "Caribbean Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "gulf-of-california",
+    "name": "Gulf of California",
+    "info": "Also known as the Sea of Cortez.",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "polynesia",
+    "name": "Polynesia",
+    "info": "Subregion of Oceania comprising thousands of small islands in the central and southern Pacific Ocean.",
+    "tags": [
+      "UG::Oceania"
+    ]
+  },
+  {
+    "id": "melanesia",
+    "name": "Melanesia",
+    "info": "Subregion of Oceania, which includes the four countries of Vanuatu, the Solomon Islands, Fiji, and Papua New Guinea.",
+    "tags": [
+      "UG::Oceania"
+    ]
+  },
+  {
+    "id": "scandinavia",
+    "name": "Scandinavia",
+    "info": "Historical and cultural region in Northern Europe, which includes the countries of Denmark, Norway and Sweden, and sometimes Finland and Iceland.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "sea-of-galilee",
+    "name": "Sea of Galilee",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "sumatra",
+    "name": "Sumatra",
+    "info": "Island of Indonesia.",
+    "tags": [
+      "UG::Asia"
+    ]
+  },
+  {
+    "id": "sicily",
+    "name": "Sicily",
+    "info": "Autonomous region of Italy.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "mayotte",
+    "name": "Mayotte",
+    "info": "Overseas department of France.",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa"
+    ]
+  },
+  {
+    "id": "reunion",
+    "name": "Réunion",
+    "info": "Overseas department of France.",
+    "tags": [
+      "UG::Africa",
+      "UG::East_Africa"
+    ]
+  },
+  {
+    "id": "falkland-islands",
+    "name": "Falkland Islands",
+    "info": "Overseas territory of the United Kingdom.",
+    "tags": [
+      "UG::South_America"
+    ]
+  },
+  {
+    "id": "europe",
+    "name": "Europe",
+    "info": "",
+    "tags": [
+      "UG::Continents"
+    ]
+  },
+  {
+    "id": "north-america",
+    "name": "North America",
+    "info": "",
+    "tags": [
+      "UG::Continents"
+    ]
+  },
+  {
+    "id": "south-america",
+    "name": "South America",
+    "info": "",
+    "tags": [
+      "UG::Continents"
+    ]
+  },
+  {
+    "id": "asia",
+    "name": "Asia",
+    "info": "",
+    "tags": [
+      "UG::Continents"
+    ]
+  },
+  {
+    "id": "africa",
+    "name": "Africa",
+    "info": "",
+    "tags": [
+      "UG::Continents"
+    ]
+  },
+  {
+    "id": "oceania",
+    "name": "Oceania",
+    "info": "World region covering the Australian continent and most of the islands in the Pacific Ocean.",
+    "tags": [
+      "UG::Continents"
+    ]
+  },
+  {
+    "id": "antarctica",
+    "name": "Antarctica",
+    "info": "",
+    "tags": [
+      "UG::Continents"
+    ]
+  },
+  {
+    "id": "saint-martin",
+    "name": "Saint Martin",
+    "info": "Overseas territory of France.",
+    "tags": [
+      "UG::Caribbean",
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "wallis-and-futuna",
+    "name": "Wallis and Futuna",
+    "info": "Overseas territory of France.",
+    "tags": [
+      "UG::Oceania"
+    ]
+  },
+  {
+    "id": "akrotiri-and-dhekelia",
+    "name": "Akrotiri and Dhekelia",
+    "info": "Overseas territory of the United Kingdom.",
+    "tags": [
+      "UG::Asia",
+      "UG::Mediterranean",
+      "UG::Middle_East"
+    ]
+  },
+  {
+    "id": "svalbard",
+    "name": "Svalbard",
+    "info": "Unincorporated internal area of Norway.",
+    "tags": [
+      "UG::Europe"
+    ]
+  },
+  {
+    "id": "hawaii",
+    "name": "Hawaii",
+    "info": "State of the United States.",
+    "tags": [
+      "UG::Oceania"
+    ]
+  },
+  {
+    "id": "alaska",
+    "name": "Alaska",
+    "info": "State of the United States.",
+    "tags": [
+      "UG::North_America"
+    ]
+  },
+  {
+    "id": "bougainville",
+    "name": "Bougainville",
+    "info": "Autonomous region of Papua New Guinea.",
+    "tags": [
+      "UG::Oceania"
+    ]
+  },
+  {
+    "id": "jeju",
+    "name": "Jeju",
+    "info": "Autonomous province of South Korea.",
+    "tags": [
+      "UG::Asia"
+    ]
+  },
+  {
+    "id": "banda-sea",
+    "name": "Banda Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "barents-sea",
+    "name": "Barents Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "celebes-sea",
+    "name": "Celebes Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "east-china-sea",
+    "name": "East China Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "gulf-of-alaska",
+    "name": "Gulf of Alaska",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "gulf-of-guinea",
+    "name": "Gulf of Guinea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "north-sea",
+    "name": "North Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "sea-of-okhotsk",
+    "name": "Sea of Okhotsk",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  },
+  {
+    "id": "timor-sea",
+    "name": "Timor Sea",
+    "info": "",
+    "tags": [
+      "UG::Oceans+Seas"
+    ]
+  }
+]
