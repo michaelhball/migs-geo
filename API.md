@@ -72,7 +72,8 @@ For a naming question, use `"answer":{"text":"France"}`. To reveal, use `"answer
 | GET | `/api/stats` | Counts, daily review history, recall ratings |
 | GET | `/api/reviews` | Review history, including undone records |
 | POST | `/api/reviews/undo` | Undo the last active review; preserve an audit record |
-| GET | `/api/backup` | Full versioned JSON export, including places, cards, settings, and review history |
+| GET | `/api/study/log` | Persistent attempts and ordered answer checks; `cardId`, `limit` (1–500), `offset`, and `includePractice=true` filters |
+| GET | `/api/backup` | Full versioned JSON export, including places, cards, settings, review history, and the study log |
 | POST | `/api/restore` | Restore that export atomically; server first saves a SQLite snapshot of existing data |
 
 ## Scheduling
@@ -85,6 +86,8 @@ Browsing, checks, and answer reveals do not change the schedule. Only a rating o
 
 ## Direct data access
 
-Runtime data: `data/local/geography.sqlite` (override with `GEO_DATA_DIR`). Tables: `places`, `cards`, `reviews`, `settings`, and `meta`. Foreign keys, WAL, and transactions protect saves. Scheduling memory is versioned JSON inside SQLite. The public `data/places.json` is an initial seed, loaded once, not the live database. Exported backups use `format:"migs-geo", version:1`.
+Each question and valid answer check is logged even if it is never rated. The log preserves raw typed answers or map coordinates, reveals, correctness, time since the question was shown (including pauses), the original place classification, card memory, and study settings. The first check remains identifiable after subsequent checks. Ratings link atomically to reviews; undo retains the log with `undone:true`. Re-rating the same token is idempotent, and checks after rating are rejected. Explicit API practice is logged separately and excluded by default. Older reviews have no invented first-answer records.
+
+Runtime data: `data/local/geography.sqlite` (override with `GEO_DATA_DIR`). Tables: `places`, `cards`, `reviews`, `study_attempts`, `study_checks`, `settings`, and `meta`. Foreign keys, WAL, and transactions protect saves. Scheduling memory is versioned JSON inside SQLite. The public `data/places.json` is an initial seed, loaded once, not the live database. Exported backups use `format:"migs-geo", version:2` and include a `studyLog` object with raw `attempts` and `checks` rows. Restoring v1 backups remains supported; their first-answer history is unknown.
 
 Prefer the API while the server is running. For direct SQLite edits, stop the server first, keep a backup, preserve `memory`, `due`, `state`, `reps`, and `version` consistency, then restart. Place data is cached in memory for fast reads. Never commit `data/local`, user exports, or review history. The server is intended for a trusted local machine, not exposure to a LAN or the public internet.

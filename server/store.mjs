@@ -5,6 +5,7 @@ import { createHash, randomUUID } from "node:crypto";
 import { createEmptyCard, fsrs } from "ts-fsrs";
 import { booleanPointInPolygon } from "@turf/boolean-point-in-polygon";
 import { migrate, schemaVersion } from "./migrations.mjs";
+import { createStudyLog, validateStudyLog } from "./study-log.mjs";
 
 export const defaults = {
   newPerDay: 15,
@@ -428,6 +429,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     };
   }
   const attempts = new Map();
+  const studyLog = createStudyLog(db, clock);
   function question({ practice = false, placeId, mode } = {}) {
     let card;
     if (practice) {
@@ -446,6 +448,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     }
     const p = place(card.place_id),
       token = randomUUID();
+    studyLog.start(token, card, p, settings(), practice);
     attempts.set(token, { card, practice, started: +clock(), checked: false });
     if (attempts.size > 1000) attempts.delete(attempts.keys().next().value);
     return {
@@ -469,10 +472,12 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
   function check(token, answer) {
     const a = attempts.get(token);
     if (!a) throw Error("Question expired. Load a new card.");
+    if (a.saved) throw Error("This question has already been rated.");
     const p = place(a.card.place_id);
     a.result = checkAnswer(p, a.card.mode, answer);
-    a.checked = true;
     const next = scheduler().repeat(hydrate(a.card.memory), clock());
+    studyLog.check(token, answer, a.result);
+    a.checked = true;
     return {
       ...a.result,
       place: p,
@@ -491,6 +496,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     if (![1, 2, 3, 4].includes(grade))
       throw Error("Rating must be 1 (Again), 2 (Hard), 3 (Good), or 4 (Easy).");
     if (a.practice) {
+      studyLog.rate(token, grade);
       a.saved = { practice: true };
       return a.saved;
     }
@@ -501,13 +507,21 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       throw Error("This card is paused or archived.");
     const now = clock(),
       r = scheduler().next(hydrate(current.memory), now, grade),
-      after = { ...current, memory: r.card, version: current.version + 1 };
+      after = {
+        ...current,
+        memory: r.card,
+        due: +r.card.due,
+        state: r.card.state,
+        reps: r.card.reps,
+        version: current.version + 1,
+      };
+    const reviewId = randomUUID();
     tx(() => {
       saveCard(after);
       db.prepare(
         "INSERT INTO reviews(id,card_id,place_id,at,day,grade,correct,is_new,before_card,after_card,duration_ms) VALUES(?,?,?,?,?,?,?,?,?,?,?)",
       ).run(
-        randomUUID(),
+        reviewId,
         current.id,
         current.place_id,
         now.toISOString(),
@@ -519,6 +533,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         encode(after),
         Math.min(3600000, +now - a.started),
       );
+      studyLog.rate(token, grade, reviewId);
     });
     a.saved = { card: getCard(current.id), counts: queue().counts };
     return a.saved;
@@ -571,22 +586,23 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
   }
   const exportData = () => ({
     format: "migs-geo",
-    version: 1,
+    version: 2,
     exportedAt: clock().toISOString(),
     settings: settings(),
     places: places(),
     cards: cards(),
     reviews: db.prepare("SELECT * FROM reviews ORDER BY rowid").all(),
+    studyLog: studyLog.exportData(),
   });
   function restore(data) {
     if (
       data?.format !== "migs-geo" ||
-      data.version !== 1 ||
+      ![1, 2].includes(data.version) ||
       !Array.isArray(data.cards) ||
       !Array.isArray(data.places) ||
       !Array.isArray(data.reviews)
     )
-      throw Error("This is not a Migs Geo v1 backup.");
+      throw Error("This is not a supported Migs Geo backup.");
     validateSettings(data.settings);
     const ids = new Set(data.places.map((p) => p.id));
     if (ids.size !== data.places.length) throw Error("Duplicate place IDs.");
@@ -680,7 +696,16 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         throw Error("Review belongs to another card.");
       rids.add(r.id);
     }
+    const logData =
+      data.version === 2 ? data.studyLog : { attempts: [], checks: [] };
+    validateStudyLog(
+      logData,
+      cids,
+      ids,
+      new Map(data.reviews.map((r) => [r.id, r])),
+    );
     tx(() => {
+      studyLog.clear();
       db.exec("DELETE FROM reviews;DELETE FROM cards;DELETE FROM places;");
       for (const p of data.places)
         db.prepare("INSERT INTO places VALUES(?,?,?)").run(
@@ -718,6 +743,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       db.prepare("UPDATE settings SET data=? WHERE id=1").run(
         encode(data.settings),
       );
+      studyLog.restore(logData);
     });
     placeCache = undefined;
     attempts.clear();
@@ -742,6 +768,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     review,
     undo,
     stats,
+    studyLog: studyLog.list,
     exportData,
     restore,
     settings,

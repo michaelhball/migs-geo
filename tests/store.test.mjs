@@ -172,7 +172,10 @@ test("practice and checks leave progress unchanged; duplicate ratings are idempo
   const q = s.question({ practice: true, placeId: "alpha", mode: "locate" });
   s.check(q.token, { point: [5, 5] });
   s.review(q.token, 3);
-  assert.deepEqual(s.exportData(), before);
+  const afterPractice = s.exportData();
+  assert.deepEqual(afterPractice.cards, before.cards);
+  assert.deepEqual(afterPractice.reviews, before.reviews);
+  assert.equal(afterPractice.studyLog.attempts[0].practice, 1);
   const { q: scheduled } = answer(s);
   s.review(scheduled.token, 4);
   assert.equal(s.stats().reviews, 1);
@@ -256,6 +259,7 @@ test("SQLite survives restart, and a restore is not overwritten by seed data", (
     data.places = [];
     data.cards = [];
     data.reviews = [];
+    data.studyLog = { attempts: [], checks: [] };
     s.restore(data);
     s.db.close();
     s = createStore(file, seed);

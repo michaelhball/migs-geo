@@ -138,6 +138,16 @@ async function api(req, res, url) {
     return json(res, store.check(input.token, input.answer));
   if (p === "/api/study/rate" && m === "POST")
     return json(res, store.review(input.token, input.rating));
+  if (p === "/api/study/log" && m === "GET")
+    return json(
+      res,
+      store.studyLog({
+        cardId: url.searchParams.get("cardId") || undefined,
+        limit: Number(url.searchParams.get("limit") || 100),
+        offset: Number(url.searchParams.get("offset") || 0),
+        includePractice: url.searchParams.get("includePractice") === "true",
+      }),
+    );
   if (p === "/api/reviews" && m === "GET") return json(res, store.history());
   if (p === "/api/reviews/undo" && m === "POST") return json(res, store.undo());
   if (p === "/api/backup" && m === "GET") {

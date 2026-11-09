@@ -6,6 +6,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { request as httpRequest } from "node:http";
+import { schemaVersion } from "../server/migrations.mjs";
 
 test(
   "HTTP API supports an agent-driven collection, study, and backup workflow",
@@ -48,7 +49,7 @@ test(
     }
     assert.equal((await call("/health")).body.ok, true);
     assert.equal((await call("/health")).body.database, "ok");
-    assert.equal((await call("/health")).body.schemaVersion, 1);
+    assert.equal((await call("/health")).body.schemaVersion, schemaVersion);
     // Deliberately split the UTF-8 sequence for é across HTTP chunks.
     const payload = Buffer.from(
       JSON.stringify({
@@ -97,6 +98,11 @@ test(
     );
     await call("/study/rate", "POST", { token: practice.token, rating: 3 });
     assert.equal((await call("/stats")).body.reviews, 0);
+    assert.equal((await call("/study/log")).body.total, 0);
+    const practiceLog = (await call("/study/log?includePractice=true")).body;
+    assert.equal(practiceLog.total, 1);
+    assert.equal(practiceLog.items[0].checks[0].result.correct, true);
+    assert.equal((await call("/study/log?limit=-1")).status, 400);
     const created = await call("/places", "POST", {
       id: "test-bay",
       name: "Test bay",

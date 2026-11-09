@@ -1114,7 +1114,7 @@ function App() {
                           const b = JSON.parse(await f.text());
                           if (
                             b.format !== "migs-geo" ||
-                            b.version !== 1 ||
+                            ![1, 2].includes(b.version) ||
                             !Array.isArray(b.places) ||
                             !Array.isArray(b.cards)
                           )

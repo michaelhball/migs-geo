@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Migs Geo local API",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Local collection, spaced repetition, review history, and backups. No Anki or browser dependency. All mutations require application/json. See API.md for semantics."
   },
   "servers": [
@@ -784,7 +784,7 @@
     "/api/backup": {
       "get": {
         "operationId": "exportBackup",
-        "summary": "Complete versioned collection, settings, cards, and review history",
+        "summary": "Version 2 export of collection, settings, cards, reviews, and complete study log",
         "responses": {
           "200": {
             "description": "Success",
@@ -842,7 +842,7 @@
                     "const": "migs-geo"
                   },
                   "version": {
-                    "const": 1
+                    "enum": [1, 2]
                   },
                   "settings": {
                     "type": "object",
@@ -962,6 +962,24 @@
                     "items": {
                       "type": "object"
                     }
+                  },
+                  "studyLog": {
+                    "type": "object",
+                    "properties": {
+                      "attempts": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      },
+                      "checks": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    },
+                    "required": ["attempts", "checks"]
                   }
                 },
                 "required": [
@@ -971,7 +989,92 @@
                   "places",
                   "cards",
                   "reviews"
+                ],
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "version": {
+                          "const": 2
+                        }
+                      }
+                    },
+                    "then": {
+                      "required": ["studyLog"]
+                    }
+                  }
                 ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/study/log": {
+      "get": {
+        "operationId": "getStudyLog",
+        "summary": "Read persistent attempts and ordered answer checks",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "cardId",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 500,
+              "default": 100
+            }
+          },
+          {
+            "in": "query",
+            "name": "offset",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0
+            }
+          },
+          {
+            "in": "query",
+            "name": "includePractice",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Paginated log; items include snapshot, ordered checks, review_id, rating and undone status. Checks include raw answer, result, sequence and response_ms.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "total": {
+                      "type": "integer"
+                    },
+                    "limit": {
+                      "type": "integer"
+                    },
+                    "offset": {
+                      "type": "integer"
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
               }
             }
           }

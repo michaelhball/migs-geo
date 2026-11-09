@@ -5,6 +5,10 @@ export const migrations = [
     new URL("./migrations/001-initial.sql", import.meta.url),
     "utf8",
   ),
+  readFileSync(
+    new URL("./migrations/002-study-log.sql", import.meta.url),
+    "utf8",
+  ),
 ];
 export const schemaVersion = migrations.length;
 

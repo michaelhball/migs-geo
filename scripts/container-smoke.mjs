@@ -27,13 +27,14 @@ const apiHelpers = `
   import assert from 'node:assert/strict';
   import { DatabaseSync } from 'node:sqlite';
   import { readdirSync } from 'node:fs';
+  import { schemaVersion } from './server/migrations.mjs';
   const base='http://127.0.0.1:4387';
   async function api(route,method='GET',body){
     const r=await fetch(base+'/api'+route,{method,headers:{'Content-Type':'application/json'},...(body===undefined?{}:{body:JSON.stringify(body)})});
     const data=await r.json();assert.equal(r.ok,true,JSON.stringify(data));return data;
   }
   assert.notEqual(process.getuid(),0,'The production container should not run as root.');
-  const health=await api('/health');assert.equal(health.database,'ok');assert.equal(health.schemaVersion,1);
+  const health=await api('/health');assert.equal(health.database,'ok');assert.equal(health.schemaVersion,schemaVersion);
 `;
 const run = (source, environment = []) =>
   docker(
@@ -88,6 +89,7 @@ try {
     assert.equal((await api('/settings')).newPerDay,7);
     assert.equal((await api('/places')).length,320);
     assert.equal((await api('/stats')).reviews,1);
+    const log=await api('/study/log');assert.equal(log.total,1);assert.equal(log.items[0].checks[0].answer.reveal,true);
     assert.deepEqual((await api('/cards/'+saved.id)).memory,saved.memory);
     const backup=await api('/backup');await api('/settings','PATCH',{newPerDay:12});await api('/restore','POST',backup);
     assert.equal((await api('/settings')).newPerDay,7);assert.equal((await api('/stats')).reviews,1);
@@ -95,7 +97,7 @@ try {
     const db=new DatabaseSync('/data/geography.sqlite',{readOnly:true});
     assert.equal(db.prepare('PRAGMA integrity_check').get().integrity_check,'ok');
     assert.equal(db.prepare('PRAGMA foreign_key_check').all().length,0);
-    assert.equal(db.prepare('PRAGMA user_version').get().user_version,1);db.close();
+    assert.equal(db.prepare('PRAGMA user_version').get().user_version,schemaVersion);db.close();
   `,
     [`EXPECTED=${JSON.stringify(saved)}`],
   );

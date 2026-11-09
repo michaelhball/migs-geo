@@ -57,6 +57,85 @@ test("a failed migration rolls back both schema changes and the version", () => 
   db.close();
 });
 
+test("v1 collections migrate with review history and scheduling intact", () => {
+  const dir = mkdtempSync(path.join(tmpdir(), "migs-geo-v1-"));
+  try {
+    const original = createStore(":memory:", [
+      {
+        id: "test",
+        name: "Test",
+        geometry: { type: "Point", coordinates: [1, 2] },
+      },
+    ]);
+    const q = original.question();
+    original.check(q.token, { reveal: true });
+    original.review(q.token, 1);
+    const backup = original.exportData();
+    original.db.close();
+    const file = path.join(dir, "geography.sqlite"),
+      legacy = new DatabaseSync(file);
+    legacy.exec(migrations[0]);
+    legacy.exec("PRAGMA user_version=1");
+    legacy
+      .prepare("INSERT INTO settings VALUES(1,?)")
+      .run(JSON.stringify(backup.settings));
+    legacy.prepare("INSERT INTO meta VALUES('seeded','1')").run();
+    for (const p of backup.places)
+      legacy
+        .prepare("INSERT INTO places VALUES(?,?,?)")
+        .run(p.id, JSON.stringify(p), 0);
+    for (const c of backup.cards)
+      legacy
+        .prepare("INSERT INTO cards VALUES(?,?,?,?,?,?,?,?,?)")
+        .run(
+          c.id,
+          c.place_id,
+          c.mode,
+          JSON.stringify(c.memory),
+          c.due,
+          c.state,
+          c.reps,
+          0,
+          c.version,
+        );
+    for (const r of backup.reviews)
+      legacy
+        .prepare("INSERT INTO reviews VALUES(?,?,?,?,?,?,?,?,?,?,?,?)")
+        .run(
+          r.id,
+          r.card_id,
+          r.place_id,
+          r.at,
+          r.day,
+          r.grade,
+          r.correct,
+          r.is_new,
+          r.before_card,
+          r.after_card,
+          r.duration_ms,
+          r.undone,
+        );
+    legacy.close();
+    const migrated = createStore(file);
+    assert.equal(migrated.health().schemaVersion, schemaVersion);
+    assert.deepEqual(migrated.exportData().reviews, backup.reviews);
+    assert.deepEqual(migrated.cards(), backup.cards);
+    assert.equal(
+      migrated.studyLog().total,
+      0,
+      "Legacy first-answer data must stay unknown.",
+    );
+    assert.ok(
+      readdirSync(path.join(dir, "backups")).some((f) =>
+        f.includes(`before-schema-v${schemaVersion}`),
+      ),
+    );
+    migrated.db.close();
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
 test("opening a newer database with an older app fails explicitly", () => {
   const db = new DatabaseSync(":memory:");
   db.exec(`PRAGMA user_version = ${schemaVersion + 1}`);
@@ -74,9 +153,9 @@ test("adopting an existing on-disk database keeps a pre-migration snapshot", () 
     s.db.close();
     s = createStore(file);
     assert.equal(s.settings().newPerDay, 31);
-    assert.equal(s.health().schemaVersion, 1);
+    assert.equal(s.health().schemaVersion, schemaVersion);
     const backup = readdirSync(path.join(dir, "backups")).find((f) =>
-      f.includes("before-schema-v1"),
+      f.includes(`before-schema-v${schemaVersion}`),
     );
     assert.ok(backup);
     s.db.close();
