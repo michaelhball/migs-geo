@@ -40,12 +40,14 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
       ],
       { padding: [16, 16], animate: false },
     );
-  const focus = () => {
+  const framePlace = (context = false) => {
     const m = map.current,
       g = latest.current.geometry;
     if (!m || !g) return;
     if (g.type === "Point") {
-      m.setView([g.coordinates[1], g.coordinates[0]], 4, { animate: false });
+      m.setView([g.coordinates[1], g.coordinates[0]], context ? 3 : 4, {
+        animate: false,
+      });
       return;
     }
     const polys = g.type === "Polygon" ? [g.coordinates] : g.coordinates;
@@ -55,8 +57,13 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
       .map((p: any) => p[0])
       .sort((a: any, b: any) => polygonArea(b) - polygonArea(a))[0];
     const bounds = L.latLngBounds(ring.map((p: number[]) => [p[1], p[0]]));
-    m.fitBounds(bounds, { padding: [80, 80], maxZoom: 7, animate: false });
+    m.fitBounds(context ? bounds.pad(0.75) : bounds, {
+      padding: [80, 80],
+      maxZoom: context ? 4 : 7,
+      animate: false,
+    });
   };
+  const focus = () => framePlace();
   useImperativeHandle(ref, () => ({ home, focus }));
   useEffect(() => {
     if (!element.current) return;
@@ -182,7 +189,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     if (props.geometry) {
       const color = props.revealed ? "#bc4141" : "#307058";
       const fillColor = props.revealed ? "#df7771" : "#76a489";
-      L.geoJSON(props.geometry, {
+      const highlight = L.geoJSON(props.geometry, {
         pane: "answers",
         interactive: false,
         style: {
@@ -201,15 +208,42 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
             fillOpacity: 0.7,
           }),
       }).addTo(group);
+      // Keep tiny territories visible in the wider question view without
+      // replacing their actual outline or forcing the map to zoom closer.
+      const m = map.current;
+      if (m && props.geometry.type !== "Point") {
+        const bounds = highlight.getBounds();
+        const halo = L.circleMarker(bounds.getCenter(), {
+          pane: "answers",
+          radius: 8,
+          color,
+          weight: 2,
+          fill: false,
+          interactive: false,
+        });
+        const updateHalo = () => {
+          const size = m
+            .latLngToContainerPoint(bounds.getNorthEast())
+            .subtract(m.latLngToContainerPoint(bounds.getSouthWest()));
+          if (Math.abs(size.x) < 12 && Math.abs(size.y) < 12)
+            group.addLayer(halo);
+          else group.removeLayer(halo);
+        };
+        updateHalo();
+        m.on("zoomend", updateHalo);
+        return () => {
+          m.off("zoomend", updateHalo);
+        };
+      }
     }
   }, [props.geometry, props.revealed]);
   useEffect(() => {
     // Reveal only adds the answer overlay. Preserve the user's exact viewport
     // and selection; the focus control remains available for deliberate zooming.
     if (props.revealed) return;
-    if (props.geometry) focus();
+    if (props.geometry) framePlace(!props.explore);
     else home();
-  }, [props.geometry, props.resetKey, props.revealed, ready]);
+  }, [props.geometry, props.resetKey, props.revealed, props.explore, ready]);
   useEffect(() => {
     pin.current?.clearLayers();
     if (props.point && pin.current) {

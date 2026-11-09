@@ -26,6 +26,7 @@ Docker is also supported: `docker compose up --build -d --wait`. See [DEPLOYMENT
 - Countries, territories/islands, bodies of water, and broader regions/continents enabled by default. No flags or capitals.
 - FSRS-6 scheduling: up to 15 new cards first each day, then due learning and reviews. Both groups are shuffled with a mix of question directions. Each direction has its own schedule, with recall ratings and undo.
 - Revealing an answer highlights it in red without moving the map or your selection. Zoom to the answer when you want using the map controls.
+- Map → place questions start with surrounding countries and water in view. Use “Show highlighted place” for a closer look.
 - Trackpad scrolling and pinch gestures zoom continuously around the pointer.
 - Practice without changing your review schedule.
 - Search, edit, add, pause, and resume places. Exact polygon editing is available through the API; the UI can add self-graded point locations.
