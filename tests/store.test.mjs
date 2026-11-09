@@ -444,7 +444,25 @@ test("all 319 imported places have usable geometry and unique independent IDs", 
   assert.equal(atlas.length, 319);
   assert.equal(new Set(atlas.map((p) => p.id)).size, 319);
   for (const p of atlas) validateGeometry(p.geometry);
-  assert.equal(atlas.filter((p) => p.approximate).length, 4);
+  assert.equal(atlas.filter((p) => p.approximate).length, 3);
+});
+test("Balkan Peninsula is a regional outline and accepts its common name", () => {
+  const p = atlas.find((p) => p.id === "balkan-peninsula");
+  assert.equal(p.geometry.type, "MultiPolygon");
+  assert.equal(p.approximate, false);
+  assert.equal(p.small, false);
+  assert.equal(checkAnswer(p, "identify", { text: "Balkans" }).correct, true);
+  assert.equal(checkAnswer(p, "identify", { text: "Bulgaria" }).correct, false);
+  for (const [point, expected] of [
+    [[23.32, 42.7], true], // Sofia
+    [[20.46, 44.7], true], // Serbia, south of Belgrade
+    [[19.82, 41.33], true], // Tirana
+    [[23.73, 37.98], true], // Athens
+    [[26.55, 41.67], true], // Edirne, European Turkey
+    [[26.1, 44.43], false], // Bucharest, north of the Danube
+    [[32.85, 39.93], false], // Ankara, outside the peninsula
+    [[12.5, 41.9], false], // Rome
+  ]) assert.equal(checkAnswer(p, "locate", { point }).correct, expected, point.join(","));
 });
 test("representative map matches include constituent countries, territories, islands, water, and the date line", () => {
   const samples = [

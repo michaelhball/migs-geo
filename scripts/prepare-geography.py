@@ -49,13 +49,13 @@ def subpolys(fs,box):
 
 land=read('map-units');marine=read('marine');lakes=read('lakes');regions=read('regions');disputed=read('disputed')
 notes=json.loads((ROOT/'data/notes.json').read_text())
-aliases={'Sahrawi Arab Democratic Republic':'Western Sahara','Gulf of California':'Golfo de California','Saint Martin':'Saint-Martin','Czech Republic':'Czechia'}
+aliases={'Sahrawi Arab Democratic Republic':'Western Sahara','Gulf of California':'Golfo de California','Saint Martin':'Saint-Martin','Czech Republic':'Czechia','Balkan Peninsula':'Balkans'}
 grouped={'United Kingdom':['England','Scotland','Wales','Northern Ireland'],'Belgium':['Flemish Region','Walloon Region','Brussels'],'Palestine':['Gaza','West Bank'],'Antigua and Barbuda':['Antigua','Barbuda'],'Akrotiri and Dhekelia':['Akrotiri','Dhekelia'],'Pacific Ocean':['North Pacific Ocean','South Pacific Ocean'],'Atlantic Ocean':['North Atlantic Ocean','South Atlantic Ocean'],'Aral Sea':['North Aral Sea','South Aral Sea']}
 boxes={'Canary Islands':('Spain',[-19,27,-13,30]),'Hawaii':('United States of America',[-161,18,-154,23]),'Alaska':('United States of America',[-180,50,-129,73]),'Kaliningrad Oblast':('Russia',[19,54,23,56]),'Jeju':('South Korea',[126,33,127,34])}
 region_names={'European Union','Scandinavia','Balkan Peninsula','Polynesia','Melanesia','Micronesia','Europe','Asia','Africa','North America','South America','Oceania','Antarctica'}
 # Broad cultural regions have no single agreed boundary. These are explicit,
 # approximate study extents and are self-graded, never precise auto-grading.
-approx={'Polynesia':[-150,-10,3500],'Melanesia':[161,-10,2400],'Micronesia':[152,10,2400],'Balkan Peninsula':[22,42,650],'Scandinavia':[16,64,900],'Oceania':[155,-18,6000], 'Bering Strait':[-168.9,65.9,100], 'Celtic Sea':[-7.5,50,280]}
+approx={'Polynesia':[-150,-10,3500],'Melanesia':[161,-10,2400],'Micronesia':[152,10,2400],'Scandinavia':[16,64,900],'Oceania':[155,-18,6000], 'Bering Strait':[-168.9,65.9,100], 'Celtic Sea':[-7.5,50,280]}
 deck=[]
 for n in notes:
     name=n['name'];water='UG::Oceans+Seas' in n['tags'];kind='water' if water else 'region' if name in region_names else 'country' if 'UG::Sovereign_State' in n['tags'] else 'territory'

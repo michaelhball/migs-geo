@@ -11,6 +11,8 @@ Natural Earth vectors: `nvkelso/natural-earth-vector`, revision
 
 Natural Earth data is public domain: https://www.naturalearthdata.com/about/terms-of-use/
 
-The source downloads are ignored by Git. Use `scripts/download-geography.py` to obtain them. `scripts/prepare-geography.py` strips unused attributes, simplifies and rounds geometry, maps it to the place list, combines constituent units where needed, and identifies the four approximate markers. The prepared geometry is checked into the repository.
+The source downloads are ignored by Git. Use `scripts/download-geography.py` to obtain them. `scripts/prepare-geography.py` strips unused attributes, simplifies and rounds geometry, maps it to the place list, combines constituent units where needed, and identifies the three approximate markers. The prepared geometry is checked into the repository.
+
+Balkan Peninsula maps to the `BALKAN PEN.` / `Balkans` feature (`WIKIDATAID: Q23522`) in `ne_10m_geography_regions_polys`. This is a regional outline across country borders, separate from the `Balkan Mts.` feature. Natural Earth's [physical-region boundaries](https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/) are generalized study outlines, not surveyed borders.
 
 `data/notes.json` contains the 319 public place names, country notes, and tags extracted from an Ultimate Geography Extended collection. Original Anki IDs, card schedules, review history, flags, capitals, and media are not included. IDs have been replaced with independent slugs. The upstream license for non-image deck content is included here.
