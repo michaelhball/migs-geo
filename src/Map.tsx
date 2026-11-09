@@ -266,26 +266,33 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     else home();
   }, [props.geometry, props.resetKey, props.revealed, props.explore, ready]);
   useEffect(() => {
-    pin.current?.clearLayers();
-    if (props.point && pin.current) {
+    const group = pin.current,
+      m = map.current;
+    group?.clearLayers();
+    if (props.point && group && m) {
       const ll: L.LatLngExpression = [props.point[1], props.point[0]];
-      L.circleMarker(ll, {
+      const marker = L.marker(ll, {
         pane: "pins",
-        radius: 9,
-        color: "#fff",
-        weight: 3,
-        fillColor: "#bd673f",
-        fillOpacity: 1,
+        icon: L.divIcon({
+          className: "selection-marker",
+          html: '<span class="selection-marker-dot"></span>',
+          iconSize: [22, 22],
+          iconAnchor: [11, 11],
+        }),
         interactive: false,
-      }).addTo(pin.current);
-      L.circleMarker(ll, {
-        pane: "pins",
-        radius: 11,
-        color: "#bd673f",
-        weight: 1,
-        fillOpacity: 0,
-        interactive: false,
-      }).addTo(pin.current);
+        keyboard: false,
+      }).addTo(group);
+      // A separate DOM marker stays anchored and scales on every zoom frame
+      // without redrawing the detailed map. Keep a small visible minimum.
+      const resizePin = () => {
+        const scale = Math.max(0.35, Math.min(1, 2 ** ((m.getZoom() - 7) / 3)));
+        marker.getElement()?.style.setProperty("--pin-scale", String(scale));
+      };
+      resizePin();
+      m.on("zoom", resizePin);
+      return () => {
+        m.off("zoom", resizePin);
+      };
     }
   }, [props.point]);
   return (

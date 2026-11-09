@@ -247,6 +247,24 @@ main {
 .map-canvas.leaflet-drag-target {
   cursor: grabbing;
 }
+.selection-marker {
+  pointer-events: none;
+}
+.selection-marker-dot {
+  position: absolute;
+  inset: 0;
+  border: 1px solid #bd673f;
+  border-radius: 50%;
+  background: #fff;
+  transform: scale(var(--pin-scale, 1));
+}
+.selection-marker-dot::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: #bd673f;
+}
 .map-tools {
   position: absolute;
   z-index: 500;
