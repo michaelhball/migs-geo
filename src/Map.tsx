@@ -21,8 +21,18 @@ type Props = {
   name?: string;
   resetKey?: string;
   revealed?: boolean;
+  correct?: boolean | null;
 };
 export type MapHandle = { home: () => void; focus: () => void };
+const highlightStyles = {
+  correct: { color: "#307058", fillColor: "#76a489", legend: "legend-answer" },
+  incorrect: {
+    color: "#bc4141",
+    fillColor: "#df7771",
+    legend: "legend-revealed",
+  },
+  neutral: { color: "#98763c", fillColor: "#d7bf8d", legend: "legend-neutral" },
+};
 let worldPromise: Promise<any> | undefined;
 export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
   const element = useRef<HTMLDivElement>(null),
@@ -33,6 +43,12 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
   const [error, setError] = useState(""),
     [ready, setReady] = useState(false);
   latest.current = props;
+  const tone =
+    !props.revealed || props.correct === true
+      ? "correct"
+      : props.correct === false
+        ? "incorrect"
+        : "neutral";
   const home = () =>
     map.current?.fitBounds(
       [
@@ -193,8 +209,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     if (!group) return;
     group.clearLayers();
     if (props.geometry) {
-      const color = props.revealed ? "#bc4141" : "#307058";
-      const fillColor = props.revealed ? "#df7771" : "#76a489";
+      const { color, fillColor } = highlightStyles[tone];
       const highlight = L.geoJSON(props.geometry, {
         pane: "answers",
         interactive: false,
@@ -242,7 +257,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
         };
       }
     }
-  }, [props.geometry, props.revealed]);
+  }, [props.geometry, tone]);
   useEffect(() => {
     // Reveal only adds the answer overlay. Preserve the user's exact viewport
     // and selection; the focus control remains available for deliberate zooming.
@@ -329,11 +344,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
       <div className="map-legend">
         <span
           className={
-            props.geometry
-              ? props.revealed
-                ? "legend-revealed"
-                : "legend-answer"
-              : "legend-land"
+            props.geometry ? highlightStyles[tone].legend : "legend-land"
           }
         />
         {props.geometry ? props.name || "Highlighted place" : "Unlabeled map"}
