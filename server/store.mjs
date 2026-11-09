@@ -6,6 +6,7 @@ import { createEmptyCard, fsrs } from "ts-fsrs";
 import { booleanPointInPolygon } from "@turf/boolean-point-in-polygon";
 import { migrate, schemaVersion } from "./migrations.mjs";
 import { createStudyLog, validateStudyLog } from "./study-log.mjs";
+import { analytics } from "./analytics.mjs";
 
 export const defaults = {
   newPerDay: 15,
@@ -768,6 +769,8 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     review,
     undo,
     stats,
+    analytics: (filters) =>
+      analytics(db, places(), cards(), filters, localDay(clock())),
     studyLog: studyLog.list,
     exportData,
     restore,

@@ -70,6 +70,7 @@ For a naming question, use `"answer":{"text":"France"}`. To reveal, use `"answer
 | --- | --- | --- |
 | GET | `/api/queue` | Current counts, next card ID, next learning time |
 | GET | `/api/stats` | Counts, daily review history, recall ratings |
+| GET | `/api/analytics` | First-try recall, actual interval buckets, daily activity, difficult cards, classifications, and wrong-answer patterns; optional `from`, `to` (inclusive local YYYY-MM-DD dates) and `cardId` |
 | GET | `/api/reviews` | Review history, including undone records |
 | POST | `/api/reviews/undo` | Undo the last active review; preserve an audit record |
 | GET | `/api/study/log` | Persistent attempts and ordered answer checks; `cardId`, `limit` (1–500), `offset`, and `includePractice=true` filters |
@@ -85,6 +86,8 @@ After new cards, due learning and review cards are mixed in a shuffled queue. Re
 Browsing, checks, and answer reveals do not change the schedule. Only a rating on a scheduled question does. Review dates and memory states persist across restarts. Suspended cards and archived places are excluded from scheduled study. Unscheduled practice is not exposed in the interface; explicit API practice requests remain available for testing and can intentionally include paused cards without changing progress.
 
 ## Direct data access
+
+Analytics include active scheduled ratings only. They exclude undone reviews, unscheduled practice, and unrated attempts. `summary.firstAccuracy` uses the first recorded check; reveals count as unsuccessful, while self-graded results and missing legacy first checks are excluded. `ratedRecall` is the separate percentage of self-ratings above Again. Every group includes sample counts and unknown coverage. An interval measures actual elapsed time from the previous rating to the first check, or to the rating for legacy reviews; it is not the planned delay. New introductions are reported separately from return attempts. Classification uses the original snapshot where available and current place metadata for older reviews. Raw answers and uncompleted attempts remain accessible through `/api/study/log`.
 
 Each question and valid answer check is logged even if it is never rated. The log preserves raw typed answers or map coordinates, reveals, correctness, time since the question was shown (including pauses), the original place classification, card memory, and study settings. The first check remains identifiable after subsequent checks. Ratings link atomically to reviews; undo retains the log with `undone:true`. Re-rating the same token is idempotent, and checks after rating are rejected. Explicit API practice is logged separately and excluded by default. Older reviews have no invented first-answer records.
 

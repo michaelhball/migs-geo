@@ -1080,6 +1080,49 @@
           }
         }
       }
+    },
+    "/api/analytics": {
+      "get": {
+        "operationId": "getStudyAnalytics",
+        "summary": "Analyse first-answer recall, actual intervals, difficult cards, and patterns",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "from",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "in": "query",
+            "name": "to",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "in": "query",
+            "name": "cardId",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Active scheduled reviews with summary, newCards, returns, intervals, daily, cards, byMode, byKind, byRegion, byTag, byStage, byPreviousRating, confusions, mapErrors, and measurement definitions. Percentages are null when no eligible measurements exist.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {

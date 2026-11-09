@@ -76,6 +76,15 @@ async function api(req, res, url) {
       ...store.health(),
     });
   if (p === "/api/stats" && m === "GET") return json(res, store.stats());
+  if (p === "/api/analytics" && m === "GET")
+    return json(
+      res,
+      store.analytics({
+        from: url.searchParams.get("from") || undefined,
+        to: url.searchParams.get("to") || undefined,
+        cardId: url.searchParams.get("cardId") || undefined,
+      }),
+    );
   if (p === "/api/settings")
     return json(
       res,

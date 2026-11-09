@@ -103,6 +103,8 @@ test(
     assert.equal(practiceLog.total, 1);
     assert.equal(practiceLog.items[0].checks[0].result.correct, true);
     assert.equal((await call("/study/log?limit=-1")).status, 400);
+    assert.equal((await call("/analytics")).body.summary.reviews, 0);
+    assert.equal((await call("/analytics?from=invalid")).status, 400);
     const created = await call("/places", "POST", {
       id: "test-bay",
       name: "Test bay",
