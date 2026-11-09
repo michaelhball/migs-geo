@@ -37,15 +37,10 @@ const kindNames: any = {
   region: "Region / continent",
 };
 const states = ["New", "Learning", "Review", "Relearning"];
-function interval(seconds: number) {
+function interval({ seconds, days }: { seconds: number; days: number | null }) {
+  if (days !== null) return `${days} day${days === 1 ? "" : "s"}`;
   if (seconds < 3600) return `${Math.max(1, Math.round(seconds / 60))} min`;
-  if (seconds < 86400) return `${Math.round(seconds / 3600)} hr`;
-  const d = Math.round(seconds / 86400);
-  return d < 30
-    ? `${d} day${d === 1 ? "" : "s"}`
-    : d < 365
-      ? `${Math.round(d / 30)} mo`
-      : `${(d / 365).toFixed(1)} yr`;
+  return `${Math.round(seconds / 3600)} hr`;
 }
 function plain(s: string) {
   return s.replace(/<[^>]*>/g, "").replace(/&amp;/g, "&");
@@ -100,6 +95,28 @@ function App() {
   useEffect(() => {
     run(refresh);
   }, []);
+  useEffect(() => {
+    if (!stats?.nextDayAt) return;
+    const boundary = +new Date(stats.nextDayAt);
+    let timer: ReturnType<typeof setTimeout>;
+    const rollover = () => {
+      if (Date.now() < boundary) return;
+      if (lock.current) {
+        timer = setTimeout(rollover, 1000);
+        return;
+      }
+      run(async () => {
+        await refresh();
+        if (question && !question.card) setQuestion(null);
+      });
+    };
+    timer = setTimeout(rollover, Math.max(0, boundary - Date.now()) + 100);
+    window.addEventListener("focus", rollover);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("focus", rollover);
+    };
+  }, [stats?.nextDayAt, question]);
   useEffect(() => {
     if (!notice) return;
     const t = setTimeout(() => setNotice(""), 4500);
@@ -587,7 +604,7 @@ function App() {
                                       <kbd>{i + 1}</kbd>
                                     </span>
                                     <small>
-                                      {interval(result.intervals[i].seconds)}
+                                      {interval(result.intervals[i])}
                                     </small>
                                   </button>
                                 ),
@@ -643,6 +660,7 @@ function App() {
           {tab === "statistics" && (
             <Statistics
               api={api}
+              studyDay={stats.studyDay}
               onBack={() => setTab("study")}
               onOpenPlace={openPlace}
             />
@@ -874,7 +892,9 @@ function App() {
                                     </strong>
                                     <span>
                                       {c.state
-                                        ? new Date(c.due).toLocaleDateString()
+                                        ? c.dueDay
+                                          ? new Date(`${c.dueDay}T12:00:00`).toLocaleDateString()
+                                          : new Date(c.due).toLocaleDateString(undefined, { timeZone: stats.timeZone })
                                         : "Not studied"}
                                     </span>
                                   </div>
@@ -936,6 +956,10 @@ function App() {
               </div>
               <section className="settings-section">
                 <h2>Study</h2>
+                <p>
+                  Each study day starts at 4am ({stats.timeZone}). Reviews before
+                  4am count toward the previous day.
+                </p>
                 <label className="setting-row">
                   <span>
                     New cards per day<small>Due reviews are not limited.</small>

@@ -470,6 +470,7 @@
       "get": {
         "operationId": "card",
         "summary": "One card including FSRS memory state",
+        "description": "Includes dueDay: the YYYY-MM-DD study date for review cards, or null for new/short learning cards. Study dates use the local 04:00 cutoff.",
         "responses": {
           "200": {
             "description": "Success",

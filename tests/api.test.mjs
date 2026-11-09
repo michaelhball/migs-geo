@@ -196,5 +196,18 @@ test(
         n.includes("before-restore"),
       ),
     );
+    const next = (await call("/study/next", "POST", {})).body;
+    await call("/study/check", "POST", { token: next.token, answer: { reveal: true } });
+    await call("/study/rate", "POST", { token: next.token, rating: 4 });
+    const cardRoute = `/cards/${encodeURIComponent(next.card.id)}`;
+    const patched = (await call(cardRoute, "PATCH", {
+      due: new Date("2026-11-10T01:00:00").toISOString(),
+    })).body;
+    assert.equal(patched.dueDay, "2026-11-09");
+    assert.equal((await call(cardRoute)).body.dueDay, "2026-11-09");
+    assert.equal((await call("/cards")).body.find(c => c.id === next.card.id).dueDay, "2026-11-09");
+    const queue = (await call("/queue")).body;
+    assert.equal(queue.timeZone, Intl.DateTimeFormat().resolvedOptions().timeZone);
+    assert.equal(new Date(queue.nextDayAt).getHours(), 4);
   },
 );

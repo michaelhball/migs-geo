@@ -26,8 +26,8 @@ Set `GEO_URL` for another local port. IDs are stable slugs in the bundled collec
 | POST | `/api/places` | Create a place and both question cards |
 | PATCH | `/api/places/:id` | Update name, notes, aliases, geometry, classification, region, center, or archived status |
 | DELETE | `/api/places/:id` | Archive, preserving cards and history; restore with `PATCH {"archived":false}` |
-| GET | `/api/cards` | Full scheduling state; optional `?placeId=france` |
-| GET | `/api/cards/:id` | One card and FSRS memory state |
+| GET | `/api/cards` | Full scheduling state; optional `?placeId=france`. `dueDay` is the YYYY-MM-DD study date for review cards, or null for new/short learning cards. |
+| GET | `/api/cards/:id` | One card, FSRS memory state, and `dueDay` |
 | PATCH | `/api/cards/:id` | Pause/resume (`suspended`), change review date (`due`, ISO timestamp), or return a card to new (`reset:true`); history is retained |
 | GET / PATCH | `/api/settings` | Read or update study settings |
 

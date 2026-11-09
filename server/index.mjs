@@ -48,6 +48,10 @@ const json = (res, data, status = 200) => {
   });
   res.end(JSON.stringify(data));
 };
+const cardResponse = (card) => ({
+  ...card,
+  dueDay: card.state === 2 ? studyDay(new Date(card.due)) : null,
+});
 async function body(req) {
   // Decode through Node's StringDecoder so multibyte names survive chunk edges.
   req.setEncoding("utf8");
@@ -127,13 +131,14 @@ async function api(req, res, url) {
           (c) =>
             !url.searchParams.get("placeId") ||
             c.place_id === url.searchParams.get("placeId"),
-        ),
+        )
+        .map(cardResponse),
     );
   const cm = p.match(/^\/api\/cards\/([^/]+)$/);
   if (cm) {
     const id = decodeURIComponent(cm[1]);
-    if (m === "GET") return json(res, store.getCard(id));
-    if (m === "PATCH") return json(res, store.updateCard(id, input));
+    if (m === "GET") return json(res, cardResponse(store.getCard(id)));
+    if (m === "PATCH") return json(res, cardResponse(store.updateCard(id, input)));
   }
   if (p === "/api/queue" && m === "GET") {
     const q = store.queue();

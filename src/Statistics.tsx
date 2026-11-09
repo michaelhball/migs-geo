@@ -209,10 +209,12 @@ function DailyChart({ rows }: { rows: Group[] }) {
 
 export function Statistics({
   api,
+  studyDay,
   onBack,
   onOpenPlace,
 }: {
   api: (route: string) => Promise<any>;
+  studyDay: string;
   onBack: () => void;
   onOpenPlace: (id: string) => void;
 }) {
@@ -229,16 +231,12 @@ export function Statistics({
     [selected, setSelected] = useState<Card | null>(null);
   const [history, setHistory] = useState<Review[] | null>(null),
     [logError, setLogError] = useState("");
-  const now = new Date(),
-    today =
-      data?.today ||
-      `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
   const query = useMemo(() => {
     if (!range) return "";
-    const date = new Date(today);
+    const date = new Date(studyDay);
     date.setUTCDate(date.getUTCDate() - range + 1);
-    return `?from=${date.toISOString().slice(0, 10)}&to=${today}`;
-  }, [range, today]);
+    return `?from=${date.toISOString().slice(0, 10)}&to=${studyDay}`;
+  }, [range, studyDay]);
   useEffect(() => {
     let current = true;
     setLoading(true);
@@ -256,7 +254,7 @@ export function Statistics({
     return () => {
       current = false;
     };
-  }, [api, query, reload]);
+  }, [api, query, reload, studyDay]);
   useEffect(() => {
     let current = true;
     setHistory(null);
