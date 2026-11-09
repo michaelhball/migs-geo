@@ -8,6 +8,7 @@ import {
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { trackpadZoom } from "./trackpadZoom";
+import { worldDetail } from "./worldDetail";
 import { Plus, Minus, Maximize, LocateFixed } from "lucide-react";
 
 type Props = {
@@ -137,6 +138,9 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     worldPromise
       .then((world) => {
         if (!mounted) return;
+        const details: (() => void)[] = [];
+        // Update detail before the renderer projects the next settled view.
+        m.on("zoomend", () => details.forEach((update) => update()));
         L.geoJSON(world, {
           style: {
             color: "#8d9a93",
@@ -145,6 +149,8 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
             fillOpacity: 1,
           },
           onEachFeature: (feature, layer) => {
+            if (layer instanceof L.Polygon)
+              details.push(worldDetail(m, layer, feature));
             layer.on("mouseover", () => {
               if (latest.current.explore) {
                 (layer as L.Path).setStyle({ fillColor: "#dce4d9" });
