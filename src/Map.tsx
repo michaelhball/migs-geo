@@ -7,6 +7,7 @@ import {
 } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { trackpadZoom } from "./trackpadZoom";
 import { Plus, Minus, Maximize, LocateFixed } from "lucide-react";
 
 type Props = {
@@ -65,22 +66,21 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
       attributionControl: false,
       minZoom: 0.5,
       maxZoom: 12,
-      zoomSnap: 0.25,
+      zoomSnap: 0,
       zoomDelta: 0.5,
+      zoomAnimation: false,
       preferCanvas: true,
       maxBounds: [
         [-90, -200],
         [90, 200],
       ],
       maxBoundsViscosity: 0.85,
-      scrollWheelZoom: true,
-      // Trackpads need less movement than Leaflet's default 60 px per level.
-      wheelPxPerZoomLevel: 20,
-      wheelDebounceTime: 20,
+      scrollWheelZoom: false,
       doubleClickZoom: false,
     });
     map.current = m;
     home();
+    const removeTrackpadZoom = trackpadZoom(m);
     m.createPane("grid");
     m.getPane("grid")!.style.zIndex = "210";
     m.createPane("answers");
@@ -170,6 +170,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     return () => {
       mounted = false;
       resize.disconnect();
+      removeTrackpadZoom();
       m.remove();
       map.current = null;
     };
