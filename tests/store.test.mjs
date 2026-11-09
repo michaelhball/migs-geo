@@ -62,7 +62,7 @@ test("learning steps, next-day reviews, and daily new limits persist in the queu
   const { q } = answer(s, 3);
   assert.equal(s.getCard(q.card.id).state, 1);
   assert.equal(s.queue().counts.new, 0);
-  assert.equal(s.question().card, null);
+  assert.equal(s.question().card.id, q.card.id);
   advance(10 * 60 * 1000);
   assert.equal(s.queue().counts.learning, 1);
   answer(s, 3);
@@ -72,6 +72,80 @@ test("learning steps, next-day reviews, and daily new limits persist in the queu
   assert.equal(s.queue().counts.new, 1);
   s.db.close();
 });
+test("short learning steps can finish immediately without altering stored due dates", () => {
+  const { store: s } = setup(1);
+  const { q } = answer(s, 1);
+  const scheduled = s.getCard(q.card.id);
+  assert.ok(scheduled.due > +new Date("2026-11-09T10:00:00"));
+  assert.equal(s.question().card.id, q.card.id);
+  assert.equal(s.queue().counts.learning, 1);
+  assert.deepEqual(
+    s.getCard(q.card.id),
+    scheduled,
+    "Reading an early repeat must not reschedule it.",
+  );
+  answer(s, 3);
+  assert.equal(s.getCard(q.card.id).state, 1);
+  assert.equal(s.question().card.id, q.card.id);
+  answer(s, 3);
+  assert.equal(s.getCard(q.card.id).state, 2);
+  assert.equal(
+    s.question().card,
+    null,
+    "Graduated reviews remain scheduled for a later day.",
+  );
+  assert.equal(s.stats().history[0].introduced, 1);
+  assert.equal(s.stats().reviews, 3);
+  s.db.close();
+});
+
+test("new and due cards take priority over early learning repeats", () => {
+  const { store: s, setTime } = setup(3);
+  s.setSettings({ modes: ["locate"] });
+  const old = answer(s, 4).q.card.id;
+  s.updateCard(old, { due: "2026-11-10T10:00:00" });
+  setTime("2026-11-10T10:00:00");
+  const learning = answer(s, 1).q.card.id;
+  assert.equal(s.question().card.state, 0);
+  answer(s, 4);
+  assert.equal(s.question().card.id, old);
+  answer(s, 4);
+  assert.equal(s.question().card.id, learning);
+  s.db.close();
+});
+
+test("early learning is bounded and respects paused cards and filters", () => {
+  const { store: s } = setup(1);
+  const id = answer(s, 1).q.card.id;
+  s.updateCard(id, { due: "2026-11-11T10:00:00" });
+  assert.equal(s.question().card, null);
+  s.updateCard(id, { due: "2026-11-09T10:10:00", suspended: true });
+  assert.equal(s.question().card, null);
+  s.updateCard(id, { suspended: false });
+  s.setSettings({ kinds: ["water"] });
+  assert.equal(s.question().card, null);
+  s.setSettings({ kinds: ["country"], newPerDay: 0 });
+  assert.equal(s.question().card.id, id);
+  s.db.close();
+});
+
+test("early repeats stay stable across reads and separate consecutive places", () => {
+  const { store: s, advance } = setup();
+  s.setSettings({ modes: ["locate"] });
+  let previous;
+  for (let i = 0; i < 5; i++) previous = answer(s, 1).q.card.id;
+  for (let i = 0; i < 12; i++) {
+    const q = s.question();
+    assert.notEqual(q.card.id, previous);
+    assert.equal(s.question().card.id, q.card.id);
+    s.check(q.token, { reveal: true });
+    s.review(q.token, 1);
+    previous = q.card.id;
+    advance(1000);
+  }
+  s.db.close();
+});
+
 test("Again schedules a short repeat; reviews still run when new limit is zero", () => {
   const { store: s, advance } = setup();
   const { q } = answer(s, 1);

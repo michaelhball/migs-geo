@@ -378,7 +378,13 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     // long runs of one direction whenever the other direction is available.
     const cardModes = new Map(allCards.map((c) => [c.id, c.mode]));
     const recentModes = today.slice(-2).map((r) => cardModes.get(r.card_id));
-    function mixedDirection(pool) {
+    function mixedDirection(pool, separateRepeats = false) {
+      if (separateRepeats) {
+        const otherPlaces = pool.filter(
+          (c) => c.place_id !== today.at(-1)?.place_id,
+        );
+        if (otherPlaces.length) pool = otherPlaces;
+      }
       const other =
         recentModes.length === 2 && recentModes[0] === recentModes[1]
           ? pool.find((c) => c.mode !== recentModes[0])
@@ -394,18 +400,30 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       newCount = s.burySiblings
         ? new Set(fresh.map((c) => c.place_id)).size
         : fresh.length;
-    const next = remaining && nextNew ? nextNew : nextDue;
     const waiting = eligible
       .filter((c) => [1, 3].includes(c.state) && c.due > +now)
-      .sort((a, b) => a.due - b.due)[0];
+      .sort((a, b) => a.due - b.due);
+    // Finish short learning steps when the regular queue runs out. Keep their
+    // stored due times intact; only an actual rating updates FSRS memory.
+    const early = waiting
+      .filter((c) => c.due <= +now + 10 * 60 * 1000)
+      .sort((a, b) =>
+        shuffleRank(`${a.id}:early:${today.length}`, day).localeCompare(
+          shuffleRank(`${b.id}:early:${today.length}`, day),
+        ),
+      );
+    const next =
+      remaining && nextNew ? nextNew : nextDue || mixedDirection(early, true);
     return {
       next,
       counts: {
         new: Math.min(remaining, newCount),
         review: review.length,
-        learning: learning.length,
+        learning: learning.length + early.length,
       },
-      nextLearningAt: waiting ? new Date(waiting.due).toISOString() : null,
+      nextLearningAt: waiting[0]
+        ? new Date(waiting[0].due).toISOString()
+        : null,
       today: today.length,
     };
   }

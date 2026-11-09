@@ -393,7 +393,7 @@ function App() {
                         <p>Countries, territories, water, and regions.</p>
                         <div className="session-summary">
                           <div>
-                            <span>Due reviews</span>
+                            <span>Reviews and learning</span>
                             <strong>
                               {stats.counts.review + stats.counts.learning}
                             </strong>
@@ -453,7 +453,7 @@ function App() {
                           className="primary full"
                           onClick={() => start(true)}
                         >
-                          Keep practicing
+                          Practice without scheduling
                         </button>
                         <button
                           className="secondary full"
