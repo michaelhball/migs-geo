@@ -13,6 +13,10 @@ export const migrations = [
     new URL("./migrations/003-review-analysis-index.sql", import.meta.url),
     "utf8",
   ),
+  readFileSync(
+    new URL("./migrations/004-study-day.sql", import.meta.url),
+    "utf8",
+  ),
 ];
 export const schemaVersion = migrations.length;
 

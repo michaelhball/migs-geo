@@ -68,7 +68,7 @@ test("learning steps, next-day reviews, and daily new limits persist in the queu
   answer(s, 3);
   assert.equal(s.getCard(q.card.id).state, 2);
   assert.equal(s.stats().today, 2);
-  setTime("2026-11-10T00:00:01");
+  setTime("2026-11-10T04:00:00");
   assert.equal(s.queue().counts.new, 1);
   s.db.close();
 });

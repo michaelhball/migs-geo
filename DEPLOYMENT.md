@@ -8,7 +8,7 @@ The infrastructure is one Node.js process and one SQLite database. There is no s
 docker compose up --build -d --wait
 ```
 
-Open `http://127.0.0.1:4387`. If the Node version of the app is running already, stop it first so the port is available. Set `TZ=Europe/Berlin` (or your preferred timezone) when starting Compose to make daily limits reset at local midnight:
+Open `http://127.0.0.1:4387`. If the Node version of the app is running already, stop it first so the port is available. Set `TZ=Europe/Berlin` (or your preferred timezone) when starting Compose to make daily limits reset at local 4am:
 
 ```sh
 TZ=Europe/Berlin docker compose up --build -d --wait
@@ -41,7 +41,7 @@ To move from the local Node app to a container, export the current collection, s
 | `PORT` | `4387` | HTTP listen port |
 | `GEO_HOST` | `127.0.0.1` | Bind address; image sets `0.0.0.0` inside the container |
 | `GEO_DATA_DIR` | `data/local` | Writable SQLite and backup directory; image sets `/data` |
-| `TZ` | Host timezone; image uses `UTC` | Calendar-day boundary for study limits |
+| `TZ` | Host timezone; image uses `UTC` | Local timezone for the 04:00 study-day boundary |
 | `GEO_ORIGIN` | Unset | One exact additional HTTP(S) origin accepted behind a reverse proxy |
 
 The app is currently a single-user service without login. For internet hosting, put it behind an authenticated HTTPS reverse proxy, set `GEO_ORIGIN=https://your-domain.example`, preserve the incoming Host header, and attach a persistent disk at `/data`. The default Compose setup remains local. No public deployment or registry publishing is performed by this repository's CI.

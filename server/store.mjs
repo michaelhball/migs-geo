@@ -7,6 +7,7 @@ import { booleanPointInPolygon } from "@turf/boolean-point-in-polygon";
 import { migrate, schemaVersion } from "./migrations.mjs";
 import { createStudyLog, validateStudyLog } from "./study-log.mjs";
 import { analytics } from "./analytics.mjs";
+import { studyDay, nextStudyDay, scheduleStudyDay } from "./study-day.mjs";
 
 export const defaults = {
   newPerDay: 15,
@@ -16,8 +17,6 @@ export const defaults = {
   modes: ["locate", "identify"],
   burySiblings: true,
 };
-export const localDay = (d = new Date()) =>
-  `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 const parse = JSON.parse,
   encode = JSON.stringify;
 const hydrate = (c) => ({
@@ -339,9 +338,8 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
   function queue() {
     const now = clock(),
       s = settings(),
-      day = localDay(now),
-      end = new Date(now);
-    end.setHours(23, 59, 59, 999);
+      day = studyDay(now),
+      end = nextStudyDay(now);
     const today = db
         .prepare(
           "SELECT * FROM reviews WHERE day=? AND undone=0 ORDER BY rowid",
@@ -366,7 +364,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       .filter((c) => [1, 3].includes(c.state) && c.due <= +now)
       .sort((a, b) => a.due - b.due);
     const review = eligible
-      .filter((c) => c.state === 2 && c.due <= +end && !seenCards.has(c.id))
+      .filter((c) => c.state === 2 && c.due < +end && !seenCards.has(c.id))
       .sort((a, b) => a.due - b.due);
     const due = [...learning, ...review].sort((a, b) =>
       shuffleRank(a.id, day).localeCompare(shuffleRank(b.id, day)),
@@ -418,6 +416,9 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       remaining && nextNew ? nextNew : nextDue || mixedDirection(early, true);
     return {
       next,
+      studyDay: day,
+      nextDayAt: end.toISOString(),
+      timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
       counts: {
         new: Math.min(remaining, newCount),
         review: review.length,
@@ -445,7 +446,12 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     } else card = queue().next;
     if (!card) {
       const q = queue();
-      return { card: null, counts: q.counts, nextLearningAt: q.nextLearningAt };
+      return {
+        card: null,
+        counts: q.counts,
+        nextLearningAt: q.nextLearningAt,
+        nextDayAt: q.nextDayAt,
+      };
     }
     const p = place(card.place_id),
       token = randomUUID();
@@ -476,17 +482,22 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     if (a.saved) throw Error("This question has already been rated.");
     const p = place(a.card.place_id);
     a.result = checkAnswer(p, a.card.mode, answer);
-    const next = scheduler().repeat(hydrate(a.card.memory), clock());
+    const now = clock(),
+      next = scheduler().repeat(hydrate(a.card.memory), now);
     studyLog.check(token, answer, a.result);
     a.checked = true;
     return {
       ...a.result,
       place: p,
-      intervals: [1, 2, 3, 4].map((r) => ({
-        rating: r,
-        due: next[r].card.due,
-        seconds: Math.max(0, (+next[r].card.due - +clock()) / 1000),
-      })),
+      intervals: [1, 2, 3, 4].map((r) => {
+        const card = scheduleStudyDay(next[r].card, now);
+        return {
+          rating: r,
+          due: card.due,
+          days: card.state === 2 ? card.scheduled_days : null,
+          seconds: Math.max(0, (+card.due - +now) / 1000),
+        };
+      }),
     };
   }
   function review(token, grade) {
@@ -508,12 +519,13 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       throw Error("This card is paused or archived.");
     const now = clock(),
       r = scheduler().next(hydrate(current.memory), now, grade),
+      scheduled = scheduleStudyDay(r.card, now),
       after = {
         ...current,
-        memory: r.card,
-        due: +r.card.due,
-        state: r.card.state,
-        reps: r.card.reps,
+        memory: scheduled,
+        due: +scheduled.due,
+        state: scheduled.state,
+        reps: scheduled.reps,
         version: current.version + 1,
       };
     const reviewId = randomUUID();
@@ -526,7 +538,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         current.id,
         current.place_id,
         now.toISOString(),
-        localDay(now),
+        studyDay(now),
         grade,
         a.result.correct === null ? null : a.result.correct ? 1 : 0,
         current.state === 0 ? 1 : 0,
@@ -568,7 +580,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         )
         .all(),
       active = cs.filter((c) => !c.suspended && !ps.get(c.place_id)?.archived),
-      today = history.find((d) => d.day === localDay(clock()));
+      today = history.find((d) => d.day === studyDay(clock()));
     return {
       places: [...ps.values()].filter((p) => !p.archived).length,
       cards: cs.length,
@@ -732,7 +744,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
           r.card_id,
           r.place_id,
           r.at,
-          r.day,
+          studyDay(new Date(r.at)),
           r.grade,
           r.correct,
           r.is_new,
@@ -770,7 +782,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     undo,
     stats,
     analytics: (filters) =>
-      analytics(db, places(), cards(), filters, localDay(clock())),
+      analytics(db, places(), cards(), filters, studyDay(clock())),
     studyLog: studyLog.list,
     exportData,
     restore,

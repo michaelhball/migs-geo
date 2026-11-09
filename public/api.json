@@ -611,6 +611,7 @@
       "post": {
         "operationId": "checkAnswer",
         "summary": "Check/reveal; return answer geometry and next intervals",
+        "description": "Each interval includes rating, due, seconds, and days. days is the whole study-day interval for reviews, or null for short learning steps. Study days start at 04:00 in the server local timezone.",
         "responses": {
           "200": {
             "description": "Success",

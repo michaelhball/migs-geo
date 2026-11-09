@@ -8,7 +8,8 @@ import {
 } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { createStore, localDay } from "./store.mjs";
+import { createStore } from "./store.mjs";
+import { studyDay } from "./study-day.mjs";
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url))),
   host = process.env.GEO_HOST || "127.0.0.1";
 let port = Number(process.env.PORT || 4387);
@@ -34,7 +35,7 @@ const store = createStore(
   path.join(runtime, "geography.sqlite"),
   JSON.parse(readFileSync(path.join(root, "data/places.json"), "utf8")),
 );
-store.backup(path.join(runtime, "backups", `${localDay()}-startup.sqlite`));
+store.backup(path.join(runtime, "backups", `${studyDay()}-startup.sqlite`));
 const vite = process.argv.includes("--dev")
   ? await (
       await import("vite")
@@ -162,7 +163,7 @@ async function api(req, res, url) {
   if (p === "/api/backup" && m === "GET") {
     res.setHeader(
       "Content-Disposition",
-      `attachment; filename="migs-geo-${localDay()}.json"`,
+      `attachment; filename="migs-geo-${studyDay()}.json"`,
     );
     return json(res, store.exportData());
   }
