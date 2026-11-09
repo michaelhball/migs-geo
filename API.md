@@ -70,7 +70,7 @@ For a naming question, use `"answer":{"text":"France"}`. To reveal, use `"answer
 | --- | --- | --- |
 | GET | `/api/queue` | Current counts, next card ID, next learning time |
 | GET | `/api/stats` | Counts, daily review history, recall ratings |
-| GET | `/api/analytics` | First-try recall, actual interval buckets, daily activity, difficult cards, classifications, and wrong-answer patterns; optional `from`, `to` (inclusive local YYYY-MM-DD dates) and `cardId` |
+| GET | `/api/analytics` | First-try recall, actual interval buckets, daily activity, difficult cards, classifications, and wrong-answer patterns; optional `from`, `to` (inclusive local YYYY-MM-DD dates) and `cardId`. A `cardId` filter also returns chronological `history` with ratings, first answers, and actual/planned intervals, including legacy reviews with unknown first answers. |
 | GET | `/api/reviews` | Review history, including undone records |
 | POST | `/api/reviews/undo` | Undo the last active review; preserve an audit record |
 | GET | `/api/study/log` | Persistent attempts and ordered answer checks; `cardId`, `limit` (1–500), `offset`, and `includePractice=true` filters |

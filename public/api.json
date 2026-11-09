@@ -1112,7 +1112,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Active scheduled reviews with summary, newCards, returns, intervals, daily, cards, byMode, byKind, byRegion, byTag, byStage, byPreviousRating, confusions, mapErrors, and measurement definitions. Percentages are null when no eligible measurements exist.",
+            "description": "Active scheduled reviews with summary, newCards, returns, intervals, daily, cards, byMode, byKind, byRegion, byTag, byStage, byPreviousRating, confusions, mapErrors, and measurement definitions. Percentages are null when no eligible measurements exist. With cardId, chronological history also includes ratings, first answers, actual/planned intervals, and legacy reviews with null first answers.",
             "content": {
               "application/json": {
                 "schema": {

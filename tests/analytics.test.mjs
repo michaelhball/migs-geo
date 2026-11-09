@@ -66,6 +66,11 @@ test("retention buckets use actual elapsed time, including early learning", () =
   assert.equal(a.byPreviousRating.find((x) => x.id === 3).reviews, 1);
   assert.equal(a.summary.reviews, 2);
   assert.equal(a.returns.reviews, 1);
+  const history = s.analytics({ cardId: q.card.id }).history;
+  assert.equal(history.length, 2);
+  assert.equal(history[1].intervalSeconds, 35);
+  assert.equal(history[1].first.correct, true);
+  assert.equal(history[1].answer.text, "Alpha");
   advance(2 * 86400000);
   s.updateCard(q.card.id, {
     due: new Date("2026-11-11T09:00:00Z").toISOString(),
@@ -120,6 +125,9 @@ test("legacy reviews retain ratings and interval history without invented first 
   assert.equal(a.summary.medianResponseMs, null);
   assert.equal(a.summary.ratedRecall, 100);
   assert.equal(a.cards[0].reviews, 1);
+  const history = s.analytics({ cardId: a.cards[0].id }).history;
+  assert.equal(history[0].first, null);
+  assert.equal(history[0].rating, 3);
   s.db.close();
 });
 

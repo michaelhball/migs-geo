@@ -213,6 +213,23 @@ export function analytics(db, places, cards, { from, to, cardId } = {}, today) {
     byPreviousRating: grouped(rows, (r) => r.previous_rating),
     daily: grouped(rows, (r) => r.day).sort((a, b) => a.id.localeCompare(b.id)),
     cards: byCard,
+    ...(cardId
+      ? {
+          history: rows.map((r) => ({
+            id: r.id,
+            at: r.at,
+            rating: r.grade,
+            stage: r.stage,
+            first: r.first,
+            answer: r.answer,
+            intervalSeconds: r.intervalSeconds,
+            scheduledIntervalSeconds: r.scheduledIntervalSeconds,
+            responseMs: r.response_ms,
+            checks: r.check_count,
+            previousRating: r.previous_rating,
+          })),
+        }
+      : {}),
     confusions: [...confusions.values()]
       .sort((a, b) => b.count - a.count)
       .slice(0, 100),
