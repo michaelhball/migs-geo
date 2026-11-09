@@ -34,6 +34,7 @@ Docker is also supported: `docker compose up --build -d --wait`. See [DEPLOYMENT
 - Search, edit, add, pause, and resume places. Exact polygon editing is available through the API; the UI can add self-graded point locations.
 - SQLite persistence, automatic daily startup snapshots, JSON export, and atomic restore.
 - Persistent study logs preserve first answers, later checks, reveals, timings, ratings, and the context of each attempt. Logs stay in the private local database and are included in backups.
+- Statistics show first-try recall by actual elapsed interval, daily activity, patterns by direction and geography, difficult cards, and individual review history. Earlier reviews retain their ratings without guessing missing first answers.
 - A complete local JSON API, OpenAPI discovery, and CLI. See [API.md](API.md).
 
 This is a separate app, not an Anki client. It imports public place names and notes into its own data model and starts a fresh schedule. Anki review history and scheduling formats are not used, and the original Anki collection is never modified.

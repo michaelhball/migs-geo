@@ -18,6 +18,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { Atlas } from "./Map";
+import { Statistics } from "./Statistics";
 import "./style.css";
 async function api(route: string, method = "GET", data?: any) {
   const r = await fetch("/api" + route, {
@@ -291,8 +292,16 @@ function App() {
           {["study", "browse", "settings"].map((t) => (
             <button
               key={t}
-              aria-current={tab === t ? "page" : undefined}
-              className={tab === t ? "active" : ""}
+              aria-current={
+                tab === t || (tab === "statistics" && t === "study")
+                  ? "page"
+                  : undefined
+              }
+              className={
+                tab === t || (tab === "statistics" && t === "study")
+                  ? "active"
+                  : ""
+              }
               onClick={() => {
                 setTab(t);
                 setError("");
@@ -341,6 +350,12 @@ function App() {
                   <span className="subtle">{stats.today} reviewed today</span>
                 </div>
                 <div className="counts">
+                  <button
+                    className="statistics-button"
+                    onClick={() => setTab("statistics")}
+                  >
+                    Statistics
+                  </button>
                   <span>
                     <i className="dot new" />
                     {question?.counts?.new ?? stats.counts.new} new
@@ -624,6 +639,13 @@ function App() {
                 </button>
               </div>
             </main>
+          )}
+          {tab === "statistics" && (
+            <Statistics
+              api={api}
+              onBack={() => setTab("study")}
+              onOpenPlace={openPlace}
+            />
           )}
           {tab === "browse" && (
             <main className="browse-page">
@@ -1050,6 +1072,12 @@ function App() {
               </section>
               <section className="settings-section">
                 <h2>Progress</h2>
+                <button
+                  className="text-button"
+                  onClick={() => setTab("statistics")}
+                >
+                  View statistics
+                </button>
                 <div className="progress-stats">
                   <div>
                     <strong>{stats.reviews}</strong>
