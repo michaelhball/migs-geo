@@ -49,6 +49,7 @@ def subpolys(fs,box):
 
 land=read('map-units');marine=read('marine');lakes=read('lakes');regions=read('regions');disputed=read('disputed')
 notes=json.loads((ROOT/'data/notes.json').read_text())
+answer_aliases=json.loads((ROOT/'data/answer-aliases.json').read_text())
 aliases={'Sahrawi Arab Democratic Republic':'Western Sahara','Gulf of California':'Golfo de California','Saint Martin':'Saint-Martin','Czech Republic':'Czechia','Balkan Peninsula':'Balkans'}
 grouped={'United Kingdom':['England','Scotland','Wales','Northern Ireland'],'Belgium':['Flemish Region','Walloon Region','Brussels'],'Palestine':['Gaza','West Bank'],'Antigua and Barbuda':['Antigua','Barbuda'],'Akrotiri and Dhekelia':['Akrotiri','Dhekelia'],'Pacific Ocean':['North Pacific Ocean','South Pacific Ocean'],'Atlantic Ocean':['North Atlantic Ocean','South Atlantic Ocean'],'Aral Sea':['North Aral Sea','South Aral Sea']}
 boxes={'Canary Islands':('Spain',[-19,27,-13,30]),'Hawaii':('United States of America',[-161,18,-154,23]),'Alaska':('United States of America',[-180,50,-129,73]),'Kaliningrad Oblast':('Russia',[19,54,23,56]),'Jeju':('South Korea',[126,33,127,34])}
@@ -90,6 +91,7 @@ for n in notes:
         if label.get('label_x') is not None and len(fs)==1:center=[label['label_x'],label['label_y']]
     alias=[aliases[name]] if name in aliases else []
     alias+= {'United States of America':['United States','USA','US'],'United Kingdom':['UK','Britain'],'Turkey':['Türkiye'],'Czech Republic':['Czechia'],'Ivory Coast':["Côte d’Ivoire","Cote d'Ivoire"],'Cape Verde':['Cabo Verde'],'East Timor':['Timor-Leste'],'Federated States of Micronesia':['Micronesia'],'Sahrawi Arab Democratic Republic':['Western Sahara'],'The Bahamas':['Bahamas'],'The Gambia':['Gambia'],'Russia':['Russian Federation']}.get(name,[])
+    alias+=answer_aliases.get(n['id'],[])
     deck.append({**n,'kind':kind,'geometry':g,'center':center,'approximate':approximate,'source':source,'small':not water and size<.2,'aliases':alias,'region':next((t[4:].replace('_',' ') for t in n['tags'] if t in ['UG::Europe','UG::Asia','UG::Africa','UG::North_America','UG::South_America','UG::Oceania']), 'World')})
 base={'type':'FeatureCollection','features':[{'type':'Feature','properties':{'name':props(f).get('name_long') or props(f).get('name')},'geometry':compact(f['geometry'])} for f in land]}
 (ROOT/'public/data/world.json').write_text(json.dumps(base,separators=(',',':')))

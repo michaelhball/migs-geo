@@ -1,0 +1,16 @@
+{
+  "northern-cyprus": ["North Cyprus"],
+  "northern-mariana-islands": ["North Mariana Islands", "Northern Marianas"],
+  "democratic-republic-of-the-congo": ["DRC", "DR Congo", "Congo-Kinshasa"],
+  "republic-of-the-congo": ["Congo-Brazzaville"],
+  "united-states-virgin-islands": ["US Virgin Islands"],
+  "federated-states-of-micronesia": ["FSM"],
+  "falkland-islands": ["Falklands"],
+  "canary-islands": ["Canaries"],
+  "faroe-islands": ["Faroes"],
+  "cayman-islands": ["Caymans"],
+  "solomon-islands": ["Solomons"],
+  "marshall-islands": ["Marshalls"],
+  "turks-and-caicos-islands": ["Turks and Caicos"],
+  "aland-islands": ["Åland"]
+}
