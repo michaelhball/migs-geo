@@ -191,6 +191,23 @@ test("SQLite survives restart, and a restore is not overwritten by seed data", (
     rmSync(dir, { recursive: true, force: true });
   }
 });
+test("regions are included by default and can still be filtered by place type", () => {
+  const s = createStore(":memory:", [{ ...seed[0], kind: "region" }]);
+  const q = s.question();
+  assert.ok(q.card, "A region is eligible without changing settings.");
+  s.check(q.token, { reveal: true });
+  s.review(q.token, 4);
+  assert.equal(s.getCard(q.card.id).reps, 1);
+  s.setSettings({ kinds: ["country"], burySiblings: false });
+  assert.equal(s.question().card, null);
+  s.setSettings({ kinds: ["region"] });
+  assert.ok(
+    s.question().card,
+    "Re-enabling regions includes the reverse card.",
+  );
+  s.db.close();
+});
+
 test("filters, validation, and custom point locations work through the store", () => {
   const { store: s } = setup();
   assert.throws(() => s.setSettings({ modes: [] }));

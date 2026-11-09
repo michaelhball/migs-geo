@@ -9,7 +9,7 @@ import { migrate, schemaVersion } from "./migrations.mjs";
 export const defaults = {
   newPerDay: 15,
   retention: 0.9,
-  kinds: ["country", "territory", "water"],
+  kinds: ["country", "territory", "water", "region"],
   regions: [],
   modes: ["locate", "identify"],
   burySiblings: true,

@@ -33,7 +33,7 @@ const kindNames: any = {
   country: "Country",
   territory: "Territory / island",
   water: "Body of water",
-  region: "Region",
+  region: "Region / continent",
 };
 const states = ["New", "Learning", "Review", "Relearning"];
 function interval(seconds: number) {
@@ -390,7 +390,7 @@ function App() {
                             ? "Ready to study"
                             : "Nothing due right now"}
                         </h2>
-                        <p>Countries, territories, and bodies of water.</p>
+                        <p>Countries, territories, water, and regions.</p>
                         <div className="session-summary">
                           <div>
                             <span>Due reviews</span>
@@ -1014,7 +1014,12 @@ function App() {
                   </div>
                 </div>
                 <div className="setting-row">
-                  <span>Place types</span>
+                  <span>
+                    Place types
+                    <small>
+                      Regions include continents and areas such as Scandinavia.
+                    </small>
+                  </span>
                   <div className="checkbox-stack">
                     {Object.entries(kindNames).map(([key, label]) => (
                       <label key={key}>
@@ -1038,8 +1043,8 @@ function App() {
                 </div>
                 <div className="setting-row">
                   <span>
-                    Regions
-                    <small>All selected when no filter is checked.</small>
+                    Parts of the world
+                    <small>Leave empty to study the whole world.</small>
                   </span>
                   <div className="checkbox-stack">
                     {[...new Set(places.map((p) => p.region))]
