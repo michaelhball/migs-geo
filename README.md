@@ -30,7 +30,7 @@ Docker is also supported: `docker compose up --build -d --wait`. See [DEPLOYMENT
 - Map → place questions start with surrounding countries and water in view. Use “Show highlighted place” for a closer look.
 - Trackpad scrolling and pinch gestures zoom continuously around the pointer.
 - The background map uses cached levels of detail for faster rendering; question outlines and answer checking retain their original geometry.
-- Practice without changing your review schedule.
+- All study sessions in the interface save progress. Unscheduled practice controls are hidden.
 - Search, edit, add, pause, and resume places. Exact polygon editing is available through the API; the UI can add self-graded point locations.
 - SQLite persistence, automatic daily startup snapshots, JSON export, and atomic restore.
 - A complete local JSON API, OpenAPI discovery, and CLI. See [API.md](API.md).

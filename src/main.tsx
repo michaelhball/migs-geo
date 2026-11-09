@@ -59,7 +59,6 @@ function App() {
     [result, setResult] = useState<any>(null),
     [point, setPoint] = useState<number[] | null>(null),
     [text, setText] = useState(""),
-    [practice, setPractice] = useState(false),
     [busy, setBusy] = useState(false),
     [error, setError] = useState(""),
     [notice, setNotice] = useState("");
@@ -122,20 +121,15 @@ function App() {
     );
     return () => clearTimeout(t);
   }, [question, tab]);
-  async function next(isPractice = practice, placeId?: string) {
-    const q = await api("/study/next", "POST", {
-      practice: isPractice,
-      ...(placeId ? { placeId } : {}),
-      ...(placeId ? { mode: "locate" } : {}),
-    });
+  async function next() {
+    const q = await api("/study/next", "POST", {});
     setQuestion(q);
     setResult(null);
     setPoint(null);
     setText("");
-    setPractice(isPractice);
     setTab("study");
   }
-  const start = (p = false, id?: string) => run(() => next(p, id));
+  const start = () => run(() => next());
   const check = (reveal = false) =>
     run(async () => {
       setResult(
@@ -152,7 +146,7 @@ function App() {
   const rate = (rating: number) =>
     run(async () => {
       await api("/study/rate", "POST", { token: question.token, rating });
-      await next(practice);
+      await next();
       await refresh();
     });
   useEffect(() => {
@@ -192,7 +186,7 @@ function App() {
   const undo = () =>
     run(async () => {
       await api("/reviews/undo", "POST", {});
-      await next(false);
+      await next();
       await refresh();
       setNotice("Last review undone.");
     });
@@ -344,11 +338,7 @@ function App() {
               <div className="page-heading">
                 <div>
                   <h1>Study</h1>
-                  <span className="subtle">
-                    {practice && question
-                      ? "Practice · progress is not changed"
-                      : `${stats.today} reviewed today`}
-                  </span>
+                  <span className="subtle">{stats.today} reviewed today</span>
                 </div>
                 <div className="counts">
                   <span>
@@ -406,16 +396,9 @@ function App() {
                         <button
                           className="primary full"
                           disabled={busy || !totalDue}
-                          onClick={() => start(false)}
+                          onClick={start}
                         >
                           Start studying <ArrowRight size={17} />
-                        </button>
-                        <button
-                          className="secondary full"
-                          disabled={busy}
-                          onClick={() => start(true)}
-                        >
-                          Practice without scheduling
                         </button>
                       </div>
                       <div className="panel-foot">
@@ -450,16 +433,9 @@ function App() {
                             : "No more cards are due in your current selection."}
                         </p>
                         <button
-                          className="primary full"
-                          onClick={() => start(true)}
-                        >
-                          Practice without scheduling
-                        </button>
-                        <button
                           className="secondary full"
                           onClick={() => {
                             setQuestion(null);
-                            setPractice(false);
                           }}
                         >
                           Back to study
@@ -470,11 +446,7 @@ function App() {
                     <>
                       <div className="panel-content">
                         <div className="card-meta">
-                          <span>
-                            {practice
-                              ? "Practice"
-                              : states[question.card.state]}
-                          </span>
+                          <span>{states[question.card.state]}</span>
                           <span>{kindNames[question.card.kind]}</span>
                         </div>
                         {!result ? (
@@ -599,18 +571,15 @@ function App() {
                                       <kbd>{i + 1}</kbd>
                                     </span>
                                     <small>
-                                      {practice
-                                        ? "Practice"
-                                        : interval(result.intervals[i].seconds)}
+                                      {interval(result.intervals[i].seconds)}
                                     </small>
                                   </button>
                                 ),
                               )}
                             </div>
                             <p className="small-note">
-                              {practice
-                                ? "Practice does not affect your schedule."
-                                : "Use Again for a forgotten answer. Your rating sets the next review."}
+                              Use Again for a forgotten answer. Your rating sets
+                              the next review.
                             </p>
                           </>
                         )}
@@ -633,7 +602,6 @@ function App() {
                             setQuestion(null);
                             setResult(null);
                             setPoint(null);
-                            setPractice(false);
                           }}
                         >
                           End session
@@ -890,12 +858,6 @@ function App() {
                                 ))}
                             </div>
                             <div className="detail-actions">
-                              <button
-                                className="primary"
-                                onClick={() => start(true, selected.id)}
-                              >
-                                Practice this place
-                              </button>
                               <button
                                 className="secondary"
                                 disabled={busy}

@@ -81,7 +81,7 @@ FSRS-6, through the pinned `ts-fsrs` dependency. Default target retention: 90%; 
 
 After new cards, due learning and review cards are mixed in a shuffled queue. Review cards due at any time today are eligible. When those queues are empty, learning and relearning cards due within the next 10 minutes can be studied immediately. These early repeats are shuffled after each rating and avoid repeating the same place back-to-back when another is available. `counts.learning` includes these available short-step cards. Queue reads do not change due dates; FSRS uses the actual rating time. Long-term reviews and learning cards scheduled more than 10 minutes ahead remain scheduled. No daily review cap. By default, the reverse of a place studied today waits until tomorrow. Both directions keep separate scheduling state. The daily counter uses the server computer's local timezone and resets at midnight.
 
-Practice, browsing, checks, and answer reveals do not change the schedule. Only a rating on a scheduled question does. Review dates and memory states persist across restarts. Suspended cards and archived places are excluded from scheduled study. Practice can intentionally include paused cards.
+Browsing, checks, and answer reveals do not change the schedule. Only a rating on a scheduled question does. Review dates and memory states persist across restarts. Suspended cards and archived places are excluded from scheduled study. Unscheduled practice is not exposed in the interface; explicit API practice requests remain available for testing and can intentionally include paused cards without changing progress.
 
 ## Direct data access
 
