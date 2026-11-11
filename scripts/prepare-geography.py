@@ -47,6 +47,33 @@ def subpolys(fs,box):
             if x1<x<x2 and y1<y<y2: result.append({'geometry':{'type':'Polygon','coordinates':poly}})
     return result
 
+def pacific_extent(fs):
+    """Generalized study envelope, including water between the region's islands.
+
+    Work in 0–360 longitude so the hull crosses the Pacific, then split it at
+    the date line to retain valid GeoJSON and point-in-polygon checking.
+    """
+    points=sorted({(x if x>=0 else x+360,y) for f in fs for poly in polygons(f) for x,y,*_ in poly[0]})
+    def cross(o,a,b): return (a[0]-o[0])*(b[1]-o[1])-(a[1]-o[1])*(b[0]-o[0])
+    def half(points):
+        out=[]
+        for p in points:
+            while len(out)>=2 and cross(out[-2],out[-1],p)<=0: out.pop()
+            out.append(p)
+        return out
+    hull=half(points)[:-1]+half(reversed(points))[:-1]
+    def clip(east):
+        result=[]
+        for a,b in zip(hull[-1:]+hull[:-1],hull):
+            inside_a=a[0]>=180 if east else a[0]<=180
+            inside_b=b[0]>=180 if east else b[0]<=180
+            if inside_a!=inside_b:
+                result.append((180,a[1]+(b[1]-a[1])*(180-a[0])/(b[0]-a[0])))
+            if inside_b: result.append(b)
+        ring=[[round(x-360 if east else x,5),round(y,5)] for x,y in result]
+        return [ring+[ring[0]]]
+    return {'type':'MultiPolygon','coordinates':[clip(False),clip(True)]}
+
 land=read('map-units');marine=read('marine');lakes=read('lakes');regions=read('regions');disputed=read('disputed')
 notes=json.loads((ROOT/'data/notes.json').read_text())
 answer_aliases=json.loads((ROOT/'data/answer-aliases.json').read_text())
@@ -56,12 +83,17 @@ boxes={'Canary Islands':('Spain',[-19,27,-13,30]),'Hawaii':('United States of Am
 region_names={'European Union','Scandinavia','Balkan Peninsula','Polynesia','Melanesia','Micronesia','Europe','Asia','Africa','North America','South America','Oceania','Antarctica'}
 # Broad cultural regions have no single agreed boundary. These are explicit,
 # approximate study extents and are self-graded, never precise auto-grading.
-approx={'Polynesia':[-150,-10,3500],'Melanesia':[161,-10,2400],'Micronesia':[152,10,2400],'Scandinavia':[16,64,900],'Oceania':[155,-18,6000], 'Bering Strait':[-168.9,65.9,100], 'Celtic Sea':[-7.5,50,280]}
+approx={'Polynesia':[-150,-10,3500],'Melanesia':[161,-10,2400],'Micronesia':[152,10,2400],'Scandinavia':[16,64,900], 'Bering Strait':[-168.9,65.9,100], 'Celtic Sea':[-7.5,50,280]}
 deck=[]
 for n in notes:
     name=n['name'];water='UG::Oceans+Seas' in n['tags'];kind='water' if water else 'region' if name in region_names else 'country' if 'UG::Sovereign_State' in n['tags'] else 'territory'
     fs=[];source='Natural Earth 1:10m';g=None;approximate=False
-    if name in grouped:
+    if name=='Oceania':
+        fs=[f for part in ['Australia','Melanesia','Micronesia','Polynesia'] for f in match(regions,part)]
+        if len(fs)!=4: raise ValueError('Missing source region for Oceania')
+        g=pacific_extent(fs)
+        source='Generalized study extent enclosing Natural Earth Australia, Melanesia, Micronesia and Polynesia, including intervening ocean'
+    elif name in grouped:
         pool=marine+lakes if water else land
         fs=[f for part in grouped[name] for f in match(pool,part)]
     elif name in boxes:
@@ -78,7 +110,7 @@ for n in notes:
         fs=match(pool,name) or match(pool,aliases.get(name,name))
         if not fs and not water:fs=match(regions,name)
     if not fs and name not in approx:fs=match(land,name) or match(regions,name)
-    if fs:g=compact(geometry(fs))
+    if fs and not g:g=compact(geometry(fs))
     if not fs and name in approx:
         lon,lat,radius=approx[name];approximate=True;g={'type':'Point','coordinates':[lon,lat]};source='Approximate study location (self-graded)'
     if not g:raise ValueError('Unmapped: '+name)

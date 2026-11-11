@@ -444,7 +444,31 @@ test("all 319 imported places have usable geometry and unique independent IDs", 
   assert.equal(atlas.length, 319);
   assert.equal(new Set(atlas.map((p) => p.id)).size, 319);
   for (const p of atlas) validateGeometry(p.geometry);
-  assert.equal(atlas.filter((p) => p.approximate).length, 3);
+  assert.equal(atlas.filter((p) => p.approximate).length, 2);
+});
+test("Oceania covers its land and intervening ocean on both sides of the date line", () => {
+  const p = atlas.find((p) => p.id === "oceania");
+  assert.equal(p.geometry.type, "MultiPolygon");
+  assert.equal(p.approximate, false);
+  for (const [point, expected] of [
+    [[134, -25], true], // Australia
+    [[115.86, -31.95], true], // Perth
+    [[147.33, -42.88], true], // Tasmania
+    [[174.78, -41.29], true], // Wellington
+    [[168.35, -46.41], true], // Southern New Zealand
+    [[162, -32.5], true], // Tasman Sea, east of Australia
+    [[147.18, -9.48], true], // Papua New Guinea
+    [[171.38, 7.09], true], // Marshall Islands
+    [[-157.86, 21.31], true], // Hawaii
+    [[-149.56, -17.55], true], // Tahiti
+    [[-109.35, -27.12], true], // Easter Island
+    [[179.9, -20], true], [[-179.9, -20], true], // Date-line seam
+    [[106.85, -6.2], false], // Jakarta
+    [[120.98, 14.6], false], // Manila
+    [[139.69, 35.68], false], // Tokyo
+    [[-70.67, -33.45], false], // Chile
+    [[0, 0], false], // No accidental polygon across the rest of the world
+  ]) assert.equal(checkAnswer(p, "locate", { point }).correct, expected, point.join(","));
 });
 test("Balkan Peninsula is a regional outline and accepts its common name", () => {
   const p = atlas.find((p) => p.id === "balkan-peninsula");

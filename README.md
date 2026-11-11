@@ -65,7 +65,7 @@ The application uses a canvas map renderer and caches place data in memory. SQLi
 
 ## Map limitations
 
-Natural Earth is a generalized 1:10m atlas. Coastlines and borders are not survey-level data. Its disputed-boundary conventions may differ from other atlases. Three places use approximate, self-graded markers: Celtic Sea, Bering Strait, and Oceania. The Balkan Peninsula uses Natural Earth's regional outline, covering the peninsula across country borders; both “Balkan Peninsula” and “Balkans” are accepted names. Small places allow a 3 km near-boundary tolerance. Larger regions and oceans may overlap smaller features by design. Correctness feedback is a study aid; your recall rating controls the schedule.
+Natural Earth is a generalized 1:10m atlas. Coastlines and borders are not survey-level data. Its disputed-boundary conventions may differ from other atlases. Two places use approximate, self-graded markers: Celtic Sea and Bering Strait. Oceania uses a generalized study extent covering Australia, New Zealand, Melanesia, Micronesia, Polynesia, and the water between them. This is a study boundary, not an official border. The Balkan Peninsula uses Natural Earth's regional outline, covering the peninsula across country borders; both “Balkan Peninsula” and “Balkans” are accepted names. Small places allow a 3 km near-boundary tolerance. Larger regions and oceans may overlap smaller features by design. Correctness feedback is a study aid; your recall rating controls the schedule.
 
 To regenerate map assets, first download the public source geometry:
 
