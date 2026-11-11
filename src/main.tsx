@@ -400,6 +400,7 @@ function App() {
                   }
                   onSelect={setPoint}
                   name={result?.place.name}
+                  kind={question?.card?.kind}
                   revealed={!!result}
                   correct={result?.correct}
                   resetKey={question?.token || "home"}
@@ -854,6 +855,7 @@ function App() {
                         geometry={selected?.geometry}
                         center={selected?.center}
                         name={selected?.name}
+                        kind={selected?.kind}
                         explore
                         resetKey={selected?.id}
                       />

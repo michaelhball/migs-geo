@@ -19,6 +19,7 @@ type Props = {
   active?: boolean;
   explore?: boolean;
   name?: string;
+  kind?: string;
   resetKey?: string;
   revealed?: boolean;
   correct?: boolean | null;
@@ -68,6 +69,20 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
       return;
     }
     const polys = g.type === "Polygon" ? [g.coordinates] : g.coordinates;
+    const allBounds = L.latLngBounds(
+      polys.flatMap((p: number[][][]) =>
+        p[0].map((c) => [c[1], c[0]] as L.LatLngTuple),
+      ),
+    );
+    // Pacific regions span the date-line edges of this world map. Show both
+    // sides together instead of cropping away half of the highlighted region.
+    if (
+      latest.current.kind === "region" &&
+      allBounds.getEast() - allBounds.getWest() > 180
+    ) {
+      m.fitBounds(allBounds, { padding: [32, 32], animate: false });
+      return;
+    }
     // Frame the largest component so overseas territories and the date line do not
     // force a distant world-wide view. Every component is still rendered.
     const ring = polys
