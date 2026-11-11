@@ -11,6 +11,7 @@ import { studyDay, nextStudyDay, scheduleStudyDay } from "./study-day.mjs";
 
 export const defaults = {
   newPerDay: 15,
+  reviewsPerDay: 200,
   retention: 0.9,
   kinds: ["country", "territory", "water", "region"],
   regions: [],
@@ -59,8 +60,11 @@ export function validateGeometry(g) {
   return g;
 }
 export function validateSettings(s) {
+  s = { reviewsPerDay: defaults.reviewsPerDay, ...s };
   if (!Number.isInteger(s.newPerDay) || s.newPerDay < 0 || s.newPerDay > 500)
     throw Error("New cards per day must be 0–500.");
+  if (!Number.isInteger(s.reviewsPerDay) || s.reviewsPerDay < 0 || s.reviewsPerDay > 5000)
+    throw Error("Reviews per day must be 0–5000.");
   if (!Number.isFinite(s.retention) || s.retention < 0.7 || s.retention > 0.97)
     throw Error("Retention must be 0.70–0.97.");
   if (
@@ -218,7 +222,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     }
   };
   const settings = () =>
-    parse(db.prepare("SELECT data FROM settings WHERE id=1").get().data);
+    ({ ...defaults, ...parse(db.prepare("SELECT data FROM settings WHERE id=1").get().data) });
   const scheduler = () =>
     fsrs({
       request_retention: settings().retention,
@@ -347,6 +351,12 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         .all(day),
       seenPlaces = new Set(today.map((r) => r.place_id)),
       seenCards = new Set(today.map((r) => r.card_id));
+    // Count long-term review cards once. New cards and short learning or
+    // relearning steps do not use this allowance, including after a lapse.
+    const reviewed = new Set(
+      today.filter((r) => parse(r.before_card).state === 2).map((r) => r.card_id),
+    ).size;
+    const reviewRemaining = Math.max(0, s.reviewsPerDay - reviewed);
     const ps = new Map(places().map((p) => [p.id, p]));
     const allCards = cards();
     const eligible = allCards.filter((c) => {
@@ -366,7 +376,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     const review = eligible
       .filter((c) => c.state === 2 && c.due < +end && !seenCards.has(c.id))
       .sort((a, b) => a.due - b.due);
-    const due = [...learning, ...review].sort((a, b) =>
+    const due = [...learning, ...(reviewRemaining ? review : [])].sort((a, b) =>
       shuffleRank(a.id, day).localeCompare(shuffleRank(b.id, day)),
     );
     const fresh = eligible
@@ -421,8 +431,14 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
       counts: {
         new: Math.min(remaining, newCount),
-        review: review.length,
+        review: Math.min(review.length, reviewRemaining),
         learning: learning.length + early.length,
+      },
+      reviewLimit: {
+        limit: s.reviewsPerDay,
+        reviewed,
+        remaining: reviewRemaining,
+        deferred: Math.max(0, review.length - reviewRemaining),
       },
       nextLearningAt: waiting[0]
         ? new Date(waiting[0].due).toISOString()
@@ -451,6 +467,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         counts: q.counts,
         nextLearningAt: q.nextLearningAt,
         nextDayAt: q.nextDayAt,
+        reviewLimit: q.reviewLimit,
       };
     }
     const p = place(card.place_id),
@@ -517,6 +534,8 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       throw Error("This card changed in another session. Load it again.");
     if (current.suspended || place(current.place_id).archived)
       throw Error("This card is paused or archived.");
+    if (current.state === 2 && !queue().reviewLimit.remaining)
+      throw Error("Daily review limit reached. Raise it in Settings or continue after 4am.");
     const now = clock(),
       r = scheduler().next(hydrate(current.memory), now, grade),
       scheduled = scheduleStudyDay(r.card, now),
@@ -616,7 +635,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       !Array.isArray(data.reviews)
     )
       throw Error("This is not a supported Migs Geo backup.");
-    validateSettings(data.settings);
+    const restoredSettings = validateSettings(data.settings);
     const ids = new Set(data.places.map((p) => p.id));
     if (ids.size !== data.places.length) throw Error("Duplicate place IDs.");
     for (const p of data.places) {
@@ -754,7 +773,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
           r.undone ?? 0,
         );
       db.prepare("UPDATE settings SET data=? WHERE id=1").run(
-        encode(data.settings),
+        encode(restoredSettings),
       );
       studyLog.restore(logData);
     });

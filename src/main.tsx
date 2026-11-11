@@ -412,9 +412,14 @@ function App() {
                         <h2>
                           {totalDue
                             ? "Ready to study"
+                            : stats.reviewLimit?.deferred
+                              ? "Daily review limit reached"
                             : "Nothing due right now"}
                         </h2>
                         <p>Countries, territories, water, and regions.</p>
+                        {!totalDue && stats.reviewLimit?.deferred > 0 && (
+                          <p>{stats.reviewLimit.deferred} reviews are waiting. Continue after 4am, or raise the limit in Settings.</p>
+                        )}
                         <div className="session-summary">
                           <div>
                             <span>Reviews and learning</span>
@@ -459,11 +464,15 @@ function App() {
                         <h2>
                           {question.nextLearningAt
                             ? "Reviews are scheduled"
+                            : question.reviewLimit?.deferred
+                              ? "Daily review limit reached"
                             : "Done for now"}
                         </h2>
                         <p>
                           {question.nextLearningAt
                             ? `The next learning card is due at ${new Date(question.nextLearningAt).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}. This screen will update automatically.`
+                            : question.reviewLimit?.deferred
+                              ? `${question.reviewLimit.deferred} reviews are waiting. Continue after 4am, or raise the limit in Settings.`
                             : "No more cards are due in your current selection."}
                         </p>
                         <button
@@ -964,7 +973,7 @@ function App() {
                 </p>
                 <label className="setting-row">
                   <span>
-                    New cards per day<small>Due reviews are not limited.</small>
+                    New cards per day
                   </span>
                   <input
                     aria-label="New cards per day"
@@ -976,6 +985,24 @@ function App() {
                     onBlur={(e) => {
                       if (Number(e.target.value) !== settings.newPerDay)
                         saveSettings({ newPerDay: Number(e.target.value) });
+                    }}
+                  />
+                </label>
+                <label className="setting-row">
+                  <span>
+                    Reviews per day
+                    <small>Old cards due for review. Short learning repeats do not count.</small>
+                  </span>
+                  <input
+                    aria-label="Reviews per day"
+                    type="number"
+                    min="0"
+                    max="5000"
+                    defaultValue={settings.reviewsPerDay}
+                    key={"reviews" + settings.reviewsPerDay}
+                    onBlur={(e) => {
+                      if (Number(e.target.value) !== settings.reviewsPerDay)
+                        saveSettings({ reviewsPerDay: Number(e.target.value) });
                     }}
                   />
                 </label>

@@ -25,6 +25,7 @@ Docker is also supported: `docker compose up --build -d --wait`. See [DEPLOYMENT
 - 319 places from Ultimate Geography, with 638 independent cards: place → map and map → place.
 - Countries, territories/islands, bodies of water, and broader regions/continents enabled by default. No flags or capitals.
 - FSRS-6 scheduling: up to 15 new cards first each day, then due learning and reviews. Both groups are shuffled with a mix of question directions. Each direction has its own schedule, with recall ratings and undo.
+- Up to 200 old cards reviewed per day by default, adjustable in Settings. Short learning and relearning repeats do not count toward this limit; deferred reviews keep their due dates.
 - Study days run from 4am to 4am in the computer's local timezone. Late-night sessions count toward the previous day; day-based rating intervals are shown as whole days.
 - When the regular queue is empty, short learning steps return immediately so you can finish the session without waiting for a timer.
 - Checked answers are green when correct, red when incorrect or revealed, and neutral for self-graded locations. Checking an answer leaves the map and your selection in place.

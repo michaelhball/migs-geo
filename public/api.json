@@ -92,7 +92,8 @@
     "/api/queue": {
       "get": {
         "operationId": "queue",
-        "summary": "Eligible queue counts, next card, and next learning timestamp",
+        "summary": "Eligible queue counts, daily review allowance, next card, and next learning timestamp",
+        "description": "reviewLimit contains limit, reviewed, remaining, and deferred counts. Only distinct cards rated from the long-term review state consume the allowance; new cards and short learning/relearning steps do not. The allowance resets at local 04:00.",
         "responses": {
           "200": {
             "description": "Success",
@@ -854,6 +855,12 @@
                         "minimum": 0,
                         "maximum": 500
                       },
+                      "reviewsPerDay": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 5000,
+                        "default": 200
+                      },
                       "retention": {
                         "type": "number",
                         "minimum": 0.7,
@@ -1202,6 +1209,13 @@
             "type": "integer",
             "minimum": 0,
             "maximum": 500
+          },
+          "reviewsPerDay": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 5000,
+            "default": 200,
+            "description": "Distinct long-term review cards per local study day. New cards and short learning/relearning steps do not count. Zero pauses long-term reviews."
           },
           "retention": {
             "type": "number",

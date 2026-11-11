@@ -142,6 +142,10 @@ test(
       (await call("/settings", "PATCH", { newPerDay: -1 })).status,
       400,
     );
+    assert.equal((await call("/settings")).body.reviewsPerDay, 200);
+    assert.equal((await call("/settings", "PATCH", { reviewsPerDay: 2 })).body.reviewsPerDay, 2);
+    assert.equal((await call("/queue")).body.reviewLimit.limit, 2);
+    assert.equal((await call("/settings", "PATCH", { reviewsPerDay: -1 })).status, 400);
     assert.equal(
       (
         await call(

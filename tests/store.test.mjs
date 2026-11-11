@@ -114,6 +114,83 @@ test("new and due cards take priority over early learning repeats", () => {
   s.db.close();
 });
 
+test("daily review limit preserves deferred cards and resets at local 4am", () => {
+  const { store: s, setTime } = setup(4);
+  assert.equal(s.settings().reviewsPerDay, 200);
+  s.setSettings({ modes: ["locate"], reviewsPerDay: 2 });
+  const old = Array.from({ length: 3 }, () => answer(s, 4).q.card.id);
+  for (const id of old) s.updateCard(id, { due: "2026-11-10T10:00:00" });
+  s.setSettings({ newPerDay: 1 });
+  setTime("2026-11-10T10:00:00");
+  assert.equal(s.queue().counts.review, 2);
+  assert.equal(s.queue().reviewLimit.deferred, 1);
+  assert.equal(answer(s, 4).q.card.state, 0, "New cards still come first.");
+  assert.equal(s.queue().reviewLimit.remaining, 2, "New cards use their own limit.");
+  answer(s, 4);
+  answer(s, 4);
+  assert.equal(s.queue().counts.review, 0);
+  assert.equal(s.question().card, null);
+  assert.equal(s.question().reviewLimit.deferred, 1);
+  const deferred = old.find(id => s.getCard(id).due === +new Date("2026-11-10T10:00:00"));
+  assert.ok(deferred, "Deferred cards must not be rescheduled.");
+  const saved = s.exportData();
+  const restored = createStore(":memory:", [], () => new Date("2026-11-11T03:59:59"));
+  restored.restore(saved);
+  assert.equal(restored.queue().reviewLimit.remaining, 0);
+  assert.equal(restored.question().card, null);
+  restored.db.close();
+  s.undo();
+  assert.equal(s.queue().reviewLimit.remaining, 1, "Undo returns the allowance.");
+  answer(s, 4);
+  setTime("2026-11-11T03:59:59.999");
+  assert.equal(s.queue().reviewLimit.remaining, 0);
+  setTime("2026-11-11T04:00:00");
+  assert.equal(s.queue().reviewLimit.remaining, 2);
+  assert.equal(s.queue().counts.review, 1);
+  assert.equal(s.queue().next.id, deferred);
+  s.db.close();
+});
+
+test("a forgotten review can finish relearning after the daily review limit", () => {
+  const { store: s, setTime } = setup(2);
+  s.setSettings({ modes: ["locate"], reviewsPerDay: 1 });
+  const old = Array.from({ length: 2 }, () => answer(s, 4).q.card.id);
+  for (const id of old) s.updateCard(id, { due: "2026-11-10T10:00:00" });
+  setTime("2026-11-10T10:00:00");
+  const missed = answer(s, 1).q.card.id;
+  assert.equal(s.queue().reviewLimit.reviewed, 1);
+  assert.equal(s.queue().counts.review, 0);
+  assert.equal(s.queue().counts.learning, 1);
+  assert.equal(s.queue().next.id, missed);
+  answer(s, 3);
+  assert.equal(s.queue().reviewLimit.reviewed, 1);
+  assert.equal(s.question().card, null);
+  s.setSettings({ reviewsPerDay: 2 });
+  assert.equal(s.queue().counts.review, 1, "Raising the limit releases deferred reviews.");
+  const q = s.question();
+  s.check(q.token, { reveal: true });
+  s.setSettings({ reviewsPerDay: 1 });
+  assert.throws(() => s.review(q.token, 3), /Daily review limit/);
+  s.db.close();
+});
+
+test("older settings and backups default to 200 reviews without changing other settings", () => {
+  const { store: s } = setup();
+  const legacy = { ...s.settings(), newPerDay: 7 };
+  delete legacy.reviewsPerDay;
+  s.db.prepare("UPDATE settings SET data=?").run(JSON.stringify(legacy));
+  assert.equal(s.settings().reviewsPerDay, 200);
+  assert.equal(s.settings().newPerDay, 7);
+  const backup = s.exportData();
+  delete backup.settings.reviewsPerDay;
+  s.restore(backup);
+  assert.equal(s.settings().reviewsPerDay, 200);
+  assert.equal(s.settings().newPerDay, 7);
+  for (const reviewsPerDay of [-1, 1.5, 5001, null])
+    assert.throws(() => s.setSettings({ reviewsPerDay }), /Reviews per day/);
+  s.db.close();
+});
+
 test("early learning is bounded and respects paused cards and filters", () => {
   const { store: s } = setup(1);
   const id = answer(s, 1).q.card.id;
