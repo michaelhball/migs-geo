@@ -1,5 +1,5 @@
 import {
-  useEffect,
+  lazy, Suspense, useEffect,
   useRef,
   useState,
   forwardRef,
@@ -10,6 +10,9 @@ import "leaflet/dist/leaflet.css";
 import { trackpadZoom } from "./trackpadZoom";
 import { worldDetail } from "./worldDetail";
 import { Plus, Minus, Maximize, LocateFixed } from "lucide-react";
+
+import type { TerrainView } from "./Terrain";
+const Terrain = lazy(() => import("./Terrain"));
 
 type Props = {
   geometry?: any;
@@ -47,6 +50,8 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     latest = useRef(props);
   const [error, setError] = useState(""),
     [ready, setReady] = useState(false);
+  const [terrain, setTerrain] = useState<TerrainView | null>(null);
+  useEffect(() => { setTerrain(null); }, [props.resetKey]);
   latest.current = props;
   const tone =
     !props.revealed || props.correct === true
@@ -346,7 +351,14 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
         aria-label="Interactive world map. Drag to pan; scroll or use plus and minus to zoom."
         tabIndex={0}
       />
-      <div className="map-tools">
+      {props.explore && <button className="terrain-toggle" aria-pressed={!!terrain} onClick={() => {
+        const m = map.current;
+        if (terrain || !m) { setTerrain(null); return; }
+        const center = m.getCenter().wrap(), bounds = m.getBounds();
+        setTerrain({lon: center.lng, lat: center.lat, width: bounds.getEast() - bounds.getWest()});
+      }}>Terrain</button>}
+      {terrain && <Suspense fallback={<div className="terrain-panel">Loading terrain…</div>}><Terrain view={terrain} /></Suspense>}
+      <div className="map-tools" style={terrain ? {display:"none"} : undefined}>
         <button
           aria-label="Zoom in"
           title="Zoom in"

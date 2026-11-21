@@ -1210,3 +1210,11 @@ kbd {
     scroll-behavior: auto !important;
   }
 }
+
+.terrain-toggle { position: absolute; top: 14px; right: 14px; z-index: 850; background: white; border: 1px solid var(--line); padding: 7px 12px; border-radius: 6px; }
+.terrain-toggle[aria-pressed=true] { background: #315c48; color: white; }
+.terrain-panel { position: absolute; inset: 0; z-index: 800; background: #e5eff0; }
+.terrain-scene { position: absolute; inset: 0; }
+.terrain-scene canvas { display: block; touch-action: none; }
+.terrain-panel small { position: absolute; bottom: 5px; left: 7px; padding: 3px 6px; background: #fffffff0; font-size: 11px; }
+.terrain-panel p { position: absolute; inset: 38% 10% auto; text-align: center; }
