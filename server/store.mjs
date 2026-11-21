@@ -764,7 +764,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       for (const key of [
         "stability",
         "difficulty",
-        "elapsed_days",
+        ...(Object.hasOwn(c.memory, "elapsed_days") ? ["elapsed_days"] : []),
         "scheduled_days",
         "learning_steps",
         "lapses",

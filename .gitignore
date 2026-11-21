@@ -54,3 +54,6 @@ yarn-error.log*
 /backups/
 /.openai/
 /data/sources/*.geojson
+
+# Optional project-local Node.js distribution
+/.runtime/

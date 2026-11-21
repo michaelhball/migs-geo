@@ -1,5 +1,8 @@
 #!/bin/zsh
 cd -- "${0:A:h}"
+if [[ -x .runtime/bin/node ]]; then
+  export PATH="$PWD/.runtime/bin:$PATH"
+fi
 if ! command -v node >/dev/null 2>&1; then
   print 'Node.js 24 or newer is required. Install it from https://nodejs.org.'
   read '?Press Return to close.'
