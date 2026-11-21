@@ -1,17 +1,17 @@
-FROM node:24-bookworm-slim AS build
+FROM node:26.13.1-trixie-slim@sha256:e6bedef217677b276c591795e169840edd9096dbf13f29df8ef8d1856b8820bc AS build
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci --no-audit --no-fund
+RUN npm ci --ignore-scripts --no-audit --no-fund
 COPY index.html tsconfig.json vite.config.ts ./
 COPY src ./src
 COPY public ./public
 RUN npm run build
 
-FROM node:24-bookworm-slim AS runtime
+FROM node:26.13.1-trixie-slim@sha256:e6bedef217677b276c591795e169840edd9096dbf13f29df8ef8d1856b8820bc AS runtime
 ENV NODE_ENV=production PORT=4387 GEO_HOST=0.0.0.0 GEO_DATA_DIR=/data TZ=UTC
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci --omit=dev --no-audit --no-fund && npm cache clean --force
+RUN npm ci --ignore-scripts --omit=dev --no-audit --no-fund && npm cache clean --force
 COPY --from=build /app/dist ./dist
 COPY server ./server
 COPY data/places.json ./data/places.json

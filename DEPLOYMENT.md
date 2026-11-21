@@ -18,6 +18,8 @@ docker compose down
 
 `docker compose down` leaves the named `geography` volume intact. It contains `/data/geography.sqlite`, SQLite's WAL files, and `/data/backups/`. Avoid `docker compose down --volumes` unless you intentionally want to erase that collection.
 
+Compose runs with a read-only root filesystem, drops Linux capabilities and blocks privilege escalation. The data volume stays writable. Dependabot checks npm, the Docker base image and GitHub Actions weekly. CI checks npm advisories on each build.
+
 The image builds the frontend in a separate stage, installs production dependencies, runs as the unprivileged `node` user, and checks the API and SQLite every ten seconds. Compose publishes the app on this computer's loopback interface. No secrets or personal data enter the image; `.dockerignore` permits only the necessary source and public seed data.
 
 ## SQLite startup and upgrades

@@ -54,6 +54,9 @@ try {
   docker([
     "run",
     "--detach",
+    "--read-only",
+    "--cap-drop=ALL",
+    "--security-opt=no-new-privileges:true",
     "--name",
     name,
     "--mount",
