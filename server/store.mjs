@@ -499,6 +499,15 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     if (a.saved) throw Error("This question has already been rated.");
     const p = place(a.card.place_id);
     a.result = checkAnswer(p, a.card.mode, answer);
+    if (a.card.mode === "locate" && a.result.correct === false && !answer.reveal) {
+      const matches = places().filter(candidate =>
+        !candidate.archived && !candidate.approximate && candidate.geometry.type !== "Point" &&
+        candidate.kind !== "region" && booleanPointInPolygon(answer.point, candidate.geometry)
+      );
+      const land = matches.filter(candidate => candidate.kind !== "water");
+      const names = (land.length ? land : matches).map(candidate => candidate.name);
+      if (names.length) a.result.message = `Your pin is in ${names.join(" / ")}.`;
+    }
     const now = clock(),
       next = scheduler().repeat(hydrate(a.card.memory), now);
     studyLog.check(token, answer, a.result);

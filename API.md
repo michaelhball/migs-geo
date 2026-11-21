@@ -64,7 +64,7 @@ node scripts/geo.mjs POST /api/study/check '{"token":"TOKEN","answer":{"point":[
 node scripts/geo.mjs POST /api/study/rate '{"token":"TOKEN","rating":3}'
 ```
 
-For a naming question, use `"answer":{"text":"France"}`. To reveal, use `"answer":{"reveal":true}`. Approximate map markers return `correct:null`. Duplicate rating requests using the same token return the original result without another review. A stale card version rejects the rating. Tokens are ephemeral and expire on server restart. Ask for a fresh question after a restart.
+For a naming question, use `"answer":{"text":"France"}`. To reveal, use `"answer":{"reveal":true}`. For a missed map answer, the feedback message names the mapped country, territory or water containing the pin when available. Approximate map markers return `correct:null`. Duplicate rating requests using the same token return the original result without another review. A stale card version rejects the rating. Tokens are ephemeral and expire on server restart. Ask for a fresh question after a restart.
 
 | Method | Path | Behavior |
 | --- | --- | --- |
