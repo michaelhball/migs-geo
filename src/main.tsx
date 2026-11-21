@@ -591,7 +591,11 @@ function App() {
                               </span>
                             </div>
                             <h2>{result.place.name}</h2>
-                            <p>{result.message}</p>
+                            {question.card.mode === "identify" && result.correct === false && !result.revealed ? (
+                              <p>Your answer was <strong>{text.trim()}</strong>.</p>
+                            ) : (
+                              <p>{result.message}</p>
+                            )}
                             {result.place.info && (
                               <p className="place-info">
                                 {plain(result.place.info)}
