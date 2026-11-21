@@ -85,7 +85,7 @@ export function validateSettings(s) {
     !Array.isArray(s.kinds) ||
     !s.kinds.length ||
     s.kinds.some(
-      (k) => !["country", "territory", "water", "region","river","range"].includes(k),
+      (k) => !["country", "territory", "water", "region","river","range","desert"].includes(k),
     )
   )
     throw Error("Choose at least one valid place type.");
@@ -309,7 +309,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     )
       throw Error("A valid ID and name (1–160 characters) are required.");
     if (
-      !["country", "territory", "water", "region","river","range","city"].includes(p.kind) ||
+      !["country", "territory", "water", "region","river","range","desert","city"].includes(p.kind) ||
       !Array.isArray(p.aliases) ||
       p.aliases.some((a) => typeof a !== "string") ||
       !Array.isArray(p.tags) ||
@@ -742,7 +742,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         p.tags.some((t) => typeof t !== "string") ||
         !Array.isArray(p.aliases) ||
         p.aliases.some((a) => typeof a !== "string") ||
-        !["country", "territory", "water", "region","river","range","city"].includes(p.kind)
+        !["country", "territory", "water", "region","river","range","desert","city"].includes(p.kind)
       )
         throw Error("Invalid place in backup.");
     }
@@ -871,6 +871,26 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     attempts.clear();
     return { restored: true, places: ids.size, cards: cids.size };
   }
+  function installMapPacks(s) {
+    const country = s.cityCountry;
+    const cityPlaces = (cities[country] || []).map(([id,name,lon,lat]) => ({
+      id:"city-"+id, name, countryCode:country, kind:"city", region:cityRegions[country] || "World",
+      aliases:[], tags:[], small:false, approximate:false, archived:false,
+      source:"Natural Earth populated places", info:"",
+      geometry:{type:"Point",coordinates:[lon,lat]}, center:[lon,lat],
+    }));
+    for (const p of [...physicalPlaces.filter(p=>s.kinds.includes(p.kind)), ...cityPlaces]) {
+      if ( db.prepare("SELECT id FROM places WHERE id=?").get(p.id)) continue;
+      db.prepare("INSERT INTO places VALUES(?,?,0)").run(p.id, encode(p));
+      for (const mode of ["locate","identify"]) {
+        const memory = createEmptyCard(clock());
+        db.prepare("INSERT INTO cards(id,place_id,mode,memory,due,state) VALUES(?,?,?,?,?,0)")
+          .run(p.id+":"+mode,p.id,mode,encode(memory),+memory.due);
+      }
+      placeCache = undefined;
+    }
+  }
+  tx(() => installMapPacks(settings()));
   return {
     health: () => {
       db.prepare("SELECT data FROM settings WHERE id=1").get();
@@ -904,23 +924,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     setSettings: (patch) => {
       const s = validateSettings({ ...settings(), ...patch });
       tx(() => {
-        const country = s.cityCountry;
-        const cityPlaces = (cities[country] || []).map(([id,name,lon,lat]) => ({
-          id:"city-"+id, name, countryCode:country, kind:"city", region:cityRegions[country] || "World",
-          aliases:[], tags:[], small:false, approximate:false, archived:false,
-          source:"Natural Earth populated places", info:"",
-          geometry:{type:"Point",coordinates:[lon,lat]}, center:[lon,lat],
-        }));
-        for (const p of [...physicalPlaces.filter(p=>s.kinds.includes(p.kind)), ...cityPlaces]) {
-          if ( db.prepare("SELECT id FROM places WHERE id=?").get(p.id)) continue;
-          db.prepare("INSERT INTO places VALUES(?,?,0)").run(p.id, encode(p));
-          for (const mode of ["locate","identify"]) {
-            const memory = createEmptyCard(clock());
-            db.prepare("INSERT INTO cards(id,place_id,mode,memory,due,state) VALUES(?,?,?,?,?,0)")
-              .run(p.id+":"+mode,p.id,mode,encode(memory),+memory.due);
-          }
-          placeCache = undefined;
-        }
+        installMapPacks(s);
         addOptionalCards(s.modes);
         db.prepare("UPDATE settings SET data=? WHERE id=1").run(encode(s));
       });

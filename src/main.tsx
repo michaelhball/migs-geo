@@ -40,7 +40,7 @@ const kindNames: any = {
   country: "Country",
   territory: "Territory / island",
   water: "Body of water",
-  river:"River", range:"Mountain range",
+  river:"River", range:"Mountain range", desert:"Desert",
   region: "Region / continent",
 };
 const countryNames = new Intl.DisplayNames(["en"], {type:"region"});
