@@ -55,6 +55,7 @@ try {
     "run",
     "--detach",
     "--read-only",
+    "--tmpfs", "/tmp:rw,noexec,nosuid,nodev,size=128m,mode=1777",
     "--cap-drop=ALL",
     "--security-opt=no-new-privileges:true",
     "--name",

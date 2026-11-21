@@ -2,6 +2,8 @@ services:
   geo:
     build: .
     read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,nodev,size=128m,mode=1777
     cap_drop: [ALL]
     security_opt: [no-new-privileges:true]
     ports:
