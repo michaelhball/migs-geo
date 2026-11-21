@@ -493,8 +493,33 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       counts: queue().counts,
     };
   }
+  function loadAttempt(token) {
+    if (typeof token !== "string") return;
+    if (attempts.has(token)) return attempts.get(token);
+    const row = db.prepare("SELECT * FROM study_attempts WHERE id=?").get(token);
+    if (!row) return;
+    const current = getCard(row.card_id);
+    const snapshot = parse(row.snapshot).card;
+    const last = db.prepare("SELECT result FROM study_checks WHERE attempt_id=? ORDER BY sequence DESC LIMIT 1").get(token);
+    const attempt = {
+      card: { ...current, ...snapshot },
+      practice: Boolean(row.practice),
+      started: Date.parse(row.started_at),
+      checked: Boolean(last),
+      result: last && parse(last.result),
+    };
+    if (row.rating !== null) {
+      if (row.practice) attempt.saved = { practice: true };
+      else {
+        const review = db.prepare("SELECT after_card, undone FROM reviews WHERE id=?").get(row.review_id);
+        if (!review || review.undone) throw Error("This review was undone. Load a new card.");
+        attempt.saved = { card: parse(review.after_card), counts: queue().counts };
+      }
+    }
+    return attempt;
+  }
   function check(token, answer) {
-    const a = attempts.get(token);
+    const a = loadAttempt(token);
     if (!a) throw Error("Question expired. Load a new card.");
     if (a.saved) throw Error("This question has already been rated.");
     const p = place(a.card.place_id);
@@ -527,7 +552,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     };
   }
   function review(token, grade) {
-    const a = attempts.get(token);
+    const a = loadAttempt(token);
     if (!a || !a.checked)
       throw Error("Check or reveal the answer before rating it.");
     if (a.saved) return a.saved;

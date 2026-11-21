@@ -593,3 +593,25 @@ test("representative map matches include constituent countries, territories, isl
       name,
     );
 });
+
+test("an open question survives restarts before and after checking and rating", () => {
+  const dir = mkdtempSync(path.join(tmpdir(), "migs-resume-"));
+  const file = path.join(dir, "test.sqlite");
+  let store = createStore(file, seed);
+  try {
+    const { token } = store.question();
+    store.db.close();
+    store = createStore(file);
+    store.check(token, { reveal: true });
+    store.db.close();
+    store = createStore(file);
+    const saved = store.review(token, 1);
+    store.db.close();
+    store = createStore(file);
+    assert.deepEqual(store.review(token, 1).card, saved.card);
+    assert.equal(store.stats().reviews, 1);
+  } finally {
+    store.db.close();
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
