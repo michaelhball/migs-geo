@@ -102,6 +102,11 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
       .map((p: any) => p[0])
       .sort((a: any, b: any) => polygonArea(b) - polygonArea(a))[0];
     const bounds = L.latLngBounds(ring.map((p: number[]) => [p[1], p[0]]));
+    const nearby = bounds.pad(0.4);
+    for (const polygon of polys) {
+      const component = L.latLngBounds(polygon[0].map(([lon, lat]: number[]) => [lat, lon]));
+      if (nearby.intersects(component)) bounds.extend(component);
+    }
     m.fitBounds(context ? bounds.pad(0.75) : bounds, {
       padding: [80, 80],
       maxZoom: context ? 4 : 7,

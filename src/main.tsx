@@ -931,6 +931,7 @@ function App() {
                                 Edit
                               </button>
                             </div>
+                            <details key={selected.id}><summary>Details and cards</summary>
                             {selected.info && <p>{plain(selected.info)}</p>}
                             {selected.aliases.length > 0 && (
                               <p className="small-note">
@@ -991,6 +992,7 @@ function App() {
                                 ? "Approximate location · self-graded"
                                 : selected.source}
                             </p>
+                            </details>
                           </>
                         ) : (
                           <p>Select a place to view its map and cards.</p>
