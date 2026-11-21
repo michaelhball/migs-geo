@@ -2,6 +2,8 @@
 
 The UI, CLI, and agents use the same API at `http://127.0.0.1:4387/api`. It binds to loopback by default; there is no cloud service, Anki dependency, or browser requirement. `GET /api/docs` returns the machine-readable OpenAPI contract. Requests that change data use `Content-Type: application/json`. Errors return a non-2xx status and `{ "error": "…" }`. Docker and future hosting configuration are described in [DEPLOYMENT.md](DEPLOYMENT.md).
 
+The server accepts same-origin browser API requests and local CLI clients. JSON bodies have a 256 KiB limit, or 40 MiB for place geometry and backup restores. Oversized requests return HTTP 413.
+
 ## CLI
 
 ```sh

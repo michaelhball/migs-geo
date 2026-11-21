@@ -50,6 +50,12 @@ test(
     assert.equal((await call("/health")).body.ok, true);
     assert.equal((await call("/health")).body.database, "ok");
     assert.equal((await call("/health")).body.schemaVersion, schemaVersion);
+    const headers = (await fetch(base + "/api/health")).headers;
+    assert.equal(headers.get("x-content-type-options"), "nosniff");
+    assert.match(headers.get("content-security-policy"), /frame-ancestors 'none'/);
+    assert.equal((await call("/settings", "GET", undefined, {"Sec-Fetch-Site": "cross-site"})).status, 403);
+    assert.equal((await call("/settings", "PATCH", {}, {"Content-Type": "application/json-more"})).status, 415);
+    assert.equal((await call("/settings", "PATCH", {padding: "x".repeat(256 * 1024)})).status, 413);
     // Deliberately split the UTF-8 sequence for é across HTTP chunks.
     const payload = Buffer.from(
       JSON.stringify({

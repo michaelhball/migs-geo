@@ -5,6 +5,7 @@ import {
   mkdirSync,
   statSync,
   createReadStream,
+  chmodSync,
 } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -30,7 +31,10 @@ if (
   );
 }
 const runtime = process.env.GEO_DATA_DIR || path.join(root, "data/local");
+// SQLite sidecars and backup snapshots contain the same private study data.
+process.umask(process.umask() | 0o077);
 mkdirSync(path.join(runtime, "backups"), { recursive: true });
+if (!process.env.GEO_DATA_DIR) chmodSync(runtime, 0o700);
 const store = createStore(
   path.join(runtime, "geography.sqlite"),
   JSON.parse(readFileSync(path.join(root, "data/places.json"), "utf8")),
@@ -52,14 +56,16 @@ const cardResponse = (card) => ({
   ...card,
   dueDay: card.state === 2 ? studyDay(new Date(card.due)) : null,
 });
-async function body(req) {
+async function body(req, limit) {
+  const tooLarge = () => Object.assign(Error("Request body exceeds the size limit."), { status: 413 });
+  if (Number(req.headers["content-length"]) > limit) throw tooLarge();
   // Decode through Node's StringDecoder so multibyte names survive chunk edges.
   req.setEncoding("utf8");
   let raw = "";
   let bytes = 0;
   for await (const c of req) {
     bytes += Buffer.byteLength(c);
-    if (bytes > 40 * 1024 * 1024) throw Error("Request exceeds 40 MB.");
+    if (bytes > limit) throw tooLarge();
     raw += c;
   }
   return raw ? JSON.parse(raw) : {};
@@ -69,10 +75,12 @@ async function api(req, res, url) {
     m = req.method;
   if (
     !["GET", "HEAD"].includes(m) &&
-    !req.headers["content-type"]?.startsWith("application/json")
+    req.headers["content-type"]?.split(";")[0].trim().toLowerCase() !== "application/json"
   )
     return json(res, { error: "Use Content-Type: application/json." }, 415);
-  const input = ["POST", "PATCH", "PUT"].includes(m) ? await body(req) : {};
+  const largeInput = p === "/api/restore" || p === "/api/places" || p.startsWith("/api/places/");
+  const limit = largeInput ? 40 * 1024 * 1024 : 256 * 1024;
+  const input = ["POST", "PATCH", "PUT"].includes(m) ? await body(req, limit) : {};
   if (p === "/api/health" && m === "GET")
     return json(res, {
       ok: true,
@@ -201,7 +209,18 @@ const mime = {
   ".webp": "image/webp",
   ".woff2": "font/woff2",
 };
-const server = http.createServer(async (req, res) => {
+const server = http.createServer({ headersTimeout: 15000, requestTimeout: 60000 }, async (req, res) => {
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("Referrer-Policy", "no-referrer");
+  res.setHeader("X-Frame-Options", "DENY");
+  res.setHeader("Cross-Origin-Resource-Policy", "same-origin");
+  if (!vite) {
+    res.setHeader("Content-Security-Policy", [
+      "default-src 'none'", "script-src 'self'", "style-src 'self' 'unsafe-inline'",
+      "img-src 'self' data:", "font-src 'self'", "connect-src 'self'",
+      "base-uri 'none'", "form-action 'self'", "frame-ancestors 'none'",
+    ].join("; "));
+  }
   try {
     const origins = [
       `http://127.0.0.1:${port}`,
@@ -218,7 +237,11 @@ const server = http.createServer(async (req, res) => {
         403,
       );
     const url = new URL(req.url, `http://${host}:${port}`);
-    if (url.pathname.startsWith("/api/")) return await api(req, res, url);
+    if (url.pathname.startsWith("/api/")) {
+      if (req.headers["sec-fetch-site"] === "cross-site")
+        return json(res, { error: "Cross-site API access is disabled." }, 403);
+      return await api(req, res, url);
+    }
     if (vite)
       return vite.middlewares(req, res, () => {
         res.statusCode = 404;
@@ -245,9 +268,9 @@ const server = http.createServer(async (req, res) => {
         ? "public,max-age=31536000,immutable"
         : "no-cache",
     });
-    createReadStream(file).pipe(res);
+    createReadStream(file).on("error", () => res.destroy()).pipe(res);
   } catch (e) {
-    json(res, { error: e.message }, 400);
+    json(res, { error: e.message }, e.status === 413 ? 413 : 400);
   }
 });
 server.on("error", (error) => {
