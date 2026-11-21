@@ -34,6 +34,10 @@ const highlightStyles = {
   },
   neutral: { color: "#98763c", fillColor: "#d7bf8d", legend: "legend-neutral" },
 };
+const worldOffsets = [-360, 0, 360];
+const shiftCoordinates = (offset: number) => (c: number[]) =>
+  L.latLng(c[1], c[0] + offset);
+
 let worldPromise: Promise<any> | undefined;
 export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
   const element = useRef<HTMLDivElement>(null),
@@ -80,7 +84,11 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
       latest.current.kind === "region" &&
       allBounds.getEast() - allBounds.getWest() > 180
     ) {
-      m.fitBounds(allBounds, { padding: [32, 32], animate: false });
+      const pacific = L.latLngBounds(polys.flatMap((p: number[][][]) =>
+        p[0].map(([lon, lat]) => [lat, lon < 0 ? lon + 360 : lon] as L.LatLngTuple),
+      ));
+      m.fitBounds(pacific.getEast() - pacific.getWest() < 180 ? pacific : allBounds,
+        { padding: [48, 48], animate: false });
       return;
     }
     // Frame the largest component so overseas territories and the date line do not
@@ -110,8 +118,8 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
       zoomAnimation: false,
       preferCanvas: true,
       maxBounds: [
-        [-90, -200],
-        [90, 200],
+        [-90, -360],
+        [90, 360],
       ],
       maxBoundsViscosity: 0.85,
       scrollWheelZoom: false,
@@ -126,7 +134,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     m.getPane("answers")!.style.zIndex = "420";
     m.createPane("pins");
     m.getPane("pins")!.style.zIndex = "450";
-    for (let lon = -180; lon <= 180; lon += 30)
+    for (let lon = -540; lon <= 540; lon += 30)
       L.polyline(
         [
           [-90, lon],
@@ -143,8 +151,8 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     for (let lat = -60; lat <= 60; lat += 30)
       L.polyline(
         [
-          [lat, -180],
-          [lat, 180],
+          [lat, -540],
+          [lat, 540],
         ],
         {
           pane: "grid",
@@ -172,7 +180,8 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
         const details: (() => void)[] = [];
         // Update detail before the renderer projects the next settled view.
         m.on("zoomend", () => details.forEach((update) => update()));
-        L.geoJSON(world, {
+        for (const offset of worldOffsets) L.geoJSON(world, {
+          coordsToLatLng: shiftCoordinates(offset),
           style: {
             color: "#8d9a93",
             weight: 0.65,
@@ -181,7 +190,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
           },
           onEachFeature: (feature, layer) => {
             if (layer instanceof L.Polygon)
-              details.push(worldDetail(m, layer, feature));
+              details.push(worldDetail(m, layer, offset === 0 ? feature : layer));
             layer.on("mouseover", () => {
               if (latest.current.explore) {
                 (layer as L.Path).setStyle({ fillColor: "#dce4d9" });
@@ -205,7 +214,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     m.on("click", (event: L.LeafletMouseEvent) => {
       if (latest.current.active)
         latest.current.onSelect?.([
-          Math.max(-180, Math.min(180, event.latlng.lng)),
+          event.latlng.wrap().lng,
           event.latlng.lat,
         ]);
     });
@@ -225,7 +234,8 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     group.clearLayers();
     if (props.geometry) {
       const { color, fillColor } = highlightStyles[tone];
-      const highlight = L.geoJSON(props.geometry, {
+      const highlights = worldOffsets.map(offset => L.geoJSON(props.geometry, {
+        coordsToLatLng: shiftCoordinates(offset),
         pane: "answers",
         interactive: false,
         style: {
@@ -243,12 +253,12 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
             fillColor,
             fillOpacity: 0.7,
           }),
-      }).addTo(group);
+      }).addTo(group));
       // Keep tiny territories visible in the wider question view without
       // replacing their actual outline or forcing the map to zoom closer.
       const m = map.current;
       if (m && props.geometry.type !== "Point") {
-        const bounds = highlight.getBounds();
+        const bounds = highlights[1].getBounds();
         const halo = L.circleMarker(bounds.getCenter(), {
           pane: "answers",
           radius: 8,
@@ -285,8 +295,8 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
       m = map.current;
     group?.clearLayers();
     if (props.point && group && m) {
-      const ll: L.LatLngExpression = [props.point[1], props.point[0]];
-      const marker = L.marker(ll, {
+      const [lon, lat] = props.point;
+      const markers = worldOffsets.map(offset => L.marker([lat, lon + offset], {
         pane: "pins",
         icon: L.divIcon({
           className: "selection-marker",
@@ -296,12 +306,12 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
         }),
         interactive: false,
         keyboard: false,
-      }).addTo(group);
+      }).addTo(group));
       // A separate DOM marker stays anchored and scales on every zoom frame
       // without redrawing the detailed map. Keep a small visible minimum.
       const resizePin = () => {
         const scale = Math.max(0.35, Math.min(1, 2 ** ((m.getZoom() - 7) / 3)));
-        marker.getElement()?.style.setProperty("--pin-scale", String(scale));
+        for (const marker of markers) marker.getElement()?.style.setProperty("--pin-scale", String(scale));
       };
       resizePin();
       m.on("zoom", resizePin);
@@ -352,7 +362,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
           className="center-select"
           onClick={() => {
             const c = map.current?.getCenter();
-            if (c) props.onSelect?.([c.lng, c.lat]);
+            if (c) props.onSelect?.([c.wrap().lng, c.lat]);
           }}
         >
           Select map center
