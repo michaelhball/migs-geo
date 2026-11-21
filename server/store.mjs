@@ -339,7 +339,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         c.version,
         c.id,
       );
-  function queue() {
+  function queue(shuffle = "") {
     const now = clock(),
       s = settings(),
       day = studyDay(now),
@@ -376,9 +376,13 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     const review = eligible
       .filter((c) => c.state === 2 && c.due < +end && !seenCards.has(c.id))
       .sort((a, b) => a.due - b.due);
-    const due = [...learning, ...(reviewRemaining ? review : [])].sort((a, b) =>
-      shuffleRank(a.id, day).localeCompare(shuffleRank(b.id, day)),
-    );
+    const due = [...learning, ...(reviewRemaining ? review : [])]
+      .map(card => ({
+        card,
+        rank: shuffle ? createHash("sha256").update(shuffle + ":" + shuffleRank(card.id, day)).digest("hex") : shuffleRank(card.id, day),
+      }))
+      .sort((a, b) => a.rank.localeCompare(b.rank))
+      .map(entry => entry.card);
     const fresh = eligible
       .filter((c) => c.state === 0)
       .sort((a, b) =>
@@ -448,7 +452,8 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
   }
   const attempts = new Map();
   const studyLog = createStudyLog(db, clock);
-  function question({ practice = false, placeId, mode } = {}) {
+  function question({ practice = false, placeId, mode, shuffle = "" } = {}) {
+    if (typeof shuffle !== "string" || shuffle.length > 128) throw Error("Invalid shuffle key.");
     let card;
     if (practice) {
       const ps = new Map(places().map((p) => [p.id, p]));
@@ -459,7 +464,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
           (!mode || c.mode === mode),
       );
       card = eligible[Math.floor(Math.random() * eligible.length)];
-    } else card = queue().next;
+    } else card = queue(shuffle).next;
     if (!card) {
       const q = queue();
       return {

@@ -491,6 +491,9 @@ test("due reviews also mix directions, while respecting which cards are due", ()
   const dueCards = s.cards();
   for (const c of dueCards) s.updateCard(c.id, { due: "2026-11-10T10:00:00" });
   setTime("2026-11-11T10:00:00");
+  const first = s.question({shuffle: "first-page"}).card.id;
+  assert.equal(s.question({shuffle: "first-page"}).card.id, first);
+  assert.ok(Array.from({length: 32}, (_, i) => s.question({shuffle: String(i)}).card.id).some(id => id !== first));
   const remaining = new Map(dueCards.map((c) => [c.id, c.mode])),
     modes = [];
   for (let i = 0; i < 10; i++) {

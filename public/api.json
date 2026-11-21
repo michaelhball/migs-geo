@@ -592,6 +592,7 @@
               "schema": {
                 "type": "object",
                 "properties": {
+                  "shuffle": { "type": "string", "maxLength": 128, "description": "Page-specific order for eligible due cards" },
                   "practice": {
                     "type": "boolean"
                   },

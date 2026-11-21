@@ -30,6 +30,7 @@ async function api(route: string, method = "GET", data?: any) {
   if (!r.ok) throw Error(result.error || "Request failed.");
   return result;
 }
+const reviewShuffle = crypto.randomUUID();
 const kindNames: any = {
   country: "Country",
   territory: "Territory / island",
@@ -131,7 +132,7 @@ function App() {
     const t = setTimeout(
       () => {
         run(async () => {
-          setQuestion(await api("/study/next", "POST", {}));
+          setQuestion(await api("/study/next", "POST", { shuffle: reviewShuffle }));
           await refresh();
         });
       },
@@ -140,7 +141,7 @@ function App() {
     return () => clearTimeout(t);
   }, [question, tab]);
   async function next() {
-    const q = await api("/study/next", "POST", {});
+    const q = await api("/study/next", "POST", { shuffle: reviewShuffle });
     setQuestion(q);
     setResult(null);
     setPoint(null);
