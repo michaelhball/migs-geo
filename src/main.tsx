@@ -180,6 +180,9 @@ function App() {
     navigate("study");
   }
   const start = () => run(() => next());
+  const hasAnswer = question?.card?.mode === "locate"
+    ? question.card.trace ? trace.length >= 2 : Boolean(point)
+    : Boolean(text.trim());
   const check = (reveal = false) =>
     run(async () => {
       setResult(
@@ -212,14 +215,14 @@ function App() {
       if (result && ["1", "2", "3", "4"].includes(e.key)) {
         e.preventDefault();
         rate(Number(e.key));
-      } else if (e.key === "Enter" && !result && (point || text)) {
+      } else if (e.key === "Enter" && !result && hasAnswer) {
         e.preventDefault();
         check();
       }
     };
     window.addEventListener("keydown", key);
     return () => window.removeEventListener("keydown", key);
-  }, [tab, busy, question, result, point, text]);
+  }, [tab, busy, question, result, point, text, trace, hasAnswer]);
   const openPlace = (id: string) =>
     run(async () => {
       setSelected(await api("/places/" + id));
@@ -597,12 +600,7 @@ function App() {
                             )}
                             <button
                               className="primary full"
-                              disabled={
-                                busy ||
-                                (question.card.mode === "locate"
-                                  ? question.card.trace ? trace.length < 2 : !point
-                                  : !text.trim())
-                              }
+                              disabled={busy || !hasAnswer}
                               onClick={() => check()}
                             >
                               Check answer <span className="shortcut">↵</span>
