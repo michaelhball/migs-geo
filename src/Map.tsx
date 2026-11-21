@@ -234,12 +234,20 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     group.clearLayers();
     if (props.geometry) {
       const { color, fillColor } = highlightStyles[tone];
+      const polygons: number[][][][] = props.geometry.type === "MultiPolygon"
+        ? props.geometry.coordinates : [];
+      const seam = (a: number[], b: number[]) =>
+        Math.abs(a[0]) === 180 && a[0] === b[0];
+      const split = [-180, 180].every(lon => polygons.some(poly =>
+        poly[0].some((a, i, ring) => i > 0 && a[0] === lon && seam(a, ring[i - 1]))
+      ));
       const highlights = worldOffsets.map(offset => L.geoJSON(props.geometry, {
         coordsToLatLng: shiftCoordinates(offset),
         pane: "answers",
         interactive: false,
         style: {
           color,
+          stroke: !split,
           weight: 2,
           fillColor,
           fillOpacity: 0.72,
@@ -254,6 +262,16 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
             fillOpacity: 0.7,
           }),
       }).addTo(group));
+      if (split) {
+        for (const offset of worldOffsets) for (const polygon of polygons) for (const ring of polygon) {
+          const lines: L.LatLng[][] = [[]];
+          for (let i = 0; i < ring.length; i++) {
+            if (i && seam(ring[i - 1], ring[i])) lines.push([]);
+            lines[lines.length - 1].push(shiftCoordinates(offset)(ring[i]));
+          }
+          L.polyline(lines, { pane: "answers", interactive: false, color, weight: 2 }).addTo(group);
+        }
+      }
       // Keep tiny territories visible in the wider question view without
       // replacing their actual outline or forcing the map to zoom closer.
       const m = map.current;
