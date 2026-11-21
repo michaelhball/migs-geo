@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { createRoot } from "react-dom/client";
 import {
   Globe2,
@@ -46,9 +46,30 @@ function interval({ seconds, days }: { seconds: number; days: number | null }) {
 function plain(s: string) {
   return s.replace(/<[^>]*>/g, "").replace(/&amp;/g, "&");
 }
+const pagePaths: Record<string, string> = {
+  study: "/", browse: "/browse", settings: "/settings", statistics: "/statistics",
+};
+
+function currentTab() {
+  const path = location.pathname.replace(/\/+$/, "") || "/";
+  return Object.keys(pagePaths).find(tab => pagePaths[tab] === path) ?? "study";
+}
+
+function subscribeNavigation(update: () => void) {
+  window.addEventListener("popstate", update);
+  return () => window.removeEventListener("popstate", update);
+}
+
+function navigate(tab: string) {
+  const path = pagePaths[tab];
+  if (!path || location.pathname === path) return;
+  history.pushState(null, "", path);
+  window.dispatchEvent(new Event("popstate"));
+}
+
 function App() {
-  const [tab, setTab] = useState("study"),
-    [stats, setStats] = useState<any>(null),
+  const tab = useSyncExternalStore(subscribeNavigation, currentTab);
+  const [stats, setStats] = useState<any>(null),
     [settings, setSettings] = useState<any>(null),
     [places, setPlaces] = useState<any[]>([]),
     [cards, setCards] = useState<any[]>([]);
@@ -146,7 +167,7 @@ function App() {
     setResult(null);
     setPoint(null);
     setText("");
-    setTab("study");
+    navigate("study");
   }
   const start = () => run(() => next());
   const check = (reveal = false) =>
@@ -193,7 +214,7 @@ function App() {
     run(async () => {
       setSelected(await api("/places/" + id));
       setEditing(false);
-      setTab("browse");
+      navigate("browse");
     });
   const saveSettings = (patch: any) =>
     run(async () => {
@@ -298,10 +319,10 @@ function App() {
       <header>
         <a
           className="brand"
-          href="#"
+          href="/"
           onClick={(e) => {
             e.preventDefault();
-            setTab("study");
+            navigate("study");
           }}
         >
           <Globe2 size={25} strokeWidth={1.6} />
@@ -322,7 +343,7 @@ function App() {
                   : ""
               }
               onClick={() => {
-                setTab(t);
+                navigate(t);
                 setError("");
               }}
             >
@@ -371,7 +392,7 @@ function App() {
                 <div className="counts">
                   <button
                     className="statistics-button"
-                    onClick={() => setTab("statistics")}
+                    onClick={() => navigate("statistics")}
                   >
                     Statistics
                   </button>
@@ -452,7 +473,7 @@ function App() {
                         </p>
                         <button
                           className="text-button"
-                          onClick={() => setTab("settings")}
+                          onClick={() => navigate("settings")}
                         >
                           <SlidersHorizontal size={14} />
                           Study settings
@@ -677,7 +698,7 @@ function App() {
             <Statistics
               api={api}
               studyDay={stats.studyDay}
-              onBack={() => setTab("study")}
+              onBack={() => navigate("study")}
               onOpenPlace={openPlace}
             />
           )}
@@ -1133,7 +1154,7 @@ function App() {
                 <h2>Progress</h2>
                 <button
                   className="text-button"
-                  onClick={() => setTab("statistics")}
+                  onClick={() => navigate("statistics")}
                 >
                   View statistics
                 </button>
