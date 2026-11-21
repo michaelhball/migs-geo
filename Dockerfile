@@ -1,4 +1,9 @@
-FROM node:26.13.1-trixie-slim@sha256:e6bedef217677b276c591795e169840edd9096dbf13f29df8ef8d1856b8820bc AS build
+FROM node:26.13.1-trixie-slim@sha256:e6bedef217677b276c591795e169840edd9096dbf13f29df8ef8d1856b8820bc AS patched-node
+RUN apt-get update \
+    && apt-get -y upgrade \
+    && rm -rf /var/lib/apt/lists/*
+
+FROM patched-node AS build
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci --ignore-scripts --no-audit --no-fund
@@ -7,7 +12,7 @@ COPY src ./src
 COPY public ./public
 RUN npm run build
 
-FROM node:26.13.1-trixie-slim@sha256:e6bedef217677b276c591795e169840edd9096dbf13f29df8ef8d1856b8820bc AS runtime
+FROM patched-node AS runtime
 ENV NODE_ENV=production PORT=4387 GEO_HOST=0.0.0.0 GEO_DATA_DIR=/data TZ=UTC
 WORKDIR /app
 COPY package.json package-lock.json ./
