@@ -51,6 +51,8 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     latest = useRef(props);
   const [error, setError] = useState(""),
     [ready, setReady] = useState(false);
+  const [relief, setRelief] = useState(false);
+  const [regionalZoom, setRegionalZoom] = useState(false);
   const [terrain, setTerrain] = useState<TerrainView | null>(null);
   useEffect(() => { setTerrain(null); }, [props.resetKey]);
   latest.current = props;
@@ -119,6 +121,15 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
       animate: false,
     });
   };
+  useEffect(() => {
+    const m = map.current;
+    if (!m || !ready || !relief) return;
+    const layers = worldOffsets.map(offset =>
+      L.imageOverlay("/data/relief-overlay.png", [[-90, -180 + offset], [90, 180 + offset]],
+        {pane:"relief", interactive:false, attribution:"GMT / SRTM15+"}).addTo(m)
+    );
+    return () => { layers.forEach(layer => layer.remove()); };
+  }, [ready, relief]);
   const focus = () => framePlace();
   useImperativeHandle(ref, () => ({ home, focus }));
   useEffect(() => {
@@ -146,6 +157,10 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     const removeTrackpadZoom = trackpadZoom(m);
     m.createPane("grid");
     m.getPane("grid")!.style.zIndex = "210";
+    m.on("zoomend", () => setRegionalZoom(m.getZoom() >= 3));
+    m.createPane("relief");
+    m.getPane("relief")!.style.zIndex = "410";
+    m.getPane("relief")!.style.pointerEvents = "none";
     m.createPane("answers");
     m.getPane("answers")!.style.zIndex = "420";
     m.createPane("pins");
@@ -369,12 +384,15 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
         aria-label="Interactive world map. Drag to pan; scroll or use plus and minus to zoom."
         tabIndex={0}
       />
-      {props.explore && <button className="terrain-toggle" aria-pressed={!!terrain} onClick={() => {
-        const m = map.current;
-        if (terrain || !m) { setTerrain(null); return; }
-        const center = m.getCenter().wrap(), bounds = m.getBounds();
-        setTerrain({lon: center.lng, lat: center.lat, width: bounds.getEast() - bounds.getWest()});
-      }}>Terrain</button>}
+      {props.explore && <div className="terrain-controls">
+        {relief && regionalZoom && <button aria-pressed={!!terrain} onClick={() => {
+          const m = map.current;
+          if (terrain || !m) { setTerrain(null); return; }
+          const center = m.getCenter().wrap(), bounds = m.getBounds();
+          setTerrain({lon:center.lng, lat:center.lat, width:bounds.getEast()-bounds.getWest()});
+        }}>Tilt 3D</button>}
+        <button aria-pressed={relief} onClick={() => {setTerrain(null); setRelief(!relief);}}>Terrain</button>
+      </div>}
       {terrain && <Suspense fallback={<div className="terrain-panel">Loading terrain…</div>}><Terrain view={terrain} /></Suspense>}
       <div className="map-tools" style={terrain ? {display:"none"} : undefined}>
         <button
