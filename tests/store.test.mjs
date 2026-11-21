@@ -672,3 +672,26 @@ test("city packs switch countries without losing city progress", () => {
   assert.equal(s.getCard(q.card.id).reps,1);
   s.db.close();
 });
+
+test("desert cards check interior pins and keep their schedule when switched off", () => {
+  const store = createStore(":memory:", []);
+  try {
+    store.setSettings({ kinds: ["desert"], modes: ["locate"] });
+    const desert = store.place("desert-sahara");
+    const { token } = store.question({ practice: true, placeId: desert.id, mode: "locate" });
+    assert.equal(store.check(token, { point: [10, 23] }).correct, true);
+    assert.equal(store.check(token, { point: [2, 49] }).correct, false);
+
+    const scheduled = store.question();
+    store.check(scheduled.token, { reveal: true });
+    store.review(scheduled.token, 3);
+    const card = store.getCard(scheduled.card.id);
+    store.setSettings({ kinds: ["country"] });
+    assert.equal(store.question().card, null);
+    store.setSettings({ kinds: ["desert"] });
+    assert.deepEqual(store.getCard(card.id), card);
+    assert.equal(store.cards().length, 2 * store.places().length);
+  } finally {
+    store.db.close();
+  }
+});
