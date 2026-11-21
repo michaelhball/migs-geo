@@ -9,11 +9,14 @@ import { createStudyLog, validateStudyLog } from "./study-log.mjs";
 import { analytics } from "./analytics.mjs";
 import { studyDay, nextStudyDay, scheduleStudyDay } from "./study-day.mjs";
 
+import cityRegions from "./city-regions.json" with {type:"json"};
+import cities from "./cities.json" with {type:"json"};
 import physicalPlaces from "./physical-places.json" with {type:"json"};
 import facts from "./geography-facts.json" with { type: "json" };
 const optionalModes = { capital: "capital", fromCapital: "capital", flag: "flag", fromFlag: "flag" };
 const modes = ["locate", "identify", ...Object.keys(optionalModes)];
 export const defaults = {
+  cityCountry: "",
   activeDeck: "geography",
   newPerDay: 15,
   reviewsPerDay: 200,
@@ -69,7 +72,8 @@ export function validateGeometry(g) {
   return g;
 }
 export function validateSettings(s) {
-  s = { activeDeck: "geography", reviewsPerDay: defaults.reviewsPerDay, ...s };
+  s = { cityCountry:"", activeDeck: "geography", reviewsPerDay: defaults.reviewsPerDay, ...s };
+  if (s.cityCountry !== "" && (typeof s.cityCountry !== "string" || !Object.hasOwn(cities, s.cityCountry))) throw Error("Unknown city country.");
   if (!["geography","flags"].includes(s.activeDeck)) throw Error("Invalid deck.");
   if (!Number.isInteger(s.newPerDay) || s.newPerDay < 0 || s.newPerDay > 500)
     throw Error("New cards per day must be 0–500.");
@@ -162,6 +166,10 @@ export function checkAnswer(p, mode, answer) {
     Math.abs(point[1]) > 90
   )
     throw Error("Select a location on the map.");
+  if (p.kind === "city" && p.geometry.type === "Point") {
+    const km = distance(point, p.geometry.coordinates);
+    return { correct:km <= 25, message:`Your pin was ${Math.round(km)} km from the city center (25 km tolerance).` };
+  }
   if (p.approximate || p.geometry.type === "Point")
     return {
       correct: null,
@@ -301,7 +309,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     )
       throw Error("A valid ID and name (1–160 characters) are required.");
     if (
-      !["country", "territory", "water", "region","river","range"].includes(p.kind) ||
+      !["country", "territory", "water", "region","river","range","city"].includes(p.kind) ||
       !Array.isArray(p.aliases) ||
       p.aliases.some((a) => typeof a !== "string") ||
       !Array.isArray(p.tags) ||
@@ -320,7 +328,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
             ? p.geometry.coordinates[0][0]
             : p.geometry.coordinates[0][0][0];
     validateGeometry({ type: "Point", coordinates: p.center });
-    p.approximate = !!p.approximate || p.geometry.type === "Point";
+    p.approximate = p.kind !== "city" && (!!p.approximate || p.geometry.type === "Point");
     p.small = !!p.small;
     tx(() => {
       db.prepare(
@@ -400,7 +408,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       return (
         !c.suspended &&
         !p.archived &&
-        s.kinds.includes(p.kind) &&
+        (p.kind === "city" ? !!s.cityCountry && p.countryCode === s.cityCountry : s.kinds.includes(p.kind)) &&
         s.modes.includes(c.mode) &&
         isFlag(c.mode) === (s.activeDeck === "flags") &&
         (!s.regions.length || s.regions.includes(p.region)) &&
@@ -734,7 +742,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         p.tags.some((t) => typeof t !== "string") ||
         !Array.isArray(p.aliases) ||
         p.aliases.some((a) => typeof a !== "string") ||
-        !["country", "territory", "water", "region","river","range"].includes(p.kind)
+        !["country", "territory", "water", "region","river","range","city"].includes(p.kind)
       )
         throw Error("Invalid place in backup.");
     }
@@ -896,8 +904,15 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     setSettings: (patch) => {
       const s = validateSettings({ ...settings(), ...patch });
       tx(() => {
-        for (const p of physicalPlaces) {
-          if (!s.kinds.includes(p.kind) || db.prepare("SELECT id FROM places WHERE id=?").get(p.id)) continue;
+        const country = s.cityCountry;
+        const cityPlaces = (cities[country] || []).map(([id,name,lon,lat]) => ({
+          id:"city-"+id, name, countryCode:country, kind:"city", region:cityRegions[country] || "World",
+          aliases:[], tags:[], small:false, approximate:false, archived:false,
+          source:"Natural Earth populated places", info:"",
+          geometry:{type:"Point",coordinates:[lon,lat]}, center:[lon,lat],
+        }));
+        for (const p of [...physicalPlaces.filter(p=>s.kinds.includes(p.kind)), ...cityPlaces]) {
+          if ( db.prepare("SELECT id FROM places WHERE id=?").get(p.id)) continue;
           db.prepare("INSERT INTO places VALUES(?,?,0)").run(p.id, encode(p));
           for (const mode of ["locate","identify"]) {
             const memory = createEmptyCard(clock());

@@ -17,6 +17,7 @@ import {
   ExternalLink,
   CheckCircle2,
 } from "lucide-react";
+import cityCountries from "./cityCountries.json";
 import { Atlas } from "./Map";
 import { Statistics } from "./Statistics";
 import "./style.css";
@@ -42,6 +43,8 @@ const kindNames: any = {
   river:"River", range:"Mountain range",
   region: "Region / continent",
 };
+const countryNames = new Intl.DisplayNames(["en"], {type:"region"});
+const cityOptions = cityCountries.map(code=>({code,name:countryNames.of(code) || code})).sort((a,b)=>a.name.localeCompare(b.name));
 const states = ["New", "Learning", "Review", "Relearning"];
 function interval({ seconds, days }: { seconds: number; days: number | null }) {
   if (days !== null) return `${days} day${days === 1 ? "" : "s"}`;
@@ -536,7 +539,7 @@ function App() {
                       <div className="panel-content">
                         <div className="card-meta">
                           <span>{states[question.card.state]}</span>
-                          <span>{kindNames[question.card.kind]}</span>
+                          <span>{(kindNames[question.card.kind] || "City")}</span>
                         </div>
                         {!result ? (
                           <>
@@ -785,7 +788,7 @@ function App() {
                           <span>
                             {p.name}
                             <small>
-                              {kindNames[p.kind]} · {p.region}
+                              {kindNames[p.kind] || "City"} · {p.region}
                             </small>
                           </span>
                           <span className="place-status">
@@ -929,7 +932,7 @@ function App() {
                             <div className="detail-heading">
                               <div>
                                 <span className="eyebrow">
-                                  {kindNames[selected.kind]} · {selected.region}
+                                  {kindNames[selected.kind] || "City"} · {selected.region}
                                 </span>
                                 <h2>{selected.name}</h2>
                               </div>
@@ -1131,6 +1134,13 @@ function App() {
                     ))}
                   </div>
                 </div>
+                <label className="setting-row">
+                  <span>Cities of a country<small>Study up to ten major cities in both map directions.</small></span>
+                  <select value={settings.cityCountry || ""} onChange={e=>saveSettings({cityCountry:e.target.value})}>
+                    <option value="">Off</option>
+                    {cityOptions.map(({code,name})=><option key={code} value={code}>{name}</option>)}
+                  </select>
+                </label>
                 <div className="setting-row">
                   <span>
                     Parts of the world

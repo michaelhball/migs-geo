@@ -655,3 +655,20 @@ test("rivers opt in to traced and named cards and preserve submitted paths", () 
   assert.ok(["Polygon","MultiPolygon"].includes(s.question().card.geometry.type));
   s.db.close();
 });
+
+test("city packs switch countries without losing city progress", () => {
+  const s = createStore(":memory:", []);
+  assert.equal(s.settings().cityCountry,"");
+  s.setSettings({cityCountry:"NZ",modes:["locate"]});
+  const q = s.question(), place = s.place(q.card.id.split(":")[0]);
+  assert.equal(place.countryCode,"NZ");
+  assert.equal(s.check(q.token,{point:place.center}).correct,true);
+  s.review(q.token,4);
+  s.setSettings({cityCountry:"DE"});
+  assert.equal(s.place(s.question().card.id.split(":")[0]).countryCode,"DE");
+  s.setSettings({cityCountry:""});
+  assert.equal(s.question().card,null);
+  s.restore(s.exportData());
+  assert.equal(s.getCard(q.card.id).reps,1);
+  s.db.close();
+});
