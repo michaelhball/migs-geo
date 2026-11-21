@@ -9,6 +9,7 @@ import { createStudyLog, validateStudyLog } from "./study-log.mjs";
 import { analytics } from "./analytics.mjs";
 import { studyDay, nextStudyDay, scheduleStudyDay } from "./study-day.mjs";
 
+import physicalPlaces from "./physical-places.json" with {type:"json"};
 import facts from "./geography-facts.json" with { type: "json" };
 const optionalModes = { capital: "capital", fromCapital: "capital", flag: "flag", fromFlag: "flag" };
 const modes = ["locate", "identify", ...Object.keys(optionalModes)];
@@ -37,7 +38,7 @@ const normalize = (s) =>
     .replace(/^the /, "")
     .replace(/[^a-z0-9]/g, "");
 export function validateGeometry(g) {
-  if (!g || !["Point", "Polygon", "MultiPolygon"].includes(g.type))
+  if (!g || !["Point", "Polygon", "MultiPolygon","MultiLineString"].includes(g.type))
     throw Error("Geometry must be GeoJSON Point, Polygon, or MultiPolygon.");
   const pos = (p) =>
     Array.isArray(p) &&
@@ -45,6 +46,10 @@ export function validateGeometry(g) {
     p.every(Number.isFinite) &&
     Math.abs(p[0]) <= 180 &&
     Math.abs(p[1]) <= 90;
+  if (g.type === "MultiLineString") {
+    if (!Array.isArray(g.coordinates) || !g.coordinates.length || !g.coordinates.every(line => Array.isArray(line) && line.length >= 2 && line.every(pos))) throw Error("Invalid river path.");
+    return g;
+  }
   const ring = (r) =>
     Array.isArray(r) &&
     r.length >= 4 &&
@@ -76,7 +81,7 @@ export function validateSettings(s) {
     !Array.isArray(s.kinds) ||
     !s.kinds.length ||
     s.kinds.some(
-      (k) => !["country", "territory", "water", "region"].includes(k),
+      (k) => !["country", "territory", "water", "region","river","range"].includes(k),
     )
   )
     throw Error("Choose at least one valid place type.");
@@ -143,6 +148,10 @@ export function checkAnswer(p, mode, answer) {
         ? "That’s right."
         : "Compare your answer below. You can still rate your recall if it was a spelling variation.",
     };
+  }
+  if (p.geometry.type === "MultiLineString") {
+    validateGeometry({type:"MultiLineString", coordinates:[answer?.path]});
+    return {correct:null, message:"Compare your trace with the river and rate your recall."};
   }
   const point = answer?.point;
   if (
@@ -292,7 +301,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     )
       throw Error("A valid ID and name (1–160 characters) are required.");
     if (
-      !["country", "territory", "water", "region"].includes(p.kind) ||
+      !["country", "territory", "water", "region","river","range"].includes(p.kind) ||
       !Array.isArray(p.aliases) ||
       p.aliases.some((a) => typeof a !== "string") ||
       !Array.isArray(p.tags) ||
@@ -524,6 +533,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         geometry: card.mode === "identify" ? p.geometry : null,
         center: card.mode === "identify" ? p.center : null,
         approximate: p.approximate,
+        trace: p.geometry.type === "MultiLineString" && card.mode === "locate",
         small: p.small,
       },
       counts: queue().counts,
@@ -563,7 +573,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     if (a.card.mode === "locate" && a.result.correct === false && !answer.reveal) {
       const matches = places().filter(candidate =>
         !candidate.archived && !candidate.approximate && candidate.geometry.type !== "Point" &&
-        candidate.kind !== "region" && booleanPointInPolygon(answer.point, candidate.geometry)
+        ["country","territory","water"].includes(candidate.kind) && ["Polygon","MultiPolygon"].includes(candidate.geometry.type) && booleanPointInPolygon(answer.point, candidate.geometry)
       );
       const land = matches.filter(candidate => candidate.kind !== "water");
       const names = (land.length ? land : matches).map(candidate => candidate.name);
@@ -724,7 +734,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         p.tags.some((t) => typeof t !== "string") ||
         !Array.isArray(p.aliases) ||
         p.aliases.some((a) => typeof a !== "string") ||
-        !["country", "territory", "water", "region"].includes(p.kind)
+        !["country", "territory", "water", "region","river","range"].includes(p.kind)
       )
         throw Error("Invalid place in backup.");
     }
@@ -886,6 +896,16 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     setSettings: (patch) => {
       const s = validateSettings({ ...settings(), ...patch });
       tx(() => {
+        for (const p of physicalPlaces) {
+          if (!s.kinds.includes(p.kind) || db.prepare("SELECT id FROM places WHERE id=?").get(p.id)) continue;
+          db.prepare("INSERT INTO places VALUES(?,?,0)").run(p.id, encode(p));
+          for (const mode of ["locate","identify"]) {
+            const memory = createEmptyCard(clock());
+            db.prepare("INSERT INTO cards(id,place_id,mode,memory,due,state) VALUES(?,?,?,?,?,0)")
+              .run(p.id+":"+mode,p.id,mode,encode(memory),+memory.due);
+          }
+          placeCache = undefined;
+        }
         addOptionalCards(s.modes);
         db.prepare("UPDATE settings SET data=? WHERE id=1").run(encode(s));
       });

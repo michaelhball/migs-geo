@@ -330,7 +330,7 @@
                     "type": "string"
                   },
                   "kind": {
-                    "enum": ["country", "territory", "water", "region"]
+                    "enum": ["country", "territory", "water", "region","river","range"]
                   },
                   "region": {
                     "type": "string"
@@ -648,6 +648,7 @@
                   "answer": {
                     "type": "object",
                     "properties": {
+                      "path": {"type":"array","minItems":2,"items":{"type":"array","minItems":2,"maxItems":2,"items":{"type":"number"}}},
                       "point": {
                         "type": "array",
                         "items": {
@@ -871,7 +872,7 @@
                         "type": "array",
                         "minItems": 1,
                         "items": {
-                          "enum": ["country", "territory", "water", "region"]
+                          "enum": ["country", "territory", "water", "region","river","range"]
                         }
                       },
                       "regions": {
@@ -908,7 +909,7 @@
                           "type": "string"
                         },
                         "kind": {
-                          "enum": ["country", "territory", "water", "region"]
+                          "enum": ["country", "territory", "water", "region","river","range"]
                         },
                         "region": {
                           "type": "string"
@@ -1151,7 +1152,7 @@
             "type": "string"
           },
           "kind": {
-            "enum": ["country", "territory", "water", "region"]
+            "enum": ["country", "territory", "water", "region","river","range"]
           },
           "region": {
             "type": "string"
@@ -1227,7 +1228,7 @@
             "type": "array",
             "minItems": 1,
             "items": {
-              "enum": ["country", "territory", "water", "region"]
+              "enum": ["country", "territory", "water", "region","river","range"]
             }
           },
           "regions": {

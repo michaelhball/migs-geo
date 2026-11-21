@@ -17,6 +17,7 @@ const Terrain = lazy(() => import("./Terrain"));
 type Props = {
   geometry?: any;
   center?: number[];
+  trace?: number[][];
   point?: number[] | null;
   onSelect?: (point: number[]) => void;
   active?: boolean;
@@ -75,6 +76,11 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
       m.setView([g.coordinates[1], g.coordinates[0]], context ? 3 : 4, {
         animate: false,
       });
+      return;
+    }
+    if (g.type === "MultiLineString") {
+      const bounds = L.latLngBounds(g.coordinates.flat().map(([x,y]:number[]) => [y,x]));
+      m.fitBounds(context ? bounds.pad(0.5) : bounds, {padding:[45,45],maxZoom:7});
       return;
     }
     const polys = g.type === "Polygon" ? [g.coordinates] : g.coordinates;
@@ -322,6 +328,13 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     const group = pin.current,
       m = map.current;
     group?.clearLayers();
+    if (props.trace?.length && group) {
+      for (const offset of worldOffsets) {
+        const path = props.trace.map(shiftCoordinates(offset));
+        L.polyline(path,{pane:"pins",interactive:false,color:"#a45631",dashArray:"5 4"}).addTo(group);
+        L.circleMarker(path[path.length-1],{pane:"pins",radius:4,color:"#a45631"}).addTo(group);
+      }
+    }
     if (props.point && group && m) {
       const [lon, lat] = props.point;
       const markers = worldOffsets.map(offset => L.marker([lat, lon + offset], {
@@ -347,7 +360,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
         m.off("zoom", resizePin);
       };
     }
-  }, [props.point]);
+  }, [props.point, props.trace]);
   return (
     <div className={"atlas " + (props.active ? "selectable" : "")}>
       <div

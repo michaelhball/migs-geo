@@ -39,6 +39,7 @@ const kindNames: any = {
   country: "Country",
   territory: "Territory / island",
   water: "Body of water",
+  river:"River", range:"Mountain range",
   region: "Region / continent",
 };
 const states = ["New", "Learning", "Review", "Relearning"];
@@ -79,6 +80,7 @@ function App() {
     [cards, setCards] = useState<any[]>([]);
   const [question, setQuestion] = useState<any>(null),
     [result, setResult] = useState<any>(null),
+    [trace, setTrace] = useState<number[][]>([]),
     [point, setPoint] = useState<number[] | null>(null),
     [text, setText] = useState(""),
     [busy, setBusy] = useState(false),
@@ -170,6 +172,7 @@ function App() {
     setQuestion(q);
     setResult(null);
     setPoint(null);
+    setTrace([]);
     setText("");
     navigate("study");
   }
@@ -182,7 +185,7 @@ function App() {
           answer: reveal
             ? { reveal: true }
             : question.card.mode === "locate"
-              ? { point }
+              ? question.card.trace ? {path:trace} : { point }
               : { text },
         }),
       );
@@ -441,7 +444,8 @@ function App() {
                     !result &&
                     question.card.mode === "locate"
                   }
-                  onSelect={setPoint}
+                  trace={question?.card?.trace ? trace : undefined}
+                  onSelect={p => question?.card?.trace ? setTrace(prev => [...prev,p]) : setPoint(p)}
                   name={result?.place.name}
                   kind={question?.card?.kind}
                   revealed={!!result}
@@ -547,7 +551,7 @@ function App() {
                             </h2>
                             <p>
                               {question.card.mode === "locate"
-                                ? "Click the map to select your answer. Drag to move and scroll to zoom."
+                                ? question.card.trace ? "Click successive points along the river, then check your trace." : "Click the map to select your answer. Drag to move and scroll to zoom."
                                 : question.card.mode === "flag" ? "Select a flag, then check your answer." : "Type the name, then check your answer."}
                             </p>
                             {!["locate","flag"].includes(question.card.mode) && (
@@ -570,7 +574,8 @@ function App() {
                                 />
                               </form>
                             )}
-                            {question.card.mode === "locate" && (
+                            {question.card.trace && <button disabled={!trace.length} onClick={() => setTrace(t => t.slice(0,-1))}>Undo point ({trace.length})</button>}
+                            {question.card.mode === "locate" && !question.card.trace && (
                               <div
                                 className={
                                   "selection " + (point ? "chosen" : "")
@@ -592,7 +597,7 @@ function App() {
                               disabled={
                                 busy ||
                                 (question.card.mode === "locate"
-                                  ? !point
+                                  ? question.card.trace ? trace.length < 2 : !point
                                   : !text.trim())
                               }
                               onClick={() => check()}
@@ -694,6 +699,7 @@ function App() {
                             setQuestion(null);
                             setResult(null);
                             setPoint(null);
+    setTrace([]);
                           }}
                         >
                           End session

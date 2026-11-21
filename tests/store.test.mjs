@@ -638,3 +638,20 @@ test("optional directions are isolated by deck and round-trip with ratings", () 
   copy.db.close();
   store.db.close();
 });
+
+test("rivers opt in to traced and named cards and preserve submitted paths", () => {
+  const s = createStore(":memory:", seed);
+  assert.ok(!s.settings().kinds.includes("river"));
+  s.setSettings({kinds:["river"],modes:["locate"]});
+  const q = s.question();
+  assert.ok(q.card.trace);
+  const path = [[8,48],[14,47],[25,45]];
+  assert.equal(s.check(q.token,{path}).correct,null);
+  s.review(q.token,3);
+  const backup = s.exportData();
+  assert.deepEqual(JSON.parse(backup.studyLog.checks[0].answer),{path});
+  s.restore(backup);
+  s.setSettings({kinds:["range"],modes:["identify"]});
+  assert.ok(["Polygon","MultiPolygon"].includes(s.question().card.geometry.type));
+  s.db.close();
+});

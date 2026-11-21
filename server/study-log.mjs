@@ -55,7 +55,7 @@ export function createStudyLog(db, clock) {
         ? { reveal: true }
         : typeof answer.text === "string"
           ? { text: answer.text }
-          : { point: answer.point };
+          : answer.path ? {path:answer.path} : { point: answer.point };
       insertCheck.run(
         randomUUID(),
         id,
@@ -176,7 +176,7 @@ export function validateStudyLog(data, cardIds, placeIds, reviews) {
       !snapshot?.place ||
       typeof snapshot.place.name !== "string" ||
       typeof snapshot.place.region !== "string" ||
-      !["country", "territory", "water", "region"].includes(
+      !["country", "territory", "water", "region", "river", "range"].includes(
         snapshot.place.kind,
       ) ||
       !Array.isArray(snapshot.place.tags) ||
@@ -227,6 +227,8 @@ export function validateStudyLog(data, cardIds, placeIds, reviews) {
       !answer ||
       !(
         answer.reveal === true ||
+        (attempt.mode === "locate" && Array.isArray(answer.path) && answer.path.length >= 2 &&
+         answer.path.every(p => Array.isArray(p) && p.length === 2 && p.every(Number.isFinite) && Math.abs(p[0]) <= 180 && Math.abs(p[1]) <= 90)) ||
         (attempt.mode !== "locate" && typeof answer.text === "string") ||
         (attempt.mode === "locate" &&
           Array.isArray(point) &&
