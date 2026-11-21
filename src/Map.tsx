@@ -116,10 +116,19 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
   useEffect(() => {
     const m = map.current;
     if (!m || !ready || !relief) return;
-    const layers = worldOffsets.map(offset =>
-      L.imageOverlay("/data/relief-overlay.png", [[-90, -180 + offset], [90, 180 + offset]],
-        {pane:"relief", interactive:false, attribution:"GMT / SRTM15+"}).addTo(m)
-    );
+    const options: L.TileLayerOptions = {
+      pane: "relief", tileSize: 256, maxZoom: 12, keepBuffer: 3,
+      updateWhenIdle: false, updateWhenZooming: false,
+    };
+    const layers = [
+      L.tileLayer("/data/terrain/world/{z}/{x}/{y}.webp", {
+        ...options, maxNativeZoom: 4,
+      }).addTo(m),
+      L.tileLayer("/data/terrain/nz/{z}/{x}/{y}.webp", {
+        ...options, minZoom: 5, minNativeZoom: 5, maxNativeZoom: 6,
+        bounds: [[-48,165],[-33,179]],
+      }).addTo(m),
+    ];
     return () => { layers.forEach(layer => layer.remove()); };
   }, [ready, relief]);
   const focus = () => framePlace();
@@ -273,7 +282,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
           stroke: !split,
           weight: 2,
           fillColor,
-          fillOpacity: 0.72,
+          fillOpacity: relief ? 0.13 : 0.72,
         },
         pointToLayer: (_f, latlng) =>
           L.circleMarker(latlng, {
@@ -323,7 +332,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
         };
       }
     }
-  }, [props.geometry, tone]);
+  }, [props.geometry, tone, relief]);
   useEffect(() => {
     // Reveal only adds the answer overlay. Preserve the user's exact viewport
     // and selection; the focus control remains available for deliberate zooming.
@@ -446,6 +455,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
         )}
       </div>
       <div className="attribution">
+        {relief && <><a href="https://doi.org/10.25921/fd45-gt74" target="_blank" rel="noreferrer">NOAA ETOPO</a> · </>}
         <a
           href="https://www.naturalearthdata.com/"
           target="_blank"

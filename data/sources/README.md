@@ -26,3 +26,5 @@ The Browse terrain viewer uses GMT's pixel-registered 10 arc-minute SRTM15+ v2.7
 English capital names, hints, notes and flag similarity notes, plus unmodified flag images, come from [Ultimate Geography](https://github.com/anki-geo/ultimate-geography/tree/46ce8fe14ec84eb39763310179f25d6ff9ca4c73). The existing East Timor card maps to the upstream Timor-Leste record. Per-image source and license details are in public/flags/sources.csv and public/flags/LICENSE.md.
 
 City packs use Natural Earth's public-domain 1:10m populated places (the same revision as the atlas). Each country offers up to ten distinct city names ranked by the source's population estimate. The ranking selects study examples and is not a current census.
+
+The flat atlas Terrain layer uses NOAA NCEI's [ETOPO 2022 Global Relief Model](https://doi.org/10.25921/fd45-gt74). scripts/prepare-terrain-tiles.py shades the 60-arc-second surface worldwide and the 15-arc-second surface across New Zealand's main islands (S30E165, S45E165). North-up WebP tiles match Leaflet's geographic projection, with 512 source pixels per 256 CSS pixels. The separate tiltable regional model uses the GMT grid above.
