@@ -4,6 +4,8 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+  schedule:
+    - cron: "23 6 * * 1"
 permissions:
   contents: read
 jobs:
@@ -51,3 +53,11 @@ jobs:
         run: docker build --tag migs-geo:ci .
       - name: Check health, SQLite, persistence, and backups
         run: node scripts/container-smoke.mjs migs-geo:ci
+      - name: Export image for OS vulnerability scanning
+        run: docker save migs-geo:ci --output "${{ runner.temp }}/migs-geo.tar"
+      - name: Check for fixable high and critical OS advisories
+        run: |
+          docker run --rm --cap-drop=ALL --security-opt=no-new-privileges \
+            --volume "${{ runner.temp }}/migs-geo.tar:/image.tar:ro" \
+            ghcr.io/aquasecurity/trivy:0.76.2@sha256:8f6bb947dbc528902e11f2f5be52f7b519f6a39d5d148f41166f2040499768fb \
+            image --input /image.tar --scanners vuln --pkg-types os --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1
