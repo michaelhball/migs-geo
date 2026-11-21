@@ -163,9 +163,10 @@ function App() {
     });
   const rate = (rating: number) =>
     run(async () => {
-      await api("/study/rate", "POST", { token: question.token, rating });
+      const saved = await api("/study/rate", "POST", { token: question.token, rating });
+      setCards(previous => previous.map(card => card.id === saved.card.id ? saved.card : card));
       await next();
-      await refresh();
+      setStats(await api("/stats"));
     });
   useEffect(() => {
     const key = (e: KeyboardEvent) => {

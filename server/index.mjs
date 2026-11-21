@@ -151,8 +151,10 @@ async function api(req, res, url) {
     return json(res, store.question(input));
   if (p === "/api/study/check" && m === "POST")
     return json(res, store.check(input.token, input.answer));
-  if (p === "/api/study/rate" && m === "POST")
-    return json(res, store.review(input.token, input.rating));
+  if (p === "/api/study/rate" && m === "POST") {
+    const saved = store.review(input.token, input.rating);
+    return json(res, saved.card ? { ...saved, card: cardResponse(saved.card) } : saved);
+  }
   if (p === "/api/study/log" && m === "GET")
     return json(
       res,
