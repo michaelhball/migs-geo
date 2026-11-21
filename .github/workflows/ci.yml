@@ -54,7 +54,9 @@ jobs:
       - name: Check health, SQLite, persistence, and backups
         run: node scripts/container-smoke.mjs migs-geo:ci
       - name: Export image for OS vulnerability scanning
-        run: docker save migs-geo:ci --output "${{ runner.temp }}/migs-geo.tar"
+        run: |
+          docker save migs-geo:ci > "${{ runner.temp }}/migs-geo.tar"
+          chmod 0444 "${{ runner.temp }}/migs-geo.tar"
       - name: Check for fixable high and critical OS advisories
         run: |
           docker run --rm --cap-drop=ALL --security-opt=no-new-privileges \
