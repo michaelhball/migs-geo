@@ -8,6 +8,7 @@ import {
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { trackpadZoom } from "./trackpadZoom";
+import { countryFrame } from "./countryFrame";
 import { worldDetail } from "./worldDetail";
 import { Plus, Minus, Maximize, LocateFixed } from "lucide-react";
 
@@ -104,17 +105,8 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
         { padding: [48, 48], animate: false });
       return;
     }
-    // Frame the largest component so overseas territories and the date line do not
-    // force a distant world-wide view. Every component is still rendered.
-    const ring = polys
-      .map((p: any) => p[0])
-      .sort((a: any, b: any) => polygonArea(b) - polygonArea(a))[0];
-    const bounds = L.latLngBounds(ring.map((p: number[]) => [p[1], p[0]]));
-    const nearby = bounds.pad(0.4);
-    for (const polygon of polys) {
-      const component = L.latLngBounds(polygon[0].map(([lon, lat]: number[]) => [lat, lon]));
-      if (nearby.intersects(component)) bounds.extend(component);
-    }
+    const frame = countryFrame(polys.map((p: number[][][]) => p[0]));
+    const bounds = L.latLngBounds([frame.south, frame.west], [frame.north, frame.east]);
     m.fitBounds(context ? bounds.pad(0.75) : bounds, {
       padding: [80, 80],
       maxZoom: context ? 4 : 7,
@@ -471,11 +463,3 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     </div>
   );
 });
-function polygonArea(r: number[][]) {
-  return Math.abs(
-    r.reduce((a, p, i) => {
-      const q = r[(i + 1) % r.length];
-      return a + p[0] * q[1] - q[0] * p[1];
-    }, 0) / 2,
-  );
-}
