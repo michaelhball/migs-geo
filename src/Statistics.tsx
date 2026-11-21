@@ -47,6 +47,8 @@ type Report = {
 const names: Record<string, string> = {
   locate: "Place → map",
   identify: "Map → place",
+  capital: "Place → capital", fromCapital: "Capital → place",
+  flag: "Place → flag", fromFlag: "Flag → place",
   country: "Countries",
   territory: "Territories / islands",
   water: "Bodies of water",

@@ -1,0 +1,953 @@
+{
+  "england": {
+    "capital": "London",
+    "capital_hint": "Not a sovereign country",
+    "flag": "/flags/ug-flag-england.svg"
+  },
+  "scotland": {
+    "capital": "Edinburgh",
+    "flag": "/flags/ug-flag-scotland.svg"
+  },
+  "united-kingdom": {
+    "capital": "London",
+    "capital_hint": "Sovereign country",
+    "flag": "/flags/ug-flag-united_kingdom.svg"
+  },
+  "northern-ireland": {
+    "capital": "Belfast"
+  },
+  "france": {
+    "capital": "Paris",
+    "flag": "/flags/ug-flag-france.svg"
+  },
+  "wales": {
+    "capital": "Cardiff",
+    "flag": "/flags/ug-flag-wales.svg"
+  },
+  "georgia": {
+    "capital": "Tbilisi",
+    "flag": "/flags/ug-flag-georgia.svg"
+  },
+  "germany": {
+    "capital": "Berlin",
+    "flag": "/flags/ug-flag-germany.svg"
+  },
+  "greece": {
+    "capital": "Athens",
+    "flag": "/flags/ug-flag-greece.svg"
+  },
+  "greenland": {
+    "capital": "Nuuk",
+    "flag": "/flags/ug-flag-greenland.svg"
+  },
+  "hungary": {
+    "capital": "Budapest",
+    "flag": "/flags/ug-flag-hungary.svg"
+  },
+  "albania": {
+    "capital": "Tirana",
+    "flag": "/flags/ug-flag-albania.svg"
+  },
+  "andorra": {
+    "capital": "Andorra la Vella",
+    "flag_similarity": "Moldova (wider, coat of arms with eagle)",
+    "flag": "/flags/ug-flag-andorra.svg"
+  },
+  "austria": {
+    "capital": "Vienna",
+    "flag_similarity": "Latvia (darker red, narrower white band)",
+    "flag": "/flags/ug-flag-austria.svg"
+  },
+  "azerbaijan": {
+    "capital": "Baku",
+    "flag": "/flags/ug-flag-azerbaijan.svg"
+  },
+  "belarus": {
+    "capital": "Minsk",
+    "flag": "/flags/ug-flag-belarus.svg"
+  },
+  "belgium": {
+    "capital": "Brussels",
+    "flag": "/flags/ug-flag-belgium.svg"
+  },
+  "bosnia-and-herzegovina": {
+    "capital": "Sarajevo",
+    "flag": "/flags/ug-flag-bosnia_and_herzegovina.svg"
+  },
+  "bulgaria": {
+    "capital": "Sofia",
+    "flag": "/flags/ug-flag-bulgaria.svg"
+  },
+  "croatia": {
+    "capital": "Zagreb",
+    "flag": "/flags/ug-flag-croatia.svg"
+  },
+  "czech-republic": {
+    "capital": "Prague",
+    "flag": "/flags/ug-flag-czech_republic.svg"
+  },
+  "denmark": {
+    "capital": "Copenhagen",
+    "flag": "/flags/ug-flag-denmark.svg"
+  },
+  "estonia": {
+    "capital": "Tallinn",
+    "flag": "/flags/ug-flag-estonia.svg"
+  },
+  "faroe-islands": {
+    "capital": "Tórshavn",
+    "flag_similarity": "Iceland (blue background, red and white cross), Norway (red background, blue and white cross)",
+    "flag": "/flags/ug-flag-faroe_islands.svg"
+  },
+  "finland": {
+    "capital": "Helsinki",
+    "flag": "/flags/ug-flag-finland.svg"
+  },
+  "iceland": {
+    "capital": "Reykjavík",
+    "flag_similarity": "Norway (red background, blue cross), Faroe Islands (white background, red and blue cross)",
+    "flag": "/flags/ug-flag-iceland.svg"
+  },
+  "ireland": {
+    "capital": "Dublin",
+    "flag_similarity": "Ivory Coast (green and orange flipped, narrower)",
+    "flag": "/flags/ug-flag-ireland.svg"
+  },
+  "italy": {
+    "capital": "Rome",
+    "flag": "/flags/ug-flag-italy.svg"
+  },
+  "latvia": {
+    "capital": "Riga",
+    "flag_similarity": "Austria (brighter red, wider white band)",
+    "flag": "/flags/ug-flag-latvia.svg"
+  },
+  "liechtenstein": {
+    "capital": "Vaduz",
+    "flag": "/flags/ug-flag-liechtenstein.svg"
+  },
+  "lithuania": {
+    "capital": "Vilnius",
+    "flag": "/flags/ug-flag-lithuania.svg"
+  },
+  "luxembourg": {
+    "capital": "Luxembourg City",
+    "capital_info": "Officially Luxembourg.",
+    "flag_similarity": "Netherlands (darker blue)",
+    "flag": "/flags/ug-flag-luxembourg.svg"
+  },
+  "north-macedonia": {
+    "capital": "Skopje",
+    "flag": "/flags/ug-flag-north_macedonia.svg"
+  },
+  "malta": {
+    "capital": "Valletta",
+    "flag": "/flags/ug-flag-malta.svg"
+  },
+  "moldova": {
+    "capital": "Chișinău",
+    "flag_similarity": "Andorra (narrower, coat of arms with motto)",
+    "flag": "/flags/ug-flag-moldova.svg"
+  },
+  "monaco": {
+    "capital": "Monaco",
+    "flag_similarity": "Indonesia (wider, brighter red), Poland (red and white flipped, wider)",
+    "flag": "/flags/ug-flag-monaco.svg"
+  },
+  "montenegro": {
+    "capital": "Podgorica",
+    "capital_info": "Cetinje is an honorary capital.",
+    "flag": "/flags/ug-flag-montenegro.svg"
+  },
+  "netherlands": {
+    "capital": "Amsterdam",
+    "capital_info": "While Amsterdam is the official capital, The Hague is the seat of the executive and legislative branches.",
+    "flag_similarity": "Luxembourg (lighter blue)",
+    "flag": "/flags/ug-flag-netherlands.svg"
+  },
+  "norway": {
+    "capital": "Oslo",
+    "flag_similarity": "Iceland (blue background, red cross), Faroe Islands (white background, red and blue cross)",
+    "flag": "/flags/ug-flag-norway.svg"
+  },
+  "poland": {
+    "capital": "Warsaw",
+    "flag_similarity": "Indonesia (white and red flipped, brighter red), Monaco (white and red flipped, narrower)",
+    "flag": "/flags/ug-flag-poland.svg"
+  },
+  "portugal": {
+    "capital": "Lisbon",
+    "flag": "/flags/ug-flag-portugal.svg"
+  },
+  "romania": {
+    "capital": "Bucharest",
+    "flag_similarity": "Chad (slightly darker blue)",
+    "flag": "/flags/ug-flag-romania.svg"
+  },
+  "russia": {
+    "capital": "Moscow",
+    "flag_similarity": "Slovakia (with coat of arms)",
+    "flag": "/flags/ug-flag-russia.svg"
+  },
+  "san-marino": {
+    "capital": "City of San Marino",
+    "flag": "/flags/ug-flag-san_marino.svg"
+  },
+  "serbia": {
+    "capital": "Belgrade",
+    "flag": "/flags/ug-flag-serbia.svg"
+  },
+  "slovakia": {
+    "capital": "Bratislava",
+    "flag_similarity": "Russia (no coat of arms), Slovenia (wider, smaller coat of arms)",
+    "flag": "/flags/ug-flag-slovakia.svg"
+  },
+  "slovenia": {
+    "capital": "Ljubljana",
+    "flag_similarity": "Slovakia (narrower, bigger coat of arms)",
+    "flag": "/flags/ug-flag-slovenia.svg"
+  },
+  "spain": {
+    "capital": "Madrid",
+    "flag": "/flags/ug-flag-spain.svg"
+  },
+  "sweden": {
+    "capital": "Stockholm",
+    "flag": "/flags/ug-flag-sweden.svg"
+  },
+  "switzerland": {
+    "capital": "Bern",
+    "capital_info": "Switzerland has no official capital; Bern is the de facto capital.",
+    "flag": "/flags/ug-flag-switzerland.svg"
+  },
+  "turkey": {
+    "capital": "Ankara",
+    "flag": "/flags/ug-flag-turkey.svg"
+  },
+  "ukraine": {
+    "capital": "Kyiv",
+    "capital_info": "Also known as Kiev.",
+    "flag": "/flags/ug-flag-ukraine.svg"
+  },
+  "vatican-city": {
+    "capital": "Vatican City",
+    "flag": "/flags/ug-flag-vatican_city.svg"
+  },
+  "armenia": {
+    "capital": "Yerevan",
+    "flag": "/flags/ug-flag-armenia.svg"
+  },
+  "cyprus": {
+    "capital": "Nicosia",
+    "flag": "/flags/ug-flag-cyprus.svg"
+  },
+  "kazakhstan": {
+    "capital": "Astana",
+    "capital_info": "Known as Nur-Sultan between 2019 and 2022.",
+    "flag": "/flags/ug-flag-kazakhstan.svg"
+  },
+  "egypt": {
+    "capital": "Cairo",
+    "flag_similarity": "Iraq (text instead of emblem), Yemen (no emblem)",
+    "flag": "/flags/ug-flag-egypt-blur.svg"
+  },
+  "algeria": {
+    "capital": "Algiers",
+    "flag": "/flags/ug-flag-algeria.svg"
+  },
+  "angola": {
+    "capital": "Luanda",
+    "flag": "/flags/ug-flag-angola.svg"
+  },
+  "benin": {
+    "capital": "Porto-Novo",
+    "capital_info": "While Porto-Novo is the official capital, Cotonou is the de facto seat of government.",
+    "flag": "/flags/ug-flag-benin.svg"
+  },
+  "botswana": {
+    "capital": "Gaborone",
+    "flag": "/flags/ug-flag-botswana.svg"
+  },
+  "burkina-faso": {
+    "capital": "Ouagadougou",
+    "flag": "/flags/ug-flag-burkina_faso.svg"
+  },
+  "cameroon": {
+    "capital": "Yaoundé",
+    "flag_similarity": "Senegal (green/yellow/red, green star)",
+    "flag": "/flags/ug-flag-cameroon.svg"
+  },
+  "burundi": {
+    "capital": "Gitega",
+    "capital_info": "Official capital was moved from Bujumbura to Gitega in 2019.",
+    "flag": "/flags/ug-flag-burundi.svg"
+  },
+  "cape-verde": {
+    "capital": "Praia",
+    "flag": "/flags/ug-flag-cape_verde.svg"
+  },
+  "sao-tome-and-principe": {
+    "capital": "São Tomé",
+    "flag": "/flags/ug-flag-sao_tome_and_principe.svg"
+  },
+  "central-african-republic": {
+    "capital": "Bangui",
+    "flag": "/flags/ug-flag-central_african_republic.svg"
+  },
+  "chad": {
+    "capital": "N'Djamena",
+    "flag_similarity": "Romania (slightly lighter blue)",
+    "flag": "/flags/ug-flag-chad.svg"
+  },
+  "equatorial-guinea": {
+    "capital": "Ciudad de la Paz",
+    "capital_info": "Official capital was moved from Malabo to Ciudad de la Paz in 2026.",
+    "flag": "/flags/ug-flag-equatorial_guinea.svg"
+  },
+  "kenya": {
+    "capital": "Nairobi",
+    "flag": "/flags/ug-flag-kenya.svg"
+  },
+  "comoros": {
+    "capital": "Moroni",
+    "flag": "/flags/ug-flag-comoros.svg"
+  },
+  "ivory-coast": {
+    "capital": "Yamoussoukro",
+    "capital_info": "While Yamoussoukro is the official capital, Abidjan is the de facto seat of government.",
+    "flag_similarity": "Ireland (orange and green flipped, wider)",
+    "flag": "/flags/ug-flag-ivory_coast.svg"
+  },
+  "democratic-republic-of-the-congo": {
+    "capital": "Kinshasa",
+    "flag": "/flags/ug-flag-democratic_republic_of_the_congo.svg"
+  },
+  "djibouti": {
+    "capital": "Djibouti",
+    "flag": "/flags/ug-flag-djibouti.svg"
+  },
+  "guinea-bissau": {
+    "capital": "Bissau",
+    "flag": "/flags/ug-flag-guinea-bissau.svg"
+  },
+  "eritrea": {
+    "capital": "Asmara",
+    "flag": "/flags/ug-flag-eritrea.svg"
+  },
+  "ethiopia": {
+    "capital": "Addis Ababa",
+    "flag": "/flags/ug-flag-ethiopia.svg"
+  },
+  "gabon": {
+    "capital": "Libreville",
+    "flag": "/flags/ug-flag-gabon.svg"
+  },
+  "the-gambia": {
+    "capital": "Banjul",
+    "flag": "/flags/ug-flag-the_gambia.svg"
+  },
+  "lesotho": {
+    "capital": "Maseru",
+    "flag": "/flags/ug-flag-lesotho.svg"
+  },
+  "liberia": {
+    "capital": "Monrovia",
+    "flag": "/flags/ug-flag-liberia.svg"
+  },
+  "madagascar": {
+    "capital": "Antananarivo",
+    "flag": "/flags/ug-flag-madagascar.svg"
+  },
+  "malawi": {
+    "capital": "Lilongwe",
+    "flag": "/flags/ug-flag-malawi.svg"
+  },
+  "mali": {
+    "capital": "Bamako",
+    "flag_similarity": "Guinea (green and red flipped, slightly darker green)",
+    "flag": "/flags/ug-flag-mali.svg"
+  },
+  "mauritania": {
+    "capital": "Nouakchott",
+    "flag": "/flags/ug-flag-mauritania.svg"
+  },
+  "mauritius": {
+    "capital": "Port Louis",
+    "flag": "/flags/ug-flag-mauritius.svg"
+  },
+  "morocco": {
+    "capital": "Rabat",
+    "flag": "/flags/ug-flag-morocco.svg"
+  },
+  "mozambique": {
+    "capital": "Maputo",
+    "flag": "/flags/ug-flag-mozambique.svg"
+  },
+  "namibia": {
+    "capital": "Windhoek",
+    "flag": "/flags/ug-flag-namibia.svg"
+  },
+  "niger": {
+    "capital": "Niamey",
+    "flag": "/flags/ug-flag-niger.svg"
+  },
+  "nigeria": {
+    "capital": "Abuja",
+    "flag": "/flags/ug-flag-nigeria.svg"
+  },
+  "republic-of-the-congo": {
+    "capital": "Brazzaville",
+    "flag": "/flags/ug-flag-republic_of_the_congo.svg"
+  },
+  "rwanda": {
+    "capital": "Kigali",
+    "flag": "/flags/ug-flag-rwanda.svg"
+  },
+  "senegal": {
+    "capital": "Dakar",
+    "flag_similarity": "Cameroon (green/red/yellow, yellow star)",
+    "flag": "/flags/ug-flag-senegal.svg"
+  },
+  "seychelles": {
+    "capital": "Victoria",
+    "flag": "/flags/ug-flag-seychelles.svg"
+  },
+  "sierra-leone": {
+    "capital": "Freetown",
+    "flag": "/flags/ug-flag-sierra_leone.svg"
+  },
+  "south-africa": {
+    "capital": "Pretoria, Cape Town, Bloemfontein",
+    "capital_info": "South Africa has no legally defined capital: the branches of government are split over three cities: Pretoria (executive), Cape Town (legislative) and Bloemfontein (judicial).",
+    "flag": "/flags/ug-flag-south_africa.svg"
+  },
+  "sudan": {
+    "capital": "Khartoum",
+    "flag_similarity": "Palestine (black/white/green, red arrow)",
+    "flag": "/flags/ug-flag-sudan.svg"
+  },
+  "eswatini": {
+    "capital": "Mbabane",
+    "capital_info": "While Mbabane is the official, executive capital, Lobamba is the traditional, spiritual and legislative capital.",
+    "flag": "/flags/ug-flag-eswatini.svg"
+  },
+  "tanzania": {
+    "capital": "Dodoma",
+    "capital_info": "While Dodoma is the official capital, Dar es Salaam is the de facto seat of government.",
+    "flag": "/flags/ug-flag-tanzania.svg"
+  },
+  "togo": {
+    "capital": "Lomé",
+    "flag": "/flags/ug-flag-togo.svg"
+  },
+  "tunisia": {
+    "capital": "Tunis",
+    "flag": "/flags/ug-flag-tunisia.svg"
+  },
+  "uganda": {
+    "capital": "Kampala",
+    "flag": "/flags/ug-flag-uganda.svg"
+  },
+  "sahrawi-arab-democratic-republic": {
+    "capital": "Laayoune",
+    "capital_info": "While Laayoune, also known as El Aaiún, is the declared capital, Tifariti is the de facto seat of government.",
+    "flag_similarity": "Palestine (no symbol)",
+    "flag": "/flags/ug-flag-sahrawi_arab_democratic_republic.svg"
+  },
+  "zambia": {
+    "capital": "Lusaka",
+    "flag": "/flags/ug-flag-zambia.svg"
+  },
+  "zimbabwe": {
+    "capital": "Harare",
+    "flag": "/flags/ug-flag-zimbabwe.svg"
+  },
+  "afghanistan": {
+    "capital": "Kabul",
+    "flag": "/flags/ug-flag-afghanistan.svg"
+  },
+  "bahrain": {
+    "capital": "Manama",
+    "flag_similarity": "Qatar (wider, more serrated edges, maroon)",
+    "flag": "/flags/ug-flag-bahrain.svg"
+  },
+  "bangladesh": {
+    "capital": "Dhaka",
+    "flag": "/flags/ug-flag-bangladesh.svg"
+  },
+  "bhutan": {
+    "capital": "Thimphu",
+    "flag": "/flags/ug-flag-bhutan.svg"
+  },
+  "brunei": {
+    "capital": "Bandar Seri Begawan",
+    "flag": "/flags/ug-flag-brunei-blur.svg"
+  },
+  "china": {
+    "capital": "Beijing",
+    "flag": "/flags/ug-flag-china.svg"
+  },
+  "cambodia": {
+    "capital": "Phnom Penh",
+    "flag": "/flags/ug-flag-cambodia.svg"
+  },
+  "indonesia": {
+    "capital": "Jakarta",
+    "flag_similarity": "Monaco (narrower, darker red), Poland (red and white flipped, darker red)",
+    "flag": "/flags/ug-flag-indonesia.svg"
+  },
+  "india": {
+    "capital": "New Delhi",
+    "flag": "/flags/ug-flag-india.svg"
+  },
+  "hong-kong": {
+    "flag": "/flags/ug-flag-hong_kong.svg"
+  },
+  "iran": {
+    "capital": "Tehran",
+    "flag": "/flags/ug-flag-iran.svg"
+  },
+  "israel": {
+    "capital": "Jerusalem",
+    "capital_hint": "Claimed and controlled",
+    "capital_info": "Disputed; claimed by Palestine.",
+    "flag": "/flags/ug-flag-israel.svg"
+  },
+  "iraq": {
+    "capital": "Baghdad",
+    "flag_similarity": "Egypt (emblem instead of text), Yemen (no text)",
+    "flag": "/flags/ug-flag-iraq.svg"
+  },
+  "south-korea": {
+    "capital": "Seoul",
+    "flag": "/flags/ug-flag-south_korea.svg"
+  },
+  "north-korea": {
+    "capital": "Pyongyang",
+    "flag": "/flags/ug-flag-north_korea.svg"
+  },
+  "jordan": {
+    "capital": "Amman",
+    "flag": "/flags/ug-flag-jordan.svg"
+  },
+  "japan": {
+    "capital": "Tokyo",
+    "flag": "/flags/ug-flag-japan.svg"
+  },
+  "lebanon": {
+    "capital": "Beirut",
+    "flag": "/flags/ug-flag-lebanon.svg"
+  },
+  "laos": {
+    "capital": "Vientiane",
+    "flag": "/flags/ug-flag-laos.svg"
+  },
+  "kyrgyzstan": {
+    "capital": "Bishkek",
+    "flag": "/flags/ug-flag-kyrgyzstan.svg"
+  },
+  "kuwait": {
+    "capital": "Kuwait City",
+    "flag": "/flags/ug-flag-kuwait.svg"
+  },
+  "myanmar": {
+    "capital": "Naypyidaw",
+    "flag": "/flags/ug-flag-myanmar.svg"
+  },
+  "mongolia": {
+    "capital": "Ulaanbaatar",
+    "flag": "/flags/ug-flag-mongolia.svg"
+  },
+  "maldives": {
+    "capital": "Malé",
+    "flag": "/flags/ug-flag-maldives.svg"
+  },
+  "malaysia": {
+    "capital": "Kuala Lumpur",
+    "flag": "/flags/ug-flag-malaysia.svg"
+  },
+  "oman": {
+    "capital": "Muscat",
+    "flag": "/flags/ug-flag-oman.svg"
+  },
+  "nepal": {
+    "capital": "Kathmandu",
+    "flag": "/flags/ug-flag-nepal-nobox.svg"
+  },
+  "palestine": {
+    "capital": "Jerusalem",
+    "capital_hint": "Claimed but not controlled",
+    "capital_info": "Disputed; claimed by Israel; Ramallah is the administrative centre.",
+    "flag_similarity": "Sudan (red/white/black, green arrow), Sahrawi Arab Democratic Republic (with star and crescent)",
+    "flag": "/flags/ug-flag-palestine.svg"
+  },
+  "pakistan": {
+    "capital": "Islamabad",
+    "flag": "/flags/ug-flag-pakistan.svg"
+  },
+  "qatar": {
+    "capital": "Doha",
+    "flag_similarity": "Bahrain (narrower, fewer serrated edges, red)",
+    "flag": "/flags/ug-flag-qatar.svg"
+  },
+  "saudi-arabia": {
+    "capital": "Riyadh",
+    "flag": "/flags/ug-flag-saudi_arabia.svg"
+  },
+  "singapore": {
+    "capital": "Singapore",
+    "flag": "/flags/ug-flag-singapore.svg"
+  },
+  "syria": {
+    "capital": "Damascus",
+    "flag": "/flags/ug-flag-syria.svg"
+  },
+  "taiwan": {
+    "capital": "Taipei",
+    "flag": "/flags/ug-flag-taiwan.svg"
+  },
+  "sri-lanka": {
+    "capital": "Sri Jayawardenepura Kotte",
+    "capital_info": "Colombo is often referred to as the capital but Sri Jayawardenepura Kotte, a suburb of Colombo, is the official, legislative capital.",
+    "flag": "/flags/ug-flag-sri_lanka.svg"
+  },
+  "tajikistan": {
+    "capital": "Dushanbe",
+    "flag": "/flags/ug-flag-tajikistan.svg"
+  },
+  "thailand": {
+    "capital": "Bangkok",
+    "flag": "/flags/ug-flag-thailand.svg"
+  },
+  "east-timor": {
+    "capital": "Dili",
+    "flag": "/flags/ug-flag-timor-leste.svg"
+  },
+  "united-arab-emirates": {
+    "capital": "Abu Dhabi",
+    "flag": "/flags/ug-flag-united_arab_emirates.svg"
+  },
+  "turkmenistan": {
+    "capital": "Ashgabat",
+    "flag": "/flags/ug-flag-turkmenistan.svg"
+  },
+  "yemen": {
+    "capital": "Sanaa",
+    "capital_info": "Also spelled as Sana'a.",
+    "flag_similarity": "Egypt (with emblem), Iraq (with text)",
+    "flag": "/flags/ug-flag-yemen.svg"
+  },
+  "vietnam": {
+    "capital": "Hanoi",
+    "flag": "/flags/ug-flag-vietnam.svg"
+  },
+  "uzbekistan": {
+    "capital": "Tashkent",
+    "flag": "/flags/ug-flag-uzbekistan.svg"
+  },
+  "fiji": {
+    "capital": "Suva",
+    "flag": "/flags/ug-flag-fiji.svg"
+  },
+  "papua-new-guinea": {
+    "capital": "Port Moresby",
+    "flag": "/flags/ug-flag-papua_new_guinea.svg"
+  },
+  "australia": {
+    "capital": "Canberra",
+    "flag_similarity": "New Zealand (red stars, two fewer stars)",
+    "flag": "/flags/ug-flag-australia.svg"
+  },
+  "solomon-islands": {
+    "capital": "Honiara",
+    "flag": "/flags/ug-flag-solomon_islands.svg"
+  },
+  "argentina": {
+    "capital": "Buenos Aires",
+    "flag": "/flags/ug-flag-argentina.svg"
+  },
+  "bolivia": {
+    "capital": "Sucre",
+    "capital_info": "While Sucre is the constitutional capital, La Paz is the seat of government.",
+    "flag_similarity": "Ghana (star instead of coat of arms)",
+    "flag": "/flags/ug-flag-bolivia-blur.svg"
+  },
+  "brazil": {
+    "capital": "Brasília",
+    "flag": "/flags/ug-flag-brazil.svg"
+  },
+  "chile": {
+    "capital": "Santiago",
+    "flag": "/flags/ug-flag-chile.svg"
+  },
+  "colombia": {
+    "capital": "Bogotá",
+    "flag_similarity": "Ecuador (with coat of arms)",
+    "flag": "/flags/ug-flag-colombia.svg"
+  },
+  "ecuador": {
+    "capital": "Quito",
+    "flag_similarity": "Colombia (no coat of arms)",
+    "flag": "/flags/ug-flag-ecuador.svg"
+  },
+  "guyana": {
+    "capital": "Georgetown",
+    "flag": "/flags/ug-flag-guyana.svg"
+  },
+  "paraguay": {
+    "capital": "Asunción",
+    "flag": "/flags/ug-flag-paraguay-blur.svg"
+  },
+  "peru": {
+    "capital": "Lima",
+    "flag": "/flags/ug-flag-peru.svg"
+  },
+  "suriname": {
+    "capital": "Paramaribo",
+    "flag": "/flags/ug-flag-suriname.svg"
+  },
+  "uruguay": {
+    "capital": "Montevideo",
+    "flag": "/flags/ug-flag-uruguay.svg"
+  },
+  "venezuela": {
+    "capital": "Caracas",
+    "flag": "/flags/ug-flag-venezuela.svg"
+  },
+  "cook-islands": {
+    "capital": "Avarua",
+    "flag": "/flags/ug-flag-cook_islands.svg"
+  },
+  "federated-states-of-micronesia": {
+    "capital": "Palikir",
+    "flag": "/flags/ug-flag-federated_states_of_micronesia.svg"
+  },
+  "guam": {
+    "capital": "Hagåtña",
+    "flag": "/flags/ug-flag-guam-blur.svg"
+  },
+  "vanuatu": {
+    "capital": "Port Vila",
+    "flag": "/flags/ug-flag-vanuatu.svg"
+  },
+  "canada": {
+    "capital": "Ottawa",
+    "flag": "/flags/ug-flag-canada.svg"
+  },
+  "united-states-of-america": {
+    "capital": "Washington, D.C.",
+    "flag": "/flags/ug-flag-united_states_of_america.svg"
+  },
+  "mexico": {
+    "capital": "Mexico City",
+    "flag": "/flags/ug-flag-mexico.svg"
+  },
+  "puerto-rico": {
+    "capital": "San Juan",
+    "flag_similarity": "Cuba (red triangle, blue stripes)",
+    "flag": "/flags/ug-flag-puerto_rico.svg"
+  },
+  "cuba": {
+    "capital": "Havana",
+    "flag_similarity": "Puerto Rico (blue triangle, red stripes)",
+    "flag": "/flags/ug-flag-cuba.svg"
+  },
+  "dominican-republic": {
+    "capital": "Santo Domingo",
+    "flag": "/flags/ug-flag-dominican_republic.svg"
+  },
+  "haiti": {
+    "capital": "Port-au-Prince",
+    "flag": "/flags/ug-flag-haiti.svg"
+  },
+  "jamaica": {
+    "capital": "Kingston",
+    "flag": "/flags/ug-flag-jamaica.svg"
+  },
+  "trinidad-and-tobago": {
+    "capital": "Port of Spain",
+    "flag": "/flags/ug-flag-trinidad_and_tobago.svg"
+  },
+  "the-bahamas": {
+    "capital": "Nassau",
+    "flag": "/flags/ug-flag-the_bahamas.svg"
+  },
+  "barbados": {
+    "capital": "Bridgetown",
+    "flag": "/flags/ug-flag-barbados.svg"
+  },
+  "belize": {
+    "capital": "Belmopan",
+    "flag": "/flags/ug-flag-belize.svg"
+  },
+  "costa-rica": {
+    "capital": "San José",
+    "flag": "/flags/ug-flag-costa_rica-blur.svg"
+  },
+  "el-salvador": {
+    "capital": "San Salvador",
+    "flag_similarity": "Nicaragua (different coat of arms, slightly lighter blue)",
+    "flag": "/flags/ug-flag-el_salvador-blur.svg"
+  },
+  "guatemala": {
+    "capital": "Guatemala City",
+    "flag": "/flags/ug-flag-guatemala.svg"
+  },
+  "honduras": {
+    "capital": "Tegucigalpa",
+    "flag": "/flags/ug-flag-honduras.svg"
+  },
+  "nicaragua": {
+    "capital": "Managua",
+    "flag_similarity": "El Salvador (different coat of arms, slightly darker blue)",
+    "flag": "/flags/ug-flag-nicaragua-blur.svg"
+  },
+  "panama": {
+    "capital": "Panama City",
+    "flag": "/flags/ug-flag-panama.svg"
+  },
+  "antigua-and-barbuda": {
+    "capital": "St. John's",
+    "flag": "/flags/ug-flag-antigua_and_barbuda.svg"
+  },
+  "dominica": {
+    "capital": "Roseau",
+    "flag": "/flags/ug-flag-dominica.svg"
+  },
+  "saint-vincent-and-the-grenadines": {
+    "capital": "Kingstown",
+    "flag": "/flags/ug-flag-saint_vincent_and_the_grenadines.svg"
+  },
+  "somalia": {
+    "capital": "Mogadishu",
+    "flag": "/flags/ug-flag-somalia.svg"
+  },
+  "ghana": {
+    "capital": "Accra",
+    "flag_similarity": "Bolivia (coat of arms instead of star)",
+    "flag": "/flags/ug-flag-ghana.svg"
+  },
+  "guinea": {
+    "capital": "Conakry",
+    "flag_similarity": "Mali (red and green flipped, slightly brighter green)",
+    "flag": "/flags/ug-flag-guinea.svg"
+  },
+  "new-zealand": {
+    "capital": "Wellington",
+    "flag_similarity": "Australia (white stars, two more stars)",
+    "flag": "/flags/ug-flag-new_zealand.svg"
+  },
+  "french-polynesia": {
+    "capital": "Papeete",
+    "flag": "/flags/ug-flag-french_polynesia.svg"
+  },
+  "philippines": {
+    "capital": "Manila",
+    "flag": "/flags/ug-flag-philippines.svg"
+  },
+  "kosovo": {
+    "capital": "Pristina",
+    "flag": "/flags/ug-flag-kosovo.svg"
+  },
+  "libya": {
+    "capital": "Tripoli",
+    "flag": "/flags/ug-flag-libya.svg"
+  },
+  "palau": {
+    "capital": "Ngerulmud",
+    "flag": "/flags/ug-flag-palau.svg"
+  },
+  "saint-lucia": {
+    "capital": "Castries",
+    "flag": "/flags/ug-flag-saint_lucia.svg"
+  },
+  "grenada": {
+    "capital": "St. George's",
+    "flag": "/flags/ug-flag-grenada.svg"
+  },
+  "curacao": {
+    "capital": "Willemstad",
+    "flag_similarity": "Nauru (single star below yellow band)",
+    "flag": "/flags/ug-flag-curacao.svg"
+  },
+  "kiribati": {
+    "capital": "South Tarawa",
+    "flag": "/flags/ug-flag-kiribati.svg"
+  },
+  "macau": {
+    "flag": "/flags/ug-flag-macau.svg"
+  },
+  "marshall-islands": {
+    "capital": "Majuro",
+    "flag": "/flags/ug-flag-marshall_islands.svg"
+  },
+  "nauru": {
+    "capital": "Yaren",
+    "capital_info": "Nauru has no official capital; the Yaren District is the de facto capital.",
+    "flag_similarity": "Curaçao (two stars in top-left corner)",
+    "flag": "/flags/ug-flag-nauru.svg"
+  },
+  "new-caledonia": {
+    "capital": "Nouméa",
+    "flag": "/flags/ug-flag-new_caledonia.svg"
+  },
+  "niue": {
+    "capital": "Alofi",
+    "flag": "/flags/ug-flag-niue.svg"
+  },
+  "northern-cyprus": {
+    "capital": "North Nicosia",
+    "flag": "/flags/ug-flag-northern_cyprus.svg"
+  },
+  "saint-kitts-and-nevis": {
+    "capital": "Basseterre",
+    "flag": "/flags/ug-flag-saint_kitts_and_nevis.svg"
+  },
+  "samoa": {
+    "capital": "Apia",
+    "flag": "/flags/ug-flag-samoa.svg"
+  },
+  "somaliland": {
+    "capital": "Hargeisa",
+    "flag": "/flags/ug-flag-somaliland.svg"
+  },
+  "south-sudan": {
+    "capital": "Juba",
+    "flag": "/flags/ug-flag-south_sudan.svg"
+  },
+  "tuvalu": {
+    "capital": "Funafuti",
+    "flag": "/flags/ug-flag-tuvalu.svg"
+  },
+  "united-states-virgin-islands": {
+    "capital": "Charlotte Amalie",
+    "flag": "/flags/ug-flag-united_states_virgin_islands.svg"
+  },
+  "aland-islands": {
+    "capital": "Mariehamn",
+    "flag": "/flags/ug-flag-aland_islands.svg"
+  },
+  "south-ossetia": {
+    "capital": "Tskhinvali",
+    "flag": "/flags/ug-flag-south_ossetia.svg"
+  },
+  "aruba": {
+    "capital": "Oranjestad",
+    "flag": "/flags/ug-flag-aruba.svg"
+  },
+  "abkhazia": {
+    "capital": "Sukhumi",
+    "flag": "/flags/ug-flag-abkhazia.svg"
+  },
+  "tonga": {
+    "capital": "Nukuʻalofa",
+    "flag": "/flags/ug-flag-tonga.svg"
+  },
+  "transnistria": {
+    "capital": "Tiraspol",
+    "flag": "/flags/ug-flag-transnistria.svg"
+  },
+  "european-union": {
+    "flag": "/flags/ug-flag-european_union.svg"
+  }
+}

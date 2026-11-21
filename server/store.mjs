@@ -9,7 +9,11 @@ import { createStudyLog, validateStudyLog } from "./study-log.mjs";
 import { analytics } from "./analytics.mjs";
 import { studyDay, nextStudyDay, scheduleStudyDay } from "./study-day.mjs";
 
+import facts from "./geography-facts.json" with { type: "json" };
+const optionalModes = { capital: "capital", fromCapital: "capital", flag: "flag", fromFlag: "flag" };
+const modes = ["locate", "identify", ...Object.keys(optionalModes)];
 export const defaults = {
+  activeDeck: "geography",
   newPerDay: 15,
   reviewsPerDay: 200,
   retention: 0.9,
@@ -60,7 +64,8 @@ export function validateGeometry(g) {
   return g;
 }
 export function validateSettings(s) {
-  s = { reviewsPerDay: defaults.reviewsPerDay, ...s };
+  s = { activeDeck: "geography", reviewsPerDay: defaults.reviewsPerDay, ...s };
+  if (!["geography","flags"].includes(s.activeDeck)) throw Error("Invalid deck.");
   if (!Number.isInteger(s.newPerDay) || s.newPerDay < 0 || s.newPerDay > 500)
     throw Error("New cards per day must be 0–500.");
   if (!Number.isInteger(s.reviewsPerDay) || s.reviewsPerDay < 0 || s.reviewsPerDay > 5000)
@@ -78,7 +83,7 @@ export function validateSettings(s) {
   if (
     !Array.isArray(s.modes) ||
     !s.modes.length ||
-    s.modes.some((m) => !["locate", "identify"].includes(m))
+    s.modes.some((m) => !modes.includes(m))
   )
     throw Error("Choose at least one question direction.");
   if (
@@ -107,6 +112,14 @@ const distance = (a, b) => {
     )
   );
 };
+const isFlag = mode => mode === "flag" || mode === "fromFlag";
+function flagChoices(id, token) {
+  const rank = key => createHash("sha256").update(token + key).digest("hex");
+  const candidates = Object.keys(facts).filter(key => key !== id && facts[key].flag && facts[key].flag !== facts[id].flag);
+  const others = candidates.sort((a,b) => rank(a).localeCompare(rank(b))).slice(0,3);
+  return [...others,id].sort((a,b) => rank("order"+a).localeCompare(rank("order"+b)))
+    .map(key => ({ id: key, flag: facts[key].flag }));
+}
 export function checkAnswer(p, mode, answer) {
   if (answer?.reveal)
     return {
@@ -114,10 +127,14 @@ export function checkAnswer(p, mode, answer) {
       revealed: true,
       message: "Answer revealed. Use Again if you did not recall it.",
     };
-  if (mode === "identify") {
+  if (mode !== "locate") {
     if (typeof answer?.text !== "string" || !answer.text.trim())
       throw Error("Enter a name, or reveal the answer.");
-    const correct = [p.name, ...p.aliases].some(
+    const fact = facts[p.id];
+    const cityList = value => value.split(",").map(normalize).sort().join(",");
+    const correct = mode === "capital" ? cityList(fact.capital) === cityList(answer.text)
+      : mode === "flag" ? answer.text === p.id
+      : [p.name, ...p.aliases].some(
       (n) => normalize(n) === normalize(answer.text),
     );
     return {
@@ -320,6 +337,16 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         putPlace(p);
     db.prepare("INSERT INTO meta VALUES('seeded','1')").run();
   }
+  function addOptionalCards(enabled) {
+    const insert = db.prepare("INSERT OR IGNORE INTO cards(id,place_id,mode,memory,due,state) VALUES(?,?,?,?,?,0)");
+    for (const mode of enabled.filter(m => Object.hasOwn(optionalModes, m))) {
+      for (const p of places()) {
+        if (!facts[p.id]?.[optionalModes[mode]]) continue;
+        const memory = createEmptyCard(clock());
+        insert.run(p.id + ":" + mode, p.id, mode, encode(memory), +memory.due);
+      }
+    }
+  }
   const getCard = (id) => {
     const c = db.prepare("SELECT * FROM cards WHERE id=?").get(id);
     if (!c) throw Error("Unknown card.");
@@ -348,7 +375,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         .prepare(
           "SELECT * FROM reviews WHERE day=? AND undone=0 ORDER BY rowid",
         )
-        .all(day),
+        .all(day).filter(r => isFlag(r.card_id.split(":").at(-1)) === (s.activeDeck === "flags")),
       seenPlaces = new Set(today.map((r) => r.place_id)),
       seenCards = new Set(today.map((r) => r.card_id));
     // Count long-term review cards once. New cards and short learning or
@@ -366,6 +393,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         !p.archived &&
         s.kinds.includes(p.kind) &&
         s.modes.includes(c.mode) &&
+        isFlag(c.mode) === (s.activeDeck === "flags") &&
         (!s.regions.length || s.regions.includes(p.region)) &&
         (!s.burySiblings || !seenPlaces.has(c.place_id) || seenCards.has(c.id))
       );
@@ -489,7 +517,10 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         state: card.state,
         version: card.version,
         kind: p.kind,
-        name: card.mode === "locate" ? p.name : null,
+        name: ["locate", "capital", "flag"].includes(card.mode) ? p.name : null,
+        ...(card.mode === "fromCapital" && { capital: facts[p.id].capital, hint: facts[p.id].capital_hint }),
+        ...(card.mode === "fromFlag" && { flag: facts[p.id].flag }),
+        ...(card.mode === "flag" && { choices: flagChoices(p.id, token) }),
         geometry: card.mode === "identify" ? p.geometry : null,
         center: card.mode === "identify" ? p.center : null,
         approximate: p.approximate,
@@ -544,6 +575,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     a.checked = true;
     return {
       ...a.result,
+      ...(Object.hasOwn(optionalModes, a.card.mode) && { facts: facts[p.id] }),
       place: p,
       intervals: [1, 2, 3, 4].map((r) => {
         const card = scheduleStudyDay(next[r].card, now);
@@ -700,7 +732,8 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       if (
         !c ||
         !ids.has(c.place_id) ||
-        !["locate", "identify"].includes(c.mode) ||
+        !modes.includes(c.mode) ||
+        (Object.hasOwn(optionalModes,c.mode) && !facts[c.place_id]?.[optionalModes[c.mode]]) ||
         c.id !== `${c.place_id}:${c.mode}` ||
         !Number.isFinite(+new Date(c.memory?.due)) ||
         ![0, 1, 2, 3].includes(c.memory?.state) ||
@@ -852,7 +885,10 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     },
     setSettings: (patch) => {
       const s = validateSettings({ ...settings(), ...patch });
-      db.prepare("UPDATE settings SET data=? WHERE id=1").run(encode(s));
+      tx(() => {
+        addOptionalCards(s.modes);
+        db.prepare("UPDATE settings SET data=? WHERE id=1").run(encode(s));
+      });
       return s;
     },
     createPlace: (p) => {

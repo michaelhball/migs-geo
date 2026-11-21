@@ -618,3 +618,23 @@ test("an open question survives restarts before and after checking and rating", 
     rmSync(dir, { recursive: true, force: true });
   }
 });
+
+test("optional directions are isolated by deck and round-trip with ratings", () => {
+  const store = createStore(":memory:", atlas.filter(p => p.id === "france"));
+  assert.equal(store.cards().length, 2);
+  for (const mode of ["capital","fromCapital","flag","fromFlag"]) {
+    const flags = ["flag","fromFlag"].includes(mode);
+    store.setSettings({modes:[mode], activeDeck:flags ? "flags" : "geography", burySiblings:false});
+    const q = store.question();
+    assert.equal(q.card.mode,mode);
+    const text = mode === "capital" ? "Paris" : "France";
+    assert.ok(store.check(q.token,{text:mode === "flag" ? "france" : text}).correct);
+    store.review(q.token,4);
+  }
+  const copy = createStore(":memory:");
+  copy.restore(store.exportData());
+  assert.equal(copy.history().length,4);
+  assert.equal(copy.cards().length,6);
+  copy.db.close();
+  store.db.close();
+});

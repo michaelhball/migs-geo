@@ -31,6 +31,10 @@ async function api(route: string, method = "GET", data?: any) {
   return result;
 }
 const reviewShuffle = crypto.randomUUID();
+const modeNames: Record<string,string> = {
+  locate: "Place → map", identify: "Map → place", capital: "Place → capital",
+  fromCapital: "Capital → place", flag: "Place → flag", fromFlag: "Flag → place",
+};
 const kindNames: any = {
   country: "Country",
   territory: "Territory / island",
@@ -411,8 +415,24 @@ function App() {
                   </span>
                 </div>
               </div>
+              {settings?.modes.some((m:string) => m === "flag" || m === "fromFlag") || settings?.activeDeck === "flags" ? (
+                <label>Study deck <select value={settings.activeDeck} disabled={busy} onChange={e => saveSettings({activeDeck:e.target.value})}>
+                  <option value="geography">Geography</option><option value="flags">Flags</option>
+                </select></label>
+              ) : null}
               <div className="study-layout">
-                <Atlas
+                {question?.card && !["locate","identify"].includes(question.card.mode) ? (
+                  <div className="fact-display">
+                    {question.card.mode === "flag" && !result ? <div className="flag-choices">
+                      {question.card.choices.map((choice:any, index:number) => <button key={choice.id}
+                        aria-label={`Flag ${index+1}`} aria-pressed={text===choice.id} onClick={() => setText(choice.id)}>
+                        <img src={choice.flag} alt="" /></button>)}
+                    </div> : question.card.flag || result?.facts?.flag && question.card.mode === "flag"
+                      ? <img className="flag-prompt" src={question.card.flag || result.facts.flag} alt="Flag" />
+                      : <strong>{question.card.capital || question.card.name}</strong>}
+                    {question.card.hint && <small>{question.card.hint}</small>}
+                  </div>
+                ) : <Atlas
                   geometry={geometry}
                   center={center}
                   point={point}
@@ -427,7 +447,7 @@ function App() {
                   revealed={!!result}
                   correct={result?.correct}
                   resetKey={question?.token || "home"}
-                />
+                />}
                 <aside className="study-panel">
                   {!question ? (
                     <>
@@ -468,8 +488,7 @@ function App() {
                           {places.length} places · {cards.length} cards
                         </span>
                         <p>
-                          Two directions: find the place on a map, or name the
-                          highlighted place.
+                          Choose question directions in Settings.
                         </p>
                         <button
                           className="text-button"
@@ -520,14 +539,18 @@ function App() {
                             <h2>
                               {question.card.mode === "locate"
                                 ? `Find ${question.card.name}`
+                                : question.card.mode === "fromFlag" ? "Which place uses this flag?"
+                                : question.card.mode === "flag" ? `Choose the flag of ${question.card.name}`
+                                : question.card.mode === "capital" ? "Name the capital"
+                                : question.card.mode === "fromCapital" ? "Which place has this capital?"
                                 : "Name the highlighted place"}
                             </h2>
                             <p>
                               {question.card.mode === "locate"
                                 ? "Click the map to select your answer. Drag to move and scroll to zoom."
-                                : "Type the name, then check your answer."}
+                                : question.card.mode === "flag" ? "Select a flag, then check your answer." : "Type the name, then check your answer."}
                             </p>
-                            {question.card.mode === "identify" && (
+                            {!["locate","flag"].includes(question.card.mode) && (
                               <form
                                 onSubmit={(e) => {
                                   e.preventDefault();
@@ -535,13 +558,13 @@ function App() {
                                 }}
                               >
                                 <label className="sr-only" htmlFor="answer">
-                                  Place name
+                                  {question.card.mode === "capital" ? "Capital" : "Place name"}
                                 </label>
                                 <input
                                   id="answer"
                                   autoFocus
                                   autoComplete="off"
-                                  placeholder="Place name"
+                                  placeholder={question.card.mode === "capital" ? "Capital" : "Place name"}
                                   value={text}
                                   onChange={(e) => setText(e.target.value)}
                                 />
@@ -613,8 +636,9 @@ function App() {
                                       : "Check your answer"}
                               </span>
                             </div>
-                            <h2>{result.place.name}</h2>
-                            {question.card.mode === "identify" && result.correct === false && !result.revealed ? (
+                            <h2>{question.card.mode === "capital" ? result.facts.capital : result.place.name}</h2>
+                            {result.facts && <p>{question.card.mode.toLowerCase().includes("flag") ? result.facts.flag_similarity : result.facts.capital_info}</p>}
+                            {!["locate","flag"].includes(question.card.mode) && result.correct === false && !result.revealed ? (
                               <p>Your answer was <strong>{text.trim()}</strong>.</p>
                             ) : (
                               <p>{result.message}</p>
@@ -656,9 +680,7 @@ function App() {
                       </div>
                       <div className="panel-foot">
                         <span>
-                          {question.card.mode === "locate"
-                            ? "Place → map"
-                            : "Map → place"}
+                          {modeNames[question.card.mode]}
                         </span>
                         {question.card.small && (
                           <p>
@@ -921,9 +943,7 @@ function App() {
                                 .map((c) => (
                                   <div key={c.id}>
                                     <span>
-                                      {c.mode === "locate"
-                                        ? "Place → map"
-                                        : "Map → place"}
+                                      {modeNames[c.mode]}
                                     </span>
                                     <strong>
                                       {c.suspended ? "Paused" : states[c.state]}
@@ -1055,10 +1075,7 @@ function App() {
                 <div className="setting-row">
                   <span>Question directions</span>
                   <div className="checkbox-stack">
-                    {[
-                      ["locate", "Place → map"],
-                      ["identify", "Map → place"],
-                    ].map(([key, label]) => (
+                    {Object.entries(modeNames).map(([key, label]) => (
                       <label key={key}>
                         <input
                           type="checkbox"
@@ -1073,7 +1090,7 @@ function App() {
                             })
                           }
                         />
-                        {label}
+                        {label}{["flag","fromFlag"].includes(key) ? " (Flags deck)" : ""}
                       </label>
                     ))}
                   </div>

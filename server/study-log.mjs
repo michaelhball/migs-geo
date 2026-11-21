@@ -162,7 +162,7 @@ export function validateStudyLog(data, cardIds, placeIds, reviews) {
       attempts.has(a.id) ||
       !cardIds.has(a.card_id) ||
       !placeIds.has(a.place_id) ||
-      !["locate", "identify"].includes(a.mode) ||
+      !["locate", "identify", "capital", "fromCapital", "flag", "fromFlag"].includes(a.mode) ||
       a.card_id !== `${a.place_id}:${a.mode}` ||
       ![0, 1].includes(a.practice) ||
       !validDate(a.started_at) ||
@@ -227,7 +227,7 @@ export function validateStudyLog(data, cardIds, placeIds, reviews) {
       !answer ||
       !(
         answer.reveal === true ||
-        (attempt.mode === "identify" && typeof answer.text === "string") ||
+        (attempt.mode !== "locate" && typeof answer.text === "string") ||
         (attempt.mode === "locate" &&
           Array.isArray(point) &&
           point.length === 2 &&

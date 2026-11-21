@@ -600,7 +600,7 @@
                     "type": "string"
                   },
                   "mode": {
-                    "enum": ["locate", "identify"]
+                    "enum": ["locate", "identify", "capital", "fromCapital", "flag", "fromFlag"]
                   }
                 },
                 "required": []
@@ -884,7 +884,7 @@
                         "type": "array",
                         "minItems": 1,
                         "items": {
-                          "enum": ["locate", "identify"]
+                          "enum": ["locate", "identify", "capital", "fromCapital", "flag", "fromFlag"]
                         }
                       },
                       "burySiblings": {
@@ -1240,7 +1240,7 @@
             "type": "array",
             "minItems": 1,
             "items": {
-              "enum": ["locate", "identify"]
+              "enum": ["locate", "identify", "capital", "fromCapital", "flag", "fromFlag"]
             }
           },
           "burySiblings": {
