@@ -1,10 +1,21 @@
 import { createHash } from "node:crypto";
-import catalog from "./fact-candidates.json" with { type:"json" };
+import {readFileSync, statSync} from "node:fs";
 import approved from "../data/approved-facts.json" with { type:"json" };
 
-const options = new Map(catalog.map(p => [p.id, p.options.map(o => ({
-  ...o, id: createHash("sha256").update(JSON.stringify([o.text,o.source])).digest("hex").slice(0,24),
-}))]));
+const catalogFile = new URL("./fact-candidates.json", import.meta.url);
+let modified, catalog, options;
+function refreshCatalog() {
+  const mtime = statSync(catalogFile).mtimeMs;
+  if (mtime === modified) return;
+  const next = JSON.parse(readFileSync(catalogFile, "utf8"));
+  const indexed = new Map(next.map(p => [p.id, p.options.map(o => ({
+    ...o, id: createHash("sha256").update(JSON.stringify([o.text,o.source])).digest("hex").slice(0,24),
+  }))]));
+  catalog = next;
+  options = indexed;
+  modified = mtime;
+}
+refreshCatalog();
 const prefix = "fact-review/";
 const empty = { revision:0, choice:null, comment:"", hold:false, published:null };
 
@@ -19,6 +30,7 @@ export function factReview(db, tx, places) {
     .run(prefix+id, JSON.stringify(row));
   const current = id => read(id).published ?? (Object.hasOwn(approved,id) ? approved[id] : null);
   function list() {
+    refreshCatalog();
     const decisions = new Map(backup().map(row => [row.id, row]));
     const directory = new Map(catalog.map(p => [p.id, {name:p.name,studying:false}]));
     for (const p of places()) directory.set(p.id, p);
@@ -41,6 +53,7 @@ export function factReview(db, tx, places) {
   }
   return {list, current, backup,
     save(id,input) {
+      refreshCatalog();
       return tx(() => {
         if (!options.has(id) && !places().some(p => p.id === id)) throw Error("Unknown fact review place.");
         const old = read(id);

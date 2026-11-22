@@ -7,6 +7,7 @@ const pageSize = 12;
 const articles = new Map();
 const normalize = value => value.normalize("NFD").replace(/\p{Diacritic}/gu,"").toLowerCase();
 const saving = new Set();
+let editVersion=0;
 function el(tag, text) {
   const node = document.createElement(tag);
   if (text) node.textContent = text;
@@ -81,7 +82,7 @@ function render(p) {
   check.onchange=()=>{p.hold=check.checked;changed()};
   article.append(note,hold,actions);clear.hidden=!p.options.length;
   let dirty=false, busy=false;
-  function changed(){dirty=true;saving.add(p.id);status.textContent="Saving…";void save()}
+  function changed(){editVersion++;dirty=true;saving.add(p.id);status.textContent="Saving…";void save()}
   async function save(){
     if(busy)return;
     busy=true;retry.hidden=true;
@@ -101,10 +102,30 @@ function render(p) {
 }
 window.addEventListener("beforeunload",e=>{if(saving.size){e.preventDefault();e.returnValue=""}});
 search.oninput=scope.onchange=()=>{pending.reset();research.reset();chosen.reset();refresh()};
-try {
-  const response=await fetch("/api/fact-review");if(!response.ok)throw Error("Could not load the review.");
-  places=await response.json();
-  for (const p of places) p.savedChoice=p.choice;
-  places.sort((a,b)=>Number(!!b.options.length)-Number(!!a.options.length)||a.name.localeCompare(b.name));
-  refresh();
-} catch(e){summary.textContent=e.message}
+let loading=false;
+async function loadPlaces(){
+  if(loading || saving.size)return;
+  loading=true;
+  const version=editVersion;
+  try {
+    const response=await fetch("/api/fact-review",{cache:"no-store"});
+    if(!response.ok)throw Error("Could not load the review.");
+    const incoming=await response.json();
+    if(saving.size || version!==editVersion)return;
+    const previous=new Map(places.map(p=>[p.id,p]));
+    places=incoming.map(row=>{
+      const old=previous.get(row.id);
+      if(old && old.revision===row.revision && old.name===row.name &&
+          old.options.length===row.options.length && old.options.every((o,i)=>o.id===row.options[i].id)) {
+        old.studying=row.studying;
+        return old;
+      }
+      articles.delete(row.id);
+      return {...row,savedChoice:row.choice};
+    }).sort((a,b)=>a.name.localeCompare(b.name));
+    refresh();
+  } catch(e){summary.textContent=e.message} finally{loading=false}
+}
+window.addEventListener("focus",loadPlaces);
+setInterval(()=>{if(!document.hidden)void loadPlaces()},60000);
+await loadPlaces();
