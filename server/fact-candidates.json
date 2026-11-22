@@ -922,5 +922,278 @@
         "label": "NASA"
       }
     ]
+  },
+  {
+    "id": "afghanistan",
+    "name": "Afghanistan",
+    "options": [
+      {
+        "text": "The narrow finger of Afghanistan that reaches toward China is the Wakhan Corridor. It holds the country’s highest peaks.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/af.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The Hindu Kush cuts diagonally across the country, separating the northern provinces from much of the rest of Afghanistan.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/af.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Between the Russian and British empires, the territory of Afghanistan served as a buffer. Afghanistan secured control of its own foreign affairs in 1919.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/af.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "algeria",
+    "name": "Algeria",
+    "options": [
+      {
+        "text": "Giraffes and elephants appear in rock art in what is now Algerian desert. The artists lived during a much wetter period, when the Sahara around them supported very different animals.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ag.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Algiers takes its name from islands you can no longer sail around. The four islets that gave the city its Arabic name were joined to the mainland in the sixteenth century.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ag.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The words of Algeria’s anthem began as a poem written in prison. Moufdi Zakaria wrote it while detained in Algiers under French colonial rule.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ag.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "american-samoa",
+    "name": "American Samoa",
+    "options": [
+      {
+        "text": "Tutuila once sheltered defeated warriors and chiefs exiled from other Samoan islands. People had settled the island by about 1000 BC.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/aq.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Pago Pago’s harbour gets shelter twice over. Its shape keeps out heavy seas, and the mountains around it break the wind.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/aq.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "When Dutch explorer Jacob Roggeveen reached the Manuʻa Islands in 1722, he was sailing into an archipelago that Polynesians had inhabited for centuries.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/aq.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "angola",
+    "name": "Angola",
+    "options": [
+      {
+        "text": "Angola takes its name from a royal title. Portuguese visitors heard the rulers of Ndongo called ngola and applied the word to the land.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ao.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Follow Angola’s coast north and you leave the country before re-entering it. A strip of the Democratic Republic of the Congo separates Cabinda from the rest of Angola.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ao.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Luanda once had a much longer Portuguese name, São Paulo da Assunção de Loanda. The last part survived as the name of Angola’s capital.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ao.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "antarctica",
+    "name": "Antarctica",
+    "options": [
+      {
+        "text": "Antarctica is the highest continent on average. It is also the driest, despite having a surface largely made of frozen water.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/antarctica/ay.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The South Pole gets sunlight around the clock in summer. Over the same stretch of summer time it can receive more solar energy at the surface than the equator.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/antarctica/ay.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The name Antarctica gives a direction in Greek. It means the place opposite the Arctic.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/antarctica/ay.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "antigua-and-barbuda",
+    "name": "Antigua and Barbuda",
+    "options": [
+      {
+        "text": "Antigua was named for a church in Seville. Columbus borrowed the name Santa María la Antigua on his second Atlantic voyage in 1493.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/ac.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Antigua’s shoreline folds into numerous natural harbours. On Barbuda, the large harbour is on the western side.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/ac.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Archaeological settlement on these islands goes back to about 2400 BC, thousands of years before European sailing charts showed them.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/ac.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "armenia",
+    "name": "Armenia",
+    "options": [
+      {
+        "text": "An Armenian khachkar begins as local stone. The maker uses hammers, chisels and fine-pointed tools to cut a cross and its surrounding ornament into the surface.",
+        "source": "https://ich.unesco.org/en/RL/00434",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Traditional Armenian lavash can be stored for up to six months. The same thin bread that keeps so long can be wrapped around fresh greens or cheese.",
+        "source": "https://ich.unesco.org/en/RL/00985",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The fortress of Erebuni stood on the site of present-day Yerevan in 782 BC. One explanation traces the modern city’s name to that fortress.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/am.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "aruba",
+    "name": "Aruba",
+    "options": [
+      {
+        "text": "There was a gold rush in Aruba in the nineteenth century. Gold mining, oil refining and tourism each had a turn shaping the island’s economy.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/aa.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Aruba’s capital translates as “Orange City.” In 1824 Oranjestad was named for the Dutch royal House of Orange-Nassau.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/aa.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Aruba is a riverless Caribbean island. Atlantic trade winds blow across the low terrain and temper its tropical heat.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/aa.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "barbados",
+    "name": "Barbados",
+    "options": [
+      {
+        "text": "Barbados’s name means “the bearded ones.” One explanation points to the island’s fig trees, whose hanging growth resembles beards.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/bb.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Before it was Bridgetown, the settlement beside Carlisle Bay was called Indian Bridge. A bridge gave the capital a landmark early enough to appear in its 1628 name.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/bb.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Enslaved Africans worked the sugar plantations that made this small eastern island a leading early producer in the Caribbean sugar trade.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/bb.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "benin",
+    "name": "Benin",
+    "options": [
+      {
+        "text": "Benin’s capital has a Portuguese name on the coast of West Africa. Porto-Novo simply means “new port.”",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/bn.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The old national name Dahomey preserved the name of an earlier kingdom, Dan Homé, in what is now southern Benin.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/bn.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Sandbanks line Benin’s shore. A coastline open to the Gulf of Guinea offered ships little in the way of natural harbour shelter.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/bn.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "bermuda",
+    "name": "Bermuda",
+    "options": [
+      {
+        "text": "English colonists bound for Virginia in 1609 were shipwrecked on Bermuda. A failed Atlantic crossing helped establish the island’s first settlement.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/bd.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Bermuda gets ample rain, yet its archipelago has neither rivers nor freshwater lakes.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/bd.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The islands took their name from Juan de Bermúdez, a Spanish captain who explored them in the early 1500s, about a century before the English settlement.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/bd.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "bhutan",
+    "name": "Bhutan",
+    "options": [
+      {
+        "text": "In Dzongkha, Bhutan is Druk Yul, the Land of the Dragon. The English name may instead preserve a Sanskrit reference to the edge of Tibet.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/bt.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "At Drametse in Bhutan, a drum dance brings together sixteen masked dancers and a ten-member ensemble. The masks are part of the dance itself.",
+        "source": "https://ich.unesco.org/en/RL/00161",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Bhutan’s position on the map is also a position on a route. Several passes through the Himalayas link the approaches from India and Tibet.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/bt.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "brazil",
+    "name": "Brazil",
+    "options": [
+      {
+        "text": "Brazil was named for a tree. Brazilwood grew along the coast and yielded a deep red dye.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/br.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "In a capoeira circle, the master sets the rhythm of the game with chants and a single-string percussion instrument.",
+        "source": "https://ich.unesco.org/en/RL/00892",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Brazil touches every South American country except two. Neither Ecuador nor Chile shares a border with it.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/br.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
   }
 ]
