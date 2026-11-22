@@ -20,14 +20,14 @@ export function factReview(db, tx, places) {
   const current = id => read(id).published ?? (Object.hasOwn(approved,id) ? approved[id] : null);
   function list() {
     const decisions = new Map(backup().map(row => [row.id, row]));
-    const directory = new Map(catalog.map(p => [p.id, p.name]));
-    for (const p of places()) directory.set(p.id, p.name);
-    return Array.from(directory, ([id, name]) => {
+    const directory = new Map(catalog.map(p => [p.id, {name:p.name,studying:false}]));
+    for (const p of places()) directory.set(p.id, p);
+    return Array.from(directory, ([id, {name, studying}]) => {
       const candidates = options.get(id) ?? [];
       const row = decisions.get(id) ?? {
         ...empty, choice: candidates.find(o => o.text === approved[id]?.text)?.id ?? null,
       };
-      return {id, name, options:candidates, ...row, current:row.published ?? approved[id] ?? null};
+      return {id, name, studying, options:candidates, ...row, current:row.published ?? approved[id] ?? null};
     });
   }
   const backup = () => db.prepare("SELECT key,value FROM meta WHERE key LIKE 'fact-review/%'").all()

@@ -816,6 +816,9 @@ test("fact review includes custom places before candidates exist", () => {
   try {
     const review=s.editorial;
     assert.deepEqual(review.list().find(p=>p.id==="alpha").options,[]);
+    assert.equal(review.list().find(p=>p.id==="alpha").studying,true);
+    s.setSettings({kinds:["water"]});
+    assert.equal(review.list().find(p=>p.id==="alpha").studying,false);
     const draft={revision:0,choice:null,comment:"Research the name",hold:true};
     review.save("alpha",draft);
     assert.equal(review.list().find(p=>p.id==="alpha").comment,draft.comment);

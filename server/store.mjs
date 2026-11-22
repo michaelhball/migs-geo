@@ -286,7 +286,25 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       .prepare("SELECT * FROM places")
       .all()
       .map((p) => ({ ...parse(p.data), archived: !!p.archived })));
-  const editorial = factReview(db, tx, () => places().filter(p => !p.archived));
+  function enabledPlace(p, s) {
+    if (p.archived || (s.regions.length && !s.regions.includes(p.region))) return false;
+    if (p.kind === "city") return !!s.cityCountry && p.countryCode === s.cityCountry;
+    let kind = p.kind;
+    if (kind === "lake") {
+      const area = areaKm2(p.geometry);
+      if (area < s.lakeMinimumKm2) return false;
+      if (area < s.lakeCutoffKm2) kind = "smallLake";
+    }
+    return s.kinds.includes(kind);
+  }
+  const editorial = factReview(db, tx, () => {
+    const s = settings();
+    const eligible = new Set(cards().filter(c => !c.suspended && s.modes.includes(c.mode) &&
+      isFlag(c.mode) === (s.activeDeck === "flags")).map(c => c.place_id));
+    return places().filter(p => !p.archived).map(p => ({
+      id:p.id, name:p.name, studying:enabledPlace(p,s) && eligible.has(p.id),
+    }));
+  });
   const place = (id) => {
     const p = places().find((p) => p.id === id);
     if (!p) throw Error("Unknown place.");
@@ -421,19 +439,11 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     const allCards = cards();
     const eligible = allCards.filter((c) => {
       const p = ps.get(c.place_id);
-      let filterKind = p.kind;
-      if (p.kind === "lake") {
-        const area = areaKm2(p.geometry);
-        if (area < s.lakeMinimumKm2) return false;
-        if (area < s.lakeCutoffKm2) filterKind = "smallLake";
-      }
       return (
         !c.suspended &&
-        !p.archived &&
-        (p.kind === "city" ? !!s.cityCountry && p.countryCode === s.cityCountry : s.kinds.includes(filterKind)) &&
+        enabledPlace(p, s) &&
         s.modes.includes(c.mode) &&
         isFlag(c.mode) === (s.activeDeck === "flags") &&
-        (!s.regions.length || s.regions.includes(p.region)) &&
         (!s.burySiblings || !seenPlaces.has(c.place_id) || seenCards.has(c.id))
       );
     });

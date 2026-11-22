@@ -1,8 +1,8 @@
-const list = document.querySelector("#list");
+
 const search = document.querySelector("#search");
-const filter = document.querySelector("#filter");
+const scope = document.querySelector("#scope");
 const summary = document.querySelector("#summary");
-let places = [], page = 0;
+let places = [];
 const pageSize = 12;
 const articles = new Map();
 const normalize = value => value.normalize("NFD").replace(/\p{Diacritic}/gu,"").toLowerCase();
@@ -19,34 +19,45 @@ function state(p) {
   return option.text === p.current?.text && option.source === p.current?.source ? "published" : "ready";
 }
 const labels = {missing:"Awaiting research",hold:"Needs follow-up",undecided:"Undecided",published:"On card",ready:"Ready to publish"};
-function refresh() {
-  const term = normalize(search.value.trim());
-  const matches = places.filter(p => {
-    if (!normalize(p.name).includes(term)) return false;
-    const selected = p.options.some(o => o.id === p.choice);
-    switch (filter.value) {
-      case "unselected": return !selected;
-      case "available": return !selected && p.options.length > 0;
-      case "selected": return selected;
-      case "missing": return !p.options.length;
-      case "": return true;
-      default: return state(p) === filter.value;
+function section(id) {
+  const root = document.querySelector("#"+id), list = el("div"), nav = el("nav");
+  const prev=el("button","Previous"), next=el("button","Next"), count=el("span");
+  nav.className="controls"; nav.setAttribute("aria-label",id+" pages"); nav.append(prev,count,next); root.append(list,nav);
+  let page=0;
+  prev.onclick=()=>{page--;refresh();root.scrollIntoView()};
+  next.onclick=()=>{page++;refresh();root.scrollIntoView()};
+  return {
+    reset(){page=0},
+    draw(rows) {
+      const pages=Math.ceil(rows.length/pageSize);
+      page=Math.max(0,Math.min(page,pages-1));
+      const visible=rows.slice(page*pageSize,(page+1)*pageSize).map(p=>{
+        if(!articles.has(p.id)) articles.set(p.id,render(p));
+        const {article,badge}=articles.get(p.id);
+        badge.textContent=labels[state(p)];
+        return article;
+      });
+      if(list.children.length!==visible.length || visible.some((node,i)=>node!==list.children[i])) list.replaceChildren(...visible);
+      count.textContent=`Page ${page+1} of ${pages}`;prev.disabled=!page;next.disabled=page+1>=pages;nav.hidden=pages<=1;
     }
-  });
-  const pages = Math.ceil(matches.length / pageSize);
-  page = Math.max(0, Math.min(page, pages - 1));
-  const visible = matches.slice(page * pageSize, (page + 1) * pageSize).map(p => {
-    if (!articles.has(p.id)) articles.set(p.id, render(p));
-    const {article,badge} = articles.get(p.id);
-    badge.textContent = labels[state(p)];
-    return article;
-  });
-  if (list.children.length !== visible.length || visible.some((node,i) => node !== list.children[i]))
-    list.replaceChildren(...visible);
-  summary.textContent = matches.length + " of " + places.length + " places";
-  document.querySelector("#page").textContent = pages ? `Page ${page+1} of ${pages}` : "";
-  document.querySelector("#previous").disabled = page === 0;
-  document.querySelector("#next").disabled = page + 1 >= pages;
+  };
+}
+const pending=section("pending"), chosen=section("chosen"), research=section("research");
+const researchDetails=document.querySelector("details");
+researchDetails.ontoggle=()=>refresh();
+function refresh() {
+  const term=normalize(search.value.trim()), remaining=[], selected=[], missing=[];
+  for (const p of places) {
+    if (!normalize(p.name).includes(term)) continue;
+    if (p.options.some(o=>o.id===p.savedChoice)) selected.push(p);
+    else if (scope.value==="all" || p.studying) (p.options.length ? remaining : missing).push(p);
+  }
+  pending.draw(remaining);
+  researchDetails.hidden=!missing.length;
+  document.querySelector("#research-heading").textContent=`Awaiting research (${missing.length})`;
+  research.draw(researchDetails.open ? missing : []);
+  chosen.draw(selected);
+  summary.textContent=`${remaining.length} to choose · ${missing.length} awaiting research · ${selected.length} already chosen`;
 }
 function render(p) {
   const article=el("article"), heading=el("header"), badge=el("small"), status=el("small");
@@ -82,20 +93,18 @@ function render(p) {
         const data=await response.json();if(!response.ok)throw Error(data.error||"Save failed");
         p.revision=data.revision;
       }
-      saving.delete(p.id);status.textContent="Saved";refresh();
+      p.savedChoice=p.choice;saving.delete(p.id);status.textContent="Saved";refresh();
     }catch(e){dirty=true;status.textContent=e.message;retry.hidden=false}finally{busy=false}
   }
   retry.onclick=save;
   return {article,badge};
 }
 window.addEventListener("beforeunload",e=>{if(saving.size){e.preventDefault();e.returnValue=""}});
-search.oninput=filter.onchange=()=>{page=0;refresh()};
-for (const [id,step] of [["previous",-1],["next",1]]) {
-  document.querySelector("#"+id).onclick=()=>{page+=step;refresh();search.scrollIntoView({block:"start"})};
-}
+search.oninput=scope.onchange=()=>{pending.reset();research.reset();chosen.reset();refresh()};
 try {
   const response=await fetch("/api/fact-review");if(!response.ok)throw Error("Could not load the review.");
   places=await response.json();
+  for (const p of places) p.savedChoice=p.choice;
   places.sort((a,b)=>Number(!!b.options.length)-Number(!!a.options.length)||a.name.localeCompare(b.name));
   refresh();
 } catch(e){summary.textContent=e.message}
