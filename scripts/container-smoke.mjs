@@ -26,6 +26,7 @@ async function healthy() {
 const apiHelpers = `
   import assert from 'node:assert/strict';
   import { DatabaseSync } from 'node:sqlite';
+  import seed from './data/places.json' with { type: 'json' };
   import { readdirSync } from 'node:fs';
   import { schemaVersion } from './server/migrations.mjs';
   const base='http://127.0.0.1:4387';
@@ -73,7 +74,8 @@ try {
     const page=await fetch(base);assert.equal(page.status,200);const html=await page.text();assert.match(html,/id="root"/);
     const asset=html.match(/src="([^\"]+\\.js)"/);assert.ok(asset);assert.equal((await fetch(base+asset[1])).status,200);
     const world=await (await fetch(base+'/data/world.json')).json();assert.ok(world.features.length>250);
-    assert.equal((await api('/places')).length,320);assert.equal((await api('/cards')).length,640);
+    assert.deepEqual((await api('/places')).map(p=>p.id).sort(),seed.map(p=>p.id).sort());
+    assert.equal((await api('/cards')).length,seed.length*2);
     await api('/settings','PATCH',{newPerDay:7});
     await api('/places','POST',{id:'container-test',name:'Container test point',geometry:{type:'Point',coordinates:[10,20]}});
     const question=await api('/study/next','POST',{});await api('/study/check','POST',{token:question.token,answer:{reveal:true}});
@@ -91,7 +93,8 @@ try {
     `
     const saved=JSON.parse(process.env.EXPECTED);
     assert.equal((await api('/settings')).newPerDay,7);
-    assert.equal((await api('/places')).length,320);
+    assert.equal((await api('/places')).length,seed.length+1);
+    assert.equal((await api('/places/container-test')).name,'Container test point');
     assert.equal((await api('/stats')).reviews,1);
     const log=await api('/study/log');assert.equal(log.total,1);assert.equal(log.items[0].checks[0].answer.reveal,true);
     assert.deepEqual((await api('/cards/'+saved.id)).memory,saved.memory);
