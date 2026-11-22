@@ -199,6 +199,11 @@
         "text": "Follow the narrow finger in Namibia’s northeast and you reach the Zambezi. An 1890 agreement between Britain and Germany drew that corridor to give the colony access to the river.",
         "source": "https://library.law.fsu.edu/Digital-Collections/LimitsinSeas/pdf/ibs123.pdf",
         "label": "International Boundary Study"
+      },
+      {
+        "text": "The Namib Sand Sea is the world's only coastal desert with extensive dune fields sustained by fog. The cold Atlantic current helps supply water to dunes in a country named after its desert.",
+        "source": "https://whc.unesco.org/en/list/1430/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -1146,6 +1151,11 @@
         "text": "Between the Russian and British empires, the territory of Afghanistan served as a buffer. Afghanistan secured control of its own foreign affairs in 1919.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/af.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Afghanistan's longest river never finds the ocean. The Helmand flows southwest from the Hindu Kush into a chain of desert wetlands on the Iranian frontier.",
+        "source": "https://www.unomaha.edu/international-studies-and-programs/center-for-afghanistan-and-regional-studies/academics/transboundary-water-research/DLM3/DLM3.php",
+        "label": "unomaha.edu"
       }
     ]
   },
@@ -1167,6 +1177,11 @@
         "text": "In the M’Zab Valley, five fortified towns each have a summer counterpart in a palm grove. Moving to the shade for the hottest months is built into the layout of the settlements.",
         "source": "https://whc.unesco.org/en/list/188/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Algeria is Africa's largest country by area. Roughly four-fifths of it is desert, so a map of where people live looks much smaller than the political map.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ag.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -1209,6 +1224,11 @@
         "text": "Luanda once had a much longer Portuguese name, São Paulo da Assunção de Loanda. The last part survived as the name of Angola’s capital.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ao.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Some rain falling in Angola never makes it to the sea. The highlands supply the Okavango, which spreads into a great inland delta in Botswana's Kalahari.",
+        "source": "https://www.nationalgeographic.org/explore/programs/okavango/river-system",
+        "label": "nationalgeographic.org"
       }
     ]
   },
@@ -1340,6 +1360,11 @@
         "text": "Sandbanks line Benin’s shore. A coastline open to the Gulf of Guinea offered ships little in the way of natural harbour shelter.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/bn.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "At Ganvié on Lake Nokoué, the streets are waterways and houses stand on stilts. Building a settlement out on the lake offered refuge during the slave trade.",
+        "source": "https://benintourisme.bj/en/destinations/ganvie/",
+        "label": "benintourisme.bj"
       }
     ]
   },
@@ -1382,6 +1407,11 @@
         "text": "Bhutan’s position on the map is also a position on a route. Several passes through the Himalayas link the approaches from India and Tibet.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/bt.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Bhutan has put a floor under the amount of green on its map. Its constitution requires at least 60 per cent of the country to remain under forest cover for all time.",
+        "source": "https://redd.dofps.gov.bt/?page_id=36",
+        "label": "redd.dofps.gov.bt"
       }
     ]
   },
@@ -3226,6 +3256,11 @@
         "text": "Wosana, a Bakalanga rainmaking tradition in Botswana, extends into villages across the Zimbabwean border. The gathering brings prayers, meals, songs and dancers together.",
         "source": "https://ich.unesco.org/en/USL/02117",
         "label": "UNESCO"
+      },
+      {
+        "text": "Botswana has a great river delta without a coast. The Okavango fans out into the Kalahari, where most of its water evaporates or passes through plants instead of reaching an ocean.",
+        "source": "https://whc.unesco.org/en/list/1432/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -3247,6 +3282,11 @@
         "text": "At Preah Vihear, reaching the sanctuary means following some 800 metres of stairways and pavements to a temple on a cliff above the Cambodian plain.",
         "source": "https://whc.unesco.org/en/list/1224/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Tonle Sap River changes direction with the seasons. When the Mekong rises, it pushes water upstream into Cambodia's great lake, which drains back towards the Mekong when the floods recede.",
+        "source": "https://www.mrcmekong.org/?document_id=01YJPZCU5Z52GW2IBACZCYVFLPVHD4GF4T&download_document=1&name=State-of-the-Basin-Report-2023.pdf",
+        "label": "mrcmekong.org"
       }
     ]
   },
@@ -3289,6 +3329,11 @@
         "text": "Traditional Chinese block printers prepare smooth planks of pear or jujube wood only two centimetres thick. An image starts on thin paper before an engraver cuts it into the wood.",
         "source": "https://ich.unesco.org/en/RL/00229",
         "label": "UNESCO"
+      },
+      {
+        "text": "From the Pacific coast to the frontiers of Central Asia, clocks in China show the same official time. The country stretches across roughly five geographical time zones.",
+        "source": "https://www.timeanddate.com/time/china/one-time-zone.html",
+        "label": "timeanddate.com"
       }
     ]
   },
@@ -3373,6 +3418,11 @@
         "text": "Egypt’s Western Desert contains a valley full of early whale fossils. Wadi Al-Hitan preserves the transition from land-dwelling mammals to whales that spent their lives at sea.",
         "source": "https://whc.unesco.org/en/list/1186/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Egypt occupies the land bridge between Africa and Asia. At the isthmus, the Suez Canal cuts a sea-level route across the land and leaves the Sinai Peninsula on its Asian side.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/eg.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3394,6 +3444,11 @@
         "text": "A Ghanaian kente cloth can have a proverb for a name. Weavers make narrow strips on horizontal looms, choosing patterns and colours that can signal who will wear the fabric.",
         "source": "https://ich.unesco.org/en/RL/02130",
         "label": "UNESCO"
+      },
+      {
+        "text": "Lake Volta covers more surface area than any other artificial reservoir built over a river valley. The Akosombo Dam flooded more than 8,000 square kilometres of Ghana.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/gh.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3441,6 +3496,11 @@
         "text": "During Navaratri in Gujarat, garba dancers circle an oil lamp inside a perforated earthen pot, or an image of the goddess Amba. The circle moves anticlockwise to singing and clapping.",
         "source": "https://ich.unesco.org/en/RL/01962",
         "label": "UNESCO"
+      },
+      {
+        "text": "At Kanniyakumari, India's mainland tapers to a point traditionally identified with three bodies of water: the Arabian Sea, the Bay of Bengal and the Indian Ocean.",
+        "source": "https://www.incredibleindia.gov.in/en/tamil-nadu/kanniyakumari",
+        "label": "incredibleindia.gov.in"
       }
     ]
   },
@@ -3462,6 +3522,11 @@
         "text": "At Prambanan in Java, three temples honour Shiva, Vishnu and Brahma, and three others honour the animals that serve them. Scenes from the Ramayana run along the temple walls.",
         "source": "https://whc.unesco.org/en/list/642/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The equator crosses several countries, but Indonesia has the largest land area of any country made up entirely of islands. Its territory stretches from Sumatra to the western half of New Guinea.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/id.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5162,6 +5227,11 @@
         "text": "Sardis was the capital of Lydia, a kingdom associated with some of the earliest coins. Its rulers lie beneath huge burial mounds nearby.",
         "source": "https://whc.unesco.org/en/list/1731/",
         "label": "UNESCO"
+      },
+      {
+        "text": "A ship can cross from Europe to Asia twice without leaving Turkish waters. The Bosporus and Dardanelles cut across the land on either side of the Sea of Marmara.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/tu.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5183,6 +5253,11 @@
         "text": "In Lefkara, needleworkers build lace patterns by drawing threads out of linen and embroidering directly into the open spaces.",
         "source": "https://ich.unesco.org/en/RL/00255",
         "label": "UNESCO"
+      },
+      {
+        "text": "On Cyprus you can walk uphill through ancient ocean floor. The Troodos Mountains expose a slice of oceanic crust and upper mantle lifted above the Mediterranean.",
+        "source": "https://whc.unesco.org/en/tentativelists/1677",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -5204,6 +5279,11 @@
         "text": "The pieces in the Kazakh game of assyk come from sheep. Players flick an ankle bone to knock other bones out of position.",
         "source": "https://ich.unesco.org/en/RL/01086",
         "label": "UNESCO"
+      },
+      {
+        "text": "Kazakhstan is the world's largest landlocked country, yet it has a long coastline. Its ports face the Caspian, a lake with no natural outlet to the ocean.",
+        "source": "https://www.worldbank.org/ext/en/country/kazakhstan",
+        "label": "worldbank.org"
       }
     ]
   },
@@ -5224,6 +5304,11 @@
       {
         "text": "Bahrain's old pearl route connects oyster beds offshore with merchants' houses in Muharraq. Following it takes you from the seabed to the people who sold the pearls.",
         "source": "https://whc.unesco.org/en/list/1364",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "Fresh water once bubbled up from the seabed off Bahrain. Submarine springs helped sustain an island trading centre in the salty waters of the Persian Gulf.",
+        "source": "https://whc.unesco.org/document/170980",
         "label": "whc.unesco.org"
       }
     ]
@@ -5246,6 +5331,11 @@
         "text": "Dhaka's Bengali New Year procession grew out of an initiative by art students. Large colourful figures move through the streets with the marchers.",
         "source": "https://ich.unesco.org/en/RL/01091",
         "label": "UNESCO"
+      },
+      {
+        "text": "Three great rivers meet on the way out of Bangladesh. The Ganges, Brahmaputra and Meghna build the world's largest river delta where they reach the Bay of Bengal.",
+        "source": "https://blogs.worldbank.org/en/endpovertyinsouthasia/implementing-bangladesh-delta-plan-2100-key-boost-economic-growth",
+        "label": "blogs.worldbank.org"
       }
     ]
   },
@@ -5267,6 +5357,11 @@
         "text": "Brunei's sultans once ruled far beyond the little state on today's map. Their influence extended from northwest Borneo into the southern Philippines.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/bx.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Brunei connected the two pieces of its country by building across its own bay. Motorists can now reach Temburong without the four border checks on the old route through Malaysia.",
+        "source": "https://bimp-eaga.asia/articles/southeast-asias-longest-bridge-opens",
+        "label": "bimp-eaga.asia"
       }
     ]
   },
@@ -5288,6 +5383,11 @@
         "text": "The territory Britain acquired in 1842 was just Hong Kong Island. Kowloon was added later, and the New Territories came under a 99-year lease.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/hk.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Hong Kong made room for its airport by reshaping the map. Builders levelled Chek Lap Kok and its smaller neighbour and joined them with land reclaimed from the sea.",
+        "source": "https://www.hongkongairport.com/en/media-centre/press-release/1999/ex_189",
+        "label": "hongkongairport.com"
       }
     ]
   },
@@ -5309,6 +5409,11 @@
         "text": "In Hawraman, terraced villages cling to the Zagros Mountains. The steep slopes shaped both the architecture and seasonal movements of the people living there.",
         "source": "https://whc.unesco.org/en/list/1647/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Iran's Lut Desert can be hotter than the hottest weather report. Satellite instruments have measured the land surface above 70°C there; weather stations measure the cooler air above it.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/irans-lut-desert-153634/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -5330,6 +5435,11 @@
         "text": "Tel Aviv's White City records a migration of architectural ideas. European-trained designers adapted modernist buildings to the Mediterranean climate.",
         "source": "https://whc.unesco.org/en/list/1096/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Israel's Mount Sodom is made largely of salt. Water has dissolved a winding cave system about ten kilometres long inside the mountain beside the Dead Sea.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/is.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5351,6 +5461,11 @@
         "text": "At Samarra, the Great Mosque's minaret curls upwards. A spiral ramp wraps around its outside.",
         "source": "https://whc.unesco.org/en/list/276/",
         "label": "UNESCO"
+      },
+      {
+        "text": "For a country between two great rivers, Iraq has surprisingly little seacoast. The Tigris and Euphrates join as the Shatt al-Arab before reaching Iraq's short opening onto the Persian Gulf.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/iz.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5372,6 +5487,11 @@
         "text": "People kept carving into the rock beside Bangucheon Stream for millennia. On the same stretch of cliffs, prehistoric art sits alongside historical inscriptions.",
         "source": "https://whc.unesco.org/en/list/1740/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The sea opens a temporary walking route between the Korean islands of Jindo and Modo. At exceptionally low tides, a ridge nearly three kilometres long emerges from the water.",
+        "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110868",
+        "label": "english.visitkorea.or.kr"
       }
     ]
   },
@@ -5393,6 +5513,11 @@
         "text": "Mount Kumgang's pale granite peaks have attracted Buddhist communities for centuries. Hermitages and carvings are tucked among its waterfalls and ravines.",
         "source": "https://whc.unesco.org/en/list/1642/",
         "label": "UNESCO"
+      },
+      {
+        "text": "North Korea's border with China runs through a lake inside a volcano. The blue water at Mount Paektu fills a caldera cut into the summit.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/mount-paektu-north-koreas-slumbering-giant-88020/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -5414,6 +5539,11 @@
         "text": "Wadi Rum's sandstone landscape doubles as an archive. Generations of travellers and residents carved inscriptions and images into its rock.",
         "source": "https://whc.unesco.org/en/list/1377/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Jordan has two very different waterfronts. Its western shore on the Dead Sea lies hundreds of metres below sea level, while its short Gulf of Aqaba coast is the country's only way to the open ocean.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/jo.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5435,6 +5565,11 @@
         "text": "Sado Island's gold mines preserve evidence of different ways to extract precious metal, from washing it out of deposits to cutting underground workings by hand.",
         "source": "https://whc.unesco.org/en/list/1698/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Japan's official island count jumped from 6,852 to 14,125 in a 2023 survey. Better maps revealed thousands of islands the earlier count had missed.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/ja.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5456,6 +5591,11 @@
         "text": "The Cedars of God preserve a remnant of Lebanon's ancient mountain forests. Cedar timber from this region was prized across the ancient Mediterranean.",
         "source": "https://whc.unesco.org/en/list/850/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Litani makes an unusual turn. It runs south through Lebanon's inland valley, then bends west to the Mediterranean, completing a major river's entire course within the country's narrow borders.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/le.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5477,6 +5617,11 @@
         "text": "At Vat Phou, ancient planners laid out a route from mountain to plain through temples and waterworks, giving the landscape a religious axis.",
         "source": "https://whc.unesco.org/en/list/481/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Laos is the only landlocked country in Southeast Asia. Much of its western border is nevertheless a waterfront, formed by the Mekong River.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/la.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5498,6 +5643,11 @@
         "text": "Kyrgyz felt carpets can be made by cutting contrasting sheets of felt together and exchanging the pieces. Two complementary patterns come out of one cut.",
         "source": "https://ich.unesco.org/en/USL/00693",
         "label": "UNESCO"
+      },
+      {
+        "text": "About 94 per cent of Kyrgyzstan sits more than a kilometre above sea level. Even many of its low-looking valleys would count as high ground in most countries.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/kg.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5519,6 +5669,11 @@
         "text": "Kuwait's Al Sadu Society brought traditional weaving into classrooms by teaching the teachers first. Finished student textiles go on display at Sadu House.",
         "source": "https://ich.unesco.org/en/Art18/01905",
         "label": "UNESCO"
+      },
+      {
+        "text": "Kuwait's largest island, Bubiyan, is a low mud island at the edge of the great river delta in the northern Gulf. Much of its surrounding landscape appears and disappears with the tide.",
+        "source": "https://rsis.ramsar.org/RISapp/files/RISrep/IR50RIS.pdf",
+        "label": "rsis.ramsar.org"
       }
     ]
   },
@@ -5540,6 +5695,11 @@
         "text": "The ancient Pyu cities used moats, walls and waterworks in the dry zone of Myanmar. The surviving outlines are big enough to trace entire cities.",
         "source": "https://whc.unesco.org/en/list/1444/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Ayeyarwady runs nearly the length of Myanmar without crossing an international boundary. It fans out into a broad delta before reaching the Andaman Sea.",
+        "source": "https://eol.jsc.nasa.gov/Collections/EarthObservatory/articles/MeandersoftheIrrawaddyRiver.htm",
+        "label": "eol.jsc.nasa.gov"
       }
     ]
   },
@@ -5561,6 +5721,11 @@
         "text": "The carved head atop a morin khuur fiddle gives the instrument its familiar name, the horsehead fiddle. Its two strings are played with a bow.",
         "source": "https://ich.unesco.org/en/RL/00068",
         "label": "UNESCO"
+      },
+      {
+        "text": "The world's second-largest landlocked country has only two neighbours. Russia and China share Mongolia's entire land frontier between them.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/mg.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5580,6 +5745,11 @@
       },
       {
         "text": "One proposed origin for the name Maldives is a Sanskrit phrase meaning 'garland of islands', an apt description of their shape from above.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/mv.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "The Maldives scatter the smallest land area of any Asian country across a chain of 26 natural atolls. On a map showing only dry land, almost the entire outline disappears.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/mv.json",
         "label": "CIA World Factbook (archived profile)"
       }
@@ -5603,6 +5773,11 @@
         "text": "Songket's shimmering patterns are woven into the cloth. Weavers introduce extra gold- or silver-coloured threads between the ordinary ones.",
         "source": "https://ich.unesco.org/en/RL/01505",
         "label": "UNESCO"
+      },
+      {
+        "text": "Malaysia has two large pieces with sea between them. Its eastern states are on Borneo, an island divided among three countries: Malaysia, Indonesia and Brunei.",
+        "source": "https://modis.gsfc.nasa.gov/gallery/individual.php?db_date=2022-05-26",
+        "label": "modis.gsfc.nasa.gov"
       }
     ]
   },
@@ -5624,6 +5799,11 @@
         "text": "Oman's curved khanjar dagger is made by several crafts working together. Its distinctive outline also appears on the country's emblem.",
         "source": "https://ich.unesco.org/en/RL/01844",
         "label": "UNESCO"
+      },
+      {
+        "text": "The tip of the Arabian Peninsula at the Strait of Hormuz belongs to Oman, yet is separated from the rest of Oman by the United Arab Emirates. It is the Musandam exclave.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/mu.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5643,6 +5823,11 @@
       },
       {
         "text": "Eight of the world's ten highest peaks lie in or on the borders of Nepal. Everest and Kanchenjunga stand on different international frontiers.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/np.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Eight of the world's ten highest mountains stand in Nepal or on its borders. Two of them, Everest and Kanchenjunga, mark different frontiers, with China and India respectively.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/np.json",
         "label": "CIA World Factbook (archived profile)"
       }
@@ -5666,6 +5851,11 @@
         "text": "Palestinian embroidery could once tell a viewer where its wearer came from. Colours and motifs on a dress carried local and family associations.",
         "source": "https://ich.unesco.org/en/RL/01722",
         "label": "UNESCO"
+      },
+      {
+        "text": "At ancient Jericho, generations built one settlement on top of another beside a permanent spring. Their great mound of ruins still lies well below the level of the Mediterranean.",
+        "source": "https://whc.unesco.org/en/list/1687",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -5687,6 +5877,11 @@
         "text": "The boreendo is a small, hollow clay instrument of the Thar. A player can alter its tone simply by changing the angle at which they blow.",
         "source": "https://ich.unesco.org/en/USL/02328",
         "label": "UNESCO"
+      },
+      {
+        "text": "Pakistan's highest point is K2, the world's second-highest mountain. It stands in the Karakoram, a separate mountain range from the Himalayas that contain Everest.",
+        "source": "https://tourism.gov.pk/pakistan.html",
+        "label": "tourism.gov.pk"
       }
     ]
   },
@@ -5706,6 +5901,11 @@
       },
       {
         "text": "Doha's name is usually traced to an Arabic word for a large tree. It may recall a landmark at the fishing village that preceded the capital.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/qa.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Qatar is a peninsula on a peninsula. It sticks north into the Persian Gulf from the eastern side of Arabia, with just one land neighbour, Saudi Arabia.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/qa.json",
         "label": "CIA World Factbook (archived profile)"
       }
@@ -5729,6 +5929,11 @@
         "text": "Travellers crossing the desert at Ḥimā left their marks near its wells. Inscriptions in different scripts record people passing along the same route over centuries.",
         "source": "https://whc.unesco.org/en/list/1619/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Saudi Arabia is the largest country in the world without a permanent river. It spans the Arabian Peninsula from the Red Sea to the Persian Gulf.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/sa.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5750,6 +5955,11 @@
         "text": "Land reclamation has changed Singapore's island count in both directions. Some islands were joined together while entirely new ones were created.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/sn.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "One of Singapore's islands was enlarged with a landfill out at sea. A bund enclosed water between Pulau Semakau and Pulau Sakeng to make a place for the city's incineration ash.",
+        "source": "https://www.nea.gov.sg/our-services/waste-management/waste-management-infrastructure/semakau-landfill",
+        "label": "nea.gov.sg"
       }
     ]
   },
@@ -5771,6 +5981,11 @@
         "text": "In northern Syria, abandoned late-antique villages retain houses, churches and olive presses. They preserve the workings of whole farming communities.",
         "source": "https://whc.unesco.org/en/list/1348/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Damascus sits in an oasis. The Barada brings water down from the Anti-Lebanon Mountains, allowing a major city and its gardens to survive at the edge of the Syrian Desert.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/sy.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5792,6 +6007,11 @@
         "text": "On early European maps Taiwan often appears as Formosa. The name comes from Portuguese for 'beautiful'.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/tw.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Taiwan is a mountain range still being built. The Philippine Sea and Eurasian plates converge at the island, squeezing up mountains where the two plates meet.",
+        "source": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000b1e2",
+        "label": "earthquake.usgs.gov"
       }
     ]
   },
@@ -5813,6 +6033,11 @@
         "text": "Sri Lankan string puppetry is called rūkada nātya. Family troupes carve and dress their own wooden characters and bring them to life above a portable stage.",
         "source": "https://ich.unesco.org/en/RL/01370",
         "label": "UNESCO"
+      },
+      {
+        "text": "A chain of shallow limestone shoals almost joins Sri Lanka to India. Adam's Bridge stretches roughly 50 kilometres between their shores.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/ce.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5834,6 +6059,11 @@
         "text": "Tajik oshi palav brings rice, vegetables and meat together in one pot. Learning to cook it can involve an apprenticeship with an experienced maker.",
         "source": "https://ich.unesco.org/en/RL/01191",
         "label": "UNESCO"
+      },
+      {
+        "text": "The tallest summit in the former Soviet Union is in Tajikistan. At 7,495 metres, Ismoil Somoni Peak rises higher than any mountain in present-day Russia.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/ti.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5855,6 +6085,11 @@
         "text": "At Phu Phrabat, prehistoric rock shelters became Buddhist sacred spaces. Upright boundary stones marked out places for religious ceremonies.",
         "source": "https://whc.unesco.org/en/list/1507/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Mainland Southeast Asia narrows into a long peninsula through Thailand. Every overland route from the rest of continental Asia to Peninsular Malaysia and Singapore passes through it.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/th.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5876,6 +6111,11 @@
         "text": "Timorese tais are handwoven textiles used for gifts, ceremonies and clothing. Their colours and motifs can identify the community that made them.",
         "source": "https://ich.unesco.org/en/USL/01688",
         "label": "UNESCO"
+      },
+      {
+        "text": "Timor-Leste lies wholly south of the equator. Its neighbours help explain why that is unusual for an Asian country: Indonesia's thousands of islands spread across both hemispheres.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/tt.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5897,6 +6137,11 @@
         "text": "In Fujairah's Hajar Mountains, Wadi Wurayah preserves rock from ancient oceanic crust and habitat for more than a thousand recorded species.",
         "source": "https://whc.unesco.org/en/list/1724/",
         "label": "UNESCO"
+      },
+      {
+        "text": "At Nahwa there is UAE land inside Omani land inside UAE land. Drive in from the surrounding Emirates and you cross Oman to arrive back in the same country.",
+        "source": "https://assets.publishing.service.gov.uk/media/69a36e58f534e7e99adaeafb/United_Arab_Emirates_Travel_Advice_Ed1.pdf",
+        "label": "assets.publishing.service.gov.uk"
       }
     ]
   },
@@ -5918,6 +6163,11 @@
         "text": "The Akhal-Teke horse is bred in Turkmenistan and prized for its distinctive sheen. Breeders pass knowledge of pedigrees and training down through families.",
         "source": "https://ich.unesco.org/en/RL/01978",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Karakum Desert occupies more than four-fifths of Turkmenistan. Most of the country's outline on a political map encloses a single desert.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/tx.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5939,6 +6189,11 @@
         "text": "At Ma'rib, the ancient kingdom of Saba channelled floodwater through a great dam to irrigate fields on both sides of a desert valley.",
         "source": "https://whc.unesco.org/en/list/1700/",
         "label": "UNESCO"
+      },
+      {
+        "text": "About 37 per cent of the plant species on Yemen's Socotra archipelago grow wild nowhere else. The islands lie off the Horn of Africa, across the water from mainland Yemen.",
+        "source": "https://whc.unesco.org/en/list/1263",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -5960,6 +6215,11 @@
         "text": "The Hồ dynasty's citadel was built in the fourteenth century. Enormous fitted stone blocks still frame its gateways.",
         "source": "https://whc.unesco.org/en/list/1358/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Vietnam stretches roughly 1,650 kilometres from north to south yet narrows to about 50 kilometres across. At its waist, the sea and the Lao border are scarcely a day's cycle apart.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/vm.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5981,6 +6241,11 @@
         "text": "In Uzbekistan palov can turn cooking rice into work for an entire gathering. The dish is served at occasions ranging from weddings to commemorations.",
         "source": "https://ich.unesco.org/en/RL/01166",
         "label": "UNESCO"
+      },
+      {
+        "text": "From Uzbekistan, even crossing into a neighbouring country leaves you landlocked. All five of its neighbours lack an open-ocean coast, making it one of just two doubly landlocked states.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/uz.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6002,6 +6267,11 @@
         "text": "In the Philippine Cordilleras, Ifugao farmers built irrigated rice terraces that follow the mountain contours. Forests above the paddies are part of the water system.",
         "source": "https://whc.unesco.org/en/list/722/",
         "label": "UNESCO"
+      },
+      {
+        "text": "For decades schoolchildren learned that the Philippines had 7,107 islands. A new mapping effort put the figure at 7,641, without moving a single border.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/rp.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6023,6 +6293,11 @@
         "text": "Lake Batur fills a volcanic crater and is regarded as a source of irrigation water. A major water temple stands beside the lake.",
         "source": "https://whc.unesco.org/en/list/1194/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Bali and Lombok are close enough to see across the strait, yet that water marks Wallace's Line. Deep water kept the islands apart even when ice-age seas fell, leaving strikingly different animal communities.",
+        "source": "https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/acb0151b-ebb5-4941-8f29-8f61a28c777e/content",
+        "label": "openresearch-repository.anu.edu.au"
       }
     ]
   },
@@ -6044,6 +6319,11 @@
         "text": "Macau's map once showed Taipa and Coloane as two separate islands. Reclaimed land between them joined them together.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/mc.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "The University of Macau's main campus is on Hengqin Island, across the water from Macao's original territory. A special jurisdictional arrangement lets Macao administer the campus.",
+        "source": "https://www.um.edu.mo/about-um/introduction/",
+        "label": "um.edu.mo"
       }
     ]
   },
@@ -6065,6 +6345,11 @@
         "text": "Near the far tip of the Karpas peninsula, Greek and Turkish Cypriot institutions worked together to restore Apostolos Andreas Monastery overlooking the sea.",
         "source": "https://www.undp.org/cyprus/projects/restoration-monastery-apostolos-andreas",
         "label": "www.undp.org"
+      },
+      {
+        "text": "The division of Cyprus runs through the middle of its capital. A UN buffer zone threads through old Nicosia, leaving the northern and southern districts on different sides.",
+        "source": "https://www.undp.org/cyprus/feasibility-study-improvement-public-services-within-boundaries-nicosia-walled-city-turkish-cypriot-community",
+        "label": "undp.org"
       }
     ]
   },
@@ -6086,6 +6371,11 @@
         "text": "Follow the map north from Tskhinvali and settlements string out along the Great Liakhvi. The Little Liakhvi and Froni valleys branch through different parts of the region.",
         "source": "https://www.echr.coe.int/documents/d/echr/hudoc_38263_08_Annexes_eng",
         "label": "www.echr.coe.int"
+      },
+      {
+        "text": "The main Caucasus divide separates South Ossetia from North Ossetia. On the southern side the Liakhvi drains towards the Kura and the Caspian Sea.",
+        "source": "https://unfccc.int/sites/default/files/resource/4%20Final%20Report%20-%20English%202020%2030.03_0.pdf",
+        "label": "unfccc.int"
       }
     ]
   },
@@ -6107,6 +6397,11 @@
         "text": "In Yogyakarta, a ceremonial axis runs through the sultan's palace. The plan relates the city to Mount Merapi to the north and the Indian Ocean to the south.",
         "source": "https://whc.unesco.org/en/list/1671/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The world's most populous island is Java. At night a ribbon of cities lights up the length of an island small enough to disappear on some world maps.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/lights-of-java-92666/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -6126,6 +6421,11 @@
       },
       {
         "text": "Sumatran orangutans live in the island's tropical forests. These are among the few places on Earth where orangutans still occur in the wild.",
+        "source": "https://whc.unesco.org/en/list/1167/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Bukit Barisan mountains run like a spine along Sumatra's western side. The three national parks protecting its tropical rainforest sit along that same range.",
         "source": "https://whc.unesco.org/en/list/1167/",
         "label": "UNESCO"
       }
@@ -6149,6 +6449,11 @@
         "text": "Two British and two Cypriot commissioners were appointed to mark the boundaries of Akrotiri and Dhekelia after independence. The two areas sit apart from one another on the same island.",
         "source": "https://www.legislation.gov.uk/uksi/1962/396/pdfs/uksi_19620396_en.pdf",
         "label": "www.legislation.gov.uk"
+      },
+      {
+        "text": "Dhekelia is a British territory with pieces of the Republic of Cyprus inside it. The villages of Ormideia and Xylotymbou are enclaves within the base area's outline.",
+        "source": "https://treaties.fcdo.gov.uk/data/Library2/pdf/1961-TS0004.pdf",
+        "label": "treaties.fcdo.gov.uk"
       }
     ]
   },
@@ -6170,6 +6475,11 @@
         "text": "On Jeju, people welcome the wind goddess Yeongdeung with rites for calm seas and a good catch, then mark her departure with a farewell ceremony.",
         "source": "https://ich.unesco.org/en/RL/incwala-of-the-kingdom-of-swaziland-00187",
         "label": "ich.unesco.org"
+      },
+      {
+        "text": "South Korea's highest mountain is on an island. Hallasan, the volcano that built much of Jeju, rises to roughly 1,950 metres above the surrounding sea.",
+        "source": "https://www.ijto.or.kr/english/?cid=11",
+        "label": "ijto.or.kr"
       }
     ]
   },
@@ -6191,6 +6501,11 @@
         "text": "The stone walls of Loropéni are at least a thousand years old. This fortified settlement belonged to a network that controlled gold for trans-Saharan trade.",
         "source": "https://whc.unesco.org/en/list/1225/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Before it was Burkina Faso, the country was Upper Volta. Three rivers crossing it explain the old name: the Black, White and Red Voltas.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/uv.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6212,6 +6527,11 @@
         "text": "The Dja River curves around nearly the whole Dja forest reserve. The water forms a natural boundary for a rainforest inhabited by gorillas and chimpanzees.",
         "source": "https://whc.unesco.org/en/list/407/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Cameroon sits at the bend in Africa's Atlantic coastline. Here the east–west coast of West Africa turns south, earning the country the nickname 'the hinge of Africa'.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/cm.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6233,6 +6553,11 @@
         "text": "The borders of the precolonial kingdom of Burundi in the nineteenth century already resembled those of the modern country.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/by.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Landlocked Burundi has an international shipping port. Vessels leaving Bujumbura can travel hundreds of kilometres south along Lake Tanganyika towards Zambia.",
+        "source": "https://www.undp.org/european-union/stories/turning-tide-building-resilient-port-burundi",
+        "label": "undp.org"
       }
     ]
   },
@@ -6254,6 +6579,11 @@
         "text": "Cidade Velha on Santiago was the first European colonial town built in the tropics. The layout of the old settlement still follows the river valley.",
         "source": "https://whc.unesco.org/en/list/1310",
         "label": "whc.unesco.org"
+      },
+      {
+        "text": "The islands of Cabo Verde belong to Macaronesia along with the Azores, Madeira and Canaries. Of those four Atlantic archipelagos, Cabo Verde alone forms an independent country.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/cv.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6273,6 +6603,11 @@
       },
       {
         "text": "The two islands are named for very different figures. São Tomé honours Saint Thomas, while Príncipe's original name referred to a Portuguese prince.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/tp.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Africa's second-smallest country consists chiefly of two islands named São Tomé and Príncipe. Only Seychelles has less land among Africa's independent states.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/tp.json",
         "label": "CIA World Factbook (archived profile)"
       }
@@ -6296,6 +6631,11 @@
         "text": "The savannas of Manovo-Gounda St Floris lie where distinct African ecological zones meet. Its floodplains also offer waterbirds a refuge in the dry season.",
         "source": "https://whc.unesco.org/en/list/475/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Rain on opposite sides of the Central African Republic can have very different fates. The southern rivers feed the Congo and the Atlantic, while northern streams feed landlocked Lake Chad.",
+        "source": "https://www.fao.org/4/t0473e/T0473E02.htm",
+        "label": "fao.org"
       }
     ]
   },
@@ -6315,6 +6655,11 @@
       },
       {
         "text": "Lake Chad used to be part of an enormous inland sea. The animals of the wetter Sahara included hippos, giraffes and elephants.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/cd.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Africa's largest landlocked country takes its name from a lake. Chad stretches from the shrinking waters on its western frontier far north into the Sahara.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/cd.json",
         "label": "CIA World Factbook (archived profile)"
       }
@@ -6338,6 +6683,11 @@
         "text": "Equatorial Guinea's mainland and Bioko are separate enough that a voyage from one to the other passes the coast of another country, Cameroon.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ek.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Equatorial Guinea is interrupted by another country out at sea. Travel from Bioko to Equatorial Guinea's southern island of Annobón and you pass São Tomé and Príncipe along the way.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ek.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6359,6 +6709,11 @@
         "text": "For the Mijikenda, patches of coastal forest preserve the sites of old fortified settlements called kayas. Their ancestral significance helped keep the trees standing.",
         "source": "https://whc.unesco.org/en/list/1231/",
         "label": "UNESCO"
+      },
+      {
+        "text": "There are glaciers almost on the equator in Kenya. Mount Kenya rises high enough for ice to survive only a few kilometres south of the line separating the hemispheres.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ke.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6378,6 +6733,11 @@
       },
       {
         "text": "The Comoros take their name from an Arabic word for the moon. The archipelago once connected trading routes between East Africa, India and the Middle East.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/cn.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Comoros is the only member of the Arab League lying entirely south of the equator. Its islands sit between Madagascar and mainland Africa at the mouth of the Mozambique Channel.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/cn.json",
         "label": "CIA World Factbook (archived profile)"
       }
@@ -6401,6 +6761,11 @@
         "text": "In Zaouli performances among the Guro, a carved mask and costume turn the dancer into a character. Percussion drives remarkably intricate footwork.",
         "source": "https://ich.unesco.org/en/RL/01255",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Comoé River carries a strip of forest far into the Ivorian savanna. Riverbanks let species associated with more humid country reach much farther north than the surrounding grassland would suggest.",
+        "source": "https://whc.unesco.org/en/list/227/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -6422,6 +6787,11 @@
         "text": "Virunga encompasses volcanoes, mountain gorilla habitat and the snowy Rwenzori highlands within the same national park.",
         "source": "https://whc.unesco.org/en/list/63/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Africa's second-largest country reaches the Atlantic through a tiny opening. Almost the whole outline of the DR Congo lies inland, while a narrow corridor follows the lower Congo River to the sea.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/cg.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6443,6 +6813,11 @@
         "text": "Ships sailing from the Indian Ocean to Suez pass Djibouti at the entrance to the Red Sea. A small stretch of coastline sits beside an intercontinental sea route.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/dj.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Three great rifts converge in the Afar region around Djibouti. The Red Sea, Gulf of Aden and East African Rift mark three different directions in which the crust is pulling apart.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2025TC009276",
+        "label": "agupubs.onlinelibrary.wiley.com"
       }
     ]
   },
@@ -6464,6 +6839,11 @@
         "text": "The capital's name does double duty. Bissau was added to the country's name to distinguish it from neighbouring Guinea.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/pu.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Hippos on Guinea-Bissau's Bijagós islands swim in salt water. Tidal channels separate islands used by an animal usually associated with freshwater rivers and lakes.",
+        "source": "https://whc.unesco.org/document/222005",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -6485,6 +6865,11 @@
         "text": "Asmara's modernist buildings stand more than two kilometres above sea level. Its highland setting is far removed from the Red Sea port below.",
         "source": "https://whc.unesco.org/en/list/1550/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Eritrea's coastline runs beside land lower than the sea itself. Inland from the Red Sea, the Danakil Depression drops below sea level while highlands rise to the west.",
+        "source": "https://www.cbd.int/doc/world/er/er-nr-04-en.pdf",
+        "label": "cbd.int"
       }
     ]
   },
@@ -6506,6 +6891,11 @@
         "text": "Konso communities built stone terraces across steep dry hillsides. They retain soil and catch water for farming where rain runs off fast.",
         "source": "https://whc.unesco.org/en/list/1333/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Ethiopia is the world's most populous landlocked country. Its Blue Nile nevertheless supplies much of the water flowing towards the Mediterranean through Sudan and Egypt.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/et.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6527,6 +6917,11 @@
         "text": "In Ivindo National Park, rapids and waterfalls break up rivers running through equatorial forest. Aquatic communities have evolved around these natural barriers.",
         "source": "https://whc.unesco.org/en/list/1653/",
         "label": "UNESCO"
+      },
+      {
+        "text": "In Gabon's Loango National Park, elephants can walk out of rainforest onto an Atlantic beach. Forest, savanna, lagoons and surf meet along the same strip of coast.",
+        "source": "https://whc.unesco.org/en/tentativelists/6593/",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -6548,6 +6943,11 @@
         "text": "In the Manding Kankurang tradition, a masked figure clad in bark and leaves moves through the community during initiation rites.",
         "source": "https://ich.unesco.org/en/RL/kankurang-manding-initiatory-rite-00143",
         "label": "ich.unesco.org"
+      },
+      {
+        "text": "The Gambia follows a river that the sea can travel far up. In the dry season Atlantic salt penetrates more than a hundred kilometres inland along its narrow channel.",
+        "source": "https://gca.org/wp-content/uploads/2026/03/Technical-Report-02-The-Gambia-Water-Ressources-Climate-Risk-Assessment.pdf",
+        "label": "gca.org"
       }
     ]
   },
@@ -6569,6 +6969,11 @@
         "text": "Sehlabathebe in Lesotho and the Drakensberg park across the South African border protect different sides of the same high mountain landscape.",
         "source": "https://whc.unesco.org/en/list/985/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The lowest point in Lesotho is about 1,400 metres above the sea. No other country's lowest point is that high.",
+        "source": "https://centralbank.org.ls/about-the-kingdom-of-lesotho/",
+        "label": "centralbank.org.ls"
       }
     ]
   },
@@ -6590,6 +6995,11 @@
         "text": "Liberia's capital commemorates an American president. Monrovia was named for James Monroe.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/li.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Liberia's largest lake is a coastal lagoon. Lake Piso communicates with the Atlantic through a narrow opening, so the tide reaches what looks on a map like an inland lake.",
+        "source": "https://www.moa.gov.lr/sites/default/files/documents/Final%20ESMF_RETRAP_28-04-2021%20April%202021.pdf",
+        "label": "moa.gov.lr"
       }
     ]
   },
@@ -6611,6 +7021,11 @@
         "text": "Malagasy kabary speakers weave proverbs, riddles and wordplay into public speeches. Their performance can turn a family occasion into an exercise in poetry.",
         "source": "https://ich.unesco.org/en/RL/01741",
         "label": "UNESCO"
+      },
+      {
+        "text": "Madagascar is the world's fourth-largest island. Its long isolation means roughly nine in ten of its plant and animal species occur nowhere else.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ma.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6632,6 +7047,11 @@
         "text": "Mount Mulanje rises abruptly out of southern Malawi's plains. The huge isolated mountain is also regarded as a dwelling place of spirits and ancestors.",
         "source": "https://whc.unesco.org/en/list/1201/",
         "label": "UNESCO"
+      },
+      {
+        "text": "A landlocked country has one of Earth's great stretches of freshwater coast. Lake Malawi runs about 580 kilometres along its eastern side and supports more fish species than any other lake.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/mi.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6652,6 +7072,11 @@
       {
         "text": "The Tomb of Askia at Gao is a stepped pyramid made of earth. It commemorates a ruler of the Songhai Empire beside the Niger.",
         "source": "https://whc.unesco.org/en/list/1139/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Niger makes an inland delta in Mali long before it reaches its coastal delta in Nigeria. Seasonal floods spread across pastures and govern when herds can cross the river.",
+        "source": "https://ich.unesco.org/en/RL/00132",
         "label": "UNESCO"
       }
     ]
@@ -6674,6 +7099,11 @@
         "text": "The Mauritanian mahadra is a community school that can travel with its teachers and students, a form of education suited to nomadic life.",
         "source": "https://ich.unesco.org/en/RL/01960",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Sahara has a tidal shoreline in Mauritania. At Banc d'Arguin, desert dunes meet shallow banks that feed enormous flocks of shorebirds on their journeys between Africa and Europe.",
+        "source": "https://whc.unesco.org/en/list/506/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -6695,6 +7125,11 @@
         "text": "On Rodrigues, sega tambour musicians use drums to lead songs in Creole. The singing, drumming and dancing are closely linked.",
         "source": "https://ich.unesco.org/en/RL/01257",
         "label": "UNESCO"
+      },
+      {
+        "text": "Mauritius appears to have a waterfall under the sea. Off Le Morne, streaks of sand seen through clear water at the submarine slope create the illusion from above.",
+        "source": "https://wp.mauritius.com/tourism/mauritius-underwater-waterfall",
+        "label": "wp.mauritius.com"
       }
     ]
   },
@@ -6716,6 +7151,11 @@
         "text": "At Aït-Ben-Haddou, a group of earthen houses sits inside defensive walls. The fortified settlement stood along a caravan route between the Sahara and Marrakesh.",
         "source": "https://whc.unesco.org/en/list/444/",
         "label": "UNESCO"
+      },
+      {
+        "text": "North Africa's highest summit is in Morocco. At 4,167 metres, Toubkal in the High Atlas can carry snow surprisingly close to the Sahara.",
+        "source": "https://www.visitmorocco.com/en/discover-morocco/geography-morocco",
+        "label": "visitmorocco.com"
       }
     ]
   },
@@ -6737,6 +7177,11 @@
         "text": "In Makonde mapiko performances, carved masks transform dancers into recognisable characters. Movement and music tell an audience who has appeared.",
         "source": "https://ich.unesco.org/en/USL/01996",
         "label": "UNESCO"
+      },
+      {
+        "text": "Between Mozambique and Madagascar, much of the southward transport of ocean water happens in giant moving eddies. The channel feeds the Agulhas system at Africa's southern end.",
+        "source": "https://eprints.soton.ac.uk/810/1/Moz_Eddies_DSR.pdf",
+        "label": "eprints.soton.ac.uk"
       }
     ]
   },
@@ -6758,6 +7203,11 @@
         "text": "The Aïr Mountains rise like islands out of the Ténéré desert. Their extra moisture supports vegetation that cannot grow on the surrounding sand.",
         "source": "https://whc.unesco.org/en/list/573/",
         "label": "UNESCO"
+      },
+      {
+        "text": "One of the last refuges for wild addax lies in Niger's vast eastern sand desert. These pale antelopes can live in country almost entirely without standing water.",
+        "source": "https://noe.org/app/uploads/2025/07/Bohm-et-al.-2023-Gnusletter-401-Addax-monitoring-using-dromedary-patrols-in-the-Tin-Toumma-Desert-Niger.pdf",
+        "label": "noe.org"
       }
     ]
   },
@@ -6779,6 +7229,11 @@
         "text": "The Ijele masquerade can tower several metres above its carrier. Musicians, attendants and other performers accompany the enormous moving figure.",
         "source": "https://ich.unesco.org/en/RL/00194",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Niger and Benue meet at Lokoja in a giant Y visible on a map of Nigeria. Water from the west and from Cameroon's highlands then follows a single route towards the Atlantic.",
+        "source": "https://iwaponline.com/jwcc/article/15/2/348/100085/Decadal-mapping-of-flood-inundation-and-damage",
+        "label": "iwaponline.com"
       }
     ]
   },
@@ -6800,6 +7255,11 @@
         "text": "The centres of Congolese rumba face one another across a river. Musicians in Brazzaville and Kinshasa developed a shared urban dance tradition in two different countries.",
         "source": "https://ich.unesco.org/en/Decisions/16.COM/8.b.8",
         "label": "ich.unesco.org"
+      },
+      {
+        "text": "The Republic of the Congo and its neighbour share the world's largest tropical peatland complex. Beneath the Cuvette Centrale's swamp forest, waterlogged ground has stored carbon for thousands of years.",
+        "source": "https://environment.leeds.ac.uk/geography/news/article/118/researchers-discover-world-s-largest-tropical-peatland-in-remote-congo-swamps",
+        "label": "environment.leeds.ac.uk"
       }
     ]
   },
@@ -6821,6 +7281,11 @@
         "text": "At Nyamata a former church is preserved as a memorial to the 1994 genocide against the Tutsi. It is one of four sites inscribed together to commemorate the victims.",
         "source": "https://whc.unesco.org/en/list/1586/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Rwanda generates electricity from gas dissolved in a lake. Methane trapped in Lake Kivu's deep water is drawn up to power a generating station.",
+        "source": "https://ppp.worldbank.org/sites/default/files/2022-03/Public-Private-Partnerships-in-Sub-Saharan-Africa_Digital_FINAL-4.pdf",
+        "label": "ppp.worldbank.org"
       }
     ]
   },
@@ -6842,6 +7307,11 @@
         "text": "The Djoudj wetlands lie just south of the Sahara. For birds flying across the desert, the Senegal River delta offers a first major place to feed and rest.",
         "source": "https://whc.unesco.org/en/list/25/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The westernmost point of mainland Africa is in Dakar. Senegal's Cap-Vert peninsula projects farther into the Atlantic than the rest of the continent's mainland coast.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/sg.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6863,6 +7333,11 @@
         "text": "Enslaved Africans in Seychelles once danced moutya at night away from plantation houses. Performers warm the goatskin drum near a fire before playing.",
         "source": "https://ich.unesco.org/en/RL/01690",
         "label": "UNESCO"
+      },
+      {
+        "text": "Africa's smallest independent country is scattered over more than a hundred islands. Some are granite, while many of the low outer islands are built of coral.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/se.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6882,6 +7357,11 @@
       },
       {
         "text": "Sierra Leone's name comes from Portuguese for 'Lion Mountains'. Sailors applied it to the mountains rising beside what is now Freetown.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/sl.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Parts of Sierra Leone's Atlantic coast receive almost five metres of rain a year. Its mountainous shore is among the wettest stretches of coastal West Africa.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/sl.json",
         "label": "CIA World Factbook (archived profile)"
       }
@@ -6905,6 +7385,11 @@
         "text": "Before Great Zimbabwe rose to prominence, Mapungubwe traded with the Indian Ocean coast from deep in the southern African interior.",
         "source": "https://whc.unesco.org/en/list/1099/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The southern tip of Africa is Cape Agulhas. The much more famous Cape of Good Hope lies farther north and west.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/sf.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6926,6 +7411,11 @@
         "text": "Red and gold feature in the Sudanese wedding ritual al-jertiq. The bride may wear a red garment with a gold-embroidered silk toab, while the groom wears white.",
         "source": "https://ich.unesco.org/en/7b-representative-list-01412?call=slideshow&id=02275&include=slideshow_inc.php&mode=scroll&width=620",
         "label": "ich.unesco.org"
+      },
+      {
+        "text": "The White Nile and Blue Nile meet in Sudan's capital. North of their confluence at Khartoum they lose their colours on the map and continue as one Nile towards Egypt.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/su.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6947,6 +7437,11 @@
         "text": "Both Eswatini and the name of the Swazi people recall King Mswati II, who expanded and consolidated the kingdom in the nineteenth century.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/wz.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Cross Eswatini from west to east and the country steps down from the Highveld through the Middleveld into the Lowveld, then rises again in the Lubombo hills on the Mozambique border.",
+        "source": "https://www.ewade.co.sz/wp-content/uploads/2026/02/MNWAP-1B-ESIA_ESMP.pdf",
+        "label": "ewade.co.sz"
       }
     ]
   },
@@ -6968,6 +7463,11 @@
         "text": "In the Kondoa rock shelters, painted figures have survived under natural overhangs. Some of the sites still have ritual uses for nearby communities.",
         "source": "https://whc.unesco.org/en/list/1183/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Africa's highest point is close to the equator in Tanzania. Kilimanjaro rises nearly 5,900 metres above sea level without belonging to a long chain of comparable summits.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/tz.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -6989,6 +7489,11 @@
         "text": "The country takes its name from a settlement on Lake Togo. The name likely combines Ewe words for water and shore.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/to.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Togo has a short Atlantic frontage but stretches hundreds of kilometres inland. Follow its long axis north and a narrow coastal country becomes a land of dry savannas.",
+        "source": "https://documents.un.org/api/symbol/access?l=en&s=HRI%2FCORE%2FTGO%2F2020&t=pdf",
+        "label": "documents.un.org"
       }
     ]
   },
@@ -7010,6 +7515,11 @@
         "text": "Making harissa traditionally begins with drying red peppers in the sun. Families grind them with seasonings to make the paste.",
         "source": "https://ich.unesco.org/en/RL/01710",
         "label": "UNESCO"
+      },
+      {
+        "text": "Mainland Africa reaches farther north in Tunisia than in any other country. The northern tip is near Bizerte, across the Mediterranean from Europe.",
+        "source": "https://www.comesa.int/tunisia-2/?lang=ar",
+        "label": "comesa.int"
       }
     ]
   },
@@ -7031,6 +7541,11 @@
         "text": "The Rwenzori rise almost on the equator yet reach high enough for glaciers. Giant lobelias grow on their cold, wet mountain slopes.",
         "source": "https://whc.unesco.org/en/list/684/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Uganda has no ocean coast, yet it shares Africa's largest lake with two countries. From the Ugandan shore of Lake Victoria, water enters the Nile system bound for the Mediterranean.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ug.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -7052,6 +7567,11 @@
         "text": "A sand sea straddles the northern edge of Western Sahara. During dust storms, satellites can see airborne sand and dust travel offshore towards the Canary Islands.",
         "source": "https://science.nasa.gov/earth/earth-observatory/dust-over-the-canary-islands-77372/",
         "label": "science.nasa.gov"
+      },
+      {
+        "text": "A long finger of desert almost closes off Dakhla Bay on Western Sahara's Atlantic shore. Inside it, tidal flats support migratory waterbirds beside some of the driest land on the continent.",
+        "source": "https://rsis.ramsar.org/sites/default/files/rsiswp_search/exports/Ramsar-Sites-annotated-summary-Morocco.pdf?1552328143=",
+        "label": "rsis.ramsar.org"
       }
     ]
   },
@@ -7073,6 +7593,11 @@
         "text": "At Victoria Falls the Zambezi spreads into a broad sheet before dropping into a narrow gorge. The rising spray gave it the name Mosi-oa-Tunya, 'the smoke that thunders'.",
         "source": "https://whc.unesco.org/en/list/509/",
         "label": "UNESCO"
+      },
+      {
+        "text": "By storage volume, Lake Kariba is the world's largest artificial reservoir. Its dam blocks the Zambezi where the river forms the border between Zambia and Zimbabwe.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/za.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -7093,6 +7618,11 @@
       {
         "text": "At Mana Pools, channels left behind by the Zambezi fill and empty with its floods. They sustain wildlife along the valley floor in the dry season.",
         "source": "https://whc.unesco.org/en/list/302/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Zambezi at Victoria Falls drops into a gorge far narrower than the river's width. Along Zimbabwe's side, the older zigzag gorges trace earlier positions of the falls.",
+        "source": "https://whc.unesco.org/en/list/509/",
         "label": "UNESCO"
       }
     ]
@@ -7115,6 +7645,11 @@
         "text": "Tenerife's Mount Teide rises from the ocean floor. Measured from that submerged base, the volcanic edifice is much taller than its height above sea level.",
         "source": "https://whc.unesco.org/en/list/1258/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Some old European maps counted longitude from the Canary Islands. The Ferro meridian took its name from El Hierro, once treated as the western edge of the known world.",
+        "source": "https://epsg.io/8909-primem",
+        "label": "epsg.io"
       }
     ]
   },
@@ -7136,6 +7671,11 @@
         "text": "Medieval trading towns on the Somali coast linked the Horn to Arabia and Persia. The sea was a trade route between communities on opposite shores.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/so.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Somalia has the longest coastline of any mainland African country. Its shore turns the corner from the Gulf of Aden onto the Indian Ocean at the Horn of Africa.",
+        "source": "https://nbs.gov.so/wp-content/uploads/2025/11/SOMALIA-POPULATION-DEVELOPMENT-COMPOSITE-INDEXPDCI-2025.pdf",
+        "label": "nbs.gov.so"
       }
     ]
   },
@@ -7157,6 +7697,11 @@
         "text": "Stone Town grew at the meeting point of African, Arabian, Indian and European trading networks. Those connections survive in the layout and buildings of a single port.",
         "source": "https://whc.unesco.org/en/list/173/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Zanzibar red colobus is a monkey whose native range is confined to one small island region. Its principal home is Unguja, the island most maps label Zanzibar.",
+        "source": "https://static1.1.sqspcdn.com/static/f/1200343/28447271/1624291855503/Red_Colobus_Action_Plan_v29.pdf",
+        "label": "static1.1.sqspcdn.com"
       }
     ]
   },
@@ -7178,6 +7723,11 @@
         "text": "The Niger begins in Guinea quite close to the Atlantic. From there it takes a long detour into the West African interior before reaching the ocean.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/gv.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Guinea's highlands act as West Africa's water tower. Rivers feeding the Niger, Senegal and Gambia systems leave the country in different directions.",
+        "source": "https://www.fao.org/africa/news-stories/news-detail/appeal-to-safeguard-the-ecosystems-and-water-resources-of-the-fouta-djallon-highlands/en",
+        "label": "fao.org"
       }
     ]
   },
@@ -7199,6 +7749,11 @@
         "text": "The Roman emperor Septimius Severus was born at Leptis Magna. He expanded his North African home city with monumental public buildings.",
         "source": "https://whc.unesco.org/en/list/183/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Deep in the Libyan Sahara, lakes occupy a volcanic crater. Waw an Namus appears as a striking dark patch of volcanic material against the pale desert.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ly.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -7220,6 +7775,11 @@
         "text": "At trading sites around Berbera, archaeologists traced about nine-tenths of the imported ceramics they recorded to Asia. Pottery fragments reveal an Indian Ocean trade network.",
         "source": "https://www.incipit.csic.es/en/research_outcomes/publication/article/asia-in-the-horn-the-indian-ocean-trade-in-somaliland",
         "label": "www.incipit.csic.es"
+      },
+      {
+        "text": "The port of Berbera gives landlocked Ethiopia another way to reach the sea. A trade corridor crosses Somaliland from the Ethiopian border to the Gulf of Aden.",
+        "source": "https://documents1.worldbank.org/curated/en/571071468194354658/pdf/917830WP0Horn00Box385358B00PUBLIC0.pdf",
+        "label": "documents1.worldbank.org"
       }
     ]
   },
@@ -7241,6 +7801,11 @@
         "text": "South Sudan became independent in 2011. Its international border left the White Nile flowing north from one country into another on its way to Egypt.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/od.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "The White Nile loses roughly half the water entering the Sudd wetlands to evaporation and plants. A river famous for reaching the Mediterranean leaves much of its water in South Sudan.",
+        "source": "https://mafs.gov.ss/wp-content/uploads/2025/11/Final-ESMF-for-P500553-reviewed-by-RSA-Nov2025_.pdf",
+        "label": "mafs.gov.ss"
       }
     ]
   },
@@ -7260,6 +7825,11 @@
       },
       {
         "text": "Mayotte's marine park protects an entire sequence of habitats. Mangroves line the shore, seagrass grows in the lagoon, and coral reefs stand farther out.",
+        "source": "https://ofb.gouv.fr/le-parc-naturel-marin-de-mayotte",
+        "label": "ofb.gouv.fr"
+      },
+      {
+        "text": "Parts of Mayotte's lagoon are protected by two coral barriers. This uncommon double reef puts another line of shelter between the island and the open Indian Ocean.",
         "source": "https://ofb.gouv.fr/le-parc-naturel-marin-de-mayotte",
         "label": "ofb.gouv.fr"
       }
@@ -7283,6 +7853,11 @@
         "text": "Piton de la Fournaise is an active shield volcano. Some eruptions have sent lava down Réunion's slopes all the way to the Indian Ocean.",
         "source": "https://volcano.si.edu/volcano.cfm?vn=233020",
         "label": "volcano.si.edu"
+      },
+      {
+        "text": "Réunion holds the World Meteorological Organization's 24-hour rainfall record. At Foc-Foc, 1,825 millimetres fell in a single day during a tropical cyclone in 1966.",
+        "source": "https://wmo.int/sites/default/files/2025-07/Table_Records_25Jul2025.pdf",
+        "label": "wmo.int"
       }
     ]
   },
