@@ -801,6 +801,12 @@ test("a lake cutoff partitions scheduled cards and preserves small-lake reviews"
     assert.equal(s.question().card,null);
     s.setSettings({kinds:["smallLake"]});assert.ok(s.question().card);
     assert.deepEqual(s.getCard(card.id),card);
-    s.setSettings({lakeCutoffKm2:0});assert.equal(s.question().card,null);
+    const largest=Math.max(...index.lakes.map(l=>l.area));
+    s.setSettings({lakeMinimumKm2:largest});
+    assert.equal(s.question().card.id,index.lakes.find(l=>l.area===largest).id+":locate");
+    s.setSettings({lakeMinimumKm2:largest+1});assert.equal(s.question().card,null);
+    assert.deepEqual(s.getCard(card.id),card);
+    assert.throws(()=>s.setSettings({lakeMinimumKm2:1000001}),/minimum/);
+    s.setSettings({lakeCutoffKm2:0,lakeMinimumKm2:0});assert.equal(s.question().card,null);
   }finally{s.db.close()}
 });

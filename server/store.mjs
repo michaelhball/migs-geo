@@ -22,6 +22,7 @@ const optionalModes = { capital: "capital", fromCapital: "capital", flag: "flag"
 const modes = ["locate", "identify", ...Object.keys(optionalModes)];
 export const defaults = {
   lakeCutoffKm2: 0,
+  lakeMinimumKm2: 0,
   cityCountry: "",
   activeDeck: "geography",
   newPerDay: 15,
@@ -78,8 +79,9 @@ export function validateGeometry(g) {
   return g;
 }
 export function validateSettings(s) {
-  s = { lakeCutoffKm2:0, cityCountry:"", activeDeck: "geography", reviewsPerDay: defaults.reviewsPerDay, ...s };
+  s = { lakeMinimumKm2:0, lakeCutoffKm2:0, cityCountry:"", activeDeck: "geography", reviewsPerDay: defaults.reviewsPerDay, ...s };
   if (!Number.isFinite(s.lakeCutoffKm2) || s.lakeCutoffKm2 < 0) throw Error("Lake cutoff must be a nonnegative area in km².");
+  if (!Number.isFinite(s.lakeMinimumKm2) || s.lakeMinimumKm2 < 0 || s.lakeMinimumKm2 > s.lakeCutoffKm2) throw Error("Small lake minimum must be between zero and the inland lake cutoff.");
   if (s.cityCountry !== "" && (typeof s.cityCountry !== "string" || !Object.hasOwn(cities, s.cityCountry))) throw Error("Unknown city country.");
   if (!["geography","flags"].includes(s.activeDeck)) throw Error("Invalid deck.");
   if (!Number.isInteger(s.newPerDay) || s.newPerDay < 0 || s.newPerDay > 500)
@@ -419,7 +421,12 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     const allCards = cards();
     const eligible = allCards.filter((c) => {
       const p = ps.get(c.place_id);
-      const filterKind = p.kind === "lake" && areaKm2(p.geometry) < s.lakeCutoffKm2 ? "smallLake" : p.kind;
+      let filterKind = p.kind;
+      if (p.kind === "lake") {
+        const area = areaKm2(p.geometry);
+        if (area < s.lakeMinimumKm2) return false;
+        if (area < s.lakeCutoffKm2) filterKind = "smallLake";
+      }
       return (
         !c.suspended &&
         !p.archived &&
@@ -927,7 +934,8 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         if (p.kind === "lake" && !p.archived) candidates.set(p.id,p);
         else candidates.delete(p.id);
       }
-      return {cutoff:settings().lakeCutoffKm2, lakes:[...candidates.values()].map(p => ({
+      const {lakeCutoffKm2:cutoff, lakeMinimumKm2:minimum} = settings();
+      return {cutoff, minimum, lakes:[...candidates.values()].map(p => ({
         id:p.id,name:p.name,region:p.region,countries:lakeLocations[p.id] ?? [],area:areaKm2(p.geometry),
       }))};
     },
