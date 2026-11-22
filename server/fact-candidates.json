@@ -532,6 +532,11 @@
         "text": "Greenland’s capital changed names in 1979. The Danish Godthåb meant “good hope,” while the Greenlandic Nuuk describes a cape.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/gl.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The world's largest island holds the world's second-largest ice sheet. Only Antarctica has more land ice than Greenland.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/gl.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -1271,6 +1276,11 @@
         "text": "Archaeological settlement on these islands goes back to about 2400 BC, thousands of years before European sailing charts showed them.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/ac.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Barbuda's Codrington Lagoon is sheltered by a narrow sand barrier. Its mangroves hold one of the Caribbean's great breeding colonies of magnificent frigatebirds.",
+        "source": "https://internationalconservation.org/publications/knowledge_products/caribbean/02_codrington_lagoon_national_park_implementation_plan_2022-32.pdf",
+        "label": "internationalconservation.org"
       }
     ]
   },
@@ -1318,6 +1328,11 @@
         "text": "Aruba is a riverless Caribbean island. Atlantic trade winds blow across the low terrain and temper its tropical heat.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/aa.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Aruba is a tropical island without a permanent river. Trade winds and a dry climate help explain why cacti grow on a Caribbean island so near the equator.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/aa.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -1339,6 +1354,11 @@
         "text": "Enslaved Africans worked the sugar plantations that made this small eastern island a leading early producer in the Caribbean sugar trade.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/bb.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Barbados sits east of the main arc of the Lesser Antilles, out towards the open Atlantic. It is the easternmost island country in the Caribbean.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/bb.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -1386,6 +1406,11 @@
         "text": "The islands took their name from Juan de Bermúdez, a Spanish captain who explored them in the early 1500s, about a century before the English settlement.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/bd.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Bermuda receives plenty of rain yet has no permanent rivers or freshwater lakes. Water on these small limestone islands has little opportunity to collect into a stream.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/bd.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -1433,6 +1458,11 @@
         "text": "Brazil touches every South American country except two. Neither Ecuador nor Chile shares a border with it.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/br.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Brazil touches every mainland South American country except Chile and Ecuador. Its neighbours even include France, through French Guiana.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/br.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3214,6 +3244,11 @@
         "text": "In Buenos Aires, trucks and buses became canvases for filete porteño. Painters use long-haired brushes to combine elaborate lettering, bright colours and flourishes.",
         "source": "https://ich.unesco.org/en/RL/01069",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Western Hemisphere's highest mountain and lowest exposed land are in the same country. Argentina contains both Aconcagua in the Andes and Laguna del Carbón in Patagonia.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/ar.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3308,6 +3343,11 @@
         "text": "At Gros Morne in Newfoundland, you can stand on rock from Earth’s mantle. Pieces of the deep ocean floor and the rock beneath it were pushed up onto land.",
         "source": "https://whc.unesco.org/en/list/419/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The world's second-largest country has the world's longest coastline. Canada's map includes an immense Arctic archipelago as well as its Atlantic and Pacific shores.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/ca.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3355,6 +3395,11 @@
         "text": "Barranquilla’s four days of carnival reflect its past as a Caribbean trading port. Dance traditions from Colombia’s interior met European and African ones there.",
         "source": "https://ich.unesco.org/en/RL/00051",
         "label": "UNESCO"
+      },
+      {
+        "text": "Colombia is the only South American country with both a Caribbean coast and a Pacific coast. Panama meets it at the narrow corner between the two.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/co.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3376,6 +3421,11 @@
         "text": "The palaces in Cuba’s city of Trinidad trace the fortunes of sugar. The Brunet and Cantero mansions date from the town’s prosperity in the eighteenth and nineteenth centuries.",
         "source": "https://whc.unesco.org/en/list/460/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Cuba is the largest island in the Caribbean. Its long east–west axis separates the Straits of Florida in the north from much of the Caribbean Sea to the south.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/cu.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3397,6 +3447,11 @@
         "text": "The finest Ecuadorian toquilla hats take as long as eight months to weave. Workers strip the palm fibre, boil it and dry it before weaving the crown and brim.",
         "source": "https://ich.unesco.org/en/RL/00729",
         "label": "UNESCO"
+      },
+      {
+        "text": "The spot on Earth's surface farthest from its centre is in Ecuador. Chimborazo beats Everest on that measure because Earth bulges at the equator.",
+        "source": "https://oceanservice.noaa.gov/facts/highestpoint.html",
+        "label": "oceanservice.noaa.gov"
       }
     ]
   },
@@ -3548,6 +3603,11 @@
         "text": "At El Tajín near the Gulf coast, a pyramid is named for the niches that cover its sides. This city rose to prominence after the fall of Teotihuacan.",
         "source": "https://whc.unesco.org/en/list/631/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Below Mexico's Yucatán Peninsula, caves connect what look like separate pools in the jungle. The flooded passages of Sac Actun extend for hundreds of kilometres through the limestone.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/mx.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3569,6 +3629,11 @@
         "text": "In Moquegua, Sarawja marks the end of the rainy season and the beginning of harvest. Groups called ruedas, or wheels, dance in circles or parallel rows.",
         "source": "https://ich.unesco.org/en/RL/02071",
         "label": "UNESCO"
+      },
+      {
+        "text": "There are green islands of vegetation in Peru's coastal desert where the water comes chiefly from fog. These lomas form where Pacific mist meets the slopes.",
+        "source": "https://whc.unesco.org/en/tentativelists/6424/",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -7879,6 +7944,11 @@
         "text": "Kallawaya healers travelled through different Andean ecological zones to learn and practise their craft. Their knowledge of plants drew on environments far beyond a single valley.",
         "source": "https://ich.unesco.org/en/RL/00048",
         "label": "UNESCO"
+      },
+      {
+        "text": "The world's largest salt flat lies high in the Andes of landlocked Bolivia. When shallow water covers the Salar de Uyuni, thousands of square kilometres turn into a mirror.",
+        "source": "https://eol.jsc.nasa.gov/Collections/EarthObservatory/articles/Salar_de_Uyuni%2C_Bolivia.htm",
+        "label": "eol.jsc.nasa.gov"
       }
     ]
   },
@@ -7900,6 +7970,11 @@
         "text": "Chile's old nitrate works supplied fertiliser made from desert deposits. Humberstone and Santa Laura preserve whole industrial communities in one of Earth's driest regions.",
         "source": "https://whc.unesco.org/en/list/1178/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The highest active volcano on Earth, Ojos del Salado, rises on Chile's border with Argentina. Its summit is nearly 6,900 metres up, on the edge of the Atacama Desert.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/ci.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -7921,6 +7996,11 @@
         "text": "Guyana shares its historic regional name with Suriname and French Guiana. Its own territory was once known as British Guiana, while Suriname was Dutch Guiana.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/gy.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "In the rainy season Guyana has a temporary water passage to the Amazon basin. Flooding across the Rupununi savanna lets fish move between rivers that normally drain to different parts of the Atlantic.",
+        "source": "https://www.frontiersin.org/journals/forests-and-global-change/articles/10.3389/ffgc.2020.00008/full",
+        "label": "frontiersin.org"
       }
     ]
   },
@@ -7942,6 +8022,11 @@
         "text": "Paraguay's guarania music takes its name from Guaraní culture. Its slow, syncopated melodies arose in the twentieth century and became a vehicle for songs of longing.",
         "source": "https://ich.unesco.org/en/RL/02128",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Paraguay River divides its namesake country into two very unequal halves. The sparsely populated Chaco west of the river takes up more than half the land.",
+        "source": "https://www.usaid.gov/sites/default/files/2022-05/paraguay_biodiversity_tropical_forest_report.pdf",
+        "label": "usaid.gov"
       }
     ]
   },
@@ -7963,6 +8048,11 @@
         "text": "The Central Suriname Nature Reserve protects headwaters and mountains deep in the rainforest. Huge smooth granite domes rise abruptly above the canopy.",
         "source": "https://whc.unesco.org/en/list/1017/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Suriname is the smallest independent country in South America. Neighbouring French Guiana is smaller on the map but is part of France.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/ns.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -7984,6 +8074,11 @@
         "text": "In Montevideo's candombe, different-sized drums play interlocking parts. Marching drummers connect the tradition to particular streets and neighbourhoods.",
         "source": "https://ich.unesco.org/en/RL/00182",
         "label": "UNESCO"
+      },
+      {
+        "text": "Uruguay's highest natural point barely clears 500 metres. Across a continent famous for the Andes, this country's high point is a low, rounded hill.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/uy.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -8005,6 +8100,11 @@
         "text": "At the university campus in Caracas, architect Carlos Raúl Villanueva integrated modern art into the buildings. Alexander Calder's suspended forms hang over the main auditorium.",
         "source": "https://whc.unesco.org/en/list/986/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The world's highest uninterrupted waterfall starts on top of a Venezuelan table mountain. Angel Falls drops from the edge of Auyán-tepui towards the forest almost a kilometre below.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/ve.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -8026,6 +8126,11 @@
         "text": "Far inland from the launch pads, French Guiana contains an Amazonian national park. Communities along the Maroni and Oyapock river systems are part of its lived landscape.",
         "source": "https://parc-amazonien-guyane.fr/sites/parc-amazonien-guyane.fr/files/atoms/files/mieux_comprendre_la_charte.pdf",
         "label": "parc-amazonien-guyane.fr"
+      },
+      {
+        "text": "Two river mouths pick out the ends of French Guiana's coast. The Maroni meets the Atlantic at the Suriname border, and the Oyapock reaches it at the Brazilian border.",
+        "source": "https://msi.nga.mil/api/publications/download?key=16694492%2FSFH00000%2FPub160bk.pdf&type=view",
+        "label": "msi.nga.mil"
       }
     ]
   },
@@ -8047,6 +8152,11 @@
         "text": "Darwin met the Falklands' native wolf, the warrah, and predicted its disappearance. Within decades of his visit the animal was extinct.",
         "source": "https://falklands-museum.com/the-warrah",
         "label": "falklands-museum.com"
+      },
+      {
+        "text": "The Falklands' jagged coasts include drowned valleys. Falkland Sound, the long channel down the middle of the archipelago, separates East Falkland from West Falkland.",
+        "source": "https://falklands.gov.fk/mineralresources/geology/regional-geology/onshore-geology",
+        "label": "falklands.gov.fk"
       }
     ]
   },
@@ -8068,6 +8178,11 @@
         "text": "At Poverty Point in Louisiana, hunter-gatherers built great earth mounds and concentric ridges. Monumental construction here did not depend on a farming economy.",
         "source": "https://whc.unesco.org/en/list/1435/",
         "label": "UNESCO"
+      },
+      {
+        "text": "North America's highest summit and lowest exposed land are both in the United States. They are separated by thousands of kilometres, from Denali in Alaska to Death Valley in California.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/us.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -8089,6 +8204,11 @@
         "text": "The Arecibo telescope's giant dish sat in a natural sinkhole. Puerto Rico's limestone landscape provided the bowl for an instrument that listened to space.",
         "source": "https://www.nsf.gov/news/media-toolkits/arecibo",
         "label": "www.nsf.gov"
+      },
+      {
+        "text": "Just north of Puerto Rico the ocean floor plunges deeper than anywhere else in the Atlantic. The Puerto Rico Trench reaches more than eight kilometres below the surface.",
+        "source": "https://repository.library.noaa.gov/view/noaa/72496/noaa_72496_DS1.pdf",
+        "label": "repository.library.noaa.gov"
       }
     ]
   },
@@ -8110,6 +8230,11 @@
         "text": "Santo Domingo's colonial city laid out a grid that Spanish planners subsequently used as a model elsewhere in the Americas.",
         "source": "https://whc.unesco.org/en/list/526/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Caribbean's highest summit and lowest exposed ground are both in the Dominican Republic. Pico Duarte rises over three kilometres high, while Lake Enriquillo's shore lies below sea level.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/dr.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -8131,6 +8256,11 @@
         "text": "Haiti's compas grew into a dance music heard far beyond the country. Musicians of the Haitian diaspora helped carry it around the Caribbean and overseas.",
         "source": "https://ich.unesco.org/en/RL/02273",
         "label": "UNESCO"
+      },
+      {
+        "text": "Haiti occupies roughly the western third of Hispaniola. Its neighbour on the very same island, the Dominican Republic, covers about twice as much land.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/ha.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -8152,6 +8282,11 @@
         "text": "Jamaican reggae grew from earlier local styles and borrowed sounds from abroad. Kingston's recording culture helped it travel around the world.",
         "source": "https://ich.unesco.org/en/RL/01398",
         "label": "UNESCO"
+      },
+      {
+        "text": "Jamaica gave geographers an example of 'cockpit karst'. In Cockpit Country, dissolving limestone left so many enclosed hollows that travelling in a straight line means climbing ridge after ridge.",
+        "source": "https://whc.unesco.org/en/tentativelists/6822/",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -8173,6 +8308,11 @@
         "text": "Between 1845 and 1917, indentured workers from India crossed the Atlantic to Trinidad's sugar estates. Their descendants helped shape the country's culture.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/td.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Trinidad sits on South America's continental shelf. A narrow passage separates it from Venezuela, and its plants and animals have strong mainland connections for a Caribbean island.",
+        "source": "https://www.biodiversity.gov.tt/trinidad-a-tobago-biodiversity/",
+        "label": "biodiversity.gov.tt"
       }
     ]
   },
@@ -8194,6 +8334,11 @@
         "text": "The Îlets Pigeon shelter reefs just off Guadeloupe's leeward coast. The national park extends underwater around these tiny islands.",
         "source": "https://www.guadeloupe-parcnational.fr/fr/des-decouvertes/les-sites/espaces-maritimes-du-parc-national/la-cote-sous-le-vent-et-les-ilets",
         "label": "www.guadeloupe-parcnational.fr"
+      },
+      {
+        "text": "Guadeloupe's two main islands look like butterfly wings, but their rocks are quite different. Mountainous Basse-Terre is volcanic, while much flatter Grande-Terre has a limestone surface.",
+        "source": "https://www.culture.gouv.fr/Media/medias-creation-rapide/livret-le-moule-2021-2022-web.pdf",
+        "label": "culture.gouv.fr"
       }
     ]
   },
@@ -8215,6 +8360,11 @@
         "text": "On Andros, openings called blue holes lead into flooded limestone caves. Some lie inland, so you can encounter one well away from the coast.",
         "source": "https://www.bahamas.com/the-islands/andros/about-andros",
         "label": "www.bahamas.com"
+      },
+      {
+        "text": "The Bahamian islands are the exposed tops of great carbonate banks. Between the banks, deep channels turn dark blue beside some of the palest turquoise water visible from space.",
+        "source": "https://science.nasa.gov/blogs/earth-matters/2014/01/16/best-of-the-archives-dunes-of-the-great-bahama-bank/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -8236,6 +8386,11 @@
         "text": "Belize was called British Honduras until 1973, but it is a separate country from Honduras. It faces the Caribbean across the Gulf of Honduras.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/bh.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Some of Belize's most famous stalactites are underwater. They formed in air when sea level was lower and now hang inside the Great Blue Hole offshore.",
+        "source": "https://www.travelbelize.org/attraction/blue-hole/",
+        "label": "travelbelize.org"
       }
     ]
   },
@@ -8257,6 +8412,11 @@
         "text": "Guanacaste protects a route from Pacific shore through tropical dry forest into cloud forest. Animals can move between sharply different climates within one conservation area.",
         "source": "https://whc.unesco.org/en/list/928/",
         "label": "UNESCO"
+      },
+      {
+        "text": "From the top of Cerro Chirripó on an exceptionally clear day it is possible to see both the Pacific and the Caribbean. Costa Rica's highest summit stands between them.",
+        "source": "https://www.sinac.go.cr/es/ac/aclap/pnch/paginas/default.aspx",
+        "label": "sinac.go.cr"
       }
     ]
   },
@@ -8278,6 +8438,11 @@
         "text": "In Panchimalco, the Confraternity of Flowers and Palms decorates palm fronds with flowers for a procession. Preparing them brings generations of neighbours together.",
         "source": "https://ich.unesco.org/en/RL/02240",
         "label": "UNESCO"
+      },
+      {
+        "text": "El Salvador is the smallest country on mainland Central America. All of its coastline fits along the Pacific between Guatemala and the Gulf of Fonseca.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/es.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -8299,6 +8464,11 @@
         "text": "At Quiriguá, Maya sculptors carved immense stone stelae. Their inscriptions record dates and dynastic events in the city's own words.",
         "source": "https://whc.unesco.org/en/list/149/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The highest mountain in Central America is a volcano in Guatemala. Tajumulco reaches about 4,220 metres near the Mexican border.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/gt.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -8320,6 +8490,11 @@
         "text": "Honduras has two very unequal coasts. Its long Caribbean frontage contrasts with a short reach of Pacific shore on the Gulf of Fonseca.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/ho.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Follow the Río Plátano downhill through its biosphere reserve and you pass from mountains through tropical rainforest to the Caribbean shore without leaving the same protected watershed.",
+        "source": "https://whc.unesco.org/en/list/196/",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -8341,6 +8516,11 @@
         "text": "León Cathedral's apparently simple outer walls hide a more elaborate interior. Its design reflects the need for a massive building to survive local earthquakes.",
         "source": "https://whc.unesco.org/en/list/1236/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Central America's largest country also contains its largest lake. Lake Nicaragua takes up a sizeable part of the narrow strip separating the two American continents.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/nu.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -8362,6 +8542,11 @@
         "text": "Makers of Panama's sombrero pintao process plant fibres into contrasting strips, then sew the braids into the distinctive patterned hat.",
         "source": "https://ich.unesco.org/en/RL/01272",
         "label": "UNESCO"
+      },
+      {
+        "text": "At the Panama Canal, the Atlantic entrance is west of the Pacific entrance. A ship crossing from the Caribbean to the Pacific actually travels southeast.",
+        "source": "https://www.govinfo.gov/content/pkg/GPO-CRECB-1967-pt8/pdf/GPO-CRECB-1967-pt8-8-1.pdf",
+        "label": "govinfo.gov"
       }
     ]
   },
@@ -8383,6 +8568,11 @@
         "text": "Dominica's European name records a day of the week. Columbus sighted the island on a Sunday in 1493.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/do.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Morne Trois Pitons National Park alone contains five volcanoes. Within one patch of this small Caribbean island are hot springs, freshwater lakes and geothermal vents.",
+        "source": "https://whc.unesco.org/en/list/814/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -8404,6 +8594,11 @@
         "text": "The Grenadines do not all belong to the country that bears their name. Their southern islands form part of Grenada.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/vc.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "In the Tobago Cays, Horseshoe Reef curves around a group of small Grenadine islands. Sea turtles feed on seagrass in the lagoon protected by this natural breakwater.",
+        "source": "https://www.tobagocays.org/about/",
+        "label": "tobagocays.org"
       }
     ]
   },
@@ -8425,6 +8620,11 @@
         "text": "At Sulphur Springs, visitors can approach a volcanic geothermal field by road. Hot pools bubble and steam rises from the ground.",
         "source": "https://stlucia.org/en/places-to-visit/sulphur-springs/",
         "label": "stlucia.org"
+      },
+      {
+        "text": "Saint Lucia's two Pitons are the exposed volcanic peaks of a much larger geothermal landscape. It continues below the waves, where reefs sit just offshore from the steep volcanic slopes.",
+        "source": "https://whc.unesco.org/en/list/1161/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -8446,6 +8646,11 @@
         "text": "Grenada put one of its crops directly on its flag. The small emblem by the hoist is a nutmeg.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/gj.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Grenada has an active volcano that never breaks the surface. Kick-'em-Jenny rises from the Caribbean seabed just north of the main island.",
+        "source": "https://uwiseismic.com/volcanoes/kick-em-jenny/",
+        "label": "uwiseismic.com"
       }
     ]
   },
@@ -8467,6 +8672,11 @@
         "text": "The RMS Rhone sank off Salt Island in a hurricane in 1867. Its wreck has become one of the territory's best-known dive sites.",
         "source": "https://www.bvitourism.com/about/historic-sites",
         "label": "www.bvitourism.com"
+      },
+      {
+        "text": "Anegada's great offshore barrier, Horseshoe Reef, is far more extensive than the low island it protects. Ships could hit the reef before the island itself was easy to see.",
+        "source": "https://www.bvitourism.com/the-islands/anegada",
+        "label": "bvitourism.com"
       }
     ]
   },
@@ -8488,6 +8698,11 @@
         "text": "These islands once belonged administratively to Jamaica. Jamaica's independence in 1962 left Turks and Caicos a separate British colony.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/tk.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "The two halves of Turks and Caicos stand on separate shallow banks. Between them the Turks Island Passage drops into water more than a kilometre deep.",
+        "source": "https://www.visittci.com/nature-and-history/geology-ecology-climate",
+        "label": "visittci.com"
       }
     ]
   },
@@ -8509,6 +8724,11 @@
         "text": "The name Cayman preserves a word for crocodile. Europeans applied the Caribbean name for the animal to the islands.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/cj.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "The Cayman Islands are small exposed summits along a submarine ridge. Just offshore the sea floor drops towards the Cayman Trough, the deepest part of the Caribbean.",
+        "source": "https://gov.ky/documents/35692/0/VOL%2B1%2BCayman%2BIslands%2BNational%2BDisaster%2BManagement%2BPlan_June2025.pdf/c04a3a1c-9897-a914-4ab4-eab6d231e050?t=1762284693103",
+        "label": "gov.ky"
       }
     ]
   },
@@ -8530,6 +8750,11 @@
         "text": "Anguillans resisted being governed together with Saint Kitts and Nevis. A revolt in the 1960s helped set the island on the road to separate administration.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/av.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Far north of Anguilla's main island, tiny Sombrero is surrounded by deep water and has no resident human population. This isolated, flat-topped island is an important seabird nesting site.",
+        "source": "https://rsis.ramsar.org/RISapp/files/RISrep/GB2354RISformer_220302_1809_en.pdf",
+        "label": "rsis.ramsar.org"
       }
     ]
   },
@@ -8551,6 +8776,11 @@
         "text": "Curaçao was once administered with other Dutch Caribbean islands as part of the Netherlands Antilles. In 2010 it became a constituent country within the Kingdom of the Netherlands.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/uc.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Curaçao lies in the dry southern Caribbean near Venezuela. Its natural landscape includes thorn scrub and tall cacti, despite its position well inside the tropics.",
+        "source": "https://www.cbs.cw/climate-0",
+        "label": "cbs.cw"
       }
     ]
   },
@@ -8570,6 +8800,11 @@
       },
       {
         "text": "Kitts and Christopher are versions of the same name. The island's formal name, Saint Christopher, refers to the same place as Saint Kitts.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/sc.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Saint Kitts and Nevis is the smallest sovereign country in the Americas by land area. Its two main islands together cover only about 260 square kilometres.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/sc.json",
         "label": "CIA World Factbook (archived profile)"
       }
@@ -8593,6 +8828,11 @@
         "text": "At Buck Island off Saint Croix there is a national park trail you follow by snorkel. Underwater signs guide swimmers through the coral reef.",
         "source": "https://www.nps.gov/places/buck-island-underwater-trail.htm",
         "label": "www.nps.gov"
+      },
+      {
+        "text": "Saint Thomas and Saint John share a shallow submarine platform with Puerto Rico. Saint Croix belongs to the same territory above water but deep water separates it from that platform below.",
+        "source": "https://www.usgs.gov/publications/ecology-coral-reefs-us-virgin-islands",
+        "label": "usgs.gov"
       }
     ]
   },
@@ -8612,6 +8852,11 @@
       },
       {
         "text": "Salt helped draw the Dutch to the island in the seventeenth century. The deposits were valuable enough for rival powers to contest them.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/nn.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Sint Maarten's only land neighbour is France. This Caribbean island is the one place where the Kingdom of the Netherlands and the French Republic have a land border.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/nn.json",
         "label": "CIA World Factbook (archived profile)"
       }
@@ -8635,6 +8880,11 @@
         "text": "A Martinican yole has an unusual balancing system. The crew climbs out onto long poles to use their own body weight to keep the sailing boat upright.",
         "source": "https://ich.unesco.org/en/BSP/the-martinique-yole-from-construction-to-sailing-practices-a-model-for-heritage-safeguarding-01582",
         "label": "ich.unesco.org"
+      },
+      {
+        "text": "After Mount Pelée erupted in 1902, solid lava pushed out of the crater like a huge stone needle. For a short time, Martinique had a new summit hundreds of metres tall.",
+        "source": "https://volcano.si.edu/gallery/ShowImage.cfm?photo=GVP-05008",
+        "label": "volcano.si.edu"
       }
     ]
   },
@@ -8656,6 +8906,11 @@
         "text": "Off French Saint Martin, tiny islets such as Rocher Créole provide nesting places for seabirds. Their distance from the busy main island makes a difference to the birds.",
         "source": "https://reservenaturelle-saint-martin.com/etudes-pdf/2016/Rapport-Annuel-Oiseaux-Marins-2015-16-0801.pdf",
         "label": "reservenaturelle-saint-martin.com"
+      },
+      {
+        "text": "Part of French Saint Martin's border is open water inside an island. The line between the French and Dutch sides cuts across Simpson Bay Lagoon.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/rn.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -8677,6 +8932,11 @@
         "text": "At Brooks Falls, brown bears wait on the lip of the waterfall while salmon try to jump upstream. The obstacle brings bears and fish to exactly the same spot.",
         "source": "https://www.nps.gov/katm/learn/photosmultimedia/brooks-falls-low-camera.htm",
         "label": "www.nps.gov"
+      },
+      {
+        "text": "Alaska reaches farther west and farther east by longitude than any other US state. The Aleutian chain crosses the 180th meridian into eastern longitudes.",
+        "source": "https://www.alaska.gov/Kids/learn/aboutgeography.htm",
+        "label": "alaska.gov"
       }
     ]
   }
