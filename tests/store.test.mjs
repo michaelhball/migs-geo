@@ -783,6 +783,10 @@ test("fact drafts, follow-ups and publication are independent of schedules", () 
     assert.equal(review.current(item.id),null);
     assert.deepEqual(review.publish().applied,[item.id]);
     assert.deepEqual(review.publish().applied,[]);
+    // A collection pass may publish while the reviewer is typing in the same tab.
+    review.save(item.id,{...fields,hold:false,revision:2,comment:"Shorten the last line"});
+    assert.equal(review.current(item.id).text,item.options[0].text);
+    assert.throws(()=>review.save(item.id,{...fields,revision:2}),/changed/);
     const saved=s.exportData();s.restore(saved);
     assert.deepEqual(s.editorial.backup(),saved.factReview);
     const q=s.question({practice:true,placeId:item.id,mode:"identify"});

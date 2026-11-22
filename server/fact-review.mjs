@@ -81,7 +81,10 @@ export function factReview(db, tx, places) {
       return tx(() => {
         if (!options.has(id) && !places().some(p => p.id === id)) throw Error("Unknown fact review place.");
         const old = read(id);
-        if (input.revision !== old.revision) throw Object.assign(Error("This decision changed in another tab. Reload before editing."),{status:409});
+        // Publishing changes the card's fact, but leaves the reviewer's draft intact.
+        const onlyPublishedSince = old.publishedFromRevision === old.revision - 1 &&
+          input.revision === old.publishedFromRevision;
+        if (input.revision !== old.revision && !onlyPublishedSince) throw Object.assign(Error("This decision changed in another tab. Reload before editing."),{status:409});
         if (input.choice !== null && !options.get(id)?.some(o=>o.id===input.choice)) throw Error("Unknown candidate.");
         const candidates = options.get(id) ?? [];
         const previous = researchState(old, candidates);
@@ -103,7 +106,8 @@ export function factReview(db, tx, places) {
         for (const item of list()) {
           const selected=item.options.find(o=>o.id===item.choice);
           if (item.hold || !selected || (selected.text===item.current?.text && selected.source===item.current?.source)) continue;
-          write(item.id,{...read(item.id),revision:item.revision+1,published:{text:selected.text,source:selected.source}});
+          write(item.id,{...read(item.id),revision:item.revision+1,publishedFromRevision:item.revision,
+            published:{text:selected.text,source:selected.source}});
           applied.push(item.id);
         }
         return {applied};
