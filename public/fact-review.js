@@ -23,7 +23,8 @@ const labels = {revised:"New suggestions",missing:"Awaiting research",hold:"Need
 function drawSection(list, rows) {
   const cards = rows.map(p => {
     if (!articles.has(p.id)) articles.set(p.id, render(p));
-    const {article, badge} = articles.get(p.id);
+    const {article, badge, showOffer} = articles.get(p.id);
+    showOffer();
     badge.textContent = labels[state(p)];
     return article;
   });
@@ -39,11 +40,17 @@ function drawSection(list, rows) {
 }
 const pending = document.querySelector("#pending");
 const chosen = document.querySelector("#chosen");
+const alternatives = document.querySelector("#alternatives");
+function hasOffer(p) {
+  const option = p.options[3];
+  return option?.suggestSwitch && p.savedChoice && p.savedChoice !== option.id &&
+    p.reviewedAlternative !== option.id && !p.hold && !p.newSuggestions;
+}
 const research = document.querySelector("#research");
 const researchDetails=document.querySelector("details");
 researchDetails.ontoggle=()=>refresh();
 function refresh() {
-  const term=normalize(search.value.trim()), remaining=[], selected=[], missing=[];
+  const term=normalize(search.value.trim()), remaining=[], selected=[], missing=[], offers=[];
   let waiting = 0;
   for (const p of places) {
     if (!normalize(p.name).includes(term)) continue;
@@ -51,26 +58,36 @@ function refresh() {
       if (scope.value === "all" || p.studying) waiting++;
       continue;
     }
-    if (p.options.some(o=>o.id===p.savedChoice)) selected.push(p);
+    if (p.options.some(o=>o.id===p.savedChoice)) (hasOffer(p) ? offers : selected).push(p);
     else if (scope.value==="all" || p.studying) (p.options.length ? remaining : missing).push(p);
   }
   drawSection(pending, remaining);
   researchDetails.hidden=!missing.length;
   document.querySelector("#research-heading").textContent=`Awaiting research (${missing.length})`;
   drawSection(research, researchDetails.open ? missing : []);
+  alternatives.parentElement.hidden=!offers.length;
+  drawSection(alternatives, offers);
   drawSection(chosen, selected);
   const revisions = waiting ? ` · ${waiting} awaiting new suggestions` : "";
-  summary.textContent=`${remaining.length} to choose · ${missing.length} awaiting research${revisions} · ${selected.length} already chosen`;
+  summary.textContent=`${remaining.length} to choose · ${missing.length} awaiting research${revisions} · ${selected.length + offers.length} already chosen`;
+  if (offers.length) {
+    const jump=el("a",`${offers.length} suggested switches`);
+    jump.href="#alternatives-section";
+    summary.append(" · ",jump);
+  }
 }
 function showSavedChoice(p, article) {
   const wasChosen = p.options.some(o => o.id === p.savedChoice);
   const nowChosen = p.options.some(o => o.id === p.choice);
   const bounds = article.getBoundingClientRect();
-  const movingInView = (wasChosen !== nowChosen || (p.awaitingSuggestions && !p.finishingComment)) && article.isConnected &&
+  const leavingOffers = article.parentElement === alternatives && !hasOffer(p);
+  const movingInView = (wasChosen !== nowChosen || leavingOffers || (p.awaitingSuggestions && !p.finishingComment)) && article.isConnected &&
     bounds.bottom > 0 && bounds.top < window.innerHeight;
-  const next = article.nextElementSibling ?? (article.parentElement === pending
-    ? (researchDetails.hidden ? chosen.closest("section").querySelector("h2") : researchDetails.querySelector("summary"))
-    : null);
+  const afterPending = researchDetails.hidden
+    ? (alternatives.parentElement.hidden ? chosen : alternatives).parentElement.querySelector("h2")
+    : researchDetails.querySelector("summary");
+  const next = article.nextElementSibling ?? (article.parentElement === pending ? afterPending :
+    article.parentElement === alternatives ? chosen.parentElement.querySelector("h2") : null);
   const restoreFocus = article.contains(document.activeElement);
   const scrollY = window.scrollY;
 
@@ -92,12 +109,23 @@ function render(p) {
   const article=el("article"), heading=el("header"), badge=el("small"), status=el("small");
   heading.append(el("h2",p.name),badge); article.append(heading);
   const inputs=[];
+  const rows=[];
   for (const [i,o] of p.options.entries()) {
     const line=el("div"), radio=el("input"), label=el("label"), source=el("a","Source");
     line.className="option"; radio.type="radio"; radio.name=p.id; radio.id=p.id+"-"+o.id;
     radio.checked=p.choice===o.id; label.htmlFor=radio.id; label.textContent=String.fromCharCode(65+i)+". "+o.text;
     source.href=o.source;source.target="_blank";source.rel="noreferrer";line.append(radio,label,source);article.append(line);
-    radio.addEventListener("change",()=>{p.choice=o.id;changed()});inputs.push(radio);
+    radio.addEventListener("change",()=>{p.choice=o.id;acknowledge();changed()});inputs.push(radio);rows.push(line);
+  }
+  const keep=el("button","Keep my choice"), swap=el("button","Switch to D"), comparison=el("div");
+  comparison.className="comparison";comparison.append(keep,swap);article.append(comparison);
+  function acknowledge(){if(p.options[3])p.reviewedAlternative=p.options[3].id}
+  keep.onclick=()=>{acknowledge();changed()};
+  swap.onclick=()=>{inputs[3].click()};
+  function showOffer() {
+    const comparing=Boolean(hasOffer(p));
+    comparison.hidden=!comparing;
+    rows.forEach((row,i)=>{row.hidden=comparing && p.options[i].id!==p.savedChoice && i!==3});
   }
   const note=el("label","Comment for Claude"), comment=el("textarea");
   note.className="note";comment.rows=2;comment.maxLength=8000;comment.value=p.comment;note.append(comment);
@@ -123,7 +151,8 @@ function render(p) {
       while(dirty){
         dirty=false;
         const response=await fetch("/api/fact-review/"+p.id,{method:"PUT",headers:{"Content-Type":"application/json"},
-          body:JSON.stringify({choice:p.choice,comment:p.comment,hold:p.hold,revision:p.revision,seenOptions:p.options.map(o=>o.id)})});
+          body:JSON.stringify({choice:p.choice,comment:p.comment,hold:p.hold,revision:p.revision,seenOptions:p.options.map(o=>o.id),
+            reviewedAlternative:p.reviewedAlternative===p.options[3]?.id ? p.reviewedAlternative : undefined})});
         const data=await response.json();if(!response.ok)throw Error(data.error||"Save failed");
         p.revision=data.revision;
         if (!dirty) {
@@ -137,7 +166,7 @@ function render(p) {
     }catch(e){dirty=true;status.textContent=e.message;retry.hidden=false}finally{busy=false}
   }
   retry.onclick=save;
-  return {article,badge};
+  return {article,badge,showOffer};
 }
 window.addEventListener("beforeunload",e=>{if(saving.size){e.preventDefault();e.returnValue=""}});
 search.oninput = scope.onchange = refresh;
@@ -155,7 +184,7 @@ async function loadPlaces(){
     places=incoming.map(row=>{
       const old=previous.get(row.id);
       if(old && old.revision===row.revision && old.name===row.name &&
-          old.options.length===row.options.length && old.options.every((o,i)=>o.id===row.options[i].id)) {
+          old.options.length===row.options.length && old.options.every((o,i)=>o.id===row.options[i].id && o.suggestSwitch===row.options[i].suggestSwitch)) {
         old.studying=row.studying;
         return old;
       }

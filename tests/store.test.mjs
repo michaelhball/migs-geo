@@ -832,6 +832,30 @@ test("fact review includes custom places before candidates exist", () => {
   } finally {s.db.close()}
 });
 
+test("considering a fourth candidate preserves the choice until an explicit switch and publication", () => {
+  const s=createStore(":memory:",atlas);
+  try {
+    const review=s.editorial;
+    const item=()=>review.list().find(p=>p.id==="aral-sea");
+    const [first,,,alternative]=item().options;
+    const save=fields=>review.save(item().id,{revision:item().revision,choice:item().choice,comment:"",hold:false,...fields});
+    save({choice:first.id});
+    review.publish();
+    assert.equal(item().reviewedAlternative,null);
+    assert.throws(()=>save({reviewedAlternative:first.id}),/alternative has changed/);
+    save({reviewedAlternative:alternative.id});
+    save({comment:"Keep for now"});
+    s.restore(s.exportData());
+    assert.equal(item().reviewedAlternative,alternative.id);
+    assert.equal(item().choice,first.id);
+    assert.deepEqual(review.publish().applied,[]);
+    save({choice:alternative.id,reviewedAlternative:alternative.id});
+    assert.equal(item().current.text,first.text);
+    assert.deepEqual(review.publish().applied,[item().id]);
+    assert.equal(item().current.text,alternative.text);
+  } finally {s.db.close()}
+});
+
 test("requests for new suggestions survive reloads until the whole shortlist changes", () => {
   const s=createStore(":memory:",atlas);
   try {

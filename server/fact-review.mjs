@@ -59,6 +59,7 @@ export function factReview(db, tx, places) {
         !(row.choice === null || typeof row.choice === "string") ||
         (row.requestedOptions != null && (!Array.isArray(row.requestedOptions) || row.requestedOptions.length > 30 ||
           !row.requestedOptions.every(id => typeof id === "string" && /^[a-f0-9]{24}$/.test(id)))) ||
+        (row.reviewedAlternative != null && !/^[a-f0-9]{24}$/.test(row.reviewedAlternative)) ||
         typeof row.comment !== "string" || row.comment.length > 8000 || typeof row.hold !== "boolean" ||
         !(row.published === null || (typeof row.published?.text === "string" &&
           /^https:\/\//.test(row.published.source)))) throw Error("Invalid fact decision.");
@@ -87,6 +88,12 @@ export function factReview(db, tx, places) {
         if (input.revision !== old.revision && !onlyPublishedSince) throw Object.assign(Error("This decision changed in another tab. Reload before editing."),{status:409});
         if (input.choice !== null && !options.get(id)?.some(o=>o.id===input.choice)) throw Error("Unknown candidate.");
         const candidates = options.get(id) ?? [];
+        const offered = candidates[3];
+        let reviewedAlternative = old.reviewedAlternative ?? null;
+        if (input.reviewedAlternative != null) {
+          if (input.reviewedAlternative !== offered?.id) throw Error("That alternative has changed. Reload before choosing.");
+          reviewedAlternative = offered.id;
+        }
         const previous = researchState(old, candidates);
         const startsRequest = input.requestNewOptions === true ||
           (input.hold && !(previous.hold ?? old.hold) && !input.choice) ||
@@ -96,7 +103,7 @@ export function factReview(db, tx, places) {
         else if (input.choice !== old.choice || (previous.awaitingSuggestions && !input.hold &&
           !asksForOptions(input.comment))) requestedOptions = null;
         const row={revision:old.revision+1, choice:input.choice, comment:input.comment, hold:input.hold,
-          published:old.published, requestedOptions};
+          published:old.published, requestedOptions, reviewedAlternative};
         validate(row);write(id,row);return {...row, ...researchState(row, candidates)};
       });
     },
