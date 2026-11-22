@@ -164,24 +164,19 @@
     "name": "Serbia",
     "options": [
       {
-        "text": "At Lepenski Vir on the Danube, prehistoric sculptors carved monumental stone faces with fishlike features. You can still see the sculptures today.",
-        "source": "https://www.narodnimuzej.rs/prehistory/lepenski-vir-collection/?lang=en",
-        "label": "National Museum of Serbia"
-      },
-      {
-        "text": "On the Serbian bank of the Danube, engineers moved a Roman inscription and a piece of the road it commemorates uphill so a hydroelectric dam would not drown them.",
-        "source": "https://www.old.serbia.travel/en/see-serbia/culture/archaeological-sites/tabula-traiana",
-        "label": "Tourism Organisation of Serbia"
-      },
-      {
-        "text": "At a Serbian family’s slava, the celebration of its patron saint, a special loaf is marked with a cross, sprinkled with wine, and broken four ways.",
-        "source": "https://www.old.serbia.travel/en/see-serbia/culture/unesco-lists/intangible-cultural-heritage",
-        "label": "Tourism Organisation of Serbia"
-      },
-      {
-        "text": "On the Serbian–Romanian border the Danube cuts right across the Carpathian mountain chain. The result is the Iron Gates, a string of gorges through the mountains.",
-        "source": "https://whc.unesco.org/en/tentativelists/1693",
+        "text": "Serbia has inland sand dunes. Wind piled up the Deliblato Sands in the Pannonian plain, hundreds of kilometres from a beach.",
+        "source": "https://whc.unesco.org/en/tentativelists/1695",
         "label": "whc.unesco.org"
+      },
+      {
+        "text": "A Roman emperor built a palace near his birthplace in eastern Serbia and named it for his mother, Romula. The ruins at Gamzigrad still trace the walls of Felix Romuliana.",
+        "source": "https://whc.unesco.org/en/list/1253/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Studenica's medieval churches have white marble walls. Their pale stone stands out against the wooded mountains of central Serbia.",
+        "source": "https://whc.unesco.org/en/list/389/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -402,24 +397,19 @@
     "name": "United Kingdom",
     "options": [
       {
-        "text": "Even the most inland parts of the UK are within about 125 km of tidal water. Look at how far the estuaries cut into the outline and the distance starts to make sense.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/uk.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "The world's shortest scheduled passenger flight connects two of the UK's Orkney Islands. Westray and Papa Westray are close enough for the flight to take about two minutes.",
+        "source": "https://www.loganair.co.uk/interisles/",
+        "label": "loganair.co.uk"
       },
       {
-        "text": "Medieval Europeans had two Britains to distinguish. Great Britain was the island across the Channel, and Little Britain was Brittany in what is now France.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/uk.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "A canal in Wales crosses the River Dee high in the air. The boats float through an iron trough carried across the valley on stone piers.",
+        "source": "https://whc.unesco.org/en/list/1303/",
+        "label": "UNESCO"
       },
       {
-        "text": "London still carries the name of the Roman settlement Londinium, founded on the site around AD 43. The meaning of that older name is uncertain.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/uk.json",
-        "label": "CIA World Factbook (archived country profile)"
-      },
-      {
-        "text": "The UK shares an island with another country. Its land border is on Ireland, across the sea from Great Britain, the island containing England, Scotland and Wales.",
-        "source": "https://www.ordnancesurvey.co.uk/blog/whats-the-difference-between-uk-britain-and-british-isles?trk=public_post_comment-text",
-        "label": "ordnancesurvey.co.uk"
+        "text": "The line once used to set longitude zero passes through an astronomer's observing instrument at Greenwich. A coordinate used around the world began at one particular telescope in London.",
+        "source": "https://whc.unesco.org/en/list/795/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -665,23 +655,18 @@
     "name": "Belarus",
     "options": [
       {
-        "text": "Belarus’s landscape bears the marks of moving ice. Glaciers scoured the terrain and helped leave it dotted with around 11,000 lakes.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/bo.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "Landlocked Belarus sheds water towards two different seas. A little over half its surface runoff goes towards the Black Sea, while the rest goes towards the Baltic.",
+        "source": "https://www.oecd.org/en/publications/towards-water-security-in-belarus_488183c4-en/full-report/component-5.html",
+        "label": "oecd.org"
       },
       {
-        "text": "After the Soviet Union dissolved, Belarus kept the tune of its Soviet-era anthem. The replacement lyrics came in 2002.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/bo.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "The Radziwiłł family made Nesvizh a seat of power for centuries. Their palace stands among lakes and landscaped grounds in what is now Belarus.",
+        "source": "https://whc.unesco.org/en/list/1196/",
+        "label": "UNESCO"
       },
       {
-        "text": "The first part of Belarus comes from a Slavic word for white. The rest preserves the historical name Rus.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/bo.json",
-        "label": "CIA World Factbook (archived country profile)"
-      },
-      {
-        "text": "The Białowieża Forest crosses from Belarus into Poland. It shelters Europe's largest free-roaming population of European bison in a fragment of the forest that once covered much of the continent.",
-        "source": "https://whc.unesco.org/en/list/33/",
+        "text": "Belarusian paper cutters once made curtains from sheets of paper. Folded, cut and opened out again, the paper could make a symmetrical pattern large enough to fill a window.",
+        "source": "https://ich.unesco.org/en/RL/01954",
         "label": "UNESCO"
       }
     ]
@@ -770,25 +755,19 @@
     "name": "Czech Republic",
     "options": [
       {
-        "text": "Around Žatec, the crop that shaped the landscape grows up wires. Fields, drying buildings and warehouses all belong to the long local history of growing hops for beer.",
-        "source": "https://whc.unesco.org/en/list/1558/",
+        "text": "In the Moravian Karst, a boat can pass through caves on the underground Punkva River. Partway through the route, the cave opens to daylight at the bottom of the Macocha Abyss.",
+        "source": "https://www.visitczechia.com/en-us/things-to-do/places/nature/caves/c-punkva-caves",
+        "label": "visitczechia.com"
+      },
+      {
+        "text": "A family best known today for ruling Liechtenstein landscaped roughly 200 square kilometres in Czechia. Their castles at Lednice and Valtice anchor opposite ends of the estate.",
+        "source": "https://whc.unesco.org/en/list/763/",
         "label": "UNESCO"
       },
       {
-        "text": "At Kladruby nad Labem, people reshaped an Elbe floodplain to breed ceremonial carriage horses. Pastures, avenues and paddocks are part of the protected landscape.",
-        "source": "https://whc.unesco.org/en/list/1589/",
+        "text": "At Český Krumlov the Vltava doubles back around the old town. The bends of the river still trace the shape of the medieval settlement beneath its castle.",
+        "source": "https://whc.unesco.org/en/list/617/",
         "label": "UNESCO"
-      },
-      {
-        "text": "Medieval Kutná Hora grew wealthy from what lay underneath it. Its silver mines helped turn an inland settlement into one of Bohemia's most important towns.",
-        "source": "https://whc.unesco.org/en/list/732/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "On the slopes of Králický Sněžník, water can set out for three different seas. The divides here separate the drainage basins of the Baltic, North and Black Seas.",
-        "source": "https://www.visitczechia.com/en-us/news/2022/09/n-trips-to-the-river-springs",
-        "label": "visitczechia.com",
-        "suggestSwitch": true
       }
     ]
   },
@@ -1406,24 +1385,19 @@
     "name": "Benin",
     "options": [
       {
-        "text": "Benin’s capital has a Portuguese name on the coast of West Africa. Porto-Novo simply means “new port.”",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/bn.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "One of Benin's national parks is named for a letter you can see on a map. A series of bends in the Niger River spells out a W near the meeting of Benin, Niger and Burkina Faso.",
+        "source": "https://world-heritage-datasheets.unep-wcmc.org/datasheet/output/site/w-national-park-of-niger/",
+        "label": "world-heritage-datasheets.unep-wcmc.org"
       },
       {
-        "text": "The old national name Dahomey preserved the name of an earlier kingdom, Dan Homé, in what is now southern Benin.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/bn.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "The Batammariba build houses with earthen towers, linked rooms and rooftop terraces. Their architectural landscape, Koutammakou, extends across the border between Benin and Togo.",
+        "source": "https://whc.unesco.org/en/list/1140/",
+        "label": "UNESCO"
       },
       {
-        "text": "Sandbanks line Benin’s shore. A coastline open to the Gulf of Guinea offered ships little in the way of natural harbour shelter.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/bn.json",
-        "label": "CIA World Factbook (archived country profile)"
-      },
-      {
-        "text": "At Ganvié on Lake Nokoué, the streets are waterways and houses stand on stilts. Building a settlement out on the lake offered refuge during the slave trade.",
-        "source": "https://benintourisme.bj/en/destinations/ganvie/",
-        "label": "benintourisme.bj"
+        "text": "The kings of Abomey kept adding palaces within a common enclosure. Walking through the complex means moving between the homes of successive rulers of Dahomey.",
+        "source": "https://whc.unesco.org/en/list/323/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -3168,25 +3142,19 @@
     "name": "Scandinavia",
     "options": [
       {
-        "text": "Sweden’s High Coast is still rising after the ice sheets melted. Ancient shorelines now stand far above the Baltic, preserving a record of where the sea used to meet the land.",
-        "source": "https://whc.unesco.org/en/list/898/",
+        "text": "Along western Norway's fjords, a mountain valley can continue far below sea level. Glaciers cut the troughs deep enough for the sea to reach well into the mountains after the ice retreated.",
+        "source": "https://whc.unesco.org/en/list/1195/",
         "label": "UNESCO"
       },
       {
-        "text": "Look along the hull of a traditional Scandinavian clinker boat and each plank overlaps the one below. Boatbuilders have passed down this way of joining timber for nearly two millennia.",
-        "source": "https://ich.unesco.org/en/RL/nordic-clinker-boat-traditions-01686?RL=01686",
+        "text": "At Rjukan and Notodden in Norway, waterfalls supplied the electricity for making fertiliser from nitrogen in the air. The factories grew up where the falling water was.",
+        "source": "https://whc.unesco.org/en/list/1486/",
         "label": "UNESCO"
       },
       {
-        "text": "A map of Sápmi crosses four modern borders. The Sámi homeland spans northern Norway, Sweden and Finland and reaches onto Russia’s Kola Peninsula.",
-        "source": "https://samediggi.fi/en/about-us/?lang=en",
-        "label": "Source"
-      },
-      {
-        "text": "Denmark is Scandinavian but is off the Scandinavian Peninsula. Part of Finland is on the peninsula alongside Norway and Sweden.",
-        "source": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Earth_from_Space_Scandinavian_Peninsula",
-        "label": "esa.int",
-        "suggestSwitch": true
+        "text": "At Alta in northern Norway, prehistoric artists carved figures near the water. Land rising after the ice age left former shorelines, and the carvings beside them, at different heights.",
+        "source": "https://whc.unesco.org/en/list/352/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -3221,24 +3189,19 @@
     "name": "North America",
     "options": [
       {
-        "text": "Rain landing on different sides of Montana’s Triple Divide Peak can end up in Hudson Bay, the Pacific, or the Gulf of Mexico. All three watersheds meet on one mountain.",
-        "source": "https://www.nps.gov/places/triple-divide-exhibit-geology-tour.htm",
-        "label": "Source"
+        "text": "Utah's Great Salt Lake is a remnant of a much larger lake. On nearby mountainsides, old Lake Bonneville shorelines look like bathtub rings high above the modern valley floor.",
+        "source": "https://geology.utah.gov/popular/great-salt-lake/",
+        "label": "geology.utah.gov"
       },
       {
-        "text": "Monarch butterflies that leave Mexico in spring have descendants that carry on north. It takes several generations to complete the northward journey through North America.",
-        "source": "https://www.fws.gov/sites/default/files/documents/2024-12/threatened-species-status-with-section-4-d-rule-for-monarch-butterfly-and-designation-of-critical-habitat.pdf",
-        "label": "Source"
+        "text": "On Anticosti Island in Canada's St Lawrence, fossil-bearing beds record one of Earth's great mass extinctions. A walk along the exposed rock crosses layers laid down in an ancient sea.",
+        "source": "https://whc.unesco.org/en/list/1686/",
+        "label": "UNESCO"
       },
       {
-        "text": "The former connection to Asia was a broad, treeless plain. When ice sheets held more of the world’s water, land now beneath the Bering Strait was dry enough for animals to cross.",
-        "source": "https://home.nps.gov/bela/learn/beringia.htm",
-        "label": "Source"
-      },
-      {
-        "text": "The world's largest island belongs geographically to North America. Greenland's political ties run east to Denmark, while its nearest large neighbour is Canada.",
-        "source": "https://stat.gl/publ/en/gf/2024/pdf/Greenland%20in%20Figures%202024.pdf",
-        "label": "stat.gl"
+        "text": "Part of the Pacific Plate carries North American land. Baja California is moving with that plate as the Gulf of California opens between it and mainland Mexico.",
+        "source": "https://www.usgs.gov/publications/origin-gulf-california",
+        "label": "usgs.gov"
       }
     ]
   },
@@ -3673,24 +3636,19 @@
     "name": "India",
     "options": [
       {
-        "text": "Dholavira was a city on an island in the salt wastes of the Great Rann of Kutch. Its inhabitants built reservoirs to store a scarce resource at the city gates.",
-        "source": "https://whc.unesco.org/en/list/1645/",
+        "text": "At Jaipur you can walk among astronomical instruments the size of buildings. Their masonry edges and shadows let observers measure positions in the sky with the naked eye.",
+        "source": "https://whc.unesco.org/en/list/1338/",
         "label": "UNESCO"
       },
       {
-        "text": "At Rani-ki-Vav, reaching water meant walking down through seven levels of sculpture. This Gujarati stepwell was designed like a temple turned upside down.",
-        "source": "https://whc.unesco.org/en/list/922/",
+        "text": "Where India's Ganges delta meets the sea, tigers live among tidal mangrove islands. Channels fill and empty through the Sundarbans twice a day.",
+        "source": "https://whc.unesco.org/en/list/452/",
         "label": "UNESCO"
       },
       {
-        "text": "The Western Ghats intercept India's monsoon winds. This mountain chain is older than the Himalayas, though its peaks are far lower.",
-        "source": "https://whc.unesco.org/en/list/1342/",
+        "text": "In Assam, the Ahom built their royal burial ground into a landscape of rounded mounds. Beneath each mound could lie chambers containing a ruler and possessions for the afterlife.",
+        "source": "https://whc.unesco.org/en/list/1711/",
         "label": "UNESCO"
-      },
-      {
-        "text": "At Kanniyakumari, India's mainland tapers to a point traditionally identified with three bodies of water: the Arabian Sea, the Bay of Bengal and the Indian Ocean.",
-        "source": "https://www.incredibleindia.gov.in/en/tamil-nadu/kanniyakumari",
-        "label": "incredibleindia.gov.in"
       }
     ]
   },
@@ -3725,24 +3683,19 @@
     "name": "Mexico",
     "options": [
       {
-        "text": "Monarch butterflies from across eastern North America gather on a small patch of Mexican mountain forest for winter. Entire trees can be hidden beneath clusters of wings.",
-        "source": "https://whc.unesco.org/en/list/1290/",
+        "text": "A cave in Oaxaca preserved squash seeds about ten thousand years old. Those seeds helped archaeologists trace farming in Mexico long before the first cities appeared.",
+        "source": "https://whc.unesco.org/en/list/1352/",
         "label": "UNESCO"
       },
       {
-        "text": "The dunes of Mexico's Gran Desierto de Altar stand beside the dark lava and giant craters of El Pinacate. Wind and volcanism shaped two very different deserts side by side.",
-        "source": "https://whc.unesco.org/en/list/1410/",
+        "text": "The blue fields near Tequila are a crop, not a trick of the light. Farmers grow blue agave in a landscape shaped by the volcano and the distilleries at its foot.",
+        "source": "https://whc.unesco.org/en/list/1209/",
         "label": "UNESCO"
       },
       {
-        "text": "Grey whales return from northern feeding grounds to shallow lagoons on Baja California. Ojo de Liebre and San Ignacio provide winter nurseries on the Pacific side of the peninsula.",
-        "source": "https://whc.unesco.org/en/list/554/",
+        "text": "A sixteenth-century aqueduct carried water across a ravine at Padre Tembleque. Its tallest arcade was built with local labour and the aid of temporary adobe supports.",
+        "source": "https://whc.unesco.org/en/list/1463/",
         "label": "UNESCO"
-      },
-      {
-        "text": "Below Mexico's Yucatán Peninsula, caves connect what look like separate pools in the jungle. The flooded passages of Sac Actun extend for hundreds of kilometres through the limestone.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/mx.json",
-        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3751,24 +3704,19 @@
     "name": "Peru",
     "options": [
       {
-        "text": "Four Quechua-speaking communities rebuild the Q’eswachaka rope bridge over the Apurímac gorge every year. The rebuilding itself is one of the ties between the villages.",
-        "source": "https://ich.unesco.org/en/RL/00594",
+        "text": "On Peru's dry north coast, thirteen towers at Chankillo make a calendar out of the horizon. The rising Sun moves from tower to tower over the year.",
+        "source": "https://whc.unesco.org/en/list/1624/",
         "label": "UNESCO"
       },
       {
-        "text": "On the coast in Ica, Christmas dance groups tell the story of the shepherds and the Wise Men through two complementary traditions, Hatajo de Negritos and Hatajo de Pallitas.",
-        "source": "https://ich.unesco.org/en/RL/01309",
+        "text": "The Chimú capital of Chan Chan was built largely of earth in Peru's coastal desert. Its walls surround separate palace compounds in a city that once commanded a long stretch of coast.",
+        "source": "https://whc.unesco.org/en/list/366/",
         "label": "UNESCO"
       },
       {
-        "text": "In Moquegua, Sarawja marks the end of the rainy season and the beginning of harvest. Groups called ruedas, or wheels, dance in circles or parallel rows.",
-        "source": "https://ich.unesco.org/en/RL/02071",
+        "text": "On the Nazca plain, removing the darker stones at the surface exposed lighter ground below. That simple change of colour made lines and animal figures hundreds of metres long.",
+        "source": "https://whc.unesco.org/en/list/700/",
         "label": "UNESCO"
-      },
-      {
-        "text": "There are green islands of vegetation in Peru's coastal desert where the water comes chiefly from fog. These lomas form where Pacific mist meets the slopes.",
-        "source": "https://whc.unesco.org/en/tentativelists/6424/",
-        "label": "whc.unesco.org"
       }
     ]
   },
