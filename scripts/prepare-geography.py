@@ -129,6 +129,14 @@ for n in notes:
     if name in ('Aral Sea', 'Dead Sea', 'Caspian Sea', 'Sea of Galilee'):
         kind = 'lake'
     deck.append({**n,'kind':kind,'geometry':g,'center':center,'approximate':approximate,'source':source,'small':not water and size<.2,'aliases':alias,'region':next((t[4:].replace('_',' ') for t in n['tags'] if t in ['UG::Europe','UG::Asia','UG::Africa','UG::North_America','UG::South_America','UG::Oceania']), 'World')})
+# Conventional study outline. NOAA notes that the region has no official boundary.
+deck.append({
+    'id':'bermuda-triangle', 'name':'Bermuda Triangle', 'kind':'water', 'region':'North America',
+    'geometry':{'type':'Polygon','coordinates':[[[-80.19,25.76],[-66.11,18.47],[-64.75,32.30],[-80.19,25.76]]]},
+    'center':[-70.35,25.51], 'aliases':["Devil's Triangle"], 'tags':[],
+    'info':'The study outline joins Miami, San Juan and Bermuda. The region has no official boundary.',
+    'source':'Conventional study extent; NOAA National Ocean Service', 'small':False, 'approximate':False,
+})
 base={'type':'FeatureCollection','features':[{'type':'Feature','properties':{'name':props(f).get('name_long') or props(f).get('name')},'geometry':compact(f['geometry'])} for f in land]}
 base['boundaries'] = boundaries(land, simplify)
 # Keep studied shorelines visible at every scale, at their actual map size.

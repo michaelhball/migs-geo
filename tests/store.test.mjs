@@ -520,9 +520,9 @@ test("due reviews also mix directions, while respecting which cards are due", ()
 const atlas = JSON.parse(
   readFileSync(new URL("../data/places.json", import.meta.url)),
 );
-test("all 319 imported places have usable geometry and unique independent IDs", () => {
-  assert.equal(atlas.length, 319);
-  assert.equal(new Set(atlas.map((p) => p.id)).size, 319);
+test("all bundled places have usable geometry and unique independent IDs", () => {
+  assert.equal(atlas.length, 320);
+  assert.equal(new Set(atlas.map((p) => p.id)).size, 320);
   for (const p of atlas) validateGeometry(p.geometry);
   assert.equal(atlas.filter((p) => p.approximate).length, 2);
 });

@@ -83,7 +83,7 @@ test(
     assert.equal(unicode.name, "Café 日本");
     await call("/places/unicode-test", "DELETE", {});
     const places = (await call("/places")).body;
-    assert.equal(places.length, 319);
+    assert.equal(places.length, 320);
     assert.equal(places[0].geometry, undefined);
     assert.equal((await call("/docs")).body.openapi, "3.1.0");
     const practice = (

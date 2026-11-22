@@ -73,7 +73,7 @@ try {
     const page=await fetch(base);assert.equal(page.status,200);const html=await page.text();assert.match(html,/id="root"/);
     const asset=html.match(/src="([^\"]+\\.js)"/);assert.ok(asset);assert.equal((await fetch(base+asset[1])).status,200);
     const world=await (await fetch(base+'/data/world.json')).json();assert.ok(world.features.length>250);
-    assert.equal((await api('/places')).length,319);assert.equal((await api('/cards')).length,638);
+    assert.equal((await api('/places')).length,320);assert.equal((await api('/cards')).length,640);
     await api('/settings','PATCH',{newPerDay:7});
     await api('/places','POST',{id:'container-test',name:'Container test point',geometry:{type:'Point',coordinates:[10,20]}});
     const question=await api('/study/next','POST',{});await api('/study/check','POST',{token:question.token,answer:{reveal:true}});
