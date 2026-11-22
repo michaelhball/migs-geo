@@ -760,3 +760,12 @@ test("approved place facts appear only after correct checks, including with lega
     store.db.close();
   }
 });
+
+test("lake names accept the geographic term on either end", () => {
+  const lake = {name:"Lake Hammar",kind:"lake",aliases:[]};
+  for (const text of ["Hammar Lake","The lake Hammar","Hammar"])
+    assert.equal(checkAnswer(lake,"identify",{text}).correct,true);
+  assert.equal(checkAnswer({...lake,name:"Hammar Lake"},"identify",{text:"Lake Hammar"}).correct,true);
+  for (const text of ["Lake Hammer","Lake","Lake Huron"])
+    assert.equal(checkAnswer(lake,"identify",{text}).correct,false);
+});

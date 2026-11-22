@@ -131,6 +131,11 @@ function flagChoices(id, token) {
   return [...others,id].sort((a,b) => rank("order"+a).localeCompare(rank("order"+b)))
     .map(key => ({ id: key, flag: facts[key].flag }));
 }
+function lakeName(value) {
+  const name = value.trim().replace(/^the\s+/i, "");
+  return normalize(name.replace(/^lake\s+|\s+lake$/gi, ""));
+}
+
 export function checkAnswer(p, mode, answer) {
   if (answer?.reveal)
     return {
@@ -146,7 +151,8 @@ export function checkAnswer(p, mode, answer) {
     const correct = mode === "capital" ? cityList(fact.capital) === cityList(answer.text)
       : mode === "flag" ? answer.text === p.id
       : [p.name, ...p.aliases].some(
-      (n) => normalize(n) === normalize(answer.text),
+      (n) => normalize(n) === normalize(answer.text) ||
+        (p.kind === "lake" && lakeName(n) !== "" && lakeName(n) === lakeName(answer.text)),
     );
     return {
       correct,
