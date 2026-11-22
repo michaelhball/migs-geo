@@ -3,6 +3,7 @@
 No Anki database is modified. Source inputs are retained in data/sources.
 """
 import json, math, re, unicodedata
+from map_boundaries import boundaries
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -126,6 +127,7 @@ for n in notes:
     alias+=answer_aliases.get(n['id'],[])
     deck.append({**n,'kind':kind,'geometry':g,'center':center,'approximate':approximate,'source':source,'small':not water and size<.2,'aliases':alias,'region':next((t[4:].replace('_',' ') for t in n['tags'] if t in ['UG::Europe','UG::Asia','UG::Africa','UG::North_America','UG::South_America','UG::Oceania']), 'World')})
 base={'type':'FeatureCollection','features':[{'type':'Feature','properties':{'name':props(f).get('name_long') or props(f).get('name')},'geometry':compact(f['geometry'])} for f in land]}
+base['boundaries'] = boundaries(land, simplify)
 (ROOT/'public/data/world.json').write_text(json.dumps(base,separators=(',',':')))
 (ROOT/'data/places.json').write_text(json.dumps(deck,ensure_ascii=False,separators=(',',':')))
 print('Prepared',len(deck),'places;',sum(x['approximate'] for x in deck),'approximate locations')

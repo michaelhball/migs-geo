@@ -9,6 +9,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { trackpadZoom } from "./trackpadZoom";
 import { countryFrame } from "./countryFrame";
+import { indexCountryBoundaries, type CountryBoundary } from "./mapBoundaries";
 import { worldDetail } from "./worldDetail";
 import { Plus, Minus, Maximize, LocateFixed } from "lucide-react";
 
@@ -47,6 +48,7 @@ let worldPromise: Promise<any> | undefined;
 export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
   const element = useRef<HTMLDivElement>(null),
     map = useRef<L.Map | null>(null),
+    countryBoundary = useRef<ReturnType<typeof indexCountryBoundaries> | null>(null),
     answer = useRef<L.LayerGroup | null>(null),
     pin = useRef<L.LayerGroup | null>(null),
     latest = useRef(props);
@@ -164,6 +166,9 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     m.getPane("relief")!.style.pointerEvents = "none";
     m.createPane("answers");
     m.getPane("answers")!.style.zIndex = "420";
+    m.createPane("divisions");
+    m.getPane("divisions")!.style.zIndex = "425";
+    m.getPane("divisions")!.style.pointerEvents = "none";
     m.createPane("pins");
     m.getPane("pins")!.style.zIndex = "450";
     for (let lon = -540; lon <= 540; lon += 30)
@@ -209,37 +214,53 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     worldPromise
       .then((world) => {
         if (!mounted) return;
+        countryBoundary.current = indexCountryBoundaries(world);
+        const groups: CountryBoundary[] = world.boundaries;
+        const grouped = new Set(groups.flatMap(group => group.members.map(i => world.features[i])));
         const details: (() => void)[] = [];
         // Update detail before the renderer projects the next settled view.
         m.on("zoomend", () => details.forEach((update) => update()));
-        for (const offset of worldOffsets) L.geoJSON(world, {
-          coordsToLatLng: shiftCoordinates(offset),
-          style: {
-            color: "#8d9a93",
-            weight: 0.65,
-            fillColor: "#faf9f2",
-            fillOpacity: 1,
-          },
-          onEachFeature: (feature, layer) => {
-            if (layer instanceof L.Polygon)
-              details.push(worldDetail(m, layer, offset === 0 ? feature : layer));
-            layer.on("mouseover", () => {
-              if (latest.current.explore) {
-                (layer as L.Path).setStyle({ fillColor: "#dce4d9" });
-                layer
-                  .bindTooltip(feature.properties.name, {
-                    sticky: true,
-                    className: "map-tooltip",
-                  })
-                  .openTooltip();
-              }
-            });
-            layer.on("mouseout", () => {
-              (layer as L.Path).setStyle({ fillColor: "#faf9f2" });
-              layer.unbindTooltip();
-            });
-          },
-        }).addTo(m);
+        for (const offset of worldOffsets) {
+          L.geoJSON(world, {
+            coordsToLatLng: shiftCoordinates(offset),
+            style: feature => ({
+              stroke: !grouped.has(feature),
+              color: "#8d9a93",
+              weight: 0.65,
+              fillColor: "#faf9f2",
+              fillOpacity: 1,
+            }),
+            onEachFeature: (feature, layer) => {
+              if (layer instanceof L.Polygon)
+                details.push(worldDetail(m, layer, offset === 0 ? feature : layer));
+              layer.on("mouseover", () => {
+                if (latest.current.explore) {
+                  (layer as L.Path).setStyle({ fillColor: "#dce4d9" });
+                  layer
+                    .bindTooltip(feature.properties.name, {
+                      sticky: true,
+                      className: "map-tooltip",
+                    })
+                    .openTooltip();
+                }
+              });
+              layer.on("mouseout", () => {
+                (layer as L.Path).setStyle({ fillColor: "#faf9f2" });
+                layer.unbindTooltip();
+              });
+            },
+          }).addTo(m);
+          for (const boundary of groups) {
+            const project = shiftCoordinates(offset);
+            L.polyline(boundary.outer.map(line => line.map(project)), {
+              interactive: false, color: "#8d9a93", weight: 0.85,
+            }).addTo(m);
+            L.polyline(boundary.inner.map(line => line.map(project)), {
+              pane: "divisions", interactive: false, color: "#718078",
+              weight: 1, opacity: 0.65, dashArray: "3 4",
+            }).addTo(m);
+          }
+        }
         setReady(true);
       })
       .catch((e) => mounted && setError(e.message));
@@ -268,6 +289,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
       const { color, fillColor } = highlightStyles[tone];
       const polygons: number[][][][] = props.geometry.type === "MultiPolygon"
         ? props.geometry.coordinates : [];
+      const boundary = countryBoundary.current?.(polygons);
       const seam = (a: number[], b: number[]) =>
         Math.abs(a[0]) === 180 && a[0] === b[0];
       const split = [-180, 180].every(lon => polygons.some(poly =>
@@ -279,7 +301,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
         interactive: false,
         style: {
           color,
-          stroke: !split,
+          stroke: !split && !boundary,
           weight: 2,
           fillColor,
           fillOpacity: relief ? 0.13 : 0.72,
@@ -294,7 +316,13 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
             fillOpacity: 0.7,
           }),
       }).addTo(group));
-      if (split) {
+      if (boundary) {
+        for (const offset of worldOffsets) {
+          L.polyline(boundary.outer.map(line => line.map(shiftCoordinates(offset))), {
+            pane: "answers", interactive: false, color, weight: 2,
+          }).addTo(group);
+        }
+      } else if (split) {
         for (const offset of worldOffsets) for (const polygon of polygons) for (const ring of polygon) {
           const lines: L.LatLng[][] = [[]];
           for (let i = 0; i < ring.length; i++) {
@@ -332,7 +360,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
         };
       }
     }
-  }, [props.geometry, tone, relief]);
+  }, [props.geometry, tone, relief, ready]);
   useEffect(() => {
     // Reveal only adds the answer overlay. Preserve the user's exact viewport
     // and selection; the focus control remains available for deliberate zooming.
