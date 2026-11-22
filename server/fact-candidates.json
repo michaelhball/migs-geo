@@ -7770,25 +7770,19 @@
     "name": "Guyana",
     "options": [
       {
-        "text": "The borders of Guyana, Brazil and Venezuela meet on Mount Roraima. A flat-topped mountain rising behind sheer cliffs doubles as a three-country junction.",
-        "source": "https://ntg.gov.gy/monument/mount-roraima/",
-        "label": "ntg.gov.gy"
+        "text": "Beside Guyana’s Kaieteur Falls, a frog can spend its whole life in a plant. The golden rocket frog lays eggs on bromeliad leaves, and its tadpoles grow in the rainwater trapped between them.",
+        "source": "https://protectedareastrust.org.gy/protected-areas/kaieteur-national-park/",
+        "label": "protectedareastrust.org.gy"
       },
       {
-        "text": "Parts of Guyana's coastal plain lie below high-tide level. Sea defences and drainage canals help keep the Atlantic out of the low strip where much of the population lives.",
-        "source": "https://factpage.glsc.gov.gy/geography/natural-regions/",
-        "label": "factpage.glsc.gov.gy"
+        "text": "Four species of sea turtle nest along Guyana’s Shell Beach. The beach earns its name from its building material, great stretches of broken shells deposited along the Atlantic shore.",
+        "source": "https://www.pac.gov.gy/shell-beach-protected-area/",
+        "label": "pac.gov.gy"
       },
       {
-        "text": "Guyana has broad open savannas as well as rainforest. The Rupununi grasslands occupy the southern interior near Brazil, far from the crowded Atlantic coast.",
-        "source": "https://factpage.glsc.gov.gy/geography/natural-regions/",
-        "label": "factpage.glsc.gov.gy"
-      },
-      {
-        "text": "In the rainy season Guyana has a temporary water passage to the Amazon basin. Flooding across the Rupununi savanna lets fish move between rivers that normally drain to different parts of the Atlantic.",
-        "source": "https://www.frontiersin.org/journals/forests-and-global-change/articles/10.3389/ffgc.2020.00008/full",
-        "label": "frontiersin.org",
-        "suggestSwitch": true
+        "text": "In the flooded savannas of the Rupununi, one of the largest freshwater fish gives away its position by breathing. The arapaima must surface for air, which allows communities to count fish in an otherwise opaque lake.",
+        "source": "https://rupununi.org/conservation-wildlife/oma-mother-of-all-fish-arapaima-and-rupununi-fisheries/",
+        "label": "rupununi.org"
       }
     ]
   },
@@ -7797,24 +7791,19 @@
     "name": "Paraguay",
     "options": [
       {
-        "text": "Paraguayans prepare tereré with cold water and herbs crushed in a mortar. The mixture is poured over yerba mate and drunk through a filtering straw.",
-        "source": "https://ich.unesco.org/en/RL/01603",
-        "label": "UNESCO"
+        "text": "Follow the Paraná along Paraguay’s eastern and southern borders and you pass two giant power plants. Paraguay shares Itaipú with Brazil and Yacyretá with Argentina, on the very same river.",
+        "source": "https://www.un.org/ohrlls/sites/www.un.org.ohrlls/files/eclac-vpoa_eng_24-oct-2019.pdf",
+        "label": "un.org"
       },
       {
-        "text": "In Piribebuy, a striped poncho is a team effort. Different weavers specialise in the body, fringes and finishing band.",
-        "source": "https://ich.unesco.org/en/USL/01992",
-        "label": "UNESCO"
+        "text": "Landlocked Paraguay operates a large merchant river fleet. Barges can take its exports to Atlantic ports along the Paraguay and Paraná rivers without ever putting the cargo on a road.",
+        "source": "https://unctad.org/system/files/official-document/ditctncd2020d7_en.pdf",
+        "label": "unctad.org"
       },
       {
-        "text": "Paraguay's guarania music takes its name from Guaraní culture. Its slow, syncopated melodies arose in the twentieth century and became a vehicle for songs of longing.",
-        "source": "https://ich.unesco.org/en/RL/02128",
-        "label": "UNESCO"
-      },
-      {
-        "text": "The Paraguay River divides its namesake country into two very unequal halves. The sparsely populated Chaco west of the river takes up more than half the land.",
-        "source": "https://www.usaid.gov/sites/default/files/2022-05/paraguay_biodiversity_tropical_forest_report.pdf",
-        "label": "usaid.gov"
+        "text": "In Paraguay’s dry Chaco, bottle trees store water in swollen trunks. Their bulging outlines are visible above scrubland that goes for months with little rain.",
+        "source": "https://paraguay.wcs.org/en-us/Wildlife/Bottle-tree.aspx",
+        "label": "paraguay.wcs.org"
       }
     ]
   },
@@ -7876,25 +7865,19 @@
     "name": "Venezuela",
     "options": [
       {
-        "text": "Venezuela's tepuis are isolated flat-topped mountains. Angel Falls drops from one of their cliffs in Canaima National Park.",
-        "source": "https://whc.unesco.org/en/list/701/",
-        "label": "UNESCO"
+        "text": "A satellite survey found Earth’s greatest concentration of lightning over Venezuela’s Lake Maracaibo. Winds off the lake and surrounding mountains feed thunderstorms in much the same place night after night.",
+        "source": "https://www.earthdata.nasa.gov/s3fs-public/2025-02/TheMaracaiboBeacon.pdf?VersionId=kBxqhBDRibgrLHI13SVRIU85RDFVgDa.",
+        "label": "earthdata.nasa.gov"
       },
       {
-        "text": "At Corpus Christi, masked dancing devils participate in processions in several Venezuelan communities. The dance ends with their symbolic submission to the sacrament.",
-        "source": "https://ich.unesco.org/en/RL/00639",
-        "label": "UNESCO"
+        "text": "Venezuela became the first Andean country to lose its last glacier. Ice remained below Pico Humboldt in 2024, but the patch had shrunk too much to flow under its own weight.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/humboldt-glaciers-demise-152893/",
+        "label": "science.nasa.gov"
       },
       {
-        "text": "At the university campus in Caracas, architect Carlos Raúl Villanueva integrated modern art into the buildings. Alexander Calder's suspended forms hang over the main auditorium.",
-        "source": "https://whc.unesco.org/en/list/986/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "In Venezuela, a river splits and sends water to two different ocean mouths. The Casiquiare branches off the Orinoco and feeds the Rio Negro in the Amazon basin.",
-        "source": "https://science.nasa.gov/earth/earth-observatory/when-rivers-take-a-weird-turn-154394/",
-        "label": "science.nasa.gov",
-        "suggestSwitch": true
+        "text": "At the mouth of the Orinoco, Atlantic tides reach into a tropical forest. The river breaks into a web of channels through which both freshwater and tidal water travel.",
+        "source": "https://www.unesco.org/en/mab/delta-del-orinoco",
+        "label": "unesco.org"
       }
     ]
   },
@@ -7903,24 +7886,19 @@
     "name": "French Guiana",
     "options": [
       {
-        "text": "Mud from the Amazon travels northwest along French Guiana's coast. Moving offshore mudbanks can shelter mangroves from waves in one place and expose them to erosion in another.",
-        "source": "https://www.sciencedirect.com/science/article/pii/S0025322704001069",
-        "label": "sciencedirect.com"
-      },
-      {
-        "text": "French Guiana's highest hills rise in the deep interior around Bellevue de l'Inini. The high ground is forested, far from the narrow coastal strip where most towns are found.",
-        "source": "https://www.guyane.developpement-durable.gouv.fr/IMG/pdf/00380000_Montagnes_Bellevue_de_l_Inini.pdf",
+        "text": "France’s largest wetland lies in South America. The marshes of Kaw in French Guiana also shelter one of the continent’s last stable populations of black caiman.",
+        "source": "https://www.guyane.developpement-durable.gouv.fr/reserve-naturelle-nationale-de-kaw-roura-a586.html",
         "label": "guyane.developpement-durable.gouv.fr"
       },
       {
-        "text": "French Guiana gives the European Union a land border with Suriname. A crossing of the Maroni River can take you from South America into the EU while you stay on the same continent.",
-        "source": "https://www.cp-rup.com/wp-content/uploads/2026/11/RUP-Livret-Communication-EN.pdf",
-        "label": "cp-rup.com"
+        "text": "You can spend euros on the South American mainland without exchanging them for local currency. French Guiana uses the same legal tender as metropolitan France.",
+        "source": "https://www.ecb.europa.eu/ecb-and-you/explainers/show-me/html/euro_outside_europe.en.html",
+        "label": "ecb.europa.eu"
       },
       {
-        "text": "Two river mouths pick out the ends of French Guiana's coast. The Maroni meets the Atlantic at the Suriname border, and the Oyapock reaches it at the Brazilian border.",
-        "source": "https://msi.nga.mil/api/publications/download?key=16694492%2FSFH00000%2FPub160bk.pdf&type=view",
-        "label": "msi.nga.mil"
+        "text": "French Guiana’s Îles du Salut lie under a flight path from the Guiana Space Centre. Islands used as a penal colony have to be evacuated for certain rocket launches.",
+        "source": "https://cnes.fr/geoimage/iles-salut",
+        "label": "cnes.fr"
       }
     ]
   },
@@ -7955,24 +7933,19 @@
     "name": "United States of America",
     "options": [
       {
-        "text": "Around two thousand years ago, Hopewell builders in Ohio laid out immense earthworks in precise geometric shapes. Some of the alignments track the motions of the Moon.",
-        "source": "https://whc.unesco.org/en/list/1689/",
-        "label": "UNESCO"
+        "text": "A surveying assumption left Minnesota with a piece reachable by road only through Canada. A treaty told surveyors to draw a line west from Lake of the Woods to the Mississippi, but the river was too far south.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/northwest-angle-minnesota-6357/",
+        "label": "science.nasa.gov"
       },
       {
-        "text": "At Mesa Verde, Ancestral Pueblo builders fitted entire settlements into alcoves under sandstone cliffs. The rock face supplied both shelter and a back wall.",
-        "source": "https://whc.unesco.org/en/list/27/",
-        "label": "UNESCO"
+        "text": "Count longitude east or west from Greenwich and Alaska is both the easternmost and westernmost US state. Its Aleutian Islands cross the 180th meridian.",
+        "source": "https://www.alaska.gov/Kids/learn/aboutgeography.htm",
+        "label": "alaska.gov"
       },
       {
-        "text": "At Poverty Point in Louisiana, hunter-gatherers built great earth mounds and concentric ridges. Monumental construction here did not depend on a farming economy.",
-        "source": "https://whc.unesco.org/en/list/1435/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "North America's highest summit and lowest exposed land are both in the United States. They are separated by thousands of kilometres, from Denali in Alaska to Death Valley in California.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/us.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "There is exactly one point in the United States where four states meet. At Four Corners, a step can take you between Arizona, Utah, Colorado and New Mexico.",
+        "source": "https://navajonationparks.org/navajo-tribal-parks/four-corners-monument/",
+        "label": "navajonationparks.org"
       }
     ]
   },
@@ -8061,25 +8034,19 @@
     "name": "Jamaica",
     "options": [
       {
-        "text": "Part of Port Royal lies underwater. An earthquake in 1692 submerged streets and buildings of a Caribbean port, leaving archaeologists a town beneath the harbour.",
-        "source": "https://whc.unesco.org/en/list/1595/",
-        "label": "whc.unesco.org"
+        "text": "At Dunn’s River Falls, the waterfall builds its own staircase. Calcium carbonate comes out of the flowing water and adds fresh travertine to the ledges above the Caribbean.",
+        "source": "https://dunnsriverfallsja.com/about-the-falls/",
+        "label": "dunnsriverfallsja.com"
       },
       {
-        "text": "Jamaica is the third-largest island in the Caribbean. Only Cuba and Hispaniola have more land, and both lie to its north.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/jm.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "Where Jamaica’s Martha Brae River meets the sea, the lagoon can light up around a moving boat. Disturbing the water triggers flashes from microscopic organisms.",
+        "source": "https://jis.gov.jm/information/get-the-facts/attractive-water-features-in-jamaica/",
+        "label": "jis.gov.jm"
       },
       {
-        "text": "Jamaica rises from Caribbean sea level to more than 2,250 metres at Blue Mountain Peak. Its highest country lies towards the eastern end of the island.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/jm.json",
-        "label": "CIA World Factbook (archived profile)"
-      },
-      {
-        "text": "Jamaica gave geographers an example of 'cockpit karst'. In Cockpit Country, dissolving limestone left so many enclosed hollows that travelling in a straight line means climbing ridge after ridge.",
-        "source": "https://whc.unesco.org/en/tentativelists/6822/",
-        "label": "whc.unesco.org",
-        "suggestSwitch": true
+        "text": "Jamaica’s Black River runs through an extensive peat wetland. Organic matter stains the water so dark that the river takes its name from what looks like its colour.",
+        "source": "https://www.nepa.gov.jm/sites/default/files/2019-11/draft_black_river_management_plan_2017-2022.pdf",
+        "label": "nepa.gov.jm"
       }
     ]
   },
@@ -8088,23 +8055,18 @@
     "name": "Trinidad and Tobago",
     "options": [
       {
-        "text": "Trinidad's Pitch Lake is a natural reservoir of asphalt. Material reaching the surface can trap and preserve objects far older than the modern petroleum industry.",
-        "source": "https://whc.unesco.org/en/tentativelists/5645/",
+        "text": "In 1964 an island of mud rose from the sea off Trinidad. An offshore mud volcano pushed it above the surface near Chatham, where the same fold in the rock continues beneath the land.",
+        "source": "https://pubs.geoscienceworld.org/aapg/aapgbull/article-abstract/51/1/55/35283/Report-on-1964-Chatham-Mud-Island-Erin-Bay?redirectedFrom=fulltext",
+        "label": "pubs.geoscienceworld.org"
+      },
+      {
+        "text": "Tobago set aside the forest along its Main Ridge in 1776 to protect rainfall and water supplies. The reserve still follows the mountain backbone whose streams feed the rest of the island.",
+        "source": "https://whc.unesco.org/en/tentativelists/5646",
         "label": "whc.unesco.org"
       },
       {
-        "text": "Steelpan makers in Trinidad turned metal drums into tuned instruments. Different areas of a single steel surface sound different notes when struck.",
-        "source": "https://www.unesco.org/sites/default/files/medias/fichiers/2025/04/Port%20of%20Spain_Monitoring_Report_2024.pdf",
-        "label": "www.unesco.org"
-      },
-      {
-        "text": "Between 1845 and 1917, indentured workers from India crossed the Atlantic to Trinidad's sugar estates. Their descendants helped shape the country's culture.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/td.json",
-        "label": "CIA World Factbook (archived profile)"
-      },
-      {
-        "text": "Trinidad sits on South America's continental shelf. A narrow passage separates it from Venezuela, and its plants and animals have strong mainland connections for a Caribbean island.",
-        "source": "https://www.biodiversity.gov.tt/trinidad-a-tobago-biodiversity/",
+        "text": "Trinidad has a fruit-eating bird that navigates dark caves by echo. Oilbirds roost underground by day, then leave after dark to collect fruit in the forest.",
+        "source": "https://biodiversity.gov.tt/index.php/40-uncategorised/149-steatornis-caripensis-oilbird.html",
         "label": "biodiversity.gov.tt"
       }
     ]
@@ -8166,25 +8128,19 @@
     "name": "Belize",
     "options": [
       {
-        "text": "The Belize Barrier Reef system includes offshore atolls as well as the reef along the mainland. The water between them contains mangrove islands and seagrass beds.",
-        "source": "https://whc.unesco.org/en/list/764/",
-        "label": "whc.unesco.org"
+        "text": "An underground river can cross from Belize into Guatemala. The Chiquibul Cave System, the largest known in Central America, extends beneath the international border.",
+        "source": "https://caves.org/wp-content/uploads/Publications/JCKS/v58/cave_58-02-fullr.pdf",
+        "label": "caves.org"
       },
       {
-        "text": "In Gales Point Manatee, Christmas Bram takes music and dancing from house to house. Sambai brings the community together around a central drum rhythm.",
-        "source": "https://ich.unesco.org/en/RL/02298",
-        "label": "UNESCO"
+        "text": "Belize is the only country on the Central American isthmus with no Pacific coast. Its entire seaboard faces the Caribbean.",
+        "source": "https://dgff2021.unctad.org/belize/index.html",
+        "label": "dgff2021.unctad.org"
       },
       {
-        "text": "Belize was called British Honduras until 1973, but it is a separate country from Honduras. It faces the Caribbean across the Gulf of Honduras.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/bh.json",
-        "label": "CIA World Factbook (archived profile)"
-      },
-      {
-        "text": "Some of Belize's most famous stalactites are underwater. They formed in air when sea level was lower and now hang inside the Great Blue Hole offshore.",
-        "source": "https://www.travelbelize.org/attraction/blue-hole/",
-        "label": "travelbelize.org",
-        "suggestSwitch": true
+        "text": "The world’s first jaguar preserve was established in Belize. It protects the forested Cockscomb Basin, where mountains collect the water that flows out through the jaguars’ habitat.",
+        "source": "https://rris.biopama.org/sites/default/files/2021-02/CBWS%20Public%20Use%20Plan_2019%20-%202023.pdf",
+        "label": "rris.biopama.org"
       }
     ]
   },
@@ -8323,25 +8279,19 @@
     "name": "Panama",
     "options": [
       {
-        "text": "Coiba's isolation offshore helped it retain forest and animals lost from parts of the mainland. Reefs around the island belong to the same protected site.",
-        "source": "https://whc.unesco.org/en/list/1138/",
-        "label": "UNESCO"
+        "text": "One gap breaks the Pan-American Highway between North and South America. At the Darién, the road gives way to rainforest and wetlands on the Panama–Colombia border.",
+        "source": "https://www.unesco.org/en/mab/darien",
+        "label": "unesco.org"
       },
       {
-        "text": "Before there was a canal, mule trails and river routes carried goods across Panama. Their endpoints linked Caribbean shipping to the Pacific.",
-        "source": "https://whc.unesco.org/en/list/1582/",
-        "label": "UNESCO"
+        "text": "Filling the Panama Canal turned a hilltop into an island. Barro Colorado’s forest was cut off from neighbouring forest by Gatún Lake, creating a century-long experiment in island ecology.",
+        "source": "https://striresearch.si.edu/bci-soil-map/content/",
+        "label": "striresearch.si.edu"
       },
       {
-        "text": "Makers of Panama's sombrero pintao process plant fibres into contrasting strips, then sew the braids into the distinctive patterned hat.",
-        "source": "https://ich.unesco.org/en/RL/01272",
-        "label": "UNESCO"
-      },
-      {
-        "text": "At the Panama Canal, the Atlantic entrance is west of the Pacific entrance. A ship crossing from the Caribbean to the Pacific actually travels southeast.",
-        "source": "https://www.govinfo.gov/content/pkg/GPO-CRECB-1967-pt8/pdf/GPO-CRECB-1967-pt8-8-1.pdf",
-        "label": "govinfo.gov",
-        "suggestSwitch": true
+        "text": "The rise of the Isthmus of Panama closed a passage for marine animals and opened one for land animals. Mammals could walk between the Americas while Caribbean and Pacific sea life began evolving apart.",
+        "source": "https://stri.si.edu/sites/default/files/stri_visitors_guide_2026.pdf",
+        "label": "stri.si.edu"
       }
     ]
   },
@@ -8376,24 +8326,19 @@
     "name": "Saint Vincent and the Grenadines",
     "options": [
       {
-        "text": "Saint Vincent's botanical garden grows a breadfruit tree descended from one brought by Captain Bligh in 1793, on his successful voyage after the Bounty mutiny.",
-        "source": "https://nationalparks.gov.vc/nationalparks/images/brochures/Cruising_SVG.pdf",
+        "text": "At Owia on Saint Vincent, an old lava formation acts as the wall of a swimming pool. Atlantic waves break over the rock and replenish the salt water inside.",
+        "source": "https://tourism.gov.vc/tourism/index.php/national-sites-of-svg/owia-salt-pond",
+        "label": "tourism.gov.vc"
+      },
+      {
+        "text": "Sailing south through one country can take you from Saint Vincent’s black volcanic beaches to pale coral sands in the Grenadines. The grains on either shore come from quite different sources.",
+        "source": "https://www.nationalparks.gov.vc/nationalparks/images/brochures/Cruising_SVG.pdf",
         "label": "nationalparks.gov.vc"
       },
       {
-        "text": "In 2021 La Soufrière went from slowly building a lava dome to explosive eruptions. Ash from Saint Vincent travelled to islands far downwind.",
-        "source": "https://volcano.si.edu/volcano.cfm?vn=360150",
-        "label": "volcano.si.edu"
-      },
-      {
-        "text": "The Grenadines do not all belong to the country that bears their name. Their southern islands form part of Grenada.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/vc.json",
-        "label": "CIA World Factbook (archived profile)"
-      },
-      {
-        "text": "In the Tobago Cays, Horseshoe Reef curves around a group of small Grenadine islands. Sea turtles feed on seagrass in the lagoon protected by this natural breakwater.",
-        "source": "https://www.tobagocays.org/about/",
-        "label": "tobagocays.org"
+        "text": "The Saint Vincent parrot’s whole native range is on the country’s main volcanic island. The neighbouring Grenadines fall outside it despite sharing the same national borders.",
+        "source": "https://nationalparks.gov.vc/nationalparks/index.php/biodiversity",
+        "label": "nationalparks.gov.vc"
       }
     ]
   },
@@ -8402,24 +8347,19 @@
     "name": "Saint Lucia",
     "options": [
       {
-        "text": "Gros Piton and Petit Piton are volcanic spires rising side by side near the sea. Their protected landscape extends down to reefs beneath the water.",
-        "source": "https://whc.unesco.org/en/list/1161/",
-        "label": "UNESCO"
+        "text": "A snake named after Saint Lucia survives on a speck of land offshore. Its known wild population is confined to Maria Major, an islet small enough to walk across in minutes.",
+        "source": "https://www.fauna-flora.org/species/saint-lucia-racer/",
+        "label": "fauna-flora.org"
       },
       {
-        "text": "Saint Lucia has rival flower societies, La Rose and La Marguerite. Each holds its own festival with a court of kings, queens and other officials.",
-        "source": "https://ich.unesco.org/en/assistances/the-flower-festivals-of-saint-lucia-the-la-rose-and-la-marguerite-festivals-02456",
-        "label": "ich.unesco.org"
-      },
-      {
-        "text": "At Sulphur Springs, visitors can approach a volcanic geothermal field by road. Hot pools bubble and steam rises from the ground.",
-        "source": "https://stlucia.org/en/places-to-visit/sulphur-springs/",
+        "text": "Pigeon Island is attached to Saint Lucia. A man-made causeway joined the former island to the mainland, but the headland kept its island name.",
+        "source": "https://stlucia.org/en_uk/places-to-visit/offshore-small-islands/",
         "label": "stlucia.org"
       },
       {
-        "text": "Saint Lucia's two Pitons are the exposed volcanic peaks of a much larger geothermal landscape. It continues below the waves, where reefs sit just offshore from the steep volcanic slopes.",
-        "source": "https://whc.unesco.org/en/list/1161/",
-        "label": "UNESCO"
+        "text": "Part of Saint Lucia’s volcanic landscape continues under the Caribbean. Surveys of the seabed off the west coast found huge deposits of debris from the collapse of a volcano’s flank.",
+        "source": "https://volcano.si.edu/volcano.cfm?vn=360140",
+        "label": "volcano.si.edu"
       }
     ]
   },
@@ -8611,24 +8551,19 @@
     "name": "United States Virgin Islands",
     "options": [
       {
-        "text": "Until 1917 these islands were the Danish West Indies. The United States purchased Saint Thomas, Saint John and Saint Croix from Denmark.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/vq.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "The United States has two places named Point Udall thousands of miles apart. The one on Saint Croix honours Stewart Udall and the one on Guam honours his brother Morris.",
+        "source": "https://www.congress.gov/102/crecb/1991/05/02/GPO-CRECB-1991-pt7-7.pdf",
+        "label": "congress.gov"
       },
       {
-        "text": "On Saint John, the Reef Bay trail leads to rock carvings beside a pool. They predate the island's colonial sugar works.",
-        "source": "https://www.nps.gov/places/reef-bay-trail-and-sugar-plantation.htm",
-        "label": "www.nps.gov"
-      },
-      {
-        "text": "At Buck Island off Saint Croix there is a national park trail you follow by snorkel. Underwater signs guide swimmers through the coral reef.",
-        "source": "https://www.nps.gov/places/buck-island-underwater-trail.htm",
-        "label": "www.nps.gov"
-      },
-      {
-        "text": "Saint Thomas and Saint John share a shallow submarine platform with Puerto Rico. Saint Croix belongs to the same territory above water but deep water separates it from that platform below.",
-        "source": "https://www.usgs.gov/publications/ecology-coral-reefs-us-virgin-islands",
+        "text": "On Saint John, reef-building corals grow among mangrove roots in Hurricane Hole. Shade from the trees can shelter corals in surprisingly shallow water.",
+        "source": "https://www.usgs.gov/publications/a-unique-coral-community-mangroves-hurricane-hole-st-john-us-virgin-islands",
         "label": "usgs.gov"
+      },
+      {
+        "text": "On Saint Croix, Salt River Bay opens straight into a submarine canyon. The seafloor drops away just beyond a sheltered inlet lined with mangroves.",
+        "source": "https://www.nps.gov/sari/learn/nature/natural-features-and-ecosystems.htm",
+        "label": "nps.gov"
       }
     ]
   },
@@ -8663,24 +8598,19 @@
     "name": "Martinique",
     "options": [
       {
-        "text": "At Sainte-Marie a seasonal tongue of sand can connect an offshore islet to Martinique. At other times the water takes the path away again.",
-        "source": "https://www.martinique.org/fr/que-faire/sites-naturels-publics/lilet-sainte-marie-et-son-tombolo",
+        "text": "A rock off Martinique was commissioned as a British warship. The Royal Navy treated Diamond Rock as a stationary ship because its position commanded a sea passage.",
+        "source": "https://www.rmg.co.uk/collections/objects/rmgc-object-1145479",
+        "label": "rmg.co.uk"
+      },
+      {
+        "text": "Beach sand changes colour across Martinique. Dark volcanic grains dominate parts of the mountainous north, while pale sands line many southern bays.",
+        "source": "https://www.martinique.org/en/things-to-do/nature-environnement/beaches",
         "label": "martinique.org"
       },
       {
-        "text": "The Caravelle Peninsula carries dry forest and mangroves on a narrow stretch of Martinique's Atlantic coast. A small headland contains habitats with very different water supplies.",
-        "source": "https://www.outre-mer.gouv.fr/extension-de-la-reserve-naturelle-nationale-de-la-presquile-de-la-caravelle-martinique",
-        "label": "outre-mer.gouv.fr"
-      },
-      {
-        "text": "Mountain forests on Martinique change with altitude up to summit vegetation. Climbing the volcanoes takes you through a succession of habitats within a few kilometres of the tropical coast.",
-        "source": "https://whc.unesco.org/en/list/1657",
-        "label": "whc.unesco.org"
-      },
-      {
-        "text": "After Mount Pelée erupted in 1902, solid lava pushed out of the crater like a huge stone needle. For a short time, Martinique had a new summit hundreds of metres tall.",
-        "source": "https://volcano.si.edu/gallery/ShowImage.cfm?photo=GVP-05008",
-        "label": "volcano.si.edu"
+        "text": "The Martinique oriole has an unusually small country list. Its entire wild range is on this one French Caribbean island, despite other wooded islands just across the channels.",
+        "source": "https://www.martinique.developpement-durable.gouv.fr/oiseaux-a1433.html",
+        "label": "martinique.developpement-durable.gouv.fr"
       }
     ]
   },
@@ -8689,24 +8619,19 @@
     "name": "Saint Martin",
     "options": [
       {
-        "text": "Saint Martin's name came from the calendar. Columbus sighted the island on 11 November, the feast day of Saint Martin of Tours.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/rn.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "You can walk out of the European Union on Saint Martin. The French side is an EU outermost region, while Dutch Sint Maarten is associated with the EU and lies outside its territory.",
+        "source": "https://ec.europa.eu/regional_policy/sources/policy/themes/outermost-regions/rup_2024/regional_fiche_saint_martin.pdf",
+        "label": "ec.europa.eu"
       },
       {
-        "text": "France and the Dutch Republic agreed to share the island in the seventeenth century. Its two present-day territories still meet along a land border.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/rn.json",
-        "label": "CIA World Factbook (archived profile)"
-      },
-      {
-        "text": "Off French Saint Martin, tiny islets such as Rocher Créole provide nesting places for seabirds. Their distance from the busy main island makes a difference to the birds.",
-        "source": "https://reservenaturelle-saint-martin.com/etudes-pdf/2016/Rapport-Annuel-Oiseaux-Marins-2015-16-0801.pdf",
+        "text": "Saint Martin’s salt ponds can switch from briny water to exposed mud or salt as the weather changes. These shallow basins behind the beaches also provide feeding stops for migrating shorebirds.",
+        "source": "https://www.reservenaturelle-saint-martin.com/en/ecosystemes/salt-ponds",
         "label": "reservenaturelle-saint-martin.com"
       },
       {
-        "text": "Part of French Saint Martin's border is open water inside an island. The line between the French and Dutch sides cuts across Simpson Bay Lagoon.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/rn.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "The highest ground on either side of Saint Martin lies on the French side. Pic Paradis, about 424 metres up, overlooks an island shared by two countries.",
+        "source": "https://www.visitstmaarten.com/nature-hiking/paradise-peak-pic-paradis/",
+        "label": "visitstmaarten.com"
       }
     ]
   },
