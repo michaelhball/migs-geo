@@ -4185,14 +4185,14 @@
         "label": "nts.org.uk"
       },
       {
-        "text": "At Skara Brae in Orkney, even the furniture survived the Stone Age. Beds and dressers made of slabs of stone are still arranged inside the houses.",
-        "source": "https://whc.unesco.org/en/list/514/",
-        "label": "UNESCO"
+        "text": "Scotland’s Loch Ness holds more fresh water than all the lakes of England and Wales combined. Its great depth matters more than its rather narrow outline.",
+        "source": "https://www.environment.gov.scot/our-environment/water/scotland-s-freshwater/",
+        "label": "environment.gov.scot"
       },
       {
-        "text": "Two of Scotland's Orkney Islands share the world's shortest scheduled passenger flight. The hop between Westray and Papa Westray is usually measured in seconds rather than miles flown.",
-        "source": "https://www.loganair.co.uk/interisles/",
-        "label": "loganair.co.uk"
+        "text": "Shetland is closer to Bergen in Norway than to Edinburgh. The journey from these Scottish islands to their own capital is longer than the crossing to Scandinavia.",
+        "source": "https://www.shetland.org/about",
+        "label": "shetland.org"
       }
     ]
   },
@@ -4232,9 +4232,9 @@
         "label": "naturalresources.wales"
       },
       {
-        "text": "Edward I built Conwy's castle and walled town as a single stronghold. The walls still run from the castle round the old town at the mouth of the river.",
-        "source": "https://whc.unesco.org/en/list/374/",
-        "label": "UNESCO"
+        "text": "The tide takes different lengths of time to travel around the two ends of Anglesey. In the Menai Strait between the island and mainland Wales, the resulting difference in water level helps drive the fierce currents of the Swellies.",
+        "source": "https://www.welshicons.org/wici/html/the_menai_strait.php",
+        "label": "welshicons.org"
       }
     ]
   },
@@ -4358,9 +4358,9 @@
         "label": "latvia.travel"
       },
       {
-        "text": "The Suiti preserve a small Catholic cultural region inside historically Lutheran western Latvia. Its boundary survives in local dress, weddings and distinctive singing traditions.",
-        "source": "https://ich.unesco.org/en/USL/00314",
-        "label": "UNESCO"
+        "text": "Latvia has a long Baltic coast, but only one stretch where sandstone cliffs rise directly from the beach. On the Vidzeme shore the sea cuts into the same kind of rock that makes cliffs inland.",
+        "source": "https://www.latvia.travel/en/sight/rocky-seashore-vidzeme",
+        "label": "latvia.travel"
       }
     ]
   },
@@ -4369,14 +4369,14 @@
     "name": "Liechtenstein",
     "options": [
       {
-        "text": "A covered wooden bridge links Vaduz to Switzerland. Walk halfway across the Old Rhine Bridge and you cross an international border while still under the same roof.",
-        "source": "https://en.tourismus.li/map/poi/alte-rheinbrucke-e5935511-7115-400a-942f-e7a4911f3b58.html",
-        "label": "en.tourismus.li"
+        "text": "A map of Liechtenstein’s eleven municipalities looks as though someone has cut it into extra pieces. Several municipalities have detached tracts in the Alps, separate from their main settlements in the Rhine valley.",
+        "source": "https://www.statistikportal.li/statistikportal/publications/101-statistisches-jahrbuch/2025/01/2/101.2025.01.1_02_statistisches-jahrbuch-2025.pdf",
+        "label": "statistikportal.li"
       },
       {
-        "text": "At Balzers, Gutenberg Castle stands on an isolated rocky hill above the valley floor. Archaeological finds show the hill was occupied long before the castle was built.",
-        "source": "https://www.balzers.li/de/balzers-erleben/kultur-und-geschichte/burg-gutenberg/tblid/343",
-        "label": "balzers.li"
+        "text": "A wind coming over the Alps lengthens Liechtenstein’s growing season. The föhn warms and dries as it descends, giving the small country’s valley a milder climate than its mountain setting suggests.",
+        "source": "https://www.statistikportal.li/statistikportal/publications/103-liechtenstein-in-figures/2026/01/1/102.2026.01.1_02_liechtenstein-in-figures-2026.pdf",
+        "label": "statistikportal.li"
       },
       {
         "text": "Liechtenstein makes electricity from water collected high in the Samina valley. The drop from the mountain reservoir to the lower power station supplies the force.",
@@ -4400,9 +4400,9 @@
         "label": "unesco.org"
       },
       {
-        "text": "A low hill near Šiauliai is covered with crosses carried there by visitors. Soviet authorities repeatedly cleared the site, and people kept bringing the crosses back.",
-        "source": "https://lithuania.travel/en/where-to-visit/regions/zemaitija-en/the-hill-of-crosses",
-        "label": "lithuania.travel"
+        "text": "One calculation puts the geographical centre of Europe in Lithuania, north of Vilnius. The answer depends on where you draw Europe’s edges and which islands you include.",
+        "source": "https://www.govilnius.lt/visit-vilnius/places/geographical-centre-of-europe",
+        "label": "govilnius.lt"
       }
     ]
   },
@@ -4448,9 +4448,9 @@
         "label": "parksdinarides.org"
       },
       {
-        "text": "The city of Ohrid once housed a Slavic literary school. A lakeside settlement became a centre from which writing and religious texts spread well beyond the lake basin.",
-        "source": "https://whc.unesco.org/en/list/99/",
-        "label": "UNESCO"
+        "text": "North Macedonia has a hillside of natural stone figures. At Kuklica, erosion wore away soft material around harder caps, leaving a crowd of tall pillars known as the Stone Dolls.",
+        "source": "https://portal.mdt.gov.mk/post-body-files/sektor-za-priroda-file-yXbA.pdf",
+        "label": "portal.mdt.gov.mk"
       }
     ]
   },
@@ -4459,9 +4459,9 @@
     "name": "Malta",
     "options": [
       {
-        "text": "Parallel grooves cross the Maltese limestone and sometimes fork like railway tracks. They're known as cart ruts, although exactly how and when they formed is still debated.",
-        "source": "https://culture-malta.org/cart-ruts/",
-        "label": "culture-malta.org"
+        "text": "Gozo’s Azure Window is still recognisable underwater. When the great sea arch collapsed in 2017, large sections toppled onto the seabed, where surveys could reconstruct how it fell.",
+        "source": "https://www.um.edu.mt/library/oar/handle/123456789/110969",
+        "label": "um.edu.mt"
       },
       {
         "text": "At Il-Maqluba, the ground collapsed into a limestone cavity. Trees now grow inside a steep-walled hollow whose floor lies below the surrounding fields.",
@@ -4633,19 +4633,19 @@
     "name": "Portugal",
     "options": [
       {
-        "text": "A cork stopper can come from a tree that is still standing. In Portugal's montado woodlands, bark is harvested repeatedly from living cork oaks.",
-        "source": "https://patrimonios.pt/en/trabalho-da-cortica/",
-        "label": "patrimonios.pt"
+        "text": "Some of the enormous waves at Nazaré owe their height to a canyon hidden under the sea. The abrupt change in water depth concentrates incoming Atlantic swell near the Portuguese coast.",
+        "source": "https://doi.org/10.5194/egusphere-2026-2778",
+        "label": "doi.org"
       },
       {
-        "text": "Inland at Elvas, the border with Spain shaped an entire city. A star-like system of ramparts, dry ditches and outlying forts spreads across the surrounding ground.",
-        "source": "https://whc.unesco.org/en/list/1367/",
-        "label": "UNESCO"
+        "text": "Part of Portugal rides on the North American Plate. Flores and Corvo, the two westernmost Azorean islands, lie across the Mid-Atlantic Ridge from the main group.",
+        "source": "https://academic.oup.com/gji/article/213/2/824/4819286",
+        "label": "academic.oup.com"
       },
       {
-        "text": "At Braga's Bom Jesus do Monte, a monumental stairway zigzags up a wooded hillside. The climb was designed as part of the pilgrimage itself.",
-        "source": "https://whc.unesco.org/en/list/1590/",
-        "label": "UNESCO"
+        "text": "Glaciers once carved valleys into mainland Portugal’s highest mountains. Serra da Estrela preserves U-shaped valleys and high peat bogs far to the south of Europe’s familiar glacial landscapes.",
+        "source": "https://www.unesco.org/en/mab/serra-da-estrela",
+        "label": "unesco.org"
       }
     ]
   },
@@ -4659,14 +4659,14 @@
         "label": "unesco.org"
       },
       {
-        "text": "In several Transylvanian villages, the building with the strongest walls was the church. The settlement could shelter within its fortifications when danger approached.",
-        "source": "https://whc.unesco.org/en/list/596/",
-        "label": "UNESCO"
+        "text": "A cave in Romania contains a glacier underground. In Scărișoara, cold air descends into a deep hollow and helps preserve a thick block of ice through the summer.",
+        "source": "https://digitalcommons.usf.edu/kip_articles/437/",
+        "label": "digitalcommons.usf.edu"
       },
       {
-        "text": "In Maramureș, builders put exceptionally tall, narrow spires on wooden churches. Their silhouettes announce a village long before its individual houses are visible.",
-        "source": "https://whc.unesco.org/en/list/904/",
-        "label": "UNESCO"
+        "text": "South of Romania’s Danube Delta, a former arm of the Black Sea became a string of lagoons. River sediment and coastal sand barriers helped cut the Razim–Sinoe waters off from the open sea.",
+        "source": "https://pdf.usaid.gov/pdf_docs/PNADD446.pdf",
+        "label": "pdf.usaid.gov"
       }
     ]
   },
@@ -4701,14 +4701,14 @@
     "name": "San Marino",
     "options": [
       {
-        "text": "San Marino once had an electric railway winding up from Italy. During the Second World War its tunnels sheltered refugees, and an original railcar survives at Montale.",
-        "source": "https://www.visitsanmarino.com/pub2/VisitSM/en/luogo/Arte-e-cultura/Galleria-Montale-e-Treno-storico.html",
+        "text": "San Marino has only one neighbouring country, yet you can leave it for two different Italian regions. Emilia-Romagna lies on one side and Marche on the other.",
+        "source": "https://www.visitsanmarino.com/pub1/VisitSM/en/contenuto/About-San-Marino/POPOLAZIONE-E-TERRITORIO.html",
         "label": "visitsanmarino.com"
       },
       {
-        "text": "San Marino elects two heads of state at once. The two Captains Regent serve together for six months, so the country can have four different officeholders in a single year.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/sm.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "San Marino is Europe’s third-smallest country by area. At roughly 61 square kilometres, it is still more than twenty times the size of Monaco and Vatican City put together.",
+        "source": "https://www.dfat.gov.au/geo/san-marino/san-marino-country-brief",
+        "label": "dfat.gov.au"
       },
       {
         "text": "Marine fossils have been found on Mount Titano. The rock of this landlocked country's most recognisable mountain preserves animals from an ancient sea.",
@@ -4754,14 +4754,14 @@
         "label": "notranjski-park.si"
       },
       {
-        "text": "At Idrija, miners worked one of the world's great mercury deposits for centuries. Some of the metal occurred in its liquid native form inside the mine.",
-        "source": "https://whc.unesco.org/en/list/1313/",
-        "label": "UNESCO"
+        "text": "Slovenia’s short Adriatic shore has the northernmost salt pans in the Mediterranean where salt is still harvested in the traditional way. Seawater passes through shallow basins and the sun does the concentrating.",
+        "source": "https://slovenia.si/this-is-slovenia/slovenian-salt-pans",
+        "label": "slovenia.si"
       },
       {
-        "text": "In Ljubljana, architect Jože Plečnik kept an existing bridge and added pedestrian spans on either side. A single river crossing became the city's Triple Bridge.",
-        "source": "https://whc.unesco.org/en/list/1643/",
-        "label": "UNESCO"
+        "text": "In the limestone beneath Slovenia lives a salamander that keeps its gills as an adult. The olm spends its life in groundwater and can survive for years between meals.",
+        "source": "https://www.slovenia.info/en/places-to-go/attractions/postojna-cave",
+        "label": "slovenia.info"
       }
     ]
   },
@@ -4775,14 +4775,14 @@
         "label": "UNESCO"
       },
       {
-        "text": "At Elche, channels and rows of date palms form an oasis inside a Spanish city. The layout grew out of irrigation practices brought to this dry part of Iberia under Muslim rule.",
-        "source": "https://whc.unesco.org/en/list/930/",
-        "label": "UNESCO"
+        "text": "A piece of Spain sits entirely inside France. To drive from the Spanish town of Llívia to the rest of Spain, you cross a strip of French territory in the Pyrenees.",
+        "source": "https://treaties.un.org/doc/publication/unts/volume%201288/volume-1288-ii-907-english.pdf",
+        "label": "treaties.un.org"
       },
       {
-        "text": "Near Antequera, one great prehistoric tomb looks straight towards a mountain shaped like a human face. Its builders aligned the passage with the landscape itself.",
-        "source": "https://whc.unesco.org/en/list/1501/",
-        "label": "UNESCO"
+        "text": "A desert in southern Spain is shaped by running water. Most of the year the channels at Tabernas stand dry, but sudden downpours carry enough mud and stone to carve deep gullies.",
+        "source": "https://www.juntadeandalucia.es/medioambiente/portal/en/web/ventanadelvisitante/detalle-buscador-mapa/-/asset_publisher/Jlbxh2qB3NwR/content/es0000047-desierto-de-tabernas/255035",
+        "label": "juntadeandalucia.es"
       }
     ]
   },
@@ -4796,14 +4796,14 @@
         "label": "lkab.com"
       },
       {
-        "text": "On Öland, thin soil over a limestone plateau made much of the island unsuitable for ploughing. People used the stony alvar for grazing, shaping the landscape over thousands of years.",
-        "source": "https://whc.unesco.org/en/list/968/",
-        "label": "UNESCO"
+        "text": "Sweden’s highest point changed peaks as a glacier melted. Kebnekaise’s ice-capped southern summit lost enough height for its rocky northern neighbour to overtake it.",
+        "source": "https://www.natgeo.su.se/english/news/articles/2026-09-16-kebnekaises-southern-peak-continues-to-melt",
+        "label": "natgeo.su.se"
       },
       {
-        "text": "A huge open pit marks the copper mine at Falun. For centuries this one Swedish deposit supplied copper on a scale that mattered across Europe.",
-        "source": "https://whc.unesco.org/en/list/1027/",
-        "label": "UNESCO"
+        "text": "A lake in central Sweden curves around the scar of an asteroid impact. Lake Siljan occupies part of the ring-shaped depression left after rock rebounded at the centre of the crater.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/swedens-siljan-ring-148577/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -4817,14 +4817,14 @@
         "label": "uvek.admin.ch"
       },
       {
-        "text": "The vineyards at Lavaux occupy terraces on the north shore of Lake Geneva. That puts them on slopes facing south towards both lake and sun.",
-        "source": "https://whc.unesco.org/en/list/1243/",
-        "label": "UNESCO"
+        "text": "Basel’s airport lies entirely in France, yet passengers can leave it directly for Switzerland. A special road links its Swiss sector to the border.",
+        "source": "https://www.euroairport.com/en/faq/about-euroairport",
+        "label": "euroairport.com"
       },
       {
-        "text": "Under Swiss lakes and in lakeside wetlands, waterlogged ground preserved timber from prehistoric villages. Tree rings in the surviving piles can date buildings far more precisely than stone tools alone.",
-        "source": "https://whc.unesco.org/en/list/1363/",
-        "label": "UNESCO"
+        "text": "Two differently coloured rivers meet in Geneva. The Rhône has passed through a lake where sediment settles, while the Arve brings cloudy water down from the Alps. Their colours stay distinct past the junction.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/the-rhone-river-in-geneva-144296/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -4838,14 +4838,14 @@
         "label": "guinnessworldrecords.com"
       },
       {
-        "text": "Odesa grew around a Black Sea port, yet its streets follow a remarkably regular grid. A planned city rose on the site of the earlier settlement of Khadzhybei.",
-        "source": "https://whc.unesco.org/en/list/1703/",
-        "label": "UNESCO"
+        "text": "The shallow lagoons of the Syvash can change colour dramatically from one basin to the next. Narrow divides restrict exchange, so evaporation can leave neighbouring stretches of water with different salinities.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/sivash-ukraine-47117/",
+        "label": "science.nasa.gov"
       },
       {
-        "text": "Kyiv's Monastery of the Caves has an underground counterpart. Passages dug into the hillside beneath its churches served as places to live, pray and bury the dead.",
-        "source": "https://whc.unesco.org/en/list/527/",
-        "label": "UNESCO"
+        "text": "Ukraine has a patch of open sand dunes near the lower Dnipro. Oleshky Sands has migrating sand and sparse vegetation in a region better known for farmland and steppe.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/oleshky-sands-145801/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -4859,8 +4859,8 @@
         "label": "museivaticani.va"
       },
       {
-        "text": "The obelisk in Saint Peter's Square came from Egypt. It already stood in Rome in imperial times and was moved to its present spot in 1586.",
-        "source": "https://www.vatican.va/content/vatican/en/ra/obelisco.html",
+        "text": "Some papal properties well outside Vatican City have extraterritorial privileges in Italy. The Lateran complex across Rome is one example, so a map of Vatican City alone leaves out part of the Holy See’s geographic footprint.",
+        "source": "https://www.vatican.va/roman_curia/secretariat_state/documents/informazione_generale/extraterritoriale_it.html",
         "label": "vatican.va"
       },
       {
@@ -4901,9 +4901,9 @@
     "name": "Azores",
     "options": [
       {
-        "text": "On São Miguel, cooks lower covered pots into hot ground at Furnas. A stew can cook for hours in volcanic heat without a stove.",
-        "source": "https://rotas.azores.gov.pt/en/itinerary/furnas/",
-        "label": "rotas.azores.gov.pt"
+        "text": "A lighthouse on Faial lost its place on the shore when a volcano erupted at sea in 1957. New land joined the island and left the Capelinhos lighthouse standing inland.",
+        "source": "https://parquesnaturais.azores.gov.pt/en/parques/3/areasprotegidas/53",
+        "label": "parquesnaturais.azores.gov.pt"
       },
       {
         "text": "At Sete Cidades, a road crosses the narrow neck between two crater lakes. Seen from above, the two parts often appear different colours, one green and one blue.",
@@ -5060,14 +5060,14 @@
         "label": "parcoasinara.org"
       },
       {
-        "text": "On the high Giara plateau, small wild horses live above the surrounding farmland. In spring they wade into temporary pools to feed.",
-        "source": "https://www.sardegnaturismo.it/en/itineraries/monuments-and-landscapes-foot-giara",
+        "text": "Sardinia is dotted with reservoirs, yet Baratz is its only natural freshwater lake. High dunes separate it from the Mediterranean a short distance away.",
+        "source": "https://www.sardegnaturismo.it/en/explore/lago-di-baratz",
         "label": "sardegnaturismo.it"
       },
       {
-        "text": "The central tower at Su Nuraxi contains rooms roofed by rings of stone that step inward. Bronze Age builders closed the roof without a central support.",
-        "source": "https://whc.unesco.org/en/list/833/",
-        "label": "UNESCO"
+        "text": "On Sardinia a stream has carved a gorge hundreds of metres deep and only a few metres wide in places. In the Gorropu canyon, much of the water can vanish into the limestone below the boulder floor.",
+        "source": "https://www.sardegnasentieri.it/en/node/515",
+        "label": "sardegnasentieri.it"
       }
     ]
   },
@@ -5160,9 +5160,9 @@
         "label": "environmentandsociety.org"
       },
       {
-        "text": "Abkhazia grows tea on the humid side of the Caucasus. Moist air from the Black Sea helps support subtropical crops surprisingly close to snowy high mountains.",
-        "source": "https://om.ciheam.org/ressources/om/pdf/a57/04001975.pdf",
-        "label": "om.ciheam.org"
+        "text": "A landslide in the mountains of Abkhazia dammed a valley and created Lake Ritsa. The water backed up behind fallen rock in a basin now surrounded by forested peaks.",
+        "source": "https://dspace.nplg.gov.ge/bitstream/1234/10253/1/Abxazia.pdf",
+        "label": "dspace.nplg.gov.ge"
       },
       {
         "text": "Dye tracing in the Arabika limestone has connected high mountain caves to springs near the Black Sea coast. Water can descend an enormous vertical distance while barely appearing at the surface.",
@@ -5181,14 +5181,14 @@
         "label": "moldpres.md"
       },
       {
-        "text": "Tiraspol has a Greek name assembled on the Dniester. Tyras was an ancient name for the river and polis means city.",
-        "source": "https://novostipmr.com/en/content/7-essential-facts-life-tiraspol",
-        "label": "novostipmr.com"
+        "text": "A ravine near Tiraspol preserved an Ice Age menagerie. Fossils from its ancient river deposits include elephants, rhinoceroses, bison and hyenas from a landscape unlike today’s Dniester valley.",
+        "source": "https://www.muzeu.md/colectii-si-sali/colectia-paleontologica/",
+        "label": "muzeu.md"
       },
       {
-        "text": "The same town beside the Dniester can appear as Bender or Tighina on a map. Its Russian and Romanian place names preserve different chapters of the region's history.",
-        "source": "https://assets.publishing.service.gov.uk/media/623084efe90e070ed5aaedfe/PCGN-Toponymic_Notes_on_Transnistria_-_April14_-_updated_March_2022.pdf",
-        "label": "assets.publishing.service.gov.uk"
+        "text": "The Dniester once offered migrating fish a route inland from the Black Sea. The dam at Dubăsari cut that route across the river, dividing habitats that had been connected through Transnistria.",
+        "source": "https://ibn.idsi.md/sites/default/files/imag_file/6-20_1.pdf",
+        "label": "ibn.idsi.md"
       }
     ]
   },
@@ -5197,9 +5197,9 @@
     "name": "Corsica",
     "options": [
       {
-        "text": "In Castagniccia, chestnut orchards supplied the raw material for flour. A staple food could grow on steep Corsican slopes poorly suited to fields of cereal grain.",
-        "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000022392830/2026-03-01",
-        "label": "legifrance.gouv.fr"
+        "text": "Two lakes in the Corsican mountains sit on steps left by glaciers. Water from high Lake Capitello passes down to Lake Melo and into the Restonica valley on this Mediterranean island.",
+        "source": "https://www.visit-corsica.com/en/Mon-sejour/Patrimoine-naturel/Tout-le-patrimoine-naturel/LAC-DE-MELO",
+        "label": "visit-corsica.com"
       },
       {
         "text": "The Gulf of Porto's reddish cliffs enclose nesting sites for ospreys. The birds fish where the island's volcanic headlands meet the Mediterranean.",
