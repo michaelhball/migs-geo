@@ -5,6 +5,7 @@ import { DatabaseSync } from "node:sqlite";
 import { mkdtempSync, readdirSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
+import { schemaVersion } from "../server/migrations.mjs";
 import { createStore } from "../server/store.mjs";
 import { studyDay, nextStudyDay } from "../server/study-day.mjs";
 
@@ -103,7 +104,7 @@ test("old backups and databases regroup reviews without changing timestamps or m
     assert.equal(updated.history()[0].at, exactTime);
     assert.deepEqual(updated.exportData().studyLog, backup.studyLog);
     assert.deepEqual(updated.cards().map(c => c.memory), backup.cards.map(c => c.memory));
-    assert.ok(readdirSync(path.join(dir, "backups")).some(f => f.includes("before-schema-v5")));
+    assert.ok(readdirSync(path.join(dir, "backups")).some(f => f.includes(`before-schema-v${schemaVersion}`)));
     updated.db.close();
     updated = createStore(file);
     assert.equal(updated.history()[0].day, "2026-11-08", "Migration must not shift the day twice.");

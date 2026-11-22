@@ -129,6 +129,8 @@ for n in notes:
     alias=[aliases[name]] if name in aliases else []
     alias+= {'United States of America':['United States','USA','US'],'United Kingdom':['UK','Britain'],'Turkey':['Türkiye'],'Czech Republic':['Czechia'],'Ivory Coast':["Côte d’Ivoire","Cote d'Ivoire"],'Cape Verde':['Cabo Verde'],'East Timor':['Timor-Leste'],'Federated States of Micronesia':['Micronesia'],'Sahrawi Arab Democratic Republic':['Western Sahara'],'The Bahamas':['Bahamas'],'The Gambia':['Gambia'],'Russia':['Russian Federation']}.get(name,[])
     alias+=answer_aliases.get(n['id'],[])
+    if name in ('Aral Sea', 'Dead Sea', 'Caspian Sea', 'Sea of Galilee'):
+        kind = 'lake'
     deck.append({**n,'kind':kind,'geometry':g,'center':center,'approximate':approximate,'source':source,'small':not water and size<.2,'aliases':alias,'region':next((t[4:].replace('_',' ') for t in n['tags'] if t in ['UG::Europe','UG::Asia','UG::Africa','UG::North_America','UG::South_America','UG::Oceania']), 'World')})
 base={'type':'FeatureCollection','features':[{'type':'Feature','properties':{'name':props(f).get('name_long') or props(f).get('name')},'geometry':compact(f['geometry'])} for f in land]}
 base['boundaries'] = boundaries(land, simplify)

@@ -582,10 +582,12 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     if (a.card.mode === "locate" && a.result.correct === false && !answer.reveal) {
       const matches = places().filter(candidate =>
         !candidate.archived && !candidate.approximate && candidate.geometry.type !== "Point" &&
-        ["country","territory","water"].includes(candidate.kind) && ["Polygon","MultiPolygon"].includes(candidate.geometry.type) && booleanPointInPolygon(answer.point, candidate.geometry)
+        (["country","territory","water"].includes(candidate.kind) || (p.kind === "lake" && candidate.kind === "lake")) && ["Polygon","MultiPolygon"].includes(candidate.geometry.type) && booleanPointInPolygon(answer.point, candidate.geometry)
       );
-      const land = matches.filter(candidate => candidate.kind !== "water");
-      const names = (land.length ? land : matches).map(candidate => candidate.name);
+      const lakes = matches.filter(candidate => candidate.kind === "lake");
+      const land = matches.filter(candidate => ["country", "territory"].includes(candidate.kind));
+      const candidates = lakes.length ? lakes : land.length ? land : matches;
+      const names = candidates.map(candidate => candidate.name);
       if (names.length) a.result.message = `Your pin is in ${names.join(" / ")}.`;
     }
     const now = clock(),
@@ -708,6 +710,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
   }
   const exportData = () => ({
     format: "migs-geo",
+    schemaVersion,
     version: 2,
     exportedAt: clock().toISOString(),
     settings: settings(),
@@ -833,7 +836,9 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       for (const p of data.places)
         db.prepare("INSERT INTO places VALUES(?,?,?)").run(
           p.id,
-          encode(p),
+          encode((data.schemaVersion ?? 0) < 6 && p.kind === "water" &&
+            ["aral-sea", "dead-sea", "caspian-sea", "sea-of-galilee"].includes(p.id)
+              ? { ...p, kind: "lake" } : p),
           p.archived ? 1 : 0,
         );
       for (const c of data.cards)

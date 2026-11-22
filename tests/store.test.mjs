@@ -707,18 +707,22 @@ test("enabling inland lakes adds both directions, matches the atlas and preserve
     assert.ok(!store.settings().kinds.includes("lake"));
     store.setSettings({ kinds: ["lake"] });
     const lakes = store.places().filter(p => p.kind === "lake");
-    assert.equal(lakes.length, 511);
-    assert.equal(store.cards().length, initialCount + 2 * lakes.length);
+    assert.equal(lakes.length, 515);
+    assert.equal(store.cards().length, initialCount + 2 * 511);
     assert.deepEqual(store.getCard(reviewed.id), reviewed);
     const world = JSON.parse(readFileSync(new URL("../public/data/world.json", import.meta.url)));
     const polygons = new Set(world.lakes.flatMap(b => b.geometry.coordinates.map(p => JSON.stringify(p))));
-    for (const lake of lakes) {
+    for (const lake of lakes.filter(p => p.id.startsWith("lake-"))) {
       validateGeometry(lake.geometry);
       assert.ok(lake.geometry.coordinates.every(p => polygons.has(JSON.stringify(p))), lake.name);
       for (const mode of ["locate", "identify"]) assert.ok(store.getCard(lake.id + ":" + mode));
     }
     for (const name of ["Dead Sea", "Sea of Galilee", "Aral Sea", "Caspian Sea"])
       assert.equal(store.places().filter(p => p.name === name).length, 1);
+    const taupo = lakes.find(p => p.name === "Lake Taupo");
+    assert.equal(taupo.region, "Oceania");
+    for (const text of ["Lake Taupō", "Taupo"])
+      assert.equal(checkAnswer(taupo, "identify", { text }).correct, true);
     const baikal = lakes.find(p => p.name === "Lake Baikal");
     assert.equal(checkAnswer(baikal, "identify", { text: "Baikal" }).correct, true);
     assert.equal(checkAnswer(baikal, "locate", { point: [108, 53.5] }).correct, true);

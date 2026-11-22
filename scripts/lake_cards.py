@@ -42,7 +42,7 @@ def continent(point, continents):
 
 
 def prepare_lake_cards(lakes, regions, compact, deck):
-    existing_water = {p["name"] for p in deck if p["kind"] == "water"}
+    existing_water = {p["name"] for p in deck if p["kind"] in ("water", "lake")}
     continents = []
     for f in regions:
         if f["properties"]["FEATURECLA"] == "Continent":

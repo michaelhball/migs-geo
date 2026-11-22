@@ -18,6 +18,7 @@ export const migrations = [
     "utf8",
   ),
   readFileSync(new URL("./migrations/005-study-modes.sql", import.meta.url), "utf8"),
+  readFileSync(new URL("./migrations/006-inland-lakes.sql", import.meta.url), "utf8"),
 ];
 export const schemaVersion = migrations.length;
 

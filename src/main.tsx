@@ -39,8 +39,9 @@ const modeNames: Record<string,string> = {
 const kindNames: any = {
   country: "Country",
   territory: "Territory / island",
-  water: "Body of water",
-  river:"River", range:"Mountain range", desert:"Desert", lake:"Inland lake",
+  water: "Oceans, seas & gulfs",
+  lake: "Inland lakes",
+  river:"River", range:"Mountain range", desert:"Desert",
   region: "Region / continent",
 };
 const countryNames = new Intl.DisplayNames(["en"], {type:"region"});
