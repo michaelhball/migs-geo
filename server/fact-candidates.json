@@ -1972,5 +1972,89 @@
         "label": "NOAA"
       }
     ]
+  },
+  {
+    "id": "caspian-sea",
+    "name": "Caspian Sea",
+    "options": [
+      {
+        "text": "A mud volcano off Azerbaijan built an island in early 2023. Satellites watched the Caspian reclaim it almost entirely by the end of 2024.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/satellites-spot-a-ghost-island-153799/",
+        "label": "NASA"
+      },
+      {
+        "text": "The Caspian has its own species of seal. In winter the seals gather on ice in the shallow north of this landlocked lake to give birth and nurse their pups.",
+        "source": "https://www.marinemammalhabitat.org/factsheets/caspian-seal-breeding-area-imma/",
+        "label": "Source"
+      },
+      {
+        "text": "On the eastern shore, a narrow channel feeds a salty lagoon called Garabogazköl. A dam closed the channel in 1980 and the lagoon nearly dried up. In 1992 the dam came down.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/overview-of-the-zaliv-kara-bogaz-gol-3550/",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113279",
+    "name": "Lago Titicaca",
+    "options": [
+      {
+        "text": "On Taquile Island, you can wear the farming calendar. Weavers make a wide belt whose designs record the year’s agricultural work and rituals.",
+        "source": "https://ich.unesco.org/en/RL/taquile-and-its-textile-art-00166",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Some of the islands on Titicaca are built from plants. Uros communities make floating islands out of totora reeds, high in the Andes between Peru and Bolivia.",
+        "source": "https://whc.unesco.org/en/tentativelists/5080/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "More than 25 rivers feed Titicaca, but just one, the Desaguadero, drains it. Most of the water that leaves this cold mountain lake goes straight into the air.",
+        "source": "https://whc.unesco.org/en/tentativelists/5080/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113185",
+    "name": "Lake Tanganyika",
+    "options": [
+      {
+        "text": "Tanganyika has a fish that plays the cuckoo’s trick underwater. A cichlid gathering her eggs into her mouth can scoop up catfish eggs too. The catfish hatch first.",
+        "source": "https://www.nature.com/articles/323058a0",
+        "label": "Source"
+      },
+      {
+        "text": "A passenger ship reached this landlocked lake in crates. A German shipyard built the Graf Goetzen, took it apart for transport, and sent the pieces to be reassembled on Tanganyika.",
+        "source": "https://www.meyerwerft.de/en/press/press_detail/225_years_of_pioneering_spirit_at_meyer_werft.jsp",
+        "label": "Source"
+      },
+      {
+        "text": "Some freshwater snails here grow such ornate shells that biologists call them “sea-like.” Tanganyika has dozens of snail species found nowhere else.",
+        "source": "https://portals.iucn.org/library/efiles/documents/RL-6-001.pdf",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113111",
+    "name": "Lake Balkhash",
+    "options": [
+      {
+        "text": "You can cross from nearly fresh water to salty water without leaving the lake. The Ili River freshens the western basin, and a narrow strait limits how much mixes into the east.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/lake-balkhash-91230/",
+        "label": "NASA"
+      },
+      {
+        "text": "At the lake’s southern edge, the Ili River fans into a wetland in the desert. The same protected area shelters goitered gazelles, marbled polecats and white-headed ducks.",
+        "source": "https://rsis.ramsar.org/ris/2020",
+        "label": "Source"
+      },
+      {
+        "text": "Balkhash spends winter under ice. A satellite passing over in March 2026 caught strips of turquoise water opening through the white ice cover.",
+        "source": "https://modis.gsfc.nasa.gov/gallery/individual.php?db_date=2026-03-25",
+        "label": "NASA"
+      }
+    ]
   }
 ]
