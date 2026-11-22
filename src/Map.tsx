@@ -164,6 +164,9 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     m.createPane("relief");
     m.getPane("relief")!.style.zIndex = "410";
     m.getPane("relief")!.style.pointerEvents = "none";
+    m.createPane("lakes");
+    m.getPane("lakes")!.style.zIndex = "415";
+    m.getPane("lakes")!.style.pointerEvents = "none";
     m.createPane("answers");
     m.getPane("answers")!.style.zIndex = "420";
     m.createPane("divisions");
@@ -250,6 +253,19 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
               });
             },
           }).addTo(m);
+          for (const band of world.lakes) {
+            const lakeLayer = L.geoJSON(band.geometry, {
+              coordsToLatLng: shiftCoordinates(offset),
+              pane: "lakes", interactive: false,
+              style: { color: "#96abb0", weight: 0.65, fillColor: "#e5eff0", fillOpacity: 1 },
+            });
+            const updateLakes = () => {
+              if (m.getZoom() >= band.minZoom) lakeLayer.addTo(m);
+              else lakeLayer.remove();
+            };
+            details.push(updateLakes);
+            updateLakes();
+          }
           for (const boundary of groups) {
             const project = shiftCoordinates(offset);
             L.polyline(boundary.outer.map(line => line.map(project)), {

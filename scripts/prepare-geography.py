@@ -131,6 +131,19 @@ for n in notes:
     deck.append({**n,'kind':kind,'geometry':g,'center':center,'approximate':approximate,'source':source,'small':not water and size<.2,'aliases':alias,'region':next((t[4:].replace('_',' ') for t in n['tags'] if t in ['UG::Europe','UG::Asia','UG::Africa','UG::North_America','UG::South_America','UG::Oceania']), 'World')})
 base={'type':'FeatureCollection','features':[{'type':'Feature','properties':{'name':props(f).get('name_long') or props(f).get('name')},'geometry':compact(f['geometry'])} for f in land]}
 base['boundaries'] = boundaries(land, simplify)
+# Keep studied shorelines visible at every scale, at their actual map size.
+lake_bands = {}
+for lake in lakes:
+    attrs = props(lake)
+    if attrs['featurecla'] not in ('Lake', 'Alkaline Lake'):
+        continue
+    studied = attrs['name'] in ('North Aral Sea', 'South Aral Sea', 'Dead Sea', 'Sea of Galilee')
+    zoom = 0 if studied else attrs['min_zoom']
+    lake_bands.setdefault(zoom, []).extend(compact(lake['geometry'])['coordinates'])
+base['lakes'] = [
+    {'minZoom': zoom, 'geometry': {'type': 'MultiPolygon', 'coordinates': polygons}}
+    for zoom, polygons in sorted(lake_bands.items())
+]
 (ROOT/'public/data/world.json').write_text(json.dumps(base,separators=(',',':')))
 (ROOT/'data/places.json').write_text(json.dumps(deck,ensure_ascii=False,separators=(',',':')))
 print('Prepared',len(deck),'places;',sum(x['approximate'] for x in deck),'approximate locations')

@@ -19,3 +19,12 @@ test("whole-country outlines follow the card geometry and preserve separately st
   }
   for (const id of ["kosovo", "somaliland"]) assert.equal(lookup(polygons(id)), undefined);
 });
+
+test("the base lake layer includes the complete study shorelines at world zoom", () => {
+  const rings = new Set(world.lakes.filter(b => b.minZoom === 0)
+    .flatMap(b => b.geometry.coordinates).map(poly => JSON.stringify(poly)));
+  for (const id of ["aral-sea", "dead-sea", "sea-of-galilee"]) {
+    const place = places.find(p => p.id === id);
+    for (const polygon of place.geometry.coordinates) assert.ok(rings.has(JSON.stringify(polygon)), id);
+  }
+});
