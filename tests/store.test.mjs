@@ -741,3 +741,22 @@ test("enabling inland lakes adds both directions, matches the atlas and preserve
     store.db.close();
   }
 });
+
+test("approved place facts appear only after correct checks, including with legacy notes", () => {
+  const place = atlas.find(p => p.id === "black-sea");
+  const facts = JSON.parse(readFileSync(new URL("../data/approved-facts.json", import.meta.url)));
+  const fact = facts[place.id];
+  const store = createStore(":memory:", [{...place, info: "Personal note. " + fact.text}]);
+  try {
+    const q = store.question({practice:true, placeId:place.id, mode:"identify"});
+    assert.equal(q.card.placeFact, undefined);
+    for (const answer of [{text:"Baltic Sea"}, {reveal:true}]) {
+      const result = store.check(q.token, answer);
+      assert.equal(result.placeFact, undefined);
+      assert.equal(result.place.info, "Personal note.");
+    }
+    assert.deepEqual(store.check(q.token, {text:"Black Sea"}).placeFact, fact);
+  } finally {
+    store.db.close();
+  }
+});

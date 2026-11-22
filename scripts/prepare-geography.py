@@ -87,10 +87,7 @@ region_names={'European Union','Scandinavia','Balkan Peninsula','Polynesia','Mel
 # approximate study extents and are self-graded, never precise auto-grading.
 approx={'Polynesia':[-150,-10,3500],'Melanesia':[161,-10,2400],'Micronesia':[152,10,2400],'Scandinavia':[16,64,900], 'Bering Strait':[-168.9,65.9,100], 'Celtic Sea':[-7.5,50,280]}
 deck=[]
-approved_facts=json.loads((ROOT/'data/approved-facts.json').read_text())
 for n in notes:
-    if n['id'] in approved_facts:
-        n['info'] = ' '.join(filter(None, [n['info'], approved_facts[n['id']]['text']]))
     name=n['name'];water='UG::Oceans+Seas' in n['tags'];kind='water' if water else 'region' if name in region_names else 'country' if 'UG::Sovereign_State' in n['tags'] else 'territory'
     fs=[];source='Natural Earth 1:10m';g=None;approximate=False
     if name=='Oceania':

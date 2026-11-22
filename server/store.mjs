@@ -9,6 +9,7 @@ import { createStudyLog, validateStudyLog } from "./study-log.mjs";
 import { analytics } from "./analytics.mjs";
 import { studyDay, nextStudyDay, scheduleStudyDay } from "./study-day.mjs";
 
+import approvedFacts from "../data/approved-facts.json" with { type: "json" };
 import cityRegions from "./city-regions.json" with {type:"json"};
 import cities from "./cities.json" with {type:"json"};
 import lakePlaces from "./lake-places.json" with {type:"json"};
@@ -594,10 +595,15 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       next = scheduler().repeat(hydrate(a.card.memory), now);
     studyLog.check(token, answer, a.result);
     a.checked = true;
+    const fact = Object.hasOwn(approvedFacts, p.id) ? approvedFacts[p.id] : undefined;
+    // Earlier collections appended these facts to notes on both correct and missed answers.
+    const answerPlace = fact && p.info.endsWith(fact.text)
+      ? { ...p, info: p.info.slice(0, -fact.text.length).trimEnd() } : p;
     return {
       ...a.result,
       ...(Object.hasOwn(optionalModes, a.card.mode) && { facts: facts[p.id] }),
-      place: p,
+      place: answerPlace,
+      ...(a.result.correct === true && fact && { placeFact: fact }),
       intervals: [1, 2, 3, 4].map((r) => {
         const card = scheduleStudyDay(next[r].card, now);
         return {

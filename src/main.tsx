@@ -655,6 +655,12 @@ function App() {
                                 {plain(result.place.info)}
                               </p>
                             )}
+                            {result.placeFact && (
+                              <p className="place-info">
+                                {result.placeFact.text}{" "}
+                                <a href={result.placeFact.source} target="_blank" rel="noreferrer">Source</a>
+                              </p>
+                            )}
                             <div className="rating-label">
                               How well did you remember?
                             </div>

@@ -112,3 +112,5 @@ The opt-in physical atlas offers 45 named river courses, 36 mountain ranges and 
 The optional `lake` kind installs 511 named inland-water places (1,022 independent locate and identify cards) from the atlas lake layer. Select **Inland lakes** under Settings → Place types, or include `lake` in `settings.kinds`. Turning the type off pauses its questions and preserves its cards. Existing water cards such as the Dead Sea and Aral Sea keep their original IDs and schedules.
 
 The marine filter (`water`) includes oceans, seas, gulfs, bays, and straits. The Aral Sea, Caspian Sea, Dead Sea, and Sea of Galilee are classified as `lake`. Together with the optional pack this gives 515 lake places.
+
+For places with an entry in `data/approved-facts.json`, a correct study check includes `placeFact: {text, source}`. Wrong answers, reveals and self-graded checks omit this field.
