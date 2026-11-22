@@ -1552,5 +1552,425 @@
         "label": "Parks Australia"
       }
     ]
+  },
+  {
+    "id": "southern-ocean",
+    "name": "Southern Ocean",
+    "options": [
+      {
+        "text": "A current can circle Antarctica without meeting land. The Antarctic Circumpolar Current threads the Atlantic, Indian and Pacific oceans into a single loop.",
+        "source": "https://www.aoml.noaa.gov/phod/altimetry/cvar/acc/",
+        "label": "NOAA"
+      },
+      {
+        "text": "A blue whale can grow to be the largest animal on Earth on a diet made up almost entirely of krill. The little crustaceans graze on microscopic algae in these waters.",
+        "source": "https://www.bas.ac.uk/blogpost/small-but-mighty-the-antarctic-krill-that-feed-a-whole-ocean/",
+        "label": "Source"
+      },
+      {
+        "text": "Pack ice crushed Shackleton’s Endurance in 1915. When a search team found it on the Weddell Sea floor in 2022, the ship’s name and the star on its stern were still visible.",
+        "source": "https://fmht.co.uk/wreckmap/endurance/",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "gulf-of-thailand",
+    "name": "Gulf of Thailand",
+    "options": [
+      {
+        "text": "Bryde’s whales here have been filmed standing almost upright with their mouths open at the surface. Fish tumble across the lower jaw while the whale holds still.",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/29112865/",
+        "label": "Source"
+      },
+      {
+        "text": "Archaeologists excavated a seagoing ship eight kilometres inland from today’s gulf. Its builders had stitched the hull planks together with rope.",
+        "source": "https://www.finearts.go.th/storage/contents/file/iuem8KKNkl2V2LdU9GbtFCsTLiVLDeSIRLKLdgSG.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "At Ban Khun Samut Chin the shoreline retreated through a village. Families moved inland, leaving the Buddhist temple standing out at the water’s edge.",
+        "source": "https://doi.nrct.go.th/ListDoi/Download/586018?Resolve_DOI=10.14456%2Fbuilt.2021.5",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "pacific-ocean",
+    "name": "Pacific Ocean",
+    "options": [
+      {
+        "text": "In 1977 researchers diving near the Galápagos found a thriving community around hot vents on the dark seabed. Microbes using chemicals from the vents fed the other animals.",
+        "source": "https://oceanservice.noaa.gov/facts/vents.html",
+        "label": "NOAA"
+      },
+      {
+        "text": "A boat can sail through the Great Pacific Garbage Patch without seeing an island of rubbish. Much of the plastic is in small fragments spread through the water.",
+        "source": "https://marinedebris.noaa.gov/discover-marine-debris/garbage-patches",
+        "label": "NOAA"
+      },
+      {
+        "text": "At Point Nemo, the three nearest pieces of land are each about 2,688 kilometres away. The spot takes its name from Jules Verne’s submarine captain.",
+        "source": "https://oceanservice.noaa.gov/facts/nemo.html?ftag=YHFa5b931b",
+        "label": "NOAA"
+      }
+    ]
+  },
+  {
+    "id": "atlantic-ocean",
+    "name": "Atlantic Ocean",
+    "options": [
+      {
+        "text": "Most of the mountain range dividing the Atlantic lies underwater. In Iceland it rises through the surface, where you can walk across the rift between the plates.",
+        "source": "https://whc.unesco.org/en/tentativelists/6231",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In 1866 a lasting telegraph cable connected Valentia Island in Ireland to a Newfoundland village called Heart’s Content. Messages that once crossed by ship could travel through a wire on the ocean floor.",
+        "source": "https://whc.unesco.org/en/tentativelists/6631/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Atlantic contains a sea whose boundaries move. Four currents enclose the floating seaweed of the Sargasso Sea, giving it a perimeter without a coastline.",
+        "source": "https://oceanservice.noaa.gov/facts/sargassosea.html",
+        "label": "NOAA"
+      }
+    ]
+  },
+  {
+    "id": "indian-ocean",
+    "name": "Indian Ocean",
+    "options": [
+      {
+        "text": "At the Kairei deep-sea vents, a snail grows iron sulphide minerals on the scales covering its foot. Its armour incorporates minerals from the vent environment.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S0012821X05008058",
+        "label": "Source"
+      },
+      {
+        "text": "South of Sri Lanka, Earth’s uneven gravity makes the ocean surface sit lower than it would on a uniform planet. Satellites can measure this broad hollow in the sea.",
+        "source": "https://ntrs.nasa.gov/citations/19830053508",
+        "label": "NASA"
+      },
+      {
+        "text": "The tsunami that began off Sumatra in 2004 left a trace far outside the Indian Ocean. Tide gauges around the world recorded its passage.",
+        "source": "https://www.ncei.noaa.gov/sites/default/files/2024-11/IO_Poster_20241030_final_lowres.pdf",
+        "label": "NOAA"
+      }
+    ]
+  },
+  {
+    "id": "hudson-bay",
+    "name": "Hudson Bay",
+    "options": [
+      {
+        "text": "For polar bears on the western shore, summer takes away the hunting ground itself. When the sea ice melts, the bears come ashore and live largely on stored fat until freeze-up.",
+        "source": "https://www.canada.ca/en/environment-climate-change/services/species-risk-public-registry/recovery-strategies/polar-bear-ontario-2011.html",
+        "label": "Government of Canada"
+      },
+      {
+        "text": "From orbit the Belcher Islands look like loops drawn in ink across the bay. The long, thin islands trace the folds of ancient layers of rock.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/belcher-islands-canada-8449/",
+        "label": "NASA"
+      },
+      {
+        "text": "You can find old Hudson Bay beaches inland and uphill. The crust is still rising after the great ice sheets melted and lifted their weight from it.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/contours-of-the-james-bay-lowlands/",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "white-sea",
+    "name": "White Sea",
+    "options": [
+      {
+        "text": "Near the White Sea, prehistoric artists carved boats and sea hunts into bare rock. The hunters and their prey are still visible thousands of years later.",
+        "source": "https://whc.unesco.org/en/list/1654/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Some White Sea belugas return to the same summer gathering grounds so predictably that researchers on the Solovetsky Islands have watched them from shore over successive years.",
+        "source": "https://iucn-csg.org/wp-content/uploads/2024/07/mmh2012_book_vol1.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "On the Solovetsky Islands, monks linked lakes with canals. A monastery in the White Sea built itself a freshwater transport and supply network.",
+        "source": "https://whc.unesco.org/en/decisions/7050/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "norwegian-sea",
+    "name": "Norwegian Sea",
+    "options": [
+      {
+        "text": "Off the Lofoten Islands lies the Røst Reef, an immense coral reef growing in deep, cold water beyond the reach of sunlight.",
+        "source": "https://www.nina.no/en/our-research/biodiversity-and-ecosystems/cold-water-corals",
+        "label": "Source"
+      },
+      {
+        "text": "About 8,000 years ago part of the seabed off Norway slid downhill. The tsunami it sent across the sea left layers of sand on the Scottish coast.",
+        "source": "https://quakes.bgs.ac.uk/research/events/tohoku/BritishTsunami.html",
+        "label": "Source"
+      },
+      {
+        "text": "Herring spend the feeding season where Arctic and Atlantic waters meet. When the shoals head for their Norwegian wintering grounds, killer whales follow them.",
+        "source": "https://www.hi.no/en/hi/temasider/species/herring",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "celtic-sea",
+    "name": "Celtic Sea",
+    "options": [
+      {
+        "text": "Even in summer the Celtic Sea can hold a pool of cold water near its bed. A lid of warmer water keeps it apart from the surface.",
+        "source": "https://www.sciencedirect.com/science/article/abs/pii/S0278434303000086",
+        "label": "Source"
+      },
+      {
+        "text": "Near the edge of the continental shelf, long ridges of sand rise as much as 60 metres from the seabed. Some run for up to 200 kilometres.",
+        "source": "https://tethys.pnnl.gov/sites/default/files/publications/Appendix_1b_Geology___substrates_2022.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "Satellite tags revealed journeys through the Celtic Sea by basking sharks seen off western Scotland. The same animal can use waters off Scotland and southwest England.",
+        "source": "https://www.nature.scot/sites/default/files/Publication%202016%20-%20SNH%20Commissioned%20Report%20908%20-%20Basking%20shark%20satellite%20tagging%20project%20-%20insights%20into%20basking%20shark%20%28Cetorhinus%20maximus%29%20movement%2C%20distribution%20and%20behaviour%20using%20satellite%20telemetry%20-%20Final%20report.pdf",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "english-channel",
+    "name": "English Channel",
+    "options": [
+      {
+        "text": "Sonar revealed enormous hollows beneath the Strait of Dover. Researchers traced them to waterfalls spilling from an ice-dammed lake when a land bridge still joined Britain and France.",
+        "source": "https://www.imperial.ac.uk/earth-science/research/research-groups/geodynamics/themes/seafloor-imaging/quaternary-landscapes/flood/",
+        "label": "Source"
+      },
+      {
+        "text": "The Channel Tunnel is actually three tunnels. A service tunnel runs between the two railway tunnels, with cross-passages every 375 metres.",
+        "source": "https://www.getlinkgroup.com/en/our-group/eurotunnel/channel-tunnel/",
+        "label": "Source"
+      },
+      {
+        "text": "The first recorded unaided swim across the Channel took 21 hours and 45 minutes. Matthew Webb made it from England to France in 1875.",
+        "source": "https://www.dovermuseum.co.uk/Exhibitions/Channel-Swimmers/Records--Firsts.aspx",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "bay-of-biscay",
+    "name": "Bay of Biscay",
+    "options": [
+      {
+        "text": "The Capbreton Canyon carries sediment downhill beneath the waves. Repeated surveys caught changes on its floor after sediment moved through the canyon.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S0025322711002969",
+        "label": "Source"
+      },
+      {
+        "text": "Deep canyons off the French coast shelter cold-water coral communities. Their branching colonies grow far below the sunlit surface of the bay.",
+        "source": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2017.00118/full",
+        "label": "Source"
+      },
+      {
+        "text": "Where rivers pour into the Bay of Biscay, their plumes help shape the spawning grounds of anchovies. The fish gather in particular patches of water on the shelf.",
+        "source": "https://www.ices.dk/sites/pub/CM%20Doccuments/2004/G/SGRESP04.pdf",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "mediterranean-sea",
+    "name": "Mediterranean Sea",
+    "options": [
+      {
+        "text": "Drilling beneath the Mediterranean revealed vast beds of salt. They formed when its connection to the Atlantic narrowed millions of years ago and evaporation concentrated the seawater.",
+        "source": "https://www.nature.com/articles/s41467-024-53781-6",
+        "label": "Source"
+      },
+      {
+        "text": "The underwater meadows off Ibiza are made of flowering plants. The long blades of Posidonia shelter a whole community beneath passing boats.",
+        "source": "https://whc.unesco.org/en/list/417",
+        "label": "UNESCO"
+      },
+      {
+        "text": "From Tyre, on the coast of modern Lebanon, Phoenician sailors founded settlements as far away as Carthage and Cádiz. Their ships linked the eastern Mediterranean with the Atlantic coast of Spain.",
+        "source": "https://whc.unesco.org/pg.cfm?cid=31&id_site=299",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "east-siberian-sea",
+    "name": "East Siberian Sea",
+    "options": [
+      {
+        "text": "Woolly mammoths survived on Wrangel Island for thousands of years after they disappeared from most of the mainland. Some were still alive around 4,000 years ago.",
+        "source": "https://tuhat.helsinki.fi/ws/files/126881366/1_s2.0_S0277379119301398_main.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "Open water can persist beside Wrangel Island even when ice covers the sea around it. These recurring openings are called polynyas.",
+        "source": "https://www.cbd.int/recommendation/sbstta/default.shtml?id=13328",
+        "label": "Source"
+      },
+      {
+        "text": "Pacific eiders nest on tundra around this sea, including Wrangel Island. After breeding, they travel through the Chukchi Sea to spend winter in the Bering Sea.",
+        "source": "https://pame.is/images/03_Projects/EA/LMEs/Factsheets/8_East_Siberian_Sea_LME.pdf",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "bay-of-bengal",
+    "name": "Bay of Bengal",
+    "options": [
+      {
+        "text": "Rock worn off the Himalayas ends up far out beneath the bay. Rivers deliver it to the Bengal Fan, a submarine pile of sediment stretching about 3,000 kilometres.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S0264817203000357",
+        "label": "Source"
+      },
+      {
+        "text": "In the northern bay, rain and river water can leave a layer of fresher water only about 15 metres deep floating on the saltier sea.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2001JC000831",
+        "label": "Source"
+      },
+      {
+        "text": "In the Sundarbans at the head of the bay, tigers swim long distances between mangrove islands. Fish and crabs are among the prey they take in this tidal forest.",
+        "source": "https://whc.unesco.org/en/list/452",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "sea-of-japan",
+    "name": "Sea of Japan",
+    "options": [
+      {
+        "text": "In Toyama Bay, firefly squid rise from deep water and flash blue in the dark. Fishing boats go out before dawn during the spring season.",
+        "source": "https://www.ana.co.jp/en/th/japan-travel-planner/toyama/0000015.html",
+        "label": "Source"
+      },
+      {
+        "text": "Cold air leaving Siberia picks up moisture as it crosses this sea. By the time it hits Japan’s mountains, it can unload extraordinary amounts of snow.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/winter-grips-japan/",
+        "label": "NASA"
+      },
+      {
+        "text": "Bluefin tuna, yellowtail and flying squid travel north on the warm Tsushima Current. In autumn the migration reverses toward the spawning grounds.",
+        "source": "https://www.env.go.jp/en/nature/biodic/kaiyo-hozen/kaiiki/hyoso/415.html",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "yellow-sea",
+    "name": "Yellow Sea",
+    "options": [
+      {
+        "text": "On their migration along the Asian coast, spoon-billed sandpipers stop to feed on the Yellow Sea mudflats. Look closely at one and even the tip of its tiny bill flares out like a spoon.",
+        "source": "https://whc.unesco.org/en/list/1606",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In satellite pictures, turquoise and tan swirls can run across this shallow sea. Tides and waves stir fine sediment off the seabed and suspend it in the water.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/swirls-of-color-in-the-yellow-sea-85514/",
+        "label": "NASA"
+      },
+      {
+        "text": "The Korean tidal flats, or getbol, are home to mud octopuses, fiddler crabs and ghost crabs. At low tide a whole stretch of their seafloor becomes dry enough to walk across.",
+        "source": "https://whc.unesco.org/en/list/1591/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "tasman-sea",
+    "name": "Tasman Sea",
+    "options": [
+      {
+        "text": "The Lord Howe Island stick insect was feared extinct. In 2001 a team found survivors on Ball’s Pyramid, a steep rock spire 16 kilometres out to sea.",
+        "source": "https://australian.museum/learn/animals/insects/entomology-collection-phantom-phasmids/",
+        "label": "Source"
+      },
+      {
+        "text": "A chain of 16 extinct volcanoes runs roughly 2,000 kilometres through the Tasman and Coral seas. Some peaks rise more than four kilometres above the surrounding seabed.",
+        "source": "https://www.csiro.au/en/showcase/mapping-the-sea-floor",
+        "label": "Source"
+      },
+      {
+        "text": "In 2002 astronauts photographed a storm over the Tasman Sea with features of both a tropical cyclone and a higher-latitude storm. The shuttle crew could see the curve of its cloud bands from orbit.",
+        "source": "https://images.nasa.gov/details/s109e6003",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "east-china-sea",
+    "name": "East China Sea",
+    "options": [
+      {
+        "text": "In winter, a pale tongue stretches across the Yangtze Bank. Much of what shows up in satellite images is sediment stirred from the shallow bottom.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/a-wintery-tongue-of-sediment-91325/",
+        "label": "NASA"
+      },
+      {
+        "text": "Drilling in the Okinawa Trough found hot water travelling sideways through buried rock. Sealing layers trap the water at several levels beneath the seafloor.",
+        "source": "https://www.jamstec.go.jp/chikyu/e/exp331/findings.html",
+        "label": "Source"
+      },
+      {
+        "text": "The Kuroshio brings more than warm water to the edge of the continental shelf. Where it pushes onto the shelf, researchers found changes in both the abundance and variety of microscopic algae.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024JC021337",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "north-sea",
+    "name": "North Sea",
+    "options": [
+      {
+        "text": "In 1931 a fishing trawler hauled up a barbed antler point from the North Sea. Someone had fashioned it when dry land still stretched between Britain and the continent.",
+        "source": "https://assets.publishing.service.gov.uk/media/5a7edeb8e5274a2e87db26ce/east_evidence_issues_chapter6.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "Beneath the Ekofisk oil field, the reservoir rock compacted as oil was extracted. In the middle of the field the seabed itself has sunk about ten metres.",
+        "source": "https://www.norskpetroleum.no/en/facts/field/ekofisk/",
+        "label": "Source"
+      },
+      {
+        "text": "Twice a day the North Sea uncovers the Wadden Sea mudflats. Migrating birds stop there in their millions to feed on the animals in the exposed sediment.",
+        "source": "https://whc.unesco.org/en/list/1314/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "sea-of-okhotsk",
+    "name": "Sea of Okhotsk",
+    "options": [
+      {
+        "text": "Sea ice forms as far south as Japan here. Fresh water from the Amur makes a surface layer that can freeze before the saltier water underneath.",
+        "source": "https://www.env.go.jp/nature/isan/worldheritage/english/shiretoko/ice.html",
+        "label": "Source"
+      },
+      {
+        "text": "The drift ice off Shiretoko helps feed bears on land. Winter mixing supplies nutrients for spring plankton, which feed a food web that sends salmon up forest streams.",
+        "source": "https://www.env.go.jp/nature/isan/worldheritage/en/shiretoko/uiversal/index.html",
+        "label": "Source"
+      },
+      {
+        "text": "Off Sakhalin Island, western gray whales return in summer and autumn to feed on animals living on the seabed. This stretch of the Sea of Okhotsk is a vital feeding ground for them.",
+        "source": "https://cd2-www.fisheries.noaa.gov/s3/2023-03/2023-Gray-Whale-WNP-DPS-5-Year-Review_508-compliant.pdf",
+        "label": "NOAA"
+      }
+    ]
   }
 ]
