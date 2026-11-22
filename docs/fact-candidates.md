@@ -28,8 +28,10 @@ Gulf of California A (vaquita) and Black Sea A (Greek shipwreck) are on the card
 | Dead Sea | Some of the black bitumen used to embalm Egyptian mummies came from the Dead Sea. Researchers have traced the material in mummy samples back to its source. [Archaeometry](https://doi.org/10.1111/j.1475-4754.2012.00713.x) |
 | Danube | Some Danube water reaches the North Sea. In southern Germany it sinks into limestone, resurfaces in a spring, and joins the Rhine. The main Danube continues east to the Black Sea. [Swabian Alb Geopark](https://www.geopark-alb.de/en/experience-geopark/journey-into-earths-history/detail/the-danube-seepage) |
 
-## Lake Taupō · awaiting selection
+## Lake Taupō · C selected
 
 - **A.** A magnitude-5.7 earthquake beneath Lake Taupō in 2022 sent two small tsunamis across this inland lake. [GNS Science](https://www.gns.cri.nz/assets/About-us/About-us-files/Annual-Reports/AR-2023-Part-1-Highlights.pdf)
 - **B.** At Mine Bay, a 14-metre face looks out over the lake. Matahi Brightwell led the carving of his ancestor Ngātoroirangi into a cliff reached by water; the work took four years. [Destination Great Lake Taupō](https://www.lovetaupo.com/en/see-do/art-maori-culture/mine-bay-maori-rock-carvings/)
 - **C.** Ngāti Tūwharetoa fishers lowered bundles of bracken fern to the lakebed. Freshwater crayfish sheltered among the fronds, and the fishers lifted the bundles into their canoes. [Earth Sciences New Zealand](https://niwa.co.nz/te-kuwaha-and-maori/monitoring-koura/background-traditional-and-modern-use-tau-koura)
+
+The complete current shortlist and private review controls are on the local [fact review page](http://127.0.0.1:4387/fact-review.html).
