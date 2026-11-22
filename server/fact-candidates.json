@@ -46,19 +46,19 @@
     "name": "Gulf of Mexico",
     "options": [
       {
-        "text": "The gulf has pools on its own seafloor. In one, researchers saw mussels and a trail on the slope where dense brine appeared to have run downhill into the pool.",
-        "source": "https://oceanexplorer.noaa.gov/multimedia/daily-image-media-20211002/",
-        "label": "NOAA expedition photograph"
+        "text": "At Flower Garden Banks, divers can predict which corals will spawn on a given night. About a week after the August full moon, different species release their eggs and sperm in turn.",
+        "source": "https://flowergarden.noaa.gov/education/spawningobservations.html",
+        "label": "NOAA"
       },
       {
-        "text": "The asteroid that struck Mexico 66 million years ago shook the far side of the gulf hard enough to collapse part of Florida’s underwater escarpment.",
-        "source": "https://www.usgs.gov/publications/bolide-impact-effects-west-florida-platform-gulf-mexico-end-cretaceous-and-late-eocene",
-        "label": "US Geological Survey"
+        "text": "For years the gulf’s Rice’s whales were identified as Bryde’s whales. The intact skull of a whale stranded in 2019 helped researchers show that a separate species had been swimming here all along.",
+        "source": "https://www.fisheries.noaa.gov/southeast/marine-mammal-protection/how-unique-population-brydes-whales-became-rices-whale",
+        "label": "NOAA Fisheries"
       },
       {
-        "text": "Off Alabama, you can dive to the remains of a cypress forest. Its trees grew beside a river nearly 60,000 years ago; rising seas eventually covered them.",
-        "source": "https://oceanexplorer.noaa.gov/expedition/20ancient-forest/",
-        "label": "NOAA expedition"
+        "text": "Surrounded by salt water in the Dry Tortugas, Fort Jefferson doubled as a rain collector. After repairs to the brickwork, less than a quarter-inch of rain sent a stream of fresh water toward the cisterns.",
+        "source": "https://pubs.nps.gov/eTIC/DEWA-EUON/DRTO_364_116644_0001_of_0223.pdf",
+        "label": "National Park Service"
       }
     ]
   },
@@ -1915,19 +1915,19 @@
     "name": "East China Sea",
     "options": [
       {
-        "text": "In winter, a pale tongue stretches across the Yangtze Bank. Much of what shows up in satellite images is sediment stirred from the shallow bottom.",
-        "source": "https://science.nasa.gov/earth/earth-observatory/a-wintery-tongue-of-sediment-91325/",
-        "label": "NASA"
+        "text": "In 2019 a crew paddled a dugout canoe from Taiwan to Yonaguni to test how early voyagers might have crossed. It took just over 45 hours, with the island below the horizon for most of the trip.",
+        "source": "https://www.kahaku.go.jp/research/activities/special/koukai/en/",
+        "label": "National Museum of Nature and Science, Japan"
       },
       {
-        "text": "Drilling in the Okinawa Trough found hot water travelling sideways through buried rock. Sealing layers trap the water at several levels beneath the seafloor.",
-        "source": "https://www.jamstec.go.jp/chikyu/e/exp331/findings.html",
-        "label": "Source"
+        "text": "Off Jeju, haenyeo divers gather abalone and sea urchins on a single breath. When they surface, you can hear the distinctive sound they make as they take in air for the next dive.",
+        "source": "https://ich.unesco.org/en/RL/culture-of-jeju-haenyeo-female-divers-01068",
+        "label": "UNESCO"
       },
       {
-        "text": "The Kuroshio brings more than warm water to the edge of the continental shelf. Where it pushes onto the shelf, researchers found changes in both the abundance and variety of microscopic algae.",
-        "source": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024JC021337",
-        "label": "Source"
+        "text": "Where the Yangtze empties into the East China Sea, divers found a wooden Qing-era merchant vessel. In the murky estuary, one of the few photographs they could take showed porcelain still sitting in rows.",
+        "source": "https://service.shanghai.gov.cn/sheninfo/specialdetail.aspx?Id=37d266f1-16ae-431f-a3df-c137bac5e890",
+        "label": "Shanghai Municipal Government"
       }
     ]
   },
