@@ -479,11 +479,6 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
           Select map center
         </button>
       )}
-      {props.active && (
-        <div className="map-crosshair" aria-hidden="true">
-          +
-        </div>
-      )}
       <div className="map-legend">
         <span
           className={

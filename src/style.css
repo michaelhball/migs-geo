@@ -353,16 +353,6 @@ main {
   color: inherit;
   text-decoration: none;
 }
-.map-crosshair {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 400;
-  color: #52645c55;
-  font: 22px monospace;
-  pointer-events: none;
-}
 .center-select {
   position: absolute;
   right: 15px;
