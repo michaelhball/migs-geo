@@ -81,6 +81,10 @@ async function api(req, res, url) {
   const largeInput = p === "/api/restore" || p === "/api/places" || p.startsWith("/api/places/");
   const limit = largeInput ? 40 * 1024 * 1024 : 256 * 1024;
   const input = ["POST", "PATCH", "PUT"].includes(m) ? await body(req, limit) : {};
+  if (p === "/api/fact-review" && m === "GET") return json(res, store.editorial.list());
+  if (p === "/api/fact-review/publish" && m === "POST") return json(res, store.editorial.publish());
+  const factPlace = p.match(/^\/api\/fact-review\/([\w-]+)$/);
+  if (factPlace && m === "PUT") return json(res, store.editorial.save(factPlace[1], input));
   if (p === "/api/health" && m === "GET")
     return json(res, {
       ok: true,
@@ -270,7 +274,7 @@ const server = http.createServer({ headersTimeout: 15000, requestTimeout: 60000 
     });
     createReadStream(file).on("error", () => res.destroy()).pipe(res);
   } catch (e) {
-    json(res, { error: e.message }, e.status === 413 ? 413 : 400);
+    json(res, { error: e.message }, [409,413].includes(e.status) ? e.status : 400);
   }
 });
 server.on("error", (error) => {

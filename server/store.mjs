@@ -9,6 +9,7 @@ import { createStudyLog, validateStudyLog } from "./study-log.mjs";
 import { analytics } from "./analytics.mjs";
 import { studyDay, nextStudyDay, scheduleStudyDay } from "./study-day.mjs";
 
+import { factReview } from "./fact-review.mjs";
 import approvedFacts from "../data/approved-facts.json" with { type: "json" };
 import cityRegions from "./city-regions.json" with {type:"json"};
 import cities from "./cities.json" with {type:"json"};
@@ -263,6 +264,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       throw e;
     }
   };
+  const editorial = factReview(db, tx);
   const settings = () =>
     ({ ...defaults, ...parse(db.prepare("SELECT data FROM settings WHERE id=1").get().data) });
   const scheduler = () =>
@@ -601,10 +603,11 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       next = scheduler().repeat(hydrate(a.card.memory), now);
     studyLog.check(token, answer, a.result);
     a.checked = true;
-    const fact = Object.hasOwn(approvedFacts, p.id) ? approvedFacts[p.id] : undefined;
+    const fact = editorial.current(p.id);
+    const legacyFact = approvedFacts[p.id];
     // Earlier collections appended these facts to notes on both correct and missed answers.
-    const answerPlace = fact && p.info.endsWith(fact.text)
-      ? { ...p, info: p.info.slice(0, -fact.text.length).trimEnd() } : p;
+    const answerPlace = legacyFact?.text && p.info.endsWith(legacyFact.text)
+      ? { ...p, info: p.info.slice(0, -legacyFact.text.length).trimEnd() } : p;
     return {
       ...a.result,
       ...(Object.hasOwn(optionalModes, a.card.mode) && { facts: facts[p.id] }),
@@ -730,6 +733,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     cards: cards(),
     reviews: db.prepare("SELECT * FROM reviews ORDER BY rowid").all(),
     studyLog: studyLog.exportData(),
+    factReview: editorial.backup(),
   });
   function restore(data) {
     if (
@@ -884,6 +888,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         encode(restoredSettings),
       );
       studyLog.restore(logData);
+      editorial.restore(data.factReview ?? []);
     });
     placeCache = undefined;
     attempts.clear();
@@ -910,6 +915,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
   }
   tx(() => installMapPacks(settings()));
   return {
+    editorial,
     health: () => {
       db.prepare("SELECT data FROM settings WHERE id=1").get();
       return {

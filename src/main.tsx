@@ -1233,6 +1233,7 @@ function App() {
               </section>
               <section className="settings-section">
                 <h2>Data</h2>
+                <p><a href="/fact-review.html">Review facts</a></p>
                 <p>
                   Your collection and progress are saved in a SQLite database on
                   this computer. A database backup is made at the first launch

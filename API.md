@@ -114,3 +114,7 @@ The optional `lake` kind installs 511 named inland-water places (1,022 independe
 The marine filter (`water`) includes oceans, seas, gulfs, bays, and straits. The Aral Sea, Caspian Sea, Dead Sea, and Sea of Galilee are classified as `lake`. Together with the optional pack this gives 515 lake places.
 
 For places with an entry in `data/approved-facts.json`, a correct study check includes `placeFact: {text, source}`. Wrong answers, reveals and self-graded checks omit this field.
+
+## Fact review
+
+Open `/fact-review.html` or use `GET /api/fact-review` for candidates, current card facts, drafts and private comments. Update one place with `PUT /api/fact-review/:id` and its current `revision`, candidate `choice` ID (or null), `comment` and boolean `hold`. Stale revisions return 409. `POST /api/fact-review/publish {}` atomically publishes selected, unheld changes to SQLite. Repeating publication is safe. Comments stay in the review record. Full collection backups include the private decisions. Add researched candidates to `server/fact-candidates.json`; changed wording receives a new choice ID and requires reselection before publication.

@@ -769,3 +769,23 @@ test("lake names accept the geographic term on either end", () => {
   for (const text of ["Lake Hammer","Lake","Lake Huron"])
     assert.equal(checkAnswer(lake,"identify",{text}).correct,false);
 });
+
+test("fact drafts, follow-ups and publication are independent of schedules", () => {
+  const s=createStore(":memory:",atlas);
+  try {
+    const review=s.editorial, item=review.list().find(p=>p.id==="aral-sea");
+    assert.equal(item.options.length,3);
+    const fields={choice:item.options[0].id,comment:"Please shorten",hold:true};
+    review.save(item.id,{...fields,revision:0});
+    assert.throws(()=>review.save(item.id,{...fields,revision:0}),/changed/);
+    assert.deepEqual(review.publish().applied,[]);
+    review.save(item.id,{...fields,hold:false,revision:1});
+    assert.equal(review.current(item.id),null);
+    assert.deepEqual(review.publish().applied,[item.id]);
+    assert.deepEqual(review.publish().applied,[]);
+    const saved=s.exportData();s.restore(saved);
+    assert.deepEqual(s.editorial.backup(),saved.factReview);
+    const q=s.question({practice:true,placeId:item.id,mode:"identify"});
+    assert.equal(s.check(q.token,{text:"Aral Sea"}).placeFact.text,item.options[0].text);
+  } finally {s.db.close()}
+});

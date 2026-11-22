@@ -1,0 +1,233 @@
+[
+  {
+    "id": "denmark-strait",
+    "name": "Denmark Strait",
+    "options": [
+      {
+        "text": "Earth’s largest waterfall is underwater between Greenland and Iceland. Cold Nordic water sinks beneath warmer water and spills down a drop in the seabed.",
+        "source": "https://oceanservice.noaa.gov/facts/largest-waterfall.html",
+        "label": "NOAA"
+      },
+      {
+        "text": "In 1941, HMS Hood sank here during a 16-minute battle with the Bismarck. Only three of the 1,415 people aboard survived.",
+        "source": "https://www.royalnavy.mod.uk/news/2026/may/26/20260528-85th-anniversary-of-the-sinking-of-hms-hood-marked-with-special-memorial-service",
+        "label": "Royal Navy"
+      },
+      {
+        "text": "Instruments between Greenland and Iceland have measured pulses of deep water sweeping through roughly every five days. Even the current at the bottom of this strait has a rhythm.",
+        "source": "https://journals.ametsoc.org/view/journals/phoc/47/12/jpo-d-17-0129.1.xml",
+        "label": "Journal of Physical Oceanography"
+      }
+    ]
+  },
+  {
+    "id": "gulf-of-california",
+    "name": "Gulf of California",
+    "options": [
+      {
+        "text": "The vaquita lives only in the northern Gulf of California. No other whale, dolphin, or porpoise has such a small range.",
+        "source": "https://www.fisheries.noaa.gov/species/vaquita/resources",
+        "label": "NOAA Fisheries"
+      },
+      {
+        "text": "More than 3½ km beneath the gulf, a research robot filmed what looks like an upside-down waterfall. Hot vent fluid rises and spills around a rock overhang.",
+        "source": "https://www.youtube.com/watch?v=6kBN5zLtKkA",
+        "label": "MBARI expedition footage"
+      },
+      {
+        "text": "Some islands here were once joined to the mainland by land bridges. On others, wildlife had to arrive by sea or air.",
+        "source": "https://whc.unesco.org/en/list/1182/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "gulf-of-mexico",
+    "name": "Gulf of Mexico",
+    "options": [
+      {
+        "text": "The gulf has pools on its own seafloor. In one, researchers saw mussels and a trail on the slope where dense brine appeared to have run downhill into the pool.",
+        "source": "https://oceanexplorer.noaa.gov/multimedia/daily-image-media-20211002/",
+        "label": "NOAA expedition photograph"
+      },
+      {
+        "text": "The asteroid that struck Mexico 66 million years ago shook the far side of the gulf hard enough to collapse part of Florida’s underwater escarpment.",
+        "source": "https://www.usgs.gov/publications/bolide-impact-effects-west-florida-platform-gulf-mexico-end-cretaceous-and-late-eocene",
+        "label": "US Geological Survey"
+      },
+      {
+        "text": "Off Alabama, you can dive to the remains of a cypress forest. Its trees grew beside a river nearly 60,000 years ago; rising seas eventually covered them.",
+        "source": "https://oceanexplorer.noaa.gov/expedition/20ancient-forest/",
+        "label": "NOAA expedition"
+      }
+    ]
+  },
+  {
+    "id": "black-sea",
+    "name": "Black Sea",
+    "options": [
+      {
+        "text": "A Greek trading ship survived intact more than two kilometres beneath the Black Sea. The deep water lacks oxygen, allowing even ancient wood to survive.",
+        "source": "https://www.southampton.ac.uk/smmi/news/2018/11/02-worlds-oldest-shipwreck-discovered.page",
+        "label": "University of Southampton"
+      },
+      {
+        "text": "The sea has a second, ancient coastline. Researchers have mapped prehistoric shorelines about 150 metres beneath today’s surface.",
+        "source": "https://digitalcommons.uri.edu/oce_facpubs/59/",
+        "label": "University of Rhode Island"
+      },
+      {
+        "text": "The Black Sea can look turquoise from space. Blooms of microscopic plankton covered in chalky plates can turn the surface milky blue.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/a-turquoise-tint-for-the-black-sea/",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "aral-sea",
+    "name": "Aral Sea",
+    "options": [
+      {
+        "text": "Part of the old lakebed now has a desert name of its own, the Aralkum. Wind picks up dust where there used to be water.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/dunes-and-desert-replace-the-aral-sea-152887/",
+        "label": "NASA satellite imagery"
+      },
+      {
+        "text": "Kazakhstan helped save part of the lake by dividing it. The Kok-Aral Dam held river water in the northern basin, and the water level there rose.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/north-aral-sea-recovery-7645/",
+        "label": "NASA before-and-after imagery"
+      },
+      {
+        "text": "Rebirth Island lost the one thing that made it an island. Satellite images from 2000 and 2001 show the lake retreating until a land bridge connected it to the mainland.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/rebirth-island-joins-the-mainland-1706/",
+        "label": "NASA satellite comparison"
+      }
+    ]
+  },
+  {
+    "id": "bosnia-and-herzegovina",
+    "name": "Bosnia and Herzegovina",
+    "options": [
+      {
+        "text": "Vjetrenica Cave breathes with the seasons. Stand at its mouth in warm weather and air blows out toward you. In cold weather it flows the other way.",
+        "source": "https://whc.unesco.org/en/decisions/8596",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Look closely at the region’s medieval gravestones, called stećci, and you can find people dancing, hunting, and jousting.",
+        "source": "https://whc.unesco.org/document/141702",
+        "label": "UNESCO nomination evaluation"
+      },
+      {
+        "text": "A medieval Jewish manuscript survived World War II in Bosnia. Sarajevo’s National Museum recounts that it was sheltered in a mosque in a mountain village, then returned to the museum.",
+        "source": "https://zemaljskimuzej.ba/en/item/sarajevo-haggadah/",
+        "label": "National Museum of Bosnia and Herzegovina"
+      }
+    ]
+  },
+  {
+    "id": "serbia",
+    "name": "Serbia",
+    "options": [
+      {
+        "text": "At Lepenski Vir on the Danube, prehistoric sculptors carved monumental stone faces with fishlike features. You can still see the sculptures today.",
+        "source": "https://www.narodnimuzej.rs/prehistory/lepenski-vir-collection/?lang=en",
+        "label": "National Museum of Serbia"
+      },
+      {
+        "text": "On the Serbian bank of the Danube, engineers moved a Roman inscription and a piece of the road it commemorates uphill so a hydroelectric dam would not drown them.",
+        "source": "https://www.old.serbia.travel/en/see-serbia/culture/archaeological-sites/tabula-traiana",
+        "label": "Tourism Organisation of Serbia"
+      },
+      {
+        "text": "At a Serbian family’s slava, the celebration of its patron saint, a special loaf is marked with a cross, sprinkled with wine, and broken four ways.",
+        "source": "https://www.old.serbia.travel/en/see-serbia/culture/unesco-lists/intangible-cultural-heritage",
+        "label": "Tourism Organisation of Serbia"
+      }
+    ]
+  },
+  {
+    "id": "namibia",
+    "name": "Namibia",
+    "options": [
+      {
+        "text": "Some sand in Namibia’s coastal dunes travelled thousands of kilometres to get there, carried first by a river, then by ocean currents, and finally by wind.",
+        "source": "https://whc.unesco.org/en/list/1430/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Fog is the main source of water for life in the Namib Sand Sea. That bank of fog rolling in from the Atlantic helps sustain animals in the dunes.",
+        "source": "https://whc.unesco.org/en/list/1430/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Follow the narrow finger in Namibia’s northeast and you reach the Zambezi. An 1890 agreement between Britain and Germany drew that corridor to give the colony access to the river.",
+        "source": "https://library.law.fsu.edu/Digital-Collections/LimitsinSeas/pdf/ibs123.pdf",
+        "label": "International Boundary Study"
+      }
+    ]
+  },
+  {
+    "id": "dead-sea",
+    "name": "Dead Sea",
+    "options": [
+      {
+        "text": "Some of the black bitumen used to embalm Egyptian mummies came from the Dead Sea. Researchers have traced the material in mummy samples back to its source.",
+        "source": "https://doi.org/10.1111/j.1475-4754.2012.00713.x",
+        "label": "Archaeometry"
+      },
+      {
+        "text": "The Jordan River flows into the Dead Sea, but no river flows out. Water escapes by evaporation, leaving salts behind.",
+        "source": "https://www.esa.int/media/dead-sea-middle-east",
+        "label": "ESA"
+      },
+      {
+        "text": "The neat rectangles visible from space at the southern end of the Dead Sea are evaporation ponds for harvesting minerals.",
+        "source": "https://www.esa.int/media/dead-sea-middle-east",
+        "label": "ESA"
+      }
+    ]
+  },
+  {
+    "id": "river-danube",
+    "name": "Danube",
+    "options": [
+      {
+        "text": "Some Danube water reaches the North Sea. In southern Germany it sinks into limestone, resurfaces in a spring, and joins the Rhine. The main Danube continues east to the Black Sea.",
+        "source": "https://www.geopark-alb.de/en/experience-geopark/journey-into-earths-history/detail/the-danube-seepage",
+        "label": "Swabian Alb Geopark"
+      },
+      {
+        "text": "Float downstream and the Danube takes you past four national capitals in order: Vienna, Bratislava, Budapest and Belgrade.",
+        "source": "https://www.icpdr.org/danube-basin/danube-river-basin/danube-river-basin-overview-map",
+        "label": "International Commission for the Protection of the Danube River"
+      },
+      {
+        "text": "Where the Danube meets the Black Sea, people have used the delta’s reeds to build their houses and fences.",
+        "source": "https://whc.unesco.org/en/documents/6429",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159127099",
+    "name": "Lake Taupō",
+    "options": [
+      {
+        "text": "A magnitude-5.7 earthquake beneath Lake Taupō in 2022 sent two small tsunamis across this inland lake.",
+        "source": "https://www.gns.cri.nz/assets/About-us/About-us-files/Annual-Reports/AR-2023-Part-1-Highlights.pdf",
+        "label": "GNS Science"
+      },
+      {
+        "text": "At Mine Bay, a 14-metre face looks out over the lake. Matahi Brightwell led the carving of his ancestor Ngātoroirangi into a cliff reached by water; the work took four years.",
+        "source": "https://www.lovetaupo.com/en/see-do/art-maori-culture/mine-bay-maori-rock-carvings/",
+        "label": "Destination Great Lake Taupō"
+      },
+      {
+        "text": "Ngāti Tūwharetoa fishers lowered bundles of bracken fern to the lakebed. Freshwater crayfish sheltered among the fronds, and the fishers lifted the bundles into their canoes.",
+        "source": "https://niwa.co.nz/te-kuwaha-and-maori/monitoring-koura/background-traditional-and-modern-use-tau-koura",
+        "label": "Earth Sciences New Zealand"
+      }
+    ]
+  }
+]
