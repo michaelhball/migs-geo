@@ -303,6 +303,11 @@
         "text": "A newly hatched tuatara has a light-sensitive third eye on top of its head. Skin grows over it as the animal matures.",
         "source": "https://blog.doc.govt.nz/2020/08/29/tuatara-tales-from-sealife-kelly-tarltons/",
         "label": "Department of Conservation"
+      },
+      {
+        "text": "The plates beneath New Zealand swap roles. The Pacific Plate dives beneath the North Island, while near the south of the South Island the Australian Plate goes underneath the Pacific Plate.",
+        "source": "https://www.gns.cri.nz/our-science/land-and-marine-geoscience/geology-of-new-zealand/",
+        "label": "gns.cri.nz"
       }
     ]
   },
@@ -1208,6 +1213,11 @@
         "text": "The villages own the land in the National Park of American Samoa. They granted the park service a 50-year lease, keeping the land in Samoan hands.",
         "source": "https://www.nps.gov/npsa/learn/management/",
         "label": "National Park Service"
+      },
+      {
+        "text": "Ships entering Pago Pago sail into the remains of a volcano. Part of its rim collapsed and the sea flooded the opening, leaving Tutuila with a deep harbour ringed by steep slopes.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/tutuila-island-american-samoa-151460/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -1255,6 +1265,11 @@
         "text": "The name Antarctica gives a direction in Greek. It means the place opposite the Arctic.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/antarctica/ay.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Earth's driest continent holds most of its fresh water. Antarctica receives very little precipitation, yet enough snow has accumulated over time to build its enormous ice sheet.",
+        "source": "https://www.bas.ac.uk/about/education-and-schools/antarctic-factsheet/",
+        "label": "bas.ac.uk"
       }
     ]
   },
@@ -2992,6 +3007,11 @@
         "text": "The 1985 Schengen Agreement was signed on a riverboat on the Moselle. The village that gave open borders their name sits where Luxembourg, France and Germany meet.",
         "source": "https://culture.ec.europa.eu/sites/default/files/2020-10/ehl-2013-panel-report_en.pdf",
         "label": "Source"
+      },
+      {
+        "text": "You can cross a land border from Brazil into the European Union. On the far bank of the Oyapock River is French Guiana, an EU region on the South American mainland.",
+        "source": "https://www.cp-rup.com/wp-content/uploads/2026/11/RUP-Livret-Communication-EN.pdf",
+        "label": "cp-rup.com"
       }
     ]
   },
@@ -3013,6 +3033,11 @@
         "text": "In the outer islands of Yap, building a voyaging canoe and learning to navigate it are part of the same tradition. Navigators read the sky and movement of the water on long open-ocean crossings.",
         "source": "https://ich.unesco.org/en/RL/carolinian-wayfinding-and-canoe-making-01735",
         "label": "UNESCO"
+      },
+      {
+        "text": "Micronesia's islands are scattered across an expanse comparable to Australia, but their combined land area is smaller than Rhode Island. Most of what the regional name covers is ocean.",
+        "source": "https://naturalhistory2.si.edu/botany/micronesia/geography.htm",
+        "label": "naturalhistory2.si.edu"
       }
     ]
   },
@@ -3034,6 +3059,11 @@
         "text": "At Lake Ohrid, on the Albanian–North Macedonian border, drillers recovered hundreds of metres of lake mud. The record reaches back about 1.36 million years to when a permanent lake formed.",
         "source": "https://onlinelibrary.wiley.com/doi/full/10.1111/bor.12601",
         "label": "Source"
+      },
+      {
+        "text": "The Balkans are easiest to outline from the sea. The Adriatic, Ionian, Aegean and Black seas mark the peninsula on three sides, while its northern edge runs across land.",
+        "source": "https://cmes.arizona.edu/sites/default/files/2023-07/1.%2520The%2520Balkans%2520-%2520PowerPoint%2520overview_0.pdf",
+        "label": "cmes.arizona.edu"
       }
     ]
   },
@@ -3055,6 +3085,11 @@
         "text": "On Rapa Nui, carvers shaped most moai from relatively soft volcanic tuff. The picks they used were themselves volcanic rock, made of much harder basalt.",
         "source": "https://whc.unesco.org/en/list/715",
         "label": "UNESCO"
+      },
+      {
+        "text": "Three islands mark the corners of the Polynesian Triangle. Join Hawaiʻi, Rapa Nui and Aotearoa New Zealand on a Pacific map and much of Polynesia lies inside.",
+        "source": "https://nzhistory.govt.nz/culture/explorers/polynesian-explorers",
+        "label": "nzhistory.govt.nz"
       }
     ]
   },
@@ -3076,6 +3111,11 @@
         "text": "On Malaita in the Solomon Islands, craftspeople string polished pieces of shell into money. A fieldworker who watched a group making it recorded the songs the women sang as they worked.",
         "source": "https://ich.unesco.org/doc/src/00418-EN.pdf",
         "label": "UNESCO"
+      },
+      {
+        "text": "The island of New Guinea runs across a boundary on regional maps. Its eastern part is Papua New Guinea in Melanesia, while the western part belongs to Indonesia in Southeast Asia.",
+        "source": "https://unsdg.un.org/sites/default/files/2019-12/UNDP_WS_FINAL_UNPS_2018-2022.pdf",
+        "label": "unsdg.un.org"
       }
     ]
   },
@@ -3097,6 +3137,11 @@
         "text": "A map of Sápmi crosses four modern borders. The Sámi homeland spans northern Norway, Sweden and Finland and reaches onto Russia’s Kola Peninsula.",
         "source": "https://samediggi.fi/en/about-us/?lang=en",
         "label": "Source"
+      },
+      {
+        "text": "Denmark is Scandinavian but is off the Scandinavian Peninsula. Part of Finland is on the peninsula alongside Norway and Sweden.",
+        "source": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Earth_from_Space_Scandinavian_Peninsula",
+        "label": "esa.int"
       }
     ]
   },
@@ -3118,6 +3163,11 @@
         "text": "An ocean once lay where the Alps now stand. Its seabed sank between converging plates before their collision pushed up the mountains.",
         "source": "https://www.seismo.ethz.ch/en/knowledge/causes-of-earthquakes/Switzerland/",
         "label": "Source"
+      },
+      {
+        "text": "Europe and Asia share a continuous mainland. The conventional boundary crosses the Ural Mountains, so you can walk from one continent into the other without crossing any sea.",
+        "source": "https://www.ipcc.ch/site/assets/uploads/2020/11/The-Regional-Impact.pdf",
+        "label": "ipcc.ch"
       }
     ]
   },
@@ -3139,6 +3189,11 @@
         "text": "The former connection to Asia was a broad, treeless plain. When ice sheets held more of the world’s water, land now beneath the Bering Strait was dry enough for animals to cross.",
         "source": "https://home.nps.gov/bela/learn/beringia.htm",
         "label": "Source"
+      },
+      {
+        "text": "The world's largest island belongs geographically to North America. Greenland's political ties run east to Denmark, while its nearest large neighbour is Canada.",
+        "source": "https://stat.gl/publ/en/gf/2024/pdf/Greenland%20in%20Figures%202024.pdf",
+        "label": "stat.gl"
       }
     ]
   },
@@ -3160,6 +3215,11 @@
         "text": "High in the Chilean Andes, the air is dry enough for the ALMA telescopes to detect faint millimetre waves from cold clouds in space. Water vapour lower down would absorb much of that signal.",
         "source": "https://www.eso.org/public/teles-instr/alma/",
         "label": "Source"
+      },
+      {
+        "text": "The point on Earth's surface farthest from its centre is in South America. Ecuador's Chimborazo gets a head start over Everest because Earth bulges at the equator.",
+        "source": "https://blogs.loc.gov/maps/2020/11/extremities-of-the-earth-farthest-point-from-the-center-of-the-earth/",
+        "label": "blogs.loc.gov"
       }
     ]
   },
@@ -3181,6 +3241,11 @@
         "text": "Papermaking changed as it travelled across Asia. In the region around Samarkand, makers turned rags into fine paper, adapting a craft that in China had used mulberry and bamboo.",
         "source": "https://en.unesco.org/silkroad/sites/default/files/knowledge-bank-article/vol_IVb%20silk%20road_arts%20and%20crafts%20BIS.pdf",
         "label": "UNESCO"
+      },
+      {
+        "text": "Asia holds both ends of the land elevation scale. Everest's summit and the exposed shore of the Dead Sea are separated vertically by more than nine kilometres.",
+        "source": "https://www.guinnessworldrecords.com/world-records/90155-largest-vertical-extent",
+        "label": "guinnessworldrecords.com"
       }
     ]
   },
@@ -3202,6 +3267,11 @@
         "text": "The chain of long lakes in eastern Africa marks a continent slowly pulling apart. Water has collected in the deep valleys formed as the crust stretched and faulted.",
         "source": "https://science.nasa.gov/photojournal/east-african-rift/",
         "label": "NASA"
+      },
+      {
+        "text": "Africa is the only continent crossed by the equator, both tropics and the prime meridian. You can find all four of those lines on a single outline of its mainland.",
+        "source": "https://anrseb.gov.et/Backup%20dec%202021/wp-content/uploads/Old_Text_Books/Grade11/Grade11_Geography_Textbook.pdf",
+        "label": "anrseb.gov.et"
       }
     ]
   },
@@ -3223,6 +3293,11 @@
         "text": "Māori voyaging ancestors could keep their bearings even when clouds hid the stars. Ocean swells and wind direction gave navigators another way to hold a course.",
         "source": "https://teara.govt.nz/en/canoe-navigation",
         "label": "Source"
+      },
+      {
+        "text": "A Pacific island's shape can tell you how it formed. Oceania contains steep volcanic high islands as well as low coral atolls that trace the rims of volcanoes now submerged.",
+        "source": "https://education.nationalgeographic.org/resource/oceania-physical-geography/",
+        "label": "education.nationalgeographic.org"
       }
     ]
   },
@@ -3270,6 +3345,11 @@
         "text": "The Blue Mountains contain more than ninety kinds of eucalypt. Their sandstone gullies and plateaux preserve a record of how this one group of trees diversified in Australia.",
         "source": "https://whc.unesco.org/en/list/917/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Australia is the largest country without a land border. You could follow its entire mainland coast without ever crossing into another country.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/as.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3655,6 +3735,11 @@
         "text": "Fiji’s first colonial capital was Levuka on Ovalau. Its old port still follows the beach in a low line of buildings among mango and coconut trees.",
         "source": "https://whc.unesco.org/en/list/1399/",
         "label": "UNESCO"
+      },
+      {
+        "text": "On Taveuni you can step across the 180th meridian between the eastern and western hemispheres. Both feet are still in Fiji, on the same calendar day.",
+        "source": "https://www.fijimarinas.com/wp-content/uploads/2025/09/Soggy-Paws-Fiji-Compendium-Rev-2025.3-%E2%80%93-13-Aug-2025.pdf",
+        "label": "fijimarinas.com"
       }
     ]
   },
@@ -3676,6 +3761,11 @@
         "text": "Highland farmers at Kuk left their oldest field plans buried in a swamp. Their ditches and planting surfaces show that agriculture developed independently in New Guinea thousands of years ago.",
         "source": "https://whc.unesco.org/en/list/887",
         "label": "UNESCO"
+      },
+      {
+        "text": "Follow the long spine of mountains across New Guinea and you cross an international border. Papua New Guinea occupies the eastern part of the island and Indonesia the west.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/pp.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3697,6 +3787,11 @@
         "text": "In lagoons off Malaita, families built islands by bringing pieces of reef rock back in canoes. The ground beneath a village could be the accumulated work of generations.",
         "source": "https://library.sprep.org/sites/default/files/2025-03/Voices-of-the-Pacific.pdf",
         "label": "Source"
+      },
+      {
+        "text": "Marovo Lagoon has two walls facing the ocean. Two roughly parallel lines of barrier reef enclose this Solomon Islands lagoon, an unusual arrangement even among Pacific reefs.",
+        "source": "https://solomonislands.wcs.org/Wild-Places/Marovo-Tetepare-complex",
+        "label": "solomonislands.wcs.org"
       }
     ]
   },
@@ -3718,6 +3813,11 @@
         "text": "On Manihiki, one of the northern atolls, the lagoon serves as a farm. Cultivating oysters for pearls became one of the island’s principal commercial activities.",
         "source": "https://www.linz.govt.nz/sites/default/files/cust/cook-islands_risk_assessment_-_swprhp-web.pdf",
         "label": "Source"
+      },
+      {
+        "text": "The Cook Islands come in two very different groups. The northern islands are low coral atolls, while the south includes the high volcanic island of Rarotonga.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/cw.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3739,6 +3839,11 @@
         "text": "In the outlying islands of Yap State, the craft of building a sailing canoe is passed on alongside the skill of finding land. Navigators learn to read waves, weather and the night sky.",
         "source": "https://ich.unesco.org/en/RL/carolinian-wayfinding-and-canoe-making-01735",
         "label": "UNESCO"
+      },
+      {
+        "text": "Four states share the country's 607 islands. From west to east they are Yap, Chuuk, Pohnpei and Kosrae, strung along the Caroline Islands.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/fm.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3760,6 +3865,11 @@
         "text": "CHamoru sailors built outrigger canoes so fast that European visitors nicknamed them “flying proas.” A large seagoing form is known on Guam as a sakman.",
         "source": "https://guam.com/guides/sakman-chamoru-seafaring",
         "label": "Source"
+      },
+      {
+        "text": "The largest island in all of Micronesia sits at the southern tip of one island chain. Follow the Marianas south and the last island you reach is Guam.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/gq.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3781,6 +3891,11 @@
         "text": "A drawing in sand can cross a language boundary in Vanuatu. Communities speaking dozens of languages have shared a way of tracing patterns to communicate and pass on stories.",
         "source": "https://ich.unesco.org/en/projects/safeguarding-of-vanuatu-sand-drawings-00022",
         "label": "UNESCO"
+      },
+      {
+        "text": "Plot Vanuatu's islands on a map and they form a Y. Some of the volcanoes in that chain never break the surface of the Pacific.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/nh.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3802,6 +3917,11 @@
         "text": "In 1769 James Cook watched Venus cross the face of the Sun from Tahiti. His drawing records the planet as a little black disc against the bright Sun.",
         "source": "https://science.nasa.gov/earth/earth-observatory/cooks-view-of-the-transit-of-venus-78158/",
         "label": "NASA"
+      },
+      {
+        "text": "The Tuamotus form the world's largest group of atolls. This one French Polynesian archipelago contains nearly eighty rings of coral.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/fp.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3823,6 +3943,11 @@
         "text": "Palauan chiefs could declare a bul, closing an area to harvesting so it could recover. That customary practice helped shape the islands’ system of protected waters.",
         "source": "https://sustainabledevelopment.un.org/content/documents/23606VNR_FINAL_21June2019_UN_Version.pdf",
         "label": "Source"
+      },
+      {
+        "text": "Palau's Rock Islands have the world's highest concentration of marine lakes. Many of these pockets of seawater sit entirely inside islands and look like freshwater lakes from above.",
+        "source": "https://whc.unesco.org/en/list/1386",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -3844,6 +3969,11 @@
         "text": "Traditional armour from Kiribati used materials an atoll could supply. A shirt of thick coconut fibre could be worn with a helmet made from the spiny skin of a porcupinefish.",
         "source": "https://smarthistory.org/kiribati-armor",
         "label": "Source"
+      },
+      {
+        "text": "Kiribati has land in all four hemispheres. Its islands lie on both sides of the equator and on both sides of the 180th meridian.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/kr.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3865,6 +3995,11 @@
         "text": "To make a ceremonial dress mat called a jaki-ed, weavers boil and dry a particular kind of pandanus leaf. Beating it releases fibres fine enough to weave into clothing.",
         "source": "https://www.metmuseum.org/art/collection/search/314675",
         "label": "Source"
+      },
+      {
+        "text": "At Kwajalein the lagoon covers roughly a hundred times as much area as the land around it. The enormous outline you see on a map is almost entirely seawater.",
+        "source": "https://documents1.worldbank.org/curated/en/099004002092335806/pdf/P1785440c6c95d02b0827203b8fef367840.pdf",
+        "label": "documents1.worldbank.org"
       }
     ]
   },
@@ -3886,6 +4021,11 @@
         "text": "The Nauruan flag is a miniature map. The line marks the equator, the star sits south of it like the island, and its twelve points recall the traditional tribes.",
         "source": "https://pacific-data.sprep.org/system/files/760a4ffb-7863-4c69-8558-11451e4f7df2/Nauru%2520climate%2520hazards%2520report_FINAL_June%2520revision.pdf",
         "label": "Source"
+      },
+      {
+        "text": "Nauru is the world's smallest island country. The only independent states with less land, Monaco and Vatican City, are both on the European mainland.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/nr.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3907,6 +4047,11 @@
         "text": "New Caledonia’s barrier reefs enclose lagoons with room for dugongs. These plant-eating relatives of manatees live alongside turtles and whales in the reef system.",
         "source": "https://whc.unesco.org/en/list/1115/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Parts of New Caledonia have a double barrier reef. Heading out from the coast, a boat can pass one reef barrier and still have another between it and the open Pacific.",
+        "source": "https://whc.unesco.org/en/list/1115/",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -3928,6 +4073,11 @@
         "text": "A Niuean fisher could head out in a small vaka with an outrigger for stability. A common form carries just one or two people along the coast.",
         "source": "https://collections.tepapa.govt.nz/object/1397423",
         "label": "Source"
+      },
+      {
+        "text": "Almost the entire coast of Niue is ringed by coral reef. The one major break is on the central west coast, where the island faces the afternoon sun.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/ne.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3949,6 +4099,11 @@
         "text": "A Samoan fale can be a home, kitchen or meeting place. In an open-sided fale, the posts carry the roof and the breeze can pass right through the building.",
         "source": "https://www.samoa.travel/samoa-travel-blog/your-guide-to-samoan-fales/",
         "label": "Source"
+      },
+      {
+        "text": "In Samoa, Thursday 29 December 2011 was followed by Saturday 31 December. The country switched sides of the international date line and skipped Friday altogether.",
+        "source": "https://www.ag.gov.ws/wp-content/uploads/2024/02/International-Date-Line-Act-2011.pdf",
+        "label": "ag.gov.ws"
       }
     ]
   },
@@ -3970,6 +4125,11 @@
         "text": "In the 1890s an expedition brought drilling equipment to Funafuti to test how coral atolls form. The layers beneath the island offered a way to investigate a question Darwin had raised.",
         "source": "https://www.sydney.edu.au/content/dam/corporate/documents/university-archives/personal/david-twe.pdf",
         "label": "Source"
+      },
+      {
+        "text": "Tuvalu's nine islands show three different arrangements of water. Six have lagoons open to the ocean, two have enclosed lagoons, and Niulakita has none.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/tv.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3991,6 +4151,11 @@
         "text": "Carolinian master navigators helped keep long-distance canoe voyaging alive in the Northern Marianas after Spanish colonisation disrupted CHamoru seafaring.",
         "source": "https://www.america250cnmi.org/index.php/news/activities/commonwealth-jubilee-day-1-exhibiting-enduring-traditions",
         "label": "Source"
+      },
+      {
+        "text": "The Northern Marianas change rock as you head north. The southern islands have raised limestone platforms over volcanic foundations, while farther north the volcanoes themselves stand above the sea.",
+        "source": "https://pubs.usgs.gov/circ/2005/1286/c1286.pdf",
+        "label": "pubs.usgs.gov"
       }
     ]
   },
@@ -4012,6 +4177,11 @@
         "text": "A Tongan lakalaka is a speech you can watch. Performers stand in rows, singing and clapping while their movements deliver meaning alongside the words.",
         "source": "https://ich.unesco.org/en/RL/lakalaka-dances-and-sung-speeches-of-tonga-00072?RL=00072",
         "label": "UNESCO"
+      },
+      {
+        "text": "Tonga's islands run in two parallel rows with different origins. Volcanoes built the western row, while coral limestone and sand make up the eastern islands.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/tn.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -4033,6 +4203,11 @@
         "text": "On Wallis and Futuna, makers beat the inner bark of the paper mulberry into sheets of tapa. It becomes a cloth that can be painted without weaving a single thread.",
         "source": "https://www.quaibranly.fr/fr/collections/vie-des-collections/actualites/nouvelles-vitrines/tapa-et-textiles-doceanie",
         "label": "Source"
+      },
+      {
+        "text": "On Wallis, the nearly circular lake Lalolalo marks a volcanic crater. Its steep rim encloses a pool of fresh water only a short distance from the surrounding saltwater lagoon.",
+        "source": "https://www.sprep.org/sites/default/files/documents/publications/wallis-futuna-wetlands-directory.pdf",
+        "label": "sprep.org"
       }
     ]
   },
@@ -4054,6 +4229,11 @@
         "text": "The Hawaiian chain records the motion of an ocean plate. Volcanoes grow over a hot spot and are carried northwest, so islands farther along the chain are generally older.",
         "source": "https://www.usgs.gov/geology-and-ecology-of-national-parks/geology-hawaii-volcanoes-national-park",
         "label": "Source"
+      },
+      {
+        "text": "Everest has the higher summit, but Mauna Kea is taller from base to peak. Much of the Hawaiian volcano rises through the Pacific before it ever reaches sea level.",
+        "source": "https://www.usgs.gov/faqs/how-big-are-hawaiian-volcanoes?page=1",
+        "label": "usgs.gov"
       }
     ]
   },
@@ -4075,6 +4255,11 @@
         "text": "In bamboo bands on Bougainville and nearby Buka, players strike tuned tubes with rubber cut from footwear. A worn sandal can find a second life as a musical instrument.",
         "source": "https://rune.une.edu.au/web/bitstream/1959.11/18528/5/open/SOURCE04.pdf",
         "label": "Source"
+      },
+      {
+        "text": "Bougainville is the largest island in the Solomon Islands archipelago, yet it belongs to Papua New Guinea. The political border crosses the island chain rather than enclosing it.",
+        "source": "https://abg.gov.pg/uploads/documents/BDOH_Strategic_Plan_2023-2027_Final.pdf",
+        "label": "abg.gov.pg"
       }
     ]
   },
