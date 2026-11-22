@@ -6,9 +6,11 @@ A local geography study app with an interactive, offline world map and spaced re
 
 ## Run
 
-Requires Node.js 24 or newer.
+With Git and Node.js 24 or newer installed, run these commands in a terminal.
 
 ```sh
+git clone https://github.com/michaelhball/migs-geo.git
+cd migs-geo
 npm ci
 npm run build
 npm start
@@ -22,8 +24,8 @@ Docker is also supported: `docker compose up --build -d --wait`. See [DEPLOYMENT
 
 ## Features
 
-- 319 places from Ultimate Geography, with 638 independent cards: place → map and map → place.
-- Countries, territories/islands, bodies of water, and broader regions/continents enabled by default. No flags or capitals.
+- 320 places in the starting atlas, with independent place → map and map → place cards.
+- Study countries, territories, water and regions. Optional packs and question directions are available in Settings.
 - FSRS-6 scheduling: up to 15 new cards first each day, then due learning and reviews. Both groups are shuffled with a mix of question directions. Each direction has its own schedule, with recall ratings and undo.
 - Up to 200 old cards reviewed per day by default, adjustable in Settings. Short learning and relearning repeats do not count toward this limit; deferred reviews keep their due dates.
 - Study days run from 4am to 4am in the computer's local timezone. Late-night sessions count toward the previous day; day-based rating intervals are shown as whole days.
@@ -56,11 +58,16 @@ The UI uses the same endpoints. An agent can manage the full collection, setting
 
 Personal data is in `data/local/geography.sqlite`, ignored by Git. Backups are under `data/local/backups/`; one SQLite snapshot is created at the first launch each day and before restoring a JSON export. Export a portable backup from Settings or `GET /api/backup`. Keep exports outside the repository or in an ignored `backups/` directory.
 
+A new installation starts with its own study history and settings. The public repository contains the prepared data for the starting atlas and the optional packs. Only rebuilding the underlying maps requires separate source downloads.
+
 Bundled public data:
 
 - `data/notes.json`: public place names, notes, and tags from Ultimate Geography, with independent IDs.
 - `data/places.json`: place metadata and prepared map geometry; used only to initialize a new database.
-- `public/data/world.json`: simplified offline world map.
+- `public/data/` contains the offline world map, inland waters, boundaries and terrain.
+- `server/` includes the city, river, mountain, desert and lake packs, capital data, and researched fact candidates.
+- `public/flags/` contains the flag images and their credits.
+- `data/approved-facts.json` supplies the starting card facts. Further selections and comments save in the local database.
 
 The application uses a canvas map renderer and caches place data in memory. SQLite indexes and transactions handle review state. The checked-in data fits regular Git; Git LFS is unnecessary.
 
