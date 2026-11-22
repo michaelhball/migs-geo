@@ -108,3 +108,5 @@ Optional Geography place types `river` and `range` add Natural Earth paths and a
 Set `settings.cityCountry` to a supported ISO two-letter country code to study up to ten major cities in Geography. An empty string (the default) switches city study off. Changing countries preserves earlier city schedules. City locate answers accept pins within 25 km of the reference point.
 
 The opt-in physical atlas offers 45 named river courses, 36 mountain ranges and 24 desert areas. Choose `river`, `range`, or `desert` in settings.kinds. The bundled geometry comes from Natural Earth; deserts and ranges accept pins inside their mapped area.
+
+The optional `lake` kind installs 511 named inland-water places (1,022 independent locate and identify cards) from the atlas lake layer. Select **Inland lake** under Settings → Place types, or include `lake` in `settings.kinds`. Turning the type off pauses its questions and preserves its cards. Existing water cards such as the Dead Sea and Aral Sea keep their original IDs and schedules.

@@ -11,6 +11,7 @@ import { studyDay, nextStudyDay, scheduleStudyDay } from "./study-day.mjs";
 
 import cityRegions from "./city-regions.json" with {type:"json"};
 import cities from "./cities.json" with {type:"json"};
+import lakePlaces from "./lake-places.json" with {type:"json"};
 import physicalPlaces from "./physical-places.json" with {type:"json"};
 import facts from "./geography-facts.json" with { type: "json" };
 const optionalModes = { capital: "capital", fromCapital: "capital", flag: "flag", fromFlag: "flag" };
@@ -85,7 +86,7 @@ export function validateSettings(s) {
     !Array.isArray(s.kinds) ||
     !s.kinds.length ||
     s.kinds.some(
-      (k) => !["country", "territory", "water", "region","river","range","desert"].includes(k),
+      (k) => !["country", "territory", "water", "region","river","range","desert","lake"].includes(k),
     )
   )
     throw Error("Choose at least one valid place type.");
@@ -309,7 +310,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     )
       throw Error("A valid ID and name (1–160 characters) are required.");
     if (
-      !["country", "territory", "water", "region","river","range","desert","city"].includes(p.kind) ||
+      !["country", "territory", "water", "region","river","range","desert","lake","city"].includes(p.kind) ||
       !Array.isArray(p.aliases) ||
       p.aliases.some((a) => typeof a !== "string") ||
       !Array.isArray(p.tags) ||
@@ -742,7 +743,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         p.tags.some((t) => typeof t !== "string") ||
         !Array.isArray(p.aliases) ||
         p.aliases.some((a) => typeof a !== "string") ||
-        !["country", "territory", "water", "region","river","range","desert","city"].includes(p.kind)
+        !["country", "territory", "water", "region","river","range","desert","lake","city"].includes(p.kind)
       )
         throw Error("Invalid place in backup.");
     }
@@ -879,7 +880,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       source:"Natural Earth populated places", info:"",
       geometry:{type:"Point",coordinates:[lon,lat]}, center:[lon,lat],
     }));
-    for (const p of [...physicalPlaces.filter(p=>s.kinds.includes(p.kind)), ...cityPlaces]) {
+    for (const p of [...physicalPlaces.filter(p=>s.kinds.includes(p.kind)), ...(s.kinds.includes("lake") ? lakePlaces : []), ...cityPlaces]) {
       if ( db.prepare("SELECT id FROM places WHERE id=?").get(p.id)) continue;
       db.prepare("INSERT INTO places VALUES(?,?,0)").run(p.id, encode(p));
       for (const mode of ["locate","identify"]) {

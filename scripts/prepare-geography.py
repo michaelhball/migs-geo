@@ -4,6 +4,7 @@ No Anki database is modified. Source inputs are retained in data/sources.
 """
 import json, math, re, unicodedata
 from map_boundaries import boundaries
+from lake_cards import prepare_lake_cards
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -146,5 +147,8 @@ base['lakes'] = [
 ]
 (ROOT/'public/data/world.json').write_text(json.dumps(base,separators=(',',':')))
 (ROOT/'data/places.json').write_text(json.dumps(deck,ensure_ascii=False,separators=(',',':')))
+lake_cards = prepare_lake_cards(lakes, regions, compact, deck)
+(ROOT/'server/lake-places.json').write_text(json.dumps(lake_cards,ensure_ascii=False,separators=(',',':')))
+print('Prepared',len(lake_cards),'named lake places')
 print('Prepared',len(deck),'places;',sum(x['approximate'] for x in deck),'approximate locations')
 print('Approximate:',[x['name'] for x in deck if x['approximate']])

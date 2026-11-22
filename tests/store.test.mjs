@@ -695,3 +695,45 @@ test("desert cards check interior pins and keep their schedule when switched off
     store.db.close();
   }
 });
+
+test("enabling inland lakes adds both directions, matches the atlas and preserves existing reviews", () => {
+  const store = createStore(":memory:", atlas);
+  try {
+    const original = store.question();
+    store.check(original.token, { reveal: true });
+    store.review(original.token, 3);
+    const reviewed = store.getCard(original.card.id);
+    const initialCount = store.cards().length;
+    assert.ok(!store.settings().kinds.includes("lake"));
+    store.setSettings({ kinds: ["lake"] });
+    const lakes = store.places().filter(p => p.kind === "lake");
+    assert.equal(lakes.length, 511);
+    assert.equal(store.cards().length, initialCount + 2 * lakes.length);
+    assert.deepEqual(store.getCard(reviewed.id), reviewed);
+    const world = JSON.parse(readFileSync(new URL("../public/data/world.json", import.meta.url)));
+    const polygons = new Set(world.lakes.flatMap(b => b.geometry.coordinates.map(p => JSON.stringify(p))));
+    for (const lake of lakes) {
+      validateGeometry(lake.geometry);
+      assert.ok(lake.geometry.coordinates.every(p => polygons.has(JSON.stringify(p))), lake.name);
+      for (const mode of ["locate", "identify"]) assert.ok(store.getCard(lake.id + ":" + mode));
+    }
+    for (const name of ["Dead Sea", "Sea of Galilee", "Aral Sea", "Caspian Sea"])
+      assert.equal(store.places().filter(p => p.name === name).length, 1);
+    const baikal = lakes.find(p => p.name === "Lake Baikal");
+    assert.equal(checkAnswer(baikal, "identify", { text: "Baikal" }).correct, true);
+    assert.equal(checkAnswer(baikal, "locate", { point: [108, 53.5] }).correct, true);
+    assert.equal(checkAnswer(baikal, "locate", { point: [0, 0] }).correct, false);
+    const lakeCard = store.question();
+    assert.equal(lakeCard.card.kind, "lake");
+    store.check(lakeCard.token, { reveal: true });
+    store.review(lakeCard.token, 3);
+    const saved = store.getCard(lakeCard.card.id);
+    store.setSettings({ kinds: ["country"] });
+    store.setSettings({ kinds: ["lake"] });
+    assert.deepEqual(store.getCard(saved.id), saved);
+    store.restore(store.exportData());
+    assert.deepEqual(store.getCard(saved.id).memory, saved.memory);
+  } finally {
+    store.db.close();
+  }
+});

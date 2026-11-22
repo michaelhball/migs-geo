@@ -330,7 +330,7 @@
                     "type": "string"
                   },
                   "kind": {
-                    "enum": ["country", "territory", "water", "region","river","range","desert"]
+                    "enum": ["country", "territory", "water", "region","river","range","desert","lake"]
                   },
                   "region": {
                     "type": "string"
@@ -873,7 +873,7 @@
                         "type": "array",
                         "minItems": 1,
                         "items": {
-                          "enum": ["country", "territory", "water", "region","river","range","desert"]
+                          "enum": ["country", "territory", "water", "region","river","range","desert","lake"]
                         }
                       },
                       "regions": {
@@ -910,7 +910,7 @@
                           "type": "string"
                         },
                         "kind": {
-                          "enum": ["country", "territory", "water", "region","river","range","desert"]
+                          "enum": ["country", "territory", "water", "region","river","range","desert","lake"]
                         },
                         "region": {
                           "type": "string"
@@ -1153,7 +1153,7 @@
             "type": "string"
           },
           "kind": {
-            "enum": ["country", "territory", "water", "region","river","range","desert"]
+            "enum": ["country", "territory", "water", "region","river","range","desert","lake"]
           },
           "region": {
             "type": "string"
@@ -1230,7 +1230,7 @@
             "type": "array",
             "minItems": 1,
             "items": {
-              "enum": ["country", "territory", "water", "region","river","range","desert"]
+              "enum": ["country", "territory", "water", "region","river","range","desert","lake"]
             }
           },
           "regions": {
