@@ -789,3 +789,18 @@ test("fact drafts, follow-ups and publication are independent of schedules", () 
     assert.equal(s.check(q.token,{text:"Aral Sea"}).placeFact.text,item.options[0].text);
   } finally {s.db.close()}
 });
+
+test("a lake cutoff partitions scheduled cards and preserves small-lake reviews", () => {
+  const s=createStore(":memory:",[]);
+  try{
+    s.setSettings({kinds:["lake"],modes:["locate"]});
+    const q=s.question();s.check(q.token,{reveal:true});s.review(q.token,3);
+    const card=s.getCard(q.card.id),index=s.lakeReview();
+    assert.equal(index.cutoff,0);assert.ok(index.lakes.every(l=>Number.isFinite(l.area)&&l.area>0));
+    s.setSettings({lakeCutoffKm2:1000000});
+    assert.equal(s.question().card,null);
+    s.setSettings({kinds:["smallLake"]});assert.ok(s.question().card);
+    assert.deepEqual(s.getCard(card.id),card);
+    s.setSettings({lakeCutoffKm2:0});assert.equal(s.question().card,null);
+  }finally{s.db.close()}
+});

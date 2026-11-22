@@ -81,6 +81,7 @@ async function api(req, res, url) {
   const largeInput = p === "/api/restore" || p === "/api/places" || p.startsWith("/api/places/");
   const limit = largeInput ? 40 * 1024 * 1024 : 256 * 1024;
   const input = ["POST", "PATCH", "PUT"].includes(m) ? await body(req, limit) : {};
+  if (p === "/api/lake-review" && m === "GET") return json(res, store.lakeReview());
   if (p === "/api/fact-review" && m === "GET") return json(res, store.editorial.list());
   if (p === "/api/fact-review/publish" && m === "POST") return json(res, store.editorial.publish());
   const factPlace = p.match(/^\/api\/fact-review\/([\w-]+)$/);

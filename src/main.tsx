@@ -1119,7 +1119,7 @@ function App() {
                     </small>
                   </span>
                   <div className="checkbox-stack">
-                    {Object.entries(kindNames).map(([key, label]) => (
+                    {Object.entries({...kindNames, smallLake:"Small lakes"}).map(([key, label]) => (
                       <label key={key}>
                         <input
                           type="checkbox"
@@ -1233,7 +1233,7 @@ function App() {
               </section>
               <section className="settings-section">
                 <h2>Data</h2>
-                <p><a href="/fact-review.html">Review facts</a></p>
+                <p><a href="/fact-review.html">Review facts</a> · <a href="/lake-review.html">Review lake sizes and cutoff</a></p>
                 <p>
                   Your collection and progress are saved in a SQLite database on
                   this computer. A database backup is made at the first launch

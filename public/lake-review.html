@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lake review · Migs Geo</title><link rel="stylesheet" href="/review.css"><script type="module" src="/lake-review.js"></script></head>
+<body><main><a href="/settings">← Settings</a><h1>Lake review</h1>
+<p>Areas are estimates from the atlas shorelines. Seasonal water levels and the date of the map can affect them.</p>
+<article><h2>Study cutoff</h2><form id="cutoff-form"><div class="controls"><label>Minimum area (km²)<input id="cutoff" type="number" min="0" step="any" required></label><button>Apply cutoff</button></div>
+<p id="preview" aria-live="polite"></p><small id="saved" role="status"></small></form></article>
+<div class="controls"><label>Find a lake or country<input id="search" type="search"></label>
+<label>Show<select id="group"><option value="">All lakes</option><option>Inland lakes</option><option>Small lakes</option></select></label>
+<label>Order<select id="sort"><option value="largest">Largest first</option><option value="smallest">Smallest first</option><option value="name">Name</option></select></label></div>
+<p id="summary" role="status">Loading…</p><div class="scroll"><table><thead><tr><th>Lake</th><th>Location</th><th>Area (km²)</th><th>Preview group</th></tr></thead><tbody></tbody></table></div>
+<small>Country hints use sampled shoreline points and the atlas boundaries. Shared lakes can appear under multiple countries.</small></main></body></html>

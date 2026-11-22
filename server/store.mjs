@@ -13,12 +13,15 @@ import { factReview } from "./fact-review.mjs";
 import approvedFacts from "../data/approved-facts.json" with { type: "json" };
 import cityRegions from "./city-regions.json" with {type:"json"};
 import cities from "./cities.json" with {type:"json"};
+import {areaKm2} from "./lake-area.mjs";
+import lakeLocations from "./lake-locations.json" with {type:"json"};
 import lakePlaces from "./lake-places.json" with {type:"json"};
 import physicalPlaces from "./physical-places.json" with {type:"json"};
 import facts from "./geography-facts.json" with { type: "json" };
 const optionalModes = { capital: "capital", fromCapital: "capital", flag: "flag", fromFlag: "flag" };
 const modes = ["locate", "identify", ...Object.keys(optionalModes)];
 export const defaults = {
+  lakeCutoffKm2: 0,
   cityCountry: "",
   activeDeck: "geography",
   newPerDay: 15,
@@ -75,7 +78,8 @@ export function validateGeometry(g) {
   return g;
 }
 export function validateSettings(s) {
-  s = { cityCountry:"", activeDeck: "geography", reviewsPerDay: defaults.reviewsPerDay, ...s };
+  s = { lakeCutoffKm2:0, cityCountry:"", activeDeck: "geography", reviewsPerDay: defaults.reviewsPerDay, ...s };
+  if (!Number.isFinite(s.lakeCutoffKm2) || s.lakeCutoffKm2 < 0) throw Error("Lake cutoff must be a nonnegative area in km².");
   if (s.cityCountry !== "" && (typeof s.cityCountry !== "string" || !Object.hasOwn(cities, s.cityCountry))) throw Error("Unknown city country.");
   if (!["geography","flags"].includes(s.activeDeck)) throw Error("Invalid deck.");
   if (!Number.isInteger(s.newPerDay) || s.newPerDay < 0 || s.newPerDay > 500)
@@ -88,7 +92,7 @@ export function validateSettings(s) {
     !Array.isArray(s.kinds) ||
     !s.kinds.length ||
     s.kinds.some(
-      (k) => !["country", "territory", "water", "region","river","range","desert","lake"].includes(k),
+      (k) => !["country", "territory", "water", "region","river","range","desert","lake","smallLake"].includes(k),
     )
   )
     throw Error("Choose at least one valid place type.");
@@ -415,10 +419,11 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     const allCards = cards();
     const eligible = allCards.filter((c) => {
       const p = ps.get(c.place_id);
+      const filterKind = p.kind === "lake" && areaKm2(p.geometry) < s.lakeCutoffKm2 ? "smallLake" : p.kind;
       return (
         !c.suspended &&
         !p.archived &&
-        (p.kind === "city" ? !!s.cityCountry && p.countryCode === s.cityCountry : s.kinds.includes(p.kind)) &&
+        (p.kind === "city" ? !!s.cityCountry && p.countryCode === s.cityCountry : s.kinds.includes(filterKind)) &&
         s.modes.includes(c.mode) &&
         isFlag(c.mode) === (s.activeDeck === "flags") &&
         (!s.regions.length || s.regions.includes(p.region)) &&
@@ -902,7 +907,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       source:"Natural Earth populated places", info:"",
       geometry:{type:"Point",coordinates:[lon,lat]}, center:[lon,lat],
     }));
-    for (const p of [...physicalPlaces.filter(p=>s.kinds.includes(p.kind)), ...(s.kinds.includes("lake") ? lakePlaces : []), ...cityPlaces]) {
+    for (const p of [...physicalPlaces.filter(p=>s.kinds.includes(p.kind)), ...(s.kinds.some(k => k === "lake" || k === "smallLake") ? lakePlaces : []), ...cityPlaces]) {
       if ( db.prepare("SELECT id FROM places WHERE id=?").get(p.id)) continue;
       db.prepare("INSERT INTO places VALUES(?,?,0)").run(p.id, encode(p));
       for (const mode of ["locate","identify"]) {
@@ -916,6 +921,16 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
   tx(() => installMapPacks(settings()));
   return {
     editorial,
+    lakeReview: () => {
+      const candidates = new Map(lakePlaces.map(p => [p.id,p]));
+      for (const p of places()) {
+        if (p.kind === "lake" && !p.archived) candidates.set(p.id,p);
+        else candidates.delete(p.id);
+      }
+      return {cutoff:settings().lakeCutoffKm2, lakes:[...candidates.values()].map(p => ({
+        id:p.id,name:p.name,region:p.region,countries:lakeLocations[p.id] ?? [],area:areaKm2(p.geometry),
+      }))};
+    },
     health: () => {
       db.prepare("SELECT data FROM settings WHERE id=1").get();
       return {

@@ -118,3 +118,7 @@ For places with an entry in `data/approved-facts.json`, a correct study check in
 ## Fact review
 
 Open `/fact-review.html` or use `GET /api/fact-review` for candidates, current card facts, drafts and private comments. Update one place with `PUT /api/fact-review/:id` and its current `revision`, candidate `choice` ID (or null), `comment` and boolean `hold`. Stale revisions return 409. `POST /api/fact-review/publish {}` atomically publishes selected, unheld changes to SQLite. Repeating publication is safe. Comments stay in the review record. Full collection backups include the private decisions. Add researched candidates to `server/fact-candidates.json`; changed wording receives a new choice ID and requires reselection before publication.
+
+## Lake review
+
+Open `/lake-review.html` or query `GET /api/lake-review` to review the bundled lakes, estimated areas in square kilometres, and approximate country hints. Previewing a cutoff is read-only. Apply it with `PATCH /api/settings {"lakeCutoffKm2":500}`. A lake with area equal to or above the cutoff uses `lake`; one below uses `smallLake`. These are independent queue filters. Lake places retain their original kind, IDs and scheduling. A zero cutoff includes all sizes under Inland lakes.
