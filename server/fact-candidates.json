@@ -4408,5 +4408,1034 @@
         "label": "publicdata.npolar.no"
       }
     ]
+  },
+  {
+    "id": "turkey",
+    "name": "Turkey",
+    "options": [
+      {
+        "text": "At Göbekli Tepe, hunter-gatherers raised monumental T-shaped pillars and carved wild animals into them roughly eleven thousand years ago.",
+        "source": "https://whc.unesco.org/en/list/1572/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Karagöz shadow theatre, a puppeteer lights translucent figures from behind. The quarrels between Karagöz and Hacivat play out on a screen.",
+        "source": "https://ich.unesco.org/en/RL/00180",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Sardis was the capital of Lydia, a kingdom associated with some of the earliest coins. Its rulers lie beneath huge burial mounds nearby.",
+        "source": "https://whc.unesco.org/en/list/1731/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "cyprus",
+    "name": "Cyprus",
+    "options": [
+      {
+        "text": "In a Cypriot tsiattista duel the competitors improvise verses at each other. A quick answer has to fit the rhythm as well as land its point.",
+        "source": "https://ich.unesco.org/en/RL/00536",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The plain exteriors of churches in the Troodos Mountains hide walls covered in Byzantine paintings.",
+        "source": "https://whc.unesco.org/en/list/351/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Lefkara, needleworkers build lace patterns by drawing threads out of linen and embroidering directly into the open spaces.",
+        "source": "https://ich.unesco.org/en/RL/00255",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "kazakhstan",
+    "name": "Kazakhstan",
+    "options": [
+      {
+        "text": "In Kazakh orteke a musician plays a two-stringed dombyra while strings on the same hand make a wooden mountain goat dance on a drum.",
+        "source": "https://ich.unesco.org/en/RL/01878",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Birds flying from Africa and South Asia to breed in Siberia can meet at the same stopover, the lakes of Kazakhstan's northern steppe.",
+        "source": "https://whc.unesco.org/en/list/1102/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The pieces in the Kazakh game of assyk come from sheep. Players flick an ankle bone to knock other bones out of position.",
+        "source": "https://ich.unesco.org/en/RL/01086",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "bahrain",
+    "name": "Bahrain",
+    "options": [
+      {
+        "text": "Parts of western Bahrain are covered in prehistoric burial mounds. Nearly 12,000 survive in the listed fields, and some royal tombs had two storeys.",
+        "source": "https://whc.unesco.org/en/list/1542/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Bahrain's pearling crews left behind a musical tradition called fjiri. Among its percussion instruments is a clay pot.",
+        "source": "https://ich.unesco.org/en/RL/01747",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Four thousand years ago the island was a trading hub of Dilmun. Its prosperity can still be read in the elaborate tombs facing the desert.",
+        "source": "https://whc.unesco.org/en/list/1542/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "bangladesh",
+    "name": "Bangladesh",
+    "options": [
+      {
+        "text": "In Dhaka, a pedal rickshaw doubles as a moving painting. Artists decorate the vehicles by hand, turning ordinary journeys into a street exhibition.",
+        "source": "https://ich.unesco.org/en/RL/01589",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Jamdani weavers create motifs as they weave the cloth, adding individual threads into fine cotton by hand.",
+        "source": "https://ich.unesco.org/en/RL/00879",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Dhaka's Bengali New Year procession grew out of an initiative by art students. Large colourful figures move through the streets with the marchers.",
+        "source": "https://ich.unesco.org/en/RL/01091",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "brunei",
+    "name": "Brunei",
+    "options": [
+      {
+        "text": "In Kampong Ayer much of town life takes place above the Brunei River. Homes stand on stilts and people get around by walkways and water taxis.",
+        "source": "https://www.bruneitourism.com/places/kampong-ayer/",
+        "label": "www.bruneitourism.com"
+      },
+      {
+        "text": "A strip of Malaysia divides Brunei in two. Temburong, the eastern part, has no land connection to the rest of the country within Brunei's borders.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/bx.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Brunei's sultans once ruled far beyond the little state on today's map. Their influence extended from northwest Borneo into the southern Philippines.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/bx.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "hong-kong",
+    "name": "Hong Kong",
+    "options": [
+      {
+        "text": "High Island's enormous hexagonal rock columns began in a volcano. They formed as hot volcanic material cooled and contracted.",
+        "source": "https://www.geopark.gov.hk/en/discover/attractions/high-island",
+        "label": "www.geopark.gov.hk"
+      },
+      {
+        "text": "Hong Kong includes more than two hundred islands as well as a piece of mainland China. Hong Kong Island itself is only one part of the territory.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/hk.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "The territory Britain acquired in 1842 was just Hong Kong Island. Kowloon was added later, and the New Territories came under a 99-year lease.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/hk.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "iran",
+    "name": "Iran",
+    "options": [
+      {
+        "text": "The Trans-Iranian Railway crosses two mountain ranges to join the Caspian Sea to the Persian Gulf. Its route runs through four climatic zones.",
+        "source": "https://whc.unesco.org/en/list/1585/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The pattern of caravanserais across Iran traces where travellers could find water and safety. These inns made long journeys by caravan possible.",
+        "source": "https://whc.unesco.org/en/list/1668/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Hawraman, terraced villages cling to the Zagros Mountains. The steep slopes shaped both the architecture and seasonal movements of the people living there.",
+        "source": "https://whc.unesco.org/en/list/1647/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "israel",
+    "name": "Israel",
+    "options": [
+      {
+        "text": "Under Maresha and Bet-Guvrin lie chambers cut for everything from oil presses to pigeon breeding. A whole working landscape survives beneath the fields.",
+        "source": "https://whc.unesco.org/en/list/1370/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Ancient desert towns in the Negev owed their fortunes to incense. Caravans carried frankincense and myrrh west towards Mediterranean ports.",
+        "source": "https://whc.unesco.org/en/list/1107/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Tel Aviv's White City records a migration of architectural ideas. European-trained designers adapted modernist buildings to the Mediterranean climate.",
+        "source": "https://whc.unesco.org/en/list/1096/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "iraq",
+    "name": "Iraq",
+    "options": [
+      {
+        "text": "The southern Iraqi marshes and the ruins of ancient Mesopotamian cities share one World Heritage site. Reeds, water and settlements all belong to the delta's history.",
+        "source": "https://whc.unesco.org/en/list/1481/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Erbil's citadel rises on a mound formed by one generation building over the remains of another. Its elevation is itself an archaeological record.",
+        "source": "https://whc.unesco.org/en/list/1437/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Samarra, the Great Mosque's minaret curls upwards. A spiral ramp wraps around its outside.",
+        "source": "https://whc.unesco.org/en/list/276/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "south-korea",
+    "name": "South Korea",
+    "options": [
+      {
+        "text": "A pansori singer and one drummer can sustain an epic for hours. The singer moves between narration, dialogue and song.",
+        "source": "https://ich.unesco.org/en/RL/00070",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Korea's tidal flats supply food for migratory shorebirds crossing East Asia. The land they depend on disappears underwater with each tide.",
+        "source": "https://whc.unesco.org/en/list/1591/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "People kept carving into the rock beside Bangucheon Stream for millennia. On the same stretch of cliffs, prehistoric art sits alongside historical inscriptions.",
+        "source": "https://whc.unesco.org/en/list/1740/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "north-korea",
+    "name": "North Korea",
+    "options": [
+      {
+        "text": "Pyongyang's cold buckwheat noodles come in a brass bowl. One way to finish the dish is to pour the liquid from radish kimchi over them.",
+        "source": "https://ich.unesco.org/en/RL/01695",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The wall paintings inside Koguryo tombs show clothing, customs and everyday life. Much of what survives of this kingdom's painting is underground.",
+        "source": "https://whc.unesco.org/en/list/1091/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Mount Kumgang's pale granite peaks have attracted Buddhist communities for centuries. Hermitages and carvings are tucked among its waterfalls and ravines.",
+        "source": "https://whc.unesco.org/en/list/1642/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "jordan",
+    "name": "Jordan",
+    "options": [
+      {
+        "text": "At Umm Al-Jimāl, villagers reused Roman military buildings and collected scarce water to raise animals and crops in a landscape of dark basalt.",
+        "source": "https://whc.unesco.org/en/list/1721/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Mansaf layers thin bread, rice or bulgur, and meat cooked in yoghurt on one communal platter. Preparing the feast is itself a social occasion.",
+        "source": "https://ich.unesco.org/en/RL/01849",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Wadi Rum's sandstone landscape doubles as an archive. Generations of travellers and residents carved inscriptions and images into its rock.",
+        "source": "https://whc.unesco.org/en/list/1377/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "japan",
+    "name": "Japan",
+    "options": [
+      {
+        "text": "Some Japanese kofun look like giant keyholes from above. Those distinctively shaped mounds near Osaka were tombs for members of the elite.",
+        "source": "https://whc.unesco.org/en/list/1593/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Bunraku theatre several puppeteers can work a single character together while a narrator voices the story to a shamisen accompaniment.",
+        "source": "https://ich.unesco.org/en/RL/00064",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Sado Island's gold mines preserve evidence of different ways to extract precious metal, from washing it out of deposits to cutting underground workings by hand.",
+        "source": "https://whc.unesco.org/en/list/1698/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "lebanon",
+    "name": "Lebanon",
+    "options": [
+      {
+        "text": "Tripoli has a boomerang-shaped exhibition hall about 750 metres long. Brazilian architect Oscar Niemeyer designed it for an international fair.",
+        "source": "https://whc.unesco.org/en/list/1702/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Bakers press their fingertips into man'ouché dough before topping it with thyme, sumac, sesame and olive oil for breakfast.",
+        "source": "https://ich.unesco.org/en/RL/02000",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Cedars of God preserve a remnant of Lebanon's ancient mountain forests. Cedar timber from this region was prized across the ancient Mediterranean.",
+        "source": "https://whc.unesco.org/en/list/850/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "laos",
+    "name": "Laos",
+    "options": [
+      {
+        "text": "More than two thousand stone jars dot a plateau in Laos. Iron Age communities used them in funerary practices.",
+        "source": "https://whc.unesco.org/en/list/1587/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Lao khaen looks like a bundle of bamboo pipes. Each tube contains a metal reed, letting one player sound several notes together.",
+        "source": "https://ich.unesco.org/en/RL/01296",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Vat Phou, ancient planners laid out a route from mountain to plain through temples and waterworks, giving the landscape a religious axis.",
+        "source": "https://whc.unesco.org/en/list/481/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "kyrgyzstan",
+    "name": "Kyrgyzstan",
+    "options": [
+      {
+        "text": "In kok boru, two teams on horseback compete to carry an ulak into the opposing goal. Traditionally the object in play was a goat carcass.",
+        "source": "https://ich.unesco.org/en/RL/01294",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Sulaiman-Too's five peaks rise over Osh. For more than fifteen hundred years the mountain served as both a sacred place and a landmark on the Silk Roads.",
+        "source": "https://whc.unesco.org/en/list/1230/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Kyrgyz felt carpets can be made by cutting contrasting sheets of felt together and exchanging the pieces. Two complementary patterns come out of one cut.",
+        "source": "https://ich.unesco.org/en/USL/00693",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "kuwait",
+    "name": "Kuwait",
+    "options": [
+      {
+        "text": "The spheres of Kuwait City's best-known towers have a practical origin. The towers were designed as part of the city's fresh-water distribution system.",
+        "source": "https://whc.unesco.org/en/tentativelists/5933/",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "A Kuwaiti diwaniya can meet in a home or even a tent. It gives neighbours a regular place to discuss everything from family matters to elections.",
+        "source": "https://ich.unesco.org/en/RL/02281",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Kuwait's Al Sadu Society brought traditional weaving into classrooms by teaching the teachers first. Finished student textiles go on display at Sadu House.",
+        "source": "https://ich.unesco.org/en/Art18/01905",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "myanmar",
+    "name": "Myanmar",
+    "options": [
+      {
+        "text": "On a bend of the Ayeyarwady at Bagan, the plain is studded with Buddhist temples and stupas built when it was an imperial capital.",
+        "source": "https://whc.unesco.org/en/list/1588/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Myanmar's Thingyan New Year festivities include pouring water on Buddha images. In some communities younger people also give their elders manicures and pedicures.",
+        "source": "https://ich.unesco.org/en/RL/02085",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The ancient Pyu cities used moats, walls and waterworks in the dry zone of Myanmar. The surviving outlines are big enough to trace entire cities.",
+        "source": "https://whc.unesco.org/en/list/1444/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "mongolia",
+    "name": "Mongolia",
+    "options": [
+      {
+        "text": "Bronze Age communities on the Mongolian steppe stood up stones engraved with stylised deer. Some of these ceremonial stones reach four metres high.",
+        "source": "https://whc.unesco.org/en/list/1621/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Biyelgee dances fit inside a herder's ger. Dancers can perform half-seated or cross-legged, using shoulders and hands to act out everyday work.",
+        "source": "https://ich.unesco.org/en/USL/00311",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The carved head atop a morin khuur fiddle gives the instrument its familiar name, the horsehead fiddle. Its two strings are played with a bow.",
+        "source": "https://ich.unesco.org/en/RL/00068",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "maldives",
+    "name": "Maldives",
+    "options": [
+      {
+        "text": "Historic Maldivian mosques were built of coral carved into interlocking blocks. Builders used reef material much as mainland masons used quarried stone.",
+        "source": "https://whc.unesco.org/en/tentativelists/5812",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "From above, the Maldives resolve into chains of coral islands grouped in 26 natural atolls. Dry land is only a tiny part of the archipelago.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/mv.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "One proposed origin for the name Maldives is a Sanskrit phrase meaning 'garland of islands', an apt description of their shape from above.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/mv.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "malaysia",
+    "name": "Malaysia",
+    "options": [
+      {
+        "text": "Near Kuala Lumpur a mature rainforest stands on former tin-mining ground. Researchers began planting the damaged land in the 1920s.",
+        "source": "https://whc.unesco.org/en/list/1734/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In the Niah caves on Borneo, archaeologists found boat-shaped burials and a record of people using the rainforest stretching back at least 50,000 years.",
+        "source": "https://whc.unesco.org/en/list/1014/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Songket's shimmering patterns are woven into the cloth. Weavers introduce extra gold- or silver-coloured threads between the ordinary ones.",
+        "source": "https://ich.unesco.org/en/RL/01505",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "oman",
+    "name": "Oman",
+    "options": [
+      {
+        "text": "Oman’s aflaj move water by gravity. Communities have used observations of the sky to divide the available irrigation time among water users.",
+        "source": "https://whc.unesco.org/en/list/1207/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Dhofar, frankincense starts as resin from a tree. Trees, caravan stops and seaports preserve successive stages of its old trading route.",
+        "source": "https://whc.unesco.org/en/list/1010/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Oman's curved khanjar dagger is made by several crafts working together. Its distinctive outline also appears on the country's emblem.",
+        "source": "https://ich.unesco.org/en/RL/01844",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "nepal",
+    "name": "Nepal",
+    "options": [
+      {
+        "text": "An inscribed pillar at Lumbini records a visit by Emperor Ashoka in the third century BCE to the site revered as the Buddha's birthplace.",
+        "source": "https://whc.unesco.org/en/list/666/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Far below Nepal's snowy peaks, Chitwan's subtropical lowlands shelter one-horned rhinoceroses and Bengal tigers.",
+        "source": "https://whc.unesco.org/en/list/284/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Eight of the world's ten highest peaks lie in or on the borders of Nepal. Everest and Kanchenjunga stand on different international frontiers.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/np.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "palestine",
+    "name": "Palestine",
+    "options": [
+      {
+        "text": "At Battir, stone terraces and irrigation channels share spring water among vegetable gardens. Families follow a customary rotation for their turn at the water.",
+        "source": "https://whc.unesco.org/en/list/1492/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Nablus, traditional soap starts with olive oil. Makers spread the cooked mixture across a floor, cut it into blocks and stack the blocks to dry.",
+        "source": "https://ich.unesco.org/en/RL/02112",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Palestinian embroidery could once tell a viewer where its wearer came from. Colours and motifs on a dress carried local and family associations.",
+        "source": "https://ich.unesco.org/en/RL/01722",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "pakistan",
+    "name": "Pakistan",
+    "options": [
+      {
+        "text": "At Moenjodaro, builders laid out a city of baked brick in the Indus Valley more than four thousand years ago. A street grid still shows through the ruins.",
+        "source": "https://whc.unesco.org/en/list/138/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Kalasha observers use the shadows of the Hindu Kush as a calendar. The positions of the sun and stars against local peaks help set dates for sowing and festivals.",
+        "source": "https://ich.unesco.org/en/USL/01381",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The boreendo is a small, hollow clay instrument of the Thar. A player can alter its tone simply by changing the angle at which they blow.",
+        "source": "https://ich.unesco.org/en/USL/02328",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "qatar",
+    "name": "Qatar",
+    "options": [
+      {
+        "text": "Sand covered the abandoned pearling port of Al Zubarah. Beneath it, archaeologists found traces of an entire Gulf town, from palaces to fishers' huts.",
+        "source": "https://whc.unesco.org/en/list/1402/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Among the rock carvings at Al Jassasiya are boats seen from above. Other carvings are rows of little cup-shaped hollows whose purpose is still debated.",
+        "source": "https://qm.org.qa/en/visit/heritage-sites/al-jassasiya-rock-art-site/",
+        "label": "qm.org.qa"
+      },
+      {
+        "text": "Doha's name is usually traced to an Arabic word for a large tree. It may recall a landmark at the fishing village that preceded the capital.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/qa.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "saudi-arabia",
+    "name": "Saudi Arabia",
+    "options": [
+      {
+        "text": "The Arabian oryx disappeared from the wild and later returned to the sands of 'Uruq Bani Ma'arid through reintroduction.",
+        "source": "https://whc.unesco.org/en/list/1699/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Asir, women traditionally paint the inside walls of homes with bright geometric patterns. The house itself becomes the canvas.",
+        "source": "https://ich.unesco.org/en/RL/01261",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Travellers crossing the desert at Ḥimā left their marks near its wells. Inscriptions in different scripts record people passing along the same route over centuries.",
+        "source": "https://whc.unesco.org/en/list/1619/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "singapore",
+    "name": "Singapore",
+    "options": [
+      {
+        "text": "Singapore Botanic Gardens helped turn rubber into a Southeast Asian plantation crop. Research on this city plot had consequences across the region.",
+        "source": "https://whc.unesco.org/en/list/1483/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Singapore's hawker centres grew from street-food stalls into shared dining rooms. A game of chess or a busker can be as much a part of the scene as lunch.",
+        "source": "https://ich.unesco.org/en/RL/01568",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Land reclamation has changed Singapore's island count in both directions. Some islands were joined together while entirely new ones were created.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/sn.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "syria",
+    "name": "Syria",
+    "options": [
+      {
+        "text": "Damascus glassblowers give broken glass another life. They melt the scraps in brick ovens and shape the molten glass on a hollow rod.",
+        "source": "https://ich.unesco.org/en/USL/01956",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Bosra, a Roman theatre survives inside a later fortress. The seats look out from tiers of dark basalt.",
+        "source": "https://whc.unesco.org/en/list/22/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In northern Syria, abandoned late-antique villages retain houses, churches and olive presses. They preserve the workings of whole farming communities.",
+        "source": "https://whc.unesco.org/en/list/1348/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "taiwan",
+    "name": "Taiwan",
+    "options": [
+      {
+        "text": "A 660-tonne metal sphere hangs inside Taipei 101. Its motion helps steady the skyscraper when the wind makes the building sway.",
+        "source": "https://www.taipei-101.com.tw/en/observatory/",
+        "label": "www.taipei-101.com.tw"
+      },
+      {
+        "text": "The Liwu River cut Taroko Gorge through marble as Taiwan's mountains rose. Rock that formed deep underground now makes the canyon walls.",
+        "source": "https://www.taroko.gov.tw/en/sglarticle/landform-%26-geology",
+        "label": "www.taroko.gov.tw"
+      },
+      {
+        "text": "On early European maps Taiwan often appears as Formosa. The name comes from Portuguese for 'beautiful'.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/tw.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "sri-lanka",
+    "name": "Sri Lanka",
+    "options": [
+      {
+        "text": "At Dambulla, monks made shrines inside natural caves and covered the rock ceilings with paintings. The mountain itself forms the roof of the temple.",
+        "source": "https://whc.unesco.org/en/list/561/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Anuradhapura grew around a sacred fig tree traditionally grown from a cutting of the tree under which the Buddha attained enlightenment.",
+        "source": "https://whc.unesco.org/en/list/200/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Sri Lankan string puppetry is called rūkada nātya. Family troupes carve and dress their own wooden characters and bring them to life above a portable stage.",
+        "source": "https://ich.unesco.org/en/RL/01370",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "tajikistan",
+    "name": "Tajikistan",
+    "options": [
+      {
+        "text": "Between the Vakhsh and Panj rivers, floodwater sustains poplar forest in a dry Central Asian landscape. This riverside woodland is known as tugay.",
+        "source": "https://whc.unesco.org/en/list/1685/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The high ranges of Eurasia meet at the Pamir Knot in eastern Tajikistan. Several peaks in its national park top 7,000 metres.",
+        "source": "https://whc.unesco.org/en/list/1252/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Tajik oshi palav brings rice, vegetables and meat together in one pot. Learning to cook it can involve an apprenticeship with an experienced maker.",
+        "source": "https://ich.unesco.org/en/RL/01191",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "thailand",
+    "name": "Thailand",
+    "options": [
+      {
+        "text": "Water has a meaning beyond the famous splashing at Songkran. People also pour it over Buddha images and the hands of elders at Thai New Year.",
+        "source": "https://ich.unesco.org/en/RL/01719",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In khon masked theatre, dancers become the monkey army and giant adversaries of the hero Rama. Singers and instrumentalists tell the story alongside them.",
+        "source": "https://ich.unesco.org/en/RL/01385",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Phu Phrabat, prehistoric rock shelters became Buddhist sacred spaces. Upright boundary stones marked out places for religious ceremonies.",
+        "source": "https://whc.unesco.org/en/list/1507/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "east-timor",
+    "name": "East Timor",
+    "options": [
+      {
+        "text": "Timor-Leste names the same direction twice. Timor comes from a word meaning east, and leste is Portuguese for east.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/tt.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Oecussi belongs to Timor-Leste but sits apart from the rest of the country on the Indonesian side of the island.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/tt.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Timorese tais are handwoven textiles used for gifts, ceremonies and clothing. Their colours and motifs can identify the community that made them.",
+        "source": "https://ich.unesco.org/en/USL/01688",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "united-arab-emirates",
+    "name": "United Arab Emirates",
+    "options": [
+      {
+        "text": "In Sharjah, archaeological layers at Faya record repeated human occupation as the desert swung between dry and wetter periods over many thousands of years.",
+        "source": "https://whc.unesco.org/en/list/1735/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In oasis settlements, underground aflaj guide water to farms by gravity. Customary rules divide the flow among those who depend on it.",
+        "source": "https://ich.unesco.org/en/RL/01577",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Fujairah's Hajar Mountains, Wadi Wurayah preserves rock from ancient oceanic crust and habitat for more than a thousand recorded species.",
+        "source": "https://whc.unesco.org/en/list/1724/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "turkmenistan",
+    "name": "Turkmenistan",
+    "options": [
+      {
+        "text": "Merv was a succession of cities in one oasis. As rulers shifted the centre, the walls of earlier cities survived beside later ones.",
+        "source": "https://whc.unesco.org/en/list/886/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "A Turkmen dutar maker shapes a long-necked, two-stringed instrument. The same tradition encompasses building it, playing it and singing to it.",
+        "source": "https://ich.unesco.org/en/RL/01565",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Akhal-Teke horse is bred in Turkmenistan and prized for its distinctive sheen. Breeders pass knowledge of pedigrees and training down through families.",
+        "source": "https://ich.unesco.org/en/RL/01978",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "yemen",
+    "name": "Yemen",
+    "options": [
+      {
+        "text": "In Shibam, houses several storeys high rise from a walled town of mud brick. Building upwards kept the settlement compact on its floodplain.",
+        "source": "https://whc.unesco.org/en/list/192/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Sana'a's tall rammed-earth and brick houses have pale geometric decoration that picks out windows and walls across the old city.",
+        "source": "https://whc.unesco.org/en/list/385/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Ma'rib, the ancient kingdom of Saba channelled floodwater through a great dam to irrigate fields on both sides of a desert valley.",
+        "source": "https://whc.unesco.org/en/list/1700/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "vietnam",
+    "name": "Vietnam",
+    "options": [
+      {
+        "text": "Archaeology at Tràng An records people adapting as the sea advanced and retreated among limestone towers. Some of today's inland cliffs once stood by the coast.",
+        "source": "https://whc.unesco.org/en/list/1438/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Quan họ singers trade verses between groups from different villages. One group offers a song and the other answers to a matching tune.",
+        "source": "https://ich.unesco.org/en/RL/00183",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Hồ dynasty's citadel was built in the fourteenth century. Enormous fitted stone blocks still frame its gateways.",
+        "source": "https://whc.unesco.org/en/list/1358/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "uzbekistan",
+    "name": "Uzbekistan",
+    "options": [
+      {
+        "text": "Uzbek askiya is a contest of wit. Speakers improvise on a shared topic, trying to outdo one another with wordplay.",
+        "source": "https://ich.unesco.org/en/RL/00971",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Samarkand's location on the Silk Roads brought artisans and ideas together. The turquoise monuments of Timur's capital stand at that old crossroads.",
+        "source": "https://whc.unesco.org/en/list/603/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Uzbekistan palov can turn cooking rice into work for an entire gathering. The dish is served at occasions ranging from weddings to commemorations.",
+        "source": "https://ich.unesco.org/en/RL/01166",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "philippines",
+    "name": "Philippines",
+    "options": [
+      {
+        "text": "On Bohol, salt makers soak coconut husks in seawater for months, burn them and boil the resulting brine in pots. The finished salt looks like an egg in a shell.",
+        "source": "https://ich.unesco.org/en/USL/02316",
+        "label": "UNESCO"
+      },
+      {
+        "text": "On Palawan a river runs through a limestone cave and empties directly into the sea. Tides reach into its lower underground stretch.",
+        "source": "https://whc.unesco.org/en/list/652/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In the Philippine Cordilleras, Ifugao farmers built irrigated rice terraces that follow the mountain contours. Forests above the paddies are part of the water system.",
+        "source": "https://whc.unesco.org/en/list/722/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "bali",
+    "name": "Bali",
+    "options": [
+      {
+        "text": "Bali's subak associations coordinate irrigation through networks of water temples. Decisions made upstream affect when farmers downstream can flood their rice terraces.",
+        "source": "https://whc.unesco.org/en/list/1194/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Balinese dance has sacred, semi-sacred and entertainment forms. The dance appropriate inside a temple can differ from the one performed for an audience outside.",
+        "source": "https://ich.unesco.org/en/RL/threegenres-of-traditional-dance-in-bali-00617",
+        "label": "ich.unesco.org"
+      },
+      {
+        "text": "Lake Batur fills a volcanic crater and is regarded as a source of irrigation water. A major water temple stands beside the lake.",
+        "source": "https://whc.unesco.org/en/list/1194/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "macau",
+    "name": "Macau",
+    "options": [
+      {
+        "text": "Macau's name is linked to A-Ma, a goddess who protects sailors. A bay and a temple at this old trading port bear her name.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/mc.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Over Macau's port stands the Guia Lighthouse, identified by UNESCO as China's oldest lighthouse. It shares its hill with a fortress.",
+        "source": "https://whc.unesco.org/en/list/1110/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Macau's map once showed Taipa and Coloane as two separate islands. Reclaimed land between them joined them together.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/mc.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "northern-cyprus",
+    "name": "Northern Cyprus",
+    "options": [
+      {
+        "text": "Almonds helped date an ancient merchant ship wrecked off Kyrenia. Researchers used radiocarbon measurements of its cargo alongside those of the ship's timbers.",
+        "source": "https://news.cornell.edu/stories/2024/06/almonds-pottery-and-wood-help-date-famed-kyrenia-shipwreck",
+        "label": "news.cornell.edu"
+      },
+      {
+        "text": "Bellapais Abbey's Gothic cloisters stand on a mountainside above Kyrenia. A medieval Latin monastery overlooks a stretch of the eastern Mediterranean.",
+        "source": "https://www.visitncy.com/discover/bellapais-abbey/",
+        "label": "www.visitncy.com"
+      },
+      {
+        "text": "An ancient wreck near Kyrenia preserved much more than a cargo. Enough of the wooden hull survived for researchers to reconstruct how a Mediterranean merchant ship was built.",
+        "source": "https://news.cornell.edu/stories/2024/06/almonds-pottery-and-wood-help-date-famed-kyrenia-shipwreck",
+        "label": "news.cornell.edu"
+      }
+    ]
+  },
+  {
+    "id": "south-ossetia",
+    "name": "South Ossetia",
+    "options": [
+      {
+        "text": "The road linking South and North Ossetia goes through the Greater Caucasus. The Roki Tunnel carries it under the mountain divide.",
+        "source": "https://www.ebrd.com/downloads/about/policies/georgia-2010.pdf",
+        "label": "www.ebrd.com"
+      },
+      {
+        "text": "Ossetic belongs to the Iranian branch of Indo-European. Its closest linguistic relatives lie far beyond these Caucasus valleys.",
+        "source": "https://www.iranicaonline.org/articles/ossetic/",
+        "label": "www.iranicaonline.org"
+      },
+      {
+        "text": "Follow the map north from Tskhinvali and settlements string out along the Great Liakhvi. The Little Liakhvi and Froni valleys branch through different parts of the region.",
+        "source": "https://www.echr.coe.int/documents/d/echr/hudoc_38263_08_Annexes_eng",
+        "label": "www.echr.coe.int"
+      }
+    ]
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "options": [
+      {
+        "text": "At Sangiran on Java, fossil finds have made it possible to trace human ancestors across a long stretch of the Pleistocene.",
+        "source": "https://whc.unesco.org/en/list/593/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Borobudur's Buddhist monument climbs in terraces around a hill. Rows of perforated stupas surround the summit.",
+        "source": "https://whc.unesco.org/en/list/592/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Yogyakarta, a ceremonial axis runs through the sultan's palace. The plan relates the city to Mount Merapi to the north and the Indian Ocean to the south.",
+        "source": "https://whc.unesco.org/en/list/1671/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "sumatra",
+    "name": "Sumatra",
+    "options": [
+      {
+        "text": "Lake Toba fills the caldera of an immense eruption. The large island of Samosir inside the lake rose as the caldera floor rebounded.",
+        "source": "https://volcano.si.edu/volcano.cfm?vn=261090",
+        "label": "volcano.si.edu"
+      },
+      {
+        "text": "At Ombilin, colonial coal mining required more than shafts. A railway carried coal out of Sumatra's interior mountains to a port on the west coast.",
+        "source": "https://whc.unesco.org/en/list/1610/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Sumatran orangutans live in the island's tropical forests. These are among the few places on Earth where orangutans still occur in the wild.",
+        "source": "https://whc.unesco.org/en/list/1167/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "akrotiri-and-dhekelia",
+    "name": "Akrotiri and Dhekelia",
+    "options": [
+      {
+        "text": "A British sovereign base on Cyprus contains a wetland of international importance. Akrotiri's salt lake and marshes share the peninsula with the military base.",
+        "source": "https://www.ramsar.org/es/node/8708",
+        "label": "www.ramsar.org"
+      },
+      {
+        "text": "Greater flamingos feed in the wetland at Akrotiri. The suitability of the lake for the birds changes as water levels fluctuate.",
+        "source": "https://rsis.ramsar.org/RISapp/files/RISrep/GB1375RIS.pdf",
+        "label": "rsis.ramsar.org"
+      },
+      {
+        "text": "Cyprus's largest aquatic system lies on the Akrotiri peninsula. The protected complex includes sand flats and saltmarsh as well as the open lake.",
+        "source": "https://rsis.ramsar.org/RISapp/files/RISrep/GB1375RIS.pdf",
+        "label": "rsis.ramsar.org"
+      }
+    ]
+  },
+  {
+    "id": "jeju",
+    "name": "Jeju",
+    "options": [
+      {
+        "text": "Jeju's haenyeo harvest seafood by diving on a single breath. The women surface with a distinctive whistling exhalation.",
+        "source": "https://ich.unesco.org/en/RL/culture-of-jeju-haenyeo-women-divers-01068?lang=en",
+        "label": "ich.unesco.org"
+      },
+      {
+        "text": "The same lava that built Jeju also hollowed out routes underground. Lava tubes remain where molten rock drained away beneath a solid crust.",
+        "source": "https://whc.unesco.org/en/list/1264/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "On Jeju, people welcome the wind goddess Yeongdeung with rites for calm seas and a good catch, then mark her departure with a farewell ceremony.",
+        "source": "https://ich.unesco.org/en/RL/incwala-of-the-kingdom-of-swaziland-00187",
+        "label": "ich.unesco.org"
+      }
+    ]
   }
 ]
