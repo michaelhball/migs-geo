@@ -508,19 +508,19 @@
     "name": "Azerbaijan",
     "options": [
       {
-        "text": "Azerbaijan’s mainland and its detached territory of Nakhchivan are both landlocked. The mainland’s long coast faces the enclosed Caspian Sea.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/aj.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "Near Baku, a line of flames burns along the foot of a hillside called Yanardag. The fuel seeps straight from the ground as natural gas.",
+        "source": "https://azerbaijan.travel/in-the-abode-of-flames-an-exciting-adventure",
+        "label": "Azerbaijan Tourism Board"
       },
       {
-        "text": "Azerbaijan adopted its anthem in 1992, but the music dates back to its earlier period of independence in 1919.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/aj.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "On Gobustan’s dry hills, ancient artists carved boats and fish into the rock. One explanation is that the Caspian stood much higher then, almost turning the hills into islands.",
+        "source": "https://whc.unesco.org/document/5301",
+        "label": "UNESCO"
       },
       {
-        "text": "One proposed origin for Baku’s name is an old Persian description of a windy place. The city stands on the exposed Caspian shore.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/aj.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "In Sheki and Basgal, makers of silk kelaghayi scarves print their designs with wooden stamps. A mixture containing resin and wax protects parts of the silk when the cloth is dyed.",
+        "source": "https://ich.unesco.org/en/decisions/9.COM/10.4",
+        "label": "UNESCO"
       }
     ]
   },
@@ -886,19 +886,19 @@
     "name": "Adriatic Sea",
     "options": [
       {
-        "text": "At Zadar, Adriatic waves play an organ built into the waterfront steps. You can sit above the instrument while the rhythm of the sea changes the tune.",
-        "source": "https://visitvrbnik.croatia.hr/en-gb/camping/zadar",
-        "label": "Croatian National Tourist Board"
+        "text": "In June 1978 a wave driven by a disturbance in the atmosphere set Adriatic harbours surging on both the Croatian and Italian sides. The event is called a meteotsunami.",
+        "source": "https://projekti.pmfst.unist.hr/floods/meteotsunamis/11-vela-luka-ubli-slano-kolocep-komolac-gruz-vis-cavtat-21-june-1978/",
+        "label": "University of Split"
       },
       {
-        "text": "On the Adriatic island of Hvar, farmers still tend grapes and olives inside a grid laid out by Greek settlers about 2,400 years ago. Dry-stone walls trace the old plots.",
-        "source": "https://whc.unesco.org/en/list/1240/",
-        "label": "UNESCO"
+        "text": "A fisherman off Istria found the remains of a boat whose builders had sewn the hull together some 3,000 years ago. Part of the stitching survived on the Adriatic seabed.",
+        "source": "https://archeologie.culture.gouv.fr/en/epave-zambratija",
+        "label": "French Ministry of Culture"
       },
       {
-        "text": "At Piran on the Slovenian Adriatic, salt makers grow a living floor beneath the brine. A mat called petola separates the white salt crystals from the mud below.",
-        "source": "https://www.gov.si/assets/ministrstva/MKGP/PODROCJA/HRANA/SHEME-KAKOVOSTI/PUBLIKACIJA/Protected_Slovenian_Agricultural_Products_and_Foodstuffs_DE_2021.pdf",
-        "label": "Government of Slovenia"
+        "text": "The central Adriatic has a deep nursery called the Jabuka Pit. Young European hake gather there, and young Norway lobsters live more than 200 metres below the surface.",
+        "source": "https://www.cbd.int/recommendation/sbstta/default.shtml?id=13328",
+        "label": "Convention on Biological Diversity"
       }
     ]
   },
