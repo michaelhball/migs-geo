@@ -3046,9 +3046,9 @@
         "label": "visitdenmark.com"
       },
       {
-        "text": "A Scottish island group lies closer to Scandinavian Bergen than to Scotland’s own capital. From Shetland, the North Sea crossing to Norway is shorter than the journey south to Edinburgh.",
-        "source": "https://www.shetland.org/about",
-        "label": "shetland.org"
+        "text": "Norway, Sweden and Finland meet at a point in a lake. A walkway leads out to the Three-Country Cairn, so you can walk around the marker and cross three national borders without getting wet.",
+        "source": "https://kirunalapland.se/en/hiking/three-country-cairn/",
+        "label": "kirunalapland.se"
       }
     ]
   },
@@ -4233,8 +4233,8 @@
       },
       {
         "text": "The tide takes different lengths of time to travel around the two ends of Anglesey. In the Menai Strait between the island and mainland Wales, the resulting difference in water level helps drive the fierce currents of the Swellies.",
-        "source": "https://www.welshicons.org/wici/html/the_menai_strait.php",
-        "label": "welshicons.org"
+        "source": "https://v13.walescoastpath.gov.uk/plan-your-visit/itineraries/family-walks-with-a-difference/menai-strait/?lang=en",
+        "label": "v13.walescoastpath.gov.uk"
       }
     ]
   },
@@ -4901,19 +4901,19 @@
     "name": "Azores",
     "options": [
       {
-        "text": "A lighthouse on Faial lost its place on the shore when a volcano erupted at sea in 1957. New land joined the island and left the Capelinhos lighthouse standing inland.",
-        "source": "https://parquesnaturais.azores.gov.pt/en/parques/3/areasprotegidas/53",
+        "text": "The Azores briefly gained an island about 250 metres high. An eruption at João de Castro Bank raised it above the Atlantic in 1720, and waves wore it back below the surface within two years.",
+        "source": "https://volcano.si.edu/volcano.cfm?vn=382070",
+        "label": "volcano.si.edu"
+      },
+      {
+        "text": "Inside a volcano on Graciosa, you can descend to a lake beneath a single enormous rock roof. The cavern of Furna do Enxofre formed where a lake of molten lava once occupied the caldera.",
+        "source": "https://parquesnaturais.azores.gov.pt/en/parques/7/areasprotegidas/79",
         "label": "parquesnaturais.azores.gov.pt"
       },
       {
-        "text": "At Sete Cidades, a road crosses the narrow neck between two crater lakes. Seen from above, the two parts often appear different colours, one green and one blue.",
-        "source": "https://www.visitportugal.com/en/content/sao-miguel-the-green-island",
-        "label": "visitportugal.com"
-      },
-      {
-        "text": "The village on Corvo occupies a flat patch built by lava at the foot of the island. The broad hollow above it is the caldera of the volcano that built the island.",
-        "source": "https://www.azoresgeopark.com/geoparque_acores/geossitios.php?lang=EN",
-        "label": "azoresgeopark.com"
+        "text": "On São Jorge, a cliff collapse can make new land fit for settlement. Landslides and lava flows have built dozens of small flat shelves called fajãs between the island’s steep sides and the Atlantic.",
+        "source": "https://parquesnaturais.azores.gov.pt/en/parques/6/poi/124",
+        "label": "parquesnaturais.azores.gov.pt"
       }
     ]
   },
@@ -5249,9 +5249,9 @@
         "label": "UNESCO"
       },
       {
-        "text": "At Çatalhöyük, Neolithic houses were packed so closely that people generally entered from the roof. The rooftops served some of the functions of streets.",
-        "source": "https://whc.unesco.org/en/list/1405/",
-        "label": "UNESCO"
+        "text": "Turkey’s Lake Van is so alkaline that its native pearl mullet leave the lake to breed. Each spring the fish swim into freshwater streams, then return to the soda lake.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13035659/",
+        "label": "pmc.ncbi.nlm.nih.gov"
       }
     ]
   },
@@ -5469,14 +5469,14 @@
     "name": "Iraq",
     "options": [
       {
-        "text": "In the Iraqi marshes, a stand of reeds can supply the walls, roof and arches of a meeting house. Builders bend thick bundles together to make a mudhif.",
-        "source": "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mudhif-building-01950",
-        "label": "ich.unesco.org"
+        "text": "Between Iraq’s two great rivers sits a lake filled from just one of them. Floodwater diverted from the Tigris spreads across the natural hollow of Lake Tharthar before it can reach Baghdad.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/iraq-reservoirs-plunge-to-low-levels/",
+        "label": "science.nasa.gov"
       },
       {
-        "text": "Shanidar Cave in the Zagros Mountains preserved the remains of several Neanderthals. A discovery famous for an apparent “flower burial” has kept archaeologists debating what a patch of ancient pollen really means.",
-        "source": "https://www.arch.cam.ac.uk/research/projects/current-projects/shanidar-cave-project",
-        "label": "arch.cam.ac.uk"
+        "text": "In little more than a decade, satellite images of southern Iraq went from green marsh to bare earth and back towards green. Drainage works emptied vast wetlands, then breaches in the embankments let river water return.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/world-of-change/mesopotamia-marshes/",
+        "label": "science.nasa.gov"
       },
       {
         "text": "Ancient Ur now stands in dry country, but archaeologists have traced old watercourses around it. Mapping the vanished channels helps explain how such a large city could live there.",
@@ -5495,14 +5495,14 @@
         "label": "whc.unesco.org"
       },
       {
-        "text": "The hilltop tombs of the Gaya trace a political map of southern Korea. Separate groups of large mounds mark the centres of states that once formed a confederacy.",
-        "source": "https://whc.unesco.org/en/list/1666/",
-        "label": "UNESCO"
+        "text": "The division of Korea created a refuge for cranes. Along the heavily restricted border, birds can winter in wetlands and feed in fields where there is far less human disturbance than elsewhere.",
+        "source": "https://dmz.gg.go.kr/dmz/contents/contents.do?ciIdx=22&menuId=43",
+        "label": "dmz.gg.go.kr"
       },
       {
-        "text": "Seven Korean Buddhist monasteries share an arrangement centred on an open courtyard. Built among mountains, they have remained places to live and practise Buddhism for centuries.",
-        "source": "https://whc.unesco.org/en/list/1562/",
-        "label": "UNESCO"
+        "text": "South Korea turned a seawall into a power station at Sihwa Lake. Incoming Yellow Sea tides flow through turbines into the lake, generating electricity while bringing seawater back into an enclosed basin.",
+        "source": "https://www.kwater.or.kr/eng/busi/water03/cleanEnergyPage.do?s_mid=1828",
+        "label": "kwater.or.kr"
       }
     ]
   },
@@ -5516,9 +5516,9 @@
         "label": "neaspec.org"
       },
       {
-        "text": "Before Korea was divided, Kaesong was the capital of the Koryo dynasty. Mountains around the city helped determine where its palaces, walls and royal tombs were placed.",
-        "source": "https://whc.unesco.org/en/list/1278/",
-        "label": "UNESCO"
+        "text": "China comes close to the Sea of Japan along the Tumen River, yet the river mouth lies between North Korea and Russia. The two countries share a short stretch of frontier downstream of their meeting point with China.",
+        "source": "https://static.un.org/Depts/los/LEGISLATIONANDTREATIES/PDFFILES/TREATIES/RUS-PRK1990SF.PDF",
+        "label": "static.un.org"
       },
       {
         "text": "The 38th parallel does not follow today's Korean border. Kaesong, now a North Korean city, lies south of that line.",
@@ -5537,14 +5537,14 @@
         "label": "unesco.org"
       },
       {
-        "text": "At Quseir Amra, an early Islamic bathhouse survives in the Jordanian desert. Its dome carries a painted map of the night sky above a room once filled with steam.",
-        "source": "https://whc.unesco.org/en/list/327/",
-        "label": "UNESCO"
+        "text": "Jordan has a single outlet to the open sea, but shares its gulf with three other countries. Egypt, Israel, Jordan and Saudi Arabia all have coastline on the narrow Gulf of Aqaba.",
+        "source": "https://mptf.undp.org/sites/default/files/documents/2022-12/gulf_of_aqaba_and_n_red_sea_reefs_programme_redacted.pdf",
+        "label": "mptf.undp.org"
       },
       {
-        "text": "As-Salt grew over three neighbouring hills where traders from the Jordanian highlands met routes from the desert. Its steep alleys link houses built in local yellow limestone.",
-        "source": "https://whc.unesco.org/en/list/689/",
-        "label": "UNESCO"
+        "text": "Some of the bridges in Jordan’s Wadi Rum are part of the mountains themselves. Weathering carved openings through sandstone ridges while leaving spans of rock high above the desert floor.",
+        "source": "https://whc.unesco.org/en/list/1377/",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -5664,9 +5664,9 @@
         "label": "mew.gov.kw"
       },
       {
-        "text": "Kuwait's pearl divers worked oyster beds on the Gulf floor. Before cultured pearls and oil changed the economy, a summer at sea could determine a family's income for the year.",
-        "source": "https://www.kisr.edu.kw/media/filer_public/d7/f7/d7f77a5e-9ab4-4339-b3f3-057c990d45e1/fathoming_book_20_sep_optimized.pdf",
-        "label": "kisr.edu.kw"
+        "text": "Kuwait’s tidal islands have beaches where shorebirds nest underground. Crab-plovers excavate burrows there, gathering in colonies beside the mudflats where they forage.",
+        "source": "https://whc.unesco.org/en/tentativelists/6257/",
+        "label": "whc.unesco.org"
       },
       {
         "text": "The north shore of Kuwait Bay has a conspicuous ridge in an otherwise low landscape. The Jal az-Zor escarpment rises sharply behind the coastal flats.",
@@ -5822,9 +5822,9 @@
         "label": "ntb.gov.np"
       },
       {
-        "text": "Nepal's national flag has an outline unlike that of any other sovereign country's flag. Its two stacked triangular pennants fit neither a square nor a rectangle.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/np.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "Nepal sets its clocks a quarter of an hour ahead of neighbouring India. Its standard meridian runs through the region of Mount Gaurishankar, giving Nepal an offset of five hours and 45 minutes from Greenwich.",
+        "source": "https://giwmscdnone.gov.np/media/pdf_upload/Nepal%20Statistical%20Year%20book%202023_e3ovoqz.pdf",
+        "label": "giwmscdnone.gov.np"
       }
     ]
   },
@@ -5838,14 +5838,14 @@
         "label": "whc.unesco.org"
       },
       {
-        "text": "In the bath complex at Hisham's Palace near Jericho, a mosaic shows gazelles beneath a fruit tree. On one side they graze, while on the other a lion attacks.",
-        "source": "https://whc.unesco.org/en/tentativelists/6546/",
-        "label": "whc.unesco.org"
+        "text": "Rain sinking into the limestone along the West Bank’s central ridge can take two very different underground routes. Parts of the mountain aquifer drain west towards the coastal plain and others east towards the Jordan valley.",
+        "source": "https://www.gov.il/BlobFolder/reports/water-authority-data-english/he/21-Water-Issues-between-Israel-and-Palestinians-Main-Facts.pdf",
+        "label": "gov.il"
       },
       {
-        "text": "The Church of the Nativity was built over a cave in Bethlehem. A pilgrimage route through the town still leads to the spot revered in Christian tradition as Jesus's birthplace.",
-        "source": "https://whc.unesco.org/en/list/1433/",
-        "label": "UNESCO"
+        "text": "At Battir, water can travel from a hillside spring to a succession of stone-walled terraces by gravity. Farmers take turns using the same flow, so the valley’s irrigation system divides water by time as well as by land.",
+        "source": "https://whc.unesco.org/en/list/1492/",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -5864,9 +5864,9 @@
         "label": "science.nasa.gov"
       },
       {
-        "text": "At Taxila, successive cities were built at different sites. A short journey between their ruins crosses the remains of towns shaped in turn by influences from Persia, Greece and Central Asia.",
-        "source": "https://whc.unesco.org/en/list/139/",
-        "label": "UNESCO"
+        "text": "Five of Earth’s fourteen independent peaks above 8,000 metres rise in or on the border of Pakistan. Four stand in the Karakoram. The fifth, Nanga Parbat, belongs to the Himalayas.",
+        "source": "https://www.mofa.gov.pk/storage/gallery/Pakistan%20Tourism%20Guide.pdf",
+        "label": "mofa.gov.pk"
       }
     ]
   },
@@ -5911,9 +5911,9 @@
         "label": "UNESCO"
       },
       {
-        "text": "At Hegra, Nabataean builders carved entire tomb façades into isolated sandstone outcrops. Some bear inscriptions identifying the people for whom the tomb was reserved.",
-        "source": "https://whc.unesco.org/en/list/1293/",
-        "label": "UNESCO"
+        "text": "A lava flow in northern Arabia left a tunnel large enough to shelter animals for thousands of years. At Umm Jirsan, bones accumulated in passages beneath Saudi Arabia’s apparently barren volcanic surface.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11023468/",
+        "label": "pmc.ncbi.nlm.nih.gov"
       }
     ]
   },
@@ -5995,9 +5995,9 @@
     "name": "Sri Lanka",
     "options": [
       {
-        "text": "At Sigiriya, a royal residence stood atop a sheer rock about 180 metres above the surrounding plain. A stairway between giant stone lion's paws leads towards the summit.",
-        "source": "https://whc.unesco.org/en/list/202/",
-        "label": "UNESCO"
+        "text": "Sri Lanka’s Horton Plains ends at an escarpment called World’s End. A walker on relatively level montane grassland can reach a cliff edge with a drop of roughly 870 metres.",
+        "source": "https://tourism.cp.gov.lk/en/horton-plains",
+        "label": "tourism.cp.gov.lk"
       },
       {
         "text": "When water recedes at the ancient Minneriya reservoir, fresh grass grows on the exposed banks. Elephants gather there in the dry season to graze.",
@@ -6005,9 +6005,9 @@
         "label": "sltda.gov.lk"
       },
       {
-        "text": "Sinharaja's name means “Lion Kingdom”. This remnant of lowland rainforest shelters many plants and birds whose entire native range lies on Sri Lanka.",
-        "source": "https://whc.unesco.org/en/list/405/",
-        "label": "UNESCO"
+        "text": "Sri Lanka has two monsoons that favour different sides of the island. The central mountains intercept moist winds from the southwest, while the northeast receives much of its rain when the seasonal winds reverse.",
+        "source": "https://unfccc.int/sites/default/files/2025-09/Sri%20Lankas%20Nationally%20Determined%20Contributions%203.0%20%282026-2035%29%20submitted%2022.09.2025%20%281%29.pdf",
+        "label": "unfccc.int"
       }
     ]
   },
@@ -6042,14 +6042,14 @@
     "name": "Thailand",
     "options": [
       {
-        "text": "The former Siamese capital of Ayutthaya stood on an island at the meeting of three rivers. Water provided both a line of defence and a route for seagoing trade.",
-        "source": "https://whc.unesco.org/en/list/576/",
-        "label": "UNESCO"
+        "text": "The Mekong hides a landscape of rock pools along Thailand’s eastern border. At Sam Phan Bok the falling dry-season river reveals thousands of hollows scoured into its bed.",
+        "source": "https://tfo.dot.go.th/locations/sampanbok-three-thousand-holes/",
+        "label": "tfo.dot.go.th"
       },
       {
-        "text": "On Thailand's western border, Kaeng Krachan sits where several Asian wildlife regions meet. Forest birds and mammals near the northern and southern limits of their ranges occur in the same mountain chain.",
-        "source": "https://whc.unesco.org/en/list/1461/",
-        "label": "UNESCO"
+        "text": "Some limestone islands in Thailand’s Phang Nga Bay are hollow in the middle. A boat can slip through a tidal cave and emerge into an open-air lagoon ringed by cliffs.",
+        "source": "https://www.cavernas.org.br/wp-content/uploads/2021/07/tka_v4_n1_027-031.pdf",
+        "label": "cavernas.org.br"
       },
       {
         "text": "At Cheow Lan, steep limestone hills rise from a reservoir. The lake is recent, but the pale towers that now look like islands were already standing when the valley flooded.",
@@ -6094,9 +6094,9 @@
         "label": "whc.unesco.org"
       },
       {
-        "text": "At Jebel Hafit near Al Ain, hundreds of early Bronze Age tombs mark the mountain's foothills. Piled stone domes made a desert cemetery visible from far across the plain.",
-        "source": "https://whc.unesco.org/document/152426",
-        "label": "whc.unesco.org"
+        "text": "In the eastern United Arab Emirates, pieces of ancient ocean floor stand above the desert. Tectonic forces pushed oceanic crust onto the Arabian margin, exposing rock that normally lies beneath the sea.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024JB030345",
+        "label": "agupubs.onlinelibrary.wiley.com"
       },
       {
         "text": "Abu Dhabi has forests that grow in seawater along the edge of the desert. Grey mangroves send breathing roots up through the mud where ordinary underground roots would struggle for oxygen.",
@@ -6298,9 +6298,9 @@
         "label": "rjh.folium.ru"
       },
       {
-        "text": "Saint Hilarion Castle is built into the Kyrenia mountain ridge. Its upper rooms exploit the crags themselves for defence and look down on the coastal plain.",
-        "source": "https://www.visitncy.com/discover/saint-hilarion-castle/",
-        "label": "visitncy.com"
+        "text": "Fresh water crosses the Mediterranean from Turkey to northern Cyprus inside a pipe. Along the deep-water stretch the pipe hangs suspended beneath the surface rather than resting on the seabed.",
+        "source": "https://www.suen.gov.tr/uploads/turkiye-and-water_2025.pdf",
+        "label": "suen.gov.tr"
       },
       {
         "text": "Donkeys roam free on the Karpaz Peninsula. Descendants of working animals now graze the long finger of land pointing northeast from Cyprus.",
@@ -6324,9 +6324,9 @@
         "label": "repository.geologyscience.ru"
       },
       {
-        "text": "Java, also called Dzau, developed as a spa in the Greater Liakhvi valley. Mineral springs helped give a mountain settlement a second life as a resort.",
-        "source": "https://archive.gov.ge/index.php/en/2020-1/sakartvelos-kurortebi-1",
-        "label": "archive.gov.ge"
+        "text": "Lake Ertso in South Ossetia can disappear into the ground. It occupies a karst basin where underground drainage can empty the lake and leave a hollow until the water returns.",
+        "source": "https://portal.azertag.az/az/encyclopedia/post/15352",
+        "label": "portal.azertag.az"
       }
     ]
   },
@@ -7134,9 +7134,9 @@
         "label": "sciencedirect.com"
       },
       {
-        "text": "At Yankari, Wikki Warm Spring feeds a clear pool at about 31°C. Water pouring from beneath a sandstone cliff keeps the temperature remarkably steady through the seasons.",
-        "source": "https://journals.abu.edu.ng/index.php/njsr/article/download/332/172/223",
-        "label": "journals.abu.edu.ng"
+        "text": "At Yankari in Nigeria, Wikki Warm Spring feeds a clear pool at about 31°C. Water flowing from the rock keeps the pool warm through the seasons.",
+        "source": "https://oer.nou.edu.ng/sites/default/files/2025-10/BIO405_02.pdf",
+        "label": "oer.nou.edu.ng"
       }
     ]
   },
@@ -7292,7 +7292,7 @@
     "name": "Sudan",
     "options": [
       {
-        "text": "The Red Sea has just one atoll, according to UNESCO. Sanganeb rises off Sudan from deep water, a ring of coral enclosing a lagoon out of sight of the mainland.",
+        "text": "The Red Sea has just one atoll, according to UNESCO. Sanganeb rises from deep water about 25 kilometres off Sudan, a ring of coral surrounding a lagoon.",
         "source": "https://whc.unesco.org/en/list/262",
         "label": "whc.unesco.org"
       },
@@ -7611,9 +7611,9 @@
         "label": "esa.int"
       },
       {
-        "text": "Libya’s Oasis impact structure makes a bull’s-eye in the desert. Erosion has worn down the crater left by a meteorite, exposing rings of disturbed rock.",
-        "source": "https://www.lpi.usra.edu/lpi/contribution_docs/TR/TR_8803.pdf",
-        "label": "lpi.usra.edu"
+        "text": "In eastern Libya the scar of an asteroid impact appears as a set of concentric rings. At the BP impact structure erosion has exposed the deformed rock beneath the original crater floor.",
+        "source": "https://www.geokniga.org/bookfiles/geokniga-koeberlimpacttectonics-springer200.pdf",
+        "label": "geokniga.org"
       }
     ]
   },
@@ -7622,7 +7622,7 @@
     "name": "Somaliland",
     "options": [
       {
-        "text": "A frankincense tree described in 2019 was long familiar to Somaliland resin harvesters. Its entire known range was confined to a small area of limestone in the northeast.",
+        "text": "A frankincense tree formally described in 2019 was already familiar to local resin harvesters. Its entire known range at the time was a small area around Ceel Afweyn in Somaliland.",
         "source": "https://www.biotaxa.org/Phytotaxa/article/download/phytotaxa.394.3.3/40565/0",
         "label": "biotaxa.org"
       },
@@ -8629,9 +8629,9 @@
         "label": "reservenaturelle-saint-martin.com"
       },
       {
-        "text": "The highest ground on either side of Saint Martin lies on the French side. Pic Paradis, about 424 metres up, overlooks an island shared by two countries.",
-        "source": "https://www.visitstmaarten.com/nature-hiking/paradise-peak-pic-paradis/",
-        "label": "visitstmaarten.com"
+        "text": "Two islands in the same French territory are made of surprisingly different rock. Offshore Tintamarre is a flat slab of ancient coral limestone, while much of neighbouring Saint Martin rises in hills of volcanic origin.",
+        "source": "https://reservenaturelle-saint-martin.com/sites/default/files/pg-pdf/plan_de_gestion_rnsm_2018-2027-partie_a-diagnostic_de_la_rnn_annexes.pdf",
+        "label": "reservenaturelle-saint-martin.com"
       }
     ]
   },
