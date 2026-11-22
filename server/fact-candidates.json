@@ -17,6 +17,11 @@
         "text": "Instruments between Greenland and Iceland have measured pulses of deep water sweeping through roughly every five days. Even the current at the bottom of this strait has a rhythm.",
         "source": "https://journals.ametsoc.org/view/journals/phoc/47/12/jpo-d-17-0129.1.xml",
         "label": "Journal of Physical Oceanography"
+      },
+      {
+        "text": "The Denmark Strait is a deep-ocean bottleneck with a shallow lip. Dense water pooled north of the Greenland–Iceland ridge has to cross a sill only about 650 metres below the surface before descending into the Atlantic.",
+        "source": "https://rpickart.whoi.edu/wp-content/uploads/sites/53/2016/05/harden_etal_2016_dsr.pdf",
+        "label": "rpickart.whoi.edu"
       }
     ]
   },
@@ -38,6 +43,11 @@
         "text": "Some islands here were once joined to the mainland by land bridges. On others, wildlife had to arrive by sea or air.",
         "source": "https://whc.unesco.org/en/list/1182/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Gulf of California is opening along a plate boundary. Baja California rides with the Pacific Plate while most of mainland Mexico stays on the North American Plate.",
+        "source": "https://pubs.usgs.gov/publication/ofr20101083F",
+        "label": "pubs.usgs.gov"
       }
     ]
   },
@@ -59,6 +69,11 @@
         "text": "Surrounded by salt water in the Dry Tortugas, Fort Jefferson doubled as a rain collector. After repairs to the brickwork, less than a quarter-inch of rain sent a stream of fresh water toward the cisterns.",
         "source": "https://pubs.nps.gov/eTIC/DEWA-EUON/DRTO_364_116644_0001_of_0223.pdf",
         "label": "National Park Service"
+      },
+      {
+        "text": "Water can enter the gulf from the Caribbean, swing far north and leave again beside Florida. This Loop Current feeds the Gulf Stream before it heads across the Atlantic.",
+        "source": "https://oceanservice.noaa.gov/facts/loopcurrent.html",
+        "label": "oceanservice.noaa.gov"
       }
     ]
   },
@@ -80,6 +95,11 @@
         "text": "The Black Sea can look turquoise from space. Blooms of microscopic plankton covered in chalky plates can turn the surface milky blue.",
         "source": "https://science.nasa.gov/earth/earth-observatory/a-turquoise-tint-for-the-black-sea/",
         "label": "NASA"
+      },
+      {
+        "text": "The Black Sea trades water with the Mediterranean in two directions through one strait. Fresher Black Sea water flows out near the surface of the Bosporus while saltier water flows in underneath.",
+        "source": "https://www.whoi.edu/oceanus/feature/where-the-rivers-meet-the-sea/",
+        "label": "whoi.edu"
       }
     ]
   },
@@ -122,6 +142,11 @@
         "text": "A medieval Jewish manuscript survived World War II in Bosnia. Sarajevo’s National Museum recounts that it was sheltered in a mosque in a mountain village, then returned to the museum.",
         "source": "https://zemaljskimuzej.ba/en/item/sarajevo-haggadah/",
         "label": "National Museum of Bosnia and Herzegovina"
+      },
+      {
+        "text": "Bosnia and Herzegovina reaches the Adriatic through a narrow strip at Neum. Until Croatia bridged the bay in 2022, the main coastal drive to Dubrovnik crossed Bosnia twice.",
+        "source": "https://regions-and-cities.ec.europa.eu/policy/communication/campaigns/places-europe/1a-peljesac-bridge-croatia_en?prefLang=mt",
+        "label": "regions-and-cities.ec.europa.eu"
       }
     ]
   },
@@ -143,6 +168,11 @@
         "text": "At a Serbian family’s slava, the celebration of its patron saint, a special loaf is marked with a cross, sprinkled with wine, and broken four ways.",
         "source": "https://www.old.serbia.travel/en/see-serbia/culture/unesco-lists/intangible-cultural-heritage",
         "label": "Tourism Organisation of Serbia"
+      },
+      {
+        "text": "On the Serbian–Romanian border the Danube cuts right across the Carpathian mountain chain. The result is the Iron Gates, a string of gorges through the mountains.",
+        "source": "https://whc.unesco.org/en/tentativelists/1693",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -311,6 +341,11 @@
         "text": "Navigators have reported odd compass readings in the Triangle. NOAA compared those reports with other regions and found that even the reported magnetic anomalies were unexceptional.",
         "source": "https://repository.library.noaa.gov/view/noaa/1089/noaa_1089_DS1.pdf",
         "label": "NOAA"
+      },
+      {
+        "text": "One corner of the usual Miami–Bermuda–Puerto Rico triangle lies beside the deepest part of the Atlantic. The Puerto Rico Trench runs just north of the island.",
+        "source": "https://repository.library.noaa.gov/view/noaa/72496/noaa_72496_DS1.pdf",
+        "label": "repository.library.noaa.gov"
       }
     ]
   },
@@ -332,6 +367,11 @@
         "text": "London still carries the name of the Roman settlement Londinium, founded on the site around AD 43. The meaning of that older name is uncertain.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/uk.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The UK shares an island with another country. Its land border is on Ireland, across the sea from Great Britain, the island containing England, Scotland and Wales.",
+        "source": "https://www.ordnancesurvey.co.uk/blog/whats-the-difference-between-uk-britain-and-british-isles?trk=public_post_comment-text",
+        "label": "ordnancesurvey.co.uk"
       }
     ]
   },
@@ -353,6 +393,11 @@
         "text": "In the 1600s engineers cut a route through southern France that let boats travel between the Mediterranean and Atlantic without sailing around Spain.",
         "source": "https://whc.unesco.org/en/list/770/",
         "label": "UNESCO"
+      },
+      {
+        "text": "France's longest land border is with Brazil. It runs along the edge of French Guiana, an ocean away from Paris.",
+        "source": "https://www.gov.br/planalto/en/latest-news/2023/05/presidents-lula-and-macron-meet-at-the-g7-summit-and-seal-resumption-of-brazil-france-relations",
+        "label": "gov.br"
       }
     ]
   },
@@ -374,6 +419,11 @@
         "text": "The anthem adopted after Georgia’s Rose Revolution borrowed its music from two operas, Abesalom da Eteri and Daisi.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/gg.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Georgia has rainforests on the Black Sea. In the Colchic lowlands, extraordinary rainfall sustains peat bogs in a warm temperate forest landscape.",
+        "source": "https://whc.unesco.org/en/list/1616",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -395,6 +445,11 @@
         "text": "The tune used for Germany’s national anthem began as an Austrian imperial anthem composed by Joseph Haydn.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/au.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The seabed off Germany's North Sea coast is part of the world's largest unbroken system of intertidal sand and mud flats. At low tide, the Wadden Sea turns into land you can walk on.",
+        "source": "https://whc.unesco.org/en/list/1314",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -416,6 +471,11 @@
         "text": "Trace Greece beyond its peninsulas and the outline breaks into an archipelago. The Factbook counts roughly 2,000 islands.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/gr.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The Peloponnese is called a peninsula, but today you can sail all the way around it. The Corinth Canal cuts straight through its narrow land connection to the rest of Greece.",
+        "source": "https://corinthcanal.com/the-canal/specifications/?lang=en",
+        "label": "corinthcanal.com"
       }
     ]
   },
@@ -458,6 +518,11 @@
         "text": "Hungarians call their country Magyarország, the country of the Magyars. The English name Hungary came through a different name used for peoples arriving on the eastern European steppes.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/hu.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Central Europe's largest lake is shallow enough to average only about three metres deep. Hungary's Lake Balaton stretches almost 80 kilometres from end to end.",
+        "source": "https://www.esa.int/ESA_Multimedia/Images/2019/07/Lake_Balaton_Hungary",
+        "label": "esa.int"
       }
     ]
   },
@@ -479,6 +544,11 @@
         "text": "In Albania’s northern highlands, a traditional garment called the xhubleta flares out in rippling folds like a bell. Its distinctive silhouette is built by hand from felt.",
         "source": "https://ich.unesco.org/en/USL/xhubleta-skills-craftsmanship-and-forms-of-usage-01880",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Vjosa crosses from Greece into Albania and runs freely to the Adriatic. In 2023 Albania made its stretch and several tributaries Europe's first wild river national park.",
+        "source": "https://iucn.org/press-release/202303/vjosa-one-our-last-wild-rivers-becomes-europes-first-wild-river-national-park",
+        "label": "iucn.org"
       }
     ]
   },
@@ -500,6 +570,11 @@
         "text": "Andorra survives from a belt of frontier states that Charlemagne established in the Pyrenees. Its position between France and Spain goes back to that frontier.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/an.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "A single glacial valley system takes up almost a tenth of Andorra. The Madriu-Perafita-Claror landscape alone covers more than 4,000 hectares.",
+        "source": "https://whc.unesco.org/en/list/1160",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -521,6 +596,11 @@
         "text": "In Sheki and Basgal, makers of silk kelaghayi scarves print their designs with wooden stamps. A mixture containing resin and wax protects parts of the silk when the cloth is dyed.",
         "source": "https://ich.unesco.org/en/decisions/9.COM/10.4",
         "label": "UNESCO"
+      },
+      {
+        "text": "Azerbaijan borders Turkey, but you cannot reach that border from Baku without leaving the country. The entire Turkish frontier belongs to the detached territory of Nakhchivan.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/aj.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -542,6 +622,11 @@
         "text": "The first part of Belarus comes from a Slavic word for white. The rest preserves the historical name Rus.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/bo.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The Białowieża Forest crosses from Belarus into Poland. It shelters Europe's largest free-roaming population of European bison in a fragment of the forest that once covered much of the continent.",
+        "source": "https://whc.unesco.org/en/list/33/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -563,6 +648,11 @@
         "text": "The name Brussels preserves an older landscape: its Germanic roots refer to a dwelling and a marsh.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/be.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "In Baarle, pockets of Belgium contain pockets of the Netherlands. The border winds through streets and even houses, where the front door can determine the address.",
+        "source": "https://m-en.visitbaarle.com/informatie/overbaarle",
+        "label": "m-en.visitbaarle.com"
       }
     ]
   },
@@ -584,6 +674,11 @@
         "text": "Bulgaria took its name from the Bulgars, a people of Central Asian origin who joined local Slavic inhabitants to form a state in the late seventh century.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/bu.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The highest point anywhere on the Balkan Peninsula is in Bulgaria. Musala in the Rila Mountains rises to 2,925 metres, a little higher than Mount Olympus in Greece.",
+        "source": "https://www.bdz.bg/en/a/musala",
+        "label": "bdz.bg"
       }
     ]
   },
@@ -605,6 +700,11 @@
         "text": "An old explanation of Zagreb’s name puts the settlement “beyond the ditch.” The two parts of the name describe where to find it.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/hr.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "You can now drive from the rest of Croatia to Dubrovnik without a border crossing. The Pelješac Bridge bypasses the strip of Bosnian coast that splits Croatia's mainland shoreline.",
+        "source": "https://regions-and-cities.ec.europa.eu/policy/communication/campaigns/places-europe/1a-peljesac-bridge-croatia_en?prefLang=mt",
+        "label": "regions-and-cities.ec.europa.eu"
       }
     ]
   },
@@ -626,6 +726,11 @@
         "text": "The Moravian Gate is a natural passage across Central Europe. It links routes on the northern European plain to the Danube basin.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ez.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "On the slopes of Králický Sněžník, water can set out for three different seas. The divides here separate the drainage basins of the Baltic, North and Black Seas.",
+        "source": "https://www.visitczechia.com/en-us/news/2022/09/n-trips-to-the-river-springs",
+        "label": "visitczechia.com"
       }
     ]
   },
@@ -647,6 +752,11 @@
         "text": "Denmark has two anthems of equal standing. A royal anthem dating to 1780 is used on occasions attended by royalty.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/da.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The Kingdom of Denmark acquired a land border with Canada in 2022. It crosses a tiny Arctic island called Tartupaluk, or Hans Island, between Greenland and Ellesmere Island.",
+        "source": "https://www.canada.ca/en/global-affairs/news/2022/06/boundary-dispute.html",
+        "label": "canada.ca"
       }
     ]
   },
@@ -668,6 +778,11 @@
         "text": "Estonia’s low mainland gives way to an archipelago of more than 1,500 islands in the Baltic.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/en.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "At Kaali on the island of Saaremaa, what looks like a little round woodland pond occupies the largest of a group of meteorite impact craters.",
+        "source": "https://visitestonia.com/en/kaali-field-of-meteorite-craters",
+        "label": "visitestonia.com"
       }
     ]
   },
@@ -689,6 +804,11 @@
         "text": "People lived in the Faroes by about AD 500, centuries before the ninth-century Viking settlers arrived. The identity of those earlier islanders is uncertain.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/fo.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Nowhere in the Faroe Islands is more than about five kilometres from the sea. Even the middle of the largest island is close to a fjord or an Atlantic shore.",
+        "source": "https://visitfaroeislands.com/en/press-professionals/about3/the-faroe-islands/quick-facts0",
+        "label": "visitfaroeislands.com"
       }
     ]
   },
@@ -878,6 +998,11 @@
         "text": "Black-footed albatrosses that breed in the western Hawaiian Islands forage here. Look for them around the edge of the gulf’s continental shelf.",
         "source": "https://oceanexplorer.noaa.gov/expedition-feature/19gulfofalaska-background-seabirds/",
         "label": "NOAA"
+      },
+      {
+        "text": "Glaciers grind Alaska's rock into such fine powder that the Copper River carries it out to sea. From space its pale plume draws the Gulf of Alaska's coastal currents in colour.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/sediments-along-the-alaskan-coast-3744/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -899,6 +1024,11 @@
         "text": "The central Adriatic has a deep nursery called the Jabuka Pit. Young European hake gather there, and young Norway lobsters live more than 200 metres below the surface.",
         "source": "https://www.cbd.int/recommendation/sbstta/default.shtml?id=13328",
         "label": "Convention on Biological Diversity"
+      },
+      {
+        "text": "The Po River is slowly extending Italy into the Adriatic. Mud from its basin travels south along the Italian coast, leaving an underwater sediment belt on just one side of the sea.",
+        "source": "https://iris.cnr.it/retrieve/af2f6519-792b-4e1f-bfff-cde2749f3dd1/rid%201-s2.0-S0012825222002860-main.pdf",
+        "label": "iris.cnr.it"
       }
     ]
   },
@@ -920,6 +1050,11 @@
         "text": "A photograph taken above the Sudanese coast in 1993 caught a satellite flying free over the Red Sea. The crew of Discovery had released it by robot arm and later picked it up again.",
         "source": "https://images.nasa.gov/details/sts056-92-0028",
         "label": "NASA"
+      },
+      {
+        "text": "No permanently flowing river replenishes the Red Sea. Water lost to evaporation has to be replaced through a narrow southern gateway, the Bab el-Mandeb.",
+        "source": "https://repository.kaust.edu.sa/server/api/core/bitstreams/3650bba2-0bfe-4e40-a4cf-65ca22721e35/content",
+        "label": "repository.kaust.edu.sa"
       }
     ]
   },
@@ -1067,6 +1202,11 @@
         "text": "The fortress of Erebuni stood on the site of present-day Yerevan in 782 BC. One explanation traces the modern city’s name to that fortress.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/am.json",
         "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Armenia is landlocked yet has a vast high-altitude shore. Lake Sevan, nearly two kilometres above the sea, is the largest lake in the Lesser Caucasus.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/am.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -1214,6 +1354,11 @@
         "text": "The dark islands in the middle of Santorini’s bay are much younger than the pale cliffs around them. Lava began building them roughly fourteen centuries after the great eruption.",
         "source": "https://science.nasa.gov/earth/earth-observatory/santorini-volcano-greece-8872/",
         "label": "NASA"
+      },
+      {
+        "text": "Water from the Black Sea reaches the Aegean through two straits and a sea in between. It passes through the Bosporus, crosses the Sea of Marmara and emerges from the Dardanelles.",
+        "source": "https://seapower.navy.gov.au/sites/default/files/2023-02/PIAMA05.pdf",
+        "label": "seapower.navy.gov.au"
       }
     ]
   },
@@ -1235,6 +1380,11 @@
         "text": "Winter on the Tibetan Plateau helps set the table for microscopic life offshore. Cold, dry air blowing out from Asia cools the sea surface and changes how nutrients reach sunlit water.",
         "source": "https://science.nasa.gov/earth/earth-observatory/an-upended-ecosystem-in-the-arabian-sea-148655/",
         "label": "NASA"
+      },
+      {
+        "text": "Below the sunlit Arabian Sea lies one of the ocean's great oxygen-poor zones. The surface is productive enough that sinking organic material consumes much of the oxygen below as it decays.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023JC020668",
+        "label": "agupubs.onlinelibrary.wiley.com"
       }
     ]
   },
@@ -1256,6 +1406,11 @@
         "text": "To find out how long a Greenland shark could live, researchers dated the centres of the animals’ eye lenses. The results put their lifespan at a minimum of 272 years.",
         "source": "https://pubmed.ncbi.nlm.nih.gov/27516602/",
         "label": "Science"
+      },
+      {
+        "text": "The Arctic is the smallest ocean. Unlike the ocean around Antarctica, it has continents nearly encircling a sea, with the North Pole itself afloat over deep water.",
+        "source": "https://oceanservice.noaa.gov/facts/smallestocean.html",
+        "label": "oceanservice.noaa.gov"
       }
     ]
   },
@@ -1277,6 +1432,11 @@
         "text": "A summer map of the Baltic can show swirls that look painted onto the water. They are blooms of microscopic organisms, large enough in aggregate for satellites to follow.",
         "source": "https://science.nasa.gov/resource/summer-blooms-in-the-baltic/",
         "label": "NASA"
+      },
+      {
+        "text": "Follow Baltic water from the Danish straits to the head of the Gulf of Bothnia and it gets progressively fresher. A narrow connection to the ocean struggles to replace the salt diluted by hundreds of rivers.",
+        "source": "https://stateofthebalticsea.helcom.fi/overview/about-the-baltic-sea/",
+        "label": "stateofthebalticsea.helcom.fi"
       }
     ]
   },
@@ -1298,6 +1458,11 @@
         "text": "The spice trade left volcanologists an unusual gift. Portuguese and Dutch traffic through the Banda Islands helped produce a long written record of the island volcano’s activity.",
         "source": "https://volcano.si.edu/volcano.cfm?vn=265090&vtab=GeneralInfo",
         "label": "Smithsonian Global Volcanism Program"
+      },
+      {
+        "text": "The Banda Sea holds the deepest known patch of ocean floor outside an ocean trench. The Weber Deep drops roughly 7.2 kilometres into a basin inside Indonesia's curved island arc.",
+        "source": "https://researchportalplus.anu.edu.au/en/publications/rolling-open-earths-deepest-forearc-basin/",
+        "label": "researchportalplus.anu.edu.au"
       }
     ]
   },
@@ -1319,6 +1484,11 @@
         "text": "A front runs through the sea itself. Relatively warm, salty Atlantic water meets colder, fresher Arctic water inside the shallow Barents basin.",
         "source": "https://science.nasa.gov/earth/earth-observatory/phytoplankton-bloom-in-the-barents-sea-45624/",
         "label": "NASA"
+      },
+      {
+        "text": "Much of the Barents Sea is continental shelf. Atlantic warmth keeps the southwest largely ice-free even as the northern part of the same shallow sea freezes.",
+        "source": "https://npolar.no/en/themes/barents-sea/",
+        "label": "npolar.no"
       }
     ]
   },
@@ -1340,6 +1510,11 @@
         "text": "The Pacific’s only direct seawater passage into the Arctic is remarkably shallow. Water from a deep ocean must cross a sill only about 50 metres deep.",
         "source": "https://repository.library.noaa.gov/view/noaa/44649/noaa_44649_DS1.pdf",
         "label": "NOAA"
+      },
+      {
+        "text": "North America and Asia were connected here because a surprisingly shallow shelf lies beneath the strait. A sea-level fall of roughly 50 metres can expose the land now hidden under its waters.",
+        "source": "https://npgallery.nps.gov/GetAsset/151822aa-86cf-4400-b901-6d79fb9fbcc7/original.pdf",
+        "label": "npgallery.nps.gov"
       }
     ]
   },
@@ -1361,6 +1536,11 @@
         "text": "Nearly five kilometres down in the Cayman Trough, researchers found a plume rising more than a kilometre above the Beebe vents. It carried copper-rich fluid up from a spreading crack in the Caribbean seafloor.",
         "source": "https://www.nature.com/articles/ncomms1636",
         "label": "Nature Communications"
+      },
+      {
+        "text": "Between Jamaica and the Cayman Islands, the Caribbean floor drops more than seven kilometres into the Cayman Trough. Tropical shallows sit next to the deepest part of the whole sea.",
+        "source": "https://cigarchives.gov.ky/environment",
+        "label": "cigarchives.gov.ky"
       }
     ]
   },
@@ -1382,6 +1562,11 @@
         "text": "A diver collecting in the top 30 metres of the sea photographed a juvenile boxfish just a centimetre long. Its portrait came from the sunlit layer above a basin more than five kilometres deep.",
         "source": "https://oceanexplorer.noaa.gov/multimedia/daily-image-media-20201120/",
         "label": "NOAA"
+      },
+      {
+        "text": "The Celebes Sea is part of a sea route that water itself takes between oceans. Pacific water enters from the north and turns south through the Makassar Strait on its way to the Indian Ocean.",
+        "source": "https://www.whoi.edu/cms/files/schott_mccreary_41948.pdf",
+        "label": "whoi.edu"
       }
     ]
   },
@@ -1403,6 +1588,11 @@
         "text": "Some Coral Sea islands barely rise above the water, yet their sand is important nesting ground. Green turtles and breeding seabirds share these remote cays.",
         "source": "https://parksaustralia.gov.au/marine/pub/scientific-publications/Hoey-and-Pratchett-2017-CMR-report-FINAL-9-June.pdf",
         "label": "Parks Australia"
+      },
+      {
+        "text": "Along one edge of the Coral Sea is the world's largest coral reef ecosystem. The Great Barrier Reef stretches more than 2,000 kilometres along northeastern Australia.",
+        "source": "https://whc.unesco.org/en/list/154/",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -1424,6 +1614,11 @@
         "text": "In 2015 mangroves died along the gulf when the sea temporarily fell. An El Niño event left trees that depend on tidal flooding high and dry.",
         "source": "https://nesptropical.edu.au/wp-content/uploads/2021/05/Project-4.13-Wrap-up-Factsheet.pdf",
         "label": "Australian research team"
+      },
+      {
+        "text": "There are reefs and rocky pinnacles hidden under the muddy waters of the Gulf of Carpentaria. In the marine park north of Mornington Island, even the deepest water is only about 70 metres deep.",
+        "source": "https://australianmarineparks.gov.au/parks/north-marine-parks-network/gulf-of-carpentaria-marine-park/",
+        "label": "australianmarineparks.gov.au"
       }
     ]
   },
@@ -1445,6 +1640,11 @@
         "text": "The research buoy once stationed where the equator crosses the prime meridian was moved west in 2021. Piracy in the gulf had made servicing the mooring harder.",
         "source": "https://repository.library.noaa.gov/view/noaa/56312/noaa_56312_DS1.pdf",
         "label": "NOAA"
+      },
+      {
+        "text": "The volcanic line running through Cameroon continues offshore into the Gulf of Guinea. Bioko, Príncipe, São Tomé and Annobón mark its course across the sea.",
+        "source": "https://whc.unesco.org/en/tentativelists/6645/",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -1466,6 +1666,11 @@
         "text": "Part of the Labrador Sea can freeze in spring after staying open through winter. A fresh surface layer and a subsequent cold snap can make ice possible where winter mixing had kept it away.",
         "source": "https://science.nasa.gov/earth/earth-observatory/spring-freeze-in-the-labrador-sea-145059/",
         "label": "NASA"
+      },
+      {
+        "text": "The Labrador Sea is a stranded ocean-opening project. Its floor preserves a spreading ridge where Greenland and North America once pulled apart before spreading stopped here.",
+        "source": "https://www.sciencedirect.com/science/article/abs/pii/S0264817298000415",
+        "label": "sciencedirect.com"
       }
     ]
   },
@@ -1487,6 +1692,11 @@
         "text": "In July 2008 a storm carried dust from Iraq out over the gulf. From space, pale arcs in the air appeared alongside patterns in the water northeast of Qatar.",
         "source": "https://science.nasa.gov/earth/earth-observatory/dust-storm-over-the-persian-gulf-20173/",
         "label": "NASA"
+      },
+      {
+        "text": "The Persian Gulf averages only about 35 metres deep. Intense evaporation turns some of that shallow water into dense brine that flows out beneath incoming water at Hormuz.",
+        "source": "https://www2.whoi.edu/site/bower-lab/wp-content/uploads/sites/12/2018/03/Bower_2000_Character.pdf",
+        "label": "www2.whoi.edu"
       }
     ]
   },
@@ -1508,6 +1718,11 @@
         "text": "Two eel species share a spawning area here. Their larvae ride away from the same region, yet eventually reach habitats spread from Japan to Indonesia.",
         "source": "https://www.nature.com/articles/ncomms1174",
         "label": "Nature Communications"
+      },
+      {
+        "text": "At the eastern edge of the Philippine Sea Plate, the Pacific Plate bends down beneath it. That contact traces the Mariana Trench, home to the deepest known point in the ocean.",
+        "source": "https://www.usgs.gov/publications/seismicity-earth-1900-2012-philippine-sea-plate-and-vicinity",
+        "label": "usgs.gov"
       }
     ]
   },
@@ -1529,6 +1744,11 @@
         "text": "At Dongsha Atoll, even waves travelling below the sea surface can bounce back. Researchers documented internal waves reflecting from the atoll using satellite observations.",
         "source": "https://repository.library.noaa.gov/view/noaa/52530",
         "label": "NOAA"
+      },
+      {
+        "text": "The southern South China Sea spreads over a drowned continental shelf. At ice-age low stands enough of the Sunda Shelf emerged to connect Borneo to mainland Southeast Asia.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018JD029971",
+        "label": "agupubs.onlinelibrary.wiley.com"
       }
     ]
   },
@@ -1550,6 +1770,11 @@
         "text": "Ashmore Reef was known for its many sea snakes. When scientists carried out an extensive reef health survey, they searched the shallows and failed to find one.",
         "source": "https://parksaustralia.gov.au/news/scientists-complete-first-ever-ashmore-reef-health-check/",
         "label": "Parks Australia"
+      },
+      {
+        "text": "Australia's broad continental shelf ends abruptly in the Timor Trough. Deep water lies close to Timor even though much of the sea on the Australian side is shallow.",
+        "source": "https://www.aph.gov.au/Parliamentary_Business/Committees/House_of_Representatives_Committees?url=jsct%2F6_7_february2007%2Fsubs%2Fsub6.pdf",
+        "label": "aph.gov.au"
       }
     ]
   },
@@ -1571,6 +1796,11 @@
         "text": "Pack ice crushed Shackleton’s Endurance in 1915. When a search team found it on the Weddell Sea floor in 2022, the ship’s name and the star on its stern were still visible.",
         "source": "https://fmht.co.uk/wreckmap/endurance/",
         "label": "Source"
+      },
+      {
+        "text": "A latitude serves as the northern edge of the Southern Ocean in a widely used definition. Crossing 60° south can put a ship in a new ocean without passing a cape or a strait.",
+        "source": "https://oceanservice.noaa.gov/facts/howmanyoceans.html",
+        "label": "oceanservice.noaa.gov"
       }
     ]
   },
@@ -1592,6 +1822,11 @@
         "text": "At Ban Khun Samut Chin the shoreline retreated through a village. Families moved inland, leaving the Buddhist temple standing out at the water’s edge.",
         "source": "https://doi.nrct.go.th/ListDoi/Download/586018?Resolve_DOI=10.14456%2Fbuilt.2021.5",
         "label": "Source"
+      },
+      {
+        "text": "The Gulf of Thailand is a flooded hollow on the Sunda Shelf. It averages about 45 metres deep, and even its deepest water is less than 100 metres deep.",
+        "source": "https://www.sciencedirect.com/science/article/abs/pii/S1040618226000558",
+        "label": "sciencedirect.com"
       }
     ]
   },
@@ -1613,6 +1848,11 @@
         "text": "At Point Nemo, the three nearest pieces of land are each about 2,688 kilometres away. The spot takes its name from Jules Verne’s submarine captain.",
         "source": "https://oceanservice.noaa.gov/facts/nemo.html?ftag=YHFa5b931b",
         "label": "NOAA"
+      },
+      {
+        "text": "Gather every continent and island into one patch and the Pacific would still cover more area. This single ocean basin is larger than all Earth's dry land combined.",
+        "source": "https://origin.oceanexplorer.noaa.gov/ocean-fact/pacific-size/",
+        "label": "origin.oceanexplorer.noaa.gov"
       }
     ]
   },
@@ -1634,6 +1874,11 @@
         "text": "The Atlantic contains a sea whose boundaries move. Four currents enclose the floating seaweed of the Sargasso Sea, giving it a perimeter without a coastline.",
         "source": "https://oceanservice.noaa.gov/facts/sargassosea.html",
         "label": "NOAA"
+      },
+      {
+        "text": "New Atlantic seafloor forms along a mountain chain running nearly the length of the ocean. The two sides move apart by centimetres each year, about the speed fingernails grow.",
+        "source": "https://origin.oceanexplorer.noaa.gov/ocean-fact/mid-ocean-ridge/",
+        "label": "origin.oceanexplorer.noaa.gov"
       }
     ]
   },
@@ -1655,6 +1900,11 @@
         "text": "The tsunami that began off Sumatra in 2004 left a trace far outside the Indian Ocean. Tide gauges around the world recorded its passage.",
         "source": "https://www.ncei.noaa.gov/sites/default/files/2024-11/IO_Poster_20241030_final_lowres.pdf",
         "label": "NOAA"
+      },
+      {
+        "text": "The Indian Ocean runs into Asia before it can reach the Arctic. Across its northern end, monsoon winds reverse with the seasons and major surface currents reverse with them.",
+        "source": "https://www.pmel.noaa.gov/gtmba/files/rama/RAMA_BAMS.pdf",
+        "label": "pmel.noaa.gov"
       }
     ]
   },
@@ -1676,6 +1926,11 @@
         "text": "You can find old Hudson Bay beaches inland and uphill. The crust is still rising after the great ice sheets melted and lifted their weight from it.",
         "source": "https://science.nasa.gov/earth/earth-observatory/contours-of-the-james-bay-lowlands/",
         "label": "NASA"
+      },
+      {
+        "text": "Gravity is unusually weak around Hudson Bay. Part of the anomaly records ice that vanished thousands of years ago, because Earth's interior is still responding to losing its weight.",
+        "source": "https://www.nature.com/articles/37339",
+        "label": "nature.com"
       }
     ]
   },
@@ -1697,6 +1952,11 @@
         "text": "On the Solovetsky Islands, monks linked lakes with canals. A monastery in the White Sea built itself a freshwater transport and supply network.",
         "source": "https://whc.unesco.org/en/decisions/7050/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The White Sea has a literal throat. Its narrow Gorlo funnels the tidal exchange between the inner sea and the Barents Sea beyond it.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2014JC010173",
+        "label": "agupubs.onlinelibrary.wiley.com"
       }
     ]
   },
@@ -1718,6 +1978,11 @@
         "text": "Herring spend the feeding season where Arctic and Atlantic waters meet. When the shoals head for their Norwegian wintering grounds, killer whales follow them.",
         "source": "https://www.hi.no/en/hi/temasider/species/herring",
         "label": "Source"
+      },
+      {
+        "text": "Water heading into the Arctic from the Atlantic crosses the Norwegian Sea. Its warm northward route carries ocean heat past the Arctic Circle along Norway.",
+        "source": "https://www.awi.de/en/science/climate-sciences/physical-oceanography/main-research-focus/circulation-in-the-arctic-ocean-and-the-nordic-seas.html",
+        "label": "awi.de"
       }
     ]
   },
@@ -1739,6 +2004,11 @@
         "text": "Satellite tags revealed journeys through the Celtic Sea by basking sharks seen off western Scotland. The same animal can use waters off Scotland and southwest England.",
         "source": "https://www.nature.scot/sites/default/files/Publication%202016%20-%20SNH%20Commissioned%20Report%20908%20-%20Basking%20shark%20satellite%20tagging%20project%20-%20insights%20into%20basking%20shark%20%28Cetorhinus%20maximus%29%20movement%2C%20distribution%20and%20behaviour%20using%20satellite%20telemetry%20-%20Final%20report.pdf",
         "label": "Source"
+      },
+      {
+        "text": "Sail southwest from Ireland and the Celtic Sea stretches out as a shallow shelf. At its outer edge the seabed falls away into deep Atlantic water at the Porcupine Seabight and Goban Spur.",
+        "source": "https://www.nwwac.org/_fileupload/MI_NWWAC_North_Western_Waters_Atlas_3rd-Edition_low%20res.pdf",
+        "label": "nwwac.org"
       }
     ]
   },
@@ -1760,6 +2030,11 @@
         "text": "The first recorded unaided swim across the Channel took 21 hours and 45 minutes. Matthew Webb made it from England to France in 1875.",
         "source": "https://www.dovermuseum.co.uk/Exhibitions/Channel-Swimmers/Records--Firsts.aspx",
         "label": "Source"
+      },
+      {
+        "text": "In the Bay of Mont-Saint-Michel, the English Channel has tides large enough to redraw the coastline in hours. Water sweeps across sandbanks around an abbey perched above them on a rock.",
+        "source": "https://whc.unesco.org/en/list/80/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -1781,6 +2056,11 @@
         "text": "Where rivers pour into the Bay of Biscay, their plumes help shape the spawning grounds of anchovies. The fish gather in particular patches of water on the shelf.",
         "source": "https://www.ices.dk/sites/pub/CM%20Doccuments/2004/G/SGRESP04.pdf",
         "label": "Source"
+      },
+      {
+        "text": "The Bay of Biscay opened as Iberia rotated away from what is now France. The bend in Europe's Atlantic coast records a vanished spreading centre.",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/17769757/",
+        "label": "pubmed.ncbi.nlm.nih.gov"
       }
     ]
   },
@@ -1802,6 +2082,11 @@
         "text": "From Tyre, on the coast of modern Lebanon, Phoenician sailors founded settlements as far away as Carthage and Cádiz. Their ships linked the eastern Mediterranean with the Atlantic coast of Spain.",
         "source": "https://whc.unesco.org/pg.cfm?cid=31&id_site=299",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Mediterranean loses more water to evaporation than it gains from rain and rivers. Atlantic water streams in at the surface at Gibraltar while denser, saltier Mediterranean water escapes underneath.",
+        "source": "https://doi.org/10.1175/1520-0485%282002%29032%3C3193%3Aititso%3E2.0.co%3B2",
+        "label": "doi.org"
       }
     ]
   },
@@ -1823,6 +2108,11 @@
         "text": "Pacific eiders nest on tundra around this sea, including Wrangel Island. After breeding, they travel through the Chukchi Sea to spend winter in the Bering Sea.",
         "source": "https://pame.is/images/03_Projects/EA/LMEs/Factsheets/8_East_Siberian_Sea_LME.pdf",
         "label": "Source"
+      },
+      {
+        "text": "Between the New Siberian Islands and Wrangel Island, the Arctic Ocean spreads across a broad, shallow shelf. The East Siberian Sea covers land that was exposed during lower ice-age seas.",
+        "source": "https://pame.is/images/03_Projects/EA/LMEs/Factsheets/8_East_Siberian_Sea_LME.pdf",
+        "label": "pame.is"
       }
     ]
   },
@@ -1844,6 +2134,11 @@
         "text": "In the Sundarbans at the head of the bay, tigers swim long distances between mangrove islands. Fish and crabs are among the prey they take in this tidal forest.",
         "source": "https://whc.unesco.org/en/list/452",
         "label": "UNESCO"
+      },
+      {
+        "text": "The largest submarine fan on Earth lies beneath the Bay of Bengal and extends far beyond it. Rivers draining the Himalayas have built this underwater deposit thousands of kilometres out into the ocean.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S0264817203000357",
+        "label": "sciencedirect.com"
       }
     ]
   },
@@ -1865,6 +2160,11 @@
         "text": "Bluefin tuna, yellowtail and flying squid travel north on the warm Tsushima Current. In autumn the migration reverses toward the spawning grounds.",
         "source": "https://www.env.go.jp/en/nature/biodic/kaiyo-hozen/kaiiki/hyoso/415.html",
         "label": "Source"
+      },
+      {
+        "text": "The Sea of Japan is kilometres deep, but its doorways are shallow. Water moving between this basin and the surrounding seas has to cross much shallower straits.",
+        "source": "https://journals.ametsoc.org/view/journals/phoc/46/1/jpo-d-15-0075.1.xml",
+        "label": "journals.ametsoc.org"
       }
     ]
   },
@@ -1886,6 +2186,11 @@
         "text": "The Korean tidal flats, or getbol, are home to mud octopuses, fiddler crabs and ghost crabs. At low tide a whole stretch of their seafloor becomes dry enough to walk across.",
         "source": "https://whc.unesco.org/en/list/1591/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The Yellow Sea takes its colour and its name from sediment. Rivers carry such fine mineral grains into this shallow sea that tides can keep them suspended long after they reach salt water.",
+        "source": "https://www.esa.int/articles/about-us/directorates/earth-observation-programmes/earth-from-space-the-yellow-sea-of-china",
+        "label": "esa.int"
       }
     ]
   },
@@ -1907,6 +2212,11 @@
         "text": "In 2002 astronauts photographed a storm over the Tasman Sea with features of both a tropical cyclone and a higher-latitude storm. The shuttle crew could see the curve of its cloud bands from orbit.",
         "source": "https://images.nasa.gov/details/s109e6003",
         "label": "NASA"
+      },
+      {
+        "text": "Part of the Tasman Sea covers a continent. The Lord Howe Rise is a broad, submerged piece of Zealandia extending northwest from New Zealand towards Australia.",
+        "source": "https://rsnz.onlinelibrary.wiley.com/doi/10.1080/00288306.2025.2500394",
+        "label": "rsnz.onlinelibrary.wiley.com"
       }
     ]
   },
@@ -1928,6 +2238,11 @@
         "text": "Where the Yangtze empties into the East China Sea, divers found a wooden Qing-era merchant vessel. In the murky estuary, one of the few photographs they could take showed porcelain still sitting in rows.",
         "source": "https://service.shanghai.gov.cn/sheninfo/specialdetail.aspx?Id=37d266f1-16ae-431f-a3df-c137bac5e890",
         "label": "Shanghai Municipal Government"
+      },
+      {
+        "text": "In summer, freshwater from China's Yangtze can travel across the East China Sea towards Korea's Jeju Island. Its low-salinity surface plume crosses national waters.",
+        "source": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2022.1024306/full",
+        "label": "frontiersin.org"
       }
     ]
   },
@@ -1949,6 +2264,11 @@
         "text": "Twice a day the North Sea uncovers the Wadden Sea mudflats. Migrating birds stop there in their millions to feed on the animals in the exposed sediment.",
         "source": "https://whc.unesco.org/en/list/1314/",
         "label": "UNESCO"
+      },
+      {
+        "text": "An arm of the North Sea became a freshwater lake in the twentieth century. The Dutch closed the Afsluitdijk across the Zuiderzee, creating the IJsselmeer behind it.",
+        "source": "https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/waterkeringen/dijken/afsluitdijk",
+        "label": "rijkswaterstaat.nl"
       }
     ]
   },
@@ -1970,6 +2290,11 @@
         "text": "Off Sakhalin Island, western gray whales return in summer and autumn to feed on animals living on the seabed. This stretch of the Sea of Okhotsk is a vital feeding ground for them.",
         "source": "https://cd2-www.fisheries.noaa.gov/s3/2023-03/2023-Gray-Whale-WNP-DPS-5-Year-Review_508-compliant.pdf",
         "label": "NOAA"
+      },
+      {
+        "text": "The curved chain of the Kuril Islands forms a gate between the Sea of Okhotsk and the open Pacific. Ocean water passes through the gaps between the volcanoes.",
+        "source": "https://meetings.pices.int/publications/special-publications/NPESR/2010/PICES_PUB4_Chp6_Okhotsk.pdf",
+        "label": "meetings.pices.int"
       }
     ]
   },
@@ -2915,6 +3240,11 @@
         "text": "Icelandic towns have turned heated outdoor pools into gathering places year-round. A soak in a public hot tub can be as much an occasion for conversation as for swimming.",
         "source": "https://ich.unesco.org/en/RL/02249",
         "label": "UNESCO"
+      },
+      {
+        "text": "Reykjavík is the world's northernmost capital of a sovereign state. Even so, it lies south of the Arctic Circle.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ic.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3461,6 +3791,11 @@
         "text": "Cornish miners carried their hard-rock mining skills overseas. The engine houses standing above Cornwall's mines have relatives on mining landscapes on other continents.",
         "source": "https://whc.unesco.org/en/list/1215/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Stand on the brass line at Greenwich and a GPS receiver will put you slightly west of zero longitude. The modern reference meridian runs about 102 metres east of the historic one.",
+        "source": "https://www.rmg.co.uk/stories/time/what-prime-meridian-why-it-greenwich?show=conwebdoc.1343",
+        "label": "rmg.co.uk"
       }
     ]
   },
@@ -3482,6 +3817,11 @@
         "text": "At New Lanark, cotton mill owner Robert Owen made schooling part of village life and established an infant school for the workers' children.",
         "source": "https://whc.unesco.org/en/list/429/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The diagonal slash across the Scottish Highlands is a fault. Loch Ness lies along the Great Glen, which runs almost ruler-straight between Fort William and Inverness.",
+        "source": "https://earthwise.bgs.ac.uk/index.php/Introduction_to_the_Grampian_Highlands",
+        "label": "earthwise.bgs.ac.uk"
       }
     ]
   },
@@ -3503,6 +3843,11 @@
         "text": "The rope bridge to Carrick-a-Rede began as a way to get to work. Salmon fishermen crossed the gap to reach the island.",
         "source": "https://www.nationaltrust.org.uk/visit/northern-ireland/carrick-a-rede",
         "label": "www.nationaltrust.org.uk"
+      },
+      {
+        "text": "The largest freshwater lake in the British Isles is entirely in Northern Ireland. Shallow Lough Neagh occupies the broad hollow near the territory's centre.",
+        "source": "https://www.daera-ni.gov.uk/articles/lough-neagh-catchment",
+        "label": "daera-ni.gov.uk"
       }
     ]
   },
@@ -3524,6 +3869,11 @@
         "text": "At Blaenavon the ironworks, workers' houses, mines and transport routes survive together. You can trace how a Welsh hillside was turned into iron.",
         "source": "https://whc.unesco.org/en/list/984/",
         "label": "UNESCO"
+      },
+      {
+        "text": "The tide enters the Menai Strait from both ends of Anglesey. Because the two ends do not rise and fall together, water can race through the narrow middle.",
+        "source": "https://naturalresources.wales/media/687997/eng-menai-strait-reg-37-report-2018.pdf",
+        "label": "naturalresources.wales"
       }
     ]
   },
@@ -3545,6 +3895,11 @@
         "text": "Vienna's Spanish Riding School passes on its work with Lipizzaner horses through generations of riders. Learning includes caring for the horses as well as riding them.",
         "source": "https://ich.unesco.org/en/RL/01106",
         "label": "UNESCO"
+      },
+      {
+        "text": "The world's longest known ice cave is inside an Austrian mountain near Salzburg. Eisriesenwelt extends for more than 40 kilometres through the rock, with permanent ice near its entrance.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/au.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3566,6 +3921,11 @@
         "text": "Finnish has a word for the steam that rises when water hits hot sauna stones. Löyly is central to what makes a sauna a sauna.",
         "source": "https://ich.unesco.org/en/RL/01596",
         "label": "UNESCO"
+      },
+      {
+        "text": "In Finland's Kvarken Archipelago, new land is still emerging from the Baltic. As the crust rebounds from the last ice sheet, islands grow together and bays turn into lakes.",
+        "source": "https://whc.unesco.org/en/list/898/",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -3587,6 +3947,11 @@
         "text": "The Irish uilleann pipes take their air from bellows worked with an elbow, leaving the player's mouth free while the pipes sound.",
         "source": "https://ich.unesco.org/en/RL/01264",
         "label": "UNESCO"
+      },
+      {
+        "text": "Ireland has lakes that vanish through the floor. In a turlough, rising groundwater floods a limestone hollow and then drains back underground, leaving a field where the lake was.",
+        "source": "https://www.gsi.ie/programmes-projects/groundwater/groundwater-activities/groundwater-flooding/what-is-groundwater-flooding/",
+        "label": "gsi.ie"
       }
     ]
   },
@@ -3608,6 +3973,11 @@
         "text": "Rome built the Appian Way as a military road. Its eventual destination was Brindisi, the Adriatic port from which armies could sail east.",
         "source": "https://whc.unesco.org/en/list/1708/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Two independent countries fit entirely inside Italy. Vatican City is enclosed by Rome, while San Marino is surrounded by Italian territory near the Adriatic.",
+        "source": "https://civil-protection-knowledge-network.europa.eu/system/files/2025-01/wildfire-peer-review-it_final-report-2024.pdf",
+        "label": "civil-protection-knowledge-network.europa.eu"
       }
     ]
   },
@@ -3629,6 +3999,11 @@
         "text": "Kuldīga still follows the street plan it had when it helped govern the Duchy of Courland. Its log buildings show how local carpenters borrowed ideas from across the Baltic.",
         "source": "https://whc.unesco.org/en/list/1658/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Latvia's Venta waterfall is far wider than it is high. A roughly 250-metre-wide ledge crosses the river at Kuldīga, yet the water drops only about two metres.",
+        "source": "https://www.latvia.travel/en/sight/venta-waterfall",
+        "label": "latvia.travel"
       }
     ]
   },
@@ -3648,6 +4023,11 @@
       },
       {
         "text": "A British visitor can hum along to Liechtenstein's national anthem on a first hearing. It uses the tune of God Save the King.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ls.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Liechtenstein has just two neighbours, Austria and Switzerland, and both are landlocked. Of the world's two doubly landlocked countries, this is the one wedged between the Alps and the Rhine.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ls.json",
         "label": "CIA World Factbook (archived profile)"
       }
@@ -3671,6 +4051,11 @@
         "text": "In Lithuanian sutartinės, singers weave together different melodies and rhythms. The name comes from a verb meaning to agree or be in harmony.",
         "source": "https://ich.unesco.org/en/RL/00433",
         "label": "UNESCO"
+      },
+      {
+        "text": "Lithuania's Curonian Lagoon is screened from the open Baltic by a sand spit almost 100 kilometres long. In places the strip of land is only a few hundred metres wide.",
+        "source": "https://whc.unesco.org/en/list/994/",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -3692,6 +4077,11 @@
         "text": "Luxembourg's name grew out of the name of a small fortress. The modern country's capital grew up around its site.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/lu.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Along much of Luxembourg's border with Germany, the boundary is the entire river. The two countries share sovereignty over the water rather than drawing a line down the middle.",
+        "source": "https://act.public.lu/fr/parcelles-residences/mensuration-officielle/limites-etat.html",
+        "label": "act.public.lu"
       }
     ]
   },
@@ -3713,6 +4103,11 @@
         "text": "Lake Ohrid has been isolated long enough for animals to evolve there that live nowhere else. The lake and the old town on its shore share a World Heritage listing.",
         "source": "https://whc.unesco.org/en/list/99/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Lake Ohrid has persisted through multiple ice ages on the border with Albania. Its long isolation left North Macedonia with lake animals whose entire natural range fits in that one basin.",
+        "source": "https://whc.unesco.org/en/list/99",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -3734,6 +4129,11 @@
         "text": "Prehistoric builders on Malta and Gozo raised temples out of immense stone blocks. Several have rooms shaped like lobes around a central passage.",
         "source": "https://whc.unesco.org/en/list/132/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Malta has no permanent river. Rain falling on its limestone islands can instead travel underground into aquifers surrounded by Mediterranean salt water.",
+        "source": "https://energywateragency.gov.mt/wp-content/uploads/2023/09/Chapter-2-Characterisation-of-water-resources-in-the-Maltese-Islands-Final.pdf",
+        "label": "energywateragency.gov.mt"
       }
     ]
   },
@@ -3755,6 +4155,11 @@
         "text": "Moldova's anthem began as a twelve-stanza poem. The sung version skips from stanza two to five, then to nine and twelve.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/md.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Landlocked Moldova has a port that can receive seagoing ships. At Giurgiulești, a tiny stretch of Danube frontage connects the country to the Black Sea.",
+        "source": "https://www.ebrd.com/home/news-and-events/news/2022/moldovas-strategic-danube-port-offers-a-lifeline-for-ukraine.html",
+        "label": "ebrd.com"
       }
     ]
   },
@@ -3776,6 +4181,11 @@
         "text": "Although French is widely spoken in Monaco, the official words of its national anthem are in Monégasque.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/mn.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Monaco grew a new neighbourhood out into the Mediterranean. The six hectares of Mareterra added about three per cent to the entire country's land area.",
+        "source": "https://eme.gouv.mc/wp-content/uploads/2025/03/EME_BarometrePropTech_2024_Web-5.pdf",
+        "label": "eme.gouv.mc"
       }
     ]
   },
@@ -3797,6 +4207,11 @@
         "text": "The bay of Kotor once exported skills as well as goods. Its schools of masonry and icon painting influenced artists elsewhere on the Adriatic.",
         "source": "https://whc.unesco.org/en/list/125/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Montenegro shares the Balkan Peninsula's largest lake with Albania. Lake Skadar lies close to the Adriatic and drains into it through the Bojana/Buna River.",
+        "source": "https://www.icpdr.org/danube-basin/countries/montenegro",
+        "label": "icpdr.org"
       }
     ]
   },
@@ -3818,6 +4233,11 @@
         "text": "The windmills at Kinderdijk helped keep farmland dry. They lifted water in stages so it could drain out when the river level allowed.",
         "source": "https://whc.unesco.org/en/list/818/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Only about half of the European Netherlands rises more than a metre above sea level. Roughly a quarter of its land is actually below it.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/nl.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3839,6 +4259,11 @@
         "text": "At Urnes, Viking carving traditions and Romanesque church architecture meet in one building made of wood.",
         "source": "https://whc.unesco.org/en/list/58/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Norway put a 24.5-kilometre road inside a mountain between Lærdal and Aurland. The Lærdal Tunnel is the world's longest road tunnel.",
+        "source": "https://www.vegvesen.no/vegprosjekter/prosjekt/e16lardalstunnelen/",
+        "label": "vegvesen.no"
       }
     ]
   },
@@ -3860,6 +4285,11 @@
         "text": "Two Lutheran Churches of Peace in Silesia rank as Europe's largest timber-framed religious buildings. They grew out of the settlement that ended the Thirty Years' War.",
         "source": "https://whc.unesco.org/en/list/1054/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Poland has a patch of bare sand called the Błędów Desert. Centuries of cutting down forest for nearby mines exposed the sand well inland from the Baltic coast.",
+        "source": "https://visitmalopolska.pl/en_GB/obiekt/-/poi/pustynia-bledowska",
+        "label": "visitmalopolska.pl"
       }
     ]
   },
@@ -3881,6 +4311,11 @@
         "text": "Potters at Bisalhães crush clay with a wooden hammer, smooth their pots with pebbles and fire them to the black finish for which the village is known.",
         "source": "https://ich.unesco.org/en/USL/01199",
         "label": "UNESCO"
+      },
+      {
+        "text": "At Cabo da Roca, mainland Europe runs out. This Portuguese headland projects farther west into the Atlantic than any other point on the European mainland.",
+        "source": "https://www.visitportugal.com/en/content/cabo-da-roca",
+        "label": "visitportugal.com"
       }
     ]
   },
@@ -3901,6 +4336,11 @@
       {
         "text": "In northern Moldavia, biblical scenes cover the outside walls of churches. Worshippers could read the painted stories before they ever stepped indoors.",
         "source": "https://whc.unesco.org/en/list/598/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Much of Romania's newest land lies at the end of one of Europe's longest rivers. Sediment delivered by the Danube builds a delta where the river meets the Black Sea.",
+        "source": "https://whc.unesco.org/en/list/588/",
         "label": "UNESCO"
       }
     ]
@@ -3923,6 +4363,11 @@
         "text": "Ice Age artists in Shulgan-Tash Cave painted a two-humped camel alongside mammoths and woolly rhinoceroses in what is now the southern Urals.",
         "source": "https://whc.unesco.org/en/list/1743/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Russia stretches so far around the Arctic that part of its mainland crosses 180° longitude. The far eastern tip of Siberia is in the Western Hemisphere.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/rs.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -3942,6 +4387,11 @@
       },
       {
         "text": "There are no official words to sing to San Marino's national anthem. Its melody draws on a chorale dating back to the tenth century.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/sm.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Every land route out of San Marino leads to the same country. Italy surrounds the republic on every side, all the way around Mount Titano.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/sm.json",
         "label": "CIA World Factbook (archived profile)"
       }
@@ -3965,6 +4415,11 @@
         "text": "At Banská Štiavnica a mining town reshaped its watershed. Reservoirs and channels collected the water that helped power its mining machinery.",
         "source": "https://whc.unesco.org/en/list/618/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Bratislava's municipal limits touch two foreign countries. At the city's southwestern edge, Slovakia, Austria and Hungary meet at one point.",
+        "source": "https://www.visitbratislava.com/sights-attractions/trojmedzie-three-border-point-near-bratislava/",
+        "label": "visitbratislava.com"
       }
     ]
   },
@@ -3986,6 +4441,11 @@
         "text": "During Shrovetide near Ptuj, bands of Kurenti visit houses and jump in the yard. Their clanging bells are meant to chase away evil.",
         "source": "https://ich.unesco.org/en/RL/01278",
         "label": "UNESCO"
+      },
+      {
+        "text": "A landscape gave geologists a word they use worldwide. The name karst, for terrain where water dissolves rock into caves and sinkholes, comes from the Kras plateau.",
+        "source": "https://whc.unesco.org/en/tentativelists/6072/",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -4007,6 +4467,11 @@
         "text": "The red pinnacles of Las Médulas are the remains of Roman gold mining. Engineers channelled water into the hills to break them apart.",
         "source": "https://whc.unesco.org/en/list/803/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Pheasant Island changes administration twice a year. Spain and France take turns governing this little island in the river along their shared border.",
+        "source": "https://www.bidasoaturismo.com/en/lugares/pheasant-island/",
+        "label": "bidasoaturismo.com"
       }
     ]
   },
@@ -4028,6 +4493,11 @@
         "text": "Farmers in Hälsingland once commissioned painted rooms especially for festivities. Some built whole separate houses for those occasions.",
         "source": "https://whc.unesco.org/en/list/1282/",
         "label": "UNESCO"
+      },
+      {
+        "text": "On Sweden's High Coast an old shoreline now sits about 286 metres above sea level. Land pressed down by the last ice sheet rose as the ice melted away.",
+        "source": "https://www.sgu.se/en/geology-of-sweden/swedish-geosites/world-heritage-site-the-high-coast-area/",
+        "label": "sgu.se"
       }
     ]
   },
@@ -4049,6 +4519,11 @@
         "text": "Fossils on Monte San Giorgio record a tropical lagoon. Marine reptiles swam there more than 200 million years before their remains sat high above Lake Lugano.",
         "source": "https://whc.unesco.org/en/list/1090/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Near Switzerland's Lunghin Pass, three drops of rain could leave for three different seas. Water here can reach the North Sea by the Rhine, the Black Sea by the Danube or the Adriatic by the Po.",
+        "source": "https://www.parks.swiss/en/visit-the-parks/all-offers/offer-detail/dreifach-wasserscheide-lunghin-17006",
+        "label": "parks.swiss"
       }
     ]
   },
@@ -4070,6 +4545,11 @@
         "text": "In the Ukrainian Carpathians, builders raised domed churches from horizontal logs. Related tserkvas across the border in Poland belong to the same mountain tradition.",
         "source": "https://whc.unesco.org/en/list/1424/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Ukraine is the largest country whose internationally recognised territory lies entirely in Europe. Only transcontinental Russia occupies more European land.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/up.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -4091,6 +4571,11 @@
         "text": "The treaty creating Vatican City even provided for a railway station. Italy agreed to connect the tiny state's tracks to its own national network.",
         "source": "https://www.vaticanstate.va/phocadownload/laws-decrees/LateranTreaty.pdf",
         "label": "www.vaticanstate.va"
+      },
+      {
+        "text": "You could walk all the way around a sovereign country without leaving Rome. Vatican City, the world's smallest state by area, is enclosed entirely within the city.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/vt.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -4112,6 +4597,11 @@
         "text": "At Gračanica and other medieval church sites in Kosovo, Byzantine and western Romanesque traditions meet in the architecture and painted interiors.",
         "source": "https://whc.unesco.org/en/list/724/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Landlocked Kosovo sends river water to three seas. Its watersheds feed the Adriatic to the west, the Black Sea to the north and the Aegean to the south.",
+        "source": "https://documents1.worldbank.org/curated/en/299271468088159164/pdf/E13670VOL130Box327408B.pdf",
+        "label": "documents1.worldbank.org"
       }
     ]
   },
@@ -4133,6 +4623,11 @@
         "text": "The Capelinhos eruption in 1957 began offshore and added fresh land to Faial. A coastal lighthouse found itself beside an entirely new piece of island.",
         "source": "https://volcano.si.edu/volcano.cfm?vn=382010",
         "label": "volcano.si.edu"
+      },
+      {
+        "text": "Portugal's highest point is nowhere near the mainland. It is the summit of Pico, a volcano rising 2,351 metres from the Atlantic island that bears its name.",
+        "source": "https://www.visitazores.com/en/explore/montanha-do-pico",
+        "label": "visitazores.com"
       }
     ]
   },
@@ -4154,6 +4649,11 @@
         "text": "The Treaty of Utrecht in 1713 transferred Gibraltar from Spain to Britain. The territory sits at the narrow passage between Atlantic and Mediterranean waters.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/gi.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Gorham's Cave opens beside the sea today. When Neanderthals used it, lower sea levels left a broad coastal plain between the cave and the Mediterranean.",
+        "source": "https://unesco.org.uk/our-network/world-heritage-sites/gorhams-cave-complex",
+        "label": "unesco.org.uk"
       }
     ]
   },
@@ -4175,6 +4675,11 @@
         "text": "Saint Peter Port and Saint Peter in the Wood both honour the patron saint of fishermen. Their names tell you which parish faces the harbour.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/gk.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Lihou becomes a walking destination and then an island again within one tide. Its stone causeway to Guernsey emerges only when the sea falls far enough.",
+        "source": "https://www.biologicalrecordscentre.gov.gg/wp-content/uploads/2020/03/Red%20Data%20Book%20FULL%20BOOK_March%202020.pdf",
+        "label": "biologicalrecordscentre.gov.gg"
       }
     ]
   },
@@ -4196,6 +4701,11 @@
         "text": "Off the island's southwestern tip sits a much smaller island with a fitting name, the Calf of Man. It is a sanctuary for birds.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/im.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Snaefell is the island's only summit over 2,000 feet. On a sufficiently clear day, people on top can look across the Irish Sea towards England, Ireland, Scotland and Wales.",
+        "source": "https://www.visitisleofman.com/experience/snaefell-mountain-p1295771",
+        "label": "visitisleofman.com"
       }
     ]
   },
@@ -4217,6 +4727,11 @@
         "text": "Jersey's connection to the British Crown goes back to the Duchy of Normandy. These islands remained attached to the Crown after most of Normandy was lost.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/je.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "At a large spring tide, Jersey's exposed area can nearly double between high and low water. Reefs and broad shelves of seabed briefly become part of the island.",
+        "source": "https://www.jersey.com/plan-your-break/general-information/tides/",
+        "label": "jersey.com"
       }
     ]
   },
@@ -4238,6 +4753,11 @@
         "text": "On the steep streets below Monte, two runners steer a wicker sledge downhill on wooden runners. The ride began as a form of local transport.",
         "source": "https://visitmadeira.com/en/what-to-do/experiencing-the-city-of-funchal/touring-the-city/monte-sledges",
         "label": "visitmadeira.com"
+      },
+      {
+        "text": "Madeira's coastal plain ran out before its airport runway did. Engineers carried part of the runway on a platform supported by great concrete columns beside the sea.",
+        "source": "https://www.madeiracentral.com/madeira-airport/",
+        "label": "madeiracentral.com"
       }
     ]
   },
@@ -4259,6 +4779,11 @@
         "text": "Four Sardinian tenore singers stand close in a circle. One sings a poem while the other three build a chorus that includes two remarkably deep, throaty voices.",
         "source": "https://ich.unesco.org/en/RL/00165",
         "label": "UNESCO"
+      },
+      {
+        "text": "Sardinia and Corsica nearly meet. The Strait of Bonifacio separates Italy's Sardinia from France's Corsica, with the Maddalena islands scattered along the Sardinian side.",
+        "source": "https://www.sardegnaturismo.it/en/explore/national-park-maddalena-archipelago?language=ru",
+        "label": "sardegnaturismo.it"
       }
     ]
   },
@@ -4280,6 +4805,11 @@
         "text": "The Baltic shore near Kaliningrad holds great deposits of amber. The material prized by jewellers began as resin oozing from ancient trees.",
         "source": "https://www.gia.edu/gems-gemology/winter-2018-history-and-reconstruction-of-amber-room",
         "label": "www.gia.edu"
+      },
+      {
+        "text": "Kaliningrad is on the Baltic yet has no land connection to the rest of Russia. Its only land neighbours are Poland and Lithuania.",
+        "source": "https://www.lrt.lt/en/news-in-english/19/1725564/what-is-kaliningrad-and-why-it-is-important-to-russia-explainer",
+        "label": "lrt.lt"
       }
     ]
   },
@@ -4301,6 +4831,11 @@
         "text": "Eight towns in southeastern Sicily were rebuilt after the earthquake of 1693. The disaster left an entire region with a recognisably Baroque face.",
         "source": "https://whc.unesco.org/en/list/1024/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Sicily is the Mediterranean's largest island, but the bottleneck separating it from mainland Italy is only about three kilometres across.",
+        "source": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Earth_from_Space_Calabria_Italy",
+        "label": "esa.int"
       }
     ]
   },
@@ -4321,6 +4856,11 @@
       {
         "text": "Åland is still growing out of the Baltic. Its highest ground emerged around ten thousand years ago as the land rose after the ice sheets retreated.",
         "source": "https://visitaland.com/en/experience/history/early-history/",
+        "label": "visitaland.com"
+      },
+      {
+        "text": "Finland and Sweden bend their border around a lighthouse on tiny Märket. A land swap kept the Finnish-built lighthouse on the Finnish side without changing either country's coastline.",
+        "source": "https://visitaland.com/en/experience/sights-excursions/lighthouses/",
         "label": "visitaland.com"
       }
     ]
@@ -4343,6 +4883,11 @@
         "text": "Archaeologists at coastal Pitsunda found the remains of a wooden Roman fortress and a later stone fort. This stretch of Black Sea shore was once a Roman frontier.",
         "source": "https://www.georgianencyclopedia.ge/ka/form_eng/571",
         "label": "www.georgianencyclopedia.ge"
+      },
+      {
+        "text": "Beneath Abkhazia's Arabika Massif, two cave systems reach more than two kilometres below their entrances. Both plunge into mountains only a short distance inland from the Black Sea.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/gg.json",
+        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -4364,6 +4909,11 @@
         "text": "At Dubăsari, the river that gives Transnistria its name also supplies electricity. A hydroelectric dam spans the Dniester there.",
         "source": "https://moldova.travel/wp-content/uploads/2021/11/Time-Travel-Transnistria-Eng.pdf",
         "label": "moldova.travel"
+      },
+      {
+        "text": "Transnistria's name points across the Dniester, but the river is not a perfect boundary. Bender, one of the territory's main cities, stands on the western bank.",
+        "source": "https://moldova.osce.org/mission-to-moldova/mandate",
+        "label": "moldova.osce.org"
       }
     ]
   },
@@ -4385,6 +4935,11 @@
         "text": "Scandola's red cliffs are remnants of volcanic rock. Protected waters around the peninsula shelter marine life below the cliffs where seabirds nest.",
         "source": "https://whc.unesco.org/en/list/258/",
         "label": "UNESCO"
+      },
+      {
+        "text": "Corsica rises more than 2,700 metres straight out of the Mediterranean. Monte Cinto stands on a comparatively small island whose interior is a chain of high mountains.",
+        "source": "https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Inspirations-and-encounters/The-Regional-Natural-Park-of-Corsica",
+        "label": "visit-corsica.com"
       }
     ]
   },
@@ -4406,6 +4961,11 @@
         "text": "Glaciers cover roughly three-fifths of Svalbard. On Nordaustlandet, entire ice caps spread across the island.",
         "source": "https://publicdata.npolar.no/cryoclim/GLIMS_Svalbard.pdf",
         "label": "publicdata.npolar.no"
+      },
+      {
+        "text": "At nearly 79° north, Ny-Ålesund on Spitsbergen is one of the world's northernmost year-round research settlements. It is closer to the North Pole than to Oslo.",
+        "source": "https://npolar.no/en/sverdrup/",
+        "label": "npolar.no"
       }
     ]
   },
