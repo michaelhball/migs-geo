@@ -19,6 +19,16 @@ refreshCatalog();
 const prefix = "fact-review/";
 const empty = { revision:0, choice:null, comment:"", hold:false, published:null };
 
+function asksForOptions(comment) {
+  return /\b(?:try again|(?:new|more|different|other|fresh|replacement) (?:fact(?:s)?|options?|suggestions?|choices?))\b/i.test(comment);
+}
+
+function researchState(row, candidates) {
+  if (!row.requestedOptions) return {};
+  const newSuggestions = candidates.length >= 3 && candidates.every(o => !row.requestedOptions.includes(o.id));
+  return {awaitingSuggestions:!newSuggestions, newSuggestions, hold:!newSuggestions};
+}
+
 export function factReview(db, tx, places) {
   const read = id => {
     const row = db.prepare("SELECT value FROM meta WHERE key=?").get(prefix + id);
@@ -39,7 +49,7 @@ export function factReview(db, tx, places) {
       const row = decisions.get(id) ?? {
         ...empty, choice: candidates.find(o => o.text === approved[id]?.text)?.id ?? null,
       };
-      return {id, name, studying, options:candidates, ...row, current:row.published ?? approved[id] ?? null};
+      return {id, name, studying, options:candidates, ...row, ...researchState(row, candidates), current:row.published ?? approved[id] ?? null};
     });
   }
   const backup = () => db.prepare("SELECT key,value FROM meta WHERE key LIKE 'fact-review/%'").all()
@@ -47,10 +57,24 @@ export function factReview(db, tx, places) {
   function validate(row) {
     if (!row || !Number.isSafeInteger(row.revision) || row.revision < 0 ||
         !(row.choice === null || typeof row.choice === "string") ||
+        (row.requestedOptions != null && (!Array.isArray(row.requestedOptions) || row.requestedOptions.length > 30 ||
+          !row.requestedOptions.every(id => typeof id === "string" && /^[a-f0-9]{24}$/.test(id)))) ||
         typeof row.comment !== "string" || row.comment.length > 8000 || typeof row.hold !== "boolean" ||
         !(row.published === null || (typeof row.published?.text === "string" &&
           /^https:\/\//.test(row.published.source)))) throw Error("Invalid fact decision.");
   }
+  function migrateRequest(id, row) {
+    if (row.requestedOptions === undefined && ((!row.choice && row.hold) || asksForOptions(row.comment))) {
+      return {...row, requestedOptions:(options.get(id) ?? []).map(o => o.id)};
+    }
+    return row;
+  }
+  tx(() => {
+    for (const {id, ...row} of backup()) {
+      const migrated = migrateRequest(id, row);
+      if (migrated !== row) write(id, migrated);
+    }
+  });
   return {list, current, backup,
     save(id,input) {
       refreshCatalog();
@@ -59,8 +83,18 @@ export function factReview(db, tx, places) {
         const old = read(id);
         if (input.revision !== old.revision) throw Object.assign(Error("This decision changed in another tab. Reload before editing."),{status:409});
         if (input.choice !== null && !options.get(id)?.some(o=>o.id===input.choice)) throw Error("Unknown candidate.");
-        const row={revision:old.revision+1, choice:input.choice, comment:input.comment, hold:input.hold, published:old.published};
-        validate(row);write(id,row);return row;
+        const candidates = options.get(id) ?? [];
+        const previous = researchState(old, candidates);
+        const startsRequest = input.requestNewOptions === true ||
+          (input.hold && !(previous.hold ?? old.hold) && !input.choice) ||
+          (asksForOptions(input.comment) && !asksForOptions(old.comment));
+        let requestedOptions = old.requestedOptions ?? null;
+        if (startsRequest) requestedOptions = input.seenOptions ?? candidates.map(o => o.id);
+        else if (input.choice !== old.choice || (previous.awaitingSuggestions && !input.hold &&
+          !asksForOptions(input.comment))) requestedOptions = null;
+        const row={revision:old.revision+1, choice:input.choice, comment:input.comment, hold:input.hold,
+          published:old.published, requestedOptions};
+        validate(row);write(id,row);return {...row, ...researchState(row, candidates)};
       });
     },
     publish() {
@@ -81,7 +115,7 @@ export function factReview(db, tx, places) {
       const seen=new Set();
       for(const {id,...row} of rows) {
         if(typeof id!=="string" || !/^[\w-]{1,100}$/.test(id) || seen.has(id)) throw Error("Invalid fact review place.");
-        seen.add(id); validate(row);write(id,row);
+        seen.add(id); validate(row);write(id,migrateRequest(id,row));
       }
     },
   };

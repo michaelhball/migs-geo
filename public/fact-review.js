@@ -13,12 +13,13 @@ function el(tag, text) {
   return node;
 }
 function state(p) {
+  if (p.newSuggestions) return "revised";
   if (p.hold) return "hold";
   const option = p.options.find(o => o.id === p.choice);
   if (!option) return p.options.length ? "undecided" : "missing";
   return option.text === p.current?.text && option.source === p.current?.source ? "published" : "ready";
 }
-const labels = {missing:"Awaiting research",hold:"Needs follow-up",undecided:"Undecided",published:"On card",ready:"Ready to publish"};
+const labels = {revised:"New suggestions",missing:"Awaiting research",hold:"Needs follow-up",undecided:"Undecided",published:"On card",ready:"Ready to publish"};
 function drawSection(list, rows) {
   const cards = rows.map(p => {
     if (!articles.has(p.id)) articles.set(p.id, render(p));
@@ -43,8 +44,13 @@ const researchDetails=document.querySelector("details");
 researchDetails.ontoggle=()=>refresh();
 function refresh() {
   const term=normalize(search.value.trim()), remaining=[], selected=[], missing=[];
+  let waiting = 0;
   for (const p of places) {
     if (!normalize(p.name).includes(term)) continue;
+    if (p.awaitingSuggestions && !p.finishingComment) {
+      if (scope.value === "all" || p.studying) waiting++;
+      continue;
+    }
     if (p.options.some(o=>o.id===p.savedChoice)) selected.push(p);
     else if (scope.value==="all" || p.studying) (p.options.length ? remaining : missing).push(p);
   }
@@ -53,13 +59,14 @@ function refresh() {
   document.querySelector("#research-heading").textContent=`Awaiting research (${missing.length})`;
   drawSection(research, researchDetails.open ? missing : []);
   drawSection(chosen, selected);
-  summary.textContent=`${remaining.length} to choose · ${missing.length} awaiting research · ${selected.length} already chosen`;
+  const revisions = waiting ? ` · ${waiting} awaiting new suggestions` : "";
+  summary.textContent=`${remaining.length} to choose · ${missing.length} awaiting research${revisions} · ${selected.length} already chosen`;
 }
 function showSavedChoice(p, article) {
   const wasChosen = p.options.some(o => o.id === p.savedChoice);
   const nowChosen = p.options.some(o => o.id === p.choice);
   const bounds = article.getBoundingClientRect();
-  const movingInView = wasChosen !== nowChosen && article.isConnected &&
+  const movingInView = (wasChosen !== nowChosen || (p.awaitingSuggestions && !p.finishingComment)) && article.isConnected &&
     bounds.bottom > 0 && bounds.top < window.innerHeight;
   const next = article.nextElementSibling ?? (article.parentElement === pending
     ? (researchDetails.hidden ? chosen.closest("section").querySelector("h2") : researchDetails.querySelector("summary"))
@@ -100,6 +107,11 @@ function render(p) {
   actions.className="actions";retry.hidden=true;status.setAttribute("role","status");actions.append(clear,status,retry);
   clear.onclick=()=>{p.choice=null;inputs.forEach(r=>r.checked=false);changed()};
   comment.oninput=()=>{p.comment=comment.value;changed()};
+  comment.onblur=()=>{
+    if (!p.finishingComment) return;
+    p.finishingComment=false;
+    showSavedChoice(p, article);
+  };
   check.onchange=()=>{p.hold=check.checked;changed()};
   article.append(note,hold,actions);clear.hidden=!p.options.length;
   let dirty=false, busy=false;
@@ -111,9 +123,15 @@ function render(p) {
       while(dirty){
         dirty=false;
         const response=await fetch("/api/fact-review/"+p.id,{method:"PUT",headers:{"Content-Type":"application/json"},
-          body:JSON.stringify({choice:p.choice,comment:p.comment,hold:p.hold,revision:p.revision})});
+          body:JSON.stringify({choice:p.choice,comment:p.comment,hold:p.hold,revision:p.revision,seenOptions:p.options.map(o=>o.id)})});
         const data=await response.json();if(!response.ok)throw Error(data.error||"Save failed");
         p.revision=data.revision;
+        if (!dirty) {
+          p.awaitingSuggestions=Boolean(data.awaitingSuggestions);
+          p.newSuggestions=Boolean(data.newSuggestions);
+          p.hold=check.checked=data.hold;
+          p.finishingComment=p.awaitingSuggestions && document.activeElement===comment;
+        }
       }
       saving.delete(p.id);status.textContent="Saved";showSavedChoice(p, article);
     }catch(e){dirty=true;status.textContent=e.message;retry.hidden=false}finally{busy=false}

@@ -827,3 +827,29 @@ test("fact review includes custom places before candidates exist", () => {
     assert.deepEqual(review.publish().applied,[]);
   } finally {s.db.close()}
 });
+
+test("requests for new suggestions survive reloads until the whole shortlist changes", () => {
+  const s=createStore(":memory:",atlas);
+  try {
+    const review=s.editorial, id="aral-sea";
+    const item=()=>review.list().find(p=>p.id===id);
+    const ids=item().options.map(o=>o.id);
+    const fields={choice:null,comment:"Please try again",hold:false};
+    review.save(id,{...fields,revision:0,seenOptions:ids});
+    assert.equal(item().awaitingSuggestions,true);
+    const backup=s.exportData();
+    s.restore(backup);
+    assert.equal(item().awaitingSuggestions,true);
+    const oldIds=ids.map((_,i)=>String(i).padStart(24,"0"));
+    review.save(id,{...fields,revision:1,requestNewOptions:true,seenOptions:[ids[1],...oldIds.slice(1)]});
+    assert.equal(item().awaitingSuggestions,true);
+    review.save(id,{...fields,revision:2,requestNewOptions:true,seenOptions:oldIds});
+    assert.equal(item().newSuggestions,true);
+    assert.equal(item().hold,false);
+    review.save(id,{...fields,revision:3,choice:ids[0]});
+    assert.deepEqual(review.publish().applied,[id]);
+    assert.equal(item().comment,fields.comment);
+    review.save(id,{...fields,revision:item().revision,hold:true});
+    assert.equal(item().awaitingSuggestions,true);
+  } finally { s.db.close(); }
+});
