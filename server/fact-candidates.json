@@ -47,7 +47,8 @@
       {
         "text": "The Gulf of California is opening along a plate boundary. Baja California rides with the Pacific Plate while most of mainland Mexico stays on the North American Plate.",
         "source": "https://pubs.usgs.gov/publication/ofr20101083F",
-        "label": "pubs.usgs.gov"
+        "label": "pubs.usgs.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -99,7 +100,8 @@
       {
         "text": "The Black Sea trades water with the Mediterranean in two directions through one strait. Fresher Black Sea water flows out near the surface of the Bosporus while saltier water flows in underneath.",
         "source": "https://www.whoi.edu/oceanus/feature/where-the-rivers-meet-the-sea/",
-        "label": "whoi.edu"
+        "label": "whoi.edu",
+        "suggestSwitch": true
       }
     ]
   },
@@ -125,7 +127,8 @@
       {
         "text": "In 2014 the entire eastern lobe of the South Aral Sea dried up. Within a human lifetime, a basin that helped make this the fourth-largest lake on Earth had become land.",
         "source": "https://science.nasa.gov/earth/earth-observatory/the-aral-sea-loses-its-eastern-lobe-84437/",
-        "label": "science.nasa.gov"
+        "label": "science.nasa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -151,7 +154,8 @@
       {
         "text": "Bosnia and Herzegovina reaches the Adriatic through a narrow strip at Neum. Until Croatia bridged the bay in 2022, the main coastal drive to Dubrovnik crossed Bosnia twice.",
         "source": "https://regions-and-cities.ec.europa.eu/policy/communication/campaigns/places-europe/1a-peljesac-bridge-croatia_en?prefLang=mt",
-        "label": "regions-and-cities.ec.europa.eu"
+        "label": "regions-and-cities.ec.europa.eu",
+        "suggestSwitch": true
       }
     ]
   },
@@ -281,7 +285,8 @@
       {
         "text": "New Zealand's largest lake fills the caldera of a volcano. The Waikato River, the country's longest, flows out of Lake Taupō on its way to the Tasman Sea.",
         "source": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/taupo-area/",
-        "label": "doc.govt.nz"
+        "label": "doc.govt.nz",
+        "suggestSwitch": true
       }
     ]
   },
@@ -307,7 +312,8 @@
       {
         "text": "The plates beneath New Zealand swap roles. The Pacific Plate dives beneath the North Island, while near the south of the South Island the Australian Plate goes underneath the Pacific Plate.",
         "source": "https://www.gns.cri.nz/our-science/land-and-marine-geoscience/geology-of-new-zealand/",
-        "label": "gns.cri.nz"
+        "label": "gns.cri.nz",
+        "suggestSwitch": true
       }
     ]
   },
@@ -333,7 +339,8 @@
       {
         "text": "Baikal is the world's deepest lake. Its water surface is above sea level, but its deepest floor lies more than a kilometre below the level of the ocean.",
         "source": "https://whc.unesco.org/en/list/754/",
-        "label": "UNESCO"
+        "label": "UNESCO",
+        "suggestSwitch": true
       }
     ]
   },
@@ -359,7 +366,8 @@
       {
         "text": "Lake Superior alone holds more water than the other four Great Lakes combined. Its nearly 12,100 cubic kilometres slightly outweigh Michigan, Huron, Erie and Ontario put together.",
         "source": "https://www.epa.gov/greatlakes/physical-features-great-lakes",
-        "label": "epa.gov"
+        "label": "epa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -437,7 +445,8 @@
       {
         "text": "France's longest land border is with Brazil. It runs along the edge of French Guiana, an ocean away from Paris.",
         "source": "https://www.gov.br/planalto/en/latest-news/2023/05/presidents-lula-and-macron-meet-at-the-g7-summit-and-seal-resumption-of-brazil-france-relations",
-        "label": "gov.br"
+        "label": "gov.br",
+        "suggestSwitch": true
       }
     ]
   },
@@ -541,7 +550,8 @@
       {
         "text": "At Ilulissat, icebergs can run aground on a submerged sill at the mouth of the fjord. They may have to melt or break apart before they can reach the open sea.",
         "source": "https://whc.unesco.org/en/list/1149/",
-        "label": "whc.unesco.org"
+        "label": "whc.unesco.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -645,7 +655,8 @@
       {
         "text": "Azerbaijan borders Turkey, but you cannot reach that border from Baku without leaving the country. The entire Turkish frontier belongs to the detached territory of Nakhchivan.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/aj.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -697,7 +708,8 @@
       {
         "text": "In Baarle, pockets of Belgium contain pockets of the Netherlands. The border winds through streets and even houses, where the front door can determine the address.",
         "source": "https://m-en.visitbaarle.com/informatie/overbaarle",
-        "label": "m-en.visitbaarle.com"
+        "label": "m-en.visitbaarle.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -775,7 +787,8 @@
       {
         "text": "On the slopes of Králický Sněžník, water can set out for three different seas. The divides here separate the drainage basins of the Baltic, North and Black Seas.",
         "source": "https://www.visitczechia.com/en-us/news/2022/09/n-trips-to-the-river-springs",
-        "label": "visitczechia.com"
+        "label": "visitczechia.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -801,7 +814,8 @@
       {
         "text": "The Kingdom of Denmark acquired a land border with Canada in 2022. It crosses a tiny Arctic island called Tartupaluk, or Hans Island, between Greenland and Ellesmere Island.",
         "source": "https://www.canada.ca/en/global-affairs/news/2022/06/boundary-dispute.html",
-        "label": "canada.ca"
+        "label": "canada.ca",
+        "suggestSwitch": true
       }
     ]
   },
@@ -827,7 +841,8 @@
       {
         "text": "At Kaali on the island of Saaremaa, what looks like a little round woodland pond occupies the largest of a group of meteorite impact craters.",
         "source": "https://visitestonia.com/en/kaali-field-of-meteorite-craters",
-        "label": "visitestonia.com"
+        "label": "visitestonia.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -853,7 +868,8 @@
       {
         "text": "Nowhere in the Faroe Islands is more than about five kilometres from the sea. Even the middle of the largest island is close to a fjord or an Atlantic shore.",
         "source": "https://visitfaroeislands.com/en/press-professionals/about3/the-faroe-islands/quick-facts0",
-        "label": "visitfaroeislands.com"
+        "label": "visitfaroeislands.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -879,7 +895,8 @@
       {
         "text": "Lake Turkana is the world's largest permanent desert lake. A great expanse of water survives in this arid basin because rivers bring in rain that fell elsewhere.",
         "source": "https://whc.unesco.org/en/list/801",
-        "label": "whc.unesco.org"
+        "label": "whc.unesco.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -931,7 +948,8 @@
       {
         "text": "Australia's lowest natural point is a lakebed you can often see. The floor of Kati Thanda–Lake Eyre lies roughly 15 metres below sea level and is usually exposed.",
         "source": "https://www.ga.gov.au/scientific-topics/national-location-information/geography/largest-longest-highest",
-        "label": "ga.gov.au"
+        "label": "ga.gov.au",
+        "suggestSwitch": true
       }
     ]
   },
@@ -1061,7 +1079,8 @@
       {
         "text": "Europe's second-largest lake drains straight towards its largest. Water leaving Lake Onega follows the Svir into Lake Ladoga before reaching the Baltic.",
         "source": "https://wldb.ilec.or.jp/Display/html/3498",
-        "label": "wldb.ilec.or.jp"
+        "label": "wldb.ilec.or.jp",
+        "suggestSwitch": true
       }
     ]
   },
@@ -1087,7 +1106,8 @@
       {
         "text": "Glaciers grind Alaska's rock into such fine powder that the Copper River carries it out to sea. From space its pale plume draws the Gulf of Alaska's coastal currents in colour.",
         "source": "https://science.nasa.gov/earth/earth-observatory/sediments-along-the-alaskan-coast-3744/",
-        "label": "science.nasa.gov"
+        "label": "science.nasa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -1139,7 +1159,8 @@
       {
         "text": "No permanently flowing river replenishes the Red Sea. Water lost to evaporation has to be replaced through a narrow southern gateway, the Bab el-Mandeb.",
         "source": "https://repository.kaust.edu.sa/server/api/core/bitstreams/3650bba2-0bfe-4e40-a4cf-65ca22721e35/content",
-        "label": "repository.kaust.edu.sa"
+        "label": "repository.kaust.edu.sa",
+        "suggestSwitch": true
       }
     ]
   },
@@ -1165,7 +1186,8 @@
       {
         "text": "Afghanistan's longest river never finds the ocean. The Helmand flows southwest from the Hindu Kush into a chain of desert wetlands on the Iranian frontier.",
         "source": "https://www.unomaha.edu/international-studies-and-programs/center-for-afghanistan-and-regional-studies/academics/transboundary-water-research/DLM3/DLM3.php",
-        "label": "unomaha.edu"
+        "label": "unomaha.edu",
+        "suggestSwitch": true
       }
     ]
   },
@@ -1217,7 +1239,8 @@
       {
         "text": "Ships entering Pago Pago sail into the remains of a volcano. Part of its rim collapsed and the sea flooded the opening, leaving Tutuila with a deep harbour ringed by steep slopes.",
         "source": "https://science.nasa.gov/earth/earth-observatory/tutuila-island-american-samoa-151460/",
-        "label": "science.nasa.gov"
+        "label": "science.nasa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -1269,7 +1292,8 @@
       {
         "text": "Earth's driest continent holds most of its fresh water. Antarctica receives very little precipitation, yet enough snow has accumulated over time to build its enormous ice sheet.",
         "source": "https://www.bas.ac.uk/about/education-and-schools/antarctic-factsheet/",
-        "label": "bas.ac.uk"
+        "label": "bas.ac.uk",
+        "suggestSwitch": true
       }
     ]
   },
@@ -1477,7 +1501,8 @@
       {
         "text": "The Atlantic can send a breaking wave upstream into Brazilian rivers. On the Amazon estuary this tidal bore is known as the pororoca.",
         "source": "https://en.aguasamazonicas.org/waters/flow-floods/estuary",
-        "label": "en.aguasamazonicas.org"
+        "label": "en.aguasamazonicas.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -1581,7 +1606,8 @@
       {
         "text": "Follow Baltic water from the Danish straits to the head of the Gulf of Bothnia and it gets progressively fresher. A narrow connection to the ocean struggles to replace the salt diluted by hundreds of rivers.",
         "source": "https://stateofthebalticsea.helcom.fi/overview/about-the-baltic-sea/",
-        "label": "stateofthebalticsea.helcom.fi"
+        "label": "stateofthebalticsea.helcom.fi",
+        "suggestSwitch": true
       }
     ]
   },
@@ -1607,7 +1633,8 @@
       {
         "text": "The Banda Sea holds the deepest known patch of ocean floor outside an ocean trench. The Weber Deep drops roughly 7.2 kilometres into a basin inside Indonesia's curved island arc.",
         "source": "https://researchportalplus.anu.edu.au/en/publications/rolling-open-earths-deepest-forearc-basin/",
-        "label": "researchportalplus.anu.edu.au"
+        "label": "researchportalplus.anu.edu.au",
+        "suggestSwitch": true
       }
     ]
   },
@@ -1789,7 +1816,8 @@
       {
         "text": "The volcanic line running through Cameroon continues offshore into the Gulf of Guinea. Bioko, Príncipe, São Tomé and Annobón mark its course across the sea.",
         "source": "https://whc.unesco.org/en/tentativelists/6645/",
-        "label": "whc.unesco.org"
+        "label": "whc.unesco.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -1815,7 +1843,8 @@
       {
         "text": "The Labrador Sea is a stranded ocean-opening project. Its floor preserves a spreading ridge where Greenland and North America once pulled apart before spreading stopped here.",
         "source": "https://www.sciencedirect.com/science/article/abs/pii/S0264817298000415",
-        "label": "sciencedirect.com"
+        "label": "sciencedirect.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -1841,7 +1870,8 @@
       {
         "text": "The Persian Gulf averages only about 35 metres deep. Intense evaporation turns some of that shallow water into dense brine that flows out beneath incoming water at Hormuz.",
         "source": "https://www2.whoi.edu/site/bower-lab/wp-content/uploads/sites/12/2018/03/Bower_2000_Character.pdf",
-        "label": "www2.whoi.edu"
+        "label": "www2.whoi.edu",
+        "suggestSwitch": true
       }
     ]
   },
@@ -1997,7 +2027,8 @@
       {
         "text": "Gather every continent and island into one patch and the Pacific would still cover more area. This single ocean basin is larger than all Earth's dry land combined.",
         "source": "https://origin.oceanexplorer.noaa.gov/ocean-fact/pacific-size/",
-        "label": "origin.oceanexplorer.noaa.gov"
+        "label": "origin.oceanexplorer.noaa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -2075,7 +2106,8 @@
       {
         "text": "Gravity is unusually weak around Hudson Bay. Part of the anomaly records ice that vanished thousands of years ago, because Earth's interior is still responding to losing its weight.",
         "source": "https://www.nature.com/articles/37339",
-        "label": "nature.com"
+        "label": "nature.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -2231,7 +2263,8 @@
       {
         "text": "The Mediterranean loses more water to evaporation than it gains from rain and rivers. Atlantic water streams in at the surface at Gibraltar while denser, saltier Mediterranean water escapes underneath.",
         "source": "https://doi.org/10.1175/1520-0485%282002%29032%3C3193%3Aititso%3E2.0.co%3B2",
-        "label": "doi.org"
+        "label": "doi.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -2335,7 +2368,8 @@
       {
         "text": "The Yellow Sea takes its colour and its name from sediment. Rivers carry such fine mineral grains into this shallow sea that tides can keep them suspended long after they reach salt water.",
         "source": "https://www.esa.int/articles/about-us/directorates/earth-observation-programmes/earth-from-space-the-yellow-sea-of-china",
-        "label": "esa.int"
+        "label": "esa.int",
+        "suggestSwitch": true
       }
     ]
   },
@@ -2361,7 +2395,8 @@
       {
         "text": "Part of the Tasman Sea covers a continent. The Lord Howe Rise is a broad, submerged piece of Zealandia extending northwest from New Zealand towards Australia.",
         "source": "https://rsnz.onlinelibrary.wiley.com/doi/10.1080/00288306.2025.2500394",
-        "label": "rsnz.onlinelibrary.wiley.com"
+        "label": "rsnz.onlinelibrary.wiley.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -2413,7 +2448,8 @@
       {
         "text": "An arm of the North Sea became a freshwater lake in the twentieth century. The Dutch closed the Afsluitdijk across the Zuiderzee, creating the IJsselmeer behind it.",
         "source": "https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/waterkeringen/dijken/afsluitdijk",
-        "label": "rijkswaterstaat.nl"
+        "label": "rijkswaterstaat.nl",
+        "suggestSwitch": true
       }
     ]
   },
@@ -2595,7 +2631,8 @@
       {
         "text": "Erie is the shallowest of the five Great Lakes and the quickest to flush. Its water is replaced on average in less than three years, compared with nearly two centuries in Superior.",
         "source": "https://www.epa.gov/greatlakes/lake-erie",
-        "label": "epa.gov"
+        "label": "epa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -2621,7 +2658,8 @@
       {
         "text": "Ontario has the smallest surface area of the five Great Lakes, yet holds more than three times as much water as Erie. The difference is hidden in its deep basin.",
         "source": "https://www.epa.gov/greatlakes/physical-features-great-lakes",
-        "label": "epa.gov"
+        "label": "epa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -2647,7 +2685,8 @@
       {
         "text": "Central America's largest lake lies much closer to the Pacific than to the Caribbean, yet drains east. Its outlet is the San Juan River, which carries the water to the Caribbean coast.",
         "source": "https://www.fao.org/4/ad770b/ad770b13.htm",
-        "label": "fao.org"
+        "label": "fao.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -2699,7 +2738,8 @@
       {
         "text": "The Arctic Circle cuts right across Nettilling Lake. Fresh water from this Baffin Island basin drains west through the Koukdjuak River into the shallow tidal waters of Foxe Basin.",
         "source": "https://pubs.aina.ucalgary.ca/arctic/Arctic17-2-69.pdf",
-        "label": "pubs.aina.ucalgary.ca"
+        "label": "pubs.aina.ucalgary.ca",
+        "suggestSwitch": true
       }
     ]
   },
@@ -2725,7 +2765,8 @@
       {
         "text": "Michigan is the only one of the five Great Lakes with every shore in a single country. Canada shares all four of the others with the United States.",
         "source": "https://www.epa.gov/greatlakes/lake-michigan",
-        "label": "epa.gov"
+        "label": "epa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -2751,7 +2792,8 @@
       {
         "text": "Lake Huron contains the world's largest island in a freshwater lake. Manitoulin Island is itself large enough to hold lakes with islands of their own.",
         "source": "https://www.canada.ca/en/canada-water-agency/freshwater-ecosystem-initiatives/great-lakes/great-lakes-protection/maps/lake-huron-drainage-basin.html",
-        "label": "canada.ca"
+        "label": "canada.ca",
+        "suggestSwitch": true
       }
     ]
   },
@@ -2933,7 +2975,8 @@
       {
         "text": "Although it sits close to the lakes of the East African Rift, Mweru sends its water west towards the Atlantic. Its outlet, the Luvua, joins the Lualaba and the Congo.",
         "source": "https://www.fao.org/4/T0473E/T0473E13.htm",
-        "label": "fao.org"
+        "label": "fao.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3011,7 +3054,8 @@
       {
         "text": "You can cross a land border from Brazil into the European Union. On the far bank of the Oyapock River is French Guiana, an EU region on the South American mainland.",
         "source": "https://www.cp-rup.com/wp-content/uploads/2026/11/RUP-Livret-Communication-EN.pdf",
-        "label": "cp-rup.com"
+        "label": "cp-rup.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3141,7 +3185,8 @@
       {
         "text": "Denmark is Scandinavian but is off the Scandinavian Peninsula. Part of Finland is on the peninsula alongside Norway and Sweden.",
         "source": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Earth_from_Space_Scandinavian_Peninsula",
-        "label": "esa.int"
+        "label": "esa.int",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3219,7 +3264,8 @@
       {
         "text": "The point on Earth's surface farthest from its centre is in South America. Ecuador's Chimborazo gets a head start over Everest because Earth bulges at the equator.",
         "source": "https://blogs.loc.gov/maps/2020/11/extremities-of-the-earth-farthest-point-from-the-center-of-the-earth/",
-        "label": "blogs.loc.gov"
+        "label": "blogs.loc.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3245,7 +3291,8 @@
       {
         "text": "Asia holds both ends of the land elevation scale. Everest's summit and the exposed shore of the Dead Sea are separated vertically by more than nine kilometres.",
         "source": "https://www.guinnessworldrecords.com/world-records/90155-largest-vertical-extent",
-        "label": "guinnessworldrecords.com"
+        "label": "guinnessworldrecords.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3271,7 +3318,8 @@
       {
         "text": "Africa is the only continent crossed by the equator, both tropics and the prime meridian. You can find all four of those lines on a single outline of its mainland.",
         "source": "https://anrseb.gov.et/Backup%20dec%202021/wp-content/uploads/Old_Text_Books/Grade11/Grade11_Geography_Textbook.pdf",
-        "label": "anrseb.gov.et"
+        "label": "anrseb.gov.et",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3323,7 +3371,8 @@
       {
         "text": "The Western Hemisphere's highest mountain and lowest exposed land are in the same country. Argentina contains both Aconcagua in the Andes and Laguna del Carbón in Patagonia.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/ar.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3349,7 +3398,8 @@
       {
         "text": "Australia is the largest country without a land border. You could follow its entire mainland coast without ever crossing into another country.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/as.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3401,7 +3451,8 @@
       {
         "text": "The Tonle Sap River changes direction with the seasons. When the Mekong rises, it pushes water upstream into Cambodia's great lake, which drains back towards the Mekong when the floods recede.",
         "source": "https://www.mrcmekong.org/?document_id=01YJPZCU5Z52GW2IBACZCYVFLPVHD4GF4T&download_document=1&name=State-of-the-Basin-Report-2023.pdf",
-        "label": "mrcmekong.org"
+        "label": "mrcmekong.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3427,7 +3478,8 @@
       {
         "text": "The world's second-largest country has the world's longest coastline. Canada's map includes an immense Arctic archipelago as well as its Atlantic and Pacific shores.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/ca.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3479,7 +3531,8 @@
       {
         "text": "Colombia is the only South American country with both a Caribbean coast and a Pacific coast. Panama meets it at the narrow corner between the two.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/co.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3531,7 +3584,8 @@
       {
         "text": "The spot on Earth's surface farthest from its centre is in Ecuador. Chimborazo beats Everest on that measure because Earth bulges at the equator.",
         "source": "https://oceanservice.noaa.gov/facts/highestpoint.html",
-        "label": "oceanservice.noaa.gov"
+        "label": "oceanservice.noaa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3609,7 +3663,8 @@
       {
         "text": "Reykjavík is the world's northernmost capital of a sovereign state. Even so, it lies south of the Arctic Circle.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ic.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3739,7 +3794,8 @@
       {
         "text": "On Taveuni you can step across the 180th meridian between the eastern and western hemispheres. Both feet are still in Fiji, on the same calendar day.",
         "source": "https://www.fiji.travel/places-to-go/taveuni-island/locations/the-perfect-3-day-taveuni-itinerary",
-        "label": "fiji.travel"
+        "label": "fiji.travel",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3921,7 +3977,8 @@
       {
         "text": "The Tuamotus form the world's largest group of atolls. This one French Polynesian archipelago contains nearly eighty rings of coral.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/fp.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3973,7 +4030,8 @@
       {
         "text": "Kiribati has land in all four hemispheres. Its islands lie on both sides of the equator and on both sides of the 180th meridian.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/kr.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -3999,7 +4057,8 @@
       {
         "text": "At Kwajalein the lagoon covers roughly a hundred times as much area as the land around it. The enormous outline you see on a map is almost entirely seawater.",
         "source": "https://documents1.worldbank.org/curated/en/099004002092335806/pdf/P1785440c6c95d02b0827203b8fef367840.pdf",
-        "label": "documents1.worldbank.org"
+        "label": "documents1.worldbank.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4025,7 +4084,8 @@
       {
         "text": "Nauru is the world's smallest island country. The only independent states with less land, Monaco and Vatican City, are both on the European mainland.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/nr.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4103,7 +4163,8 @@
       {
         "text": "In Samoa, Thursday 29 December 2011 was followed by Saturday 31 December. The country switched sides of the international date line and skipped Friday altogether.",
         "source": "https://www.ag.gov.ws/wp-content/uploads/2024/02/International-Date-Line-Act-2011.pdf",
-        "label": "ag.gov.ws"
+        "label": "ag.gov.ws",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4181,7 +4242,8 @@
       {
         "text": "Tonga's islands run in two parallel rows with different origins. Volcanoes built the western row, while coral limestone and sand make up the eastern islands.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/tn.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4233,7 +4295,8 @@
       {
         "text": "Everest has the higher summit, but Mauna Kea is taller from base to peak. Much of the Hawaiian volcano rises through the Pacific before it ever reaches sea level.",
         "source": "https://www.usgs.gov/faqs/how-big-are-hawaiian-volcanoes?page=1",
-        "label": "usgs.gov"
+        "label": "usgs.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4259,7 +4322,8 @@
       {
         "text": "Bougainville is the largest island in the Solomon Islands archipelago, yet it belongs to Papua New Guinea. The political border crosses the island chain rather than enclosing it.",
         "source": "https://abg.gov.pg/uploads/documents/BDOH_Strategic_Plan_2023-2027_Final.pdf",
-        "label": "abg.gov.pg"
+        "label": "abg.gov.pg",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4285,7 +4349,8 @@
       {
         "text": "Stand on the brass line at Greenwich and a GPS receiver will put you slightly west of zero longitude. The modern reference meridian runs about 102 metres east of the historic one.",
         "source": "https://www.rmg.co.uk/stories/time/what-prime-meridian-why-it-greenwich?show=conwebdoc.1343",
-        "label": "rmg.co.uk"
+        "label": "rmg.co.uk",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4441,7 +4506,8 @@
       {
         "text": "Ireland has lakes that vanish through the floor. In a turlough, rising groundwater floods a limestone hollow and then drains back underground, leaving a field where the lake was.",
         "source": "https://www.gsi.ie/programmes-projects/groundwater/groundwater-activities/groundwater-flooding/what-is-groundwater-flooding/",
-        "label": "gsi.ie"
+        "label": "gsi.ie",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4519,7 +4585,8 @@
       {
         "text": "Liechtenstein has just two neighbours, Austria and Switzerland, and both are landlocked. Of the world's two doubly landlocked countries, this is the one wedged between the Alps and the Rhine.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ls.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4571,7 +4638,8 @@
       {
         "text": "Along much of Luxembourg's border with Germany, the boundary is the entire river. The two countries share sovereignty over the water rather than drawing a line down the middle.",
         "source": "https://act.public.lu/fr/parcelles-residences/mensuration-officielle/limites-etat.html",
-        "label": "act.public.lu"
+        "label": "act.public.lu",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4597,7 +4665,8 @@
       {
         "text": "Two countries reach their highest point on the same summit. The border between Albania and North Macedonia goes straight over Mount Korab.",
         "source": "https://assets.publishing.service.gov.uk/media/69b175ba24c6431b84f0e475/North_Macedonia_Toponymic_Factfile.pdf",
-        "label": "assets.publishing.service.gov.uk"
+        "label": "assets.publishing.service.gov.uk",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4649,7 +4718,8 @@
       {
         "text": "Landlocked Moldova has a port that can receive seagoing ships. At Giurgiulești, a tiny stretch of Danube frontage connects the country to the Black Sea.",
         "source": "https://www.ebrd.com/home/news-and-events/news/2022/moldovas-strategic-danube-port-offers-a-lifeline-for-ukraine.html",
-        "label": "ebrd.com"
+        "label": "ebrd.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4675,7 +4745,8 @@
       {
         "text": "Monaco grew a new neighbourhood out into the Mediterranean. The six hectares of Mareterra added about three per cent to the entire country's land area.",
         "source": "https://eme.gouv.mc/wp-content/uploads/2025/03/EME_BarometrePropTech_2024_Web-5.pdf",
-        "label": "eme.gouv.mc"
+        "label": "eme.gouv.mc",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4909,7 +4980,8 @@
       {
         "text": "Bratislava's municipal limits touch two foreign countries. At the city's southwestern edge, Slovakia, Austria and Hungary meet at one point.",
         "source": "https://www.visitbratislava.com/sights-attractions/trojmedzie-three-border-point-near-bratislava/",
-        "label": "visitbratislava.com"
+        "label": "visitbratislava.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4935,7 +5007,8 @@
       {
         "text": "A landscape gave geologists a word they use worldwide. The name karst, for terrain where water dissolves rock into caves and sinkholes, comes from the Kras plateau.",
         "source": "https://whc.unesco.org/en/tentativelists/6072/",
-        "label": "whc.unesco.org"
+        "label": "whc.unesco.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4961,7 +5034,8 @@
       {
         "text": "Pheasant Island changes administration twice a year. Spain and France take turns governing this little island in the river along their shared border.",
         "source": "https://www.bidasoaturismo.com/en/lugares/pheasant-island/",
-        "label": "bidasoaturismo.com"
+        "label": "bidasoaturismo.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -4987,7 +5061,8 @@
       {
         "text": "On Sweden's High Coast an old shoreline now sits about 286 metres above sea level. Land pressed down by the last ice sheet rose as the ice melted away.",
         "source": "https://www.sgu.se/en/geology-of-sweden/swedish-geosites/world-heritage-site-the-high-coast-area/",
-        "label": "sgu.se"
+        "label": "sgu.se",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5013,7 +5088,8 @@
       {
         "text": "Near Switzerland's Lunghin Pass, three drops of rain could leave for three different seas. Water here can reach the North Sea by the Rhine, the Black Sea by the Danube or the Adriatic by the Po.",
         "source": "https://www.parks.swiss/en/visit-the-parks/all-offers/offer-detail/dreifach-wasserscheide-lunghin-17006",
-        "label": "parks.swiss"
+        "label": "parks.swiss",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5117,7 +5193,8 @@
       {
         "text": "Portugal's highest point is nowhere near the mainland. It is the summit of Pico, a volcano rising 2,351 metres from the Atlantic island that bears its name.",
         "source": "https://www.visitazores.com/en/explore/montanha-do-pico",
-        "label": "visitazores.com"
+        "label": "visitazores.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5143,7 +5220,8 @@
       {
         "text": "An ancient sand dune climbs roughly 300 metres up the eastern face of the Rock of Gibraltar. What looks like a mountainside preserves sand piled up when the coastline lay farther out.",
         "source": "https://www.gibmuseum.gi/news/the-great-gibraltar-sand-dune-90",
-        "label": "gibmuseum.gi"
+        "label": "gibmuseum.gi",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5221,7 +5299,8 @@
       {
         "text": "At a large spring tide, Jersey's exposed area can nearly double between high and low water. Reefs and broad shelves of seabed briefly become part of the island.",
         "source": "https://www.jersey.com/plan-your-break/general-information/tides/",
-        "label": "jersey.com"
+        "label": "jersey.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5247,7 +5326,8 @@
       {
         "text": "Madeira's coastal plain ran out before its airport runway did. Engineers carried part of the runway on a platform supported by great concrete columns beside the sea.",
         "source": "https://www.madeiracentral.com/madeira-airport/",
-        "label": "madeiracentral.com"
+        "label": "madeiracentral.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5351,7 +5431,8 @@
       {
         "text": "Finland and Sweden bend their border around a lighthouse on tiny Märket. A land swap kept the Finnish-built lighthouse on the Finnish side without changing either country's coastline.",
         "source": "https://visitaland.com/en/experience/sights-excursions/lighthouses/",
-        "label": "visitaland.com"
+        "label": "visitaland.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5507,7 +5588,8 @@
       {
         "text": "On Cyprus you can walk uphill through ancient ocean floor. The Troodos Mountains expose a slice of oceanic crust and upper mantle lifted above the Mediterranean.",
         "source": "https://whc.unesco.org/en/tentativelists/1677",
-        "label": "whc.unesco.org"
+        "label": "whc.unesco.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5533,7 +5615,8 @@
       {
         "text": "Kazakhstan is the world's largest landlocked country, yet it has a long coastline. Its ports face the Caspian, a lake with no natural outlet to the ocean.",
         "source": "https://www.worldbank.org/ext/en/country/kazakhstan",
-        "label": "worldbank.org"
+        "label": "worldbank.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5559,7 +5642,8 @@
       {
         "text": "Fresh water once bubbled up from the seabed off Bahrain. Submarine springs helped sustain an island trading centre in the salty waters of the Persian Gulf.",
         "source": "https://whc.unesco.org/document/170980",
-        "label": "whc.unesco.org"
+        "label": "whc.unesco.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5611,7 +5695,8 @@
       {
         "text": "Brunei connected the two pieces of its country by building across its own bay. Motorists can now reach Temburong without the four border checks on the old route through Malaysia.",
         "source": "https://bimp-eaga.asia/articles/southeast-asias-longest-bridge-opens",
-        "label": "bimp-eaga.asia"
+        "label": "bimp-eaga.asia",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5637,7 +5722,8 @@
       {
         "text": "Hong Kong made room for its airport by reshaping the map. Builders levelled Chek Lap Kok and its smaller neighbour and joined them with land reclaimed from the sea.",
         "source": "https://www.hongkongairport.com/en/media-centre/press-release/1999/ex_189",
-        "label": "hongkongairport.com"
+        "label": "hongkongairport.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5663,7 +5749,8 @@
       {
         "text": "Iran's Lut Desert can be hotter than the hottest weather report. Satellite instruments have measured the land surface above 70°C there; weather stations measure the cooler air above it.",
         "source": "https://science.nasa.gov/earth/earth-observatory/irans-lut-desert-153634/",
-        "label": "science.nasa.gov"
+        "label": "science.nasa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5689,7 +5776,8 @@
       {
         "text": "Israel's Mount Sodom is made largely of salt. Water has dissolved a winding cave system about ten kilometres long inside the mountain beside the Dead Sea.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/is.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5741,7 +5829,8 @@
       {
         "text": "The sea opens a temporary walking route between the Korean islands of Jindo and Modo. At exceptionally low tides, a ridge nearly three kilometres long emerges from the water.",
         "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110868",
-        "label": "english.visitkorea.or.kr"
+        "label": "english.visitkorea.or.kr",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5767,7 +5856,8 @@
       {
         "text": "North Korea's border with China runs through a lake inside a volcano. The blue water at Mount Paektu fills a caldera cut into the summit.",
         "source": "https://science.nasa.gov/earth/earth-observatory/mount-paektu-north-koreas-slumbering-giant-88020/",
-        "label": "science.nasa.gov"
+        "label": "science.nasa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5819,7 +5909,8 @@
       {
         "text": "Japan's official island count jumped from 6,852 to 14,125 in a 2023 survey. Better maps revealed thousands of islands the earlier count had missed.",
         "source": "https://www.gsi.go.jp/kihonjohochousa/islands_index.html",
-        "label": "gsi.go.jp"
+        "label": "gsi.go.jp",
+        "suggestSwitch": true
       }
     ]
   },
@@ -5871,7 +5962,8 @@
       {
         "text": "Laos is the only landlocked country in Southeast Asia. Much of its western border is nevertheless a waterfront, formed by the Mekong River.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/la.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -6001,7 +6093,8 @@
       {
         "text": "The Maldives scatter the smallest land area of any Asian country across a chain of 26 natural atolls. On a map showing only dry land, almost the entire outline disappears.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/mv.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -6053,7 +6146,8 @@
       {
         "text": "The tip of the Arabian Peninsula at the Strait of Hormuz belongs to Oman, yet is separated from the rest of Oman by the United Arab Emirates. It is the Musandam exclave.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/mu.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -6183,7 +6277,8 @@
       {
         "text": "Saudi Arabia is the largest country in the world without a permanent river. It spans the Arabian Peninsula from the Red Sea to the Persian Gulf.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/sa.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -6287,7 +6382,8 @@
       {
         "text": "A chain of shallow limestone shoals almost joins Sri Lanka to India. Adam's Bridge stretches roughly 50 kilometres between their shores.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/ce.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -6495,7 +6591,8 @@
       {
         "text": "From Uzbekistan, even crossing into a neighbouring country leaves you landlocked. All five of its neighbours lack an open-ocean coast, making it one of just two doubly landlocked states.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/uz.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -6937,7 +7034,8 @@
       {
         "text": "Two islands of Equatorial Guinea have very different histories. Bioko was once connected to mainland Africa, while remote Annobón rose from deep ocean and never had a land bridge.",
         "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10616780/",
-        "label": "pmc.ncbi.nlm.nih.gov"
+        "label": "pmc.ncbi.nlm.nih.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -6963,7 +7061,8 @@
       {
         "text": "There are glaciers almost on the equator in Kenya. Mount Kenya rises high enough for ice to survive only a few kilometres south of the line separating the hemispheres.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ke.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -7093,7 +7192,8 @@
       {
         "text": "Hippos on Guinea-Bissau's Bijagós islands swim in salt water. Tidal channels separate islands used by an animal usually associated with freshwater rivers and lakes.",
         "source": "https://whc.unesco.org/document/222005",
-        "label": "whc.unesco.org"
+        "label": "whc.unesco.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -7145,7 +7245,8 @@
       {
         "text": "Ethiopia is the world's most populous landlocked country. Its Blue Nile nevertheless supplies much of the water flowing towards the Mediterranean through Sudan and Egypt.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/et.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -7171,7 +7272,8 @@
       {
         "text": "In Gabon's Loango National Park, elephants can walk out of rainforest onto an Atlantic beach. Forest, savanna, lagoons and surf meet along the same strip of coast.",
         "source": "https://whc.unesco.org/en/tentativelists/6593/",
-        "label": "whc.unesco.org"
+        "label": "whc.unesco.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -7197,7 +7299,8 @@
       {
         "text": "The Gambia follows a river that the sea can travel far up. In the dry season Atlantic salt penetrates more than a hundred kilometres inland along its narrow channel.",
         "source": "https://gca.org/wp-content/uploads/2026/03/Technical-Report-02-The-Gambia-Water-Ressources-Climate-Risk-Assessment.pdf",
-        "label": "gca.org"
+        "label": "gca.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -7223,7 +7326,8 @@
       {
         "text": "The lowest point in Lesotho is about 1,400 metres above the sea. No other country's lowest point is that high.",
         "source": "https://centralbank.org.ls/about-the-kingdom-of-lesotho/",
-        "label": "centralbank.org.ls"
+        "label": "centralbank.org.ls",
+        "suggestSwitch": true
       }
     ]
   },
@@ -7353,7 +7457,8 @@
       {
         "text": "The Eye of the Sahara looks like an enormous impact crater from space. Its rings in Mauritania are layers of an eroded geological dome.",
         "source": "https://science.nasa.gov/earth/earth-observatory/eyeing-the-richat-structure/",
-        "label": "science.nasa.gov"
+        "label": "science.nasa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -7379,7 +7484,8 @@
       {
         "text": "Mauritius appears to have a waterfall under the sea. Off Le Morne, streaks of sand seen through clear water at the submarine slope create the illusion from above.",
         "source": "https://wp.mauritius.com/tourism/mauritius-underwater-waterfall",
-        "label": "wp.mauritius.com"
+        "label": "wp.mauritius.com",
+        "suggestSwitch": true
       }
     ]
   },
@@ -7535,7 +7641,8 @@
       {
         "text": "Rwanda generates electricity from gas dissolved in a lake. Methane trapped in Lake Kivu's deep water is drawn up to power a generating station.",
         "source": "https://ppp.worldbank.org/sites/default/files/2022-03/Public-Private-Partnerships-in-Sub-Saharan-Africa_Digital_FINAL-4.pdf",
-        "label": "ppp.worldbank.org"
+        "label": "ppp.worldbank.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -7561,7 +7668,8 @@
       {
         "text": "The westernmost point of mainland Africa is in Dakar. Senegal's Cap-Vert peninsula projects farther into the Atlantic than the rest of the continent's mainland coast.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/sg.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -7639,7 +7747,8 @@
       {
         "text": "The southern tip of Africa is Cape Agulhas. The much more famous Cape of Good Hope lies farther north and west.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/sf.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -7769,7 +7878,8 @@
       {
         "text": "Mainland Africa reaches farther north in Tunisia than in any other country. The northern tip is near Bizerte, across the Mediterranean from Europe.",
         "source": "https://www.comesa.int/tunisia-2/?lang=ar",
-        "label": "comesa.int"
+        "label": "comesa.int",
+        "suggestSwitch": true
       }
     ]
   },
@@ -7847,7 +7957,8 @@
       {
         "text": "By storage volume, Lake Kariba is the world's largest artificial reservoir. Its dam blocks the Zambezi where the river forms the border between Zambia and Zimbabwe.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/za.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -8003,7 +8114,8 @@
       {
         "text": "Deep in the Libyan Sahara, lakes occupy a volcanic crater. Waw an Namus appears as a striking dark patch of volcanic material against the pale desert.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ly.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -8055,7 +8167,8 @@
       {
         "text": "The White Nile loses roughly half the water entering the Sudd wetlands to evaporation and plants. A river famous for reaching the Mediterranean leaves much of its water in South Sudan.",
         "source": "https://mafs.gov.ss/wp-content/uploads/2025/11/Final-ESMF-for-P500553-reviewed-by-RSA-Nov2025_.pdf",
-        "label": "mafs.gov.ss"
+        "label": "mafs.gov.ss",
+        "suggestSwitch": true
       }
     ]
   },
@@ -8107,7 +8220,8 @@
       {
         "text": "Réunion holds the World Meteorological Organization's 24-hour rainfall record. At Foc-Foc, 1,825 millimetres fell in a single day during a tropical cyclone in 1966.",
         "source": "https://wmo.int/sites/default/files/2025-07/Table_Records_25Jul2025.pdf",
-        "label": "wmo.int"
+        "label": "wmo.int",
+        "suggestSwitch": true
       }
     ]
   },
@@ -8133,7 +8247,8 @@
       {
         "text": "The world's largest salt flat lies high in the Andes of landlocked Bolivia. When shallow water covers the Salar de Uyuni, thousands of square kilometres turn into a mirror.",
         "source": "https://eol.jsc.nasa.gov/Collections/EarthObservatory/articles/Salar_de_Uyuni%2C_Bolivia.htm",
-        "label": "eol.jsc.nasa.gov"
+        "label": "eol.jsc.nasa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -8185,7 +8300,8 @@
       {
         "text": "In the rainy season Guyana has a temporary water passage to the Amazon basin. Flooding across the Rupununi savanna lets fish move between rivers that normally drain to different parts of the Atlantic.",
         "source": "https://www.frontiersin.org/journals/forests-and-global-change/articles/10.3389/ffgc.2020.00008/full",
-        "label": "frontiersin.org"
+        "label": "frontiersin.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -8237,7 +8353,8 @@
       {
         "text": "Suriname is the smallest independent country in South America. Neighbouring French Guiana is smaller on the map but is part of France.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/ns.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -8289,7 +8406,8 @@
       {
         "text": "In Venezuela, a river splits and sends water to two different ocean mouths. The Casiquiare branches off the Orinoco and feeds the Rio Negro in the Amazon basin.",
         "source": "https://science.nasa.gov/earth/earth-observatory/when-rivers-take-a-weird-turn-154394/",
-        "label": "science.nasa.gov"
+        "label": "science.nasa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -8393,7 +8511,8 @@
       {
         "text": "Just north of Puerto Rico the ocean floor plunges deeper than anywhere else in the Atlantic. The Puerto Rico Trench reaches more than eight kilometres below the surface.",
         "source": "https://repository.library.noaa.gov/view/noaa/72496/noaa_72496_DS1.pdf",
-        "label": "repository.library.noaa.gov"
+        "label": "repository.library.noaa.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -8419,7 +8538,8 @@
       {
         "text": "The Caribbean's highest summit and lowest exposed ground are both in the Dominican Republic. Pico Duarte rises over three kilometres high, while Lake Enriquillo's shore lies below sea level.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/dr.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -8471,7 +8591,8 @@
       {
         "text": "Jamaica gave geographers an example of 'cockpit karst'. In Cockpit Country, dissolving limestone left so many enclosed hollows that travelling in a straight line means climbing ridge after ridge.",
         "source": "https://whc.unesco.org/en/tentativelists/6822/",
-        "label": "whc.unesco.org"
+        "label": "whc.unesco.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -8575,7 +8696,8 @@
       {
         "text": "Some of Belize's most famous stalactites are underwater. They formed in air when sea level was lower and now hang inside the Great Blue Hole offshore.",
         "source": "https://www.travelbelize.org/attraction/blue-hole/",
-        "label": "travelbelize.org"
+        "label": "travelbelize.org",
+        "suggestSwitch": true
       }
     ]
   },
@@ -8731,7 +8853,8 @@
       {
         "text": "At the Panama Canal, the Atlantic entrance is west of the Pacific entrance. A ship crossing from the Caribbean to the Pacific actually travels southeast.",
         "source": "https://www.govinfo.gov/content/pkg/GPO-CRECB-1967-pt8/pdf/GPO-CRECB-1967-pt8-8-1.pdf",
-        "label": "govinfo.gov"
+        "label": "govinfo.gov",
+        "suggestSwitch": true
       }
     ]
   },
@@ -8991,7 +9114,8 @@
       {
         "text": "Saint Kitts and Nevis is the smallest sovereign country in the Americas by land area. Its two main islands together cover only about 260 square kilometres.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/sc.json",
-        "label": "CIA World Factbook (archived profile)"
+        "label": "CIA World Factbook (archived profile)",
+        "suggestSwitch": true
       }
     ]
   },
@@ -9121,7 +9245,8 @@
       {
         "text": "Alaska reaches farther west and farther east by longitude than any other US state. The Aleutian chain crosses the 180th meridian into eastern longitudes.",
         "source": "https://www.alaska.gov/Kids/learn/aboutgeography.htm",
-        "label": "alaska.gov"
+        "label": "alaska.gov",
+        "suggestSwitch": true
       }
     ]
   }
