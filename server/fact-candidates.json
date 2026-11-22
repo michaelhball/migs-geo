@@ -5239,24 +5239,19 @@
     "name": "Turkey",
     "options": [
       {
-        "text": "At Göbekli Tepe, hunter-gatherers raised monumental T-shaped pillars and carved wild animals into them roughly eleven thousand years ago.",
-        "source": "https://whc.unesco.org/en/list/1572/",
+        "text": "The white terraces of Pamukkale are still being built by water. Warm springs flow over the hillside and deposit calcium carbonate in rims around successive pools.",
+        "source": "https://whc.unesco.org/en/list/485/",
         "label": "UNESCO"
       },
       {
-        "text": "In Karagöz shadow theatre, a puppeteer lights translucent figures from behind. The quarrels between Karagöz and Hacivat play out on a screen.",
-        "source": "https://ich.unesco.org/en/RL/00180",
+        "text": "Ephesus was once a busy port. Sediment gradually filled its harbour, leaving the ruins of a maritime city several kilometres inland.",
+        "source": "https://whc.unesco.org/en/list/1018/",
         "label": "UNESCO"
       },
       {
-        "text": "Sardis was the capital of Lydia, a kingdom associated with some of the earliest coins. Its rulers lie beneath huge burial mounds nearby.",
-        "source": "https://whc.unesco.org/en/list/1731/",
+        "text": "At Çatalhöyük, Neolithic houses were packed so closely that people generally entered from the roof. The rooftops served some of the functions of streets.",
+        "source": "https://whc.unesco.org/en/list/1405/",
         "label": "UNESCO"
-      },
-      {
-        "text": "A ship can cross from Europe to Asia twice without leaving Turkish waters. The Bosporus and Dardanelles cut across the land on either side of the Sea of Marmara.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/tu.json",
-        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5453,25 +5448,19 @@
     "name": "Israel",
     "options": [
       {
-        "text": "Masada stands on an isolated plateau above the Dead Sea. The Romans built a huge siege ramp up to the fortress, and its outline is still visible beside the cliffs.",
-        "source": "https://whc.unesco.org/en/list/1040/",
-        "label": "UNESCO"
+        "text": "Makhtesh Ramon looks like an impact crater, but water carved it. Erosion removed softer rock from inside a fold and left a long hollow enclosed by cliffs.",
+        "source": "https://static.parks.org.il/wp-content/uploads/2017/08/brochureEn-15.pdf",
+        "label": "static.parks.org.il"
       },
       {
-        "text": "At Bet She’arim, a town of the dead was cut underground. Its catacombs drew Jewish burials from far beyond the surrounding Galilee.",
-        "source": "https://whc.unesco.org/en/list/1471/",
-        "label": "UNESCO"
+        "text": "In Israel's Hula Valley, a drained wetland became a place to restore water. Migrating birds stop here on the overland route between Eurasia and Africa.",
+        "source": "https://en.parks.org.il/reserve-park/hula-nature-reserve/",
+        "label": "en.parks.org.il"
       },
       {
-        "text": "Caves on Mount Carmel preserve evidence of both Neanderthals and early modern humans. Layers of occupation record changes in the people living along this eastern Mediterranean coast.",
-        "source": "https://whc.unesco.org/en/list/1393/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "Israel's Mount Sodom is made largely of salt. Water has dissolved a winding cave system about ten kilometres long inside the mountain beside the Dead Sea.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/is.json",
-        "label": "CIA World Factbook (archived profile)",
-        "suggestSwitch": true
+        "text": "The Sea of Galilee is a freshwater lake whose surface is more than 200 metres below the Mediterranean. The Jordan River leaves it and flows farther downhill to the Dead Sea.",
+        "source": "https://www.gov.il/BlobFolder/reports/zilberman-report-2021-03/he/report_2021_NEW_GSI%2003%202021%20internet.pdf",
+        "label": "gov.il"
       }
     ]
   },
@@ -5480,24 +5469,19 @@
     "name": "Iraq",
     "options": [
       {
-        "text": "Ashur, an early capital of Assyria, occupied a bluff over the Tigris. It sat where farming country met drier land used by pastoralists.",
-        "source": "https://whc.unesco.org/en/list/1130/",
-        "label": "UNESCO"
+        "text": "In the Iraqi marshes, a stand of reeds can supply the walls, roof and arches of a meeting house. Builders bend thick bundles together to make a mudhif.",
+        "source": "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mudhif-building-01950",
+        "label": "ich.unesco.org"
       },
       {
-        "text": "Hatra prospered as a fortified city in the Iraqi desert. The temples within its circular defences drew on both eastern and Greco-Roman architectural traditions.",
-        "source": "https://whc.unesco.org/en/list/277/",
-        "label": "UNESCO"
+        "text": "Shanidar Cave in the Zagros Mountains preserved the remains of several Neanderthals. A discovery famous for an apparent “flower burial” has kept archaeologists debating what a patch of ancient pollen really means.",
+        "source": "https://www.arch.cam.ac.uk/research/projects/current-projects/shanidar-cave-project",
+        "label": "arch.cam.ac.uk"
       },
       {
-        "text": "Babylon developed on the Euphrates. Its political reach once extended far beyond the alluvial plain that supplied the city's water and farmland.",
-        "source": "https://whc.unesco.org/en/list/278/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "For a country between two great rivers, Iraq has surprisingly little seacoast. The Tigris and Euphrates join as the Shatt al-Arab before reaching Iraq's short opening onto the Persian Gulf.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/iz.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "Ancient Ur now stands in dry country, but archaeologists have traced old watercourses around it. Mapping the vanished channels helps explain how such a large city could live there.",
+        "source": "https://www.journals.uchicago.edu/doi/10.1086/725907",
+        "label": "journals.uchicago.edu"
       }
     ]
   },
@@ -5506,25 +5490,19 @@
     "name": "South Korea",
     "options": [
       {
-        "text": "A pansori singer and one drummer can sustain an epic for hours. The singer moves between narration, dialogue and song.",
-        "source": "https://ich.unesco.org/en/RL/00070",
+        "text": "On Jeju, streams of lava drained out from beneath their own hardened roofs. The empty tubes survive as caves, some with pale carbonate formations growing against black volcanic walls.",
+        "source": "https://whc.unesco.org/en/list/1264",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "The hilltop tombs of the Gaya trace a political map of southern Korea. Separate groups of large mounds mark the centres of states that once formed a confederacy.",
+        "source": "https://whc.unesco.org/en/list/1666/",
         "label": "UNESCO"
       },
       {
-        "text": "Korea's tidal flats supply food for migratory shorebirds crossing East Asia. The land they depend on disappears underwater with each tide.",
-        "source": "https://whc.unesco.org/en/list/1591/",
+        "text": "Seven Korean Buddhist monasteries share an arrangement centred on an open courtyard. Built among mountains, they have remained places to live and practise Buddhism for centuries.",
+        "source": "https://whc.unesco.org/en/list/1562/",
         "label": "UNESCO"
-      },
-      {
-        "text": "People kept carving into the rock beside Bangucheon Stream for millennia. On the same stretch of cliffs, prehistoric art sits alongside historical inscriptions.",
-        "source": "https://whc.unesco.org/en/list/1740/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "The sea opens a temporary walking route between the Korean islands of Jindo and Modo. At exceptionally low tides, a ridge nearly three kilometres long emerges from the water.",
-        "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110868",
-        "label": "english.visitkorea.or.kr",
-        "suggestSwitch": true
       }
     ]
   },
@@ -5533,25 +5511,19 @@
     "name": "North Korea",
     "options": [
       {
-        "text": "Pyongyang's cold buckwheat noodles come in a brass bowl. One way to finish the dish is to pour the liquid from radish kimchi over them.",
-        "source": "https://ich.unesco.org/en/RL/01695",
+        "text": "At Mundok, the outgoing tide exposes a feeding stop on the flight between Australasia and Arctic breeding grounds. Migrating shorebirds use mudflats where two North Korean rivers reach the Yellow Sea.",
+        "source": "https://www.neaspec.org/sites/default/files/2024-11/Session%203-7.%20Marine%20Protected%20Areas%20in%20the%20DPRK_Rebecca%20Reinecke.pdf",
+        "label": "neaspec.org"
+      },
+      {
+        "text": "Before Korea was divided, Kaesong was the capital of the Koryo dynasty. Mountains around the city helped determine where its palaces, walls and royal tombs were placed.",
+        "source": "https://whc.unesco.org/en/list/1278/",
         "label": "UNESCO"
       },
       {
-        "text": "The wall paintings inside Koguryo tombs show clothing, customs and everyday life. Much of what survives of this kingdom's painting is underground.",
-        "source": "https://whc.unesco.org/en/list/1091/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "Mount Kumgang's pale granite peaks have attracted Buddhist communities for centuries. Hermitages and carvings are tucked among its waterfalls and ravines.",
-        "source": "https://whc.unesco.org/en/list/1642/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "North Korea's border with China runs through a lake inside a volcano. The blue water at Mount Paektu fills a caldera cut into the summit.",
-        "source": "https://science.nasa.gov/earth/earth-observatory/mount-paektu-north-koreas-slumbering-giant-88020/",
-        "label": "science.nasa.gov",
-        "suggestSwitch": true
+        "text": "The 38th parallel does not follow today's Korean border. Kaesong, now a North Korean city, lies south of that line.",
+        "source": "https://history.army.mil/portals/143/Images/Publications/catalog/70-19.pdf",
+        "label": "history.army.mil"
       }
     ]
   },
@@ -5560,24 +5532,19 @@
     "name": "Jordan",
     "options": [
       {
-        "text": "Petra's inhabitants made a city possible in an arid canyon landscape by capturing and managing water. Channels and reservoirs were as important to its survival as the carved façades.",
-        "source": "https://whc.unesco.org/en/list/326/",
+        "text": "Wadi Mujib cuts through so much relief that one nature reserve stretches from below sea level near the Dead Sea to mountain country far above it. Different climates sit just a few kilometres apart.",
+        "source": "https://www.unesco.org/en/mab/mujib",
+        "label": "unesco.org"
+      },
+      {
+        "text": "At Quseir Amra, an early Islamic bathhouse survives in the Jordanian desert. Its dome carries a painted map of the night sky above a room once filled with steam.",
+        "source": "https://whc.unesco.org/en/list/327/",
         "label": "UNESCO"
       },
       {
-        "text": "Jordan's short Red Sea coast contains the Aqaba Marine Reserve. Coral communities lie at the head of a narrow gulf that runs deep into desert country.",
-        "source": "https://whc.unesco.org/en/list/1742/",
+        "text": "As-Salt grew over three neighbouring hills where traders from the Jordanian highlands met routes from the desert. Its steep alleys link houses built in local yellow limestone.",
+        "source": "https://whc.unesco.org/en/list/689/",
         "label": "UNESCO"
-      },
-      {
-        "text": "At Umm er-Rasas, a church floor is also a geographic record. Its mosaic depicts towns on both sides of the Jordan River.",
-        "source": "https://whc.unesco.org/en/list/1093/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "Jordan has two very different waterfronts. Its western shore on the Dead Sea lies hundreds of metres below sea level, while its short Gulf of Aqaba coast is the country's only way to the open ocean.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/jo.json",
-        "label": "CIA World Factbook (archived profile)"
       }
     ]
   },
@@ -5692,24 +5659,19 @@
     "name": "Kuwait",
     "options": [
       {
-        "text": "On Failaka Island, archaeologists found traces of the Dilmun trading world. An island off modern Kuwait once took part in a network linking ports around the Gulf.",
-        "source": "https://whc.unesco.org/document/166288",
-        "label": "whc.unesco.org"
+        "text": "Before Kuwait had large desalination plants, sailing boats brought fresh water from the Shatt al-Arab. A coastal city had to import something it could see in abundance in the wrong form.",
+        "source": "https://www.mew.gov.kw/media/ayel3rql/%D9%83%D8%AA%D8%A7%D8%A8-%D8%A7%D9%84%D9%85%D8%A7%D8%A1.pdf",
+        "label": "mew.gov.kw"
       },
       {
-        "text": "Kuwait's highest ground lies near the Saudi border. From that desert rise of roughly 300 metres, the land slopes towards the Persian Gulf.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/ku.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "Kuwait's pearl divers worked oyster beds on the Gulf floor. Before cultured pearls and oil changed the economy, a summer at sea could determine a family's income for the year.",
+        "source": "https://www.kisr.edu.kw/media/filer_public/d7/f7/d7f77a5e-9ab4-4339-b3f3-057c990d45e1/fathoming_book_20_sep_optimized.pdf",
+        "label": "kisr.edu.kw"
       },
       {
-        "text": "Kuwait stands at the head of the Persian Gulf between Iraq and Saudi Arabia. Its capital curves around a bay opening east into the gulf.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/ku.json",
-        "label": "CIA World Factbook (archived profile)"
-      },
-      {
-        "text": "Kuwait's largest island, Bubiyan, is a low mud island at the edge of the great river delta in the northern Gulf. Much of its surrounding landscape appears and disappears with the tide.",
-        "source": "https://rsis.ramsar.org/RISapp/files/RISrep/IR50RIS.pdf",
-        "label": "rsis.ramsar.org"
+        "text": "The north shore of Kuwait Bay has a conspicuous ridge in an otherwise low landscape. The Jal az-Zor escarpment rises sharply behind the coastal flats.",
+        "source": "https://www.e.gov.kw/sites/kgoenglish/Pages/Visitors/AboutKuwait/KuwaitAtaGlaneTopography.aspx",
+        "label": "e.gov.kw"
       }
     ]
   },
@@ -5850,24 +5812,19 @@
     "name": "Nepal",
     "options": [
       {
-        "text": "An inscribed pillar at Lumbini records a visit by Emperor Ashoka in the third century BCE to the site revered as the Buddha's birthplace.",
-        "source": "https://whc.unesco.org/en/list/666/",
-        "label": "UNESCO"
+        "text": "Sediment beneath Kathmandu records an ancient lake. The Himalayan capital occupies a basin that collected mud and sand underwater before it became a valley floor.",
+        "source": "https://www.nepjol.info/index.php/HJS/article/view/981/1017",
+        "label": "nepjol.info"
       },
       {
-        "text": "Far below Nepal's snowy peaks, Chitwan's subtropical lowlands shelter one-horned rhinoceroses and Bengal tigers.",
-        "source": "https://whc.unesco.org/en/list/284/",
-        "label": "UNESCO"
+        "text": "Beyond Nepal's main Himalayan crest, Upper Mustang lies in a rain shadow. A traveller can go north from wet monsoon slopes into a high, dry landscape continuous with the Tibetan Plateau.",
+        "source": "https://ntb.gov.np/lo-manthang-monastery--mustang",
+        "label": "ntb.gov.np"
       },
       {
-        "text": "Eight of the world's ten highest peaks lie in or on the borders of Nepal. Everest and Kanchenjunga stand on different international frontiers.",
+        "text": "Nepal's national flag has an outline unlike that of any other sovereign country's flag. Its two stacked triangular pennants fit neither a square nor a rectangle.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/np.json",
         "label": "CIA World Factbook (archived profile)"
-      },
-      {
-        "text": "Nepal's Kali Gandaki River runs between two mountains over 8,000 metres high, Annapurna and Dhaulagiri. The river makes a passage through the great range itself.",
-        "source": "https://gilles-arnaud-fassetta.org/wp-content/uploads/2018/02/2010-Fort-et-al.-Geomorphology-Nepal-ENGLISH.pdf",
-        "label": "gilles-arnaud-fassetta.org"
       }
     ]
   },
@@ -5876,24 +5833,19 @@
     "name": "Palestine",
     "options": [
       {
-        "text": "At Battir, stone terraces and irrigation channels share spring water among vegetable gardens. Families follow a customary rotation for their turn at the water.",
-        "source": "https://whc.unesco.org/en/list/1492/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "In Nablus, traditional soap starts with olive oil. Makers spread the cooked mixture across a floor, cut it into blocks and stack the blocks to dry.",
-        "source": "https://ich.unesco.org/en/RL/02112",
-        "label": "UNESCO"
-      },
-      {
-        "text": "Palestinian embroidery could once tell a viewer where its wearer came from. Colours and motifs on a dress carried local and family associations.",
-        "source": "https://ich.unesco.org/en/RL/01722",
-        "label": "UNESCO"
-      },
-      {
-        "text": "At ancient Jericho, generations built one settlement on top of another beside a permanent spring. Their great mound of ruins still lies well below the level of the Mediterranean.",
-        "source": "https://whc.unesco.org/en/list/1687",
+        "text": "Wadi Gaza connects an arid drainage basin to a Mediterranean wetland. Its lower valley offers wet ground on the narrow route followed by migrating birds between Africa and Eurasia.",
+        "source": "https://whc.unesco.org/en/tentativelists/5722/",
         "label": "whc.unesco.org"
+      },
+      {
+        "text": "In the bath complex at Hisham's Palace near Jericho, a mosaic shows gazelles beneath a fruit tree. On one side they graze, while on the other a lion attacks.",
+        "source": "https://whc.unesco.org/en/tentativelists/6546/",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "The Church of the Nativity was built over a cave in Bethlehem. A pilgrimage route through the town still leads to the spot revered in Christian tradition as Jesus's birthplace.",
+        "source": "https://whc.unesco.org/en/list/1433/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -5902,24 +5854,19 @@
     "name": "Pakistan",
     "options": [
       {
-        "text": "At Moenjodaro, builders laid out a city of baked brick in the Indus Valley more than four thousand years ago. A street grid still shows through the ruins.",
-        "source": "https://whc.unesco.org/en/list/138/",
-        "label": "UNESCO"
+        "text": "After an earthquake in 2013, a mud island appeared off the Pakistani port of Gwadar. Within a few years waves had worn it back below the sea.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/the-sea-takes-back-a-baby-island-145265/",
+        "label": "science.nasa.gov"
       },
       {
-        "text": "Kalasha observers use the shadows of the Hindu Kush as a calendar. The positions of the sun and stars against local peaks help set dates for sowing and festivals.",
-        "source": "https://ich.unesco.org/en/USL/01381",
-        "label": "UNESCO"
+        "text": "Pakistan acquired a lake in 2010 when a landslide dammed the Hunza River. The rising water at Attabad submerged villages and a stretch of the Karakoram Highway.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/landslide-lake-in-northwest-pakistan-43175/",
+        "label": "science.nasa.gov"
       },
       {
-        "text": "The boreendo is a small, hollow clay instrument of the Thar. A player can alter its tone simply by changing the angle at which they blow.",
-        "source": "https://ich.unesco.org/en/USL/02328",
+        "text": "At Taxila, successive cities were built at different sites. A short journey between their ruins crosses the remains of towns shaped in turn by influences from Persia, Greece and Central Asia.",
+        "source": "https://whc.unesco.org/en/list/139/",
         "label": "UNESCO"
-      },
-      {
-        "text": "Pakistan's highest point is K2, the world's second-highest mountain. It stands in the Karakoram, a separate mountain range from the Himalayas that contain Everest.",
-        "source": "https://tourism.gov.pk/pakistan.html",
-        "label": "tourism.gov.pk"
       }
     ]
   },
@@ -5954,25 +5901,19 @@
     "name": "Saudi Arabia",
     "options": [
       {
-        "text": "The Arabian oryx disappeared from the wild and later returned to the sands of 'Uruq Bani Ma'arid through reintroduction.",
-        "source": "https://whc.unesco.org/en/list/1699/",
+        "text": "In 1256, lava travelled towards Medina from the Harrat Rahat volcanic field. The dark flow is still traceable outside the city in a country usually pictured as a sea of sand.",
+        "source": "https://www.usgs.gov/maps/geologic-map-northern-harrat-rahat-volcanic-field-kingdom-saudi-arabia",
+        "label": "usgs.gov"
+      },
+      {
+        "text": "Al-Ahsa in eastern Saudi Arabia has around 2.5 million date palms. Springs, wells and irrigation channels sustain one of the largest oases on Earth.",
+        "source": "https://whc.unesco.org/en/list/1563/",
         "label": "UNESCO"
       },
       {
-        "text": "In Asir, women traditionally paint the inside walls of homes with bright geometric patterns. The house itself becomes the canvas.",
-        "source": "https://ich.unesco.org/en/RL/01261",
+        "text": "At Hegra, Nabataean builders carved entire tomb façades into isolated sandstone outcrops. Some bear inscriptions identifying the people for whom the tomb was reserved.",
+        "source": "https://whc.unesco.org/en/list/1293/",
         "label": "UNESCO"
-      },
-      {
-        "text": "Travellers crossing the desert at Ḥimā left their marks near its wells. Inscriptions in different scripts record people passing along the same route over centuries.",
-        "source": "https://whc.unesco.org/en/list/1619/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "Saudi Arabia is the largest country in the world without a permanent river. It spans the Arabian Peninsula from the Red Sea to the Persian Gulf.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/sa.json",
-        "label": "CIA World Factbook (archived profile)",
-        "suggestSwitch": true
       }
     ]
   },
@@ -5981,24 +5922,19 @@
     "name": "Singapore",
     "options": [
       {
-        "text": "Singapore Botanic Gardens helped turn rubber into a Southeast Asian plantation crop. Research on this city plot had consequences across the region.",
-        "source": "https://whc.unesco.org/en/list/1483/",
-        "label": "UNESCO"
+        "text": "The name Pulau Ubin refers to granite. Quarries on this small Singaporean island supplied stone for structures including the causeway that links Singapore to Malaysia.",
+        "source": "https://pulau-ubin.nparks.gov.sg/biodiversity/placesofinterest/quarries-of-pulau-ubin/",
+        "label": "pulau-ubin.nparks.gov.sg"
       },
       {
-        "text": "Singapore's hawker centres grew from street-food stalls into shared dining rooms. A game of chess or a busker can be as much a part of the scene as lunch.",
-        "source": "https://ich.unesco.org/en/RL/01568",
-        "label": "UNESCO"
+        "text": "The Marina Barrage cut off a tidal inlet to make a freshwater reservoir in central Singapore. Its gates also let stormwater out when heavy rain threatens low-lying streets.",
+        "source": "https://www.pub.gov.sg/Public/Places-of-Interest/Marina-Barrage",
+        "label": "pub.gov.sg"
       },
       {
-        "text": "Land reclamation has changed Singapore's island count in both directions. Some islands were joined together while entirely new ones were created.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/sn.json",
-        "label": "CIA World Factbook (archived profile)"
-      },
-      {
-        "text": "One of Singapore's islands was enlarged with a landfill out at sea. A bund enclosed water between Pulau Semakau and Pulau Sakeng to make a place for the city's incineration ash.",
-        "source": "https://www.nea.gov.sg/our-services/waste-management/waste-management-infrastructure/semakau-landfill",
-        "label": "nea.gov.sg"
+        "text": "Singapore makes NEWater from treated used water. Much of this exceptionally pure water goes to industries such as chipmaking, where ordinary drinking water would need more treatment.",
+        "source": "https://www.pub.gov.sg/Public/WaterLoop/OurWaterStory/NEWater",
+        "label": "pub.gov.sg"
       }
     ]
   },
@@ -6059,25 +5995,19 @@
     "name": "Sri Lanka",
     "options": [
       {
-        "text": "At Dambulla, monks made shrines inside natural caves and covered the rock ceilings with paintings. The mountain itself forms the roof of the temple.",
-        "source": "https://whc.unesco.org/en/list/561/",
+        "text": "At Sigiriya, a royal residence stood atop a sheer rock about 180 metres above the surrounding plain. A stairway between giant stone lion's paws leads towards the summit.",
+        "source": "https://whc.unesco.org/en/list/202/",
         "label": "UNESCO"
       },
       {
-        "text": "Anuradhapura grew around a sacred fig tree traditionally grown from a cutting of the tree under which the Buddha attained enlightenment.",
-        "source": "https://whc.unesco.org/en/list/200/",
-        "label": "UNESCO"
+        "text": "When water recedes at the ancient Minneriya reservoir, fresh grass grows on the exposed banks. Elephants gather there in the dry season to graze.",
+        "source": "https://sltda.gov.lk/storage/common_media/Final%20Report%20VM%20Sri%20Lanka%20-%20Final%20Dec%202025%20-%20Vol%201.pdf",
+        "label": "sltda.gov.lk"
       },
       {
-        "text": "Sri Lankan string puppetry is called rūkada nātya. Family troupes carve and dress their own wooden characters and bring them to life above a portable stage.",
-        "source": "https://ich.unesco.org/en/RL/01370",
+        "text": "Sinharaja's name means “Lion Kingdom”. This remnant of lowland rainforest shelters many plants and birds whose entire native range lies on Sri Lanka.",
+        "source": "https://whc.unesco.org/en/list/405/",
         "label": "UNESCO"
-      },
-      {
-        "text": "A chain of shallow limestone shoals almost joins Sri Lanka to India. Adam's Bridge stretches roughly 50 kilometres between their shores.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/ce.json",
-        "label": "CIA World Factbook (archived profile)",
-        "suggestSwitch": true
       }
     ]
   },
@@ -6112,24 +6042,19 @@
     "name": "Thailand",
     "options": [
       {
-        "text": "Water has a meaning beyond the famous splashing at Songkran. People also pour it over Buddha images and the hands of elders at Thai New Year.",
-        "source": "https://ich.unesco.org/en/RL/01719",
+        "text": "The former Siamese capital of Ayutthaya stood on an island at the meeting of three rivers. Water provided both a line of defence and a route for seagoing trade.",
+        "source": "https://whc.unesco.org/en/list/576/",
         "label": "UNESCO"
       },
       {
-        "text": "In khon masked theatre, dancers become the monkey army and giant adversaries of the hero Rama. Singers and instrumentalists tell the story alongside them.",
-        "source": "https://ich.unesco.org/en/RL/01385",
+        "text": "On Thailand's western border, Kaeng Krachan sits where several Asian wildlife regions meet. Forest birds and mammals near the northern and southern limits of their ranges occur in the same mountain chain.",
+        "source": "https://whc.unesco.org/en/list/1461/",
         "label": "UNESCO"
       },
       {
-        "text": "At Phu Phrabat, prehistoric rock shelters became Buddhist sacred spaces. Upright boundary stones marked out places for religious ceremonies.",
-        "source": "https://whc.unesco.org/en/list/1507/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "Mainland Southeast Asia narrows into a long peninsula through Thailand. Every overland route from the rest of continental Asia to Peninsular Malaysia and Singapore passes through it.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/th.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "At Cheow Lan, steep limestone hills rise from a reservoir. The lake is recent, but the pale towers that now look like islands were already standing when the valley flooded.",
+        "source": "https://chm-thai.onep.go.th/wp-content/uploads/2023/03/02%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%9A%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%8A%E0%B8%B8%E0%B9%88%E0%B8%A1%E0%B8%99%E0%B9%89%E0%B8%B3Eng-3.pdf",
+        "label": "chm-thai.onep.go.th"
       }
     ]
   },
@@ -6164,24 +6089,19 @@
     "name": "United Arab Emirates",
     "options": [
       {
-        "text": "In Sharjah, archaeological layers at Faya record repeated human occupation as the desert swung between dry and wetter periods over many thousands of years.",
-        "source": "https://whc.unesco.org/en/list/1735/",
-        "label": "UNESCO"
+        "text": "On Abu Dhabi's coast, seawater evaporating from low flats leaves gypsum, salt and other minerals behind. Geologists use the Arabic word sabkha for landscapes like these around the world.",
+        "source": "https://whc.unesco.org/en/tentativelists/6352/",
+        "label": "whc.unesco.org"
       },
       {
-        "text": "In oasis settlements, underground aflaj guide water to farms by gravity. Customary rules divide the flow among those who depend on it.",
-        "source": "https://ich.unesco.org/en/RL/01577",
-        "label": "UNESCO"
+        "text": "At Jebel Hafit near Al Ain, hundreds of early Bronze Age tombs mark the mountain's foothills. Piled stone domes made a desert cemetery visible from far across the plain.",
+        "source": "https://whc.unesco.org/document/152426",
+        "label": "whc.unesco.org"
       },
       {
-        "text": "In Fujairah's Hajar Mountains, Wadi Wurayah preserves rock from ancient oceanic crust and habitat for more than a thousand recorded species.",
-        "source": "https://whc.unesco.org/en/list/1724/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "At Nahwa there is UAE land inside Omani land inside UAE land. Drive in from the surrounding Emirates and you cross Oman to arrive back in the same country.",
-        "source": "https://assets.publishing.service.gov.uk/media/69a36e58f534e7e99adaeafb/United_Arab_Emirates_Travel_Advice_Ed1.pdf",
-        "label": "assets.publishing.service.gov.uk"
+        "text": "Abu Dhabi has forests that grow in seawater along the edge of the desert. Grey mangroves send breathing roots up through the mud where ordinary underground roots would struggle for oxygen.",
+        "source": "https://www.ead.gov.ae/-/media/Project/EAD/EAD/Documents/Resources/Mangrove-In-Abu-Dhabi-Emirate.pdf",
+        "label": "ead.gov.ae"
       }
     ]
   },
@@ -6373,24 +6293,19 @@
     "name": "Northern Cyprus",
     "options": [
       {
-        "text": "Almonds helped date an ancient merchant ship wrecked off Kyrenia. Researchers used radiocarbon measurements of its cargo alongside those of the ship's timbers.",
-        "source": "https://news.cornell.edu/stories/2024/06/almonds-pottery-and-wood-help-date-famed-kyrenia-shipwreck",
-        "label": "news.cornell.edu"
+        "text": "Green and loggerhead turtles share nesting beaches on the north coast of Cyprus. At Alagadi, tracks in the sand let researchers locate nests dug during the night.",
+        "source": "https://www.rjh.folium.ru/index.php/rjh/article/view/2141",
+        "label": "rjh.folium.ru"
       },
       {
-        "text": "Bellapais Abbey's Gothic cloisters stand on a mountainside above Kyrenia. A medieval Latin monastery overlooks a stretch of the eastern Mediterranean.",
-        "source": "https://www.visitncy.com/discover/bellapais-abbey/",
-        "label": "www.visitncy.com"
+        "text": "Saint Hilarion Castle is built into the Kyrenia mountain ridge. Its upper rooms exploit the crags themselves for defence and look down on the coastal plain.",
+        "source": "https://www.visitncy.com/discover/saint-hilarion-castle/",
+        "label": "visitncy.com"
       },
       {
-        "text": "Near the far tip of the Karpas peninsula, Greek and Turkish Cypriot institutions worked together to restore Apostolos Andreas Monastery overlooking the sea.",
-        "source": "https://www.undp.org/cyprus/projects/restoration-monastery-apostolos-andreas",
-        "label": "www.undp.org"
-      },
-      {
-        "text": "The division of Cyprus runs through the middle of its capital. A UN buffer zone threads through old Nicosia, leaving the northern and southern districts on different sides.",
-        "source": "https://www.undp.org/cyprus/feasibility-study-improvement-public-services-within-boundaries-nicosia-walled-city-turkish-cypriot-community",
-        "label": "undp.org"
+        "text": "Donkeys roam free on the Karpaz Peninsula. Descendants of working animals now graze the long finger of land pointing northeast from Cyprus.",
+        "source": "https://www.visitncy.com/discover/cyprus-donkey/",
+        "label": "visitncy.com"
       }
     ]
   },
@@ -6399,24 +6314,19 @@
     "name": "South Ossetia",
     "options": [
       {
-        "text": "The road linking South and North Ossetia goes through the Greater Caucasus. The Roki Tunnel carries it under the mountain divide.",
-        "source": "https://www.ebrd.com/downloads/about/policies/georgia-2010.pdf",
-        "label": "www.ebrd.com"
+        "text": "The Kudaro caves preserve bones of Ice Age big cats. What is now a mountain cave in South Ossetia once lay within the range of animals known mainly from fossils.",
+        "source": "https://www.zin.ru/journals/trudyzin/publication.html?id=101",
+        "label": "zin.ru"
       },
       {
-        "text": "Ossetic belongs to the Iranian branch of Indo-European. Its closest linguistic relatives lie far beyond these Caucasus valleys.",
-        "source": "https://www.iranicaonline.org/articles/ossetic/",
-        "label": "www.iranicaonline.org"
+        "text": "The high country around Lake Keli is volcanic. Lava flows built up a plateau on the southern flank of the Caucasus, within a range better known for mountains raised by collision.",
+        "source": "https://repository.geologyscience.ru/server/api/core/bitstreams/16cea93d-72d3-413c-8c3c-9ef0195a21d6/content",
+        "label": "repository.geologyscience.ru"
       },
       {
-        "text": "Follow the map north from Tskhinvali and settlements string out along the Great Liakhvi. The Little Liakhvi and Froni valleys branch through different parts of the region.",
-        "source": "https://www.echr.coe.int/documents/d/echr/hudoc_38263_08_Annexes_eng",
-        "label": "www.echr.coe.int"
-      },
-      {
-        "text": "The main Caucasus divide separates South Ossetia from North Ossetia. On the southern side the Liakhvi drains towards the Kura and the Caspian Sea.",
-        "source": "https://unfccc.int/sites/default/files/resource/4%20Final%20Report%20-%20English%202020%2030.03_0.pdf",
-        "label": "unfccc.int"
+        "text": "Java, also called Dzau, developed as a spa in the Greater Liakhvi valley. Mineral springs helped give a mountain settlement a second life as a resort.",
+        "source": "https://archive.gov.ge/index.php/en/2020-1/sakartvelos-kurortebi-1",
+        "label": "archive.gov.ge"
       }
     ]
   },
@@ -6451,22 +6361,17 @@
     "name": "Sumatra",
     "options": [
       {
-        "text": "Lake Toba fills the caldera of an immense eruption. The large island of Samosir inside the lake rose as the caldera floor rebounded.",
-        "source": "https://volcano.si.edu/volcano.cfm?vn=261090",
-        "label": "volcano.si.edu"
+        "text": "A Sumatran forest can produce a single flower about a metre across. Rafflesia spends most of its life hidden inside a host vine before its enormous blossom emerges.",
+        "source": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A316069-1/general-information",
+        "label": "powo.science.kew.org"
       },
       {
-        "text": "At Ombilin, colonial coal mining required more than shafts. A railway carried coal out of Sumatra's interior mountains to a port on the west coast.",
-        "source": "https://whc.unesco.org/en/list/1610/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "Sumatran orangutans live in the island's tropical forests. These are among the few places on Earth where orangutans still occur in the wild.",
+        "text": "Sumatra's rainforests shelter elephants, tigers, rhinoceroses and orangutans on the same island. All four have distinct Sumatran populations.",
         "source": "https://whc.unesco.org/en/list/1167/",
-        "label": "UNESCO"
+        "label": "whc.unesco.org"
       },
       {
-        "text": "The Bukit Barisan mountains run like a spine along Sumatra's western side. The three national parks protecting its tropical rainforest sit along that same range.",
+        "text": "Indonesia's highest volcano is on Sumatra. Mount Kerinci rises about 3,800 metres amid the forest of Kerinci Seblat National Park.",
         "source": "https://whc.unesco.org/en/list/1167/",
         "label": "UNESCO"
       }
