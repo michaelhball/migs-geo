@@ -371,24 +371,19 @@
     "name": "Bermuda Triangle",
     "options": [
       {
-        "text": "Try to trace the Triangle on an official nautical chart and you hit a problem: there is no official boundary. Even the U.S. board that standardizes geographic names has no official entry for it.",
-        "source": "https://oceanservice.noaa.gov/facts/bermudatri.html",
-        "label": "NOAA"
+        "text": "Between Florida and the Bahamas, oceanographers measure a current with a submarine cable. Salt water moving through Earth's magnetic field creates a voltage that changes with the flow.",
+        "source": "https://www.aoml.noaa.gov/proj/western-boundary-time-series/",
+        "label": "aoml.noaa.gov"
       },
       {
-        "text": "The Gulf Stream runs through the Triangle. Along this swift current the weather can change violently, leaving a crew with very different conditions from the ones it set out in.",
-        "source": "https://oceanservice.noaa.gov/facts/bermudatri.html",
-        "label": "NOAA"
+        "text": "Bermuda lies in a sea whose boundaries are currents. The Sargasso Sea shifts with the circulation of the North Atlantic, so its limits cannot be drawn by following a coastline.",
+        "source": "https://oceanservice.noaa.gov/facts/sargassosea.html",
+        "label": "oceanservice.noaa.gov"
       },
       {
-        "text": "Navigators have reported odd compass readings in the Triangle. NOAA compared those reports with other regions and found that even the reported magnetic anomalies were unexceptional.",
-        "source": "https://repository.library.noaa.gov/view/noaa/1089/noaa_1089_DS1.pdf",
-        "label": "NOAA"
-      },
-      {
-        "text": "One corner of the usual Miami–Bermuda–Puerto Rico triangle lies beside the deepest part of the Atlantic. The Puerto Rico Trench runs just north of the island.",
-        "source": "https://repository.library.noaa.gov/view/noaa/72496/noaa_72496_DS1.pdf",
-        "label": "repository.library.noaa.gov"
+        "text": "The Triangle's northern corner is the top of a submerged volcanic mountain. The pale limestone islands of Bermuda sit on a much older volcanic foundation.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/bermuda-7397/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -884,23 +879,18 @@
     "name": "Lake Saimaa",
     "options": [
       {
-        "text": "Researchers can date the rock paintings at Astuvansalmi using the lake itself. Changes in water level tell them when a painter could have reached a particular stretch of cliff.",
-        "source": "https://saimaageopark.fi/en/astuvansalmi-rock-paintings/",
+        "text": "Eight locks on the Saimaa Canal make a staircase from Finland's lake district down to the Gulf of Finland. A lake vessel can reach the Baltic without following Saimaa's natural outlet.",
+        "source": "https://www.visitlappeenranta.fi/en/Experience/Sights-and-history/The-Saimaa-Canal",
+        "label": "visitlappeenranta.fi"
+      },
+      {
+        "text": "In the Saimaa Geopark a glacier left a boulder balanced on a tiny patch of bedrock. The Finnish name Kummakivi means “strange stone”.",
+        "source": "https://saimaageopark.fi/en/kummakivi-erratic-boulder/",
         "label": "saimaageopark.fi"
       },
       {
-        "text": "A freshwater salmon lives in Saimaa. Its migrations take it between a lake and spawning rivers, so this population can complete its life without ever reaching salt water.",
-        "source": "https://whc.unesco.org/en/tentativelists/6510",
-        "label": "whc.unesco.org"
-      },
-      {
-        "text": "Some of the long, narrow ridges running through the lake are eskers. They mark places where streams deposited gravel in tunnels underneath an ice sheet.",
-        "source": "https://saimaageopark.fi/en/see-and-experience/geosites/",
-        "label": "saimaageopark.fi"
-      },
-      {
-        "text": "Lake Saimaa looks like a cluster of lakes because its open basins are linked by narrow straits between thousands of islands. A continuous journey on water can weave through what looks like solid land on a small map.",
-        "source": "https://saimaageopark.fi/en/geopark-info/geology-and-environment/enviroment/",
+        "text": "The water leaving Saimaa at Imatra once thundered through a narrow rock gorge. Hydropower diverted the flow, so seeing the rapids run today depends on a release of water.",
+        "source": "https://saimaageopark.fi/wp-content/uploads/geopark_yleiskartta_052024_L4.pdf",
         "label": "saimaageopark.fi"
       }
     ]
@@ -937,24 +927,19 @@
     "name": "Reindeer Lake",
     "options": [
       {
-        "text": "Deep Bay forms an almost circular hole in otherwise shallow Reindeer Lake. The water reaches about 220 metres down inside an ancient impact crater.",
-        "source": "https://www.lpi.usra.edu/publications/slidesets/craters/slide_30.html",
-        "label": "Lunar and Planetary Institute"
+        "text": "At Brochet on Reindeer Lake's northern shore, the road connection is seasonal. When the winter road closes, aircraft provide the transport link that trucks do in winter.",
+        "source": "https://www.gov.mb.ca/inr/publications/community_profiles/pubs/brochet.pdf",
+        "label": "gov.mb.ca"
       },
       {
-        "text": "Drillers investigating Reindeer Lake in the 1960s brought up shattered rock from beneath Deep Bay. The shock damage was evidence of an impact.",
-        "source": "https://www.lpi.usra.edu/publications/slidesets/craters/slide_30.html",
-        "label": "Lunar and Planetary Institute"
-      },
-      {
-        "text": "The impact at Reindeer Lake forced rock back up at the centre of the crater. That central rise is still there, entirely hidden underwater.",
-        "source": "https://www.lpi.usra.edu/publications/slidesets/craters/slide_30.html",
-        "label": "Lunar and Planetary Institute"
-      },
-      {
-        "text": "Reindeer Lake straddles Saskatchewan and Manitoba, but most of its water lies on the Saskatchewan side. Its outlet leads south to the Churchill River before the water turns towards Hudson Bay.",
-        "source": "https://www.esask.uregina.ca/entry/reindeer_lake.html",
+        "text": "Mapmaker David Thompson travelled across Reindeer Lake during the fur trade. Despite the lake's enormous size, it never became one of the main trading routes.",
+        "source": "https://esask.uregina.ca/entry/reindeer_lake.html",
         "label": "esask.uregina.ca"
+      },
+      {
+        "text": "For families at the north end of Reindeer Lake, a migrating caribou herd was a moving food supply. Years when the animals took a different route could bring hunger to the shore.",
+        "source": "https://mhs.mb.ca/docs/mb_history/45/tolstoy.shtml",
+        "label": "mhs.mb.ca"
       }
     ]
   },
@@ -963,24 +948,19 @@
     "name": "Great Slave Lake",
     "options": [
       {
-        "text": "In winter the ice becomes a road between Yellowknife and Dettah. An early thaw in 2019 closed the crossing about a week ahead of its usual season.",
-        "source": "https://science.nasa.gov/earth/earth-observatory/deepest-lake-in-north-america-145097/",
-        "label": "NASA"
+        "text": "The Slave River is building land inside Great Slave Lake. At its mouth, sediment spreads into branching channels and wetlands that researchers have watched shift in successive satellite images.",
+        "source": "https://ntrs.nasa.gov/api/citations/20220014646/downloads/2022Sum_MA_GreatSlaveLakeWater_TechPaper_FD-final.docx.pdf",
+        "label": "ntrs.nasa.gov"
       },
       {
-        "text": "Yellowknife builds a snow castle on Great Slave Lake. In 2019 warm weather forced its festival to close the castle for the first time in 24 years.",
-        "source": "https://science.nasa.gov/earth/earth-observatory/deepest-lake-in-north-america-145097/",
-        "label": "NASA"
+        "text": "Great Slave Lake has two strikingly different underwater landscapes. The river-fed western basin is relatively shallow and cloudy, while the eastern arm contains clear, exceptionally deep water.",
+        "source": "https://publications.gc.ca/collections/collection_2022/mpo-dfo/Fs97-4-3214-eng.pdf",
+        "label": "publications.gc.ca"
       },
       {
-        "text": "Water leaving the lake at its southwest end enters the Mackenzie River. The deepest lake in North America helps feed Canada’s longest river.",
-        "source": "https://science.nasa.gov/earth/earth-observatory/deepest-lake-in-north-america-145097/",
-        "label": "NASA"
-      },
-      {
-        "text": "The East Arm of Great Slave Lake has cliffs with different faces. Tilted layers of bedrock slope down on one side and break off along steep fractures on the other.",
-        "source": "https://www.gov.nt.ca/sites/ecc/files/resources/taiga_shield_ecological_land_classification_report_0.pdf",
-        "label": "gov.nt.ca"
+        "text": "Great Slave Lake has a fish called inconnu, French for “unknown”. Some populations leave the lake to spawn in tributaries, linking the lake fishery to rivers well inland.",
+        "source": "https://publications.gc.ca/collections/collection_2022/mpo-dfo/Fs97-4-3214-eng.pdf",
+        "label": "publications.gc.ca"
       }
     ]
   },
@@ -1121,25 +1101,19 @@
     "name": "Red Sea",
     "options": [
       {
-        "text": "The seabed between Africa and Arabia has been pulling apart for roughly 30 million years. Today the Red Sea fills that growing rift.",
-        "source": "https://images.nasa.gov/details/iss036e011050",
-        "label": "NASA"
+        "text": "There are hot pools on the floor of the Red Sea. Their brine is so dense that it stays in depressions beneath the surrounding seawater, beside deposits rich in metals.",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/17730743/",
+        "label": "pubmed.ncbi.nlm.nih.gov"
       },
       {
-        "text": "Even in the Red Sea’s unusually salty water, researchers have counted around 260 species of coral.",
-        "source": "https://images.nasa.gov/details/iss016e019394",
-        "label": "NASA"
+        "text": "The Red Sea forks around Sinai into two gulfs with very different profiles. Suez is shallow, while the narrow Gulf of Aqaba drops more than a kilometre deep.",
+        "source": "https://doi.org/10.1002/2013jc009004",
+        "label": "doi.org"
       },
       {
-        "text": "A photograph taken above the Sudanese coast in 1993 caught a satellite flying free over the Red Sea. The crew of Discovery had released it by robot arm and later picked it up again.",
-        "source": "https://images.nasa.gov/details/sts056-92-0028",
-        "label": "NASA"
-      },
-      {
-        "text": "No permanently flowing river replenishes the Red Sea. Water lost to evaporation has to be replaced through a narrow southern gateway, the Bab el-Mandeb.",
-        "source": "https://repository.kaust.edu.sa/server/api/core/bitstreams/3650bba2-0bfe-4e40-a4cf-65ca22721e35/content",
-        "label": "repository.kaust.edu.sa",
-        "suggestSwitch": true
+        "text": "In summer the Red Sea's southern gateway can carry water in three layers. A tongue of Gulf of Aden water enters between layers flowing the other way.",
+        "source": "https://doi.org/10.1002/2013jc009004",
+        "label": "doi.org"
       }
     ]
   },
@@ -1880,23 +1854,18 @@
     "name": "South China Sea",
     "options": [
       {
-        "text": "Some waves crossing the northern South China Sea travel inside the water column. Their surface signatures are clear enough for researchers to trace them in satellite imagery.",
-        "source": "https://modis.gsfc.nasa.gov/sci_team/pubs/abstract_new.php?id=00605",
-        "label": "NASA"
+        "text": "Summer winds off Vietnam bring cold water to the surface of the tropical South China Sea. The upwelling feeds a patch of plankton-rich water that can spread offshore.",
+        "source": "https://upwelliocwestpac.umt.edu.my/upwelling-along-the-coast-of-vietnam/",
+        "label": "upwelliocwestpac.umt.edu.my"
       },
       {
-        "text": "A reef in the South China Sea contains a deep vertical cavity called Yongle Blue Hole. Researchers sampling the water found that oxygen disappears below about 100 metres.",
-        "source": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2023.1172475/full",
-        "label": "Frontiers in Marine Science"
+        "text": "At the Pearl River mouth, dolphins that are grey as calves can look pink as adults. These Chinese white dolphins live where river water mixes with the South China Sea.",
+        "source": "https://www.afcd.gov.hk/english/conservation/con_mar/con_mar_chi/con_mar_chi_chi/con_mar_chi_chi_dis.html",
+        "label": "afcd.gov.hk"
       },
       {
-        "text": "At Dongsha Atoll, even waves travelling below the sea surface can bounce back. Researchers documented internal waves reflecting from the atoll using satellite observations.",
-        "source": "https://repository.library.noaa.gov/view/noaa/52530",
-        "label": "NOAA"
-      },
-      {
-        "text": "The southern South China Sea spreads over a drowned continental shelf. At ice-age low stands enough of the Sunda Shelf emerged to connect Borneo to mainland Southeast Asia.",
-        "source": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018JD029971",
+        "text": "Water flowing out of the Mekong keeps a distinct identity far offshore. Its buoyant freshwater plume can change the strength of currents and eddies in the South China Sea.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021JC017572",
         "label": "agupubs.onlinelibrary.wiley.com"
       }
     ]
@@ -1906,24 +1875,19 @@
     "name": "Timor Sea",
     "options": [
       {
-        "text": "For generations, Indonesian fishers used freshwater wells on the islands of Ashmore Reef. The islands also preserve graves and traces of cooking sites from those voyages.",
-        "source": "https://www.dcceew.gov.au/sites/default/files/documents/58-ecd.pdf",
-        "label": "Australian environment department"
+        "text": "The Timor Passage is an exit route for Pacific water. Instruments moored there measure water travelling through the Indonesian islands and out towards the Indian Ocean.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022JC018694",
+        "label": "agupubs.onlinelibrary.wiley.com"
       },
       {
-        "text": "At Ashmore Reef, tiny patches of land in the Timor Sea support nesting seabirds and turtles. On land, invasive tropical fire ants threaten chicks and turtle hatchlings.",
-        "source": "https://parksaustralia.gov.au/news/scientists-complete-first-ever-ashmore-reef-health-check/",
-        "label": "Parks Australia"
+        "text": "A sea boundary between Australia and Timor-Leste was settled through a UN conciliation process. Their treaty also set out how to share the Greater Sunrise petroleum fields.",
+        "source": "https://www.dfat.gov.au/geo/timor-leste/australias-maritime-arrangements-with-timor-leste",
+        "label": "dfat.gov.au"
       },
       {
-        "text": "Ashmore Reef was known for its many sea snakes. When scientists carried out an extensive reef health survey, they searched the shallows and failed to find one.",
-        "source": "https://parksaustralia.gov.au/news/scientists-complete-first-ever-ashmore-reef-health-check/",
-        "label": "Parks Australia"
-      },
-      {
-        "text": "Australia's broad continental shelf ends abruptly in the Timor Trough. Deep water lies close to Timor even though much of the sea on the Australian side is shallow.",
-        "source": "https://www.aph.gov.au/Parliamentary_Business/Committees/House_of_Representatives_Committees?url=jsct%2F6_7_february2007%2Fsubs%2Fsub6.pdf",
-        "label": "aph.gov.au"
+        "text": "Monsoon rains change the water over the shelf in Joseph Bonaparte Gulf. A pulse of runoff enters this corner of the Timor Sea each wet season, while strong tides stir the shallow bottom.",
+        "source": "https://www.nespmarine.edu.au/document/eco-narrative-joseph-bonaparte-gulf-marine-park-%E2%80%93-north-marine-region.html",
+        "label": "nespmarine.edu.au"
       }
     ]
   },
@@ -2090,24 +2054,19 @@
     "name": "White Sea",
     "options": [
       {
-        "text": "Near the White Sea, prehistoric artists carved boats and sea hunts into bare rock. The hunters and their prey are still visible thousands of years later.",
-        "source": "https://whc.unesco.org/en/list/1654/",
-        "label": "UNESCO"
+        "text": "Harp seals use the White Sea as a floating nursery. Pups are born on drifting ice, so the location of the breeding ground can move even while the pups are on it.",
+        "source": "https://nammco.no/wp-content/uploads/2023/11/wgharp2023.pdf",
+        "label": "nammco.no"
       },
       {
-        "text": "Some White Sea belugas return to the same summer gathering grounds so predictably that researchers on the Solovetsky Islands have watched them from shore over successive years.",
-        "source": "https://iucn-csg.org/wp-content/uploads/2024/07/mmh2012_book_vol1.pdf",
-        "label": "Source"
+        "text": "The Northern Dvina delivers freshwater and sediment into Dvina Bay. Its delta divides into many mouths around islands on the White Sea coast.",
+        "source": "https://www.mdpi.com/2076-3263/13/2/56",
+        "label": "mdpi.com"
       },
       {
-        "text": "On the Solovetsky Islands, monks linked lakes with canals. A monastery in the White Sea built itself a freshwater transport and supply network.",
-        "source": "https://whc.unesco.org/en/decisions/7050/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "The White Sea has a literal throat. Its narrow Gorlo funnels the tidal exchange between the inner sea and the Barents Sea beyond it.",
-        "source": "https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2014JC010173",
-        "label": "agupubs.onlinelibrary.wiley.com"
+        "text": "In the White Sea's Mezen estuary, the incoming tide can form a bore. The channel narrows and shallows, squeezing the rising water into a wave that travels upriver.",
+        "source": "https://www.iwp.ru/upload/iblock/3bc/3bc1e4681790b2a7c63cccfa74053118.pdf",
+        "label": "iwp.ru"
       }
     ]
   },
@@ -2142,24 +2101,19 @@
     "name": "Celtic Sea",
     "options": [
       {
-        "text": "Even in summer the Celtic Sea can hold a pool of cold water near its bed. A lid of warmer water keeps it apart from the surface.",
-        "source": "https://www.sciencedirect.com/science/article/abs/pii/S0278434303000086",
-        "label": "Source"
+        "text": "In parts of the Celtic Sea, fishery scientists count burrows with underwater cameras. The holes in the muddy bottom give away Norway lobsters that spend much of the day hidden.",
+        "source": "https://oar.marine.ie/bitstream/10793/1991/1/Survey%20Report%20FU22%20Smalls%20UWTV_2024.pdf",
+        "label": "oar.marine.ie"
       },
       {
-        "text": "Near the edge of the continental shelf, long ridges of sand rise as much as 60 metres from the seabed. Some run for up to 200 kilometres.",
-        "source": "https://tethys.pnnl.gov/sites/default/files/publications/Appendix_1b_Geology___substrates_2022.pdf",
-        "label": "Source"
+        "text": "Off Pembrokeshire, Grassholm looks white from a distance in the breeding season. Its crowded colony of northern gannets turns a small Celtic Sea island into a conspicuous landmark.",
+        "source": "https://www.rspb.org.uk/wales/news/now-the-drama-begins-on-grassholm",
+        "label": "rspb.org.uk"
       },
       {
-        "text": "Satellite tags revealed journeys through the Celtic Sea by basking sharks seen off western Scotland. The same animal can use waters off Scotland and southwest England.",
-        "source": "https://www.nature.scot/sites/default/files/Publication%202016%20-%20SNH%20Commissioned%20Report%20908%20-%20Basking%20shark%20satellite%20tagging%20project%20-%20insights%20into%20basking%20shark%20%28Cetorhinus%20maximus%29%20movement%2C%20distribution%20and%20behaviour%20using%20satellite%20telemetry%20-%20Final%20report.pdf",
-        "label": "Source"
-      },
-      {
-        "text": "Sail southwest from Ireland and the Celtic Sea stretches out as a shallow shelf. At its outer edge the seabed falls away into deep Atlantic water at the Porcupine Seabight and Goban Spur.",
-        "source": "https://www.nwwac.org/_fileupload/MI_NWWAC_North_Western_Waters_Atlas_3rd-Edition_low%20res.pdf",
-        "label": "nwwac.org"
+        "text": "A front in the Celtic Sea can separate communities of jelly-like animals. On one side the tide mixes the water column, while on the other it leaves a warmer layer floating on top.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6767432/",
+        "label": "pmc.ncbi.nlm.nih.gov"
       }
     ]
   },
@@ -2194,24 +2148,19 @@
     "name": "Bay of Biscay",
     "options": [
       {
-        "text": "The Capbreton Canyon carries sediment downhill beneath the waves. Repeated surveys caught changes on its floor after sediment moved through the canyon.",
-        "source": "https://www.sciencedirect.com/science/article/pii/S0025322711002969",
-        "label": "Source"
+        "text": "The tallest sand dune in Europe is moving inland from the Bay of Biscay. At the Dune du Pilat, wind carries sand over the crest and slowly buries the forest behind it.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/a-morphing-monument-of-sand-154130/",
+        "label": "science.nasa.gov"
       },
       {
-        "text": "Deep canyons off the French coast shelter cold-water coral communities. Their branching colonies grow far below the sunlit surface of the bay.",
-        "source": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2017.00118/full",
-        "label": "Source"
+        "text": "A milky patch in the Bay of Biscay can be a bloom of microscopic plankton. The chalk plates they make around their cells reflect sunlight back through the water.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3384182/",
+        "label": "pmc.ncbi.nlm.nih.gov"
       },
       {
-        "text": "Where rivers pour into the Bay of Biscay, their plumes help shape the spawning grounds of anchovies. The fish gather in particular patches of water on the shelf.",
-        "source": "https://www.ices.dk/sites/pub/CM%20Doccuments/2004/G/SGRESP04.pdf",
-        "label": "Source"
-      },
-      {
-        "text": "The Bay of Biscay opened as Iberia rotated away from what is now France. The bend in Europe's Atlantic coast records a vanished spreading centre.",
-        "source": "https://pubmed.ncbi.nlm.nih.gov/17769757/",
-        "label": "pubmed.ncbi.nlm.nih.gov"
+        "text": "European anchovies spawn in the Bay of Biscay in spring. The fishery here depends on where currents carry eggs and larvae long before the young fish join a school.",
+        "source": "https://academic.oup.com/icesjms/article/68/6/1257/715402",
+        "label": "academic.oup.com"
       }
     ]
   },
@@ -2220,25 +2169,19 @@
     "name": "Mediterranean Sea",
     "options": [
       {
-        "text": "A submerged ridge between Sicily and Tunisia divides the Mediterranean into two main basins. The eastern basin covers almost twice the area of the western one.",
-        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2914016/",
-        "label": "pmc.ncbi.nlm.nih.gov"
+        "text": "More than five kilometres of water lie off the coast of Greece. The Calypso Deep, in the Hellenic Trench, is the Mediterranean's deepest known point.",
+        "source": "https://journals.ametsoc.org/view/journals/phoc/46/4/jpo-d-15-0198.1.xml",
+        "label": "journals.ametsoc.org"
       },
       {
-        "text": "The opening of the Suez Canal gave Red Sea animals a route into the Mediterranean. Some have spread far beyond the canal along its eastern shores.",
-        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2914016/",
-        "label": "pmc.ncbi.nlm.nih.gov"
+        "text": "Sailors nicknamed Stromboli the lighthouse of the Mediterranean. Frequent bursts of incandescent lava could be seen at night from ships passing the volcanic island.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/eruption-of-stromboli-volcano-italy/",
+        "label": "science.nasa.gov"
       },
       {
-        "text": "The Black Sea has a winding route to the Mediterranean. Water passes the Bosporus, the Sea of Marmara and the Dardanelles before it reaches the Aegean.",
-        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2914016/",
-        "label": "pmc.ncbi.nlm.nih.gov"
-      },
-      {
-        "text": "The Mediterranean loses more water to evaporation than it gains from rain and rivers. Atlantic water streams in at the surface at Gibraltar while denser, saltier Mediterranean water escapes underneath.",
-        "source": "https://doi.org/10.1175/1520-0485%282002%29032%3C3193%3Aititso%3E2.0.co%3B2",
-        "label": "doi.org",
-        "suggestSwitch": true
+        "text": "In Venice's lagoon, narrow channels became city streets. The settlement spread over more than a hundred islands between the Italian mainland and the open Adriatic.",
+        "source": "https://whc.unesco.org/en/list/394/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -2299,24 +2242,19 @@
     "name": "Sea of Japan",
     "options": [
       {
-        "text": "In Toyama Bay, firefly squid rise from deep water and flash blue in the dark. Fishing boats go out before dawn during the spring season.",
-        "source": "https://www.ana.co.jp/en/th/japan-travel-planner/toyama/0000015.html",
-        "label": "Source"
+        "text": "The Yamato Rise is a broad underwater highland in the middle of the Sea of Japan. It separates deep basins in much the way a mountain range divides lowlands on land.",
+        "source": "https://www.emecs.or.jp/upload/publish/encsea_world_guidebook_en.pdf",
+        "label": "emecs.or.jp"
       },
       {
-        "text": "Cold air leaving Siberia picks up moisture as it crosses this sea. By the time it hits Japan’s mountains, it can unload extraordinary amounts of snow.",
-        "source": "https://science.nasa.gov/earth/earth-observatory/winter-grips-japan/",
-        "label": "NASA"
+        "text": "In cold winters, surface water can become dense enough to sink and renew deep water within the Sea of Japan. The basin makes much of its own deep water behind its shallow entrances.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022JC019094",
+        "label": "agupubs.onlinelibrary.wiley.com"
       },
       {
-        "text": "Bluefin tuna, yellowtail and flying squid travel north on the warm Tsushima Current. In autumn the migration reverses toward the spawning grounds.",
-        "source": "https://www.env.go.jp/en/nature/biodic/kaiyo-hozen/kaiiki/hyoso/415.html",
-        "label": "Source"
-      },
-      {
-        "text": "The Sea of Japan is kilometres deep, but its doorways are shallow. Water moving between this basin and the surrounding seas has to cross much shallower straits.",
-        "source": "https://journals.ametsoc.org/view/journals/phoc/46/1/jpo-d-15-0075.1.xml",
-        "label": "journals.ametsoc.org"
+        "text": "The Tsushima Warm Current brings heat north past the Japanese islands. Some of this water eventually escapes through the Tsugaru Strait into the Pacific.",
+        "source": "https://www.emecs.or.jp/upload/publish/encsea_world_guidebook_en.pdf",
+        "label": "emecs.or.jp"
       }
     ]
   },
@@ -2352,25 +2290,19 @@
     "name": "Tasman Sea",
     "options": [
       {
-        "text": "The Lord Howe Island stick insect was feared extinct. In 2001 a team found survivors on Ball’s Pyramid, a steep rock spire 16 kilometres out to sea.",
-        "source": "https://australian.museum/learn/animals/insects/entomology-collection-phantom-phasmids/",
-        "label": "Source"
+        "text": "The East Australian Current sheds rings of tropical water into the Tasman Sea. A warm patch can travel south inside a rotating eddy after it has detached from the current.",
+        "source": "https://www.dcceew.gov.au/sites/default/files/env/resources/d14b96de-a759-4f82-81a8-e899ce15dfbf/files/watermass-p13.pdf",
+        "label": "dcceew.gov.au"
       },
       {
-        "text": "A chain of 16 extinct volcanoes runs roughly 2,000 kilometres through the Tasman and Coral seas. Some peaks rise more than four kilometres above the surrounding seabed.",
-        "source": "https://www.csiro.au/en/showcase/mapping-the-sea-floor",
-        "label": "Source"
+        "text": "A Tasman Sea marine heatwave lasted more than eight months in 2015–16. An unusually strong southward flow brought warm water to the east coast of Tasmania.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5519980/",
+        "label": "pmc.ncbi.nlm.nih.gov"
       },
       {
-        "text": "In 2002 astronauts photographed a storm over the Tasman Sea with features of both a tropical cyclone and a higher-latitude storm. The shuttle crew could see the curve of its cloud bands from orbit.",
-        "source": "https://images.nasa.gov/details/s109e6003",
-        "label": "NASA"
-      },
-      {
-        "text": "Part of the Tasman Sea covers a continent. The Lord Howe Rise is a broad, submerged piece of Zealandia extending northwest from New Zealand towards Australia.",
-        "source": "https://rsnz.onlinelibrary.wiley.com/doi/10.1080/00288306.2025.2500394",
-        "label": "rsnz.onlinelibrary.wiley.com",
-        "suggestSwitch": true
+        "text": "Ball's Pyramid rises like a blade out of the Tasman Sea near Lord Howe Island. This narrow rock spire is a remnant of an eroded volcano.",
+        "source": "https://whc.unesco.org/en/list/186/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -2405,25 +2337,19 @@
     "name": "North Sea",
     "options": [
       {
-        "text": "In 1931 a fishing trawler hauled up a barbed antler point from the North Sea. Someone had fashioned it when dry land still stretched between Britain and the continent.",
-        "source": "https://assets.publishing.service.gov.uk/media/5a7edeb8e5274a2e87db26ce/east_evidence_issues_chapter6.pdf",
-        "label": "Source"
+        "text": "The North Sea tide rotates around points where the tidal rise and fall is very small. Two ports on opposite sides of such a point can have high water at very different times.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020JC016456",
+        "label": "agupubs.onlinelibrary.wiley.com"
       },
       {
-        "text": "Beneath the Ekofisk oil field, the reservoir rock compacted as oil was extracted. In the middle of the field the seabed itself has sunk about ten metres.",
-        "source": "https://www.norskpetroleum.no/en/facts/field/ekofisk/",
-        "label": "Source"
+        "text": "Since 1996, carbon dioxide separated at the Sleipner gas field has been injected into porous sandstone beneath the North Sea. The storage space is in the pores between grains of sand.",
+        "source": "https://www.sodir.no/en/whats-new/publications/co2-atlases/co2-atlas-for-the-norwegian-continental-shelf/1-introduction/",
+        "label": "sodir.no"
       },
       {
-        "text": "Twice a day the North Sea uncovers the Wadden Sea mudflats. Migrating birds stop there in their millions to feed on the animals in the exposed sediment.",
-        "source": "https://whc.unesco.org/en/list/1314/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "An arm of the North Sea became a freshwater lake in the twentieth century. The Dutch closed the Afsluitdijk across the Zuiderzee, creating the IJsselmeer behind it.",
-        "source": "https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/waterkeringen/dijken/afsluitdijk",
-        "label": "rijkswaterstaat.nl",
-        "suggestSwitch": true
+        "text": "In 1953, wind drove North Sea water into the narrowing southern basin during a high tide. The same storm flooded coasts in both England and the Netherlands.",
+        "source": "https://eprints.soton.ac.uk/383778/2/fmars-02-00084.pdf",
+        "label": "eprints.soton.ac.uk"
       }
     ]
   },
@@ -2432,24 +2358,19 @@
     "name": "Sea of Okhotsk",
     "options": [
       {
-        "text": "Sea ice forms as far south as Japan here. Fresh water from the Amur makes a surface layer that can freeze before the saltier water underneath.",
-        "source": "https://www.env.go.jp/nature/isan/worldheritage/english/shiretoko/ice.html",
-        "label": "Source"
+        "text": "At the head of Penzhina Bay, the water can rise and fall by nearly fourteen metres. Some of the Pacific's largest tides occur at this remote end of the Sea of Okhotsk.",
+        "source": "https://doi.org/10.3390/jmse14070653",
+        "label": "doi.org"
       },
       {
-        "text": "The drift ice off Shiretoko helps feed bears on land. Winter mixing supplies nutrients for spring plankton, which feed a food web that sends salmon up forest streams.",
-        "source": "https://www.env.go.jp/nature/isan/worldheritage/en/shiretoko/uiversal/index.html",
-        "label": "Source"
+        "text": "Iron from the Sea of Okhotsk travels into the North Pacific below the surface. This trace nutrient can help feed plankton far from the continental shelf that supplied it.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2006JC004055",
+        "label": "agupubs.onlinelibrary.wiley.com"
       },
       {
-        "text": "Off Sakhalin Island, western gray whales return in summer and autumn to feed on animals living on the seabed. This stretch of the Sea of Okhotsk is a vital feeding ground for them.",
-        "source": "https://cd2-www.fisheries.noaa.gov/s3/2023-03/2023-Gray-Whale-WNP-DPS-5-Year-Review_508-compliant.pdf",
-        "label": "NOAA"
-      },
-      {
-        "text": "The curved chain of the Kuril Islands forms a gate between the Sea of Okhotsk and the open Pacific. Ocean water passes through the gaps between the volcanoes.",
-        "source": "https://meetings.pices.int/publications/special-publications/NPESR/2010/PICES_PUB4_Chp6_Okhotsk.pdf",
-        "label": "meetings.pices.int"
+        "text": "Sea ice leaves salt behind as it forms. On the northern shelf of the Sea of Okhotsk, the resulting dense water sinks and helps ventilate the North Pacific below its surface.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S0967063709000740",
+        "label": "sciencedirect.com"
       }
     ]
   },
@@ -2484,24 +2405,19 @@
     "name": "Lago Titicaca",
     "options": [
       {
-        "text": "On Taquile Island, you can wear the farming calendar. Weavers make a wide belt whose designs record the year’s agricultural work and rituals.",
-        "source": "https://ich.unesco.org/en/RL/taquile-and-its-textile-art-00166",
-        "label": "UNESCO"
+        "text": "The Titicaca water frog wears what looks like a suit several sizes too big. Its folds of skin give it extra surface area to absorb oxygen underwater.",
+        "source": "https://www.si.edu/object/titicaca-water-frog-breathes-oxygen-through-its-skin%3Ayt_VosMbumTzIg",
+        "label": "si.edu"
       },
       {
-        "text": "Some of the islands on Titicaca are built from plants. Uros communities make floating islands out of totora reeds, high in the Andes between Peru and Bolivia.",
-        "source": "https://whc.unesco.org/en/tentativelists/5080/",
-        "label": "UNESCO"
+        "text": "Divers found an intact Inca offering inside a stone box on a submerged reef in Titicaca. Inside were a tiny llama carved from shell and a rolled piece of gold.",
+        "source": "https://doi.org/10.15184/aqy.2020.121",
+        "label": "doi.org"
       },
       {
-        "text": "More than 25 rivers feed Titicaca, but just one, the Desaguadero, drains it. Most of the water that leaves this cold mountain lake goes straight into the air.",
-        "source": "https://whc.unesco.org/en/tentativelists/5080/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "A narrow waist almost divides Titicaca in two. Boats cross the Tiquina Strait between its large, deep northwestern basin and its much smaller southeastern basin.",
-        "source": "https://www.esa.int/ga/articles/about-us/directorates/earth-observation-programmes/earth-from-space-lake-titicaca",
-        "label": "esa.int"
+        "text": "Farmers around Titicaca raised crops on ridges separated by water channels. The channels could store heat by day and help shield nearby plants during cold Andean nights.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S0168192398001002",
+        "label": "sciencedirect.com"
       }
     ]
   },
@@ -2695,25 +2611,19 @@
     "name": "Nettilling Lake",
     "options": [
       {
-        "text": "The world’s largest lake entirely on an island sits on Baffin Island. You have to cross salt water to get to Nettilling even though its own water is fresh.",
-        "source": "https://www.guinnessworldrecords.com/world-records/497933-largest-lake-on-an-island",
-        "label": "Source"
-      },
-      {
-        "text": "Ringed seals are usually associated with sea ice. An inland population has also been recorded here, in fresh water on Baffin Island.",
-        "source": "https://www.registrelep-sararegistry.gc.ca/virtual_sara/files/cosewic/sr-PhoqueAnneleRingedSeal-v00-2020ct-Eng.pdf",
-        "label": "Source"
-      },
-      {
-        "text": "Microscopic algae left a record of the sea in this freshwater lake. Scientists used the chemistry of their shells, buried in lake mud, to trace the transition from marine to brackish water.",
-        "source": "https://paleo.ulaval.ca/wp-content/uploads/2017/10/Chapligin-et-al.2016.pdf",
-        "label": "Source"
-      },
-      {
-        "text": "The Arctic Circle cuts right across Nettilling Lake. Fresh water from this Baffin Island basin drains west through the Koukdjuak River into the shallow tidal waters of Foxe Basin.",
+        "text": "The water entering Nettilling Lake has already crossed another large Arctic lake. The Amadjuak River carries it north into Burwash Bay at Nettilling's southern end.",
         "source": "https://pubs.aina.ucalgary.ca/arctic/Arctic17-2-69.pdf",
-        "label": "pubs.aina.ucalgary.ca",
-        "suggestSwitch": true
+        "label": "pubs.aina.ucalgary.ca"
+      },
+      {
+        "text": "Nettilling has two distinct halves. Low rocky islands break up its shallower eastern side, while a much more open basin spreads to the west.",
+        "source": "https://paleo.ulaval.ca/wp-content/uploads/2017/10/Beaudoin-et-al.2016.pdf",
+        "label": "paleo.ulaval.ca"
+      },
+      {
+        "text": "Meltwater from the Penny Ice Cap carries finely ground rock into Nettilling. Sediment settling on the lake floor preserves a downstream record of changes in a distant ice cap.",
+        "source": "https://paleo.ulaval.ca/wp-content/uploads/2017/10/Beaudoin-et-al.2016.pdf",
+        "label": "paleo.ulaval.ca"
       }
     ]
   },
@@ -2776,24 +2686,19 @@
     "name": "Georgian Bay",
     "options": [
       {
-        "text": "Follow the eastern shore by boat and the coast breaks into what locals call the Thirty Thousand Islands. The biosphere reserve follows about 200 kilometres of that shore.",
-        "source": "https://georgianbaybiosphere.com/our-region/",
-        "label": "Source"
+        "text": "Beausoleil Island has a change of scenery rare enough to fit two landscapes on one trail. Its south has hardwood forest, while its north has exposed Canadian Shield rock and wind-bent pines.",
+        "source": "https://parks.canada.ca/pn-np/on/georg/visit",
+        "label": "parks.canada.ca"
       },
       {
-        "text": "Two stone pillars off Flowerpot Island have the outlines of giant plant pots. They gave the island its name and stand above the bay’s clear water.",
-        "source": "https://parks.canada.ca/pn-np/on/bruce/~/~/link.aspx?_id=330E6EF4CF2743C19D12D43C6FA77C6F&_z=z",
-        "label": "Government of Canada"
+        "text": "At the Grotto on Georgian Bay, waves have hollowed a cave into the limestone of the Bruce Peninsula. Its blue pool connects to the bay through an underwater opening.",
+        "source": "https://parks.canada.ca/pn-np/on/bruce/activ/sentiers-trails",
+        "label": "parks.canada.ca"
       },
       {
-        "text": "Some eastern foxsnakes here swim more than ten kilometres. A snake encountered on an outer island can be far from the den where it spent the winter.",
-        "source": "https://www.ontario.ca/page/eastern-foxsnake-recovery-strategy",
-        "label": "Source"
-      },
-      {
-        "text": "Georgian Bay looks like a sixth Great Lake, but belongs to Lake Huron. The Bruce Peninsula and Manitoulin Island form much of the barrier between the bay and the main lake.",
-        "source": "https://publications.gc.ca/collections/collection_2022/mpo-dfo/Fs74-63-2021-12-eng.pdf",
-        "label": "publications.gc.ca"
+        "text": "A wooden schooner lies just below the surface at the edge of Georgian Bay. Researchers put instruments around the Sweepstakes to find out how much passing boats disturb the wreck.",
+        "source": "https://journals.plos.org/plosone/article/figures?id=10.1371%2Fjournal.pone.0279862",
+        "label": "journals.plos.org"
       }
     ]
   },
@@ -2828,24 +2733,19 @@
     "name": "Lake Albert",
     "options": [
       {
-        "text": "The lake floor lies in a rain shadow. The rift floor gets roughly 600 millimetres of rain a year in places, while the surrounding mountains can get about 2,000.",
-        "source": "https://www.agl-acare.org/resources/the-african-great-lakes/lake-albert/",
-        "label": "agl-acare.org"
-      },
-      {
-        "text": "Two other African Great Lakes feed Albert by different routes. Water from Lake Edward follows the Semliki, while water from Victoria passes through Lake Kyoga.",
-        "source": "https://www.agl-acare.org/resources/the-african-great-lakes/lake-albert/",
-        "label": "agl-acare.org"
-      },
-      {
-        "text": "Lake Albert fills a long trough on the border of Uganda and the Democratic Republic of the Congo. The international boundary runs along the lake rather than stopping at its shore.",
-        "source": "https://wldb.ilec.or.jp/index.php/Display/html/3592",
-        "label": "wldb.ilec.or.jp"
-      },
-      {
-        "text": "The Nile barely uses the length of Lake Albert. The Victoria Nile enters near its northern end and the Albert Nile leaves nearby, while the Semliki arrives at the far southern end.",
-        "source": "https://nilebasin.org/sites/default/files/2023-09/WRM-WBS-2022-01-Nile%2520Baisn%2520Wetlands%2520Inventory_FULL.pdf",
+        "text": "A papyrus delta at Lake Albert is hunting country for the shoebill. The Semliki deposits sediment in shallow water where a bird can stand almost motionless waiting for fish.",
+        "source": "https://nilebasin.org/sites/default/files/2023-09/WRM-WBS-2022-07_Nile%2520Basin%2520Wetlands%2520Biodiversity%2520Assessment%2520Report%2520-%2520FULL.pdf",
         "label": "nilebasin.org"
+      },
+      {
+        "text": "Oil reached the surface beside Lake Albert long before drill rigs did. Natural seeps in western Uganda drew early petroleum explorers to the rift valley.",
+        "source": "https://www.petroleum.go.ug/index.php/who-we-are/who-weare/petroleum-exploration-history",
+        "label": "petroleum.go.ug"
+      },
+      {
+        "text": "At Kibiro on Lake Albert's shore, people harvest salt from soil. They wash the salt out of the earth and boil down the resulting brine, then reuse the soil in another cycle.",
+        "source": "https://whc.unesco.org/en/tentativelists/6796",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -2932,25 +2832,19 @@
     "name": "Lac Moeru",
     "options": [
       {
-        "text": "Off Kilwa Island, parts of Mweru are only about two metres deep. A relatively narrow trough holds the deepest water in the lake.",
-        "source": "https://www.fao.org/4/y5056e/y5056e.pdf",
+        "text": "At Lake Mweru, fishers once made netting out of bark cord. Cotton and then nylon changed the equipment of a fishery that supplied markets far beyond the lake.",
+        "source": "https://www.fao.org/4/ad008e/AD008E13.htm",
         "label": "fao.org"
       },
       {
-        "text": "The number of fish species recorded in Mweru exceeds a hundred. A much smaller subset supplies its commercial fisheries.",
-        "source": "https://www.fao.org/4/T0473E/T0473E13.htm",
+        "text": "The copper mines of central Africa helped create a market for Lake Mweru fish. A catch from this lake could feed workers in mining towns instead of ending up in a lakeside village.",
+        "source": "https://www.fao.org/4/y5056e/y5056e03.htm",
         "label": "fao.org"
       },
       {
-        "text": "Mweru and Mweru Wantipa are separate lakes near each other. The international border runs through Mweru, while its smaller namesake lies inside Zambia.",
-        "source": "https://www.fao.org/4/T0473E/T0473E13.htm",
-        "label": "fao.org"
-      },
-      {
-        "text": "Although it sits close to the lakes of the East African Rift, Mweru sends its water west towards the Atlantic. Its outlet, the Luvua, joins the Lualaba and the Congo.",
-        "source": "https://www.fao.org/4/T0473E/T0473E13.htm",
-        "label": "fao.org",
-        "suggestSwitch": true
+        "text": "Mifimbo is a protected fish breeding area on the Zambian side of Mweru. One small stretch of habitat helps replenish catches made across a much larger lake.",
+        "source": "https://www.parliament.gov.zm/sites/default/files/documents/committee_reports/Report%20of%20the%20Committee%20on%20Agriculture%20-%20Fisheries.pdf",
+        "label": "parliament.gov.zm"
       }
     ]
   },
