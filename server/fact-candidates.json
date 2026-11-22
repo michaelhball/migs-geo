@@ -3001,5 +3001,446 @@
         "label": "UNESCO"
       }
     ]
+  },
+  {
+    "id": "fiji",
+    "name": "Fiji",
+    "options": [
+      {
+        "text": "On Beqa, Sawau firewalkers trace their gift to an ancestor who went looking for an eel. In the story, the creature he caught could speak and offered him power over fire in return for its freedom.",
+        "source": "https://www.fiji.travel/things-to-do/arts/fiji-s-fearless-firewalkers",
+        "label": "Source"
+      },
+      {
+        "text": "A Fijian drua carries its crew across the ocean on two hulls. The deck between them turns two slender canoe bodies into a platform for long-distance sailing.",
+        "source": "https://collections.tepapa.govt.nz/topic/2356",
+        "label": "Source"
+      },
+      {
+        "text": "Fiji’s first colonial capital was Levuka on Ovalau. Its old port still follows the beach in a low line of buildings among mango and coconut trees.",
+        "source": "https://whc.unesco.org/en/list/1399/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "papua-new-guinea",
+    "name": "Papua New Guinea",
+    "options": [
+      {
+        "text": "In the southern highlands, Huli men grew their own hair to make wigs. An example in Oxford’s Pitt Rivers Museum is decorated with everlasting flowers.",
+        "source": "https://web.prm.ox.ac.uk/bodyarts/index.php/temporary-body-arts/hair/76-mans-wig.html",
+        "label": "Source"
+      },
+      {
+        "text": "A large Iatmul canoe on the Sepik often has a crocodile for a prow. The carver shapes the head directly at the front of the wooden vessel.",
+        "source": "https://www.metmuseum.org/art/collection/search/311151",
+        "label": "Source"
+      },
+      {
+        "text": "Highland farmers at Kuk left their oldest field plans buried in a swamp. Their ditches and planting surfaces show that agriculture developed independently in New Guinea thousands of years ago.",
+        "source": "https://whc.unesco.org/en/list/887",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "solomon-islands",
+    "name": "Solomon Islands",
+    "options": [
+      {
+        "text": "On Rennell, what used to be a coral atoll’s lagoon is now Lake Tegano. The whole atoll was lifted above the sea, leaving a lake where seawater once lay.",
+        "source": "https://whc.unesco.org/en/list/854",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Bamboo supplies whole ensembles in the Solomon Islands. Musicians turn stems into tuned panpipes, so players with different lengths of pipe can carry different parts of a tune.",
+        "source": "https://www.visitsolomons.com.sb/about-the-solomon/music-art/",
+        "label": "Source"
+      },
+      {
+        "text": "In lagoons off Malaita, families built islands by bringing pieces of reef rock back in canoes. The ground beneath a village could be the accumulated work of generations.",
+        "source": "https://library.sprep.org/sites/default/files/2025-03/Voices-of-the-Pacific.pdf",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "cook-islands",
+    "name": "Cook Islands",
+    "options": [
+      {
+        "text": "A Cook Islands tīvaevae in Te Papa’s collection has a design its maker used for seven wedding quilts. She changed the colours each time she sewed it.",
+        "source": "https://collections.tepapa.govt.nz/topic/1554",
+        "label": "Source"
+      },
+      {
+        "text": "A travelling companion of Māori ancestors left a genetic trail across the Pacific. DNA from kiore, the Pacific rat, links early New Zealand populations with lineages in the Cook and Society islands.",
+        "source": "https://teara.govt.nz/en/pacific-migrations/page-7",
+        "label": "Source"
+      },
+      {
+        "text": "On Manihiki, one of the northern atolls, the lagoon serves as a farm. Cultivating oysters for pearls became one of the island’s principal commercial activities.",
+        "source": "https://www.linz.govt.nz/sites/default/files/cust/cook-islands_risk_assessment_-_swprhp-web.pdf",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "federated-states-of-micronesia",
+    "name": "Federated States of Micronesia",
+    "options": [
+      {
+        "text": "On Yap, stone money can change hands without moving. For the largest carved rings, the community recognises the new owner while the stone stays where it was.",
+        "source": "https://www.si.edu/object/nmah_1069139",
+        "label": "Source"
+      },
+      {
+        "text": "Off Pohnpei, people built Nan Madol across a network of artificial islets. Basalt walls still mark the ceremonial compounds, with canoe channels where a town on land might have streets.",
+        "source": "https://whc.unesco.org/en/list/1503/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In the outlying islands of Yap State, the craft of building a sailing canoe is passed on alongside the skill of finding land. Navigators learn to read waves, weather and the night sky.",
+        "source": "https://ich.unesco.org/en/RL/carolinian-wayfinding-and-canoe-making-01735",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "guam",
+    "name": "Guam",
+    "options": [
+      {
+        "text": "A CHamoru latte stone comes in two parts. A bowl-shaped cap rests on a stone pillar, and rows of these supports once held buildings above the ground.",
+        "source": "https://pacific.navfac.navy.mil/Portals/72/NAVFAC_PACIFIC/Documents/PRINTABLE%20-%20AAFB%20Archaeology%20Booklet%20V16%20-%20Pages_June%202019%20from%20CardnoTEC.pdf?ver=XxaqNQtvyewsqbJ1gVPhcQ%3D%3D",
+        "label": "Source"
+      },
+      {
+        "text": "When an introduced snake wiped out most of Guam’s forest birds, trees lost their seed couriers. Researchers found native seeds no longer reaching damaged forest from intact stands as they did on neighbouring islands.",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/23741503/",
+        "label": "Source"
+      },
+      {
+        "text": "CHamoru sailors built outrigger canoes so fast that European visitors nicknamed them “flying proas.” A large seagoing form is known on Guam as a sakman.",
+        "source": "https://guam.com/guides/sakman-chamoru-seafaring",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "vanuatu",
+    "name": "Vanuatu",
+    "options": [
+      {
+        "text": "On Pentecost Island, the yam harvest is marked by land diving. Participants leap from wooden towers with vines tied to their ankles.",
+        "source": "https://www.vanuatu.travel/en/about-vanuatu/provinces/penama",
+        "label": "Source"
+      },
+      {
+        "text": "Oral traditions about Chief Roi Mata tie together three islands. Archaeologists found physical evidence at sites remembered as his home, the place he died and his burial ground.",
+        "source": "https://whc.unesco.org/en/list/1280",
+        "label": "UNESCO"
+      },
+      {
+        "text": "A drawing in sand can cross a language boundary in Vanuatu. Communities speaking dozens of languages have shared a way of tracing patterns to communicate and pass on stories.",
+        "source": "https://ich.unesco.org/en/projects/safeguarding-of-vanuatu-sand-drawings-00022",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "french-polynesia",
+    "name": "French Polynesia",
+    "options": [
+      {
+        "text": "At Taputapuātea on Raiatea, sacred gathering grounds face a lagoon and a passage through the reef. The site connected Polynesian communities whose visitors had to cross the ocean to meet.",
+        "source": "https://whc.unesco.org/en/list/1529",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Fakarava, thousands of camouflage groupers gather in a reef pass to spawn around the full moon. For a brief window, divers can see fish normally spread across the reef packed together.",
+        "source": "https://www.reef.org/news/enews/making-it-count-august-2023/reef-members-monitor-camouflage-grouper-spawning-french",
+        "label": "Source"
+      },
+      {
+        "text": "In 1769 James Cook watched Venus cross the face of the Sun from Tahiti. His drawing records the planet as a little black disc against the bright Sun.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/cooks-view-of-the-transit-of-venus-78158/",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "palau",
+    "name": "Palau",
+    "options": [
+      {
+        "text": "Among Palau’s Rock Islands are lakes of seawater cut off from the open ocean. Some have developed their own distinctive jellyfish populations.",
+        "source": "https://whc.unesco.org/en/list/1386",
+        "label": "UNESCO"
+      },
+      {
+        "text": "A Palauan bai is a meeting house that can also be read. Painted scenes on its timbers preserve stories for the people gathering beneath them.",
+        "source": "https://www.pbs.org/edens/palau/p_legends.htm",
+        "label": "Source"
+      },
+      {
+        "text": "Palauan chiefs could declare a bul, closing an area to harvesting so it could recover. That customary practice helped shape the islands’ system of protected waters.",
+        "source": "https://sustainabledevelopment.un.org/content/documents/23606VNR_FINAL_21June2019_UN_Version.pdf",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "kiribati",
+    "name": "Kiribati",
+    "options": [
+      {
+        "text": "Kiribati once had different calendar dates at opposite ends of the country. In 1995 it changed how its islands reckoned the date so they could share the same working day.",
+        "source": "https://www.visit-kiribati.com/guides/the-date-line-problem/",
+        "label": "Source"
+      },
+      {
+        "text": "The eight islands of the Phoenix group give only a hint of the landscape below. The protected waters around them also contain great seamounts that never break the surface.",
+        "source": "https://whc.unesco.org/en/list/1325",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Traditional armour from Kiribati used materials an atoll could supply. A shirt of thick coconut fibre could be worn with a helmet made from the spiny skin of a porcupinefish.",
+        "source": "https://smarthistory.org/kiribati-armor",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "marshall-islands",
+    "name": "Marshall Islands",
+    "options": [
+      {
+        "text": "A Marshallese navigation chart records something a coastline map leaves out. Curved sticks show how ocean swells bend and cross around islands.",
+        "source": "https://www.si.edu/object/nmnhanthropology_8552873",
+        "label": "Source"
+      },
+      {
+        "text": "In 1946 a fleet of more than seventy ships lay anchored at Bikini Atoll as targets for a nuclear test. The lagoon became a graveyard for part of that fleet.",
+        "source": "https://marshallislands.llnl.gov/affected-areas/bikini-atoll",
+        "label": "Source"
+      },
+      {
+        "text": "To make a ceremonial dress mat called a jaki-ed, weavers boil and dry a particular kind of pandanus leaf. Beating it releases fibres fine enough to weave into clothing.",
+        "source": "https://www.metmuseum.org/art/collection/search/314675",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "nauru",
+    "name": "Nauru",
+    "options": [
+      {
+        "text": "Mining the phosphate from Nauru’s interior uncovered a forest of sharp limestone pinnacles. Much of the plateau was left too rugged for homes or farming.",
+        "source": "https://unfccc.int/sites/default/files/2026-01/Nauru%2520NDC%25203.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "Nauruans have a tradition of catching and taming frigatebirds. These ocean-going birds, known locally as itsi, have a place in island life beyond their visits to the coast.",
+        "source": "https://www.sprep.org/attachments/Publications/BEM/Nauru-BIORAP-2015.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "The Nauruan flag is a miniature map. The line marks the equator, the star sits south of it like the island, and its twelve points recall the traditional tribes.",
+        "source": "https://pacific-data.sprep.org/system/files/760a4ffb-7863-4c69-8558-11451e4f7df2/Nauru%2520climate%2520hazards%2520report_FINAL_June%2520revision.pdf",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "new-caledonia",
+    "name": "New Caledonia",
+    "options": [
+      {
+        "text": "Before dawn, a kagu can announce itself with a bark. This grey, ground-dwelling bird lives wild only in New Caledonia.",
+        "source": "https://www.amnh.org/explore/ology/ology-cards/124-kagu?view=modal",
+        "label": "Source"
+      },
+      {
+        "text": "New Caledonian crows make tools with hooks. Researchers watched wild birds fashion hooked implements and use them to reach food they could not grasp with their beaks.",
+        "source": "https://www.nature.com/articles/379249A0",
+        "label": "Source"
+      },
+      {
+        "text": "New Caledonia’s barrier reefs enclose lagoons with room for dugongs. These plant-eating relatives of manatees live alongside turtles and whales in the reef system.",
+        "source": "https://whc.unesco.org/en/list/1115/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "niue",
+    "name": "Niue",
+    "options": [
+      {
+        "text": "Niue gets rain but has no permanent rivers running across its surface. Water drains through the porous coral limestone that makes up the island.",
+        "source": "https://www.unccd.int/sites/default/files/naps/niue-eng2004.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "Niuean hiapo is cloth made from bark. Nineteenth-century artists drew fine designs on it freehand, turning the pale surface into an intricate patterned sheet.",
+        "source": "https://collections.tepapa.govt.nz/object/86819",
+        "label": "Source"
+      },
+      {
+        "text": "A Niuean fisher could head out in a small vaka with an outrigger for stability. A common form carries just one or two people along the coast.",
+        "source": "https://collections.tepapa.govt.nz/object/1397423",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "samoa",
+    "name": "Samoa",
+    "options": [
+      {
+        "text": "A Samoan fine mat can feel almost like silk. Weavers split pandanus leaves into exceptionally narrow strips, and the completed mat can be exchanged at major family occasions.",
+        "source": "https://ich.unesco.org/en/RL/ie-samoa-fine-mat-and-its-cultural-value-01499",
+        "label": "UNESCO"
+      },
+      {
+        "text": "A traditional Samoan tattooist works with a kit of comb-like tools. A second tool taps the pigment-bearing teeth into the skin to build the pattern.",
+        "source": "https://www.si.edu/object/tattooing-kit%3Anmnhanthropology_12159532",
+        "label": "Source"
+      },
+      {
+        "text": "A Samoan fale can be a home, kitchen or meeting place. In an open-sided fale, the posts carry the roof and the breeze can pass right through the building.",
+        "source": "https://www.samoa.travel/samoa-travel-blog/your-guide-to-samoan-fales/",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "tuvalu",
+    "name": "Tuvalu",
+    "options": [
+      {
+        "text": "On Tuvalu’s coral atolls, growers raise pulaka, a giant swamp taro, down in dug pits. The gardens bring its roots close to freshwater beneath the island surface.",
+        "source": "https://faolex.fao.org/docs/pdf/tuv171431.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "Tuvalu’s game of te ano is played with two balls. The hard balls are traditionally made from pandanus leaves.",
+        "source": "https://www.palmscheme.gov.au/sites/default/files/2021-08/Tuvalu-Country-Fact-Sheet.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "In the 1890s an expedition brought drilling equipment to Funafuti to test how coral atolls form. The layers beneath the island offered a way to investigate a question Darwin had raised.",
+        "source": "https://www.sydney.edu.au/content/dam/corporate/documents/university-archives/personal/david-twe.pdf",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "northern-mariana-islands",
+    "name": "Northern Mariana Islands",
+    "options": [
+      {
+        "text": "On Tinian, the House of Taga is marked by immense latte stones. The pillars and caps survive as foundations for a building whose wooden superstructure has gone.",
+        "source": "https://dcrm.gov.mp/wp-content/uploads/crm/CNMI-Shoreline-Public-Access-Guide-2025_508-compliant-compressed.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "The three islets of Maug are pieces of one volcanic rim. Sail between them and the water below you fills an ancient caldera.",
+        "source": "https://www.fws.gov/sites/default/files/documents/2024-06/mtmnm-mp-for-web-v-6.4.24-1.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "Carolinian master navigators helped keep long-distance canoe voyaging alive in the Northern Marianas after Spanish colonisation disrupted CHamoru seafaring.",
+        "source": "https://www.america250cnmi.org/index.php/news/activities/commonwealth-jubilee-day-1-exhibiting-enduring-traditions",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "tonga",
+    "name": "Tonga",
+    "options": [
+      {
+        "text": "Tonga’s 2022 Hunga eruption sent a pressure wave ringing around Earth. Instruments continued to register its passage as it circled the globe over several days.",
+        "source": "https://sos.noaa.gov/catalog/datasets/hunga-tonga-hunga-ha-apai-2022-volcano-eruption/",
+        "label": "NOAA"
+      },
+      {
+        "text": "The Haʻamonga ʻa Maui on Tongatapu looks like a giant stone doorway. Its two upright posts and crosspiece are all slabs of coral limestone.",
+        "source": "https://whc.unesco.org/en/tentativelists/5167/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "A Tongan lakalaka is a speech you can watch. Performers stand in rows, singing and clapping while their movements deliver meaning alongside the words.",
+        "source": "https://ich.unesco.org/en/RL/lakalaka-dances-and-sung-speeches-of-tonga-00072?RL=00072",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "wallis-and-futuna",
+    "name": "Wallis and Futuna",
+    "options": [
+      {
+        "text": "Three customary kingdoms share this one French territory. ʻUvea occupies Wallis, while Alo and Sigave divide Futuna.",
+        "source": "https://www.wallis-et-futuna.wf/en/getting/",
+        "label": "Source"
+      },
+      {
+        "text": "Wallis has lakes but no surface river network. Rain filters into the ground, while old volcanic craters such as Lalolalo hold pools of standing water.",
+        "source": "https://www.wallis-et-futuna.gouv.fr/content/download/3091/23680/file/Strat%C3%A9gie-pour-la-biodiversit%C3%A9-de-Wallis-et-Futuna.pd",
+        "label": "Source"
+      },
+      {
+        "text": "On Wallis and Futuna, makers beat the inner bark of the paper mulberry into sheets of tapa. It becomes a cloth that can be painted without weaving a single thread.",
+        "source": "https://www.quaibranly.fr/fr/collections/vie-des-collections/actualites/nouvelles-vitrines/tapa-et-textiles-doceanie",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "hawaii",
+    "name": "Hawaii",
+    "options": [
+      {
+        "text": "Traditional Hawaiian fishponds have a gate called a mākāhā. Water and small fish can pass between its slats, while larger fish stay in the pond.",
+        "source": "https://www.ctahr.hawaii.edu/oc/freepubs/pdf/Loko%20I%27a%20Full%20Publication.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "The mark between the last two vowels in Hawaiʻi is a consonant. Called the ʻokina, it signals a glottal stop. A line over a vowel, the kahakō, changes how long the vowel is held.",
+        "source": "https://www.hawaii.edu/offices/communications/standards/hawaiian-language-considerations/",
+        "label": "Source"
+      },
+      {
+        "text": "The Hawaiian chain records the motion of an ocean plate. Volcanoes grow over a hot spot and are carried northwest, so islands farther along the chain are generally older.",
+        "source": "https://www.usgs.gov/geology-and-ecology-of-national-parks/geology-hawaii-volcanoes-national-park",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "bougainville",
+    "name": "Bougainville",
+    "options": [
+      {
+        "text": "Bagana builds its cone with thick lava that creeps down its flanks. Eruptions have been recorded on this Bougainville volcano since the nineteenth century.",
+        "source": "https://volcano.si.edu/volcano.cfm?vn=255020&vtab=Bulletin",
+        "label": "Source"
+      },
+      {
+        "text": "One variety of Rotokas, spoken on Bougainville, distinguishes just six consonant sounds. It is one of the smallest consonant inventories linguists have described.",
+        "source": "https://manifold.uhpress.hawaii.edu/read/06b035bc-c060-448d-93c0-b5ebfc97b30a/section/91b181f6-5545-4bde-a47e-ac572faea448",
+        "label": "Source"
+      },
+      {
+        "text": "In bamboo bands on Bougainville and nearby Buka, players strike tuned tubes with rubber cut from footwear. A worn sandal can find a second life as a musical instrument.",
+        "source": "https://rune.une.edu.au/web/bitstream/1959.11/18528/5/open/SOURCE04.pdf",
+        "label": "Source"
+      }
+    ]
   }
 ]
