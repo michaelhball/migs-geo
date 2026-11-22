@@ -117,7 +117,7 @@ For places with an entry in `data/approved-facts.json`, a correct study check in
 
 ## Fact review
 
-Open `/fact-review.html` or use `GET /api/fact-review` for candidates, current card facts, drafts and private comments. Update one place with `PUT /api/fact-review/:id` and its current `revision`, candidate `choice` ID (or null), `comment` and boolean `hold`. Stale revisions return 409. `POST /api/fact-review/publish {}` atomically publishes selected, unheld changes to SQLite. Repeating publication is safe. Comments stay in the review record. Full collection backups include the private decisions. Add researched candidates to `server/fact-candidates.json`; changed wording receives a new choice ID and requires reselection before publication.
+Open `/fact-review.html` or use `GET /api/fact-review` for every unarchived collection place and every researched shortlist, including optional places with candidates. Entries awaiting research have an empty `options` array and accept comments. The page opens on places awaiting selection; previously selected facts remain available through the filter and the JSON export. Update one place with `PUT /api/fact-review/:id` and its current `revision`, candidate `choice` ID (or null), `comment` and boolean `hold`. Stale revisions return 409. `POST /api/fact-review/publish {}` atomically publishes selected, unheld changes to SQLite. Repeating publication is safe. Comments stay in the review record. Full collection backups include the private decisions. Add researched candidates to `server/fact-candidates.json`; changed wording receives a new choice ID and requires reselection before publication.
 
 ## Lake review
 

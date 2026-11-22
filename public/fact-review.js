@@ -2,7 +2,10 @@ const list = document.querySelector("#list");
 const search = document.querySelector("#search");
 const filter = document.querySelector("#filter");
 const summary = document.querySelector("#summary");
-const rows = [];
+let places = [], page = 0;
+const pageSize = 12;
+const articles = new Map();
+const normalize = value => value.normalize("NFD").replace(/\p{Diacritic}/gu,"").toLowerCase();
 const saving = new Set();
 function el(tag, text) {
   const node = document.createElement(tag);
@@ -12,20 +15,38 @@ function el(tag, text) {
 function state(p) {
   if (p.hold) return "hold";
   const option = p.options.find(o => o.id === p.choice);
-  if (!option) return "undecided";
+  if (!option) return p.options.length ? "undecided" : "missing";
   return option.text === p.current?.text && option.source === p.current?.source ? "published" : "ready";
 }
-const labels = {hold:"Needs follow-up",undecided:"Undecided",published:"On card",ready:"Ready to publish"};
+const labels = {missing:"Awaiting research",hold:"Needs follow-up",undecided:"Undecided",published:"On card",ready:"Ready to publish"};
 function refresh() {
-  let visible = 0;
-  for (const {p,article,badge} of rows) {
-    const status = state(p);
-    badge.textContent = labels[status];
-    article.hidden = !p.name.toLocaleLowerCase().includes(search.value.trim().toLocaleLowerCase()) ||
-      Boolean(filter.value && filter.value !== status);
-    if (!article.hidden) visible++;
-  }
-  summary.textContent = visible + " places shown · " + rows.filter(r=>state(r.p)==="ready").length + " ready to publish";
+  const term = normalize(search.value.trim());
+  const matches = places.filter(p => {
+    if (!normalize(p.name).includes(term)) return false;
+    const selected = p.options.some(o => o.id === p.choice);
+    switch (filter.value) {
+      case "unselected": return !selected;
+      case "available": return !selected && p.options.length > 0;
+      case "selected": return selected;
+      case "missing": return !p.options.length;
+      case "": return true;
+      default: return state(p) === filter.value;
+    }
+  });
+  const pages = Math.ceil(matches.length / pageSize);
+  page = Math.max(0, Math.min(page, pages - 1));
+  const visible = matches.slice(page * pageSize, (page + 1) * pageSize).map(p => {
+    if (!articles.has(p.id)) articles.set(p.id, render(p));
+    const {article,badge} = articles.get(p.id);
+    badge.textContent = labels[state(p)];
+    return article;
+  });
+  if (list.children.length !== visible.length || visible.some((node,i) => node !== list.children[i]))
+    list.replaceChildren(...visible);
+  summary.textContent = matches.length + " of " + places.length + " places";
+  document.querySelector("#page").textContent = pages ? `Page ${page+1} of ${pages}` : "";
+  document.querySelector("#previous").disabled = page === 0;
+  document.querySelector("#next").disabled = page + 1 >= pages;
 }
 function render(p) {
   const article=el("article"), heading=el("header"), badge=el("small"), status=el("small");
@@ -47,7 +68,7 @@ function render(p) {
   clear.onclick=()=>{p.choice=null;inputs.forEach(r=>r.checked=false);changed()};
   comment.oninput=()=>{p.comment=comment.value;changed()};
   check.onchange=()=>{p.hold=check.checked;changed()};
-  article.append(note,hold,actions);list.append(article);rows.push({p,article,badge});
+  article.append(note,hold,actions);clear.hidden=!p.options.length;
   let dirty=false, busy=false;
   function changed(){dirty=true;saving.add(p.id);status.textContent="Saving…";void save()}
   async function save(){
@@ -65,10 +86,16 @@ function render(p) {
     }catch(e){dirty=true;status.textContent=e.message;retry.hidden=false}finally{busy=false}
   }
   retry.onclick=save;
+  return {article,badge};
 }
 window.addEventListener("beforeunload",e=>{if(saving.size){e.preventDefault();e.returnValue=""}});
-search.oninput=filter.onchange=refresh;
+search.oninput=filter.onchange=()=>{page=0;refresh()};
+for (const [id,step] of [["previous",-1],["next",1]]) {
+  document.querySelector("#"+id).onclick=()=>{page+=step;refresh();search.scrollIntoView({block:"start"})};
+}
 try {
   const response=await fetch("/api/fact-review");if(!response.ok)throw Error("Could not load the review.");
-  (await response.json()).forEach(render);refresh();
+  places=await response.json();
+  places.sort((a,b)=>Number(!!b.options.length)-Number(!!a.options.length)||a.name.localeCompare(b.name));
+  refresh();
 } catch(e){summary.textContent=e.message}

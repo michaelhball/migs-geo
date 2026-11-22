@@ -270,7 +270,6 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       throw e;
     }
   };
-  const editorial = factReview(db, tx);
   const settings = () =>
     ({ ...defaults, ...parse(db.prepare("SELECT data FROM settings WHERE id=1").get().data) });
   const scheduler = () =>
@@ -287,6 +286,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       .prepare("SELECT * FROM places")
       .all()
       .map((p) => ({ ...parse(p.data), archived: !!p.archived })));
+  const editorial = factReview(db, tx, () => places().filter(p => !p.archived));
   const place = (id) => {
     const p = places().find((p) => p.id === id);
     if (!p) throw Error("Unknown place.");

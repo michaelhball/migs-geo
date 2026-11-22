@@ -810,3 +810,17 @@ test("a lake cutoff partitions scheduled cards and preserves small-lake reviews"
     s.setSettings({lakeCutoffKm2:0,lakeMinimumKm2:0});assert.equal(s.question().card,null);
   }finally{s.db.close()}
 });
+
+test("fact review includes custom places before candidates exist", () => {
+  const s=createStore(":memory:",seed);
+  try {
+    const review=s.editorial;
+    assert.deepEqual(review.list().find(p=>p.id==="alpha").options,[]);
+    const draft={revision:0,choice:null,comment:"Research the name",hold:true};
+    review.save("alpha",draft);
+    assert.equal(review.list().find(p=>p.id==="alpha").comment,draft.comment);
+    assert.throws(()=>review.save("bravo",{...draft,choice:"invented"}),/Unknown candidate/);
+    assert.throws(()=>review.save("unknown",draft),/Unknown fact review place/);
+    assert.deepEqual(review.publish().applied,[]);
+  } finally {s.db.close()}
+});

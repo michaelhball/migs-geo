@@ -11,7 +11,7 @@
     }
   ],
   "paths": {
-    "/api/fact-review": {"get": {"summary": "List sourced fact choices and private decisions", "responses": {"200": {"description": "Success"}}}},
+    "/api/fact-review": {"get": {"summary": "List all collection places, sourced candidates and private decisions", "responses": {"200": {"description": "Success"}}}},
     "/api/fact-review/{id}": {"put": {"summary": "Save a decision with its current revision, choice ID, comment and hold flag", "responses": {"200": {"description": "Success"}}, "parameters": [{"in": "path", "name": "id", "required": true, "schema": {"type": "string"}}]}},
     "/api/fact-review/publish": {"post": {"summary": "Publish selected facts except those held for edits", "responses": {"200": {"description": "Success"}}}},
     "/api/lake-review": {"get": {"summary": "List lake area estimates, country hints and current study cutoff", "responses": {"200": {"description": "Success"}}}},
