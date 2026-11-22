@@ -19,9 +19,9 @@
         "label": "Journal of Physical Oceanography"
       },
       {
-        "text": "The Denmark Strait is a deep-ocean bottleneck with a shallow lip. Dense water pooled north of the Greenland–Iceland ridge has to cross a sill only about 650 metres below the surface before descending into the Atlantic.",
-        "source": "https://rpickart.whoi.edu/wp-content/uploads/sites/53/2016/05/harden_etal_2016_dsr.pdf",
-        "label": "rpickart.whoi.edu"
+        "text": "Sea ice can drift south through the Denmark Strait from the Arctic. It hugs the Greenland side as the East Greenland Current carries it past Iceland.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/sea-ice-in-denmark-strait-146974/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -56,19 +56,19 @@
     "name": "Gulf of Mexico",
     "options": [
       {
-        "text": "At Flower Garden Banks, divers can predict which corals will spawn on a given night. About a week after the August full moon, different species release their eggs and sperm in turn.",
-        "source": "https://flowergarden.noaa.gov/education/spawningobservations.html",
-        "label": "NOAA"
+        "text": "There is a pool with its own surface beneath the sea at East Flower Garden Bank. Water seeping out of a salt dome is so salty and dense that it settles into a hollow under ordinary seawater.",
+        "source": "https://flowergarden.noaa.gov/about/eastflowergardenbank.html",
+        "label": "flowergarden.noaa.gov"
       },
       {
-        "text": "For years the gulf’s Rice’s whales were identified as Bryde’s whales. The intact skull of a whale stranded in 2019 helped researchers show that a separate species had been swimming here all along.",
-        "source": "https://www.fisheries.noaa.gov/southeast/marine-mammal-protection/how-unique-population-brydes-whales-became-rices-whale",
-        "label": "NOAA Fisheries"
+        "text": "Some coral reefs in the northwestern gulf sit on hills pushed up by salt. Deep deposits rose under the seabed, lifting the tops of the banks into sunlit water.",
+        "source": "https://flowergarden.noaa.gov/about/naturalsetting.html",
+        "label": "flowergarden.noaa.gov"
       },
       {
-        "text": "Surrounded by salt water in the Dry Tortugas, Fort Jefferson doubled as a rain collector. After repairs to the brickwork, less than a quarter-inch of rain sent a stream of fresh water toward the cisterns.",
-        "source": "https://pubs.nps.gov/eTIC/DEWA-EUON/DRTO_364_116644_0001_of_0223.pdf",
-        "label": "National Park Service"
+        "text": "Rings of warm Caribbean water can break away from the Loop Current. They travel west across the gulf long after the main current has turned towards Florida.",
+        "source": "https://flowergarden.noaa.gov/about/naturalsetting.html",
+        "label": "flowergarden.noaa.gov"
       },
       {
         "text": "Water can enter the gulf from the Caribbean, swing far north and leave again beside Florida. This Loop Current feeds the Gulf Stream before it heads across the Atlantic.",
@@ -201,9 +201,9 @@
         "label": "International Boundary Study"
       },
       {
-        "text": "The Namib Sand Sea is the world's only coastal desert with extensive dune fields sustained by fog. The cold Atlantic current helps supply water to dunes in a country named after its desert.",
-        "source": "https://whc.unesco.org/en/list/1430/",
-        "label": "UNESCO"
+        "text": "Namibia's Fish River can shrink to a trickle in the dry season. Over geological time it has carved a canyon as much as 550 metres deep into the southern plateau.",
+        "source": "https://www.mme.gov.na/files/publications/c2a_A4_Fish%20River%20Canyon_en.pdf",
+        "label": "mme.gov.na"
       }
     ]
   },
@@ -420,18 +420,18 @@
     "name": "France",
     "options": [
       {
-        "text": "A rockfall sealed Chauvet Cave for roughly 20,000 years. When people got back inside in 1994, they found lions and woolly rhinos still on the walls.",
-        "source": "https://whc.unesco.org/en/list/1426/",
+        "text": "In the Chaîne des Puys, a line of volcanoes sits next to a great fault. Together they record an early stage of a continent pulling apart, right in the middle of France.",
+        "source": "https://whc.unesco.org/en/list/1434/",
         "label": "UNESCO"
       },
       {
-        "text": "Sailors entering the Gironde pass a white limestone lighthouse decorated with gargoyles. Cordouan stands out at sea on a shallow shelf of rock.",
-        "source": "https://whc.unesco.org/en/list/1625/",
+        "text": "In Burgundy a climat can be a particular plot of vines. Centuries of growers divided slopes by differences in soil, aspect and the wine each patch produced.",
+        "source": "https://whc.unesco.org/en/list/1425/",
         "label": "UNESCO"
       },
       {
-        "text": "In the 1600s engineers cut a route through southern France that let boats travel between the Mediterranean and Atlantic without sailing around Spain.",
-        "source": "https://whc.unesco.org/en/list/770/",
+        "text": "The Roman aqueduct supplying Nîmes had to cross the Gardon valley. Its builders stacked three tiers of arches at the Pont du Gard to keep water high enough to flow onward by gravity.",
+        "source": "https://whc.unesco.org/en/list/344/",
         "label": "UNESCO"
       },
       {
@@ -539,9 +539,9 @@
         "label": "CIA World Factbook (archived country profile)"
       },
       {
-        "text": "The world's largest island holds the world's second-largest ice sheet. Only Antarctica has more land ice than Greenland.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/gl.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "At Ilulissat, icebergs can run aground on a submerged sill at the mouth of the fjord. They may have to melt or break apart before they can reach the open sea.",
+        "source": "https://whc.unesco.org/en/list/1149/",
+        "label": "whc.unesco.org"
       }
     ]
   },
@@ -758,19 +758,19 @@
     "name": "Czech Republic",
     "options": [
       {
-        "text": "At Hranice, surveyors have followed a freshwater cave more than half a kilometre below the surface. Even the surveyed depth is an extraordinary distance through flooded rock.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ez.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "Around Žatec, the crop that shaped the landscape grows up wires. Fields, drying buildings and warehouses all belong to the long local history of growing hops for beer.",
+        "source": "https://whc.unesco.org/en/list/1558/",
+        "label": "UNESCO"
       },
       {
-        "text": "The Czech anthem began as music for a play in 1834. Audiences took the song with them long before it became an official anthem.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ez.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "At Kladruby nad Labem, people reshaped an Elbe floodplain to breed ceremonial carriage horses. Pastures, avenues and paddocks are part of the protected landscape.",
+        "source": "https://whc.unesco.org/en/list/1589/",
+        "label": "UNESCO"
       },
       {
-        "text": "The Moravian Gate is a natural passage across Central Europe. It links routes on the northern European plain to the Danube basin.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ez.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "Medieval Kutná Hora grew wealthy from what lay underneath it. Its silver mines helped turn an inland settlement into one of Bohemia's most important towns.",
+        "source": "https://whc.unesco.org/en/list/732/",
+        "label": "UNESCO"
       },
       {
         "text": "On the slopes of Králický Sněžník, water can set out for three different seas. The divides here separate the drainage basins of the Baltic, North and Black Seas.",
@@ -888,19 +888,19 @@
     "name": "Lake Saimaa",
     "options": [
       {
-        "text": "When a Finnish winter brings too little snow, conservationists heap snowdrifts on the lake ice. Saimaa ringed seals can dig birthing shelters inside them.",
-        "source": "https://whc.unesco.org/en/tentativelists/6510",
-        "label": "UNESCO"
+        "text": "Researchers can date the rock paintings at Astuvansalmi using the lake itself. Changes in water level tell them when a painter could have reached a particular stretch of cliff.",
+        "source": "https://saimaageopark.fi/en/astuvansalmi-rock-paintings/",
+        "label": "saimaageopark.fi"
       },
       {
-        "text": "The land rose after the ice sheet melted and cut Saimaa off from the Baltic. Seals stranded on the inland side became a population adapted to freshwater.",
+        "text": "A freshwater salmon lives in Saimaa. Its migrations take it between a lake and spawning rivers, so this population can complete its life without ever reaching salt water.",
         "source": "https://whc.unesco.org/en/tentativelists/6510",
-        "label": "UNESCO"
+        "label": "whc.unesco.org"
       },
       {
-        "text": "Saimaa’s outlet changed direction. As the ground tilted after the ice age, the lake broke through toward the Vuoksi about 6,000 years ago and began draining to Lake Ladoga.",
-        "source": "https://whc.unesco.org/en/tentativelists/6510",
-        "label": "UNESCO"
+        "text": "Some of the long, narrow ridges running through the lake are eskers. They mark places where streams deposited gravel in tunnels underneath an ice sheet.",
+        "source": "https://saimaageopark.fi/en/see-and-experience/geosites/",
+        "label": "saimaageopark.fi"
       },
       {
         "text": "Lake Saimaa looks like a cluster of lakes because its open basins are linked by narrow straits between thousands of islands. A continuous journey on water can weave through what looks like solid land on a small map.",
@@ -955,9 +955,9 @@
         "label": "Lunar and Planetary Institute"
       },
       {
-        "text": "Reindeer Lake hides a crater that ordinary lake erosion never could have made. At its southern end, the round basin of Deep Bay drops more than 200 metres below the surface.",
-        "source": "https://www.lpi.usra.edu/publications/slidesets/craters/slide_30.html",
-        "label": "Lunar and Planetary Institute"
+        "text": "Reindeer Lake straddles Saskatchewan and Manitoba, but most of its water lies on the Saskatchewan side. Its outlet leads south to the Churchill River before the water turns towards Hudson Bay.",
+        "source": "https://www.esask.uregina.ca/entry/reindeer_lake.html",
+        "label": "esask.uregina.ca"
       }
     ]
   },
@@ -981,9 +981,9 @@
         "label": "NASA"
       },
       {
-        "text": "The deepest lake in North America lies in Canada's Northwest Territories. Great Slave Lake reaches roughly 614 metres, deeper than any of the five Great Lakes.",
-        "source": "https://nwtdiscoveryportal.enr.gov.nt.ca/geoportaldocuments/DFO%20Technical%20Report_GSL-CIMP.pdf",
-        "label": "nwtdiscoveryportal.enr.gov.nt.ca"
+        "text": "The East Arm of Great Slave Lake has cliffs with different faces. Tilted layers of bedrock slope down on one side and break off along steep fractures on the other.",
+        "source": "https://www.gov.nt.ca/sites/ecc/files/resources/taiga_shield_ecological_land_classification_report_0.pdf",
+        "label": "gov.nt.ca"
       }
     ]
   },
@@ -1018,19 +1018,19 @@
     "name": "Lake Winnipeg",
     "options": [
       {
-        "text": "Water falling in four Canadian provinces and four U.S. states can end up in Lake Winnipeg. Its watershed reaches much farther south than its Manitoba shoreline suggests.",
-        "source": "https://gov.mb.ca/sd/water/lakes-beaches-rivers/lake-winnipeg.html",
-        "label": "Government of Manitoba"
+        "text": "The Narrows separate a small, shallow southern basin from a much larger northern one. The southern basin averages only about nine metres deep.",
+        "source": "https://www.gov.mb.ca/sd/pubs/water/lakes-beaches-rivers/state_of_lake_winnipeg_rpt_highlights_english.pdf",
+        "label": "gov.mb.ca"
       },
       {
-        "text": "Wind can push water toward one end of Lake Winnipeg, lifting the water level along the downwind shore even when the amount of water in the lake barely changes.",
-        "source": "https://www.manitoba.ca/sd/water/watershed/iwmp/willow_creek/documentation/willcreekplan_final_jan31.pdf",
-        "label": "Government of Manitoba"
+        "text": "Winnipeg sits south of its namesake lake. The Red River carries water north from the city into the lake, away from the US border.",
+        "source": "https://www.gov.mb.ca/sd/pubs/water/lakes-beaches-rivers/state_of_lake_winnipeg_rpt_highlights_english.pdf",
+        "label": "gov.mb.ca"
       },
       {
-        "text": "Algal growth on Lake Winnipeg can be thick enough to clog fishing nets. Nitrogen and phosphorus entering from its vast drainage basin help fuel the blooms.",
-        "source": "https://gov.mb.ca/sd/water/lakes-beaches-rivers/lake-winnipeg.html",
-        "label": "Government of Manitoba"
+        "text": "The lake drains into Hudson Bay by the Nelson River. Water from the Canadian prairie thus rounds off its journey on the shore of a subarctic sea.",
+        "source": "https://www.gov.mb.ca/sd/pubs/water/lakes-beaches-rivers/state_of_lake_winnipeg_rpt_highlights_english.pdf",
+        "label": "gov.mb.ca"
       },
       {
         "text": "Lake Winnipeg collects runoff from an area roughly forty times its own surface. A relatively shallow lake is the outlet for a basin reaching from the Rockies into the United States.",
@@ -1044,19 +1044,19 @@
     "name": "Lake Onega",
     "options": [
       {
-        "text": "On Kizhi Island, carpenters crowned a wooden church with 22 domes. From Lake Onega, the skyline of the little island looks much bigger than the settlement.",
-        "source": "https://whc.unesco.org/en/list/544/",
-        "label": "UNESCO"
+        "text": "On Onega's eastern shore, people pecked birds and other figures directly into the rock. The carvings form a World Heritage site with another group about 300 kilometres away on the White Sea.",
+        "source": "https://whc.unesco.org/en/list/1654",
+        "label": "whc.unesco.org"
       },
       {
-        "text": "Kizhi’s parish had different churches for different seasons. The winter church, built in 1764, has eight small domes gathered around one tall central dome.",
-        "source": "https://whc.unesco.org/en/list/544/",
-        "label": "UNESCO"
+        "text": "Onega straddles a geological seam. Its basin sits partly on the ancient Baltic Shield and partly on the Russian Platform.",
+        "source": "https://wldb.ilec.or.jp/Display/html/3498",
+        "label": "wldb.ilec.or.jp"
       },
       {
-        "text": "Inside Kizhi’s Church of the Transfiguration, the gilded wooden screen holds 102 icons. Above it is a vault known as the “heaven.”",
-        "source": "https://whc.unesco.org/en/list/544/",
-        "label": "UNESCO"
+        "text": "The surface of this enormous inland lake sits only about 35 metres above the Baltic. Parts of its bed are well below sea level.",
+        "source": "https://wldb.ilec.or.jp/Display/html/3498",
+        "label": "wldb.ilec.or.jp"
       },
       {
         "text": "Europe's second-largest lake drains straight towards its largest. Water leaving Lake Onega follows the Svir into Lake Ladoga before reaching the Baltic.",
@@ -1345,9 +1345,9 @@
         "label": "CIA World Factbook (archived country profile)"
       },
       {
-        "text": "Aruba is a tropical island without a permanent river. Trade winds and a dry climate help explain why cacti grow on a Caribbean island so near the equator.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/aa.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "At Dos Playa, rocks on dry land preserve round pillows of lava. They formed when molten rock cooled underwater, long before this part of Aruba was a shore.",
+        "source": "https://coleccion.aw/show/MANA-DIG-PUB-GEOLOGICAL-ORIGINS-ARUBA-ENG",
+        "label": "coleccion.aw"
       }
     ]
   },
@@ -1423,9 +1423,9 @@
         "label": "CIA World Factbook (archived country profile)"
       },
       {
-        "text": "Bermuda receives plenty of rain yet has no permanent rivers or freshwater lakes. Water on these small limestone islands has little opportunity to collect into a stream.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/bd.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "Stalactites hang underwater in Bermuda's caves. They could only have grown in air, so their present depth records a time when the sea stood lower.",
+        "source": "https://environment.bm/caves/",
+        "label": "environment.bm"
       }
     ]
   },
@@ -1475,9 +1475,9 @@
         "label": "CIA World Factbook (archived country profile)"
       },
       {
-        "text": "Brazil touches every mainland South American country except Chile and Ecuador. Its neighbours even include France, through French Guiana.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/br.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "The Atlantic can send a breaking wave upstream into Brazilian rivers. On the Amazon estuary this tidal bore is known as the pororoca.",
+        "source": "https://en.aguasamazonicas.org/waters/flow-floods/estuary",
+        "label": "en.aguasamazonicas.org"
       }
     ]
   },
@@ -1746,19 +1746,19 @@
     "name": "Gulf of Carpentaria",
     "options": [
       {
-        "text": "The gulf used to be a lake. A sediment core from near its centre records times when falling seas cut off a freshwater lake between Australia and New Guinea.",
-        "source": "https://www.sciencedirect.com/science/article/abs/pii/S0031018206005360",
-        "label": "Research article"
+        "text": "Northern Australia's coastline makes a deep U between Arnhem Land and Cape York. The water enclosed by those two great projections is the Gulf of Carpentaria.",
+        "source": "https://www.marinemammalhabitat.org/factsheets/southern-gulf-carpentaria/",
+        "label": "marinemammalhabitat.org"
       },
       {
-        "text": "In spring near Burketown, a cloud can roll in like an enormous horizontal tube. The Morning Glory can race overhead even when people on the ground feel little wind.",
-        "source": "https://science.nasa.gov/image-article/apod-2009-august-24-morning-glory-clouds-over-australia/",
-        "label": "NASA"
+        "text": "Dugongs graze the gulf's underwater seagrass meadows. A cyclone can strip a feeding ground and send the animals along the coast in search of another one.",
+        "source": "https://www.marinemammalhabitat.org/factsheets/southern-gulf-carpentaria/",
+        "label": "marinemammalhabitat.org"
       },
       {
-        "text": "In 2015 mangroves died along the gulf when the sea temporarily fell. An El Niño event left trees that depend on tidal flooding high and dry.",
-        "source": "https://nesptropical.edu.au/wp-content/uploads/2021/05/Project-4.13-Wrap-up-Factsheet.pdf",
-        "label": "Australian research team"
+        "text": "The gulf has island groups on opposite flanks of its southern arc. The Sir Edward Pellew Islands lie off the Northern Territory and the Wellesley Islands off Queensland.",
+        "source": "https://www.marinemammalhabitat.org/factsheets/southern-gulf-carpentaria/",
+        "label": "marinemammalhabitat.org"
       },
       {
         "text": "There are reefs and rocky pinnacles hidden under the muddy waters of the Gulf of Carpentaria. In the marine park north of Mornington Island, even the deepest water is only about 70 metres deep.",
@@ -2021,9 +2021,9 @@
         "label": "NOAA"
       },
       {
-        "text": "New Atlantic seafloor forms along a mountain chain running nearly the length of the ocean. The two sides move apart by centimetres each year, about the speed fingernails grow.",
-        "source": "https://origin.oceanexplorer.noaa.gov/ocean-fact/mid-ocean-ridge/",
-        "label": "origin.oceanexplorer.noaa.gov"
+        "text": "The North Atlantic is saltier at the surface than the North Pacific. Oceans that share a continuous body of water can still have measurably different salt concentrations.",
+        "source": "https://mynasadata.larc.nasa.gov/basic-page/ocean-circulation-patterns",
+        "label": "mynasadata.larc.nasa.gov"
       }
     ]
   },
@@ -2214,19 +2214,19 @@
     "name": "Mediterranean Sea",
     "options": [
       {
-        "text": "Drilling beneath the Mediterranean revealed vast beds of salt. They formed when its connection to the Atlantic narrowed millions of years ago and evaporation concentrated the seawater.",
-        "source": "https://www.nature.com/articles/s41467-024-53781-6",
-        "label": "Source"
+        "text": "A submerged ridge between Sicily and Tunisia divides the Mediterranean into two main basins. The eastern basin covers almost twice the area of the western one.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2914016/",
+        "label": "pmc.ncbi.nlm.nih.gov"
       },
       {
-        "text": "The underwater meadows off Ibiza are made of flowering plants. The long blades of Posidonia shelter a whole community beneath passing boats.",
-        "source": "https://whc.unesco.org/en/list/417",
-        "label": "UNESCO"
+        "text": "The opening of the Suez Canal gave Red Sea animals a route into the Mediterranean. Some have spread far beyond the canal along its eastern shores.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2914016/",
+        "label": "pmc.ncbi.nlm.nih.gov"
       },
       {
-        "text": "From Tyre, on the coast of modern Lebanon, Phoenician sailors founded settlements as far away as Carthage and Cádiz. Their ships linked the eastern Mediterranean with the Atlantic coast of Spain.",
-        "source": "https://whc.unesco.org/pg.cfm?cid=31&id_site=299",
-        "label": "UNESCO"
+        "text": "The Black Sea has a winding route to the Mediterranean. Water passes the Bosporus, the Sea of Marmara and the Dardanelles before it reaches the Aegean.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2914016/",
+        "label": "pmc.ncbi.nlm.nih.gov"
       },
       {
         "text": "The Mediterranean loses more water to evaporation than it gains from rain and rivers. Atlantic water streams in at the surface at Gibraltar while denser, saltier Mediterranean water escapes underneath.",
@@ -2281,9 +2281,9 @@
         "label": "UNESCO"
       },
       {
-        "text": "The largest submarine fan on Earth lies beneath the Bay of Bengal and extends far beyond it. Rivers draining the Himalayas have built this underwater deposit thousands of kilometres out into the ocean.",
-        "source": "https://www.sciencedirect.com/science/article/pii/S0264817203000357",
-        "label": "sciencedirect.com"
+        "text": "A layer of relatively fresh water floats on the Bay of Bengal. Monsoon rain and river discharge make its surface markedly fresher than that of the Arabian Sea on the other side of India.",
+        "source": "https://drs.nio.res.in/drs/bitstream/handle/2264/111/Geophys_Res_Lett_29_88-1.pdf?sequence=1",
+        "label": "drs.nio.res.in"
       }
     ]
   },
@@ -2552,19 +2552,19 @@
     "name": "Great Bear Lake",
     "options": [
       {
-        "text": "In a Sahtú Dene account, Kaye Daoye learned that Great Bear Lake has a water heart. Its beat connects the people, animals, sky and land throughout the watershed.",
-        "source": "https://parks.canada.ca/lhn-nhs/nt/saoyuehdacho/decouvrir-discover/histoire-history/water_heart",
-        "label": "Government of Canada"
+        "text": "The Arctic Circle cuts through Great Bear Lake. Its northern and southern shores lie on opposite sides of the latitude used to define the Arctic.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024JF007650",
+        "label": "agupubs.onlinelibrary.wiley.com"
       },
       {
-        "text": "Researchers fishing in the shallows found as many as four distinct forms of lake trout living side by side. The shapes of their heads and fins gave them away.",
-        "source": "https://nwtdiscoveryportal.enr.gov.nt.ca/geoportaldocuments/CIMP%202013%20Laketrout%20Morphology%20poster%20final.pdf",
-        "label": "Source"
+        "text": "Five long arms meet in a central basin. Water leaving by the Great Bear River starts its outward journey from the southwest arm, called Keith Arm.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024JF007650",
+        "label": "agupubs.onlinelibrary.wiley.com"
       },
       {
-        "text": "In 1825 John Franklin wrote that his men passed the winter skating and playing hockey on Great Bear Lake. The community of Délı̨nę remembers the game in a mural.",
-        "source": "https://www.pwnhc.ca/en/birthplace-hockey",
-        "label": "Source"
+        "text": "In summer, warmer water can build up in the arms while the middle stays cold. A temperature reading from the shore can give a very misleading picture of the lake.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024JF007650",
+        "label": "agupubs.onlinelibrary.wiley.com"
       },
       {
         "text": "Great Bear Lake is the largest lake entirely within Canada. The Canadian Great Lakes with larger surface areas all have a US shore as well.",
@@ -2604,19 +2604,19 @@
     "name": "Lake Ontario",
     "options": [
       {
-        "text": "For sea lampreys living in Lake Ontario, Niagara Falls was an impassable wall. Deepening the Welland Canal in 1919 opened a way around it and into the upper Great Lakes.",
-        "source": "https://www.dfo-mpo.gc.ca/species-especes/publications/ais-eae/lamprey-lamproie/index-eng.html",
-        "label": "Source"
+        "text": "Lake Ontario's surface sits roughly a hundred metres lower than Lake Erie's. The connecting Niagara River loses much of that height at Niagara Falls.",
+        "source": "https://www.epa.gov/greatlakes/physical-features-great-lakes",
+        "label": "epa.gov"
       },
       {
-        "text": "The trading sloop Washington disappeared crossing Lake Ontario in 1803. When searchers found it in 2016, its mast was still standing on the lakebed.",
-        "source": "https://sanctuaries.noaa.gov/media/docs/2024-lake-ontario-nms-feis-mgmt-plan.pdf",
-        "label": "NOAA"
+        "text": "Ontario averages about 86 metres deep. That average depth alone is greater than the maximum depth of neighbouring Lake Erie.",
+        "source": "https://www.epa.gov/greatlakes/physical-features-great-lakes",
+        "label": "epa.gov"
       },
       {
-        "text": "At the mouth of the Niagara River, the French won permission to build a trading post. The stone building they put up overlooking Lake Ontario doubled as a citadel.",
-        "source": "https://npgallery.nps.gov/GetAsset/a177b303-6c93-45ef-9412-2bb19b34ec6d/",
-        "label": "Source"
+        "text": "Lake Ontario is the last of the five Great Lakes on the journey to the Atlantic. Its outlet becomes the St Lawrence River.",
+        "source": "https://apps.glerl.noaa.gov/coastwatch/webdata/statistic/physical.html",
+        "label": "apps.glerl.noaa.gov"
       },
       {
         "text": "Ontario has the smallest surface area of the five Great Lakes, yet holds more than three times as much water as Erie. The difference is hidden in its deep basin.",
@@ -2630,19 +2630,19 @@
     "name": "Lago de Nicaragua",
     "options": [
       {
-        "text": "Some sharks in this freshwater lake have made the journey from the Caribbean. Researchers tagged bull sharks at the coast and recovered them in the lake, and tracked others going the opposite way.",
-        "source": "https://digitalcommons.unl.edu/ichthynicar/41/",
-        "label": "Source"
-      },
-      {
-        "text": "On Ometepe, an island in the lake, carvings on the Maderas volcano preserve stories in stone. Some of its petroglyphs date back about 1,700 years.",
+        "text": "Two volcanoes rise out of the lake to make Ometepe. Concepción and Maderas form the two ends of an island linked by a narrow waist.",
         "source": "https://www.unesco.org/en/mab/ometepe-island",
-        "label": "UNESCO"
+        "label": "unesco.org"
       },
       {
-        "text": "A traveller bound for California’s goldfields could take a shortcut through Nicaragua in the 1850s. Ships and lake boats did almost all the work, leaving only about twelve miles overland.",
-        "source": "https://postalmuseum.si.edu/exhibition/binding-the-nation-the-expanding-nation/ocean-steamers",
-        "label": "Source"
+        "text": "Off Granada, the lake breaks into a maze of hundreds of small islands. Their origin lies with Mombacho, the volcano looming above the western shore.",
+        "source": "https://mapanicaragua.com/en/municipio-de-granada/",
+        "label": "mapanicaragua.com"
+      },
+      {
+        "text": "Zapatera is both a lake island and part of a national park. The park includes the smaller islands around it, protecting an archipelago inside Nicaragua's largest lake.",
+        "source": "https://www.mined.gob.ni/biblioteca/wp-content/uploads/2024/09/Cartilla_Secundaria-14-de-dic.pdf",
+        "label": "mined.gob.ni"
       },
       {
         "text": "Central America's largest lake lies much closer to the Pacific than to the Caribbean, yet drains east. Its outlet is the San Juan River, which carries the water to the Caribbean coast.",
@@ -2708,19 +2708,19 @@
     "name": "Lake Michigan",
     "options": [
       {
-        "text": "In an Anishinaabe story, a mother bear swims across the lake to escape a forest fire. Sleeping Bear Dune marks where she waited on shore, and the two Manitou Islands mark her lost cubs.",
-        "source": "https://www.nps.gov/articles/sleepingbeardunes.htm",
-        "label": "Source"
+        "text": "Indiana has a Great Lakes shoreline. Its short arc of Lake Michigan lies between the much longer shores of Illinois and Michigan.",
+        "source": "https://www.in.gov/idem/lakemichigan/about-lake-michigan/",
+        "label": "in.gov"
       },
       {
-        "text": "Chicago once sent its polluted river into its own drinking-water lake. In 1900 a new canal reversed the river and carried the flow away from Lake Michigan.",
-        "source": "https://mwrd.org/sites/default/files/documents/18-01_Guidelines_Optimal_Withdrawal_Discretionary_Diversion_0.pdf",
-        "label": "Source"
+        "text": "Lake Michigan holds almost twelve times as much water as Lake Erie. Two lakes that look broadly comparable on a continental map conceal very different depths.",
+        "source": "https://www.epa.gov/greatlakes/physical-features-great-lakes",
+        "label": "epa.gov"
       },
       {
-        "text": "Michigan and Huron have two names but share one water level. Currents can run either way through the Straits of Mackinac between them.",
-        "source": "https://www.glerl.noaa.gov/res/straits/",
-        "label": "NOAA"
+        "text": "At the Indiana Dunes, wind carries sand up from a freshwater shore. A beach beside a lake supplies dunes tall enough to climb like hills.",
+        "source": "https://www.in.gov/idem/lakemichigan/about-lake-michigan/",
+        "label": "in.gov"
       },
       {
         "text": "Michigan is the only one of the five Great Lakes with every shore in a single country. Canada shares all four of the others with the United States.",
@@ -2734,19 +2734,19 @@
     "name": "Lake Huron",
     "options": [
       {
-        "text": "Nine thousand years ago, caribou crossed a ridge where the middle of Lake Huron is today. Divers have found the stone structures hunters built along their route.",
-        "source": "https://sites.lsa.umich.edu/lakehuron-arch/research/pre-historic-archaeology-on-the-alpena-amberly-ridge/background/",
-        "label": "Source"
+        "text": "Counting its islands, Huron has the longest shoreline of the five Great Lakes. Larger Lake Superior has less shore to follow.",
+        "source": "https://www.epa.gov/greatlakes/lake-huron",
+        "label": "epa.gov"
       },
       {
-        "text": "A coal schooner named Typo still sits upright on the lakebed. The broken stern shows where a steamship struck it, and part of its foremast still stands.",
-        "source": "https://thunderbay.noaa.gov/shipwrecks/typo.html",
-        "label": "NOAA"
+        "text": "The Bruce Peninsula nearly walls off Georgian Bay from the main lake. Stand on one shore of the peninsula and you face the bay, then cross to the other side and you still face Lake Huron.",
+        "source": "https://www.epa.gov/greatlakes/lake-huron",
+        "label": "epa.gov"
       },
       {
-        "text": "Just off Middle Island, sulphur-rich groundwater wells up through a sinkhole in the lakebed. Purple mats of bacteria cover the floor around it.",
-        "source": "https://sanctuaries.noaa.gov/VR/thunder-bay/sinkhole-sampling/",
-        "label": "NOAA"
+        "text": "Huron's water is partway through a staircase of lakes. It leaves by the St Clair River, crosses Lake St Clair and continues through the Detroit River to Erie.",
+        "source": "https://apps.glerl.noaa.gov/coastwatch/webdata/statistic/physical.html",
+        "label": "apps.glerl.noaa.gov"
       },
       {
         "text": "Lake Huron contains the world's largest island in a freshwater lake. Manitoulin Island is itself large enough to hold lakes with islands of their own.",
@@ -2812,19 +2812,19 @@
     "name": "Lake Albert",
     "options": [
       {
-        "text": "The Bagungu know the lake as Mwitanzige, a name meaning “locust killer.” It preserves a different way of remembering the water than its English royal name.",
-        "source": "https://nema.go.ug/sites/all/themes/nema/docs/TILENGA%20ESIA%20Volume%20IV_13-09-18.pdf",
-        "label": "Source"
+        "text": "The lake floor lies in a rain shadow. The rift floor gets roughly 600 millimetres of rain a year in places, while the surrounding mountains can get about 2,000.",
+        "source": "https://www.agl-acare.org/resources/the-african-great-lakes/lake-albert/",
+        "label": "agl-acare.org"
       },
       {
-        "text": "On the way into Lake Albert, the Nile squeezes through a rock cleft only a few metres wide at Murchison Falls. Downstream it opens into a delta where shoebills feed.",
-        "source": "https://rsis.ramsar.org/sites/default/files/rsiswp_search/exports/Ramsar-Sites-annotated-summary-Uganda.pdf?1568560014=",
-        "label": "Source"
+        "text": "Two other African Great Lakes feed Albert by different routes. Water from Lake Edward follows the Semliki, while water from Victoria passes through Lake Kyoga.",
+        "source": "https://www.agl-acare.org/resources/the-african-great-lakes/lake-albert/",
+        "label": "agl-acare.org"
       },
       {
-        "text": "British planners pictured Lake Albert as a link in a transport chain across Africa. Travellers and freight would switch between trains, river steamers and lake steamers.",
-        "source": "https://kagadi.go.ug/tourism/",
-        "label": "Source"
+        "text": "Lake Albert fills a long trough on the border of Uganda and the Democratic Republic of the Congo. The international boundary runs along the lake rather than stopping at its shore.",
+        "source": "https://wldb.ilec.or.jp/index.php/Display/html/3592",
+        "label": "wldb.ilec.or.jp"
       },
       {
         "text": "The Nile barely uses the length of Lake Albert. The Victoria Nile enters near its northern end and the Albert Nile leaves nearby, while the Semliki arrives at the far southern end.",
@@ -2916,19 +2916,19 @@
     "name": "Lac Moeru",
     "options": [
       {
-        "text": "Fishers on Lake Mweru take lights out at night to draw shoals of tiny chisense to their nets. They adapted the method from fisheries on Lake Tanganyika.",
-        "source": "https://www.fao.org/4/v2648e/V2648E09.htm",
-        "label": "Source"
+        "text": "Off Kilwa Island, parts of Mweru are only about two metres deep. A relatively narrow trough holds the deepest water in the lake.",
+        "source": "https://www.fao.org/4/y5056e/y5056e.pdf",
+        "label": "fao.org"
       },
       {
-        "text": "Follow the water into and out of Lake Mweru and its river changes names. It arrives from Lake Bangweulu as the Luapula and leaves as the Luvua on its way toward the Congo.",
+        "text": "The number of fish species recorded in Mweru exceeds a hundred. A much smaller subset supplies its commercial fisheries.",
         "source": "https://www.fao.org/4/T0473E/T0473E13.htm",
-        "label": "Source"
+        "label": "fao.org"
       },
       {
-        "text": "Before the Luapula reaches Mweru, it spreads across a floodplain dotted with permanent lagoons. The floodplain alone covers well over a thousand square kilometres.",
+        "text": "Mweru and Mweru Wantipa are separate lakes near each other. The international border runs through Mweru, while its smaller namesake lies inside Zambia.",
         "source": "https://www.fao.org/4/T0473E/T0473E13.htm",
-        "label": "Source"
+        "label": "fao.org"
       },
       {
         "text": "Although it sits close to the lakes of the East African Rift, Mweru sends its water west towards the Atlantic. Its outlet, the Luvua, joins the Lualaba and the Congo.",
@@ -2957,9 +2957,9 @@
         "label": "Source"
       },
       {
-        "text": "Australia ranks Lake Torrens as its second-largest lake by area. Most years that area is a salt-covered basin, so an outline on a map and the water visible on the ground look very different.",
-        "source": "https://www.ga.gov.au/scientific-topics/national-location-information/geography/largest-longest-highest",
-        "label": "ga.gov.au"
+        "text": "Rain that reaches Lake Torrens usually has no river route to the sea. The water collects in a closed basin and leaves mainly by evaporation or seepage.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/lake-torrens-is-a-lake-again-150566/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -2968,19 +2968,19 @@
     "name": "Issyk-Kul",
     "options": [
       {
-        "text": "Issyk-Kul means “hot lake.” High among the mountains of Kyrgyzstan, its open winter water is a refuge for migrating waterbirds, including white-headed ducks.",
-        "source": "https://rsis.ramsar.org/sites/default/files/rsiswp_search/exports/Ramsar-Sites-annotated-summary-Kyrgyzstan.pdf",
-        "label": "Source"
+        "text": "Issyk-Kul tastes slightly salty even though mountain streams feed it. Measurements put it at roughly six grams of salt per litre, well below ocean salinity.",
+        "source": "https://rsis.ramsar.org/RISapp/files/RISrep/KG1231RIS.pdf",
+        "label": "rsis.ramsar.org"
       },
       {
-        "text": "Archaeologists diving off the north shore have found medieval brick buildings and kilns. Ground where people once worked is now under the lake.",
-        "source": "https://doaj.org/article/0c3f1638932949eca03d8edcf51902ab",
-        "label": "Source"
+        "text": "The basin drops more than six hundred metres below the lake surface. Snow peaks surround a body of water deeper than some seas.",
+        "source": "https://www.unesco.org/en/mab/issyk-kul",
+        "label": "unesco.org"
       },
       {
-        "text": "Ancient river channels still carry water along the lakebed. Cold, dense water can run down these submerged valleys toward the deep basin.",
-        "source": "https://doi.org/10.5194%2Fhess-22-6279-2018",
-        "label": "Source"
+        "text": "Wintering waterbirds gather at Issyk-Kul high in the Tian Shan. Open water here provides a stopping place surrounded by frozen mountain country.",
+        "source": "https://rsis.ramsar.org/RISapp/files/RISrep/KG1231RIS.pdf",
+        "label": "rsis.ramsar.org"
       },
       {
         "text": "Issyk-Kul sits more than 1,600 metres above the sea, ringed by the Tian Shan. The rivers flowing down from those snowy peaks enter a basin with no surface outlet.",
@@ -3020,19 +3020,19 @@
     "name": "Micronesia",
     "options": [
       {
-        "text": "Marshallese navigators made charts of bent sticks to teach how ocean swells change around islands. A straight coastline on paper would miss the very thing a navigator could feel beneath a canoe.",
-        "source": "https://ocean.si.edu/human-connections/history-cultures/navigating-waters-micronesian-stick-charts?src=longreads",
-        "label": "Source"
+        "text": "The name Micronesia means “small islands”, but the islands come in very different heights. Volcanic high islands and low coral atolls share the regional name.",
+        "source": "https://naturalhistory2.si.edu/botany/micronesia/geography.htm",
+        "label": "naturalhistory2.si.edu"
       },
       {
-        "text": "At Nan Madol off Pohnpei, people built a ceremonial centre on more than ninety artificial islets. Canals run between the monumental stone walls, so a canoe could travel through the settlement.",
-        "source": "https://whc.unesco.org/uploads/nominations/1503.pdf",
-        "label": "UNESCO"
+        "text": "Guam and the Marshall Islands lie in the same geographic region. Between them stretch the Caroline Islands, a reminder that Micronesia covers several separate chains.",
+        "source": "https://naturalhistory2.si.edu/botany/micronesia/geography.htm",
+        "label": "naturalhistory2.si.edu"
       },
       {
-        "text": "In the outer islands of Yap, building a voyaging canoe and learning to navigate it are part of the same tradition. Navigators read the sky and movement of the water on long open-ocean crossings.",
-        "source": "https://ich.unesco.org/en/RL/carolinian-wayfinding-and-canoe-making-01735",
-        "label": "UNESCO"
+        "text": "Banaba is an unusual Micronesian island. In a country otherwise made up of low atolls, this raised coral island carries an elevated plateau.",
+        "source": "https://mfed.gov.ki/sites/default/files/2025-06/Sustainable%20Integrated%20Water%20Resources%20and%20Waterwater%20Managemen%20-%20SOPAC%20Integrated%20Water%20Resources%20Management%20Diagnostic%20Report%20Kiribati%2019_10_07.pdf",
+        "label": "mfed.gov.ki"
       },
       {
         "text": "Micronesia's islands are scattered across an expanse comparable to Australia, but their combined land area is smaller than Rhode Island. Most of what the regional name covers is ocean.",
@@ -3514,18 +3514,18 @@
     "name": "Ecuador",
     "options": [
       {
-        "text": "The Ecuadorian pasillo takes its name from the dancers’ “small step.” Its music brings an Andean song tradition together with the waltz, minuet and Spanish bolero.",
-        "source": "https://ich.unesco.org/en/RL/01702",
+        "text": "Quito grew high in the Andes, at roughly 2,850 metres. An equatorial capital can have cool days because its streets are nearly three kilometres above sea level.",
+        "source": "https://whc.unesco.org/en/list/2/",
         "label": "UNESCO"
       },
       {
-        "text": "About a thousand kilometres off mainland Ecuador, three ocean currents meet around the Galápagos. The islands’ unusual mix of marine life begins with that underwater crossroads.",
+        "text": "Sangay National Park spans a steep slice of Ecuador from tropical foothills to high volcanic terrain. A short distance on the map covers an enormous change in altitude.",
+        "source": "https://whc.unesco.org/en/list/260/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Galápagos sit where tectonic and volcanic activity keeps making new ground. The archipelago preserves islands at different stages in the life of a volcanic island chain.",
         "source": "https://whc.unesco.org/en/list/1/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "The finest Ecuadorian toquilla hats take as long as eight months to weave. Workers strip the palm fibre, boil it and dry it before weaving the crown and brim.",
-        "source": "https://ich.unesco.org/en/RL/00729",
         "label": "UNESCO"
       },
       {
@@ -3540,19 +3540,19 @@
     "name": "Egypt",
     "options": [
       {
-        "text": "In Egypt, Coptic Christians and Muslims take part in festivals that commemorate the Holy Family’s flight from Bethlehem. Processions retrace parts of the journey.",
-        "source": "https://ich.unesco.org/en/RL/01700",
+        "text": "At Abu Simbel, engineers cut rock temples into blocks and moved them uphill. The original site disappeared beneath the reservoir created by the Aswan High Dam.",
+        "source": "https://whc.unesco.org/en/list/88/",
         "label": "UNESCO"
       },
       {
-        "text": "The pyramids of Giza belong to a much larger landscape of the dead. Around the old capital of Memphis, it stretches to Dahshur and includes rock-cut tombs and low, flat-roofed mastabas.",
-        "source": "https://whc.unesco.org/en/list/86/",
+        "text": "Mount Sinai rises on Egypt's Asian side. An ancient monastery at its foot stands in the rugged mountains of a country often pictured as a flat African desert.",
+        "source": "https://whc.unesco.org/en/list/954/",
         "label": "UNESCO"
       },
       {
-        "text": "Egypt’s Western Desert contains a valley full of early whale fossils. Wadi Al-Hitan preserves the transition from land-dwelling mammals to whales that spent their lives at sea.",
-        "source": "https://whc.unesco.org/en/list/1186/",
-        "label": "UNESCO"
+        "text": "The Nile fans out into a broad triangle before it enters the Mediterranean. Much of Egypt's population occupies that delta and the narrow river valley leading to it.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/eg.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
         "text": "Egypt occupies the land bridge between Africa and Asia. At the isthmus, the Suez Canal cuts a sea-level route across the land and leaves the Sinai Peninsula on its Asian side.",
@@ -3592,18 +3592,18 @@
     "name": "Iceland",
     "options": [
       {
-        "text": "Starting in 930, people gathered outdoors at Þingvellir for two weeks a year to make laws and settle disputes. The assembly met there for more than eight centuries.",
-        "source": "https://whc.unesco.org/en/list/1152/",
-        "label": "UNESCO"
+        "text": "Iceland acquired a new island within living memory. Surtsey rose out of the Atlantic in 1963, and scientists have tracked life colonising it ever since.",
+        "source": "https://whc.unesco.org/en/list/1267/",
+        "label": "whc.unesco.org"
       },
       {
-        "text": "Eight of the ten central volcanoes in Vatnajökull National Park lie under ice. When water escapes the glacier’s edge, the sudden flood has an Icelandic name, jökulhlaup.",
+        "text": "The rift at Þingvellir opens as the North American and Eurasian plates pull apart. On dry land you can walk among the cracks marking an ocean-spreading system.",
+        "source": "https://whc.unesco.org/en/tentativelists/5588/",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "Icelandic has a word for floods released from beneath glaciers, jökulhlaup. In Vatnajökull, heat from volcanoes beneath the ice can help unleash them.",
         "source": "https://whc.unesco.org/en/list/1604/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "Icelandic towns have turned heated outdoor pools into gathering places year-round. A soak in a public hot tub can be as much an occasion for conversation as for swimming.",
-        "source": "https://ich.unesco.org/en/RL/02249",
         "label": "UNESCO"
       },
       {
@@ -3618,18 +3618,18 @@
     "name": "India",
     "options": [
       {
-        "text": "At a Sankirtana performance in Manipur, the audience sits around the performers. Two drummers and a small group of singers and dancers tell stories of Krishna in a hall or courtyard.",
-        "source": "https://ich.unesco.org/en/RL/00843",
+        "text": "Dholavira was a city on an island in the salt wastes of the Great Rann of Kutch. Its inhabitants built reservoirs to store a scarce resource at the city gates.",
+        "source": "https://whc.unesco.org/en/list/1645/",
         "label": "UNESCO"
       },
       {
-        "text": "The builders of Ramappa Temple in Telangana put porous “floating bricks” high in its tower. Using lighter bricks reduced the weight that the carved stone below had to carry.",
-        "source": "https://whc.unesco.org/en/list/1570/",
+        "text": "At Rani-ki-Vav, reaching water meant walking down through seven levels of sculpture. This Gujarati stepwell was designed like a temple turned upside down.",
+        "source": "https://whc.unesco.org/en/list/922/",
         "label": "UNESCO"
       },
       {
-        "text": "During Navaratri in Gujarat, garba dancers circle an oil lamp inside a perforated earthen pot, or an image of the goddess Amba. The circle moves anticlockwise to singing and clapping.",
-        "source": "https://ich.unesco.org/en/RL/01962",
+        "text": "The Western Ghats intercept India's monsoon winds. This mountain chain is older than the Himalayas, though its peaks are far lower.",
+        "source": "https://whc.unesco.org/en/list/1342/",
         "label": "UNESCO"
       },
       {
@@ -3644,18 +3644,18 @@
     "name": "Indonesia",
     "options": [
       {
-        "text": "A Papuan noken bag can carry a baby, a catch of fish or a load of firewood. Knotted or woven from plant fibres, it can also be presented as a peace offering.",
-        "source": "https://ich.unesco.org/en/USL/00619",
+        "text": "In Papua's Lorentz National Park, one protected area runs from tropical seas through swamps and forest to high alpine terrain. The change in climate happens on a single mountain slope.",
+        "source": "https://whc.unesco.org/en/list/955/",
         "label": "UNESCO"
       },
       {
-        "text": "Wayang puppet theatre flourished both in village performances and at the royal courts of Java and Bali. As it spread to other islands, each developed its own music and styles of puppetry.",
-        "source": "https://ich.unesco.org/en/RL/00063",
+        "text": "On Bali, irrigation associations called subak link rice terraces to water temples. Water flowing downhill connects fields owned by different farmers.",
+        "source": "https://whc.unesco.org/en/list/1194/",
         "label": "UNESCO"
       },
       {
-        "text": "At Prambanan in Java, three temples honour Shiva, Vishnu and Brahma, and three others honour the animals that serve them. Scenes from the Ramayana run along the temple walls.",
-        "source": "https://whc.unesco.org/en/list/642/",
+        "text": "Komodo dragons live naturally on a small set of Indonesian islands. An animal large enough to dominate its landscape has a native range that fits into a tiny patch of the archipelago.",
+        "source": "https://whc.unesco.org/en/list/609/",
         "label": "UNESCO"
       },
       {
@@ -3670,18 +3670,18 @@
     "name": "Mexico",
     "options": [
       {
-        "text": "At the January feast in Chiapa de Corzo, the word parachicos names both the dancers and the dance they perform in honour of the saints.",
-        "source": "https://ich.unesco.org/en/RL/00399",
+        "text": "Monarch butterflies from across eastern North America gather on a small patch of Mexican mountain forest for winter. Entire trees can be hidden beneath clusters of wings.",
+        "source": "https://whc.unesco.org/en/list/1290/",
         "label": "UNESCO"
       },
       {
-        "text": "At the foot of Popocatépetl, houses in Puebla wear tiles on the outside. Their glazed walls are as much part of the historic city as its cathedral.",
-        "source": "https://whc.unesco.org/en/list/416/",
+        "text": "The dunes of Mexico's Gran Desierto de Altar stand beside the dark lava and giant craters of El Pinacate. Wind and volcanism shaped two very different deserts side by side.",
+        "source": "https://whc.unesco.org/en/list/1410/",
         "label": "UNESCO"
       },
       {
-        "text": "At El Tajín near the Gulf coast, a pyramid is named for the niches that cover its sides. This city rose to prominence after the fall of Teotihuacan.",
-        "source": "https://whc.unesco.org/en/list/631/",
+        "text": "Grey whales return from northern feeding grounds to shallow lagoons on Baja California. Ojo de Liebre and San Ignacio provide winter nurseries on the Pacific side of the peninsula.",
+        "source": "https://whc.unesco.org/en/list/554/",
         "label": "UNESCO"
       },
       {
@@ -3738,8 +3738,8 @@
       },
       {
         "text": "On Taveuni you can step across the 180th meridian between the eastern and western hemispheres. Both feet are still in Fiji, on the same calendar day.",
-        "source": "https://www.fijimarinas.com/wp-content/uploads/2025/09/Soggy-Paws-Fiji-Compendium-Rev-2025.3-%E2%80%93-13-Aug-2025.pdf",
-        "label": "fijimarinas.com"
+        "source": "https://www.fiji.travel/places-to-go/taveuni-island/locations/the-perfect-3-day-taveuni-itinerary",
+        "label": "fiji.travel"
       }
     ]
   },
@@ -3826,19 +3826,19 @@
     "name": "Federated States of Micronesia",
     "options": [
       {
-        "text": "On Yap, stone money can change hands without moving. For the largest carved rings, the community recognises the new owner while the stone stays where it was.",
-        "source": "https://www.si.edu/object/nmah_1069139",
-        "label": "Source"
+        "text": "The country's highest summit, Nanlaud, is on Pohnpei. It rises more than 780 metres above the sea in a country that also has low coral islets.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/fm.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "Off Pohnpei, people built Nan Madol across a network of artificial islets. Basalt walls still mark the ceremonial compounds, with canoe channels where a town on land might have streets.",
-        "source": "https://whc.unesco.org/en/list/1503/",
-        "label": "UNESCO"
+        "text": "The high islands can support streams, while people on low atolls depend on rainfall and thin freshwater lenses. Two islands in the same federation can have entirely different supplies of drinking water.",
+        "source": "https://www.hawaii.edu/climate-data-portal/wp-content/uploads/2022/08/FSM_NC2_2015.pdf",
+        "label": "hawaii.edu"
       },
       {
-        "text": "In the outlying islands of Yap State, the craft of building a sailing canoe is passed on alongside the skill of finding land. Navigators learn to read waves, weather and the night sky.",
-        "source": "https://ich.unesco.org/en/RL/carolinian-wayfinding-and-canoe-making-01735",
-        "label": "UNESCO"
+        "text": "The federal capital, Palikir, is on Pohnpei. The country shares the name of the wider Micronesian region, but its capital governs only four island states within it.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/fm.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
         "text": "Four states share the country's 607 islands. From west to east they are Yap, Chuuk, Pohnpei and Kosrae, strung along the Caroline Islands.",
@@ -3852,19 +3852,19 @@
     "name": "Guam",
     "options": [
       {
-        "text": "A CHamoru latte stone comes in two parts. A bowl-shaped cap rests on a stone pillar, and rows of these supports once held buildings above the ground.",
-        "source": "https://pacific.navfac.navy.mil/Portals/72/NAVFAC_PACIFIC/Documents/PRINTABLE%20-%20AAFB%20Archaeology%20Booklet%20V16%20-%20Pages_June%202019%20from%20CardnoTEC.pdf?ver=XxaqNQtvyewsqbJ1gVPhcQ%3D%3D",
-        "label": "Source"
+        "text": "Guam changes character halfway down the island. The north is a relatively level limestone plateau, while the south rises into rugged volcanic hills.",
+        "source": "https://ghs.guam.gov/sites/default/files/guam_2024_hmp_20240711_ms_updated_maps.pdf",
+        "label": "ghs.guam.gov"
       },
       {
-        "text": "When an introduced snake wiped out most of Guam’s forest birds, trees lost their seed couriers. Researchers found native seeds no longer reaching damaged forest from intact stands as they did on neighbouring islands.",
-        "source": "https://pubmed.ncbi.nlm.nih.gov/23741503/",
-        "label": "Source"
+        "text": "Much of northern Guam gets drinking water from a lens of fresh groundwater in limestone. Salt water lies underneath it, even inland from the shore.",
+        "source": "https://epa.guam.gov/wp-content/uploads/2023/11/2020-GUAM-IR.pdf",
+        "label": "epa.guam.gov"
       },
       {
-        "text": "CHamoru sailors built outrigger canoes so fast that European visitors nicknamed them “flying proas.” A large seagoing form is known on Guam as a sakman.",
-        "source": "https://guam.com/guides/sakman-chamoru-seafaring",
-        "label": "Source"
+        "text": "Mount Lamlam reaches only about 400 metres above sea level. The highest point on this island sits in the mountainous south.",
+        "source": "https://ghs.guam.gov/sites/default/files/guam_2024_hmp_20240711_ms_updated_maps.pdf",
+        "label": "ghs.guam.gov"
       },
       {
         "text": "The largest island in all of Micronesia sits at the southern tip of one island chain. Follow the Marianas south and the last island you reach is Guam.",
@@ -3956,19 +3956,19 @@
     "name": "Kiribati",
     "options": [
       {
-        "text": "Kiribati once had different calendar dates at opposite ends of the country. In 1995 it changed how its islands reckoned the date so they could share the same working day.",
-        "source": "https://www.visit-kiribati.com/guides/the-date-line-problem/",
-        "label": "Source"
+        "text": "Kiritimati is the world's largest coral atoll by land area. The measure matters because other atolls enclose much larger expanses of lagoon.",
+        "source": "https://mfed.gov.ki/sites/default/files/2025-06/Sustainable%20Integrated%20Water%20Resources%20and%20Waterwater%20Managemen%20-%20SOPAC%20Integrated%20Water%20Resources%20Management%20Diagnostic%20Report%20Kiribati%2019_10_07.pdf",
+        "label": "mfed.gov.ki"
       },
       {
-        "text": "The eight islands of the Phoenix group give only a hint of the landscape below. The protected waters around them also contain great seamounts that never break the surface.",
-        "source": "https://whc.unesco.org/en/list/1325",
-        "label": "UNESCO"
+        "text": "One of Kiribati's islands stands apart geologically. Banaba is raised coral, while the country's other 32 islands are classed as atolls.",
+        "source": "https://mfed.gov.ki/sites/default/files/2025-06/Sustainable%20Integrated%20Water%20Resources%20and%20Waterwater%20Managemen%20-%20SOPAC%20Integrated%20Water%20Resources%20Management%20Diagnostic%20Report%20Kiribati%2019_10_07.pdf",
+        "label": "mfed.gov.ki"
       },
       {
-        "text": "Traditional armour from Kiribati used materials an atoll could supply. A shirt of thick coconut fibre could be worn with a helmet made from the spiny skin of a porcupinefish.",
-        "source": "https://smarthistory.org/kiribati-armor",
-        "label": "Source"
+        "text": "Kiribati has three separate groups on a Pacific map. From west to east, its territory stretches through the Gilbert, Phoenix and Line islands.",
+        "source": "https://mfed.gov.ki/sites/default/files/2025-06/Sustainable%20Integrated%20Water%20Resources%20and%20Waterwater%20Managemen%20-%20SOPAC%20Integrated%20Water%20Resources%20Management%20Diagnostic%20Report%20Kiribati%2019_10_07.pdf",
+        "label": "mfed.gov.ki"
       },
       {
         "text": "Kiribati has land in all four hemispheres. Its islands lie on both sides of the equator and on both sides of the 180th meridian.",
@@ -4268,18 +4268,18 @@
     "name": "England",
     "options": [
       {
-        "text": "Rural Cheshire was quiet enough for Jodrell Bank to listen to space. Radar echoes were already helping researchers study cosmic rays there in 1945.",
-        "source": "https://whc.unesco.org/en/list/1594/",
+        "text": "Walk along the Jurassic Coast from west to east and the exposed rocks generally get younger. In one stretch of shore you can cross the Triassic, Jurassic and Cretaceous periods.",
+        "source": "https://unesco.org.uk/our-network/world-heritage-sites/dorset-and-east-devon-coast-the-jurassic-coast",
+        "label": "unesco.org.uk"
+      },
+      {
+        "text": "Hot springs determined where the Romans built the baths at Bath. Geothermal water still reaches the surface in the middle of the city.",
+        "source": "https://whc.unesco.org/en/list/428/",
         "label": "UNESCO"
       },
       {
-        "text": "At Ironbridge in Shropshire, the iron industry put its product on display in the most literal way. The bridge across the Severn was built of cast iron.",
-        "source": "https://whc.unesco.org/en/list/371/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "Cornish miners carried their hard-rock mining skills overseas. The engine houses standing above Cornwall's mines have relatives on mining landscapes on other continents.",
-        "source": "https://whc.unesco.org/en/list/1215/",
+        "text": "Water power helped set the pattern of settlement in the Derwent Valley. Early cotton mills rose along the river, with workers' housing built near the machinery.",
+        "source": "https://whc.unesco.org/en/list/1030/",
         "label": "UNESCO"
       },
       {
@@ -4424,18 +4424,18 @@
     "name": "Ireland",
     "options": [
       {
-        "text": "The great passage tombs beside the Boyne were already standing thousands of years before Ireland's medieval castles. Carved stones mark the entrances to a landscape built for the dead.",
-        "source": "https://whc.unesco.org/en/list/659/",
-        "label": "UNESCO"
+        "text": "Ireland has a broad central lowland ringed by uplands near the coast. Its outline of mountains is almost the reverse of an island with a single high mountain in the middle.",
+        "source": "https://www.dfa.ie/media/dfa/alldfawebsitemedia/ourrolesandpolicies/about_ireland_ireland_in_brief.pdf",
+        "label": "dfa.ie"
       },
       {
-        "text": "Irish mythology gives the hero Cú Chulainn a hurley. The stick-and-ball game he plays survives on pitches across Ireland today.",
-        "source": "https://ich.unesco.org/en/RL/01263",
-        "label": "UNESCO"
+        "text": "The Shannon flows through a succession of lakes before opening into a long Atlantic estuary. Ireland's longest river is a freshwater route through much of the island's interior.",
+        "source": "https://www.dfa.ie/media/dfa/alldfawebsitemedia/ourrolesandpolicies/about_ireland_ireland_in_brief.pdf",
+        "label": "dfa.ie"
       },
       {
-        "text": "The Irish uilleann pipes take their air from bellows worked with an elbow, leaving the player's mouth free while the pipes sound.",
-        "source": "https://ich.unesco.org/en/RL/01264",
+        "text": "Ireland's harp is played as well as worn as an emblem. Irish harpers keep alive distinct traditions of plucking metal strings with fingernails or other strings with fingertips.",
+        "source": "https://ich.unesco.org/en/RL/01461",
         "label": "UNESCO"
       },
       {
@@ -4450,18 +4450,18 @@
     "name": "Italy",
     "options": [
       {
-        "text": "Water has dissolved more than 900 caves into a small area of gypsum in the northern Apennines. Some go deeper than 250 metres.",
-        "source": "https://whc.unesco.org/en/list/1692/",
+        "text": "The jagged towers of the Dolomites preserve ancient marine environments. Rocks that record tropical seas now stand thousands of metres up in the Italian Alps.",
+        "source": "https://whc.unesco.org/en/list/1237/",
         "label": "UNESCO"
       },
       {
-        "text": "In Bologna, porticoes link one building to the next. Over the centuries these sheltered walkways evolved into a network stretching for dozens of kilometres.",
-        "source": "https://whc.unesco.org/en/list/1650/",
+        "text": "Italy's Aeolian Islands gave volcanology two technical terms. The names of Vulcano and Stromboli live on in descriptions of Vulcanian and Strombolian eruptions.",
+        "source": "https://whc.unesco.org/en/list/908/",
         "label": "UNESCO"
       },
       {
-        "text": "Rome built the Appian Way as a military road. Its eventual destination was Brindisi, the Adriatic port from which armies could sail east.",
-        "source": "https://whc.unesco.org/en/list/1708/",
+        "text": "Mount Etna is an active volcano on the island of Sicily. People have recorded its eruptions across more than two thousand years, an unusually long written history for a volcano.",
+        "source": "https://whc.unesco.org/en/list/1427/",
         "label": "UNESCO"
       },
       {
@@ -4476,19 +4476,19 @@
     "name": "Latvia",
     "options": [
       {
-        "text": "In western Latvia, Suiti women sing over a sustained vocal drone. Their Catholic community has kept the tradition in a largely Lutheran region.",
-        "source": "https://ich.unesco.org/en/USL/00314",
-        "label": "UNESCO"
+        "text": "At Cape Kolka the open Baltic meets the Gulf of Riga. Waves arriving from different directions can cross at the tip of the cape.",
+        "source": "https://www.latvia.travel/en/sight/cape-kolka",
+        "label": "latvia.travel"
       },
       {
-        "text": "Riga's streets preserve two very different building fashions side by side, elaborate Art Nouveau façades and nineteenth-century wooden houses.",
-        "source": "https://whc.unesco.org/en/list/852/",
-        "label": "UNESCO"
+        "text": "Latvia's highest hill, Gaiziņkalns, rises only about 312 metres above the sea. Even at the country's highest point you are still well below the height of many European capitals.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/lg.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "Kuldīga still follows the street plan it had when it helped govern the Duchy of Courland. Its log buildings show how local carpenters borrowed ideas from across the Baltic.",
-        "source": "https://whc.unesco.org/en/list/1658/",
-        "label": "UNESCO"
+        "text": "The Gulf of Riga cuts deep into Latvia's Baltic coast. The capital stands near the mouth of the Daugava, where a river from the interior reaches that sheltered gulf.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/lg.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
         "text": "Latvia's Venta waterfall is far wider than it is high. A roughly 250-metre-wide ledge crosses the river at Kuldīga, yet the water drops only about two metres.",
@@ -4502,17 +4502,17 @@
     "name": "Liechtenstein",
     "options": [
       {
-        "text": "Take the shortest route from Liechtenstein to an ocean and you still have to cross two national borders. Even its neighbours are landlocked.",
+        "text": "On the Grauspitz you stand roughly 2,170 metres above Liechtenstein's lowest ground. A country small enough to cross in a day still contains a considerable slice of the Alps.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ls.json",
         "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "The country took its name from the family that bought its lands. The family in turn took its name from a castle in Austria.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ls.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "Liechtenstein's municipal boundaries look like a patchwork. Several municipalities have detached pieces of land, so leaving a village's territory need not mean leaving it for good.",
+        "source": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-auswaertige-angelegenheiten/bekaempfung-rassismus-u.-minderheitsschutz/pdf-llv-aaa-nationale_minderheiten-rahmengl00en.pdf",
+        "label": "llv.li"
       },
       {
-        "text": "A British visitor can hum along to Liechtenstein's national anthem on a first hearing. It uses the tune of God Save the King.",
+        "text": "The Rhine Valley occupies the western part of Liechtenstein. Head east across this narrow country and the flat valley floor gives way to Alpine slopes.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ls.json",
         "label": "CIA World Factbook (archived profile)"
       },
@@ -4528,18 +4528,18 @@
     "name": "Lithuania",
     "options": [
       {
-        "text": "A Lithuanian sodas is a garden you can hang above a cradle. Its makers thread rye straw into geometric shapes to wish the child well.",
-        "source": "https://ich.unesco.org/en/RL/01987",
+        "text": "On the Curonian Spit, people planted forest to hold back dunes that had engulfed settlements. Keeping the sand still became a deliberate part of managing this Baltic coast.",
+        "source": "https://whc.unesco.org/en/list/994/",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "Kernavė's hill forts overlook the Neris River. Archaeologists can follow changing settlement across thousands of years in a single Lithuanian river valley.",
+        "source": "https://whc.unesco.org/en/list/1137/",
         "label": "UNESCO"
       },
       {
-        "text": "When Kaunas unexpectedly became Lithuania's temporary capital between the world wars, it had to build the institutions of a capital virtually from scratch.",
-        "source": "https://whc.unesco.org/en/list/1661/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "In Lithuanian sutartinės, singers weave together different melodies and rhythms. The name comes from a verb meaning to agree or be in harmony.",
-        "source": "https://ich.unesco.org/en/RL/00433",
+        "text": "Vilnius grew where the Neris and Vilnia meet. Its old centre developed around the hill of an early castle at that river junction.",
+        "source": "https://whc.unesco.org/en/list/541/",
         "label": "UNESCO"
       },
       {
@@ -4554,17 +4554,17 @@
     "name": "Luxembourg",
     "options": [
       {
-        "text": "Pilgrims hop through Echternach every Pentecost Tuesday. The procession survived repeated bans and has been documented since around 1100.",
-        "source": "https://ich.unesco.org/en/RL/00392",
-        "label": "UNESCO"
+        "text": "Luxembourg has two distinct landscapes with distinct names. The northern Oesling belongs to the Ardennes, while the lower Gutland spreads across the south.",
+        "source": "https://luxembourg.public.lu/en/society-and-culture/territoire-et-climat/territoire.html",
+        "label": "luxembourg.public.lu"
       },
       {
-        "text": "Successive European powers kept strengthening Luxembourg City's fortifications. Its rocky promontory became a fortress built in layers by its own conquerors.",
-        "source": "https://whc.unesco.org/en/list/699/",
-        "label": "UNESCO"
+        "text": "Part of Luxembourg's eastern edge follows the Moselle. The river valley makes a narrow wine-growing strip along the German border.",
+        "source": "https://luxembourg.public.lu/en/society-and-culture/territoire-et-climat/territoire.html",
+        "label": "luxembourg.public.lu"
       },
       {
-        "text": "Luxembourg's name grew out of the name of a small fortress. The modern country's capital grew up around its site.",
+        "text": "Luxembourg has three neighbours touching its small territory. Travel clockwise from the west and you pass Belgium, Germany and France without encountering a coast.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/lu.json",
         "label": "CIA World Factbook (archived profile)"
       },
@@ -4595,9 +4595,9 @@
         "label": "UNESCO"
       },
       {
-        "text": "Lake Ohrid has persisted through multiple ice ages on the border with Albania. Its long isolation left North Macedonia with lake animals whose entire natural range fits in that one basin.",
-        "source": "https://whc.unesco.org/en/list/99",
-        "label": "whc.unesco.org"
+        "text": "Two countries reach their highest point on the same summit. The border between Albania and North Macedonia goes straight over Mount Korab.",
+        "source": "https://assets.publishing.service.gov.uk/media/69b175ba24c6431b84f0e475/North_Macedonia_Toponymic_Factfile.pdf",
+        "label": "assets.publishing.service.gov.uk"
       }
     ]
   },
@@ -4606,18 +4606,18 @@
     "name": "Malta",
     "options": [
       {
-        "text": "The chambers of the Ħal Saflieni Hypogeum were cut down into solid rock. Some imitate architectural details of Malta's temples above ground.",
-        "source": "https://whc.unesco.org/en/list/130/",
-        "label": "UNESCO"
+        "text": "Malta's highest point is at the Dingli Cliffs. The country reaches its greatest height just beside the coast rather than far inland.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/mt.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "Malta's flat ftira is sourdough, despite a name derived from an Arabic word for unleavened bread. The split loaf might hold tuna, capers and tomato.",
-        "source": "https://ich.unesco.org/en/RL/01580",
-        "label": "UNESCO"
+        "text": "Gozo and Malta are separated by a much smaller inhabited island, Comino. A crossing between the two main islands passes a third one along the way.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/mt.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "Prehistoric builders on Malta and Gozo raised temples out of immense stone blocks. Several have rooms shaped like lobes around a central passage.",
-        "source": "https://whc.unesco.org/en/list/132/",
+        "text": "Valletta occupies a peninsula between two natural harbours. Its position let a fortified city watch the water on both sides.",
+        "source": "https://whc.unesco.org/en/list/131/",
         "label": "UNESCO"
       },
       {
@@ -4632,17 +4632,17 @@
     "name": "Moldova",
     "options": [
       {
-        "text": "At Mileștii Mici the wine collection is measured in millions of bottles. The underground galleries hold a Guinness record for the size of the cellar's collection.",
-        "source": "https://www.guinnessworldrecords.com/world-records/largest-wine-cellar-by-number-of-bottles",
-        "label": "www.guinnessworldrecords.com"
+        "text": "At Old Orhei the Răut River bends around tall limestone promontories. Cliffs that the river carved became sites for caves, settlements and monasteries.",
+        "source": "https://whc.unesco.org/en/tentativelists/6220",
+        "label": "whc.unesco.org"
       },
       {
-        "text": "To find the river that gave Moldova its name, look across the border in Romania.",
+        "text": "Moldova's highest ground, Dealul Bălănești, reaches only about 430 metres. The land falls to just a few metres above sea level along the Dniester.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/md.json",
         "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "Moldova's anthem began as a twelve-stanza poem. The sung version skips from stanza two to five, then to nine and twelve.",
+        "text": "The Prut follows Moldova's western edge beside Romania. Farther east the Dniester takes a separate course towards the Black Sea, so the country sits between two different river systems.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/md.json",
         "label": "CIA World Factbook (archived profile)"
       },
@@ -5141,9 +5141,9 @@
         "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "Gorham's Cave opens beside the sea today. When Neanderthals used it, lower sea levels left a broad coastal plain between the cave and the Mediterranean.",
-        "source": "https://unesco.org.uk/our-network/world-heritage-sites/gorhams-cave-complex",
-        "label": "unesco.org.uk"
+        "text": "An ancient sand dune climbs roughly 300 metres up the eastern face of the Rock of Gibraltar. What looks like a mountainside preserves sand piled up when the coastline lay farther out.",
+        "source": "https://www.gibmuseum.gi/news/the-great-gibraltar-sand-dune-90",
+        "label": "gibmuseum.gi"
       }
     ]
   },
@@ -5204,19 +5204,19 @@
     "name": "Jersey",
     "options": [
       {
-        "text": "At low tide visitors can walk out to Elizabeth Castle from Jersey. When the water returns, it cuts off the route to the fortress.",
-        "source": "https://www.jerseyheritage.org/visit/places-to-visit/elizabeth-castle/",
-        "label": "Jersey Heritage"
+        "text": "At La Cotte de St Brélade, a ravine in the coastal cliffs preserves Neanderthal occupation. During colder periods the sea retreated, putting today's seaside site well inland.",
+        "source": "https://www.jerseyheritage.org/history/la-cotte/",
+        "label": "jerseyheritage.org"
       },
       {
-        "text": "At La Hougue Bie you can go inside a Neolithic passage grave. A grass-covered mound hides the stone chamber underground.",
-        "source": "https://www.jerseyheritage.org/history/the-discovery-of-la-hougue-bie/",
-        "label": "www.jerseyheritage.org"
-      },
-      {
-        "text": "Jersey's connection to the British Crown goes back to the Duchy of Normandy. These islands remained attached to the Crown after most of Normandy was lost.",
+        "text": "Jersey is the largest and southernmost of the Channel Islands. A map centred on Britain can disguise just how close the island lies to France.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/je.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Jersey's protected wetlands extend well offshore. Rocky outliers such as Les Écréhous emerge from a much larger area of reef and sand exposed at low tide.",
+        "source": "https://www.gov.je/environment/seacoast/pages/ramsar.aspx",
+        "label": "gov.je"
       },
       {
         "text": "At a large spring tide, Jersey's exposed area can nearly double between high and low water. Reefs and broad shelves of seabed briefly become part of the island.",
@@ -5282,19 +5282,19 @@
     "name": "Kaliningrad Oblast",
     "options": [
       {
-        "text": "Could you cross all seven bridges of Königsberg exactly once? Euler's proof that you could not helped launch graph theory. The city is now Kaliningrad.",
-        "source": "https://old.maa.org/press/periodicals/convergence/leonard-eulers-solution-to-the-konigsberg-bridge-problem",
-        "label": "old.maa.org"
+        "text": "The Sambian Peninsula juts into the Baltic between two lagoons. On a map, its blunt head separates the thin Vistula and Curonian spits.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/kaliningrad-baltic-sea-russia-51793/",
+        "label": "science.nasa.gov"
       },
       {
-        "text": "The Curonian Spit is a long strip of sand shared with Lithuania. People planted it to stop dunes migrating across its settlements.",
+        "text": "Kaliningrad city sits inland from the open Baltic on the Pregolya River. Ships reach it through the lagoon west of the city.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/kaliningrad-baltic-sea-russia-51793/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "The narrow Curonian Spit has two very different shores. Waves from the open Baltic break on one side, while shallow lagoon water laps against the other.",
         "source": "https://whc.unesco.org/en/list/994/",
         "label": "UNESCO"
-      },
-      {
-        "text": "The Baltic shore near Kaliningrad holds great deposits of amber. The material prized by jewellers began as resin oozing from ancient trees.",
-        "source": "https://www.gia.edu/gems-gemology/winter-2018-history-and-reconstruction-of-amber-room",
-        "label": "www.gia.edu"
       },
       {
         "text": "Kaliningrad is on the Baltic yet has no land connection to the rest of Russia. Its only land neighbours are Poland and Lithuania.",
@@ -5412,19 +5412,19 @@
     "name": "Corsica",
     "options": [
       {
-        "text": "Corsican paghjella singing builds in a fixed order. One voice starts the melody, a bass joins, and the highest voice enters last, making use of the echo.",
-        "source": "https://ich.unesco.org/en/USL/00315",
-        "label": "UNESCO"
+        "text": "At Bonifacio, buildings stand on pale limestone cliffs at the southern tip of Corsica. The pale headland faces Sardinia across a narrow strait.",
+        "source": "https://www.bonifacio-marina.corsica/en/natural-space/",
+        "label": "bonifacio-marina.corsica"
       },
       {
-        "text": "The Fango runs from Corsican mountains inhabited by mouflon and bearded vultures down to a Mediterranean gulf. A single watershed links their cliffs to coastal wetlands.",
-        "source": "https://www.unesco.org/en/mab/falasorma-dui-sevi",
-        "label": "www.unesco.org"
+        "text": "A geological boundary crosses Corsica. Much of the west consists of ancient crystalline rocks, while northeastern Corsica includes rocks transformed during Alpine mountain building.",
+        "source": "https://www.brgm.fr/en/regional-agency/corsica-brgm-regional-network",
+        "label": "brgm.fr"
       },
       {
-        "text": "Scandola's red cliffs are remnants of volcanic rock. Protected waters around the peninsula shelter marine life below the cliffs where seabirds nest.",
-        "source": "https://whc.unesco.org/en/list/258/",
-        "label": "UNESCO"
+        "text": "High above Corsica's warm coast are lakes left by glaciers. Melo and Capitello occupy ice-carved basins in the upper Restonica Valley.",
+        "source": "https://www.visit-corsica.com/en/Mon-sejour/Patrimoine-naturel/Tout-le-patrimoine-naturel/LAC-DE-MELO",
+        "label": "visit-corsica.com"
       },
       {
         "text": "Corsica rises more than 2,700 metres straight out of the Mediterranean. Monte Cinto stands on a comparatively small island whose interior is a chain of high mountains.",
@@ -5516,19 +5516,19 @@
     "name": "Kazakhstan",
     "options": [
       {
-        "text": "In Kazakh orteke a musician plays a two-stringed dombyra while strings on the same hand make a wooden mountain goat dance on a drum.",
-        "source": "https://ich.unesco.org/en/RL/01878",
+        "text": "In the gorge at Tamgaly, people carved thousands of images into rock outcrops. Some of the open-air panels served pastoral communities moving through the dry landscape.",
+        "source": "https://whc.unesco.org/en/list/1145/",
         "label": "UNESCO"
       },
       {
-        "text": "Birds flying from Africa and South Asia to breed in Siberia can meet at the same stopover, the lakes of Kazakhstan's northern steppe.",
-        "source": "https://whc.unesco.org/en/list/1102/",
+        "text": "The mausoleum at Turkistan was left partly unfinished after Timur died. Its enormous brick dome still marks a city on the old caravan routes of Central Asia.",
+        "source": "https://whc.unesco.org/en/list/1103/",
         "label": "UNESCO"
       },
       {
-        "text": "The pieces in the Kazakh game of assyk come from sheep. Players flick an ankle bone to knock other bones out of position.",
-        "source": "https://ich.unesco.org/en/RL/01086",
-        "label": "UNESCO"
+        "text": "Kazakhstan's Caspian shore includes depressions well below sea level. At the opposite end of the country the Tian Shan climbs to around seven kilometres above it.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/kz.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
         "text": "Kazakhstan is the world's largest landlocked country, yet it has a long coastline. Its ports face the Caspian, a lake with no natural outlet to the ocean.",
@@ -5672,18 +5672,18 @@
     "name": "Israel",
     "options": [
       {
-        "text": "Under Maresha and Bet-Guvrin lie chambers cut for everything from oil presses to pigeon breeding. A whole working landscape survives beneath the fields.",
-        "source": "https://whc.unesco.org/en/list/1370/",
+        "text": "Masada stands on an isolated plateau above the Dead Sea. The Romans built a huge siege ramp up to the fortress, and its outline is still visible beside the cliffs.",
+        "source": "https://whc.unesco.org/en/list/1040/",
         "label": "UNESCO"
       },
       {
-        "text": "Ancient desert towns in the Negev owed their fortunes to incense. Caravans carried frankincense and myrrh west towards Mediterranean ports.",
-        "source": "https://whc.unesco.org/en/list/1107/",
+        "text": "At Bet She’arim, a town of the dead was cut underground. Its catacombs drew Jewish burials from far beyond the surrounding Galilee.",
+        "source": "https://whc.unesco.org/en/list/1471/",
         "label": "UNESCO"
       },
       {
-        "text": "Tel Aviv's White City records a migration of architectural ideas. European-trained designers adapted modernist buildings to the Mediterranean climate.",
-        "source": "https://whc.unesco.org/en/list/1096/",
+        "text": "Caves on Mount Carmel preserve evidence of both Neanderthals and early modern humans. Layers of occupation record changes in the people living along this eastern Mediterranean coast.",
+        "source": "https://whc.unesco.org/en/list/1393/",
         "label": "UNESCO"
       },
       {
@@ -5698,18 +5698,18 @@
     "name": "Iraq",
     "options": [
       {
-        "text": "The southern Iraqi marshes and the ruins of ancient Mesopotamian cities share one World Heritage site. Reeds, water and settlements all belong to the delta's history.",
-        "source": "https://whc.unesco.org/en/list/1481/",
+        "text": "Ashur, an early capital of Assyria, occupied a bluff over the Tigris. It sat where farming country met drier land used by pastoralists.",
+        "source": "https://whc.unesco.org/en/list/1130/",
         "label": "UNESCO"
       },
       {
-        "text": "Erbil's citadel rises on a mound formed by one generation building over the remains of another. Its elevation is itself an archaeological record.",
-        "source": "https://whc.unesco.org/en/list/1437/",
+        "text": "Hatra prospered as a fortified city in the Iraqi desert. The temples within its circular defences drew on both eastern and Greco-Roman architectural traditions.",
+        "source": "https://whc.unesco.org/en/list/277/",
         "label": "UNESCO"
       },
       {
-        "text": "At Samarra, the Great Mosque's minaret curls upwards. A spiral ramp wraps around its outside.",
-        "source": "https://whc.unesco.org/en/list/276/",
+        "text": "Babylon developed on the Euphrates. Its political reach once extended far beyond the alluvial plain that supplied the city's water and farmland.",
+        "source": "https://whc.unesco.org/en/list/278/",
         "label": "UNESCO"
       },
       {
@@ -5776,18 +5776,18 @@
     "name": "Jordan",
     "options": [
       {
-        "text": "At Umm Al-Jimāl, villagers reused Roman military buildings and collected scarce water to raise animals and crops in a landscape of dark basalt.",
-        "source": "https://whc.unesco.org/en/list/1721/",
+        "text": "Petra's inhabitants made a city possible in an arid canyon landscape by capturing and managing water. Channels and reservoirs were as important to its survival as the carved façades.",
+        "source": "https://whc.unesco.org/en/list/326/",
         "label": "UNESCO"
       },
       {
-        "text": "Mansaf layers thin bread, rice or bulgur, and meat cooked in yoghurt on one communal platter. Preparing the feast is itself a social occasion.",
-        "source": "https://ich.unesco.org/en/RL/01849",
+        "text": "Jordan's short Red Sea coast contains the Aqaba Marine Reserve. Coral communities lie at the head of a narrow gulf that runs deep into desert country.",
+        "source": "https://whc.unesco.org/en/list/1742/",
         "label": "UNESCO"
       },
       {
-        "text": "Wadi Rum's sandstone landscape doubles as an archive. Generations of travellers and residents carved inscriptions and images into its rock.",
-        "source": "https://whc.unesco.org/en/list/1377/",
+        "text": "At Umm er-Rasas, a church floor is also a geographic record. Its mosaic depicts towns on both sides of the Jordan River.",
+        "source": "https://whc.unesco.org/en/list/1093/",
         "label": "UNESCO"
       },
       {
@@ -5802,24 +5802,24 @@
     "name": "Japan",
     "options": [
       {
-        "text": "Some Japanese kofun look like giant keyholes from above. Those distinctively shaped mounds near Osaka were tombs for members of the elite.",
-        "source": "https://whc.unesco.org/en/list/1593/",
+        "text": "Seasonal sea ice reaches the Shiretoko Peninsula on Hokkaido. The ice helps feed a marine food web along a forested Japanese coast.",
+        "source": "https://whc.unesco.org/en/list/1193/",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "At high tide, the buildings of Itsukushima Shrine appear to float. The shrine stands on pillars at the water's edge, so the tide changes how it looks without moving the buildings.",
+        "source": "https://whc.unesco.org/en/list/776/",
         "label": "UNESCO"
       },
       {
-        "text": "In Bunraku theatre several puppeteers can work a single character together while a narrator voices the story to a shamisen accompaniment.",
-        "source": "https://ich.unesco.org/en/RL/00064",
-        "label": "UNESCO"
-      },
-      {
-        "text": "Sado Island's gold mines preserve evidence of different ways to extract precious metal, from washing it out of deposits to cutting underground workings by hand.",
-        "source": "https://whc.unesco.org/en/list/1698/",
+        "text": "Villages in Shirakawa-go and Gokayama have farmhouses with unusually steep thatched roofs. The roof shape suits heavy snowfall and leaves room in the loft for raising silkworms.",
+        "source": "https://whc.unesco.org/en/list/734/",
         "label": "UNESCO"
       },
       {
         "text": "Japan's official island count jumped from 6,852 to 14,125 in a 2023 survey. Better maps revealed thousands of islands the earlier count had missed.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/ja.json",
-        "label": "CIA World Factbook (archived profile)"
+        "source": "https://www.gsi.go.jp/kihonjohochousa/islands_index.html",
+        "label": "gsi.go.jp"
       }
     ]
   },
@@ -5906,19 +5906,19 @@
     "name": "Kuwait",
     "options": [
       {
-        "text": "The spheres of Kuwait City's best-known towers have a practical origin. The towers were designed as part of the city's fresh-water distribution system.",
-        "source": "https://whc.unesco.org/en/tentativelists/5933/",
+        "text": "On Failaka Island, archaeologists found traces of the Dilmun trading world. An island off modern Kuwait once took part in a network linking ports around the Gulf.",
+        "source": "https://whc.unesco.org/document/166288",
         "label": "whc.unesco.org"
       },
       {
-        "text": "A Kuwaiti diwaniya can meet in a home or even a tent. It gives neighbours a regular place to discuss everything from family matters to elections.",
-        "source": "https://ich.unesco.org/en/RL/02281",
-        "label": "UNESCO"
+        "text": "Kuwait's highest ground lies near the Saudi border. From that desert rise of roughly 300 metres, the land slopes towards the Persian Gulf.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/ku.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "Kuwait's Al Sadu Society brought traditional weaving into classrooms by teaching the teachers first. Finished student textiles go on display at Sadu House.",
-        "source": "https://ich.unesco.org/en/Art18/01905",
-        "label": "UNESCO"
+        "text": "Kuwait stands at the head of the Persian Gulf between Iraq and Saudi Arabia. Its capital curves around a bay opening east into the gulf.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/middle-east/ku.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
         "text": "Kuwait's largest island, Bubiyan, is a low mud island at the edge of the great river delta in the northern Gulf. Much of its surrounding landscape appears and disappears with the tide.",
@@ -6077,9 +6077,9 @@
         "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "Eight of the world's ten highest mountains stand in Nepal or on its borders. Two of them, Everest and Kanchenjunga, mark different frontiers, with China and India respectively.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-asia/np.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "Nepal's Kali Gandaki River runs between two mountains over 8,000 metres high, Annapurna and Dhaulagiri. The river makes a passage through the great range itself.",
+        "source": "https://gilles-arnaud-fassetta.org/wp-content/uploads/2018/02/2010-Fort-et-al.-Geomorphology-Nepal-ENGLISH.pdf",
+        "label": "gilles-arnaud-fassetta.org"
       }
     ]
   },
@@ -6348,19 +6348,19 @@
     "name": "East Timor",
     "options": [
       {
-        "text": "Timor-Leste names the same direction twice. Timor comes from a word meaning east, and leste is Portuguese for east.",
+        "text": "Atauro's reefs pack an exceptional variety of fish into a small space. A scientific survey counted hundreds of reef-fish species around this one Timorese island.",
+        "source": "https://www.conservation.org/docs/default-source/publication-pdfs/mrap_ci_timor-leste_aug-2012.pdf?Status=Master&sfvrsn=b1eb2804_3",
+        "label": "conservation.org"
+      },
+      {
+        "text": "Timor-Leste's highest summit reaches nearly three kilometres above the surrounding seas. Foho Tatamailau stands in the mountainous interior of Timor.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/tt.json",
         "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "Oecussi belongs to Timor-Leste but sits apart from the rest of the country on the Indonesian side of the island.",
+        "text": "Timor-Leste includes islands on two sides of its main territory. Atauro lies north of the capital and Jaco just off the eastern tip of Timor.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/east-n-southeast-asia/tt.json",
         "label": "CIA World Factbook (archived profile)"
-      },
-      {
-        "text": "Timorese tais are handwoven textiles used for gifts, ceremonies and clothing. Their colours and motifs can identify the community that made them.",
-        "source": "https://ich.unesco.org/en/USL/01688",
-        "label": "UNESCO"
       },
       {
         "text": "Timor-Leste lies wholly south of the equator. Its neighbours help explain why that is unusual for an Asian country: Indonesia's thousands of islands spread across both hemispheres.",
@@ -6634,18 +6634,18 @@
     "name": "Java",
     "options": [
       {
-        "text": "At Sangiran on Java, fossil finds have made it possible to trace human ancestors across a long stretch of the Pleistocene.",
+        "text": "Mount Bromo rises out of a broad volcanic caldera with a floor known as the Sea of Sand. The “sea” is dry volcanic material surrounded by steep crater walls.",
+        "source": "https://www.indonesia.travel/id/en/destination/java/east-java/bromo-tengger-semeru-national-park",
+        "label": "indonesia.travel"
+      },
+      {
+        "text": "Semeru is the highest volcano on Java. Its summit rises more than 3,600 metres above a tropical island crossed by a chain of other volcanoes.",
+        "source": "https://volcano.si.edu/volcano.cfm?vn=263300",
+        "label": "volcano.si.edu"
+      },
+      {
+        "text": "The ground at Sangiran formed in changing environments. Its exposed layers preserve a sequence from marine deposits to land deposits bearing early human remains.",
         "source": "https://whc.unesco.org/en/list/593/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "Borobudur's Buddhist monument climbs in terraces around a hill. Rows of perforated stupas surround the summit.",
-        "source": "https://whc.unesco.org/en/list/592/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "In Yogyakarta, a ceremonial axis runs through the sultan's palace. The plan relates the city to Mount Merapi to the north and the Indian Ocean to the south.",
-        "source": "https://whc.unesco.org/en/list/1671/",
         "label": "UNESCO"
       },
       {
@@ -6935,9 +6935,9 @@
         "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "Equatorial Guinea is interrupted by another country out at sea. Travel from Bioko to Equatorial Guinea's southern island of Annobón and you pass São Tomé and Príncipe along the way.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ek.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "Two islands of Equatorial Guinea have very different histories. Bioko was once connected to mainland Africa, while remote Annobón rose from deep ocean and never had a land bridge.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10616780/",
+        "label": "pmc.ncbi.nlm.nih.gov"
       }
     ]
   },
@@ -6946,19 +6946,19 @@
     "name": "Kenya",
     "options": [
       {
-        "text": "Flamingos feed in the shallow alkaline lakes of Kenya's Rift Valley. Their movements link lakes that look completely separate on a map.",
-        "source": "https://whc.unesco.org/en/list/1060/",
+        "text": "Lake Turkana has volcanic islands inside a desert lake. Central Island and South Island are national parks surrounded by water in one of Kenya's driest regions.",
+        "source": "https://whc.unesco.org/en/list/801/",
         "label": "UNESCO"
       },
       {
-        "text": "At Thimlich Ohinga, communities built a stone enclosure without mortar to protect both people and livestock near Lake Victoria.",
-        "source": "https://whc.unesco.org/en/list/1450/",
+        "text": "Gedi was a Swahili trading town on Kenya's coast. Its stone ruins now stand in forest, where archaeological finds reveal connections across the Indian Ocean.",
+        "source": "https://whc.unesco.org/en/list/1720/",
         "label": "UNESCO"
       },
       {
-        "text": "For the Mijikenda, patches of coastal forest preserve the sites of old fortified settlements called kayas. Their ancestral significance helped keep the trees standing.",
-        "source": "https://whc.unesco.org/en/list/1231/",
-        "label": "UNESCO"
+        "text": "Kenya spans two hemispheres, yet its main ocean port, Mombasa, is well south of the equator. The equator crosses the country's interior on its way to Somalia.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ke.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
         "text": "There are glaciers almost on the equator in Kenya. Mount Kenya rises high enough for ice to survive only a few kilometres south of the line separating the hemispheres.",
@@ -7076,19 +7076,19 @@
     "name": "Guinea-Bissau",
     "options": [
       {
-        "text": "The Bijagós islands form an active delta out in the Atlantic. Mudflats and mangroves link the islands as tides rise and fall.",
-        "source": "https://whc.unesco.org/en/list/1431/",
-        "label": "UNESCO"
+        "text": "Green turtles cross the Atlantic to nest on tiny Poilão in the Bijagós. A single island is one of the most important nesting places for this species in Africa.",
+        "source": "https://whc.unesco.org/document/222005",
+        "label": "whc.unesco.org"
       },
       {
-        "text": "The Bijagós mudflats feed hundreds of thousands of migratory shorebirds. The surrounding waters also support manatees and sea turtles.",
-        "source": "https://whc.unesco.org/en/list/1431/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "The capital's name does double duty. Bissau was added to the country's name to distinguish it from neighbouring Guinea.",
+        "text": "Guinea-Bissau rises only gently from its tidal coast. Even Dongol Ronde, the country's highest point, is less than 300 metres above the Atlantic.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/pu.json",
         "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Mangroves in the Bijagós shelter both dolphins and manatees. Animals associated with open coasts and slow rivers meet in one shifting network of channels.",
+        "source": "https://whc.unesco.org/en/list/1431/",
+        "label": "UNESCO"
       },
       {
         "text": "Hippos on Guinea-Bissau's Bijagós islands swim in salt water. Tidal channels separate islands used by an animal usually associated with freshwater rivers and lakes.",
@@ -7102,19 +7102,19 @@
     "name": "Eritrea",
     "options": [
       {
-        "text": "In highland Asmara, Italian colonial planners gave modernist architecture room to experiment. The city retains cinemas, workshops and other buildings from that period.",
-        "source": "https://whc.unesco.org/en/list/1550/",
-        "label": "UNESCO"
-      },
-      {
-        "text": "Eritrea's name is a piece of its own map. It comes from the ancient Greek name for the Red Sea along its coast.",
+        "text": "Islands account for almost half the length of Eritrea's Red Sea coastline. Add the island shores together and they nearly match the entire mainland coast.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/er.json",
         "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "Asmara's modernist buildings stand more than two kilometres above sea level. Its highland setting is far removed from the Red Sea port below.",
-        "source": "https://whc.unesco.org/en/list/1550/",
-        "label": "UNESCO"
+        "text": "Eritrea has a summit over three kilometres high. Soira rises above a country narrow enough that the Red Sea coast is close to the highlands.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/er.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Eritrea and Yemen face one another across the Red Sea. The Dahlak Archipelago lies offshore on the Eritrean side, between the African mainland and the shipping lanes.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/er.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
         "text": "Eritrea's coastline runs beside land lower than the sea itself. Inland from the Red Sea, the Danakil Depression drops below sea level while highlands rise to the west.",
@@ -7128,18 +7128,18 @@
     "name": "Ethiopia",
     "options": [
       {
-        "text": "Gedeo farmers stack crops vertically on the escarpment. Tall trees shade enset, a staple food plant, and coffee grows underneath.",
-        "source": "https://whc.unesco.org/en/list/1641/",
+        "text": "Walia ibex live naturally only in Ethiopia's mountains. The steep cliffs of the Simien highlands are the native range of an entire species of wild goat.",
+        "source": "https://whc.unesco.org/en/list/9/",
         "label": "UNESCO"
       },
       {
-        "text": "Under the Oromo Gada system, responsibilities move between organised age groups. Leadership changes hands on an eight-year cycle.",
-        "source": "https://ich.unesco.org/en/RL/01164",
+        "text": "At Lalibela, churches were excavated down into rock. Some stand free inside trenches, with their roofs near the level where a builder above ground would normally start.",
+        "source": "https://whc.unesco.org/en/list/18/",
         "label": "UNESCO"
       },
       {
-        "text": "Konso communities built stone terraces across steep dry hillsides. They retain soil and catch water for farming where rain runs off fast.",
-        "source": "https://whc.unesco.org/en/list/1333/",
+        "text": "At Melka Kunture, traces of early humans survive high in the Ethiopian highlands. The excavated sites lie around two kilometres above sea level, including places where footprints were preserved.",
+        "source": "https://whc.unesco.org/en/list/13/",
         "label": "UNESCO"
       },
       {
@@ -7154,19 +7154,19 @@
     "name": "Gabon",
     "options": [
       {
-        "text": "At Oklo, uranium deposits sustained natural nuclear reactions about two billion years ago. Scientists recognised the reactors from an unexpected isotope ratio in the ore.",
-        "source": "https://inis.iaea.org/records/jasg1-n1n34",
-        "label": "inis.iaea.org"
+        "text": "The lower Ogooué opens into a network of lakes before it reaches the Atlantic. The seasonal river flood helps connect wetlands deep inland from Gabon's coast.",
+        "source": "https://rsis.ramsar.org/RISapp/files/RISrep/GA1851RIS_1703_fr.pdf",
+        "label": "rsis.ramsar.org"
       },
       {
-        "text": "Lopé contains savanna beside dense rainforest. This patchwork preserves evidence of past climate shifts as well as thousands of years of human activity.",
-        "source": "https://whc.unesco.org/en/list/1147/",
-        "label": "UNESCO"
+        "text": "Leatherback turtles return to Gabon's Atlantic beaches to lay eggs. A forested country on the equator contains some of this ocean traveller's most important nesting shores.",
+        "source": "https://gabon.wcs.org/en-us/Wildlife/Marine-Turtles.aspx",
+        "label": "gabon.wcs.org"
       },
       {
-        "text": "In Ivindo National Park, rapids and waterfalls break up rivers running through equatorial forest. Aquatic communities have evolved around these natural barriers.",
-        "source": "https://whc.unesco.org/en/list/1653/",
-        "label": "UNESCO"
+        "text": "The equator crosses Gabon south of Libreville. Travel south down the coast from the capital and you pass into the Southern Hemisphere without leaving the country.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/gb.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
         "text": "In Gabon's Loango National Park, elephants can walk out of rainforest onto an Atlantic beach. Forest, savanna, lagoons and surf meet along the same strip of coast.",
@@ -7206,19 +7206,19 @@
     "name": "Lesotho",
     "options": [
       {
-        "text": "More than four-fifths of Lesotho stands above 1,800 metres. This mountain country fits entirely inside South Africa.",
+        "text": "A river that begins in Lesotho's mountains eventually reaches the Atlantic. The Senqu becomes the Orange, crossing southern Africa from its wetter east to its arid west.",
+        "source": "https://wis.orasecom.org/wp-content/uploads/2026/03/3_PDFsam_Road_Map_AppendixA_20240.pdf",
+        "label": "wis.orasecom.org"
+      },
+      {
+        "text": "At Quthing, dinosaur footprints survive in rock. The mountains of modern Lesotho preserve tracks left on a landscape that existed long before those mountains looked as they do today.",
+        "source": "https://www.visitlesotho.org.ls/place-to-visit/quthing-dinosaur-footprint",
+        "label": "visitlesotho.org.ls"
+      },
+      {
+        "text": "Lesotho has land borders on every side but only one neighbouring country. Every road that crosses its international boundary enters South Africa.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/lt.json",
         "label": "CIA World Factbook (archived profile)"
-      },
-      {
-        "text": "Water is one of Lesotho's major exports. Dams and tunnels in its highlands transfer water across the watershed to South Africa.",
-        "source": "https://lhda.org.ls/projectphases/phaseii",
-        "label": "lhda.org.ls"
-      },
-      {
-        "text": "Sehlabathebe in Lesotho and the Drakensberg park across the South African border protect different sides of the same high mountain landscape.",
-        "source": "https://whc.unesco.org/en/list/985/",
-        "label": "UNESCO"
       },
       {
         "text": "The lowest point in Lesotho is about 1,400 metres above the sea. No other country's lowest point is that high.",
@@ -7284,19 +7284,19 @@
     "name": "Malawi",
     "options": [
       {
-        "text": "Lake Malawi's cichlid fishes have diversified into hundreds of species. Closely related fish occupy remarkably different niches along the same rocky shores.",
-        "source": "https://whc.unesco.org/en/list/289/",
+        "text": "The Shire is the only river that drains Lake Malawi. Water leaving this enormous lake follows a single southern exit on its way to the Zambezi.",
+        "source": "https://documents.worldbank.org/curated/en/856011559194741084/pdf/Environmental-and-Social-Impact-Assessment-for-Malawi-Section-from-the-Mozambique-Border-to-the-Phombeya-Substation.pdf",
+        "label": "documents.worldbank.org"
+      },
+      {
+        "text": "Farmers and hunter-gatherers both left paintings at Chongoni. The granite hills of central Malawi preserve rock art from people who used the same landscape in different ways.",
+        "source": "https://whc.unesco.org/en/list/476/",
         "label": "UNESCO"
       },
       {
-        "text": "Nsima begins as ground maize, stirred into thick porridge. Making it involves a whole chain of skills from tending the crop to sharing the meal.",
-        "source": "https://ich.unesco.org/en/RL/01292",
-        "label": "UNESCO"
-      },
-      {
-        "text": "Mount Mulanje rises abruptly out of southern Malawi's plains. The huge isolated mountain is also regarded as a dwelling place of spirits and ancestors.",
-        "source": "https://whc.unesco.org/en/list/1201/",
-        "label": "UNESCO"
+        "text": "Malawi reaches its lowest elevation where the Shire meets Mozambique. That point is over 400 metres below the surface of the great lake that feeds the river.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/mi.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
         "text": "A landlocked country has one of Earth's great stretches of freshwater coast. Lake Malawi runs about 580 kilometres along its eastern side and supports more fish species than any other lake.",
@@ -7310,19 +7310,19 @@
     "name": "Mali",
     "options": [
       {
-        "text": "Every seven years, communities at Kangaba replace the thatch on the House of Speech. The re-roofing brings oral histories into public performance.",
-        "source": "https://ich.unesco.org/en/RL/00190",
+        "text": "Traditional houses at Djenné stand on raised mounds. Their elevation helped protect homes in a trading town exposed to seasonal flooding.",
+        "source": "https://whc.unesco.org/en/list/116/",
         "label": "UNESCO"
       },
       {
-        "text": "Timbuktu was a university town as well as a desert trading centre. Scholars gathered around Sankore and the city's other mosques.",
-        "source": "https://whc.unesco.org/en/list/119/",
+        "text": "The Bandiagara Escarpment forms a long wall above the plain. Villages, granaries and burial places occupy ledges and sheltered sites along the cliff.",
+        "source": "https://whc.unesco.org/en/list/516/",
         "label": "UNESCO"
       },
       {
-        "text": "The Tomb of Askia at Gao is a stepped pyramid made of earth. It commemorates a ruler of the Songhai Empire beside the Niger.",
-        "source": "https://whc.unesco.org/en/list/1139/",
-        "label": "UNESCO"
+        "text": "Three belts cross Mali from north to south. The Sahara gives way to the semiarid Sahel and then to wetter country where cultivation is more reliable.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ml.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
         "text": "The Niger makes an inland delta in Mali long before it reaches its coastal delta in Nigeria. Seasonal floods spread across pastures and govern when herds can cross the river.",
@@ -7351,9 +7351,9 @@
         "label": "UNESCO"
       },
       {
-        "text": "The Sahara has a tidal shoreline in Mauritania. At Banc d'Arguin, desert dunes meet shallow banks that feed enormous flocks of shorebirds on their journeys between Africa and Europe.",
-        "source": "https://whc.unesco.org/en/list/506/",
-        "label": "UNESCO"
+        "text": "The Eye of the Sahara looks like an enormous impact crater from space. Its rings in Mauritania are layers of an eroded geological dome.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/eyeing-the-richat-structure/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -7362,19 +7362,19 @@
     "name": "Mauritius",
     "options": [
       {
-        "text": "Le Morne's cliffs helped people escaping slavery hide on a peninsula in southwest Mauritius. The mountain became a symbol of their resistance.",
-        "source": "https://whc.unesco.org/en/list/1259/",
-        "label": "UNESCO"
+        "text": "The stripes of colour in the bare earth at Chamarel come from deeply weathered volcanic rock. A patch of tropical soil has become one of the island's most recognisable landscapes.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S1464343X09001496",
+        "label": "sciencedirect.com"
       },
       {
-        "text": "At Aapravasi Ghat in Port Louis, indentured labourers from overseas first set foot on the island. The surviving immigration depot marks that passage.",
-        "source": "https://whc.unesco.org/en/list/1227/",
-        "label": "UNESCO"
+        "text": "The dodo belonged to the pigeon family. It evolved into a large flightless bird on Mauritius, and extinction there erased the species worldwide.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/mp.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "On Rodrigues, sega tambour musicians use drums to lead songs in Creole. The singing, drumming and dancing are closely linked.",
-        "source": "https://ich.unesco.org/en/RL/01257",
-        "label": "UNESCO"
+        "text": "The island of Mauritius is volcanic, but coral reefs ring most of its coast. The central high ground and the shallow outer reef were built by very different processes.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/mp.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
         "text": "Mauritius appears to have a waterfall under the sea. Off Le Morne, streaks of sand seen through clear water at the submarine slope create the illusion from above.",
@@ -7674,17 +7674,17 @@
     "name": "Eswatini",
     "options": [
       {
-        "text": "At Lion Cavern, people dug into the mountainside for red ochre tens of thousands of years ago. Pigment drew miners here long before modern iron extraction.",
-        "source": "https://www.thekingdomofeswatini.com/north-west-eswatini/ngwenya-mine-lion-cavern/",
-        "label": "www.thekingdomofeswatini.com"
+        "text": "Eswatini almost fits inside South Africa's outline. Only along its eastern side does its border meet a second country, Mozambique.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/wz.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "Sibebe Rock outside Mbabane is an immense exposed granite dome. Its smooth face rises above the surrounding hills.",
-        "source": "https://www.thekingdomofeswatini.com/central-eswatini/sibebe-rock/",
-        "label": "www.thekingdomofeswatini.com"
+        "text": "The government and the monarchy have different seats. Mbabane is the administrative capital, while the royal and legislative centre is at Lobamba.",
+        "source": "https://www.sadc.int/member-states/kingdom-eswatini",
+        "label": "sadc.int"
       },
       {
-        "text": "Both Eswatini and the name of the Swazi people recall King Mswati II, who expanded and consolidated the kingdom in the nineteenth century.",
+        "text": "Eswatini's elevation ranges from about 21 metres on the Great Usutu River to more than 1,800 at Emlembe. The ocean is outside the country, but part of its river valley is barely above sea level.",
         "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/wz.json",
         "label": "CIA World Factbook (archived profile)"
       },
@@ -7986,19 +7986,19 @@
     "name": "Libya",
     "options": [
       {
-        "text": "In Ghadamès, linked rooftops once gave women a route through the oasis town above the covered streets. The houses created two levels of circulation.",
-        "source": "https://whc.unesco.org/en/list/362/",
+        "text": "At Sabratha, products from the African interior reached the Mediterranean coast. A Phoenician trading post grew into a Roman city at the seaward end of that route.",
+        "source": "https://whc.unesco.org/en/list/184/",
         "label": "UNESCO"
       },
       {
-        "text": "In the rock art of Tadrart Acacus, animals and human activities change from one period to another. The images record a Sahara that was once much wetter.",
-        "source": "https://whc.unesco.org/en/list/287/",
+        "text": "Cyrene was founded by settlers from the Aegean island of Thera. The ruins of a major ancient Greek city are on the Libyan side of the Mediterranean.",
+        "source": "https://whc.unesco.org/en/list/190/",
         "label": "UNESCO"
       },
       {
-        "text": "The Roman emperor Septimius Severus was born at Leptis Magna. He expanded his North African home city with monumental public buildings.",
-        "source": "https://whc.unesco.org/en/list/183/",
-        "label": "UNESCO"
+        "text": "Libya's high point is far from its settled Mediterranean coast. Bikku Bitti rises in the country's remote south, in the mountains near Chad.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ly.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
         "text": "Deep in the Libyan Sahara, lakes occupy a volcanic crater. Waw an Namus appears as a striking dark patch of volcanic material against the pale desert.",
@@ -8168,19 +8168,19 @@
     "name": "Guyana",
     "options": [
       {
-        "text": "At Kaieteur Falls the Potaro River drops over a sandstone escarpment in one great plunge. The surrounding forest is home to a tiny golden frog.",
-        "source": "https://guyanatourism.com/kaieteur-falls/",
-        "label": "guyanatourism.com"
+        "text": "The borders of Guyana, Brazil and Venezuela meet on Mount Roraima. A flat-topped mountain rising behind sheer cliffs doubles as a three-country junction.",
+        "source": "https://ntg.gov.gy/monument/mount-roraima/",
+        "label": "ntg.gov.gy"
       },
       {
-        "text": "Guyana's links to South Asia run through its sugar plantations. After emancipation, indentured workers from India crossed the world to work there.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/gy.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "Parts of Guyana's coastal plain lie below high-tide level. Sea defences and drainage canals help keep the Atlantic out of the low strip where much of the population lives.",
+        "source": "https://factpage.glsc.gov.gy/geography/natural-regions/",
+        "label": "factpage.glsc.gov.gy"
       },
       {
-        "text": "Guyana shares its historic regional name with Suriname and French Guiana. Its own territory was once known as British Guiana, while Suriname was Dutch Guiana.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/gy.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "Guyana has broad open savannas as well as rainforest. The Rupununi grasslands occupy the southern interior near Brazil, far from the crowded Atlantic coast.",
+        "source": "https://factpage.glsc.gov.gy/geography/natural-regions/",
+        "label": "factpage.glsc.gov.gy"
       },
       {
         "text": "In the rainy season Guyana has a temporary water passage to the Amazon basin. Flooding across the Rupununi savanna lets fish move between rivers that normally drain to different parts of the Atlantic.",
@@ -8287,9 +8287,9 @@
         "label": "UNESCO"
       },
       {
-        "text": "The world's highest uninterrupted waterfall starts on top of a Venezuelan table mountain. Angel Falls drops from the edge of Auyán-tepui towards the forest almost a kilometre below.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/south-america/ve.json",
-        "label": "CIA World Factbook (archived profile)"
+        "text": "In Venezuela, a river splits and sends water to two different ocean mouths. The Casiquiare branches off the Orinoco and feeds the Rio Negro in the Amazon basin.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/when-rivers-take-a-weird-turn-154394/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -8298,19 +8298,19 @@
     "name": "French Guiana",
     "options": [
       {
-        "text": "Rockets launched eastward from Kourou get a boost from Earth's rotation. French Guiana's proximity to the equator makes it a particularly effective place to launch satellites.",
-        "source": "https://www.esa.int/nb/establishment/about-us/directorates/space-transportation/europe-s-spaceport/europe-s-spaceport",
-        "label": "www.esa.int"
+        "text": "Mud from the Amazon travels northwest along French Guiana's coast. Moving offshore mudbanks can shelter mangroves from waves in one place and expose them to erosion in another.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S0025322704001069",
+        "label": "sciencedirect.com"
       },
       {
-        "text": "The Îles du Salut once held a French penal colony. Today the islands have to be evacuated for rocket launches from the nearby spaceport.",
-        "source": "https://centrespatialguyanais.cnes.fr/sites/default/files/2024-12/Plan%20de%20Gestion%20T1%20161220_compressed%20%281%29.pdf",
-        "label": "centrespatialguyanais.cnes.fr"
+        "text": "French Guiana's highest hills rise in the deep interior around Bellevue de l'Inini. The high ground is forested, far from the narrow coastal strip where most towns are found.",
+        "source": "https://www.guyane.developpement-durable.gouv.fr/IMG/pdf/00380000_Montagnes_Bellevue_de_l_Inini.pdf",
+        "label": "guyane.developpement-durable.gouv.fr"
       },
       {
-        "text": "Far inland from the launch pads, French Guiana contains an Amazonian national park. Communities along the Maroni and Oyapock river systems are part of its lived landscape.",
-        "source": "https://parc-amazonien-guyane.fr/sites/parc-amazonien-guyane.fr/files/atoms/files/mieux_comprendre_la_charte.pdf",
-        "label": "parc-amazonien-guyane.fr"
+        "text": "French Guiana gives the European Union a land border with Suriname. A crossing of the Maroni River can take you from South America into the EU while you stay on the same continent.",
+        "source": "https://www.cp-rup.com/wp-content/uploads/2026/11/RUP-Livret-Communication-EN.pdf",
+        "label": "cp-rup.com"
       },
       {
         "text": "Two river mouths pick out the ends of French Guiana's coast. The Maroni meets the Atlantic at the Suriname border, and the Oyapock reaches it at the Brazilian border.",
@@ -8454,19 +8454,19 @@
     "name": "Jamaica",
     "options": [
       {
-        "text": "The Blue and John Crow Mountains sheltered people escaping slavery. Maroon communities developed routes and settlements in the rugged forested terrain.",
-        "source": "https://whc.unesco.org/en/list/1356/",
-        "label": "UNESCO"
+        "text": "Part of Port Royal lies underwater. An earthquake in 1692 submerged streets and buildings of a Caribbean port, leaving archaeologists a town beneath the harbour.",
+        "source": "https://whc.unesco.org/en/list/1595/",
+        "label": "whc.unesco.org"
       },
       {
-        "text": "In Moore Town's Maroon tradition, an abeng horn can send signals over a distance. The instrument recalls how communities communicated through the mountains.",
-        "source": "https://ich.unesco.org/en/RL/00053",
-        "label": "UNESCO"
+        "text": "Jamaica is the third-largest island in the Caribbean. Only Cuba and Hispaniola have more land, and both lie to its north.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/jm.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "Jamaican reggae grew from earlier local styles and borrowed sounds from abroad. Kingston's recording culture helped it travel around the world.",
-        "source": "https://ich.unesco.org/en/RL/01398",
-        "label": "UNESCO"
+        "text": "Jamaica rises from Caribbean sea level to more than 2,250 metres at Blue Mountain Peak. Its highest country lies towards the eastern end of the island.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-america-n-caribbean/jm.json",
+        "label": "CIA World Factbook (archived profile)"
       },
       {
         "text": "Jamaica gave geographers an example of 'cockpit karst'. In Cockpit Country, dissolving limestone left so many enclosed hollows that travelling in a straight line means climbing ridge after ridge.",
@@ -8547,8 +8547,8 @@
         "label": "www.bahamas.com"
       },
       {
-        "text": "The Bahamian islands are the exposed tops of great carbonate banks. Between the banks, deep channels turn dark blue beside some of the palest turquoise water visible from space.",
-        "source": "https://science.nasa.gov/blogs/earth-matters/2014/01/16/best-of-the-archives-dunes-of-the-great-bahama-bank/",
+        "text": "The Tongue of the Ocean is a deep submarine canyon between Bahamian banks. Its sheer sides put deep blue ocean water almost beside pale, sunlit reef flats.",
+        "source": "https://science.nasa.gov/photojournal/tongue-of-the-ocean-and-grand-bahama-bank/",
         "label": "science.nasa.gov"
       }
     ]
@@ -8677,9 +8677,9 @@
         "label": "CIA World Factbook (archived profile)"
       },
       {
-        "text": "Follow the Río Plátano downhill through its biosphere reserve and you pass from mountains through tropical rainforest to the Caribbean shore without leaving the same protected watershed.",
-        "source": "https://whc.unesco.org/en/list/196/",
-        "label": "whc.unesco.org"
+        "text": "The Bay Islands of Honduras belong to a reef that crosses four countries. From Roatán the Mesoamerican Reef system continues along Guatemala, Belize and Mexico.",
+        "source": "https://www.roatanmarinepark.org/binmp",
+        "label": "roatanmarinepark.org"
       }
     ]
   },
@@ -9052,19 +9052,19 @@
     "name": "Martinique",
     "options": [
       {
-        "text": "In 1902 a fast-moving volcanic current from Mount Pelée destroyed Saint-Pierre. The disaster helped change how scientists understood explosive eruptions.",
-        "source": "https://whc.unesco.org/en/list/1657/",
-        "label": "UNESCO"
+        "text": "At Sainte-Marie a seasonal tongue of sand can connect an offshore islet to Martinique. At other times the water takes the path away again.",
+        "source": "https://www.martinique.org/fr/que-faire/sites-naturels-publics/lilet-sainte-marie-et-son-tombolo",
+        "label": "martinique.org"
       },
       {
-        "text": "Martinique's northern highlands preserve two volcanic landscapes of different ages, active Mount Pelée and the more deeply eroded Pitons du Carbet.",
-        "source": "https://whc.unesco.org/en/list/1657/",
-        "label": "UNESCO"
+        "text": "The Caravelle Peninsula carries dry forest and mangroves on a narrow stretch of Martinique's Atlantic coast. A small headland contains habitats with very different water supplies.",
+        "source": "https://www.outre-mer.gouv.fr/extension-de-la-reserve-naturelle-nationale-de-la-presquile-de-la-caravelle-martinique",
+        "label": "outre-mer.gouv.fr"
       },
       {
-        "text": "A Martinican yole has an unusual balancing system. The crew climbs out onto long poles to use their own body weight to keep the sailing boat upright.",
-        "source": "https://ich.unesco.org/en/BSP/the-martinique-yole-from-construction-to-sailing-practices-a-model-for-heritage-safeguarding-01582",
-        "label": "ich.unesco.org"
+        "text": "Mountain forests on Martinique change with altitude up to summit vegetation. Climbing the volcanoes takes you through a succession of habitats within a few kilometres of the tropical coast.",
+        "source": "https://whc.unesco.org/en/list/1657",
+        "label": "whc.unesco.org"
       },
       {
         "text": "After Mount Pelée erupted in 1902, solid lava pushed out of the crater like a huge stone needle. For a short time, Martinique had a new summit hundreds of metres tall.",
