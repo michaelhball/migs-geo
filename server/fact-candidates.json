@@ -691,5 +691,236 @@
         "label": "CIA World Factbook (archived country profile)"
       }
     ]
+  },
+  {
+    "id": "lake-1159126669",
+    "name": "Lake Turkana",
+    "options": [
+      {
+        "text": "A desert lake can be a nursery. Nile crocodiles breed on Turkana’s islands, while submerged beds of pondweed shelter spawning fish in South Island’s muddy bays.",
+        "source": "https://whc.unesco.org/en/list/801/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Koobi Fora, the ground beside the lake preserves early human relatives alongside molluscs and other animals. Researchers use the shells as well as the bones to reconstruct the landscape those humans inhabited.",
+        "source": "https://whc.unesco.org/en/list/801/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "On a map of bird migration, this arid part of Kenya is a water stop. Migrating waterbirds use the national parks around the world’s largest desert lake.",
+        "source": "https://whc.unesco.org/en/list/801/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113295",
+    "name": "Lake Saimaa",
+    "options": [
+      {
+        "text": "When a Finnish winter brings too little snow, conservationists heap snowdrifts on the lake ice. Saimaa ringed seals can dig birthing shelters inside them.",
+        "source": "https://whc.unesco.org/en/tentativelists/6510",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The land rose after the ice sheet melted and cut Saimaa off from the Baltic. Seals stranded on the inland side became a population adapted to freshwater.",
+        "source": "https://whc.unesco.org/en/tentativelists/6510",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Saimaa’s outlet changed direction. As the ground tilted after the ice age, the lake broke through toward the Vuoksi about 6,000 years ago and began draining to Lake Ladoga.",
+        "source": "https://whc.unesco.org/en/tentativelists/6510",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159126091",
+    "name": "Lake Eyre North",
+    "options": [
+      {
+        "text": "A Lake Eyre dragon can make a living on the dry lakebed. This little lizard hunts ants and slips beneath the salt crust for shelter.",
+        "source": "https://www.parks.sa.gov.au/parks/kati-thanda-lake-eyre-national-park?token=I9kjtzo02v-rsvLgN3nAiIuW0al_QtI9",
+        "label": "National Parks and Wildlife Service South Australia"
+      },
+      {
+        "text": "The flood that revives Kati Thanda–Lake Eyre can begin far outside South Australia. Monsoon rains in Queensland feed channels that carry the water across the arid interior.",
+        "source": "https://www.parks.sa.gov.au/parks/kati-thanda-lake-eyre-national-park?token=I9kjtzo02v-rsvLgN3nAiIuW0al_QtI9",
+        "label": "National Parks and Wildlife Service South Australia"
+      },
+      {
+        "text": "As floodwater evaporates and turns to brine, most fish disappear. The Lake Eyre hardyhead can keep feeding and breeding in water saltier than the sea.",
+        "source": "https://www.parks.sa.gov.au/parks/kati-thanda-lake-eyre-national-park?token=I9kjtzo02v-rsvLgN3nAiIuW0al_QtI9",
+        "label": "National Parks and Wildlife Service South Australia"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159106817",
+    "name": "Reindeer Lake",
+    "options": [
+      {
+        "text": "Deep Bay forms an almost circular hole in otherwise shallow Reindeer Lake. The water reaches about 220 metres down inside an ancient impact crater.",
+        "source": "https://www.lpi.usra.edu/publications/slidesets/craters/slide_30.html",
+        "label": "Lunar and Planetary Institute"
+      },
+      {
+        "text": "Drillers investigating Reindeer Lake in the 1960s brought up shattered rock from beneath Deep Bay. The shock damage was evidence of an impact.",
+        "source": "https://www.lpi.usra.edu/publications/slidesets/craters/slide_30.html",
+        "label": "Lunar and Planetary Institute"
+      },
+      {
+        "text": "The impact at Reindeer Lake forced rock back up at the centre of the crater. That central rise is still there, entirely hidden underwater.",
+        "source": "https://www.lpi.usra.edu/publications/slidesets/craters/slide_30.html",
+        "label": "Lunar and Planetary Institute"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159106729",
+    "name": "Great Slave Lake",
+    "options": [
+      {
+        "text": "In winter the ice becomes a road between Yellowknife and Dettah. An early thaw in 2019 closed the crossing about a week ahead of its usual season.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/deepest-lake-in-north-america-145097/",
+        "label": "NASA"
+      },
+      {
+        "text": "Yellowknife builds a snow castle on Great Slave Lake. In 2019 warm weather forced its festival to close the castle for the first time in 24 years.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/deepest-lake-in-north-america-145097/",
+        "label": "NASA"
+      },
+      {
+        "text": "Water leaving the lake at its southwest end enters the Mackenzie River. The deepest lake in North America helps feed Canada’s longest river.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/deepest-lake-in-north-america-145097/",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159106851",
+    "name": "Lake Winnipegosis",
+    "options": [
+      {
+        "text": "On the west shore of Lake Winnipegosis, seaside plantain grows far inland. Salty flats give plants usually found on northern coasts a foothold in the boreal forest.",
+        "source": "https://gov.mb.ca/sd/pubs/parks-protected-spaces/ec_reserves/winnipegosis_backgrounder.pdf",
+        "label": "Government of Manitoba"
+      },
+      {
+        "text": "Springs beside this freshwater lake discharge brine. Its chemistry records groundwater dissolving rock salt and mixing with fresh water on the way up.",
+        "source": "https://www.gov.mb.ca/iem/geo/field/roa18pdfs/GS2018-10.pdf",
+        "label": "Government of Manitoba"
+      },
+      {
+        "text": "You can walk from boreal vegetation into salt-tolerant meadow plants on the same lakeshore. As sheets of lakebed emerge, their poorly drained, salty soil sorts out what can grow there.",
+        "source": "https://gov.mb.ca/sd/pubs/parks-protected-spaces/ec_reserves/winnipegosis_backgrounder.pdf",
+        "label": "Government of Manitoba"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159106747",
+    "name": "Lake Winnipeg",
+    "options": [
+      {
+        "text": "Water falling in four Canadian provinces and four U.S. states can end up in Lake Winnipeg. Its watershed reaches much farther south than its Manitoba shoreline suggests.",
+        "source": "https://gov.mb.ca/sd/water/lakes-beaches-rivers/lake-winnipeg.html",
+        "label": "Government of Manitoba"
+      },
+      {
+        "text": "Wind can push water toward one end of Lake Winnipeg, lifting the water level along the downwind shore even when the amount of water in the lake barely changes.",
+        "source": "https://www.manitoba.ca/sd/water/watershed/iwmp/willow_creek/documentation/willcreekplan_final_jan31.pdf",
+        "label": "Government of Manitoba"
+      },
+      {
+        "text": "Algal growth on Lake Winnipeg can be thick enough to clog fishing nets. Nitrogen and phosphorus entering from its vast drainage basin help fuel the blooms.",
+        "source": "https://gov.mb.ca/sd/water/lakes-beaches-rivers/lake-winnipeg.html",
+        "label": "Government of Manitoba"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113251",
+    "name": "Lake Onega",
+    "options": [
+      {
+        "text": "On Kizhi Island, carpenters crowned a wooden church with 22 domes. From Lake Onega, the skyline of the little island looks much bigger than the settlement.",
+        "source": "https://whc.unesco.org/en/list/544/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Kizhi’s parish had different churches for different seasons. The winter church, built in 1764, has eight small domes gathered around one tall central dome.",
+        "source": "https://whc.unesco.org/en/list/544/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Inside Kizhi’s Church of the Transfiguration, the gilded wooden screen holds 102 icons. Above it is a vault known as the “heaven.”",
+        "source": "https://whc.unesco.org/en/list/544/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "gulf-of-alaska",
+    "name": "Gulf of Alaska",
+    "options": [
+      {
+        "text": "Buller’s shearwaters reach the Gulf of Alaska from nesting grounds in New Zealand. A bird over these cold northern waters may have crossed most of the Pacific.",
+        "source": "https://oceanexplorer.noaa.gov/expedition-feature/19gulfofalaska-background-seabirds/",
+        "label": "NOAA"
+      },
+      {
+        "text": "The gulf’s spring bloom is visible from space. In April 2017 two different satellite instruments recorded the growing phytoplankton bloom.",
+        "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000038",
+        "label": "NASA"
+      },
+      {
+        "text": "Black-footed albatrosses that breed in the western Hawaiian Islands forage here. Look for them around the edge of the gulf’s continental shelf.",
+        "source": "https://oceanexplorer.noaa.gov/expedition-feature/19gulfofalaska-background-seabirds/",
+        "label": "NOAA"
+      }
+    ]
+  },
+  {
+    "id": "adriatic-sea",
+    "name": "Adriatic Sea",
+    "options": [
+      {
+        "text": "Along Croatia’s Adriatic coast, many islands line up like parallel strokes. Faults set the pattern, then rising seas flooded the low ground between the ridges.",
+        "source": "https://images.nasa.gov/details/iss019e005501",
+        "label": "NASA"
+      },
+      {
+        "text": "In AD 305 the Roman emperor Diocletian retired to a palace on the Adriatic. His old residence became the core of the Croatian city of Split.",
+        "source": "https://images.nasa.gov/details/iss019e005501",
+        "label": "NASA"
+      },
+      {
+        "text": "Venice sits behind a long, thin barrier island. Incoming Adriatic storm waves meet the barrier before they can reach much of the lagoon.",
+        "source": "https://images.nasa.gov/details/iss039e019482",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "red-sea",
+    "name": "Red Sea",
+    "options": [
+      {
+        "text": "The seabed between Africa and Arabia has been pulling apart for roughly 30 million years. Today the Red Sea fills that growing rift.",
+        "source": "https://images.nasa.gov/details/iss036e011050",
+        "label": "NASA"
+      },
+      {
+        "text": "Even in the Red Sea’s unusually salty water, researchers have counted around 260 species of coral.",
+        "source": "https://images.nasa.gov/details/iss016e019394",
+        "label": "NASA"
+      },
+      {
+        "text": "A photograph taken above the Sudanese coast in 1993 caught a satellite flying free over the Red Sea. The crew of Discovery had released it by robot arm and later picked it up again.",
+        "source": "https://images.nasa.gov/details/sts056-92-0028",
+        "label": "NASA"
+      }
+    ]
   }
 ]
