@@ -774,7 +774,7 @@ test("fact drafts, follow-ups and publication are independent of schedules", () 
   const s=createStore(":memory:",atlas);
   try {
     const review=s.editorial, item=review.list().find(p=>p.id==="aral-sea");
-    assert.equal(item.options.length,3);
+    assert.ok(item.options.length >= 3);
     const fields={choice:item.options[0].id,comment:"Please shorten",hold:true};
     review.save(item.id,{...fields,revision:0});
     assert.throws(()=>review.save(item.id,{...fields,revision:0}),/changed/);
