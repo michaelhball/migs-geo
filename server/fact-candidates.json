@@ -5437,5 +5437,1118 @@
         "label": "ich.unesco.org"
       }
     ]
+  },
+  {
+    "id": "burkina-faso",
+    "name": "Burkina Faso",
+    "options": [
+      {
+        "text": "At Tiébélé, the walls of the royal compound are a canvas. Kassena women renew the painted decorations on the earthen houses.",
+        "source": "https://whc.unesco.org/en/list/1713/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Ironworkers at Douroula were extracting metal from ore by the eighth century BCE. Elsewhere in the country tall natural-draught furnaces still stand.",
+        "source": "https://whc.unesco.org/en/list/1602/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The stone walls of Loropéni are at least a thousand years old. This fortified settlement belonged to a network that controlled gold for trans-Saharan trade.",
+        "source": "https://whc.unesco.org/en/list/1225/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "cameroon",
+    "name": "Cameroon",
+    "options": [
+      {
+        "text": "Among Cameroon's Bamoun, the Nguon includes a public trial of the king's governance. Ritual chiefs present criticisms collected from the community.",
+        "source": "https://ich.unesco.org/en/RL/01955",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In the Sawa Ngondo ceremony, a priest dives from a sacred canoe into the Wouri River. People gather on the banks to await the water oracle's message.",
+        "source": "https://ich.unesco.org/en/RL/02140",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Dja River curves around nearly the whole Dja forest reserve. The water forms a natural boundary for a rainforest inhabited by gorillas and chimpanzees.",
+        "source": "https://whc.unesco.org/en/list/407/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "burundi",
+    "name": "Burundi",
+    "options": [
+      {
+        "text": "Burundi's royal drummers combine synchronised beats with leaps, songs and heroic poetry. A group arranges its drums around a central drum.",
+        "source": "https://ich.unesco.org/en/RL/00989",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Rain falling in Burundi can head for opposite sides of Africa. The country straddles the watershed between the Nile and Congo systems.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/by.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "The borders of the precolonial kingdom of Burundi in the nineteenth century already resembled those of the modern country.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/by.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "cape-verde",
+    "name": "Cape Verde",
+    "options": [
+      {
+        "text": "The cape in Cabo Verde's name is not on the islands. It is a peninsula on the Senegalese mainland, hundreds of kilometres to the east.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/cv.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "In Cabo Verde's morna songs, departure, separation and the longing to return are recurring subjects in music shaped by island life.",
+        "source": "https://ich.unesco.org/en/RL/01469",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Cidade Velha on Santiago was the first European colonial town built in the tropics. The layout of the old settlement still follows the river valley.",
+        "source": "https://whc.unesco.org/en/list/1310",
+        "label": "whc.unesco.org"
+      }
+    ]
+  },
+  {
+    "id": "sao-tome-and-principe",
+    "name": "São Tomé and Príncipe",
+    "options": [
+      {
+        "text": "São Tomé and Príncipe are mountaintops in the Gulf of Guinea. They belong to a chain of volcanoes rising out of the Atlantic.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/tp.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "São Tomé's old agricultural estates are known as roças. Cocoa and coffee plantations became a defining feature of the island's inhabited landscape.",
+        "source": "https://www.unesco.org/en/mab/ilha-de-sao-tome",
+        "label": "www.unesco.org"
+      },
+      {
+        "text": "The two islands are named for very different figures. São Tomé honours Saint Thomas, while Príncipe's original name referred to a Portuguese prince.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/tp.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "central-african-republic",
+    "name": "Central African Republic",
+    "options": [
+      {
+        "text": "Aka singers can improvise their individual parts while keeping four interwoven vocal lines going. The forest's hunting and camp life have songs of their own.",
+        "source": "https://ich.unesco.org/en/RL/00082",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Forest elephants visit open clearings in the Sangha forest to feed on mineral-rich soil. These gathering places make an otherwise elusive animal visible.",
+        "source": "https://whc.unesco.org/en/list/1380/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The savannas of Manovo-Gounda St Floris lie where distinct African ecological zones meet. Its floodplains also offer waterbirds a refuge in the dry season.",
+        "source": "https://whc.unesco.org/en/list/475/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "chad",
+    "name": "Chad",
+    "options": [
+      {
+        "text": "In the Sahara, the Ounianga lakes include both fresh and intensely salty water. Underground supplies keep them from vanishing in the desert heat.",
+        "source": "https://whc.unesco.org/en/list/1400/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Wind and water carved arches and canyons into the Ennedi sandstone. Some deep canyons hold water year-round in the middle of the Sahara.",
+        "source": "https://whc.unesco.org/en/list/1475/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Lake Chad used to be part of an enormous inland sea. The animals of the wetter Sahara included hippos, giraffes and elephants.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/cd.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "equatorial-guinea",
+    "name": "Equatorial Guinea",
+    "options": [
+      {
+        "text": "The equator misses every piece of dry land in Equatorial Guinea. Its mainland lies north of the line, while the island of Annobón lies south of it.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ek.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "On Bioko you can climb from lowland rainforest into a very different mountain forest on the same small island. Its slopes shelter distinctive island primates.",
+        "source": "https://www.unesco.org/en/mab/isla-de-bioko",
+        "label": "www.unesco.org"
+      },
+      {
+        "text": "Equatorial Guinea's mainland and Bioko are separate enough that a voyage from one to the other passes the coast of another country, Cameroon.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ek.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "kenya",
+    "name": "Kenya",
+    "options": [
+      {
+        "text": "Flamingos feed in the shallow alkaline lakes of Kenya's Rift Valley. Their movements link lakes that look completely separate on a map.",
+        "source": "https://whc.unesco.org/en/list/1060/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Thimlich Ohinga, communities built a stone enclosure without mortar to protect both people and livestock near Lake Victoria.",
+        "source": "https://whc.unesco.org/en/list/1450/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "For the Mijikenda, patches of coastal forest preserve the sites of old fortified settlements called kayas. Their ancestral significance helped keep the trees standing.",
+        "source": "https://whc.unesco.org/en/list/1231/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "comoros",
+    "name": "Comoros",
+    "options": [
+      {
+        "text": "Grande Comore rises around Karthala, a broad active shield volcano. Its summit is cut by a complex of craters.",
+        "source": "https://volcano.si.edu/volcano.cfm?bgvn=1&snum=indian_w&vn=233010",
+        "label": "volcano.si.edu"
+      },
+      {
+        "text": "Comorian perfume plantations grow ylang-ylang alongside other fragrant plants. The blossoms are distilled for their essential oil.",
+        "source": "https://whc.unesco.org/en/tentativelists/5110/",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "The Comoros take their name from an Arabic word for the moon. The archipelago once connected trading routes between East Africa, India and the Middle East.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/cn.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "ivory-coast",
+    "name": "Ivory Coast",
+    "options": [
+      {
+        "text": "On some earthen mosques in northern Côte d'Ivoire, the projecting buttresses are topped with pottery or ostrich eggs.",
+        "source": "https://whc.unesco.org/en/list/1648/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Attiéké looks rather like couscous, but its grains start as cassava. The makers ferment and granulate the root before steaming it.",
+        "source": "https://ich.unesco.org/en/RL/02086",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Zaouli performances among the Guro, a carved mask and costume turn the dancer into a character. Percussion drives remarkably intricate footwork.",
+        "source": "https://ich.unesco.org/en/RL/01255",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "democratic-republic-of-the-congo",
+    "name": "Democratic Republic of the Congo",
+    "options": [
+      {
+        "text": "The striped-legged okapi lives in the forests of the Congo Basin. The Ituri reserve protects part of the range of this elusive giraffe relative.",
+        "source": "https://whc.unesco.org/en/list/718/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Salonga protects a vast tract of rainforest reached chiefly by water. Among its inhabitants is the bonobo, an ape found only in this country.",
+        "source": "https://whc.unesco.org/en/list/280/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Virunga encompasses volcanoes, mountain gorilla habitat and the snowy Rwenzori highlands within the same national park.",
+        "source": "https://whc.unesco.org/en/list/63/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "djibouti",
+    "name": "Djibouti",
+    "options": [
+      {
+        "text": "In a Djiboutian wedding tradition, the groom receives camel meat preserved in ghee. First he has to work out how to untie the elaborately wrapped container.",
+        "source": "https://ich.unesco.org/en/USL/02001",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Lake Assal sits below sea level. Its shore is the lowest exposed land in Africa.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/dj.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Ships sailing from the Indian Ocean to Suez pass Djibouti at the entrance to the Red Sea. A small stretch of coastline sits beside an intercontinental sea route.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/dj.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "guinea-bissau",
+    "name": "Guinea-Bissau",
+    "options": [
+      {
+        "text": "The Bijagós islands form an active delta out in the Atlantic. Mudflats and mangroves link the islands as tides rise and fall.",
+        "source": "https://whc.unesco.org/en/list/1431/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Bijagós mudflats feed hundreds of thousands of migratory shorebirds. The surrounding waters also support manatees and sea turtles.",
+        "source": "https://whc.unesco.org/en/list/1431/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The capital's name does double duty. Bissau was added to the country's name to distinguish it from neighbouring Guinea.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/pu.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "eritrea",
+    "name": "Eritrea",
+    "options": [
+      {
+        "text": "In highland Asmara, Italian colonial planners gave modernist architecture room to experiment. The city retains cinemas, workshops and other buildings from that period.",
+        "source": "https://whc.unesco.org/en/list/1550/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Eritrea's name is a piece of its own map. It comes from the ancient Greek name for the Red Sea along its coast.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/er.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Asmara's modernist buildings stand more than two kilometres above sea level. Its highland setting is far removed from the Red Sea port below.",
+        "source": "https://whc.unesco.org/en/list/1550/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "ethiopia",
+    "name": "Ethiopia",
+    "options": [
+      {
+        "text": "Gedeo farmers stack crops vertically on the escarpment. Tall trees shade enset, a staple food plant, and coffee grows underneath.",
+        "source": "https://whc.unesco.org/en/list/1641/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Under the Oromo Gada system, responsibilities move between organised age groups. Leadership changes hands on an eight-year cycle.",
+        "source": "https://ich.unesco.org/en/RL/01164",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Konso communities built stone terraces across steep dry hillsides. They retain soil and catch water for farming where rain runs off fast.",
+        "source": "https://whc.unesco.org/en/list/1333/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "gabon",
+    "name": "Gabon",
+    "options": [
+      {
+        "text": "At Oklo, uranium deposits sustained natural nuclear reactions about two billion years ago. Scientists recognised the reactors from an unexpected isotope ratio in the ore.",
+        "source": "https://inis.iaea.org/records/jasg1-n1n34",
+        "label": "inis.iaea.org"
+      },
+      {
+        "text": "Lopé contains savanna beside dense rainforest. This patchwork preserves evidence of past climate shifts as well as thousands of years of human activity.",
+        "source": "https://whc.unesco.org/en/list/1147/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Ivindo National Park, rapids and waterfalls break up rivers running through equatorial forest. Aquatic communities have evolved around these natural barriers.",
+        "source": "https://whc.unesco.org/en/list/1653/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "the-gambia",
+    "name": "The Gambia",
+    "options": [
+      {
+        "text": "The smallest country on the African mainland is shaped like a river corridor. Most of The Gambia follows its namesake river inland through Senegal.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ga.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Tiny Kunta Kinteh Island in the Gambia River changed hands repeatedly as European powers competed over Atlantic trade, including the trade in enslaved people.",
+        "source": "https://whc.unesco.org/en/list/761/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In the Manding Kankurang tradition, a masked figure clad in bark and leaves moves through the community during initiation rites.",
+        "source": "https://ich.unesco.org/en/RL/kankurang-manding-initiatory-rite-00143",
+        "label": "ich.unesco.org"
+      }
+    ]
+  },
+  {
+    "id": "lesotho",
+    "name": "Lesotho",
+    "options": [
+      {
+        "text": "More than four-fifths of Lesotho stands above 1,800 metres. This mountain country fits entirely inside South Africa.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/lt.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Water is one of Lesotho's major exports. Dams and tunnels in its highlands transfer water across the watershed to South Africa.",
+        "source": "https://lhda.org.ls/projectphases/phaseii",
+        "label": "lhda.org.ls"
+      },
+      {
+        "text": "Sehlabathebe in Lesotho and the Drakensberg park across the South African border protect different sides of the same high mountain landscape.",
+        "source": "https://whc.unesco.org/en/list/985/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "liberia",
+    "name": "Liberia",
+    "options": [
+      {
+        "text": "Liberia's name comes from the Latin for 'free'. Its nineteenth-century republic grew from settlements established for free and formerly enslaved Black people from America.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/li.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "The pygmy hippopotamus lives in West African forest, including Liberia. It shares its name with the familiar river hippo but belongs to a different genus.",
+        "source": "https://whc.unesco.org/document/206123",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "Liberia's capital commemorates an American president. Monrovia was named for James Monroe.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/li.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "madagascar",
+    "name": "Madagascar",
+    "options": [
+      {
+        "text": "In Madagascar's dry country, rain has carved limestone into the needle-like ridges called tsingy. The maze shelters wildlife isolated between the rocks.",
+        "source": "https://whc.unesco.org/en/list/494/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Zafimaniry craftspeople use wood for houses, furniture and intricately carved surfaces. Timber joints hold the traditional homes together.",
+        "source": "https://ich.unesco.org/en/RL/00080",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Malagasy kabary speakers weave proverbs, riddles and wordplay into public speeches. Their performance can turn a family occasion into an exercise in poetry.",
+        "source": "https://ich.unesco.org/en/RL/01741",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "malawi",
+    "name": "Malawi",
+    "options": [
+      {
+        "text": "Lake Malawi's cichlid fishes have diversified into hundreds of species. Closely related fish occupy remarkably different niches along the same rocky shores.",
+        "source": "https://whc.unesco.org/en/list/289/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Nsima begins as ground maize, stirred into thick porridge. Making it involves a whole chain of skills from tending the crop to sharing the meal.",
+        "source": "https://ich.unesco.org/en/RL/01292",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Mount Mulanje rises abruptly out of southern Malawi's plains. The huge isolated mountain is also regarded as a dwelling place of spirits and ancestors.",
+        "source": "https://whc.unesco.org/en/list/1201/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "mali",
+    "name": "Mali",
+    "options": [
+      {
+        "text": "Every seven years, communities at Kangaba replace the thatch on the House of Speech. The re-roofing brings oral histories into public performance.",
+        "source": "https://ich.unesco.org/en/RL/00190",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Timbuktu was a university town as well as a desert trading centre. Scholars gathered around Sankore and the city's other mosques.",
+        "source": "https://whc.unesco.org/en/list/119/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Tomb of Askia at Gao is a stepped pyramid made of earth. It commemorates a ruler of the Songhai Empire beside the Niger.",
+        "source": "https://whc.unesco.org/en/list/1139/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "mauritania",
+    "name": "Mauritania",
+    "options": [
+      {
+        "text": "At Banc d'Arguin the Sahara meets extensive tidal flats. Birds that breed as far away as northern Eurasia spend the winter feeding there.",
+        "source": "https://whc.unesco.org/en/list/506/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Chinguetti and three other desert towns grew up to shelter caravans. Their compact streets also supported scholars and religious schools.",
+        "source": "https://whc.unesco.org/en/list/750/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Mauritanian mahadra is a community school that can travel with its teachers and students, a form of education suited to nomadic life.",
+        "source": "https://ich.unesco.org/en/RL/01960",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "mauritius",
+    "name": "Mauritius",
+    "options": [
+      {
+        "text": "Le Morne's cliffs helped people escaping slavery hide on a peninsula in southwest Mauritius. The mountain became a symbol of their resistance.",
+        "source": "https://whc.unesco.org/en/list/1259/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Aapravasi Ghat in Port Louis, indentured labourers from overseas first set foot on the island. The surviving immigration depot marks that passage.",
+        "source": "https://whc.unesco.org/en/list/1227/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "On Rodrigues, sega tambour musicians use drums to lead songs in Creole. The singing, drumming and dancing are closely linked.",
+        "source": "https://ich.unesco.org/en/RL/01257",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "morocco",
+    "name": "Morocco",
+    "options": [
+      {
+        "text": "Producing argan oil involves cracking the hard nut, grinding the kernels and working the paste to release the oil. The tree grows in Morocco's southwest.",
+        "source": "https://ich.unesco.org/en/RL/00955",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Marrakesh, storytellers, musicians and other performers make Jemaa el-Fna square into an open-air venue whose programme changes through the day.",
+        "source": "https://ich.unesco.org/en/RL/00014",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Aït-Ben-Haddou, a group of earthen houses sits inside defensive walls. The fortified settlement stood along a caravan route between the Sahara and Marrakesh.",
+        "source": "https://whc.unesco.org/en/list/444/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "mozambique",
+    "name": "Mozambique",
+    "options": [
+      {
+        "text": "Chopi timbila ensembles play wooden xylophones of different sizes. Skilled makers tune individual keys before the instruments can play together.",
+        "source": "https://ich.unesco.org/en/RL/00133",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Island of Mozambique once served as the capital of Portuguese East Africa. A small island offshore gave the entire modern country its name.",
+        "source": "https://whc.unesco.org/en/list/599",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "In Makonde mapiko performances, carved masks transform dancers into recognisable characters. Movement and music tell an audience who has appeared.",
+        "source": "https://ich.unesco.org/en/USL/01996",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "niger",
+    "name": "Niger",
+    "options": [
+      {
+        "text": "In Agadez, a tall minaret rises from a city built largely of earth. Projecting wooden beams give its sides a bristling outline.",
+        "source": "https://whc.unesco.org/en/list/1268/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Some communities in Niger maintain formal joking relationships. People entitled to tease one another use humour to ease tensions and reinforce ties.",
+        "source": "https://ich.unesco.org/en/RL/01009",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Aïr Mountains rise like islands out of the Ténéré desert. Their extra moisture supports vegetation that cannot grow on the surrounding sand.",
+        "source": "https://whc.unesco.org/en/list/573/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "nigeria",
+    "name": "Nigeria",
+    "options": [
+      {
+        "text": "At Kano's Durbar, thousands of horsemen parade with the emir to mark the Eid festivals. Riders and horses both wear elaborate regalia.",
+        "source": "https://ich.unesco.org/en/RL/01895",
+        "label": "UNESCO"
+      },
+      {
+        "text": "On the outskirts of Osogbo, a sacred forest protects shrines and sculptures dedicated to Osun, the Yoruba divinity associated with its river.",
+        "source": "https://whc.unesco.org/en/list/1118/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Ijele masquerade can tower several metres above its carrier. Musicians, attendants and other performers accompany the enormous moving figure.",
+        "source": "https://ich.unesco.org/en/RL/00194",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "republic-of-the-congo",
+    "name": "Republic of the Congo",
+    "options": [
+      {
+        "text": "Odzala-Kokoua's rainforest opens into swampy clearings known as bais. They draw animals out from under the canopy, including forest elephants.",
+        "source": "https://whc.unesco.org/en/list/692/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Brazzaville and Kinshasa, capitals of two separate countries, face each other across the Congo River.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/cf.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Parts of Odzala-Kokoua are open savanna surrounded by equatorial rainforest. The two ecosystems persist within the same protected landscape.",
+        "source": "https://whc.unesco.org/en/list/692/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "rwanda",
+    "name": "Rwanda",
+    "options": [
+      {
+        "text": "Nyungwe's mountain forest feeds two great river systems. Rain from different sides of the watershed can head for either the Congo or the Nile.",
+        "source": "https://whc.unesco.org/en/list/1697/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Rwandan Intore dancers move in formation in a performance recalling warriors. Poetry, singing and drumming accompany the choreography.",
+        "source": "https://ich.unesco.org/en/RL/02129",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Nyamata a former church is preserved as a memorial to the 1994 genocide against the Tutsi. It is one of four sites inscribed together to commemorate the victims.",
+        "source": "https://whc.unesco.org/en/list/1586/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "senegal",
+    "name": "Senegal",
+    "options": [
+      {
+        "text": "Ceebu jën, rice and fish cooked with vegetables, is closely associated with Saint-Louis. Its preparation and the way diners share the platter are both part of the tradition.",
+        "source": "https://ich.unesco.org/en/RL/01748",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Ancient burial grounds in Senegal and The Gambia are marked with circles of upright laterite stones cut from nearby quarries.",
+        "source": "https://whc.unesco.org/en/list/1226/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Djoudj wetlands lie just south of the Sahara. For birds flying across the desert, the Senegal River delta offers a first major place to feed and rest.",
+        "source": "https://whc.unesco.org/en/list/25/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "seychelles",
+    "name": "Seychelles",
+    "options": [
+      {
+        "text": "The coco de mer palm in the Vallée de Mai produces the world's heaviest seed. Its huge double-lobed fruit once puzzled sailors who found it drifting at sea.",
+        "source": "https://whc.unesco.org/en/list/261/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Aldabra's remote coral atoll supports an enormous wild population of giant tortoises. Much of the land surrounding its lagoon sits only a little above the tide.",
+        "source": "https://whc.unesco.org/en/list/185/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Enslaved Africans in Seychelles once danced moutya at night away from plantation houses. Performers warm the goatskin drum near a fire before playing.",
+        "source": "https://ich.unesco.org/en/RL/01690",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "sierra-leone",
+    "name": "Sierra Leone",
+    "options": [
+      {
+        "text": "Bunce Island links Sierra Leone to the rice-growing coast of the United States. Enslaved people shipped from here carried agricultural knowledge across the Atlantic.",
+        "source": "https://whc.unesco.org/en/tentativelists/5745/",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "In the Gola forest and on Tiwai Island, pygmy hippos share the Upper Guinean forest region with forest elephants and white-necked rockfowl.",
+        "source": "https://whc.unesco.org/en/list/1746/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Sierra Leone's name comes from Portuguese for 'Lion Mountains'. Sailors applied it to the mountains rising beside what is now Freetown.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/sl.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "south-africa",
+    "name": "South Africa",
+    "options": [
+      {
+        "text": "About two billion years ago a space rock struck near present-day Vredefort. Erosion has exposed the deep structure of the enormous impact site.",
+        "source": "https://whc.unesco.org/en/list/1162/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Barberton Makhonjwa Mountains preserve rock more than three billion years old. They offer a rare view of what Earth's early surface was like.",
+        "source": "https://whc.unesco.org/en/list/1575/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Before Great Zimbabwe rose to prominence, Mapungubwe traded with the Indian Ocean coast from deep in the southern African interior.",
+        "source": "https://whc.unesco.org/en/list/1099/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "sudan",
+    "name": "Sudan",
+    "options": [
+      {
+        "text": "The pyramids at Meroë were built for rulers of Kush. This Nile kingdom had its own royal city and its own tradition of pyramid burial.",
+        "source": "https://whc.unesco.org/en/list/1336/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The isolated hill of Gebel Barkal was revered as the home of the god Amun. Temples stand at its foot beside the Nile.",
+        "source": "https://whc.unesco.org/en/list/1073/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Meroë's archaeological 'island' is not an island in the sea. It is a region inland between the Nile and Atbara rivers.",
+        "source": "https://whc.unesco.org/en/list/1336/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "eswatini",
+    "name": "Eswatini",
+    "options": [
+      {
+        "text": "At Lion Cavern, people dug into the mountainside for red ochre tens of thousands of years ago. Pigment drew miners here long before modern iron extraction.",
+        "source": "https://www.thekingdomofeswatini.com/north-west-eswatini/ngwenya-mine-lion-cavern/",
+        "label": "www.thekingdomofeswatini.com"
+      },
+      {
+        "text": "Sibebe Rock outside Mbabane is an immense exposed granite dome. Its smooth face rises above the surrounding hills.",
+        "source": "https://www.thekingdomofeswatini.com/central-eswatini/sibebe-rock/",
+        "label": "www.thekingdomofeswatini.com"
+      },
+      {
+        "text": "Both Eswatini and the name of the Swazi people recall King Mswati II, who expanded and consolidated the kingdom in the nineteenth century.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/wz.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "tanzania",
+    "name": "Tanzania",
+    "options": [
+      {
+        "text": "At Ngorongoro you can descend into a huge volcanic caldera and see grazing herds on its floor. Nearby Olduvai preserves evidence of early humans.",
+        "source": "https://whc.unesco.org/en/list/39/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The great Serengeti migration follows changing access to water and grass. Wildebeest, zebras and gazelles move across the plains with predators following.",
+        "source": "https://whc.unesco.org/en/list/156/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In the Kondoa rock shelters, painted figures have survived under natural overhangs. Some of the sites still have ritual uses for nearby communities.",
+        "source": "https://whc.unesco.org/en/list/1183/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "togo",
+    "name": "Togo",
+    "options": [
+      {
+        "text": "In Koutammakou, Batammariba families build earthen tower houses called takienta. The houses give this part of northern Togo its distinctive skyline.",
+        "source": "https://whc.unesco.org/en/list/1140/",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "Among the Guin of southern Togo, taking a sacred stone marks the new year. The rite belongs to a cycle of ceremonies that lasts several months.",
+        "source": "https://ich.unesco.org/en/RL/02241",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The country takes its name from a settlement on Lake Togo. The name likely combines Ewe words for water and shore.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/to.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "tunisia",
+    "name": "Tunisia",
+    "options": [
+      {
+        "text": "In the Kerkennah Islands, fishers plant palm fronds in the seabed. The outgoing tide helps guide fish along these barriers into chambers and traps.",
+        "source": "https://ich.unesco.org/en/RL/01566",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Roman amphitheatre at El Jem rises over a small Tunisian town. Its huge freestanding oval remains one of the clearest traces of Roman Africa.",
+        "source": "https://whc.unesco.org/en/list/38/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Making harissa traditionally begins with drying red peppers in the sun. Families grind them with seasonings to make the paste.",
+        "source": "https://ich.unesco.org/en/RL/01710",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "uganda",
+    "name": "Uganda",
+    "options": [
+      {
+        "text": "Ugandan barkcloth makers beat the inner bark of the mutuba tree into fabric. A tree can regrow bark and yield another harvest.",
+        "source": "https://ich.unesco.org/en/RL/00139",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Basoga bigwala music, individual gourd trumpets each sound a single note. A melody only appears when several players interlock their parts.",
+        "source": "https://ich.unesco.org/en/USL/00749",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Rwenzori rise almost on the equator yet reach high enough for glaciers. Giant lobelias grow on their cold, wet mountain slopes.",
+        "source": "https://whc.unesco.org/en/list/684/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "sahrawi-arab-democratic-republic",
+    "name": "Sahrawi Arab Democratic Republic",
+    "options": [
+      {
+        "text": "From space, a thin pale line crosses Western Sahara from Bou Craa towards the Atlantic. It follows a conveyor carrying phosphate rock from the interior.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/bou-craa-western-sahara-35524/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "Along Western Sahara's Atlantic shore, the desert fronts some particularly rich fishing grounds. The coast and the dry interior sustain very different livelihoods.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/wi.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "Desert winds spill pale dust from the phosphate conveyor onto the dark ground beside it. That windblown trail helps satellites pick out its route.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/bou-craa-western-sahara-35524/",
+        "label": "science.nasa.gov"
+      }
+    ]
+  },
+  {
+    "id": "zambia",
+    "name": "Zambia",
+    "options": [
+      {
+        "text": "Mine workers helped spread Zambia's Kalela dance. Dancers move in lines around drums and sing as they step forward and back.",
+        "source": "https://ich.unesco.org/en/RL/01698",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In the Makishi masquerade, costumed characters appear at the end of boys' initiation. Each mask represents a particular figure with its own role.",
+        "source": "https://ich.unesco.org/en/RL/00140",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Victoria Falls the Zambezi spreads into a broad sheet before dropping into a narrow gorge. The rising spray gave it the name Mosi-oa-Tunya, 'the smoke that thunders'.",
+        "source": "https://whc.unesco.org/en/list/509/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "zimbabwe",
+    "name": "Zimbabwe",
+    "options": [
+      {
+        "text": "Great Zimbabwe's immense walls were built by fitting stones together without mortar. The modern country took its name from the ruined city.",
+        "source": "https://whc.unesco.org/en/list/364/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Matobo, erosion has left heaps of rounded granite boulders balanced on one another. Rock shelters among them preserve paintings.",
+        "source": "https://whc.unesco.org/en/list/306/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Mana Pools, channels left behind by the Zambezi fill and empty with its floods. They sustain wildlife along the valley floor in the dry season.",
+        "source": "https://whc.unesco.org/en/list/302/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "canary-islands",
+    "name": "Canary Islands",
+    "options": [
+      {
+        "text": "On La Gomera, Silbo Gomero carries spoken Spanish as whistles. A conversation can travel across ravines that would make a visit on foot a long journey.",
+        "source": "https://ich.unesco.org/en/RL/whistled-language-of-the-island-of-la-gomera-canary-islands-the-silbo-gomero-00172",
+        "label": "ich.unesco.org"
+      },
+      {
+        "text": "The laurel forest at Garajonay depends on moisture carried in by sea fog. It survives high on La Gomera above much drier slopes.",
+        "source": "https://whc.unesco.org/en/list/380/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Tenerife's Mount Teide rises from the ocean floor. Measured from that submerged base, the volcanic edifice is much taller than its height above sea level.",
+        "source": "https://whc.unesco.org/en/list/1258/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "somalia",
+    "name": "Somalia",
+    "options": [
+      {
+        "text": "Somali frankincense is harvested by tapping Boswellia trees. Different species yield distinct resins that traders recognise by name.",
+        "source": "https://www.fao.org/4/y1515b/y1515b.pdf",
+        "label": "www.fao.org"
+      },
+      {
+        "text": "Summer winds off Somalia can bring cold, nutrient-rich water to the sunlit surface. The monsoon helps feed ocean life as well as bringing rain to land.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/winds-connect-snow-to-sea/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "Medieval trading towns on the Somali coast linked the Horn to Arabia and Persia. The sea was a trade route between communities on opposite shores.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/so.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "zanzibar",
+    "name": "Zanzibar",
+    "options": [
+      {
+        "text": "In Stone Town, builders used coral stone and lime for houses facing the Indian Ocean. Carved wooden doors became one of the port's signatures.",
+        "source": "https://whc.unesco.org/en/list/173/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In Zanzibar, taarab musicians perform at weddings whose festivities can run for days. Listeners know it as Swahili wedding music.",
+        "source": "https://ich.unesco.org/en/projects/safeguarding-the-songs-of-the-moon-traditional-swahili-music-from-tanzania-unguja-and-pemba-and-the-comoros-00101?projectID=00101&project_id=00101",
+        "label": "ich.unesco.org"
+      },
+      {
+        "text": "Stone Town grew at the meeting point of African, Arabian, Indian and European trading networks. Those connections survive in the layout and buildings of a single port.",
+        "source": "https://whc.unesco.org/en/list/173/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "guinea",
+    "name": "Guinea",
+    "options": [
+      {
+        "text": "A sacred wooden xylophone in Guinea, the Sosso-Bala, is tied to the story of the Mali Empire. Its music accompanies the epic of Sunjata.",
+        "source": "https://ich.unesco.org/en/RL/00009",
+        "label": "UNESCO"
+      },
+      {
+        "text": "On Mount Nimba, steep slopes and high grasslands rise above the surrounding forests. The mountain shelters an unusual live-bearing toad.",
+        "source": "https://whc.unesco.org/en/list/155/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Niger begins in Guinea quite close to the Atlantic. From there it takes a long detour into the West African interior before reaching the ocean.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/gv.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "libya",
+    "name": "Libya",
+    "options": [
+      {
+        "text": "In Ghadamès, linked rooftops once gave women a route through the oasis town above the covered streets. The houses created two levels of circulation.",
+        "source": "https://whc.unesco.org/en/list/362/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In the rock art of Tadrart Acacus, animals and human activities change from one period to another. The images record a Sahara that was once much wetter.",
+        "source": "https://whc.unesco.org/en/list/287/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Roman emperor Septimius Severus was born at Leptis Magna. He expanded his North African home city with monumental public buildings.",
+        "source": "https://whc.unesco.org/en/list/183/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "somaliland",
+    "name": "Somaliland",
+    "options": [
+      {
+        "text": "At Laas Geel, artists painted cattle in elaborate neck decorations beneath rock overhangs. The shelters sit beside the route from Hargeisa to Berbera.",
+        "source": "https://vr.africanrockart.britishmuseum.org/country/somalia-somaliland/laas-geel/",
+        "label": "vr.africanrockart.britishmuseum.org"
+      },
+      {
+        "text": "Laas Geel is part of a wider family of rock-art sites. Related depictions at Dhambalin and other shelters helped researchers recognise a regional painting style.",
+        "source": "https://vr.africanrockart.britishmuseum.org/country/somalia-somaliland/laas-geel/",
+        "label": "vr.africanrockart.britishmuseum.org"
+      },
+      {
+        "text": "Some painted people at Laas Geel are tiny beside the cattle they attend. The proportions make the herds the centre of the scene.",
+        "source": "https://vr.africanrockart.britishmuseum.org/country/somalia-somaliland/laas-geel/",
+        "label": "vr.africanrockart.britishmuseum.org"
+      }
+    ]
+  },
+  {
+    "id": "south-sudan",
+    "name": "South Sudan",
+    "options": [
+      {
+        "text": "Vast herds of white-eared kob and other antelope migrate through the Boma and Badingilo landscape. From the air the moving herds stretch across the floodplain.",
+        "source": "https://www.africanparks.org/sites/default/files/uploads/resources/2025-05/African%20Parks%202024%20Annual%20Report_0.pdf",
+        "label": "www.africanparks.org"
+      },
+      {
+        "text": "The Sudd expands when the rains come. At high water this White Nile wetland can occupy an area equivalent to roughly fifteen per cent of South Sudan.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/od.json",
+        "label": "CIA World Factbook (archived profile)"
+      },
+      {
+        "text": "South Sudan became independent in 2011. Its international border left the White Nile flowing north from one country into another on its way to Egypt.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/od.json",
+        "label": "CIA World Factbook (archived profile)"
+      }
+    ]
+  },
+  {
+    "id": "mayotte",
+    "name": "Mayotte",
+    "options": [
+      {
+        "text": "Beginning in 2018, earthquake swarms off Mayotte led scientists to a newly formed volcano deep beneath the Indian Ocean.",
+        "source": "https://www.brgm.fr/en/news/press-release/birth-undersea-volcano-mayotte-brgm-scientists-alert",
+        "label": "www.brgm.fr"
+      },
+      {
+        "text": "Mayotte's waters attract five species of sea turtle. Green and hawksbill turtles use the island's reefs, seagrass beds and nesting beaches.",
+        "source": "https://ofb.gouv.fr/le-parc-naturel-marin-de-mayotte",
+        "label": "ofb.gouv.fr"
+      },
+      {
+        "text": "Mayotte's marine park protects an entire sequence of habitats. Mangroves line the shore, seagrass grows in the lagoon, and coral reefs stand farther out.",
+        "source": "https://ofb.gouv.fr/le-parc-naturel-marin-de-mayotte",
+        "label": "ofb.gouv.fr"
+      }
+    ]
+  },
+  {
+    "id": "reunion",
+    "name": "Réunion",
+    "options": [
+      {
+        "text": "Three immense natural amphitheatres, or cirques, cut deep into Réunion's volcanic interior. Steep enclosing walls separate valleys that look close on a map.",
+        "source": "https://whc.unesco.org/en/list/1317/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Enslaved Malagasy and African people helped create Réunion's maloya. The music combines singing, percussion and dance and has also served as a voice of protest.",
+        "source": "https://ich.unesco.org/en/RL/maloya-00249",
+        "label": "ich.unesco.org"
+      },
+      {
+        "text": "Piton de la Fournaise is an active shield volcano. Some eruptions have sent lava down Réunion's slopes all the way to the Indian Ocean.",
+        "source": "https://volcano.si.edu/volcano.cfm?vn=233020",
+        "label": "volcano.si.edu"
+      }
+    ]
   }
 ]
