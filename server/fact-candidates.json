@@ -229,5 +229,89 @@
         "label": "Earth Sciences New Zealand"
       }
     ]
+  },
+  {
+    "id": "new-zealand",
+    "name": "New Zealand",
+    "options": [
+      {
+        "text": "In one Māori account, the South Island is Māui’s canoe. The North Island is the fish he hauled up with a hook fashioned from his ancestor’s jawbone.",
+        "source": "https://collections.tepapa.govt.nz/topic/1467",
+        "label": "Museum of New Zealand Te Papa Tongarewa"
+      },
+      {
+        "text": "A male kākāpō digs a shallow bowl, settles into it at night, and booms for a mate. The hollow helps his calls resonate.",
+        "source": "https://www.doc.govt.nz/news/media-releases/2026-media-releases/kakapo-breeding-season-officially-underway/",
+        "label": "Department of Conservation"
+      },
+      {
+        "text": "A newly hatched tuatara has a light-sensitive third eye on top of its head. Skin grows over it as the animal matures.",
+        "source": "https://blog.doc.govt.nz/2020/08/29/tuatara-tales-from-sealife-kelly-tarltons/",
+        "label": "Department of Conservation"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113127",
+    "name": "Lake Baikal",
+    "options": [
+      {
+        "text": "Baikal has its own landlocked seal. Some seals follow the Angara River out of the lake, but their home waters are deep inside Siberia.",
+        "source": "https://whc.unesco.org/en/tentativelists/6510",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Baikal’s golomyanka gives birth to live young. The tail of the small species is so transparent that print can be read through it.",
+        "source": "https://whc.unesco.org/document/163201",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Baikal holds roughly a fifth of the world’s unfrozen surface freshwater. Its basin has been collecting water for some 25 million years.",
+        "source": "https://whc.unesco.org/en/list/754/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159112991",
+    "name": "Lake Superior",
+    "options": [
+      {
+        "text": "The long ridges rising out of Lake Superior on Isle Royale began as lava flows over a billion years ago. Much later, an ice sheet scoured them into sharper relief.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/isle-royale-national-park-6769/",
+        "label": "NASA"
+      },
+      {
+        "text": "From orbit, winter clouds over Lake Superior can look like streets. Cold air crossing the open water picks up moisture that falls as snow on the far shore.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/cloud-streets-over-the-great-lakes-18043/",
+        "label": "NASA"
+      },
+      {
+        "text": "Around 1900 there were no moose on Isle Royale. Biologists think the first arrivals swam across from the mainland.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/isle-royale-national-park-6769/",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "bermuda-triangle",
+    "name": "Bermuda Triangle",
+    "options": [
+      {
+        "text": "Try to trace the Triangle on an official nautical chart and you hit a problem: there is no official boundary. Even the U.S. board that standardizes geographic names has no official entry for it.",
+        "source": "https://oceanservice.noaa.gov/facts/bermudatri.html",
+        "label": "NOAA"
+      },
+      {
+        "text": "The Gulf Stream runs through the Triangle. Along this swift current the weather can change violently, leaving a crew with very different conditions from the ones it set out in.",
+        "source": "https://oceanservice.noaa.gov/facts/bermudatri.html",
+        "label": "NOAA"
+      },
+      {
+        "text": "Navigators have reported odd compass readings in the Triangle. NOAA compared those reports with other regions and found that even the reported magnetic anomalies were unexceptional.",
+        "source": "https://repository.library.noaa.gov/view/noaa/1089/noaa_1089_DS1.pdf",
+        "label": "NOAA"
+      }
+    ]
   }
 ]
