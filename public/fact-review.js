@@ -43,7 +43,7 @@ const chosen = document.querySelector("#chosen");
 const alternatives = document.querySelector("#alternatives");
 function hasOffer(p) {
   const option = p.options[3];
-  return option?.suggestSwitch && p.savedChoice && p.savedChoice !== option.id &&
+  return option && p.savedChoice && p.savedChoice !== option.id &&
     p.reviewedAlternative !== option.id && !p.hold && !p.newSuggestions;
 }
 const research = document.querySelector("#research");
@@ -71,7 +71,7 @@ function refresh() {
   const revisions = waiting ? ` · ${waiting} awaiting new suggestions` : "";
   summary.textContent=`${remaining.length} to choose · ${missing.length} awaiting research${revisions} · ${selected.length + offers.length} already chosen`;
   if (offers.length) {
-    const jump=el("a",`${offers.length} suggested switches`);
+    const jump=el("a",`${offers.length} left to compare`);
     jump.href="#alternatives-section";
     summary.append(" · ",jump);
   }
@@ -184,7 +184,7 @@ async function loadPlaces(){
     places=incoming.map(row=>{
       const old=previous.get(row.id);
       if(old && old.revision===row.revision && old.name===row.name &&
-          old.options.length===row.options.length && old.options.every((o,i)=>o.id===row.options[i].id && o.suggestSwitch===row.options[i].suggestSwitch)) {
+          old.options.length===row.options.length && old.options.every((o,i)=>o.id===row.options[i].id)) {
         old.studying=row.studying;
         return old;
       }
@@ -197,3 +197,8 @@ async function loadPlaces(){
 window.addEventListener("focus",loadPlaces);
 setInterval(()=>{if(!document.hidden)void loadPlaces()},60000);
 await loadPlaces();
+// A direct link can arrive before the comparison section has any rows.
+if (location.hash === "#alternatives-section" && !alternatives.parentElement.hidden &&
+    performance.getEntriesByType("navigation")[0]?.type === "navigate") {
+  alternatives.parentElement.scrollIntoView();
+}
