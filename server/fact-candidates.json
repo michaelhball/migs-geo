@@ -313,5 +313,383 @@
         "label": "NOAA"
       }
     ]
+  },
+  {
+    "id": "united-kingdom",
+    "name": "United Kingdom",
+    "options": [
+      {
+        "text": "Even the most inland parts of the UK are within about 125 km of tidal water. Look at how far the estuaries cut into the outline and the distance starts to make sense.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/uk.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Medieval Europeans had two Britains to distinguish. Great Britain was the island across the Channel, and Little Britain was Brittany in what is now France.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/uk.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "London still carries the name of the Roman settlement Londinium, founded on the site around AD 43. The meaning of that older name is uncertain.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/uk.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "france",
+    "name": "France",
+    "options": [
+      {
+        "text": "La Marseillaise owes its name to a journey. In 1792 guardsmen from Marseille marched into Paris singing the song that became the national anthem.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/fr.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The name Paris preserves that of a Celtic people, the Parisii. Even under Rome, when the town was called Lutetia, the longer name identified it as their settlement.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/fr.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Follow the Loire or the Seine downstream and you reach the Atlantic system. Follow the Rhône instead and you come out on the opposite side of France, at the Mediterranean.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/fr.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "georgia",
+    "name": "Georgia",
+    "options": [
+      {
+        "text": "In the western Caucasus, explorers descended more than two kilometres below the entrance of Krubera Cave. A second cave in the same region, Veryovkina, also passes the two-kilometre mark.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/gg.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Tbilisi’s name points to something you can still feel there. The Georgian word for “warm” refers to the city’s sulfur springs.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/gg.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The anthem adopted after Georgia’s Rose Revolution borrowed its music from two operas, Abesalom da Eteri and Daisi.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/gg.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "germany",
+    "name": "Germany",
+    "options": [
+      {
+        "text": "Several of Germany’s great rivers carry water north. The exception begins in the Black Forest: the Danube sets off east across Europe.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/gm.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "One possible origin for Berlin’s name is a Slavic word for swamp, a clue to the landscape along the Spree where the settlement grew.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/gm.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The tune used for Germany’s national anthem began as an Austrian imperial anthem composed by Joseph Haydn.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/au.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "greece",
+    "name": "Greece",
+    "options": [
+      {
+        "text": "Greece sings only two stanzas of a much longer poem. The original Hymn to Liberty, inspired by the 1821 uprising, has 158.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/gr.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The country’s Greek name, Elláda, and the English name Greece come by different routes. English inherited the Roman name Graecia.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/gr.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Trace Greece beyond its peninsulas and the outline breaks into an archipelago. The Factbook counts roughly 2,000 islands.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/gr.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "greenland",
+    "name": "Greenland",
+    "options": [
+      {
+        "text": "Greenland’s ice sheet holds nearly seven percent of the world’s freshwater. Only Antarctica has a larger ice sheet.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/gl.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Kalaallit Nunaat, the Greenlandic name for Greenland, means “land of the people.” The Norse name is traditionally credited to Erik the Red trying to attract settlers.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/gl.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Greenland’s capital changed names in 1979. The Danish Godthåb meant “good hope,” while the Greenlandic Nuuk describes a cape.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/north-america/gl.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "hungary",
+    "name": "Hungary",
+    "options": [
+      {
+        "text": "The Danube once separated cities whose names you can still see on a map of Budapest. Buda stood on the west bank and Pest on the east before unification in 1873.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/hu.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The Danube and Tisza divide Hungary into three broad stretches of country. One Hungarian name to look for on a river map is Duna, the Danube.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/hu.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Hungarians call their country Magyarország, the country of the Magyars. The English name Hungary came through a different name used for peoples arriving on the eastern European steppes.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/hu.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "albania",
+    "name": "Albania",
+    "options": [
+      {
+        "text": "Albania’s own name, Shqipëria, is popularly understood as “Land of the Eagles.” That reading also helps explain why the eagle is such a familiar national symbol.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/al.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Albania stands on the eastern side of the Strait of Otranto. A ship leaving the Adriatic for the Ionian Sea passes this stretch of coast.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/al.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "A Venetian document from 1418 already names Tirana, centuries before Albania made it the capital.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/al.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "andorra",
+    "name": "Andorra",
+    "options": [
+      {
+        "text": "In Andorra’s national anthem the country itself speaks. Its history is sung in the first person.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/an.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The capital’s Catalan name, Andorra la Vella, means “Andorra the Old.”",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/an.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Andorra survives from a belt of frontier states that Charlemagne established in the Pyrenees. Its position between France and Spain goes back to that frontier.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/an.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "azerbaijan",
+    "name": "Azerbaijan",
+    "options": [
+      {
+        "text": "Azerbaijan’s mainland and its detached territory of Nakhchivan are both landlocked. The mainland’s long coast faces the enclosed Caspian Sea.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/aj.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Azerbaijan adopted its anthem in 1992, but the music dates back to its earlier period of independence in 1919.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/aj.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "One proposed origin for Baku’s name is an old Persian description of a windy place. The city stands on the exposed Caspian shore.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/central-asia/aj.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "belarus",
+    "name": "Belarus",
+    "options": [
+      {
+        "text": "Belarus’s landscape bears the marks of moving ice. Glaciers scoured the terrain and helped leave it dotted with around 11,000 lakes.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/bo.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "After the Soviet Union dissolved, Belarus kept the tune of its Soviet-era anthem. The replacement lyrics came in 2002.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/bo.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The first part of Belarus comes from a Slavic word for white. The rest preserves the historical name Rus.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/bo.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "belgium",
+    "name": "Belgium",
+    "options": [
+      {
+        "text": "One tradition places the writing of Belgium’s anthem in a Brussels café during the 1830 revolution. Among the writers was an actor from the theatre associated with the uprising.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/be.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Belgium’s name recalls the Belgae, peoples whose territory stretched between the English Channel and the Rhine in antiquity.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/be.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The name Brussels preserves an older landscape: its Germanic roots refer to a dwelling and a marsh.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/be.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "bulgaria",
+    "name": "Bulgaria",
+    "options": [
+      {
+        "text": "The song that became Bulgaria’s anthem was composed in 1885 by a student on his way to fight in the war with Serbia.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/bu.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Bulgaria’s capital takes its name from a church. Parts of the Church of Saint Sofia may date as far back as the fourth century.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/bu.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Bulgaria took its name from the Bulgars, a people of Central Asian origin who joined local Slavic inhabitants to form a state in the late seventh century.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/bu.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "croatia",
+    "name": "Croatia",
+    "options": [
+      {
+        "text": "Off Croatia’s Adriatic coast, an atlas has to account for roughly 1,200 islands, islets, rocks and ridges. Most of the Adriatic’s islands lie on this side.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/hr.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The words of Croatia’s anthem were written in 1835. The song was adopted officially in 1972, while Croatia was still part of Yugoslavia.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/hr.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "An old explanation of Zagreb’s name puts the settlement “beyond the ditch.” The two parts of the name describe where to find it.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/hr.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "czech-republic",
+    "name": "Czech Republic",
+    "options": [
+      {
+        "text": "At Hranice, surveyors have followed a freshwater cave more than half a kilometre below the surface. Even the surveyed depth is an extraordinary distance through flooded rock.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ez.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The Czech anthem began as music for a play in 1834. Audiences took the song with them long before it became an official anthem.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ez.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "The Moravian Gate is a natural passage across Central Europe. It links routes on the northern European plain to the Danube basin.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/ez.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "denmark",
+    "name": "Denmark",
+    "options": [
+      {
+        "text": "The Danish mainland is only part of the country’s outline. More than 400 islands lie in the Danish archipelago.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/da.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Copenhagen’s name describes its old trade: its Danish roots mean a merchants’ harbour.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/da.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Denmark has two anthems of equal standing. A royal anthem dating to 1780 is used on occasions attended by royalty.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/da.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "estonia",
+    "name": "Estonia",
+    "options": [
+      {
+        "text": "Estonia and Finland sing different words to the same anthem melody. In Estonia the song was banned during Soviet rule.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/en.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Tallinn’s name has been traced to an Estonian expression for “Danish fort,” a reminder of the Danes who established a stronghold there in 1219.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/en.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Estonia’s low mainland gives way to an archipelago of more than 1,500 islands in the Baltic.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/en.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
+  },
+  {
+    "id": "faroe-islands",
+    "name": "Faroe Islands",
+    "options": [
+      {
+        "text": "The Faroe Islands carry sheep in their name: the Old Norse words behind it mean “sheep islands.”",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/fo.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "Tórshavn, the Faroese capital, is named for Thor. Its name means “Thor’s harbour.”",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/fo.json",
+        "label": "CIA World Factbook (archived country profile)"
+      },
+      {
+        "text": "People lived in the Faroes by about AD 500, centuries before the ninth-century Viking settlers arrived. The identity of those earlier islanders is uncertain.",
+        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/fo.json",
+        "label": "CIA World Factbook (archived country profile)"
+      }
+    ]
   }
 ]
