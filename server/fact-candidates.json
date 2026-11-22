@@ -2056,5 +2056,362 @@
         "label": "NASA"
       }
     ]
+  },
+  {
+    "id": "lake-1159106721",
+    "name": "Great Bear Lake",
+    "options": [
+      {
+        "text": "In a Sahtú Dene account, Kaye Daoye learned that Great Bear Lake has a water heart. Its beat connects the people, animals, sky and land throughout the watershed.",
+        "source": "https://parks.canada.ca/lhn-nhs/nt/saoyuehdacho/decouvrir-discover/histoire-history/water_heart",
+        "label": "Government of Canada"
+      },
+      {
+        "text": "Researchers fishing in the shallows found as many as four distinct forms of lake trout living side by side. The shapes of their heads and fins gave them away.",
+        "source": "https://nwtdiscoveryportal.enr.gov.nt.ca/geoportaldocuments/CIMP%202013%20Laketrout%20Morphology%20poster%20final.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "In 1825 John Franklin wrote that his men passed the winter skating and playing hockey on Great Bear Lake. The community of Délı̨nę remembers the game in a mural.",
+        "source": "https://www.pwnhc.ca/en/birthplace-hockey",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159106757",
+    "name": "Lake Erie",
+    "options": [
+      {
+        "text": "When wind piles water up toward Buffalo, the level can fall at Toledo, at the other end of the lake. The water then sloshes back, a motion called a seiche.",
+        "source": "https://tidesandcurrents.noaa.gov/education/tech-assist/training/self-guided-training/assets/pdfs/IGLDTrainingVideo_Transcript_.pdf",
+        "label": "NOAA"
+      },
+      {
+        "text": "On Kelleys Island, you can see deep grooves in the bedrock where a glacier once scraped across what is now Lake Erie.",
+        "source": "https://www.nps.gov/pevi/planyourvisit/lake_erie_islands.htm",
+        "label": "Source"
+      },
+      {
+        "text": "Lake Erie helped snow fall on Buffalo while the trees were still in leaf during the “October Surprise.” Cold air crossing the warmer lake picked up the water that fell as heavy snow downwind.",
+        "source": "https://www.nesdis.noaa.gov/about/k-12-education/ice-snow/what-lake-effect-snow",
+        "label": "NOAA"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159106765",
+    "name": "Lake Ontario",
+    "options": [
+      {
+        "text": "For sea lampreys living in Lake Ontario, Niagara Falls was an impassable wall. Deepening the Welland Canal in 1919 opened a way around it and into the upper Great Lakes.",
+        "source": "https://www.dfo-mpo.gc.ca/species-especes/publications/ais-eae/lamprey-lamproie/index-eng.html",
+        "label": "Source"
+      },
+      {
+        "text": "The trading sloop Washington disappeared crossing Lake Ontario in 1803. When searchers found it in 2016, its mast was still standing on the lakebed.",
+        "source": "https://sanctuaries.noaa.gov/media/docs/2024-lake-ontario-nms-feis-mgmt-plan.pdf",
+        "label": "NOAA"
+      },
+      {
+        "text": "At the mouth of the Niagara River, the French won permission to build a trading post. The stone building they put up overlooking Lake Ontario doubled as a citadel.",
+        "source": "https://npgallery.nps.gov/GetAsset/a177b303-6c93-45ef-9412-2bb19b34ec6d/",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159106791",
+    "name": "Lago de Nicaragua",
+    "options": [
+      {
+        "text": "Some sharks in this freshwater lake have made the journey from the Caribbean. Researchers tagged bull sharks at the coast and recovered them in the lake, and tracked others going the opposite way.",
+        "source": "https://digitalcommons.unl.edu/ichthynicar/41/",
+        "label": "Source"
+      },
+      {
+        "text": "On Ometepe, an island in the lake, carvings on the Maderas volcano preserve stories in stone. Some of its petroglyphs date back about 1,700 years.",
+        "source": "https://www.unesco.org/en/mab/ometepe-island",
+        "label": "UNESCO"
+      },
+      {
+        "text": "A traveller bound for California’s goldfields could take a shortcut through Nicaragua in the 1850s. Ships and lake boats did almost all the work, leaving only about twelve miles overland.",
+        "source": "https://postalmuseum.si.edu/exhibition/binding-the-nation-the-expanding-nation/ocean-steamers",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159106863",
+    "name": "Lake Athabasca",
+    "options": [
+      {
+        "text": "Along the south shore, sand dunes rise as high as 30 metres. This moving sand supports rare plants, some of which grow nowhere outside the Athabasca dunes.",
+        "source": "https://www.tourismsaskatchewan.com/provincialpark/1414/athabasca-sand-dunes-provincial-park",
+        "label": "Source"
+      },
+      {
+        "text": "Some channels near Lake Athabasca change direction. When an ice jam or flood raises the Peace River above the lake, water runs back toward the lake through the delta.",
+        "source": "https://parks.canada.ca/pn-np/nt/woodbuffalo/nature/delta/hydro",
+        "label": "Government of Canada"
+      },
+      {
+        "text": "Two piles of chimney stones and a cellar pit mark the first Fort Chipewyan. The trading post was built in 1788 on a rocky point across the lake from the present community.",
+        "source": "https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?id=20",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159106925",
+    "name": "Nettilling Lake",
+    "options": [
+      {
+        "text": "The world’s largest lake entirely on an island sits on Baffin Island. You have to cross salt water to get to Nettilling even though its own water is fresh.",
+        "source": "https://www.guinnessworldrecords.com/world-records/497933-largest-lake-on-an-island",
+        "label": "Source"
+      },
+      {
+        "text": "Ringed seals are usually associated with sea ice. An inland population has also been recorded here, in fresh water on Baffin Island.",
+        "source": "https://www.registrelep-sararegistry.gc.ca/virtual_sara/files/cosewic/sr-PhoqueAnneleRingedSeal-v00-2020ct-Eng.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "Microscopic algae left a record of the sea in this freshwater lake. Scientists used the chemistry of their shells, buried in lake mud, to trace the transition from marine to brackish water.",
+        "source": "https://paleo.ulaval.ca/wp-content/uploads/2017/10/Chapligin-et-al.2016.pdf",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113005",
+    "name": "Lake Michigan",
+    "options": [
+      {
+        "text": "In an Anishinaabe story, a mother bear swims across the lake to escape a forest fire. Sleeping Bear Dune marks where she waited on shore, and the two Manitou Islands mark her lost cubs.",
+        "source": "https://www.nps.gov/articles/sleepingbeardunes.htm",
+        "label": "Source"
+      },
+      {
+        "text": "Chicago once sent its polluted river into its own drinking-water lake. In 1900 a new canal reversed the river and carried the flow away from Lake Michigan.",
+        "source": "https://mwrd.org/sites/default/files/documents/18-01_Guidelines_Optimal_Withdrawal_Discretionary_Diversion_0.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "Michigan and Huron have two names but share one water level. Currents can run either way through the Straits of Mackinac between them.",
+        "source": "https://www.glerl.noaa.gov/res/straits/",
+        "label": "NOAA"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113021",
+    "name": "Lake Huron",
+    "options": [
+      {
+        "text": "Nine thousand years ago, caribou crossed a ridge where the middle of Lake Huron is today. Divers have found the stone structures hunters built along their route.",
+        "source": "https://sites.lsa.umich.edu/lakehuron-arch/research/pre-historic-archaeology-on-the-alpena-amberly-ridge/background/",
+        "label": "Source"
+      },
+      {
+        "text": "A coal schooner named Typo still sits upright on the lakebed. The broken stern shows where a steamship struck it, and part of its foremast still stands.",
+        "source": "https://thunderbay.noaa.gov/shipwrecks/typo.html",
+        "label": "NOAA"
+      },
+      {
+        "text": "Just off Middle Island, sulphur-rich groundwater wells up through a sinkhole in the lakebed. Purple mats of bacteria cover the floor around it.",
+        "source": "https://sanctuaries.noaa.gov/VR/thunder-bay/sinkhole-sampling/",
+        "label": "NOAA"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113081",
+    "name": "Georgian Bay",
+    "options": [
+      {
+        "text": "Follow the eastern shore by boat and the coast breaks into what locals call the Thirty Thousand Islands. The biosphere reserve follows about 200 kilometres of that shore.",
+        "source": "https://georgianbaybiosphere.com/our-region/",
+        "label": "Source"
+      },
+      {
+        "text": "Two stone pillars off Flowerpot Island have the outlines of giant plant pots. They gave the island its name and stand above the bay’s clear water.",
+        "source": "https://parks.canada.ca/pn-np/on/bruce/~/~/link.aspx?_id=330E6EF4CF2743C19D12D43C6FA77C6F&_z=z",
+        "label": "Government of Canada"
+      },
+      {
+        "text": "Some eastern foxsnakes here swim more than ten kilometres. A snake encountered on an outer island can be far from the den where it spent the winter.",
+        "source": "https://www.ontario.ca/page/eastern-foxsnake-recovery-strategy",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113095",
+    "name": "Lake Ladoga",
+    "options": [
+      {
+        "text": "During the siege of Leningrad, trucks crossed Ladoga on a winter ice road. A pipeline and an electric cable also crossed the lake, laid on its bed.",
+        "source": "https://eng.navalmuseum.ru/main_exposition",
+        "label": "Source"
+      },
+      {
+        "text": "Ladoga has its own freshwater ringed seals. Scientists studying when the seals became isolated found an unexpected second line of evidence in the DNA of the lice living on them.",
+        "source": "https://onlinelibrary.wiley.com/doi/full/10.1111/mec.17523",
+        "label": "Source"
+      },
+      {
+        "text": "On the Valaam archipelago in Lake Ladoga, a monastery rises above the islands. Even the monks’ outer gate has a church built over it.",
+        "source": "https://whc.unesco.org/archive/websites/arctic2008/annex.html",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113145",
+    "name": "Lake Albert",
+    "options": [
+      {
+        "text": "The Bagungu know the lake as Mwitanzige, a name meaning “locust killer.” It preserves a different way of remembering the water than its English royal name.",
+        "source": "https://nema.go.ug/sites/all/themes/nema/docs/TILENGA%20ESIA%20Volume%20IV_13-09-18.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "On the way into Lake Albert, the Nile squeezes through a rock cleft only a few metres wide at Murchison Falls. Downstream it opens into a delta where shoebills feed.",
+        "source": "https://rsis.ramsar.org/sites/default/files/rsiswp_search/exports/Ramsar-Sites-annotated-summary-Uganda.pdf?1568560014=",
+        "label": "Source"
+      },
+      {
+        "text": "British planners pictured Lake Albert as a link in a transport chain across Africa. Travellers and freight would switch between trains, river steamers and lake steamers.",
+        "source": "https://kagadi.go.ug/tourism/",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113163",
+    "name": "Lake Malawi",
+    "options": [
+      {
+        "text": "Along the rocky shore live small, brightly coloured cichlids called mbuna. The lake has produced hundreds of related fish species, many found only here.",
+        "source": "https://whc.unesco.org/en/list/289/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "What looks like smoke rising from the water can be a swarm of tiny lake flies. On shore the flies are collected and pressed together to make kungu cakes.",
+        "source": "https://www.fisheaglebay.com/invertebrates-tiny-harmless-lake-flys/",
+        "label": "Source"
+      },
+      {
+        "text": "A drill lowered into Lake Malawi recovered mud recording 1.3 million years of climate. It showed stretches of extreme drought interrupting periods when the basin overflowed.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4697375/",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113191",
+    "name": "Lake Victoria",
+    "options": [
+      {
+        "text": "Thunderstorms here often grow over open water after dark. Night breezes blow from the cooling shores toward each other and lift moist air above the lake.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/mapping-storm-patterns-over-lake-victoria-88848/",
+        "label": "NASA"
+      },
+      {
+        "text": "Lake Victoria produced roughly 500 species of cichlid in about 15,000 years. Mixing between two older fish lineages gave their descendants a head start in genetic variety.",
+        "source": "https://www.eawag.ch/en/info/portal/news/news-archive/archive-detail/explosion-in-species-diversity-due-to-hybridization/",
+        "label": "Source"
+      },
+      {
+        "text": "Around 15,000 years ago, this vast lake dried out. Mud cores from widely separated parts of the basin preserve the evidence of the dry interval.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S0031018201004680",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113235",
+    "name": "Vänern",
+    "options": [
+      {
+        "text": "Vänern has salmon that spend their lives in fresh water. The lake preserves lineages stranded inland as the landscape changed after the last ice age.",
+        "source": "https://biosfarprogrammet.se/wp-content/uploads/Periodic-Review-Lake-Vanern-Archipelago-and-Mount-Kinnekulle-BR-2010-2020.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "Ships from the sea can climb all the way to Vänern. Six locks on the route from Gothenburg lift them up to the lake.",
+        "source": "https://www.sjofartsverket.se/en/services/pilotage/lotsomrade-vanern/",
+        "label": "Source"
+      },
+      {
+        "text": "Sailing the Vänern archipelago takes you past more than bare rock. Some stretches of shore have drifting sand dunes, others wet meadows and fields of wave-worn stones.",
+        "source": "https://biosfarprogrammet.se/wp-content/uploads/Periodic-Review-Lake-Vanern-Archipelago-and-Mount-Kinnekulle-BR-2010-2020.pdf",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159113405",
+    "name": "Lac Moeru",
+    "options": [
+      {
+        "text": "Fishers on Lake Mweru take lights out at night to draw shoals of tiny chisense to their nets. They adapted the method from fisheries on Lake Tanganyika.",
+        "source": "https://www.fao.org/4/v2648e/V2648E09.htm",
+        "label": "Source"
+      },
+      {
+        "text": "Follow the water into and out of Lake Mweru and its river changes names. It arrives from Lake Bangweulu as the Luapula and leaves as the Luvua on its way toward the Congo.",
+        "source": "https://www.fao.org/4/T0473E/T0473E13.htm",
+        "label": "Source"
+      },
+      {
+        "text": "Before the Luapula reaches Mweru, it spreads across a floodplain dotted with permanent lagoons. The floodplain alone covers well over a thousand square kilometres.",
+        "source": "https://www.fao.org/4/T0473E/T0473E13.htm",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159126147",
+    "name": "Lake Torrens",
+    "options": [
+      {
+        "text": "Most of the time, this long blue shape on a map of South Australia is a dry salt flat. Thunderstorms sometimes leave shallow patches of water on it.",
+        "source": "https://www.parks.sa.gov.au/parks/lake-torrens-national-park",
+        "label": "National Parks and Wildlife Service South Australia"
+      },
+      {
+        "text": "When rain filled Lake Torrens in 1989, banded stilts bred there. It was the first documented breeding of the species in South Australia since 1930.",
+        "source": "https://digital.library.adelaide.edu.au/items/231e0977-042e-455e-815b-45d773c7aa3b",
+        "label": "Source"
+      },
+      {
+        "text": "When Kokatha applicants sought heritage protection for Lake Torrens, they described the whole lake surface, islands included, as significant under Aboriginal tradition.",
+        "source": "https://kokatha.com.au/wp-content/uploads/2021/09/21.09.01-Gazette-Lake-Torrens.pdf",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "lake-1159126655",
+    "name": "Issyk-Kul",
+    "options": [
+      {
+        "text": "Issyk-Kul means “hot lake.” High among the mountains of Kyrgyzstan, its open winter water is a refuge for migrating waterbirds, including white-headed ducks.",
+        "source": "https://rsis.ramsar.org/sites/default/files/rsiswp_search/exports/Ramsar-Sites-annotated-summary-Kyrgyzstan.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "Archaeologists diving off the north shore have found medieval brick buildings and kilns. Ground where people once worked is now under the lake.",
+        "source": "https://doaj.org/article/0c3f1638932949eca03d8edcf51902ab",
+        "label": "Source"
+      },
+      {
+        "text": "Ancient river channels still carry water along the lakebed. Cold, dense water can run down these submerged valleys toward the deep basin.",
+        "source": "https://doi.org/10.5194%2Fhess-22-6279-2018",
+        "label": "Source"
+      }
+    ]
   }
 ]
