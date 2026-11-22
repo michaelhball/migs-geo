@@ -88,19 +88,19 @@
     "name": "Aral Sea",
     "options": [
       {
-        "text": "Part of the old lakebed now has a desert name of its own, the Aralkum. Wind picks up dust where there used to be water.",
-        "source": "https://science.nasa.gov/earth/earth-observatory/dunes-and-desert-replace-the-aral-sea-152887/",
-        "label": "NASA satellite imagery"
+        "text": "The Aral Sea once acted like a giant radiator for the surrounding land. As it shrank, nearby winters grew colder and summers grew hotter and drier.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/world-of-change/aral-sea/",
+        "label": "science.nasa.gov"
       },
       {
-        "text": "Kazakhstan helped save part of the lake by dividing it. The Kok-Aral Dam held river water in the northern basin, and the water level there rose.",
-        "source": "https://science.nasa.gov/earth/earth-observatory/north-aral-sea-recovery-7645/",
-        "label": "NASA before-and-after imagery"
+        "text": "As the water grew too salty for familiar catches, fisheries turned to an introduced flatfish. Flounder could survive where many of the old commercial species could no longer live.",
+        "source": "https://documents.worldbank.org/curated/en/221861468262742272/pdf/E47150V10P152000Box385408B00PUBLIC0.pdf",
+        "label": "documents.worldbank.org"
       },
       {
-        "text": "Rebirth Island lost the one thing that made it an island. Satellite images from 2000 and 2001 show the lake retreating until a land bridge connected it to the mainland.",
-        "source": "https://science.nasa.gov/earth/earth-observatory/rebirth-island-joins-the-mainland-1706/",
-        "label": "NASA satellite comparison"
+        "text": "The Aral Sea's shoreline retreated in part because cotton was being grown far upstream. Water diverted to irrigate fields never finished the journey to the lake.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/retreating-aral-sea-coastlines-5760/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -4301,6 +4301,111 @@
         "text": "Eight towns in southeastern Sicily were rebuilt after the earthquake of 1693. The disaster left an entire region with a recognisably Baroque face.",
         "source": "https://whc.unesco.org/en/list/1024/",
         "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "aland-islands",
+    "name": "Åland Islands",
+    "options": [
+      {
+        "text": "The Åland Islands are part of Finland, but Swedish is their sole official language. The archipelago also has its own autonomous government and is demilitarised.",
+        "source": "https://visitaland.com/info/sjalvstyrelsen-aland-100/",
+        "label": "visitaland.com"
+      },
+      {
+        "text": "The four-masted Pommern in Mariehamn harbour once carried grain from Australia to England under sail.",
+        "source": "https://visitaland.com/en/tallshipsraces2024/",
+        "label": "visitaland.com"
+      },
+      {
+        "text": "Åland is still growing out of the Baltic. Its highest ground emerged around ten thousand years ago as the land rose after the ice sheets retreated.",
+        "source": "https://visitaland.com/en/experience/history/early-history/",
+        "label": "visitaland.com"
+      }
+    ]
+  },
+  {
+    "id": "abkhazia",
+    "name": "Abkhazia",
+    "options": [
+      {
+        "text": "A small electric railway carries visitors inside New Athos Cave. For decades the underground train was a specially built model from Riga.",
+        "source": "https://explore-georgia.ge/en/places/new-athos-cave",
+        "label": "explore-georgia.ge"
+      },
+      {
+        "text": "High above Abkhazia's Black Sea coast, a rockslide dammed a mountain river. The water that backed up behind it became Lake Ritsa.",
+        "source": "https://explore-georgia.ge/en/places/lake-ritsa",
+        "label": "explore-georgia.ge"
+      },
+      {
+        "text": "New Athos Cave contains a formation nicknamed the petrified waterfall. It hangs in a landscape of galleries that cavers began exploring in 1961.",
+        "source": "https://georgianencyclopedia.ge/en/form_eng/403",
+        "label": "georgianencyclopedia.ge"
+      }
+    ]
+  },
+  {
+    "id": "transnistria",
+    "name": "Transnistria",
+    "options": [
+      {
+        "text": "Transnistria issued coins you could recognise by shape and colour. The green three-ruble piece was square with rounded corners.",
+        "source": "https://www.old.ipn.md/en/transnistria-bank-issues-new-composite-coins-7966_1014684.html",
+        "label": "www.old.ipn.md"
+      },
+      {
+        "text": "At Bender, an Ottoman fortress on the Dniester hosted an unlikely guest. Sweden's King Charles XII took refuge in the area after losing at Poltava.",
+        "source": "https://moldova.travel/en/experiences/86-tighina-fortress",
+        "label": "moldova.travel"
+      },
+      {
+        "text": "At Dubăsari, the river that gives Transnistria its name also supplies electricity. A hydroelectric dam spans the Dniester there.",
+        "source": "https://moldova.travel/wp-content/uploads/2021/11/Time-Travel-Transnistria-Eng.pdf",
+        "label": "moldova.travel"
+      }
+    ]
+  },
+  {
+    "id": "corsica",
+    "name": "Corsica",
+    "options": [
+      {
+        "text": "Corsican paghjella singing builds in a fixed order. One voice starts the melody, a bass joins, and the highest voice enters last, making use of the echo.",
+        "source": "https://ich.unesco.org/en/USL/00315",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The Fango runs from Corsican mountains inhabited by mouflon and bearded vultures down to a Mediterranean gulf. A single watershed links their cliffs to coastal wetlands.",
+        "source": "https://www.unesco.org/en/mab/falasorma-dui-sevi",
+        "label": "www.unesco.org"
+      },
+      {
+        "text": "Scandola's red cliffs are remnants of volcanic rock. Protected waters around the peninsula shelter marine life below the cliffs where seabirds nest.",
+        "source": "https://whc.unesco.org/en/list/258/",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "svalbard",
+    "name": "Svalbard",
+    "options": [
+      {
+        "text": "Svalbard's seed vault stores backups of collections held elsewhere. If refrigeration ever stops, the frozen mountain around the vault buys time for the seeds.",
+        "source": "https://www.seedvault.no/about/purpose-operations-and-organisation/",
+        "label": "www.seedvault.no"
+      },
+      {
+        "text": "Svalbard has its own stocky, short-legged reindeer. It spends the brief Arctic summer building up reserves for the long winter.",
+        "source": "https://npolar.no/en/species/svalbard-reindeer/",
+        "label": "npolar.no"
+      },
+      {
+        "text": "Glaciers cover roughly three-fifths of Svalbard. On Nordaustlandet, entire ice caps spread across the island.",
+        "source": "https://publicdata.npolar.no/cryoclim/GLIMS_Svalbard.pdf",
+        "label": "publicdata.npolar.no"
       }
     ]
   }
