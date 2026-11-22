@@ -1195,5 +1195,362 @@
         "label": "CIA World Factbook (archived country profile)"
       }
     ]
+  },
+  {
+    "id": "aegean-sea",
+    "name": "Aegean Sea",
+    "options": [
+      {
+        "text": "Sail into the bay at Santorini and you are inside a volcano. The cliffs holding up the white-roofed towns are the rim of a flooded caldera.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/santorini-volcano-greece-8872/",
+        "label": "NASA"
+      },
+      {
+        "text": "At Akrotiri, volcanic ash buried a Bronze Age town on the Aegean. The same eruption that transformed the island also preserved the settlement.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/santorinis-hidden-worlds-154523/",
+        "label": "NASA"
+      },
+      {
+        "text": "The dark islands in the middle of Santorini’s bay are much younger than the pale cliffs around them. Lava began building them roughly fourteen centuries after the great eruption.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/santorini-volcano-greece-8872/",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "arabian-sea",
+    "name": "Arabian Sea",
+    "options": [
+      {
+        "text": "Trade routes here had a built-in return season. The monsoon reverses its winds over the Arabian Sea, and the direction of surface currents changes with them.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/an-upended-ecosystem-in-the-arabian-sea-148655/",
+        "label": "NASA"
+      },
+      {
+        "text": "A bloom caught by satellite in 2019 was made by Noctiluca, a single-celled organism that can thrive in oxygen-poor water. From space, the bloom coloured a swath of sea.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/an-upended-ecosystem-in-the-arabian-sea-148655/",
+        "label": "NASA"
+      },
+      {
+        "text": "Winter on the Tibetan Plateau helps set the table for microscopic life offshore. Cold, dry air blowing out from Asia cools the sea surface and changes how nutrients reach sunlit water.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/an-upended-ecosystem-in-the-arabian-sea-148655/",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "arctic-ocean",
+    "name": "Arctic Ocean",
+    "options": [
+      {
+        "text": "In 2011 scientists found a phytoplankton bloom extending more than 100 kilometres beneath the pack ice. Open water was only the visible edge of the growing season.",
+        "source": "https://arctic.noaa.gov/wp-content/uploads/2023/04/ArcticReportCard_full_report2012.pdf",
+        "label": "NOAA"
+      },
+      {
+        "text": "Beneath the Arctic ice, researchers on Gakkel Ridge found evidence of explosive eruptions on the deep seafloor. The ice overhead had concealed an active volcanic landscape.",
+        "source": "https://www.whoi.edu/press-room/news-release/geologists-discover-signs-of-volcanoes-blowing-their-tops-in-the-deep-ocean/",
+        "label": "Woods Hole Oceanographic Institution"
+      },
+      {
+        "text": "Freezing seawater sends salt back into the water beneath the ice. The resulting dense water can sink thousands of metres, carrying the effects of surface freezing into the deep ocean.",
+        "source": "https://pmel.noaa.gov/arctic-zone/essay_wadhams.html",
+        "label": "NOAA"
+      }
+    ]
+  },
+  {
+    "id": "baltic-sea",
+    "name": "Baltic Sea",
+    "options": [
+      {
+        "text": "The Swedish warship Vasa survived for centuries partly because of where it sank. The brackish water around the wreck kept wood-eating shipworms from destroying its hull.",
+        "source": "https://faq.vasamuseet.se/category/45/article/4494?lang=en",
+        "label": "Vasa Museum"
+      },
+      {
+        "text": "Along Finland’s Baltic shore, islands still rise out of the sea. The crust is rebounding from an ice sheet that once pressed down on it with kilometres of ice.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/uplift-underway-in-finlands-kvarken-archipelago-153740/",
+        "label": "NASA"
+      },
+      {
+        "text": "A summer map of the Baltic can show swirls that look painted onto the water. They are blooms of microscopic organisms, large enough in aggregate for satellites to follow.",
+        "source": "https://science.nasa.gov/resource/summer-blooms-in-the-baltic/",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "banda-sea",
+    "name": "Banda Sea",
+    "options": [
+      {
+        "text": "Banda Api is an island inside a much larger volcano. Its cone rises within a roughly seven-kilometre-wide caldera, most of which lies underwater.",
+        "source": "https://volcano.si.edu/volcano.cfm?vn=265090",
+        "label": "Smithsonian Global Volcanism Program"
+      },
+      {
+        "text": "In May 1988, two eruption columns rose from Banda Api at the same time. Lava reached the sea while people on nearby islands watched and evacuated.",
+        "source": "https://volcano.si.edu/showreport.cfm?doi=10.5479%2Fsi.GVP.SEAN198805-265090",
+        "label": "Smithsonian Global Volcanism Program"
+      },
+      {
+        "text": "The spice trade left volcanologists an unusual gift. Portuguese and Dutch traffic through the Banda Islands helped produce a long written record of the island volcano’s activity.",
+        "source": "https://volcano.si.edu/volcano.cfm?vn=265090&vtab=GeneralInfo",
+        "label": "Smithsonian Global Volcanism Program"
+      }
+    ]
+  },
+  {
+    "id": "barents-sea",
+    "name": "Barents Sea",
+    "options": [
+      {
+        "text": "Tiny organisms can turn the Barents Sea a milky turquoise. Each coccolithophore carries reflective plates made of calcite, the same mineral found in chalk.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/coccolithophores-in-the-barents-sea-10076/",
+        "label": "NASA"
+      },
+      {
+        "text": "Some Arctic ports on the Barents Sea stay free of ice year-round. Water carried north from the Atlantic supplies the heat.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/coccolithophores-in-the-barents-sea-10076/",
+        "label": "NASA"
+      },
+      {
+        "text": "A front runs through the sea itself. Relatively warm, salty Atlantic water meets colder, fresher Arctic water inside the shallow Barents basin.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/phytoplankton-bloom-in-the-barents-sea-45624/",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "bering-strait",
+    "name": "Bering Strait",
+    "options": [
+      {
+        "text": "From Little Diomede in Alaska you can look across the water into tomorrow. The International Date Line passes between it and Russia’s Big Diomede.",
+        "source": "https://www.jpl.nasa.gov/images/pia10631-diomede-islands-bering-straight/",
+        "label": "NASA"
+      },
+      {
+        "text": "When glaciers locked up enough seawater, today’s strait became a land connection roughly 1,000 miles wide. The ice-age “bridge” was a landscape in its own right.",
+        "source": "https://www.nps.gov/articles/bering.htm",
+        "label": "US National Park Service"
+      },
+      {
+        "text": "The Pacific’s only direct seawater passage into the Arctic is remarkably shallow. Water from a deep ocean must cross a sill only about 50 metres deep.",
+        "source": "https://repository.library.noaa.gov/view/noaa/44649/noaa_44649_DS1.pdf",
+        "label": "NOAA"
+      }
+    ]
+  },
+  {
+    "id": "caribbean-sea",
+    "name": "Caribbean Sea",
+    "options": [
+      {
+        "text": "A volcano north of Grenada has a name fit for a sea shanty: Kick-’em-Jenny. Its summit is underwater, and instruments across the Caribbean have recorded acoustic signals from its vicinity.",
+        "source": "https://pubs.usgs.gov/of/1996/0069/report.pdf",
+        "label": "US Geological Survey"
+      },
+      {
+        "text": "The Caribbean shore of Belize shelters a barrier reef, offshore atolls and hundreds of sand cays. Its mangroves and lagoons are part of the same protected reef system.",
+        "source": "https://whc.unesco.org/en/list/764",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Nearly five kilometres down in the Cayman Trough, researchers found a plume rising more than a kilometre above the Beebe vents. It carried copper-rich fluid up from a spreading crack in the Caribbean seafloor.",
+        "source": "https://www.nature.com/articles/ncomms1636",
+        "label": "Nature Communications"
+      }
+    ]
+  },
+  {
+    "id": "celebes-sea",
+    "name": "Celebes Sea",
+    "options": [
+      {
+        "text": "At a depth of 2,800 metres, researchers found a swimming worm with so many squid-like appendages that they nicknamed it the squidworm.",
+        "source": "https://www.whoi.edu/ocean-learning-hub/multimedia/ss-censis-of-marine-life/",
+        "label": "Woods Hole Oceanographic Institution"
+      },
+      {
+        "text": "A robot near the bottom of the Celebes Sea filmed an almost black comb jelly. Many of its relatives in brighter surface waters are nearly transparent.",
+        "source": "https://www.whoi.edu/oceanus/feature/creatures-of-the-celebes-sea/?id=55947&sectionid=1000",
+        "label": "Woods Hole Oceanographic Institution"
+      },
+      {
+        "text": "A diver collecting in the top 30 metres of the sea photographed a juvenile boxfish just a centimetre long. Its portrait came from the sunlit layer above a basin more than five kilometres deep.",
+        "source": "https://oceanexplorer.noaa.gov/multimedia/daily-image-media-20201120/",
+        "label": "NOAA"
+      }
+    ]
+  },
+  {
+    "id": "coral-sea",
+    "name": "Coral Sea",
+    "options": [
+      {
+        "text": "Ships in the western Coral Sea reported floating mats of microscopic organisms up to two metres thick. A shuttle crew later photographed the sheen at the edge of a bloom.",
+        "source": "https://images.nasa.gov/details/S32-520-014",
+        "label": "NASA"
+      },
+      {
+        "text": "In surveys of Coral Sea reefs, olive sea snakes accounted for roughly nine out of ten sea snakes observed. Survey teams repeatedly found them on southern reefs while finding none at several northern sites.",
+        "source": "https://parksaustralia.gov.au/marine/pub/scientific-publications/Coral-Sea-Marine-Park-Coral-Reef-Health-Survey-2023-and-2024.pdf",
+        "label": "Parks Australia"
+      },
+      {
+        "text": "Some Coral Sea islands barely rise above the water, yet their sand is important nesting ground. Green turtles and breeding seabirds share these remote cays.",
+        "source": "https://parksaustralia.gov.au/marine/pub/scientific-publications/Hoey-and-Pratchett-2017-CMR-report-FINAL-9-June.pdf",
+        "label": "Parks Australia"
+      }
+    ]
+  },
+  {
+    "id": "gulf-of-carpentaria",
+    "name": "Gulf of Carpentaria",
+    "options": [
+      {
+        "text": "The gulf used to be a lake. A sediment core from near its centre records times when falling seas cut off a freshwater lake between Australia and New Guinea.",
+        "source": "https://www.sciencedirect.com/science/article/abs/pii/S0031018206005360",
+        "label": "Research article"
+      },
+      {
+        "text": "In spring near Burketown, a cloud can roll in like an enormous horizontal tube. The Morning Glory can race overhead even when people on the ground feel little wind.",
+        "source": "https://science.nasa.gov/image-article/apod-2009-august-24-morning-glory-clouds-over-australia/",
+        "label": "NASA"
+      },
+      {
+        "text": "In 2015 mangroves died along the gulf when the sea temporarily fell. An El Niño event left trees that depend on tidal flooding high and dry.",
+        "source": "https://nesptropical.edu.au/wp-content/uploads/2021/05/Project-4.13-Wrap-up-Factsheet.pdf",
+        "label": "Australian research team"
+      }
+    ]
+  },
+  {
+    "id": "gulf-of-guinea",
+    "name": "Gulf of Guinea",
+    "options": [
+      {
+        "text": "Zero latitude and zero longitude meet in open water here. NOAA’s tropical Atlantic archive even has a buoy station indexed at the coordinate pair 0°, 0°.",
+        "source": "https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoQrtPos.subset",
+        "label": "NOAA"
+      },
+      {
+        "text": "Four species of sea turtle come ashore on São Tomé, a volcanic island rising out of the gulf. On the same island’s forest floor lives a dwarf ibis found nowhere else.",
+        "source": "https://www.unesco.org/en/mab/ilha-de-sao-tome",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The research buoy once stationed where the equator crosses the prime meridian was moved west in 2021. Piracy in the gulf had made servicing the mooring harder.",
+        "source": "https://repository.library.noaa.gov/view/noaa/56312/noaa_56312_DS1.pdf",
+        "label": "NOAA"
+      }
+    ]
+  },
+  {
+    "id": "labrador-sea",
+    "name": "Labrador Sea",
+    "options": [
+      {
+        "text": "In a cold winter, seawater at the surface of the western Labrador Sea can mix to more than two kilometres deep. Few stretches of ocean have such direct contact between the surface and the depths.",
+        "source": "https://ntrs.nasa.gov/citations/19850017720",
+        "label": "NASA"
+      },
+      {
+        "text": "Icebergs from the north pass through the Labrador Sea on their way to the Grand Banks. The currents along Baffin Island and Labrador form successive legs of the journey.",
+        "source": "https://www.canada.ca/en/canadian-coast-guard/corporate/publications/ice-navigation-in-canadian-waters/chapter-3-ice-climatology-environmental-conditions.html",
+        "label": "Government of Canada"
+      },
+      {
+        "text": "Part of the Labrador Sea can freeze in spring after staying open through winter. A fresh surface layer and a subsequent cold snap can make ice possible where winter mixing had kept it away.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/spring-freeze-in-the-labrador-sea-145059/",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "persian-gulf",
+    "name": "Persian Gulf",
+    "options": [
+      {
+        "text": "For centuries, pearls lifted from oyster beds in the gulf financed houses on Bahrain. The World Heritage site preserves both the underwater beds and buildings on shore.",
+        "source": "https://whc.unesco.org/en/list/1364",
+        "label": "UNESCO"
+      },
+      {
+        "text": "An invention in Japan helped transform life on the Persian Gulf. Cultured pearls undermined Bahrain’s natural-pearl trade in the twentieth century.",
+        "source": "https://whc.unesco.org/en/list/1364",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In July 2008 a storm carried dust from Iraq out over the gulf. From space, pale arcs in the air appeared alongside patterns in the water northeast of Qatar.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/dust-storm-over-the-persian-gulf-20173/",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "philippine-sea",
+    "name": "Philippine Sea",
+    "options": [
+      {
+        "text": "Even eels that grow up in Japanese freshwater travel far out to sea to reproduce. Researchers collected their eggs beside the West Mariana Ridge around the new moon.",
+        "source": "https://www.nature.com/articles/ncomms1174",
+        "label": "Nature Communications"
+      },
+      {
+        "text": "At a submarine volcano in the Mariana arc, cold drops of liquid carbon dioxide escape from a vent field alongside hot fluid. Researchers named the site Champagne.",
+        "source": "https://pmel.noaa.gov/pubs/outstand/lupt2843/abstract.shtml",
+        "label": "NOAA"
+      },
+      {
+        "text": "Two eel species share a spawning area here. Their larvae ride away from the same region, yet eventually reach habitats spread from Japan to Indonesia.",
+        "source": "https://www.nature.com/articles/ncomms1174",
+        "label": "Nature Communications"
+      }
+    ]
+  },
+  {
+    "id": "south-china-sea",
+    "name": "South China Sea",
+    "options": [
+      {
+        "text": "Some waves crossing the northern South China Sea travel inside the water column. Their surface signatures are clear enough for researchers to trace them in satellite imagery.",
+        "source": "https://modis.gsfc.nasa.gov/sci_team/pubs/abstract_new.php?id=00605",
+        "label": "NASA"
+      },
+      {
+        "text": "A reef in the South China Sea contains a deep vertical cavity called Yongle Blue Hole. Researchers sampling the water found that oxygen disappears below about 100 metres.",
+        "source": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2023.1172475/full",
+        "label": "Frontiers in Marine Science"
+      },
+      {
+        "text": "At Dongsha Atoll, even waves travelling below the sea surface can bounce back. Researchers documented internal waves reflecting from the atoll using satellite observations.",
+        "source": "https://repository.library.noaa.gov/view/noaa/52530",
+        "label": "NOAA"
+      }
+    ]
+  },
+  {
+    "id": "timor-sea",
+    "name": "Timor Sea",
+    "options": [
+      {
+        "text": "For generations, Indonesian fishers used freshwater wells on the islands of Ashmore Reef. The islands also preserve graves and traces of cooking sites from those voyages.",
+        "source": "https://www.dcceew.gov.au/sites/default/files/documents/58-ecd.pdf",
+        "label": "Australian environment department"
+      },
+      {
+        "text": "At Ashmore Reef, tiny patches of land in the Timor Sea support nesting seabirds and turtles. On land, invasive tropical fire ants threaten chicks and turtle hatchlings.",
+        "source": "https://parksaustralia.gov.au/news/scientists-complete-first-ever-ashmore-reef-health-check/",
+        "label": "Parks Australia"
+      },
+      {
+        "text": "Ashmore Reef was known for its many sea snakes. When scientists carried out an extensive reef health survey, they searched the shallows and failed to find one.",
+        "source": "https://parksaustralia.gov.au/news/scientists-complete-first-ever-ashmore-reef-health-check/",
+        "label": "Parks Australia"
+      }
+    ]
   }
 ]
