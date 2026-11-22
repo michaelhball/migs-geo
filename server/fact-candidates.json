@@ -466,19 +466,19 @@
     "name": "Albania",
     "options": [
       {
-        "text": "Albania’s own name, Shqipëria, is popularly understood as “Land of the Eagles.” That reading also helps explain why the eagle is such a familiar national symbol.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/al.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "Listen to a Tosk choir in southern Albania and you can hear a single “e” held beneath two solo voices. The singers take turns breathing, so the note never breaks.",
+        "source": "https://ich.unesco.org/en/RL/albanian-folk-iso-polyphony-00155",
+        "label": "UNESCO"
       },
       {
-        "text": "Albania stands on the eastern side of the Strait of Otranto. A ship leaving the Adriatic for the Ionian Sea passes this stretch of coast.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/al.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "Outside Tirana, a bunker runs five storeys underground and contains 106 rooms. Visitors can now walk through it as a museum of Albania’s dictatorship.",
+        "source": "https://bunkart.al/1/slider/miss-universes-historic-visit-to-tirana-exploring-bunkart-1-for-the-first-time",
+        "label": "Bunk’Art"
       },
       {
-        "text": "A Venetian document from 1418 already names Tirana, centuries before Albania made it the capital.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/europe/al.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "In Albania’s northern highlands, a traditional garment called the xhubleta flares out in rippling folds like a bell. Its distinctive silhouette is built by hand from felt.",
+        "source": "https://ich.unesco.org/en/USL/xhubleta-skills-craftsmanship-and-forms-of-usage-01880",
+        "label": "UNESCO"
       }
     ]
   },
@@ -886,19 +886,19 @@
     "name": "Adriatic Sea",
     "options": [
       {
-        "text": "Along Croatia’s Adriatic coast, many islands line up like parallel strokes. Faults set the pattern, then rising seas flooded the low ground between the ridges.",
-        "source": "https://images.nasa.gov/details/iss019e005501",
-        "label": "NASA"
+        "text": "At Zadar, Adriatic waves play an organ built into the waterfront steps. You can sit above the instrument while the rhythm of the sea changes the tune.",
+        "source": "https://visitvrbnik.croatia.hr/en-gb/camping/zadar",
+        "label": "Croatian National Tourist Board"
       },
       {
-        "text": "In AD 305 the Roman emperor Diocletian retired to a palace on the Adriatic. His old residence became the core of the Croatian city of Split.",
-        "source": "https://images.nasa.gov/details/iss019e005501",
-        "label": "NASA"
+        "text": "On the Adriatic island of Hvar, farmers still tend grapes and olives inside a grid laid out by Greek settlers about 2,400 years ago. Dry-stone walls trace the old plots.",
+        "source": "https://whc.unesco.org/en/list/1240/",
+        "label": "UNESCO"
       },
       {
-        "text": "Venice sits behind a long, thin barrier island. Incoming Adriatic storm waves meet the barrier before they can reach much of the lagoon.",
-        "source": "https://images.nasa.gov/details/iss039e019482",
-        "label": "NASA"
+        "text": "At Piran on the Slovenian Adriatic, salt makers grow a living floor beneath the brine. A mat called petola separates the white salt crystals from the mud below.",
+        "source": "https://www.gov.si/assets/ministrstva/MKGP/PODROCJA/HRANA/SHEME-KAKOVOSTI/PUBLIKACIJA/Protected_Slovenian_Agricultural_Products_and_Foodstuffs_DE_2021.pdf",
+        "label": "Government of Slovenia"
       }
     ]
   },
@@ -949,19 +949,19 @@
     "name": "Algeria",
     "options": [
       {
-        "text": "Giraffes and elephants appear in rock art in what is now Algerian desert. The artists lived during a much wetter period, when the Sahara around them supported very different animals.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ag.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "In the Saharan oases of Touat and Tidikelt, dividing water is a specialist trade. Water measurers calculate each grower’s share of the flow from underground channels called foggaras.",
+        "source": "https://ich.unesco.org/en/USL/knowledge-and-skills-of-the-water-measurers-of-the-foggaras-or-water-bailiffs-of-touat-and-tidikelt-01274",
+        "label": "UNESCO"
       },
       {
-        "text": "Algiers takes its name from islands you can no longer sail around. The four islets that gave the city its Arabic name were joined to the mainland in the sixteenth century.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ag.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "Tin Bider looks like a dent in satellite images of the Algerian Sahara. Part of the illusion is the angle of the light. The six-kilometre crater actually stands above the land to its south.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/tin-bider-crater-algeria-47939/",
+        "label": "NASA"
       },
       {
-        "text": "The words of Algeria’s anthem began as a poem written in prison. Moufdi Zakaria wrote it while detained in Algiers under French colonial rule.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/africa/ag.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "In the M’Zab Valley, five fortified towns each have a summer counterpart in a palm grove. Moving to the shade for the hottest months is built into the layout of the settlements.",
+        "source": "https://whc.unesco.org/en/list/188/",
+        "label": "UNESCO"
       }
     ]
   },
@@ -970,19 +970,19 @@
     "name": "American Samoa",
     "options": [
       {
-        "text": "Tutuila once sheltered defeated warriors and chiefs exiled from other Samoan islands. People had settled the island by about 1000 BC.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/aq.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "Off Taʻū, divers call one patch of reef the Valley of Giants. Its largest coral colony, nicknamed Big Momma, measures about 41 metres around. Sanctuary scientists estimate it is over 500 years old.",
+        "source": "https://americansamoa.noaa.gov/gallery/diving-big-momma.html",
+        "label": "NOAA"
       },
       {
-        "text": "Pago Pago’s harbour gets shelter twice over. Its shape keeps out heavy seas, and the mountains around it break the wind.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/aq.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "Look up in daylight and you may see a peʻa vao soaring on warm air. This Samoan fruit bat can even carry its young in flight.",
+        "source": "https://www.nps.gov/npsa/learn/nature/fruit-bats.htm",
+        "label": "National Park Service"
       },
       {
-        "text": "When Dutch explorer Jacob Roggeveen reached the Manuʻa Islands in 1722, he was sailing into an archipelago that Polynesians had inhabited for centuries.",
-        "source": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/australia-oceania/aq.json",
-        "label": "CIA World Factbook (archived country profile)"
+        "text": "The villages own the land in the National Park of American Samoa. They granted the park service a 50-year lease, keeping the land in Samoan hands.",
+        "source": "https://www.nps.gov/npsa/learn/management/",
+        "label": "National Park Service"
       }
     ]
   },
@@ -1243,19 +1243,19 @@
     "name": "Arctic Ocean",
     "options": [
       {
-        "text": "In 2011 scientists found a phytoplankton bloom extending more than 100 kilometres beneath the pack ice. Open water was only the visible edge of the growing season.",
-        "source": "https://arctic.noaa.gov/wp-content/uploads/2023/04/ArcticReportCard_full_report2012.pdf",
+        "text": "Wreckage from a ship crushed off Siberia washed up in Greenland. Fridtjof Nansen took that as a clue to a current and deliberately froze his own ship, Fram, into the ice to ride the drift.",
+        "source": "https://nsidc.org/sites/default/files/g02120-v001-userguide_0.pdf",
+        "label": "National Snow and Ice Data Center"
+      },
+      {
+        "text": "A narwhal’s spiral tusk starts as a tooth. In young males, the left upper tooth usually grows straight through the front of the jaw.",
+        "source": "https://www.fisheries.noaa.gov/species/narwhal",
         "label": "NOAA"
       },
       {
-        "text": "Beneath the Arctic ice, researchers on Gakkel Ridge found evidence of explosive eruptions on the deep seafloor. The ice overhead had concealed an active volcanic landscape.",
-        "source": "https://www.whoi.edu/press-room/news-release/geologists-discover-signs-of-volcanoes-blowing-their-tops-in-the-deep-ocean/",
-        "label": "Woods Hole Oceanographic Institution"
-      },
-      {
-        "text": "Freezing seawater sends salt back into the water beneath the ice. The resulting dense water can sink thousands of metres, carrying the effects of surface freezing into the deep ocean.",
-        "source": "https://pmel.noaa.gov/arctic-zone/essay_wadhams.html",
-        "label": "NOAA"
+        "text": "To find out how long a Greenland shark could live, researchers dated the centres of the animals’ eye lenses. The results put their lifespan at a minimum of 272 years.",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/27516602/",
+        "label": "Science"
       }
     ]
   },
