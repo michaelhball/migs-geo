@@ -2413,5 +2413,257 @@
         "label": "Source"
       }
     ]
+  },
+  {
+    "id": "european-union",
+    "name": "European Union",
+    "options": [
+      {
+        "text": "The bridges on euro banknotes were imaginary when the notes were designed. Each represents an era of European architecture without giving one country’s landmark pride of place.",
+        "source": "https://www.ecb.europa.eu/pub/pdf/other/escb_en.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "The EU flag kept its twelve stars as countries joined. The circle represents unity, so you cannot count the member countries by counting the stars.",
+        "source": "https://european-union.europa.eu/principles-countries-history/symbols/european-flag_en",
+        "label": "Source"
+      },
+      {
+        "text": "The 1985 Schengen Agreement was signed on a riverboat on the Moselle. The village that gave open borders their name sits where Luxembourg, France and Germany meet.",
+        "source": "https://culture.ec.europa.eu/sites/default/files/2020-10/ehl-2013-panel-report_en.pdf",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "micronesia",
+    "name": "Micronesia",
+    "options": [
+      {
+        "text": "Marshallese navigators made charts of bent sticks to teach how ocean swells change around islands. A straight coastline on paper would miss the very thing a navigator could feel beneath a canoe.",
+        "source": "https://ocean.si.edu/human-connections/history-cultures/navigating-waters-micronesian-stick-charts?src=longreads",
+        "label": "Source"
+      },
+      {
+        "text": "At Nan Madol off Pohnpei, people built a ceremonial centre on more than ninety artificial islets. Canals run between the monumental stone walls, so a canoe could travel through the settlement.",
+        "source": "https://whc.unesco.org/uploads/nominations/1503.pdf",
+        "label": "UNESCO"
+      },
+      {
+        "text": "In the outer islands of Yap, building a voyaging canoe and learning to navigate it are part of the same tradition. Navigators read the sky and movement of the water on long open-ocean crossings.",
+        "source": "https://ich.unesco.org/en/RL/carolinian-wayfinding-and-canoe-making-01735",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "balkan-peninsula",
+    "name": "Balkan Peninsula",
+    "options": [
+      {
+        "text": "In Slovenia’s Kras region, the Reka River dives underground. Inside the Škocjan Caves it runs through a canyon whose roof in places is about 150 metres above the water.",
+        "source": "https://whc.unesco.org/en/list/390",
+        "label": "UNESCO"
+      },
+      {
+        "text": "During carnival around Kastav in Croatia, groups in sheepskins walk from village to village with bells tied around their waists. The procession makes its own soundtrack as it moves.",
+        "source": "https://ich.unesco.org/en/RL/annual-carnival-bell-ringers-pageant-from-the-kastav-area-00243",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Lake Ohrid, on the Albanian–North Macedonian border, drillers recovered hundreds of metres of lake mud. The record reaches back about 1.36 million years to when a permanent lake formed.",
+        "source": "https://onlinelibrary.wiley.com/doi/full/10.1111/bor.12601",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "polynesia",
+    "name": "Polynesia",
+    "options": [
+      {
+        "text": "In 1976 Mau Piailug guided the voyaging canoe Hōkūleʻa from Hawaiʻi to Tahiti. He followed the rising points of stars, the sun, moon and ocean swells across the equator.",
+        "source": "https://archive.hokulea.com/finney76.html",
+        "label": "Source"
+      },
+      {
+        "text": "The ancestors of Māori carried kūmara to Aotearoa on their ocean voyages. Centuries later, archaeologists could still identify the crop from microscopic starch grains in old storage pits.",
+        "source": "https://teara.govt.nz/en/nga-tupu-mai-i-hawaiki-plants-from-polynesia/print",
+        "label": "Source"
+      },
+      {
+        "text": "On Rapa Nui, carvers shaped most moai from relatively soft volcanic tuff. The picks they used were themselves volcanic rock, made of much harder basalt.",
+        "source": "https://whc.unesco.org/en/list/715",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "melanesia",
+    "name": "Melanesia",
+    "options": [
+      {
+        "text": "In Vanuatu, a sand artist can draw a whole symmetrical design with one finger in a continuous line. The guiding grid can exist entirely in the artist’s mind.",
+        "source": "https://ich.unesco.org/en/RL/vanuatu-sand-drawings-00073?RL=00073",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Ancient ditches at Kuk in the highlands of New Guinea record an independent beginning of agriculture. By roughly 7,000 years ago, people were tending crops in what had been wetland.",
+        "source": "https://whc.unesco.org/en/list/887",
+        "label": "UNESCO"
+      },
+      {
+        "text": "On Malaita in the Solomon Islands, craftspeople string polished pieces of shell into money. A fieldworker who watched a group making it recorded the songs the women sang as they worked.",
+        "source": "https://ich.unesco.org/doc/src/00418-EN.pdf",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "scandinavia",
+    "name": "Scandinavia",
+    "options": [
+      {
+        "text": "Sweden’s High Coast is still rising after the ice sheets melted. Ancient shorelines now stand far above the Baltic, preserving a record of where the sea used to meet the land.",
+        "source": "https://whc.unesco.org/en/list/898/",
+        "label": "UNESCO"
+      },
+      {
+        "text": "Look along the hull of a traditional Scandinavian clinker boat and each plank overlaps the one below. Boatbuilders have passed down this way of joining timber for nearly two millennia.",
+        "source": "https://ich.unesco.org/en/RL/nordic-clinker-boat-traditions-01686?RL=01686",
+        "label": "UNESCO"
+      },
+      {
+        "text": "A map of Sápmi crosses four modern borders. The Sámi homeland spans northern Norway, Sweden and Finland and reaches onto Russia’s Kola Peninsula.",
+        "source": "https://samediggi.fi/en/about-us/?lang=en",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "europe",
+    "name": "Europe",
+    "options": [
+      {
+        "text": "Surveyors used Europe itself as a measuring instrument. A chain of triangles ran more than 2,800 kilometres from northern Norway to the Black Sea to measure the shape of the Earth.",
+        "source": "https://whc.unesco.org/en/list/1187",
+        "label": "UNESCO"
+      },
+      {
+        "text": "At Europe’s southern gateway, two currents pass through Gibraltar in opposite directions. Atlantic water enters the Mediterranean at the surface while heavier, saltier water leaves underneath.",
+        "source": "https://www.esa.int/Applications/Observing_the_Earth/Earth_from_Space_Convergence_of_continents_and_currents",
+        "label": "Source"
+      },
+      {
+        "text": "An ocean once lay where the Alps now stand. Its seabed sank between converging plates before their collision pushed up the mountains.",
+        "source": "https://www.seismo.ethz.ch/en/knowledge/causes-of-earthquakes/Switzerland/",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "north-america",
+    "name": "North America",
+    "options": [
+      {
+        "text": "Rain landing on different sides of Montana’s Triple Divide Peak can end up in Hudson Bay, the Pacific, or the Gulf of Mexico. All three watersheds meet on one mountain.",
+        "source": "https://www.nps.gov/places/triple-divide-exhibit-geology-tour.htm",
+        "label": "Source"
+      },
+      {
+        "text": "Monarch butterflies that leave Mexico in spring have descendants that carry on north. It takes several generations to complete the northward journey through North America.",
+        "source": "https://www.fws.gov/sites/default/files/documents/2024-12/threatened-species-status-with-section-4-d-rule-for-monarch-butterfly-and-designation-of-critical-habitat.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "The former connection to Asia was a broad, treeless plain. When ice sheets held more of the world’s water, land now beneath the Bering Strait was dry enough for animals to cross.",
+        "source": "https://home.nps.gov/bela/learn/beringia.htm",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "south-america",
+    "name": "South America",
+    "options": [
+      {
+        "text": "Some phosphorus feeding the Amazon comes from Africa. Satellites have tracked dust from the Sahara crossing the Atlantic and delivering the nutrient to the rainforest.",
+        "source": "https://www.nasa.gov/centers-and-facilities/goddard/nasa-satellite-reveals-how-much-saharan-dust-feeds-amazons-plants/",
+        "label": "NASA"
+      },
+      {
+        "text": "The ocean floor off South America is moving underneath the continent. Along the Andes, earthquakes trace the descent of the Nazca Plate into the Earth.",
+        "source": "https://pubs.usgs.gov/of/2010/1083/e/",
+        "label": "Source"
+      },
+      {
+        "text": "High in the Chilean Andes, the air is dry enough for the ALMA telescopes to detect faint millimetre waves from cold clouds in space. Water vapour lower down would absorb much of that signal.",
+        "source": "https://www.eso.org/public/teles-instr/alma/",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "asia",
+    "name": "Asia",
+    "options": [
+      {
+        "text": "Water from the Tibetan highlands reaches seas on opposite sides of Asia. The Indus heads for the Arabian Sea, while the Yangtze crosses China toward the Pacific.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/tibet-36252/",
+        "label": "NASA"
+      },
+      {
+        "text": "In Central Asia, irrigation diverted so much water from the rivers feeding the Aral Sea that a new desert appeared on the exposed lakebed.",
+        "source": "https://wedocs.unep.org/xmlui/bitstream/handle/20.500.11822/8430/Future-Aral-Seas-WMO-bulletin_63-1_en.pdf",
+        "label": "Source"
+      },
+      {
+        "text": "Papermaking changed as it travelled across Asia. In the region around Samarkand, makers turned rags into fine paper, adapting a craft that in China had used mulberry and bamboo.",
+        "source": "https://en.unesco.org/silkroad/sites/default/files/knowledge-bank-article/vol_IVb%20silk%20road_arts%20and%20crafts%20BIS.pdf",
+        "label": "UNESCO"
+      }
+    ]
+  },
+  {
+    "id": "africa",
+    "name": "Africa",
+    "options": [
+      {
+        "text": "Fossils found at Jebel Irhoud in Morocco put members of our own species in northwest Africa about 300,000 years ago.",
+        "source": "https://humanorigins.si.edu/research/whats-hot-human-origins/our-species-arose-least-300000-years-ago",
+        "label": "Source"
+      },
+      {
+        "text": "One of Africa’s great deltas floods in the dry season. Water flowing into Botswana’s Okavango spreads across an inland plain just when the surrounding landscape is drying out.",
+        "source": "https://whc.unesco.org/en/list/1432",
+        "label": "UNESCO"
+      },
+      {
+        "text": "The chain of long lakes in eastern Africa marks a continent slowly pulling apart. Water has collected in the deep valleys formed as the crust stretched and faulted.",
+        "source": "https://science.nasa.gov/photojournal/east-african-rift/",
+        "label": "NASA"
+      }
+    ]
+  },
+  {
+    "id": "oceania",
+    "name": "Oceania",
+    "options": [
+      {
+        "text": "About 94 per cent of the continent of Zealandia lies underwater. New Zealand is one of the places where you can stand on the small part above the Pacific.",
+        "source": "https://www.gns.cri.nz/research-projects/crustal-structure-of-zealandia/",
+        "label": "Source"
+      },
+      {
+        "text": "When sea levels fell during the ice ages, Australia, Tasmania and New Guinea were joined by dry land. The water gaps between them on a modern map came later.",
+        "source": "https://australian.museum/learn/australia-over-time/evolving-landscape/the-pleistocene-epoch/",
+        "label": "Source"
+      },
+      {
+        "text": "Māori voyaging ancestors could keep their bearings even when clouds hid the stars. Ocean swells and wind direction gave navigators another way to hold a course.",
+        "source": "https://teara.govt.nz/en/canoe-navigation",
+        "label": "Source"
+      }
+    ]
   }
 ]
