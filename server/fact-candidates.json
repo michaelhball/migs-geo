@@ -8661,5 +8661,446 @@
         "suggestSwitch": true
       }
     ]
+  },
+  {
+    "id": "river-nile",
+    "name": "Nile",
+    "options": [
+      {
+        "text": "You can pick out the Nile in a photograph of Egypt at night. Town lights trace the same narrow ribbon as the green fields in daylight, including a great sideways bend near Luxor.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/the-great-bend-of-the-nile-day-and-night/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "Egypt’s annual Nile flood once delivered fresh soil to farmers. The Aswan High Dam now catches much of that sediment behind it, hundreds of kilometres upstream from fields that used to receive it.",
+        "source": "https://thirdworldcentre.org/wp-content/uploads/2020/07/RPP-Jan-1-12-Impacts-of-the-High-Aswan-Dam.pdf",
+        "label": "thirdworldcentre.org"
+      },
+      {
+        "text": "At Khartoum the Nile begins under that single name where two rivers of different colours meet. From above, the boundary between their waters can remain visible downstream of the junction.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/two-niles-meet-81186/",
+        "label": "science.nasa.gov"
+      }
+    ]
+  },
+  {
+    "id": "river-white-nile",
+    "name": "White Nile",
+    "options": [
+      {
+        "text": "On the White Nile system, water leaving Lake Victoria passes through two more great lakes before it reaches South Sudan. The river links Victoria, Kyoga and Albert like beads on a string.",
+        "source": "https://nilebasin.org/sites/default/files/2023-09/irrigation%2520%2520main%2520report_1.pdf",
+        "label": "nilebasin.org"
+      },
+      {
+        "text": "Across South Sudan’s Sudd, the White Nile spreads through such extensive marshes that roughly half the water entering the wetland is lost to evaporation and plants before it gets through.",
+        "source": "https://nilebasin.org/sites/default/files/2023-09/The%2520Wetlands%2520of%2520the%2520Nile%2520Basin%2520Baseline%2520Inventory%2520and%2520Mapping_Main%2520report.pdf",
+        "label": "nilebasin.org"
+      },
+      {
+        "text": "At Jebel Aulia in Sudan, water from one Nile waits for the other. Operators can hold back the White Nile while the Blue Nile is in flood, then release water after the flood peak has passed.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2017WR022149",
+        "label": "agupubs.onlinelibrary.wiley.com"
+      }
+    ]
+  },
+  {
+    "id": "river-blue-nile",
+    "name": "Blue Nile",
+    "options": [
+      {
+        "text": "The lake that feeds the Blue Nile once dried out. Sediment cores from Lake Tana record a time near the end of the last ice age when the lake could no longer send a steady overflow towards Egypt.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S0277379106003349",
+        "label": "sciencedirect.com"
+      },
+      {
+        "text": "The Blue Nile can run brown. Summer rain washes soil from the Ethiopian highlands into the river, giving it a muddy colour that satellites can distinguish where it meets the White Nile.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/two-niles-meet-81186/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "Water leaves Ethiopia’s largest lake by a single outlet. Just downstream, the Blue Nile drops over the falls called Tis Isat before cutting its way out of the highlands.",
+        "source": "https://www.unesco.org/en/mab/lake-tana",
+        "label": "unesco.org"
+      }
+    ]
+  },
+  {
+    "id": "river-congo",
+    "name": "Congo",
+    "options": [
+      {
+        "text": "Soundings in the lower Congo have found more than 200 metres of water beneath the surface. A reach that looks like an ordinary river from the bank conceals a canyon deep enough to swallow a skyscraper.",
+        "source": "https://www.usgs.gov/publications/velocity-mapping-lower-congo-river-a-first-look-unique-bathymetry-and-hydrodynamics",
+        "label": "usgs.gov"
+      },
+      {
+        "text": "Two fish on opposite banks of the lower Congo can be more isolated than fish many kilometres apart on the same side. Powerful currents divide habitats so effectively that separate species have evolved within one river.",
+        "source": "https://www.amnh.org/explore/news-blogs/river-rapids-species-diversity",
+        "label": "amnh.org"
+      },
+      {
+        "text": "The Congo basin collects rain on both sides of the equator. As one half moves out of its rainy season, tributaries in the other can still be rising, helping keep the river full year-round.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2017JD027422",
+        "label": "agupubs.onlinelibrary.wiley.com"
+      }
+    ]
+  },
+  {
+    "id": "river-niger",
+    "name": "Niger",
+    "options": [
+      {
+        "text": "The Niger starts relatively close to the Atlantic, then flows inland towards the Sahara. Only after a great bend through Mali does it head back towards the ocean, reaching it in Nigeria.",
+        "source": "https://www.fao.org/4/w4347e/w4347e0i.htm",
+        "label": "fao.org"
+      },
+      {
+        "text": "The Niger makes a delta twice. It spreads into lakes and marshes in landlocked Mali, gathers back into one channel, and eventually splits again where it reaches the Atlantic.",
+        "source": "https://www.fao.org/4/w4347e/w4347e0i.htm",
+        "label": "fao.org"
+      },
+      {
+        "text": "A rainstorm upstream can matter more to Mali’s Inner Niger Delta than rain falling on the delta itself. Forecasters use upstream river levels to predict how high the flood will reach farther north weeks later.",
+        "source": "https://opidin.org/en/home?set_language=en",
+        "label": "opidin.org"
+      }
+    ]
+  },
+  {
+    "id": "river-zambezi",
+    "name": "Zambezi",
+    "options": [
+      {
+        "text": "Victoria Falls has moved. The Zambezi has successively cut through different cracks in the basalt, leaving a zigzag chain of gorges downstream that marks earlier positions of the waterfall.",
+        "source": "https://whc.unesco.org/en/list/509",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "In western Zambia, the Zambezi spills across the Barotse Plain for months at a time. The plain temporarily stores floodwater, delaying its journey towards Victoria Falls.",
+        "source": "https://floodbased.org/wp-content/uploads/2021/05/OP_16_Flood-Wells-Zambia_SF.pdf",
+        "label": "floodbased.org"
+      },
+      {
+        "text": "At Victoria Falls, a river more than a kilometre wide drops into a narrow crack. Almost the whole Zambezi then escapes through one gap in the opposite wall.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/victoria-falls-zambezi-river-3813/",
+        "label": "science.nasa.gov"
+      }
+    ]
+  },
+  {
+    "id": "river-orange",
+    "name": "Orange",
+    "options": [
+      {
+        "text": "Diamonds that formed inland reached Namibia’s coast by river. The Orange carried them to the Atlantic, where waves and currents sorted them into beach and offshore deposits.",
+        "source": "https://gem-a.com/wp-content/uploads/2018/01/JoG2019_36_6.pdf",
+        "label": "gem-a.com"
+      },
+      {
+        "text": "At Augrabies in South Africa, the Orange funnels over a granite ledge and into a steep gorge. In flood, water thunders down channels that stand dry beside the main waterfall for much of the year.",
+        "source": "https://www.sanparks.org/parks/augrabies-falls/what-to-do/activities/scenic-viewpoints",
+        "label": "sanparks.org"
+      },
+      {
+        "text": "The Orange ends on an international border. At its mouth, the wetland on one side belongs to Namibia and the wetland on the other to South Africa.",
+        "source": "https://the-eis.com/elibrary/sites/default/files/downloads/literature/Hydro-environment%20assessment%20of%20the%20orange%20river%20mouth_%20Jean%20Marie%20Fritsch%20and%20Billy%20Troy.pdf",
+        "label": "the-eis.com"
+      }
+    ]
+  },
+  {
+    "id": "river-limpopo",
+    "name": "Limpopo",
+    "options": [
+      {
+        "text": "The Limpopo starts where the Crocodile and Marico meet. It first runs north, although its mouth is far to the southeast on Mozambique’s Indian Ocean coast.",
+        "source": "https://limpopocommission.org/the-basin/the-river-basin/geography-of-the-limpopo-river-basin/",
+        "label": "limpopocommission.org"
+      },
+      {
+        "text": "A traveller following the Limpopo downstream can keep South Africa on one bank while the country across the water changes from Botswana to Zimbabwe.",
+        "source": "https://limpopocommission.org/the-basin/the-river-basin/geography-of-the-limpopo-river-basin/",
+        "label": "limpopocommission.org"
+      },
+      {
+        "text": "In Mozambique’s 2000 floods, the lower Limpopo spread far beyond its ordinary channel. Satellite images showed a broad sheet of water across the plain where individual river bends had been visible before.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/landsat-7-views-mozambique-flooding-524/",
+        "label": "science.nasa.gov"
+      }
+    ]
+  },
+  {
+    "id": "river-yangtze",
+    "name": "Yangtze",
+    "options": [
+      {
+        "text": "In Yunnan, the upper Yangtze runs alongside two other great rivers, the Mekong and Salween. Mountains keep them apart, and the three ultimately reach the sea thousands of kilometres from one another.",
+        "source": "https://whc.unesco.org/en/list/1083/",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "China’s Three Gorges Dam turned a long stretch of the Yangtze into a staircase with one enormous step. Ships use locks to climb from the lower river to a reservoir that reaches hundreds of kilometres upstream.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/three-gorges-dam-china-7769/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "At Shigu the upper Yangtze turns so sharply that it starts heading back north. This bend helps send its water across China towards Shanghai while neighbouring rivers continue south.",
+        "source": "https://www.visityunnanchina.com/node/53",
+        "label": "visityunnanchina.com"
+      }
+    ]
+  },
+  {
+    "id": "river-yellow-river",
+    "name": "Yellow River",
+    "options": [
+      {
+        "text": "In parts of its lower course the Yellow River flows above the surrounding plain. Sediment raises the bed between its embankments, so a breach can send the river downhill onto an entirely new route.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2015JF003556",
+        "label": "agupubs.onlinelibrary.wiley.com"
+      },
+      {
+        "text": "The Yellow River can build a piece of coast and then abandon it. Satellite images show new land forming at the active mouth while waves eat away the land around a former outlet.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/world-of-change/yellow-river-delta/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "The Yellow River owes its colour to material it picks up on the Loess Plateau. Much of that fine soil originally arrived on the plateau by wind before the river carried it out to sea.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/building-up-the-yellow-river-delta-148145/",
+        "label": "science.nasa.gov"
+      }
+    ]
+  },
+  {
+    "id": "river-mekong",
+    "name": "Mekong",
+    "options": [
+      {
+        "text": "The Mekong makes a tributary run backwards. During the wet season it pushes water up the Tonle Sap River into a Cambodian lake. When the Mekong falls, the lake empties back into it.",
+        "source": "https://ffw.mrcmekong.org/weekly_report/2023/Seasonal%20Flood%20Situation%20Report%20RFFS%202022.pdf",
+        "label": "ffw.mrcmekong.org"
+      },
+      {
+        "text": "At Khone Falls the Mekong breaks into a maze of channels. Fish migrating upstream can pass through particular channels around the falls, so a seemingly small side passage can matter to fisheries far upriver.",
+        "source": "https://www.giz.de/sites/default/files/media/els-document/2025-08/jem-fish-passage-acoustic-pilot-study-final-report-v6.pdf",
+        "label": "giz.de"
+      },
+      {
+        "text": "High in China, the Mekong runs in a gorge parallel to the Yangtze and Salween. A short journey across a mountain ridge can put a raindrop on a different route to a different sea.",
+        "source": "https://whc.unesco.org/en/list/1083/",
+        "label": "whc.unesco.org"
+      }
+    ]
+  },
+  {
+    "id": "river-ganges",
+    "name": "Ganges",
+    "options": [
+      {
+        "text": "The Ganges acquires its name at a visible fork in the Himalayas. Two separately named rivers, the Bhagirathi and Alaknanda, meet at Devprayag and continue downstream as the Ganga.",
+        "source": "https://www.nmcg.nic.in/courseofganga.aspx",
+        "label": "nmcg.nic.in"
+      },
+      {
+        "text": "A tiger can live among trees flooded by sea tides at the mouth of the Ganges. The Sundarbans mangroves grow where sediment from the great Bengal rivers meets salt water from the bay.",
+        "source": "https://whc.unesco.org/en/list/798/",
+        "label": "whc.unesco.org"
+      },
+      {
+        "text": "Water from the Ganges can reach the Bay of Bengal by two national routes. The main channel enters Bangladesh, while the Bhagirathi–Hooghly branch passes Kolkata in India.",
+        "source": "https://www.nmcg.nic.in/courseofganga.aspx",
+        "label": "nmcg.nic.in"
+      }
+    ]
+  },
+  {
+    "id": "river-indus",
+    "name": "Indus",
+    "options": [
+      {
+        "text": "The Indus cuts a deep gorge beside Nanga Parbat, a mountain over eight kilometres high. River water and an eight-thousand-metre summit pass remarkably close to each other horizontally.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S0169555X03001855",
+        "label": "sciencedirect.com"
+      },
+      {
+        "text": "Pakistan grows irrigated crops far from the banks of the Indus. A connected network of barrages and canals spreads the river system’s water across one of the world’s largest irrigated areas.",
+        "source": "https://documents1.worldbank.org/curated/en/501941611237298661/pdf/Groundwater-in-Pakistan-s-Indus-Basin-Present-and-Future-Prospects.pdf",
+        "label": "documents1.worldbank.org"
+      },
+      {
+        "text": "The Indus starts on the Tibetan Plateau and crosses high, dry Ladakh before reaching Pakistan. Part of the water that ends in the Arabian Sea begins its journey on the far side of the Himalayas.",
+        "source": "https://lib.icimod.org/record/32783/files/hiawareWP11-2017.pdf",
+        "label": "lib.icimod.org"
+      }
+    ]
+  },
+  {
+    "id": "river-brahmaputra",
+    "name": "Brahmaputra",
+    "options": [
+      {
+        "text": "In Tibet the Brahmaputra flows east as the Yarlung Tsangpo, then hooks around the mountain Namcha Barwa and dives into a deep gorge. In Bangladesh its main channel has yet another name, the Jamuna.",
+        "source": "https://portals.iucn.org/library/sites/library/files/documents/2014-083.pdf",
+        "label": "portals.iucn.org"
+      },
+      {
+        "text": "Old maps of Bangladesh show the Brahmaputra taking a different route to the sea. Over the eighteenth and nineteenth centuries its main flow shifted west, leaving the Old Brahmaputra carrying much less water.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S0169555X21001045",
+        "label": "sciencedirect.com"
+      },
+      {
+        "text": "The Brahmaputra can surround a new island without ever reaching the sea. Its channels split and rejoin around bars of sand and silt, and the next flood can rearrange them.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/the-braided-brahmaputra-147591/",
+        "label": "science.nasa.gov"
+      }
+    ]
+  },
+  {
+    "id": "river-irrawaddy",
+    "name": "Irrawaddy",
+    "options": [
+      {
+        "text": "On Myanmar’s Irrawaddy, wild dolphins and fishers have learned to signal to one another. The dolphins herd fish towards a cast net and catch fish escaping around its edges.",
+        "source": "https://programs.wcs.org/myanmar/Wildlife/Dolphin.aspx",
+        "label": "programs.wcs.org"
+      },
+      {
+        "text": "The Irrawaddy leaves pictures of its old bends on the plain. When the river cuts across a loop, a crescent-shaped lake can remain beside the new channel.",
+        "source": "https://eol.jsc.nasa.gov/Collections/EarthObservatory/articles/MeandersoftheIrrawaddyRiver.htm",
+        "label": "eol.jsc.nasa.gov"
+      },
+      {
+        "text": "Sediment in the Irrawaddy delta has a mountain provenance. Researchers can use the minerals in grains of sand to trace which upstream rocks contributed material to Myanmar’s coast.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S0009254116303023",
+        "label": "sciencedirect.com"
+      }
+    ]
+  },
+  {
+    "id": "river-amur",
+    "name": "Amur",
+    "options": [
+      {
+        "text": "For roughly 2,500 kilometres, the Amur serves as the border between China and Russia. The same stretch is known in Chinese as Heilong Jiang, the Black Dragon River.",
+        "source": "https://www.tandfonline.com/doi/full/10.1080/02626667.2023.2245811",
+        "label": "tandfonline.com"
+      },
+      {
+        "text": "A forest wetland beside the Amur can help feed microscopic plants in the sea. The river carries dissolved iron from inland soils to the Sea of Okhotsk, where that scarce nutrient supports growth.",
+        "source": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023JG007481",
+        "label": "agupubs.onlinelibrary.wiley.com"
+      },
+      {
+        "text": "The Argun and Shilka lose their names at a single junction. Their combined water becomes the Amur, which later turns away from the international border and reaches the sea in Russia.",
+        "source": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/21/76/27/73/2021762773/2021762773.pdf",
+        "label": "tile.loc.gov"
+      }
+    ]
+  },
+  {
+    "id": "river-lena",
+    "name": "Lena",
+    "options": [
+      {
+        "text": "The Arctic’s largest river delta belongs to the Lena. At the Laptev Sea its single northbound river fans into a maze of channels and islands across the tundra.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/the-arctics-largest-delta-148899/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "The Lena flows towards colder country. In spring its southern reaches can thaw while the lower river is still frozen, allowing water and broken ice to pile up behind a downstream ice jam.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/floods-on-the-lena-river-7736/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "Stone pillars line a stretch of the Lena like a wall of towers. Extreme cycles of freezing and thawing helped split ancient limestone into the narrow columns seen from the river.",
+        "source": "https://whc.unesco.org/en/list/1299/",
+        "label": "whc.unesco.org"
+      }
+    ]
+  },
+  {
+    "id": "river-ob",
+    "name": "Ob",
+    "options": [
+      {
+        "text": "The Ob’s spring flood can run into winter. Meltwater from southern Siberia arrives while the river farther north is still frozen, flooding the broad lowlands behind the ice.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/flooding-on-the-ob-river-18558/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "The Ob does not open directly into the Arctic Ocean. Its fresh water first travels through the long, narrow Gulf of Ob, an estuary that cuts hundreds of kilometres into Siberia.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9735766/",
+        "label": "pmc.ncbi.nlm.nih.gov"
+      },
+      {
+        "text": "Through its tributary the Irtysh, the Ob collects water that started in China and crossed Kazakhstan. The main Ob itself stays in Russia before reaching the Arctic.",
+        "source": "https://eabr.org/upload/iblock/a7f/EDB_2025_Irtysh_Report_ENG.pdf",
+        "label": "eabr.org"
+      }
+    ]
+  },
+  {
+    "id": "river-irtysh",
+    "name": "Irtysh",
+    "options": [
+      {
+        "text": "The Irtysh runs through a lake on its way from China to Russia. It enters Kazakhstan as the Black Irtysh, passes through Lake Zaysan, and emerges on the other side before eventually joining the Ob.",
+        "source": "https://eabr.org/upload/iblock/a7f/EDB_2025_Irtysh_Report_ENG.pdf",
+        "label": "eabr.org"
+      },
+      {
+        "text": "Some Irtysh water travels uphill. The Irtysh–Karaganda canal uses pumping stations to move it away from its natural Arctic-bound route and into the dry interior of Kazakhstan.",
+        "source": "https://www.gov.kz/api/v1/public/assets/2022/5/27/d3f044edf5cc5d58d6a67526808ff2d3_original.10029458.pdf",
+        "label": "gov.kz"
+      },
+      {
+        "text": "Follow the Irtysh all the way across three countries and you still have not reached the sea. More than four thousand kilometres from its source, it becomes a tributary of the Ob.",
+        "source": "https://eabr.org/upload/iblock/a7f/EDB_2025_Irtysh_Report_ENG.pdf",
+        "label": "eabr.org"
+      }
+    ]
+  },
+  {
+    "id": "river-euphrates",
+    "name": "Euphrates",
+    "options": [
+      {
+        "text": "The Euphrates has not always drained towards the Persian Gulf. Geologists found evidence that one of its ancient forerunners carried sediment towards the Mediterranean before the drainage network changed.",
+        "source": "https://www.nature.com/articles/s41561-026-01962-x",
+        "label": "nature.com"
+      },
+      {
+        "text": "Filling a reservoir on the Euphrates changed the geography of a medieval castle. Qalʿat Jaʿbar, once on a hill above the river in Syria, now projects into Lake Assad.",
+        "source": "https://www.asor.org/wp-content/uploads/ASOR_CHI_September17_Appendices.pdf",
+        "label": "asor.org"
+      },
+      {
+        "text": "The Euphrates and Tigris share a final stretch under a different name. After they meet in southern Iraq, their combined channel is called the Shatt al-Arab.",
+        "source": "https://waterinventory.org/sites/waterinventory.org/files/chapters/Chapter-01-Euphrates-River-Basin-web.pdf",
+        "label": "waterinventory.org"
+      }
+    ]
+  },
+  {
+    "id": "river-tigris",
+    "name": "Tigris",
+    "options": [
+      {
+        "text": "Iraq can take floodwater out of the Tigris before it reaches Baghdad and send it into Lake Tharthar. The lake occupies a natural hollow between the Tigris and the Euphrates.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/iraq-reservoirs-plunge-to-low-levels/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "Near Baghdad the Tigris comes close to the Euphrates, then bends away again. They run separately across the plain for hundreds more kilometres before finally joining in southern Iraq.",
+        "source": "https://www.researchgate.net/publication/270121728_Fisheries_and_Aquaculture_in_the_Euphrates_and_Tigris_Basin_in_Turkey_In_FAO_2014_Report_of_the_Expert_Meeting_on_the_Review_of_Fisheries_and_Aquaculture_Activities_in_the_Tigris_Euphrates_Basin_Erbil",
+        "label": "researchgate.net"
+      },
+      {
+        "text": "Much of the water the Tigris gains below Mosul comes from its eastern side. The Greater and Lesser Zab drain mountain country towards a main river that is already flowing across the Iraqi plains.",
+        "source": "https://waterinventory.org/sites/waterinventory.org/files/chapters/Chapter-03-Tigris_River-Basin-web_0.pdf",
+        "label": "waterinventory.org"
+      }
+    ]
   }
 ]
