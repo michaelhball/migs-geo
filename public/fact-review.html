@@ -3,11 +3,11 @@
 <body><main><a href="/settings">← Settings</a><h1>Fact review</h1>
 <p>Choose a fact to show after a correct answer. Choices and comments save on this computer. Hold a choice to request edits before publication.</p>
 <div class="controls"><label>Find a place<input id="search" type="search"></label>
-<label>Places<select id="scope"><option value="studying">Current study settings</option><option value="rivers">River collection</option><option value="all">Whole collection</option></select></label>
+<label>Places<select id="scope"><option value="studying">Current study settings</option><option value="held">Held choices to review</option><option value="rivers">River collection</option><option value="all">Whole collection</option></select></label>
 <a href="/api/fact-review" download="fact-decisions.json">Download review JSON</a></div>
 <p id="summary" role="status">Loading…</p>
 <section><h2>Choose a fact</h2><div id="pending"></div></section>
 <details><summary id="research-heading">Awaiting research</summary><div id="research"></div></details>
 <section id="alternatives-section" hidden><h2>Keep your fact or switch to D?</h2><div id="alternatives"></div></section>
-<section><h2>Already chosen</h2><div id="chosen"></div></section>
+<section><h2 id="chosen-heading">Already chosen</h2><div id="chosen"></div></section>
 </main></body></html>

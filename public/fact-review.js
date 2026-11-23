@@ -51,10 +51,17 @@ function hasOffer(p) {
 const research = document.querySelector("#research");
 const researchDetails=document.querySelector("details");
 researchDetails.ontoggle=()=>refresh();
+function heldForReview(p) {
+  if (!p.hold || p.awaitingSuggestions) return false;
+  const choice = p.options.find(o => o.id === p.savedChoice);
+  return choice && (choice.text !== p.current?.text || choice.source !== p.current?.source);
+}
 function refresh() {
   const term=normalize(search.value.trim()), remaining=[], selected=[], missing=[], offers=[];
+  const reviewingHolds = scope.value === "held";
+  const held = places.filter(heldForReview);
   let waiting = 0;
-  for (const p of places) {
+  for (const p of reviewingHolds ? held : places) {
     if (!normalize(p.name).includes(term)) continue;
     // Bundled river IDs are assigned before the optional study pack is installed.
     if (scope.value === "rivers" && !p.id.startsWith("river-")) continue;
@@ -67,14 +74,28 @@ function refresh() {
     else if (inScope) (p.options.length ? remaining : missing).push(p);
   }
   drawSection(pending, remaining);
+  pending.parentElement.hidden=reviewingHolds;
   researchDetails.hidden=!missing.length;
   document.querySelector("#research-heading").textContent=`Awaiting research (${missing.length})`;
   drawSection(research, researchDetails.open ? missing : []);
   alternatives.parentElement.hidden=!offers.length;
   drawSection(alternatives, offers);
   drawSection(chosen, selected);
+  document.querySelector("#chosen-heading").textContent = reviewingHolds ? "Held choices to review" : "Already chosen";
+  chosen.parentElement.hidden = reviewingHolds && !selected.length;
+  if (reviewingHolds) {
+    summary.textContent = selected.length
+      ? `${selected.length} held ${selected.length === 1 ? "choice" : "choices"}. Uncheck “Hold for edits or more options” when a fact is ready to publish.`
+      : term ? "No matching held choices." : "No held choices left to review.";
+    return;
+  }
   const revisions = waiting ? ` · ${waiting} awaiting new suggestions` : "";
   summary.textContent=`${remaining.length} to choose · ${missing.length} awaiting research${revisions} · ${selected.length + offers.length} already chosen`;
+  if (held.length) {
+    const link = el("a", `Review ${held.length} held ${held.length === 1 ? "choice" : "choices"}`);
+    link.href = "?scope=held";
+    summary.append(" · ", link);
+  }
   if (offers.length) {
     const jump=el("a",`${offers.length} left to compare`);
     jump.href="#alternatives-section";
@@ -86,7 +107,8 @@ function showSavedChoice(p, article) {
   const nowChosen = p.options.some(o => o.id === p.choice);
   const bounds = article.getBoundingClientRect();
   const leavingOffers = article.parentElement === alternatives && !hasOffer(p);
-  const movingInView = (wasChosen !== nowChosen || leavingOffers || (p.awaitingSuggestions && !p.finishingComment)) && article.isConnected &&
+  const leavingHeld = scope.value === "held" && !heldForReview(p);
+  const movingInView = (wasChosen !== nowChosen || leavingOffers || leavingHeld || (p.awaitingSuggestions && !p.finishingComment)) && article.isConnected &&
     bounds.bottom > 0 && bounds.top < window.innerHeight;
   const afterPending = researchDetails.hidden
     ? (alternatives.parentElement.hidden ? chosen : alternatives).parentElement.querySelector("h2")
