@@ -9585,5 +9585,26 @@
         "label": "waternsw.com.au"
       }
     ]
+  },
+  {
+    "id": "hispaniola",
+    "name": "Hispaniola",
+    "options": [
+      {
+        "text": "The Caribbean islands reach both their highest and their lowest point on Hispaniola. Pico Duarte rises more than 3,000 metres above sea level, while the shore of Lake Enriquillo lies below it.",
+        "source": "https://www.airuniversity.af.edu/Portals/10/AFCLC/04.%20Ready%20Airman/Field%20Guides/SOUTHCOM/ECFG%20Dominican%20Republic%20-%202025r.pdf",
+        "label": "Air University"
+      },
+      {
+        "text": "Hispaniola used to split in two along a different line from the modern border. A sea channel flooded the lowlands of the Cul-de-Sac Plain and Neiba Valley, separating the north of the island from the south.",
+        "source": "https://doi.org/10.1515/9781400834105.8",
+        "label": "Princeton University Press"
+      },
+      {
+        "text": "The world’s two surviving species of solenodon, a small venomous mammal, each have an island of their own. One lives on Hispaniola and the other on Cuba.",
+        "source": "https://www.amnh.org/explore/news-blogs/cuba-solenodons",
+        "label": "American Museum of Natural History"
+      }
+    ]
   }
 ]
