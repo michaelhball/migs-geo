@@ -11,6 +11,7 @@
     }
   ],
   "paths": {
+    "/api/vocabulary": {"get":{"summary":"List geography terms, definitions and accepted aliases","responses":{"200":{"description":"Success"}}}},
     "/api/fact-review": {"get": {"summary": "List all collection places, sourced candidates and private decisions", "responses": {"200": {"description": "Success"}}}},
     "/api/fact-review/{id}": {"put": {"summary": "Save a decision with its current revision, choice ID, comment, hold flag and optional reviewedAlternative candidate ID", "responses": {"200": {"description": "Success"}}, "parameters": [{"in": "path", "name": "id", "required": true, "schema": {"type": "string"}}]}},
     "/api/fact-review/publish": {"post": {"summary": "Publish selected facts except those held for edits", "responses": {"200": {"description": "Success"}}}},

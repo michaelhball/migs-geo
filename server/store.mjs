@@ -18,8 +18,16 @@ import lakeLocations from "./lake-locations.json" with {type:"json"};
 import lakePlaces from "./lake-places.json" with {type:"json"};
 import physicalPlaces from "./physical-places.json" with {type:"json"};
 import facts from "./geography-facts.json" with { type: "json" };
+import vocabulary from "../data/vocabulary.json" with {type:"json"};
+
+const vocabularyModes = ["term", "define"];
+const vocabularyPlaces = vocabulary.map(({term, definition, group, aliases = []}) => ({
+  id: "vocab-" + term.replaceAll(" ", "-"), kind: "vocabulary", name: term, info: definition,
+  region: group, aliases, tags: [], source: "Migs Geo vocabulary", geometry: null, center: null,
+  approximate: false, small: false, archived: false,
+}));
 const optionalModes = { capital: "capital", fromCapital: "capital", flag: "flag", fromFlag: "flag" };
-const modes = ["locate", "identify", ...Object.keys(optionalModes)];
+const modes = ["locate", "identify", ...Object.keys(optionalModes), ...vocabularyModes];
 export const defaults = {
   lakeCutoffKm2: 0,
   lakeMinimumKm2: 0,
@@ -83,7 +91,7 @@ export function validateSettings(s) {
   if (!Number.isFinite(s.lakeCutoffKm2) || s.lakeCutoffKm2 < 0) throw Error("Lake cutoff must be a nonnegative area in km².");
   if (!Number.isFinite(s.lakeMinimumKm2) || s.lakeMinimumKm2 < 0 || s.lakeMinimumKm2 > s.lakeCutoffKm2) throw Error("Small lake minimum must be between zero and the inland lake cutoff.");
   if (s.cityCountry !== "" && (typeof s.cityCountry !== "string" || !Object.hasOwn(cities, s.cityCountry))) throw Error("Unknown city country.");
-  if (!["geography","flags"].includes(s.activeDeck)) throw Error("Invalid deck.");
+  if (!["geography","flags","vocabulary"].includes(s.activeDeck)) throw Error("Invalid deck.");
   if (!Number.isInteger(s.newPerDay) || s.newPerDay < 0 || s.newPerDay > 500)
     throw Error("New cards per day must be 0–500.");
   if (!Number.isInteger(s.reviewsPerDay) || s.reviewsPerDay < 0 || s.reviewsPerDay > 5000)
@@ -110,6 +118,9 @@ export function validateSettings(s) {
     typeof s.burySiblings !== "boolean"
   )
     throw Error("Invalid filters.");
+  if (s.activeDeck === "vocabulary" && !s.modes.some(mode => vocabularyModes.includes(mode))) {
+    s = {...s, activeDeck:"geography"};
+  }
   return Object.fromEntries(Object.keys(defaults).map((k) => [k, s[k]]));
 }
 const distance = (a, b) => {
@@ -131,6 +142,10 @@ const distance = (a, b) => {
   );
 };
 const isFlag = mode => mode === "flag" || mode === "fromFlag";
+function cardDeck(mode) {
+  if (vocabularyModes.includes(mode)) return "vocabulary";
+  return isFlag(mode) ? "flags" : "geography";
+}
 function flagChoices(id, token) {
   const rank = key => createHash("sha256").update(token + key).digest("hex");
   const candidates = Object.keys(facts).filter(key => key !== id && facts[key].flag && facts[key].flag !== facts[id].flag);
@@ -155,7 +170,7 @@ export function checkAnswer(p, mode, answer) {
       throw Error("Enter a name, or reveal the answer.");
     const fact = facts[p.id];
     const cityList = value => value.split(",").map(normalize).sort().join(",");
-    const correct = mode === "capital" ? cityList(fact.capital) === cityList(answer.text)
+    const correct = mode === "define" ? answer.text === p.info : mode === "capital" ? cityList(fact.capital) === cityList(answer.text)
       : mode === "flag" ? answer.text === p.id
       : [p.name, ...p.aliases].some(
       (n) => normalize(n) === normalize(answer.text) ||
@@ -287,6 +302,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       .all()
       .map((p) => ({ ...parse(p.data), archived: !!p.archived })));
   function enabledPlace(p, s) {
+    if (p.kind === "vocabulary") return !p.archived && s.activeDeck === "vocabulary";
     if (p.archived || (s.regions.length && !s.regions.includes(p.region))) return false;
     if (p.kind === "city") return !!s.cityCountry && p.countryCode === s.cityCountry;
     let kind = p.kind;
@@ -300,8 +316,8 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
   const editorial = factReview(db, tx, () => {
     const s = settings();
     const eligible = new Set(cards().filter(c => !c.suspended && s.modes.includes(c.mode) &&
-      isFlag(c.mode) === (s.activeDeck === "flags")).map(c => c.place_id));
-    return places().filter(p => !p.archived).map(p => ({
+      cardDeck(c.mode) === s.activeDeck).map(c => c.place_id));
+    return places().filter(p => !p.archived && p.kind !== "vocabulary").map(p => ({
       id:p.id, name:p.name, studying:enabledPlace(p,s) && eligible.has(p.id),
     }));
   });
@@ -343,7 +359,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     )
       throw Error("A valid ID and name (1–160 characters) are required.");
     if (
-      !["country", "territory", "water", "region","river","range","desert","lake","city"].includes(p.kind) ||
+      !["country", "territory", "water", "region","river","range","desert","lake","city","vocabulary"].includes(p.kind) ||
       !Array.isArray(p.aliases) ||
       p.aliases.some((a) => typeof a !== "string") ||
       !Array.isArray(p.tags) ||
@@ -353,22 +369,29 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       typeof p.source !== "string"
     )
       throw Error("Invalid place fields.");
-    validateGeometry(p.geometry);
-    if (!p.center)
-      p.center =
-        p.geometry.type === "Point"
-          ? p.geometry.coordinates
-          : p.geometry.type === "Polygon"
-            ? p.geometry.coordinates[0][0]
-            : p.geometry.coordinates[0][0][0];
-    validateGeometry({ type: "Point", coordinates: p.center });
-    p.approximate = p.kind !== "city" && (!!p.approximate || p.geometry.type === "Point");
+    if (existing && (existing.kind === "vocabulary") !== (p.kind === "vocabulary")) throw Error("Cannot convert a place to or from a vocabulary entry.");
+    if (p.kind === "vocabulary") {
+      if (!p.info.trim()) throw Error("A vocabulary definition is required.");
+      p.geometry = p.center = null;
+      p.approximate = false;
+    } else {
+      validateGeometry(p.geometry);
+      if (!p.center)
+        p.center =
+          p.geometry.type === "Point"
+            ? p.geometry.coordinates
+            : p.geometry.type === "Polygon"
+              ? p.geometry.coordinates[0][0]
+              : p.geometry.coordinates[0][0][0];
+      validateGeometry({ type: "Point", coordinates: p.center });
+      p.approximate = p.kind !== "city" && (!!p.approximate || p.geometry.type === "Point");
+    }
     p.small = !!p.small;
     tx(() => {
       db.prepare(
         "INSERT INTO places VALUES(?,?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data,archived=excluded.archived",
       ).run(p.id, encode(p), p.archived ? 1 : 0);
-      for (const mode of ["locate", "identify"]) {
+      for (const mode of p.kind === "vocabulary" ? vocabularyModes : ["locate", "identify"]) {
         const memory = createEmptyCard(clock());
         db.prepare(
           "INSERT OR IGNORE INTO cards(id,place_id,mode,memory,due,state) VALUES(?,?,?,?,?,0)",
@@ -398,6 +421,20 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       }
     }
   }
+  function definitionChoices(p) {
+    const entries = places().filter(term => term.kind === "vocabulary" && !term.archived && term.info !== p.info);
+    function shuffle(values) {
+      for (let i = values.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [values[i], values[j]] = [values[j], values[i]];
+      }
+      return values;
+    }
+    const sameGroup = entries.filter(term => term.region === p.region);
+    const others = entries.filter(term => term.region !== p.region);
+    const alternatives = new Set([...shuffle(sameGroup), ...shuffle(others)].map(term => term.info));
+    return shuffle([p.info, ...[...alternatives].slice(0,3)]);
+  }
   const getCard = (id) => {
     const c = db.prepare("SELECT * FROM cards WHERE id=?").get(id);
     if (!c) throw Error("Unknown card.");
@@ -426,7 +463,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         .prepare(
           "SELECT * FROM reviews WHERE day=? AND undone=0 ORDER BY rowid",
         )
-        .all(day).filter(r => isFlag(r.card_id.split(":").at(-1)) === (s.activeDeck === "flags")),
+        .all(day).filter(r => cardDeck(r.card_id.split(":").at(-1)) === s.activeDeck),
       seenPlaces = new Set(today.map((r) => r.place_id)),
       seenCards = new Set(today.map((r) => r.card_id));
     // Count long-term review cards once. New cards and short learning or
@@ -443,7 +480,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         !c.suspended &&
         enabledPlace(p, s) &&
         s.modes.includes(c.mode) &&
-        isFlag(c.mode) === (s.activeDeck === "flags") &&
+        cardDeck(c.mode) === s.activeDeck &&
         (!s.burySiblings || !seenPlaces.has(c.place_id) || seenCards.has(c.id))
       );
     });
@@ -566,14 +603,16 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         state: card.state,
         version: card.version,
         kind: p.kind,
-        name: ["locate", "capital", "flag"].includes(card.mode) ? p.name : null,
+        name: ["locate", "capital", "flag", "define"].includes(card.mode) ? p.name : null,
+        ...(card.mode === "term" && {definition:p.info}),
+        ...(card.mode === "define" && {definitions:definitionChoices(p)}),
         ...(card.mode === "fromCapital" && { capital: facts[p.id].capital, hint: facts[p.id].capital_hint }),
         ...(card.mode === "fromFlag" && { flag: facts[p.id].flag }),
         ...(card.mode === "flag" && { choices: flagChoices(p.id, token) }),
         geometry: card.mode === "identify" ? p.geometry : null,
         center: card.mode === "identify" ? p.center : null,
         approximate: p.approximate,
-        trace: p.geometry.type === "MultiLineString" && card.mode === "locate",
+        trace: card.mode === "locate" && p.geometry.type === "MultiLineString",
         small: p.small,
       },
       counts: queue().counts,
@@ -612,7 +651,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     a.result = checkAnswer(p, a.card.mode, answer);
     if (a.card.mode === "locate" && a.result.correct === false && !answer.reveal) {
       const matches = places().filter(candidate =>
-        !candidate.archived && !candidate.approximate && candidate.geometry.type !== "Point" &&
+        !candidate.archived && candidate.kind !== "vocabulary" && !candidate.approximate && candidate.geometry.type !== "Point" &&
         (["country","territory","water"].includes(candidate.kind) || (p.kind === "lake" && candidate.kind === "lake")) && ["Polygon","MultiPolygon"].includes(candidate.geometry.type) && booleanPointInPolygon(answer.point, candidate.geometry)
       );
       const lakes = matches.filter(candidate => candidate.kind === "lake");
@@ -769,9 +808,14 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     const restoredSettings = validateSettings(data.settings);
     const ids = new Set(data.places.map((p) => p.id));
     if (ids.size !== data.places.length) throw Error("Duplicate place IDs.");
+    const vocabIds = new Set(data.places.filter(p => p.kind === "vocabulary").map(p => p.id));
     for (const p of data.places) {
-      validateGeometry(p.geometry);
-      validateGeometry({ type: "Point", coordinates: p.center });
+      if (p.kind === "vocabulary") {
+        if (p.geometry !== null || p.center !== null || typeof p.info !== "string" || !p.info.trim()) throw Error("Invalid vocabulary entry.");
+      } else {
+        validateGeometry(p.geometry);
+        validateGeometry({ type: "Point", coordinates: p.center });
+      }
       if (
         typeof p.id !== "string" ||
         !/^[\w-]{1,100}$/.test(p.id) ||
@@ -784,7 +828,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         p.tags.some((t) => typeof t !== "string") ||
         !Array.isArray(p.aliases) ||
         p.aliases.some((a) => typeof a !== "string") ||
-        !["country", "territory", "water", "region","river","range","desert","lake","city"].includes(p.kind)
+        !["country", "territory", "water", "region","river","range","desert","lake","city","vocabulary"].includes(p.kind)
       )
         throw Error("Invalid place in backup.");
     }
@@ -793,6 +837,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         !c ||
         !ids.has(c.place_id) ||
         !modes.includes(c.mode) ||
+        vocabularyModes.includes(c.mode) !== vocabIds.has(c.place_id) ||
         (Object.hasOwn(optionalModes,c.mode) && !facts[c.place_id]?.[optionalModes[c.mode]]) ||
         c.id !== `${c.place_id}:${c.mode}` ||
         !Number.isFinite(+new Date(c.memory?.due)) ||
@@ -924,10 +969,11 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       source:"Natural Earth populated places", info:"",
       geometry:{type:"Point",coordinates:[lon,lat]}, center:[lon,lat],
     }));
-    for (const p of [...physicalPlaces.filter(p=>s.kinds.includes(p.kind)), ...(s.kinds.some(k => k === "lake" || k === "smallLake") ? lakePlaces : []), ...cityPlaces]) {
+    const words = s.modes.some(mode => vocabularyModes.includes(mode)) ? vocabularyPlaces : [];
+    for (const p of [...words, ...physicalPlaces.filter(p=>s.kinds.includes(p.kind)), ...(s.kinds.some(k => k === "lake" || k === "smallLake") ? lakePlaces : []), ...cityPlaces]) {
       if ( db.prepare("SELECT id FROM places WHERE id=?").get(p.id)) continue;
       db.prepare("INSERT INTO places VALUES(?,?,0)").run(p.id, encode(p));
-      for (const mode of ["locate","identify"]) {
+      for (const mode of p.kind === "vocabulary" ? vocabularyModes : ["locate","identify"]) {
         const memory = createEmptyCard(clock());
         db.prepare("INSERT INTO cards(id,place_id,mode,memory,due,state) VALUES(?,?,?,?,?,0)")
           .run(p.id+":"+mode,p.id,mode,encode(memory),+memory.due);
@@ -938,6 +984,14 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
   tx(() => installMapPacks(settings()));
   return {
     editorial,
+    vocabulary: () => {
+      const terms = new Map(vocabularyPlaces.map(p => [p.id,p]));
+      for (const p of places()) {
+        if (p.kind === "vocabulary" && !p.archived) terms.set(p.id,p);
+        else terms.delete(p.id);
+      }
+      return [...terms.values()].map(p => ({id:p.id, term:p.name, definition:p.info, group:p.region, aliases:p.aliases}));
+    },
     lakeReview: () => {
       const candidates = new Map(lakePlaces.map(p => [p.id,p]));
       for (const p of places()) {

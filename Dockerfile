@@ -19,7 +19,7 @@ COPY package.json package-lock.json ./
 RUN npm ci --ignore-scripts --omit=dev --no-audit --no-fund && npm cache clean --force
 COPY --from=build /app/dist ./dist
 COPY server ./server
-COPY data/places.json data/approved-facts.json ./data/
+COPY data/places.json data/approved-facts.json data/vocabulary.json ./data/
 COPY public/api.json ./public/api.json
 RUN mkdir -p /data/backups && chown -R node:node /data
 USER node

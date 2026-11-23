@@ -113,6 +113,7 @@ async function api(req, res, url) {
           : { error: "Method not allowed" },
       ["GET", "PATCH"].includes(m) ? 200 : 405,
     );
+  if (p === "/api/vocabulary" && m === "GET") return json(res, store.vocabulary());
   if (p === "/api/places" && m === "GET")
     return json(
       res,

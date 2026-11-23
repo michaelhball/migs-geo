@@ -162,7 +162,7 @@ export function validateStudyLog(data, cardIds, placeIds, reviews) {
       attempts.has(a.id) ||
       !cardIds.has(a.card_id) ||
       !placeIds.has(a.place_id) ||
-      !["locate", "identify", "capital", "fromCapital", "flag", "fromFlag"].includes(a.mode) ||
+      !["locate", "identify", "capital", "fromCapital", "flag", "fromFlag", "term", "define"].includes(a.mode) ||
       a.card_id !== `${a.place_id}:${a.mode}` ||
       ![0, 1].includes(a.practice) ||
       !validDate(a.started_at) ||
@@ -176,7 +176,7 @@ export function validateStudyLog(data, cardIds, placeIds, reviews) {
       !snapshot?.place ||
       typeof snapshot.place.name !== "string" ||
       typeof snapshot.place.region !== "string" ||
-      !["country", "territory", "water", "region", "river", "range", "desert", "lake", "city"].includes(
+      !["country", "territory", "water", "region", "river", "range", "desert", "lake", "city", "vocabulary"].includes(
         snapshot.place.kind,
       ) ||
       !Array.isArray(snapshot.place.tags) ||

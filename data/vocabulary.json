@@ -1,0 +1,673 @@
+[
+  {
+    "term": "continental shelf",
+    "definition": "The gently sloping, submerged edge of a continent before the seabed drops into deep water.",
+    "group": "Coasts and oceans",
+    "aliases": [
+      "shelf"
+    ]
+  },
+  {
+    "term": "archipelago",
+    "definition": "A group or chain of islands.",
+    "group": "Coasts and oceans",
+    "aliases": [
+      "island group"
+    ]
+  },
+  {
+    "term": "peninsula",
+    "definition": "Land that extends into water and stays joined to a larger landmass on one side.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "isthmus",
+    "definition": "A narrow strip of land joining two larger areas of land, with water on either side.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "strait",
+    "definition": "A narrow natural passage of water connecting two larger bodies of water.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "channel",
+    "definition": "A passage that water flows through, such as the waterway between two islands or the bed of a river.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "gulf",
+    "definition": "A large arm of a sea or ocean partly enclosed by land.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "bay",
+    "definition": "A stretch of water where the shore curves inward. There is no strict size boundary between a bay and a gulf.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "inlet",
+    "definition": "A narrow opening where water reaches into the land.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "lagoon",
+    "definition": "A shallow body of water partly cut off from a larger body of water by a reef, sandbank or barrier island.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "estuary",
+    "definition": "The tidal stretch at a river mouth where river water meets the sea.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "fjord",
+    "definition": "A steep-sided valley carved by a glacier and later flooded by the sea.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "atoll",
+    "definition": "A ring or partial ring of coral reef around a lagoon, sometimes with low islands on the reef.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "reef",
+    "definition": "A ridge of rock or coral rising close to the water surface.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "barrier reef",
+    "definition": "A coral reef running offshore with a lagoon between the reef and the coast.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "headland",
+    "definition": "Land that projects from a coast into the water, often as a rocky point.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "spit",
+    "definition": "A narrow ridge of sand or gravel built by currents, attached to land at one end.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "seamount",
+    "definition": "A mountain rising from the ocean floor whose summit stays underwater.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "ocean trench",
+    "definition": "A long, narrow, exceptionally deep depression in the ocean floor.",
+    "group": "Coasts and oceans",
+    "aliases": [
+      "oceanic trench",
+      "deep-sea trench"
+    ]
+  },
+  {
+    "term": "intertidal zone",
+    "definition": "The strip of shore covered at high tide and exposed at low tide.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "tidal flat",
+    "definition": "Low, nearly level mud or sand that the tide regularly covers and exposes.",
+    "group": "Coasts and oceans",
+    "aliases": [
+      "mudflat",
+      "tidal mudflat"
+    ]
+  },
+  {
+    "term": "continental slope",
+    "definition": "The steeper submerged slope connecting a continent’s shallow shelf to the deep ocean.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "upwelling",
+    "definition": "The rise of deeper water towards the surface, often bringing nutrients up with it.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "salinity",
+    "definition": "The amount of dissolved salt in water.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "brackish",
+    "definition": "Describes water saltier than fresh water but less salty than typical seawater.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "swell",
+    "definition": "Waves that have travelled away from the winds that generated them.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "tributary",
+    "definition": "A stream or river that flows into a larger stream or river.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "distributary",
+    "definition": "A channel that branches from a river and takes water away from its main course.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "confluence",
+    "definition": "The place where streams or rivers meet.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "headwaters",
+    "definition": "The streams and source areas where a river begins.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "drainage basin",
+    "definition": "The area of land from which water drains to a particular outlet, such as a river mouth or a lake.",
+    "group": "Rivers and lakes",
+    "aliases": [
+      "catchment",
+      "catchment area",
+      "watershed"
+    ]
+  },
+  {
+    "term": "drainage divide",
+    "definition": "High ground separating areas whose surface water drains to different outlets.",
+    "group": "Rivers and lakes",
+    "aliases": [
+      "watershed divide",
+      "water divide"
+    ]
+  },
+  {
+    "term": "delta",
+    "definition": "Land built from sediment that a river deposits as it enters a lake or sea.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "floodplain",
+    "definition": "Relatively flat land beside a river that the river can cover during floods.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "meander",
+    "definition": "A winding bend in a stream or river.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "oxbow lake",
+    "definition": "A curved lake left behind when a river cuts off one of its bends.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "runoff",
+    "definition": "Water from rain or melting snow that flows over land into streams and lakes.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "discharge",
+    "definition": "The volume of water flowing past a point in a river per unit of time.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "sediment",
+    "definition": "Loose material such as sand, silt or clay that water, wind or ice can carry and deposit.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "silt",
+    "definition": "Tiny mineral grains finer than sand but coarser than clay.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "reservoir",
+    "definition": "A body of water stored for later use, often a lake formed by damming a river.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "aquifer",
+    "definition": "A layer of rock or loose material that stores groundwater and lets it flow through.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "groundwater",
+    "definition": "Water beneath the land surface in saturated rock, sand or soil.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "spring",
+    "definition": "A place where groundwater flows naturally out onto the surface.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "wadi",
+    "definition": "A valley or streambed in a dry region that usually carries water only after rain.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "salt flat",
+    "definition": "Flat ground coated in salts left behind as shallow water evaporates.",
+    "group": "Rivers and lakes",
+    "aliases": [
+      "salt pan"
+    ]
+  },
+  {
+    "term": "endorheic basin",
+    "definition": "A drainage basin whose water has no surface route to the ocean.",
+    "group": "Rivers and lakes",
+    "aliases": [
+      "closed basin",
+      "internal drainage basin"
+    ]
+  },
+  {
+    "term": "water table",
+    "definition": "The upper surface of the ground zone where pores and cracks are filled with water.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "rapids",
+    "definition": "A stretch of river where a steep or rocky bed makes the water fast and turbulent.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "plateau",
+    "definition": "A broad area of relatively level land raised above the surrounding country.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "escarpment",
+    "definition": "A long, steep slope separating two areas of land at different heights.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "gorge",
+    "definition": "A narrow, deep valley with steep sides, often cut by a river.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "ravine",
+    "definition": "A small, steep-sided valley, usually cut by running water.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "ridge",
+    "definition": "A long, narrow crest of high ground.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "basin",
+    "definition": "A hollow or low-lying area surrounded by higher ground.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "erosion",
+    "definition": "The wearing away and removal of material by water, wind or ice.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "weathering",
+    "definition": "The breakdown of rock in place by chemical reactions or physical forces.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "deposition",
+    "definition": "The settling or accumulation of material carried by water, wind or ice.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "dune",
+    "definition": "A mound or ridge of loose sand built by wind or flowing water.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "glacier",
+    "definition": "A mass of ice formed from accumulated snow that moves under its own weight.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "moraine",
+    "definition": "A ridge or accumulation of rock and sediment deposited by a glacier.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "drumlin",
+    "definition": "A smooth, elongated hill shaped beneath moving ice, often occurring in groups.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "karst",
+    "definition": "Terrain where dissolving rock, usually limestone, creates caves, sinkholes and underground streams.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "sinkhole",
+    "definition": "A hollow that forms when material dissolves underground or the ground collapses into a cavity.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "stalactite",
+    "definition": "A mineral deposit that grows down from a cave ceiling.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "stalagmite",
+    "definition": "A mineral deposit that grows up from a cave floor.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "limestone",
+    "definition": "A rock made mainly of calcium carbonate, often from shells or other marine remains.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "sandstone",
+    "definition": "Rock made of sand grains compacted and cemented together.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "basalt",
+    "definition": "A dark, fine-grained rock formed when relatively fluid lava cools.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "granite",
+    "definition": "A coarse-grained rock whose visible crystals grew as molten rock cooled slowly underground.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "tectonic plate",
+    "definition": "A moving slab of Earth’s rigid outer layer that can carry continents, ocean floor or both.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "rift",
+    "definition": "A long zone where Earth’s crust is being pulled apart.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "fault",
+    "definition": "A break in Earth’s crust along which the rock on either side has moved.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "magma",
+    "definition": "Molten or partly molten rock beneath Earth’s surface.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "lava",
+    "definition": "Molten rock that has reached Earth’s surface, or the rock formed when it cools.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "caldera",
+    "definition": "A large volcanic hollow formed mainly when the ground collapses above a partly emptied magma reservoir.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "crater",
+    "definition": "A bowl-shaped hollow, often made by a volcanic eruption or an impact from space.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "lava tube",
+    "definition": "A tunnel left when the surface of a lava flow hardens and the molten rock inside drains away.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "geothermal",
+    "definition": "Describes heat from inside Earth, as in the water of a hot spring.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "arid",
+    "definition": "Describes a climate with so little available moisture that most plants struggle to grow.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "biome",
+    "definition": "A broad ecological region recognised by its climate and characteristic vegetation or other living communities.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "savanna",
+    "definition": "Tropical or subtropical grassland with scattered trees and a marked dry season.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "steppe",
+    "definition": "A broad, mostly treeless grassland in a comparatively dry climate.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "tundra",
+    "definition": "A cold, mostly treeless biome where the growing season is short and plants grow low to the ground.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "rainforest",
+    "definition": "Forest sustained by abundant rainfall, found in both tropical and temperate climates.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "cloud forest",
+    "definition": "Mountain forest often immersed in low cloud, where vegetation collects moisture from the mist.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "wetland",
+    "definition": "Land flooded or soaked often enough to support plants and soils adapted to wet conditions.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "marsh",
+    "definition": "A wetland dominated by soft-stemmed plants such as reeds, grasses and sedges.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "swamp",
+    "definition": "A wetland dominated by trees or shrubs.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "bog",
+    "definition": "A peat-forming wetland fed mainly by rain or snow, usually acidic and low in nutrients.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "peat",
+    "definition": "Partly decayed plant material that builds up where the ground stays so wet that decay is slow.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "mangrove",
+    "definition": "A salt-tolerant tree or shrub that grows on tropical or subtropical tidal shores.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "monsoon",
+    "definition": "A seasonal shift in prevailing winds, often bringing a marked change between wet and dry weather.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "rain shadow",
+    "definition": "A relatively dry area on the sheltered side of mountains, after rising air has lost moisture on the other side.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "temperate",
+    "definition": "Describes the climate zones between the tropics and the polar regions, often with distinct seasons.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "endemic",
+    "definition": "Describes a species that occurs naturally only in a particular area.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "permafrost",
+    "definition": "Ground that stays at or below freezing for at least two consecutive years.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "landlocked",
+    "definition": "Describes a country without a coastline on the open ocean or on a sea connected to it.",
+    "group": "Borders and coordinates"
+  },
+  {
+    "term": "doubly landlocked",
+    "definition": "Describes a landlocked country whose neighbours are all landlocked too.",
+    "group": "Borders and coordinates"
+  },
+  {
+    "term": "enclave",
+    "definition": "A territory completely surrounded by the territory of one other country or region.",
+    "group": "Borders and coordinates"
+  },
+  {
+    "term": "exclave",
+    "definition": "A part of a territory separated from its main part by other territory. Some exclaves are also enclaves.",
+    "group": "Borders and coordinates"
+  },
+  {
+    "term": "tripoint",
+    "definition": "A point where three territorial boundaries meet.",
+    "group": "Borders and coordinates",
+    "aliases": [
+      "tri-border point"
+    ]
+  },
+  {
+    "term": "meridian",
+    "definition": "An imaginary line running from pole to pole along one longitude.",
+    "group": "Borders and coordinates"
+  },
+  {
+    "term": "latitude",
+    "definition": "Angular distance north or south of the equator, measured in degrees.",
+    "group": "Borders and coordinates"
+  },
+  {
+    "term": "longitude",
+    "definition": "Angular distance east or west of the prime meridian, measured in degrees.",
+    "group": "Borders and coordinates"
+  },
+  {
+    "term": "equator",
+    "definition": "The imaginary circle at zero degrees latitude, halfway between the poles.",
+    "group": "Borders and coordinates"
+  },
+  {
+    "term": "hemisphere",
+    "definition": "One half of Earth, such as the half north of the equator.",
+    "group": "Borders and coordinates"
+  },
+  {
+    "term": "turlough",
+    "definition": "A seasonal lake in limestone country that fills and drains as groundwater rises and falls.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "peatland",
+    "definition": "Land where a layer of peat has accumulated over time.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "fynbos",
+    "definition": "The fine-leaved shrubland of South Africa’s Cape region, where many plants depend on periodic fires.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "veld",
+    "definition": "Open grassland or scrub country in southern Africa.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "oasis",
+    "definition": "A place in a dry region where a local water supply supports vegetation.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "rainforest canopy",
+    "definition": "The upper layer of a rainforest formed by the crowns of its trees.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "dyke",
+    "definition": "In geology, a sheet of once-molten rock that cuts across older rock layers.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "fossil",
+    "definition": "Remains or traces of a once-living organism preserved from the geological past.",
+    "group": "Rocks and landforms"
+  },
+  {
+    "term": "bathymetry",
+    "definition": "The measurement and mapping of depth and shape beneath a body of water.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "ocean",
+    "definition": "One of the vast, connected bodies of salt water covering most of Earth.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "sea",
+    "definition": "A named body of salt water, often partly enclosed by land and connected to an ocean. Some large inland lakes also carry this name.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "sound",
+    "definition": "A broad coastal waterway, often between an island and the mainland, or a large inlet from the sea.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "ocean current",
+    "definition": "A sustained flow of seawater in a particular direction.",
+    "group": "Coasts and oceans"
+  },
+  {
+    "term": "lake",
+    "definition": "A body of standing inland water, fresh or salty, occupying a basin.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "river",
+    "definition": "A natural stream of water that flows along a channel toward another river, a lake, the sea, or an inland basin.",
+    "group": "Rivers and lakes"
+  },
+  {
+    "term": "desert",
+    "definition": "A region with very little precipitation. Deserts can be hot or cold.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "grassland",
+    "definition": "A biome where grasses dominate and trees are sparse.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "boreal forest",
+    "definition": "The broad belt of cold northern forest dominated by coniferous trees.",
+    "group": "Climate and habitats",
+    "aliases": [
+      "taiga"
+    ]
+  },
+  {
+    "term": "tropical",
+    "definition": "Relating to the belt of Earth between the Tropics of Cancer and Capricorn.",
+    "group": "Climate and habitats"
+  },
+  {
+    "term": "polar",
+    "definition": "Relating to the high latitudes around the North or South Pole.",
+    "group": "Climate and habitats"
+  }
+]

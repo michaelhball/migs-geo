@@ -881,3 +881,62 @@ test("requests for new suggestions survive reloads until the whole shortlist cha
     assert.equal(item().awaitingSuggestions,true);
   } finally { s.db.close(); }
 });
+
+test("vocabulary uses a separate optional queue and retains reviewed words across restore", () => {
+  const {store} = setup();
+  const restored = setup().store;
+  try {
+    const glossary = store.vocabulary();
+    assert.match(glossary.find(w => w.term === "peat").definition, /plant/i);
+    assert.equal(new Set(glossary.map(w => w.id)).size, glossary.length);
+    assert.ok(store.cards().every(c => !c.place_id.startsWith("vocab-")));
+    store.setSettings({modes:["identify","term"], newPerDay:1});
+    assert.equal(store.question().card.kind, "country");
+    store.setSettings({activeDeck:"vocabulary", regions:["elsewhere"]});
+    const q = store.question();
+    const word = store.place(store.getCard(q.card.id).place_id);
+    assert.equal(q.card.definition, word.info);
+    assert.equal(q.card.name, null);
+    assert.equal(store.check(q.token,{text:word.name}).correct, true);
+    store.review(q.token,4);
+    assert.equal(store.queue().counts.new, 0);
+    store.setSettings({modes:["identify","define"]});
+    const pick = store.question({practice:true, placeId:"vocab-peat", mode:"define"});
+    const definition = store.place("vocab-peat").info;
+    assert.equal(pick.card.name,"peat");
+    assert.equal(new Set(pick.card.definitions).size,4);
+    assert.ok(pick.card.definitions.includes(definition));
+    assert.equal(store.check(pick.token,{text:pick.card.definitions.find(x => x !== definition)}).correct,false);
+    assert.equal(store.check(pick.token,{text:definition}).correct,true);
+    store.review(pick.token,3);
+    store.setSettings({modes:["identify"],regions:[]});
+    assert.equal(store.settings().activeDeck,"geography");
+    assert.equal(store.queue().counts.new,1);
+    restored.restore(store.exportData());
+    assert.deepEqual(restored.getCard(q.card.id).memory,store.getCard(q.card.id).memory);
+    assert.equal(restored.review(q.token,4).card.id,q.card.id);
+    store.updatePlace("vocab-peat",{info:"Waterlogged plant remains."});
+    store.setSettings({modes:["identify","term"]});
+    assert.equal(store.vocabulary().find(w => w.term === "peat").definition,"Waterlogged plant remains.");
+  } finally {
+    store.db.close();
+    restored.db.close();
+  }
+});
+
+test("all river fact choices are available before their cards are enabled", () => {
+  const {store} = setup();
+  try {
+    const rivers = store.editorial.list().filter(p => p.id.startsWith("river-"));
+    assert.equal(rivers.length,45);
+    assert.ok(rivers.every(r => !r.studying && r.options.length >= 3 && r.options.every(o => o.text && o.source.startsWith("https://"))));
+    const river = rivers.find(r => r.id === "river-murray");
+    store.editorial.save(river.id,{revision:river.revision,choice:river.options[0].id,comment:"",hold:false});
+    assert.deepEqual(store.editorial.publish().applied,[river.id]);
+    store.setSettings({kinds:["river"],modes:["identify"]});
+    const q = store.question({practice:true, placeId:river.id,mode:"identify"});
+    assert.equal(store.check(q.token,{text:river.name}).placeFact.text,river.options[0].text);
+  } finally {
+    store.db.close();
+  }
+});
