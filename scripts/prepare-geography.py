@@ -137,6 +137,26 @@ deck.append({
     'info':'The study outline joins Miami, San Juan and Bermuda. The region has no official boundary.',
     'source':'Conventional study extent; NOAA National Ocean Service', 'small':False, 'approximate':False,
 })
+# Join the two mainland coastlines before simplification so the country border
+# never becomes part of the island outline. Offshore islands have separate rings.
+edges = set()
+for country in ['Haiti', 'Dominican Republic']:
+    unit, = match(land, country)
+    mainland = max(polygons(unit), key=lambda poly: area(poly[0]))[0]
+    edges.update((tuple(a), tuple(b)) for a, b in zip(mainland, mainland[1:]) if a != b)
+coast = {a:b for a,b in edges if (b,a) not in edges}
+ring = [min(coast)]
+while ring[-1] in coast:
+    ring.append(coast.pop(ring[-1]))
+if coast or ring[0] != ring[-1]:
+    raise ValueError('Could not assemble the Hispaniola coastline')
+deck.append({
+    'id':'hispaniola', 'name':'Hispaniola', 'kind':'territory', 'region':'North America',
+    'geometry':compact({'type':'Polygon','coordinates':[ring]}), 'center':[-71.2,18.9],
+    'aliases':['La Española','Island of Hispaniola'], 'tags':['Caribbean'],
+    'info':'Haiti occupies the western part of the island and the Dominican Republic the eastern part.',
+    'source':'Natural Earth 1:10m', 'small':False, 'approximate':False,
+})
 base={'type':'FeatureCollection','features':[{'type':'Feature','properties':{'name':props(f).get('name_long') or props(f).get('name')},'geometry':compact(f['geometry'])} for f in land]}
 base['boundaries'] = boundaries(land, simplify)
 # Keep studied shorelines visible at every scale, at their actual map size.

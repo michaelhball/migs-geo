@@ -521,8 +521,8 @@ const atlas = JSON.parse(
   readFileSync(new URL("../data/places.json", import.meta.url)),
 );
 test("all bundled places have usable geometry and unique independent IDs", () => {
-  assert.equal(atlas.length, 320);
-  assert.equal(new Set(atlas.map((p) => p.id)).size, 320);
+  assert.equal(atlas.length, 321);
+  assert.equal(new Set(atlas.map((p) => p.id)).size, atlas.length);
   for (const p of atlas) validateGeometry(p.geometry);
   assert.equal(atlas.filter((p) => p.approximate).length, 2);
 });
@@ -578,6 +578,10 @@ test("representative map matches include constituent countries, territories, isl
     ["Bosnia and Herzegovina", [17.19, 44.77], true],
     ["Bali", [115.2, -8.4], true],
     ["Java", [110, -7], true],
+    ["Hispaniola", [-72.34, 18.55], true], // Port-au-Prince, Haiti
+    ["Hispaniola", [-69.92, 18.49], true], // Santo Domingo, Dominican Republic
+    ["Hispaniola", [-72.81, 20.06], false], // Tortuga, offshore Haiti
+    ["Hispaniola", [-68.70, 18.15], false], // Saona, offshore Dominican Republic
     ["French Guiana", [-53, 4], true],
     ["Mediterranean Sea", [12, 35], true],
     ["Mediterranean Sea", [12.5, 41.9], false],

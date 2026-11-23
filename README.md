@@ -24,7 +24,7 @@ Docker is also supported: `docker compose up --build -d --wait`. See [DEPLOYMENT
 
 ## Features
 
-- 320 places in the starting atlas, with independent place → map and map → place cards.
+- 321 places in the starting atlas, with independent place → map and map → place cards.
 - Study countries, territories, water and regions. Optional packs and question directions are available in Settings.
 - FSRS-6 scheduling: up to 15 new cards first each day, then due learning and reviews. Both groups are shuffled with a mix of question directions. Each direction has its own schedule, with recall ratings and undo.
 - Up to 200 old cards reviewed per day by default, adjustable in Settings. Short learning and relearning repeats do not count toward this limit; deferred reviews keep their due dates.
