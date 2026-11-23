@@ -3983,18 +3983,18 @@
     "name": "Samoa",
     "options": [
       {
-        "text": "On Savaiʻi, lava from Mount Matavanu flowed through a village church. The roof is gone, but the walls at Saleaula still enclose the hardened lava.",
-        "source": "https://www.samoa.travel/plan-book/activities/saleaula-lava-field",
+        "text": "A freshwater pool on Upolu sits almost at the edge of the Pacific. At Piula, spring water emerges from an old lava tube beside the sea, so a swimmer can go from fresh water to salt water in a few steps.",
+        "source": "https://www.samoa.travel/experience/places-to-explore/sites-attractions/",
         "label": "samoa.travel"
       },
       {
-        "text": "At Alofaaga, waves push water into tubes in the lava. The far end of a tube can throw a jet of seawater high into the air inland from the breaking wave.",
-        "source": "https://www.samoa.travel/plan-book/activities/alofaaga-blowholespa-sopoia-cave/",
+        "text": "Goldfish live in a volcanic crater high above the Pacific. They were introduced to Lake Lanotoʻo on Upolu, where their descendants still swim in a lake surrounded by rainforest.",
+        "source": "https://www.samoa.travel/plan-book/activities/lake-lanotoo/",
         "label": "samoa.travel"
       },
       {
-        "text": "On Upolu, a ladder drops into the To-Sua swimming hole. The pool sits below ground in volcanic rock, with a passage through to the Pacific.",
-        "source": "https://www.samoa.travel/plan-book/activities/to-sua-ocean-trench",
+        "text": "Savaiʻi rises from tropical beaches to a summit 1,858 metres above sea level. High on Mount Silisili the forest is often inside a cloud, on the very same island as the lowland coconut palms.",
+        "source": "https://www.samoa.travel/experience/places-to-explore/sites-attractions/",
         "label": "samoa.travel"
       }
     ]
@@ -4348,19 +4348,19 @@
     "name": "Latvia",
     "options": [
       {
-        "text": "A forested escarpment at Slītere used to be a shoreline. The Baltic Ice Lake once reached this ridge, which now stands inland from Latvia's coast.",
-        "source": "https://www.daba.gov.lv/en/slitere-national-park",
-        "label": "daba.gov.lv"
+        "text": "A canal dug in 1842 lowered Lake Engure by draining water into the Gulf of Riga. The exposed lake bed became new land along the shores of what had once been a Baltic lagoon.",
+        "source": "https://rsis.ramsar.org/RISapp/files/RISrep/LV738RIS_2306_en.pdf",
+        "label": "rsis.ramsar.org"
       },
       {
-        "text": "In the Gauja valley, water has hollowed caves in old red sandstone. The walls at Gūtmaņala carry inscriptions left by visitors over centuries.",
-        "source": "https://www.latvia.travel/en/caves-cliffs-rock-formations-and-sandstone-landscapes",
-        "label": "latvia.travel"
+        "text": "Latvia’s largest lake is surprisingly thin. Lubāns averages only about 1.6 metres deep, and kilometres of embankments hold its waters apart from the surrounding lowlands.",
+        "source": "https://www.bef.lv/wp-content/uploads/2025/10/Floodplain_01_Lake-Lubans_K.Putnina.pdf",
+        "label": "bef.lv"
       },
       {
-        "text": "Latvia has a long Baltic coast, but only one stretch where sandstone cliffs rise directly from the beach. On the Vidzeme shore the sea cuts into the same kind of rock that makes cliffs inland.",
-        "source": "https://www.latvia.travel/en/sight/rocky-seashore-vidzeme",
-        "label": "latvia.travel"
+        "text": "One river links three countries under two familiar names. The Western Dvina rises in Russia and crosses Belarus, then flows through Riga as the Daugava before entering the Baltic.",
+        "source": "https://www.fao.org/4/w6240e/w6240e13.htm",
+        "label": "fao.org"
       }
     ]
   },
@@ -4369,19 +4369,19 @@
     "name": "Liechtenstein",
     "options": [
       {
-        "text": "A map of Liechtenstein’s eleven municipalities looks as though someone has cut it into extra pieces. Several municipalities have detached tracts in the Alps, separate from their main settlements in the Rhine valley.",
-        "source": "https://www.statistikportal.li/statistikportal/publications/101-statistisches-jahrbuch/2025/01/2/101.2025.01.1_02_statistisches-jahrbuch-2025.pdf",
-        "label": "statistikportal.li"
+        "text": "The top of the Naafkopf belongs to three countries. At its summit a hiker can step from Liechtenstein into Austria or Switzerland without descending the mountain.",
+        "source": "https://en.tourismus.li/entdecken/sommer-herbst/wandern/top-5-wanderungen/naafkopf.html",
+        "label": "en.tourismus.li"
       },
       {
-        "text": "A wind coming over the Alps lengthens Liechtenstein’s growing season. The föhn warms and dries as it descends, giving the small country’s valley a milder climate than its mountain setting suggests.",
-        "source": "https://www.statistikportal.li/statistikportal/publications/103-liechtenstein-in-figures/2026/01/1/102.2026.01.1_02_liechtenstein-in-figures-2026.pdf",
-        "label": "statistikportal.li"
+        "text": "In 1927 the Rhine broke through its bank near Schaan. Much of Liechtenstein’s northern valley floor became a lake, with the mountain villages looking down on flooded settlements below.",
+        "source": "https://www.e-archiv.li/textDetail.aspx?etID=45791",
+        "label": "e-archiv.li"
       },
       {
-        "text": "Liechtenstein makes electricity from water collected high in the Samina valley. The drop from the mountain reservoir to the lower power station supplies the force.",
-        "source": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/energienutzung",
-        "label": "llv.li"
+        "text": "Liechtenstein’s only railway is a nine-kilometre middle section of a line between two other countries. A train from Feldkirch in Austria to Buchs in Switzerland crosses Liechtenstein on the way.",
+        "source": "https://bua.regierung.li/BuA/default.aspx?erweitert=true&nr=18&year=2022",
+        "label": "Government of Liechtenstein"
       }
     ]
   },
@@ -4459,19 +4459,19 @@
     "name": "Malta",
     "options": [
       {
-        "text": "Gozo’s Azure Window is still recognisable underwater. When the great sea arch collapsed in 2017, large sections toppled onto the seabed, where surveys could reconstruct how it fell.",
-        "source": "https://www.um.edu.mt/library/oar/handle/123456789/110969",
-        "label": "um.edu.mt"
+        "text": "Malta once had elephants small enough to live on an island with little food. A cave called Għar Dalam preserved the bones of dwarf elephants and hippos, animals you might never associate with Malta today.",
+        "source": "https://heritagemalta.mt/explore/ghar-dalam/",
+        "label": "heritagemalta.mt"
       },
       {
-        "text": "At Il-Maqluba, the ground collapsed into a limestone cavity. Trees now grow inside a steep-walled hollow whose floor lies below the surrounding fields.",
-        "source": "https://www.um.edu.mt/library/oar/bitstream/123456789/128422/1/Inventory%20and%20quantitative%20assessment%20of%20geosites%20in%20the%20southern%20sector%20of%20the%20island%20of%20Malta%202024.pdf",
-        "label": "um.edu.mt"
+        "text": "Gozo has an Inland Sea that fits inside a small hollow behind a cliff. Boats can leave the sheltered lagoon through a narrow natural tunnel and emerge in the open Mediterranean.",
+        "source": "https://www.visitmalta.co.uk/malta-diving-guide",
+        "label": "visitmalta.co.uk"
       },
       {
-        "text": "Tiny Filfla sits off Malta's southern cliffs. Its isolation has left this little offshore rock with a distinctive form of the Maltese wall lizard.",
-        "source": "https://era.org.mt/wp-content/uploads/2019/05/LocalitiesConservationValue-MalteseIslands-1987.pdf",
-        "label": "era.org.mt"
+        "text": "Malta is the smallest EU member by land area. You could fit its entire archipelago into Luxembourg, the next smallest member, more than eight times.",
+        "source": "https://european-union.europa.eu/principles-countries-history/facts-and-figures-european-union_en",
+        "label": "European Union"
       }
     ]
   },
@@ -4833,19 +4833,19 @@
     "name": "Ukraine",
     "options": [
       {
-        "text": "Ukraine contains the longest known cave in gypsum. Optymistychna spreads sideways through a soluble rock layer, forming a maze of passages rather than a single deep shaft.",
-        "source": "https://www.guinnessworldrecords.com/world-records/114190-longest-gypsum-cave",
-        "label": "guinnessworldrecords.com"
+        "text": "Ukraine’s Snake Island has territorial waters of its own. Yet when the international court drew the offshore boundary with Romania in 2009, it gave the island no extra reach beyond that belt. One island had two very different effects on the same maritime map.",
+        "source": "https://legal.un.org/icjsummaries/documents/english/st_leg_serf1_add5.pdf",
+        "label": "legal.un.org"
       },
       {
-        "text": "The shallow lagoons of the Syvash can change colour dramatically from one basin to the next. Narrow divides restrict exchange, so evaporation can leave neighbouring stretches of water with different salinities.",
-        "source": "https://science.nasa.gov/earth/earth-observatory/sivash-ukraine-47117/",
-        "label": "science.nasa.gov"
+        "text": "Southern Ukraine preserves a patch of European grassland that has never been ploughed. At Askania-Nova the original feather-grass steppe survived while agriculture transformed much of the plain around it.",
+        "source": "https://www.unesco.org/en/mab/askaniya-nova",
+        "label": "unesco.org"
       },
       {
-        "text": "Ukraine has a patch of open sand dunes near the lower Dnipro. Oleshky Sands has migrating sand and sparse vegetation in a region better known for farmland and steppe.",
-        "source": "https://science.nasa.gov/earth/earth-observatory/oleshky-sands-145801/",
-        "label": "science.nasa.gov"
+        "text": "Rain falling on opposite sides of Ukraine’s Carpathians can meet again hundreds of kilometres away. The Tisza drains one slope and the Prut another, but both eventually join the Danube.",
+        "source": "https://davr.gov.ua/fls18/3-RBMP_Danube_February_2025_ENG.pdf",
+        "label": "davr.gov.ua"
       }
     ]
   },
@@ -4901,19 +4901,19 @@
     "name": "Azores",
     "options": [
       {
-        "text": "The Azores briefly gained an island about 250 metres high. An eruption at João de Castro Bank raised it above the Atlantic in 1720, and waves wore it back below the surface within two years.",
-        "source": "https://volcano.si.edu/volcano.cfm?vn=382070",
-        "label": "volcano.si.edu"
+        "text": "Flores and Corvo are politically Portuguese but ride on the North American tectonic plate. The Mid-Atlantic Ridge runs between these two islands and the rest of the Azores.",
+        "source": "https://d197for5662m48.cloudfront.net/documents/publicationstatus/96638/preprint_pdf/9070f17d840f8d6fd4645a158b49ef9a.pdf",
+        "label": "d197for5662m48.cloudfront.net"
       },
       {
-        "text": "Inside a volcano on Graciosa, you can descend to a lake beneath a single enormous rock roof. The cavern of Furna do Enxofre formed where a lake of molten lava once occupied the caldera.",
-        "source": "https://parquesnaturais.azores.gov.pt/en/parques/7/areasprotegidas/79",
+        "text": "Santa Maria has seashells embedded in rock high above the Atlantic. Parts of the island were once submerged, then rose again carrying fossil-bearing stretches of ancient seabed with them.",
+        "source": "https://parquesnaturais.azores.gov.pt/en/parques/2/geodiversidade",
         "label": "parquesnaturais.azores.gov.pt"
       },
       {
-        "text": "On São Jorge, a cliff collapse can make new land fit for settlement. Landslides and lava flows have built dozens of small flat shelves called fajãs between the island’s steep sides and the Atlantic.",
-        "source": "https://parquesnaturais.azores.gov.pt/en/parques/6/poi/124",
-        "label": "parquesnaturais.azores.gov.pt"
+        "text": "Off São Miguel, a rocky islet encloses an almost circular pool. Its walls are the remains of a volcanic crater, and a breach lets the Atlantic in and out.",
+        "source": "https://www.visitportugal.com/en/destinos/acores/73823",
+        "label": "visitportugal.com"
       }
     ]
   },
@@ -5239,19 +5239,19 @@
     "name": "Turkey",
     "options": [
       {
-        "text": "The white terraces of Pamukkale are still being built by water. Warm springs flow over the hillside and deposit calcium carbonate in rims around successive pools.",
-        "source": "https://whc.unesco.org/en/list/485/",
-        "label": "UNESCO"
+        "text": "In Istanbul, water can pass through the Bosporus in opposite directions at the same time. Less salty Black Sea water flows south at the surface while denser water from the Sea of Marmara flows north underneath.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S0029801805002623",
+        "label": "sciencedirect.com"
       },
       {
-        "text": "Ephesus was once a busy port. Sediment gradually filled its harbour, leaving the ruins of a maritime city several kilometres inland.",
-        "source": "https://whc.unesco.org/en/list/1018/",
-        "label": "UNESCO"
+        "text": "Turkey’s highest mountain is a volcano beside the borders of Armenia and Iran. Its two cones are so different in height that the summit of Little Ararat lies more than a kilometre below Great Ararat.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/mount-ararat-agri-dagi-turkey-1515/",
+        "label": "science.nasa.gov"
       },
       {
-        "text": "Turkey’s Lake Van is so alkaline that its native pearl mullet leave the lake to breed. Each spring the fish swim into freshwater streams, then return to the soda lake.",
-        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13035659/",
-        "label": "pmc.ncbi.nlm.nih.gov"
+        "text": "NASA studied a Turkish lake to understand a crater on Mars. The pale mineral deposits around Lake Salda are a rare Earth counterpart to the carbonate deposits in Jezero crater, where the Perseverance rover landed.",
+        "source": "https://science.nasa.gov/blogs/earth-matters/2021/02/17/what-a-lake-in-turkey-can-tell-us-about-mars/",
+        "label": "science.nasa.gov"
       }
     ]
   },
@@ -5490,19 +5490,19 @@
     "name": "South Korea",
     "options": [
       {
-        "text": "On Jeju, streams of lava drained out from beneath their own hardened roofs. The empty tubes survive as caves, some with pale carbonate formations growing against black volcanic walls.",
-        "source": "https://whc.unesco.org/en/list/1264",
-        "label": "whc.unesco.org"
+        "text": "Baengnyeong belongs to South Korea, yet the mainland you see from the island is North Korea. Its ferry connection to the South Korean mainland is much longer than the crossing to that nearby shore.",
+        "source": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?menuSn=351&vcontsId=110734",
+        "label": "english.visitkorea.or.kr"
       },
       {
-        "text": "The division of Korea created a refuge for cranes. Along the heavily restricted border, birds can winter in wetlands and feed in fields where there is far less human disturbance than elsewhere.",
-        "source": "https://dmz.gg.go.kr/dmz/contents/contents.do?ciIdx=22&menuId=43",
-        "label": "dmz.gg.go.kr"
+        "text": "A single county off southwestern South Korea contains roughly a thousand islands. In Sinan, the great expanses of mud you see between islands at low tide disappear beneath the sea twice a day.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/a-thousand-islands-in-south-korea-148136/",
+        "label": "science.nasa.gov"
       },
       {
-        "text": "South Korea turned a seawall into a power station at Sihwa Lake. Incoming Yellow Sea tides flow through turbines into the lake, generating electricity while bringing seawater back into an enclosed basin.",
-        "source": "https://www.kwater.or.kr/eng/busi/water03/cleanEnergyPage.do?s_mid=1828",
-        "label": "kwater.or.kr"
+        "text": "Sunrise Peak on Jeju started as a separate island. A volcanic eruption through shallow seawater built the cone, and sediment later joined it to the much larger island beside it.",
+        "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110731",
+        "label": "english.visitkorea.or.kr"
       }
     ]
   },
@@ -6042,19 +6042,19 @@
     "name": "Thailand",
     "options": [
       {
-        "text": "The Mekong hides a landscape of rock pools along Thailand’s eastern border. At Sam Phan Bok the falling dry-season river reveals thousands of hollows scoured into its bed.",
-        "source": "https://tfo.dot.go.th/locations/sampanbok-three-thousand-holes/",
-        "label": "tfo.dot.go.th"
+        "text": "Thailand’s largest lake lets you travel from fresh water through brackish water to salt water. The linked basins of Songkhla become progressively more marine towards their opening into the Gulf of Thailand.",
+        "source": "https://www.thailand.go.th/public/index.php/useful-information-detail/009_088",
+        "label": "thailand.go.th"
       },
       {
-        "text": "Some limestone islands in Thailand’s Phang Nga Bay are hollow in the middle. A boat can slip through a tidal cave and emerge into an open-air lagoon ringed by cliffs.",
-        "source": "https://www.cavernas.org.br/wp-content/uploads/2021/07/tka_v4_n1_027-031.pdf",
-        "label": "cavernas.org.br"
+        "text": "Thailand gets frost. On Doi Inthanon, its highest mountain, cold-season mornings can leave ice crystals on the grass in a country usually associated with tropical heat.",
+        "source": "https://www.thailandtourismdirectory.go.th/en/attraction/5149",
+        "label": "thailandtourismdirectory.go.th"
       },
       {
-        "text": "At Cheow Lan, steep limestone hills rise from a reservoir. The lake is recent, but the pale towers that now look like islands were already standing when the valley flooded.",
-        "source": "https://chm-thai.onep.go.th/wp-content/uploads/2023/03/02%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%9A%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%8A%E0%B8%B8%E0%B9%88%E0%B8%A1%E0%B8%99%E0%B9%89%E0%B8%B3Eng-3.pdf",
-        "label": "chm-thai.onep.go.th"
+        "text": "At Thailand’s Golden Triangle, three countries meet at a junction of two rivers. The Ruak separates Thailand from Myanmar before flowing into the Mekong, with Laos across the water.",
+        "source": "https://www.tourismlaos.org/welcome/wonders-of-nature/mekong-moments/",
+        "label": "tourismlaos.org"
       }
     ]
   },
@@ -6987,19 +6987,19 @@
     "name": "Mali",
     "options": [
       {
-        "text": "Lake Faguibine used to fill a great hollow near Timbuktu with floodwater from the Niger. After its feeder channels silted up and floods weakened, people began farming parts of the former lake bed.",
-        "source": "https://www.unep.org/resources/emerging-issues/saving-lake-faguibine",
-        "label": "unep.org"
+        "text": "A population of elephants survives on the edge of the Sahara in Mali. The Gourma herd follows a great seasonal circuit between waterholes, reaching different parts of the landscape as they dry out.",
+        "source": "https://wild.org/wp-content/uploads/2010/05/Mali-Brochure-low-res.pdf",
+        "label": "wild.org"
       },
       {
-        "text": "In the Sahara at Taoudenni, salt miners work the floor of an ancient lake. Thick layers crystallised from the water and stayed behind when the lake disappeared.",
-        "source": "https://www.sciencedirect.com/science/article/pii/S0037073899000147",
-        "label": "sciencedirect.com"
+        "text": "The Senegal River begins in Mali. At Bafoulabé, the Bafing and Bakoye join to form a river named for a country it has yet to reach.",
+        "source": "https://www.omvs.org/le-fleuve-senegal/",
+        "label": "omvs.org"
       },
       {
-        "text": "The flat summit of Mount Hombori is an island for plants. Its sheer cliffs have sheltered species that botanists found scarce or absent on the surrounding Sahelian plain.",
-        "source": "https://www.hombori.org/docs/HomboriICE04%20%28poster%29.pdf",
-        "label": "hombori.org"
+        "text": "Mali has seven neighbours, and five have their own seacoasts. From this landlocked country a traveller can enter a neighbour facing the Mediterranean, or choose among four facing the Atlantic.",
+        "source": "https://ecowap.ecowas.int/country/Mali",
+        "label": "ecowap.ecowas.int"
       }
     ]
   },
@@ -8347,19 +8347,19 @@
     "name": "Saint Lucia",
     "options": [
       {
-        "text": "A snake named after Saint Lucia survives on a speck of land offshore. Its known wild population is confined to Maria Major, an islet small enough to walk across in minutes.",
-        "source": "https://www.fauna-flora.org/species/saint-lucia-racer/",
-        "label": "fauna-flora.org"
+        "text": "France is one of Saint Lucia’s closest neighbours. The island across the channel to the north is Martinique, so a short sea crossing takes you from an independent Caribbean country to French territory.",
+        "source": "https://portal-uat.who.int/fctcapps/sites/default/files/2023-04/saint_lucia_2018_annex-1_chief_medical_officer_report_2014.pdf",
+        "label": "portal-uat.who.int"
       },
       {
-        "text": "Pigeon Island is attached to Saint Lucia. A man-made causeway joined the former island to the mainland, but the headland kept its island name.",
-        "source": "https://stlucia.org/en_uk/places-to-visit/offshore-small-islands/",
-        "label": "stlucia.org"
+        "text": "Saint Lucia bears the name of a real woman, Saint Lucy of Syracuse. An island in the Caribbean took the name of a woman from another island, Sicily, on the far side of the Atlantic.",
+        "source": "https://externalaffairs.govt.lc/news/saint-lucia-pays-tribute-to-inspiring-women-around-the-world",
+        "label": "externalaffairs.govt.lc"
       },
       {
-        "text": "Part of Saint Lucia’s volcanic landscape continues under the Caribbean. Surveys of the seabed off the west coast found huge deposits of debris from the collapse of a volcano’s flank.",
-        "source": "https://volcano.si.edu/volcano.cfm?vn=360140",
-        "label": "volcano.si.edu"
+        "text": "The Saint Lucia parrot’s entire native range lies within one small island, and even there it keeps largely to the forested interior. A flight across the channel to a neighbouring island would take it outside the species’ natural range.",
+        "source": "https://www.govt.lc/nationalbird",
+        "label": "govt.lc"
       }
     ]
   },
