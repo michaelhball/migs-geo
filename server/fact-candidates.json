@@ -9102,5 +9102,488 @@
         "label": "waterinventory.org"
       }
     ]
+  },
+  {
+    "id": "river-rhine",
+    "name": "Rhine",
+    "options": [
+      {
+        "text": "At the Swiss town of Koblenz, the Aare brings in more water on average than the Rhine arriving from upstream. Below their meeting point, the smaller partner keeps the name.",
+        "source": "https://www.dora.lib4ri.ch/wsl/islandora/object/wsl%3A26690/datastream/PDF",
+        "label": "dora.lib4ri.ch"
+      },
+      {
+        "text": "Much of the Rhine reaches the Netherlands and changes its name. The river splits there, and the Waal carries the largest share of its water towards the North Sea.",
+        "source": "https://undine.bafg.de/rhein/rheingebiet_en.html",
+        "label": "undine.bafg.de"
+      },
+      {
+        "text": "The Rhine flows into and out of Lake Constance. The river that enters the lake from the Alps and the river that leaves it on its way to the Rhine Falls belong to the same watercourse.",
+        "source": "https://www.iksr.org/fileadmin/user_upload/DKDM/Dokumente/BWP-HWRMP/EN/bwp_En_RMBP_2021_01.pdf",
+        "label": "iksr.org"
+      }
+    ]
+  },
+  {
+    "id": "river-volga",
+    "name": "Volga",
+    "options": [
+      {
+        "text": "Europe’s largest river never reaches an ocean. The Volga ends in the Caspian Sea, a closed basin where the water can escape by evaporation.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/volga-delta-and-the-caspian-sea-2129/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "Europe’s largest river delta spreads along the shore of a lake. Near the Caspian, the Volga breaks into hundreds of channels before its water finally reaches open water.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/the-largest-river-delta-in-europe-144231/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "One river supplies most of the fresh water entering the Caspian. A change in rainfall far up the Volga can influence the shoreline of a sea shared by five countries.",
+        "source": "https://hess.copernicus.org/articles/28/241/2024/",
+        "label": "hess.copernicus.org"
+      }
+    ]
+  },
+  {
+    "id": "river-seine",
+    "name": "Seine",
+    "options": [
+      {
+        "text": "The sea reaches far inland up the Seine, even where the water tastes fresh. Its tide travels past Rouen and meets its upstream limit at a dam at Poses, about 160 kilometres along the estuary.",
+        "source": "https://www.seine-aval.fr/wp-content/uploads/2010/12/2-5-Poissons.pdf",
+        "label": "seine-aval.fr"
+      },
+      {
+        "text": "The lower Seine once had a tidal wave famous enough to draw crowds. The mascaret ran upstream against the river until changes to the channel greatly weakened it.",
+        "source": "https://www.seine-aval.fr/question/fiche-mascaret/",
+        "label": "seine-aval.fr"
+      },
+      {
+        "text": "Paris has owned land around the Seine’s springs far outside the city. The river rises on the Langres Plateau in Burgundy, hundreds of kilometres from the capital built on its banks.",
+        "source": "https://www.paris.fr/pages/la-seine-aurait-plus-de-14-000-ans-et-autres-anecdotes-surprenantes-sur-le-fleuve-parisien-19981",
+        "label": "paris.fr"
+      }
+    ]
+  },
+  {
+    "id": "river-thames",
+    "name": "Thames",
+    "options": [
+      {
+        "text": "The Thames once missed London. Gravel left by its ancient channel traces a route farther north, until Ice Age glaciers blocked the way and diverted the river towards its present valley.",
+        "source": "https://webapps.bgs.ac.uk/Memoirs/docs/B01360.html",
+        "label": "webapps.bgs.ac.uk"
+      },
+      {
+        "text": "A river still joins the Thames from beneath London’s streets. The Fleet, once an open waterway, was gradually covered over and incorporated into the city’s drains.",
+        "source": "https://www.londonmuseum.org.uk/collections/london-stories/lost-rivers-the-fleet/",
+        "label": "londonmuseum.org.uk"
+      },
+      {
+        "text": "An unusually high North Sea tide can threaten London from downstream. The Thames Barrier can close across the river to keep that surge out, then reopen as the tide falls.",
+        "source": "https://www.gov.uk/guidance/the-thames-barrier",
+        "label": "gov.uk"
+      }
+    ]
+  },
+  {
+    "id": "river-elbe",
+    "name": "Elbe",
+    "options": [
+      {
+        "text": "Ships in Hamburg rise and fall with the North Sea even though the port is well inland. The tide runs up the Elbe and changes the water level in the city by several metres.",
+        "source": "https://www.tideelbe.info/en/under-water/the-elbe-a-river-in-the-rhythm-of-the-tides",
+        "label": "tideelbe.info"
+      },
+      {
+        "text": "The Elbe cuts a canyon through rock once laid down in a sea. The sandstone cliffs continue across the Czech–German border as one landscape, called Bohemian Switzerland on one side and Saxon Switzerland on the other.",
+        "source": "https://nationalpark-saechsische-schweiz.de/uploads/images/Downloads/7-Grundlagen-NLP-und-LSG-S%C3%A4chsische-Schweiz/Grundsatzbrosch%C3%BCre/2015-Grundsatzbrosch%C3%BCre-Nationalpark-S%C3%A4chsische-Schweiz_NLPV_Englisch.pdf",
+        "label": "nationalpark-saechsische-schweiz.de"
+      },
+      {
+        "text": "The Elbe starts as the Labe in Czech mountain country. It reaches the North Sea through Germany, so water from the high ground near Poland can leave Europe west of Denmark.",
+        "source": "https://northsearegion.eu/immerse/project-estuaries/the-elbe-estuary/index.html",
+        "label": "northsearegion.eu"
+      }
+    ]
+  },
+  {
+    "id": "river-po",
+    "name": "Po",
+    "options": [
+      {
+        "text": "In a dry summer the Adriatic can travel inland up Italy’s longest river. When the Po’s flow weakens, a wedge of denser salt water slips along the bed beneath the fresh water.",
+        "source": "https://journals.plos.org/water/article?id=10.1371%2Fjournal.pwat.0000121",
+        "label": "journals.plos.org"
+      },
+      {
+        "text": "In the early 1600s Venice sent the lower Po down a new route. Diverting its sediment southward helped protect the Venetian lagoon from silting up and set the modern delta growing in a different direction.",
+        "source": "https://www.parcodeltapo.org/page.php?id=150",
+        "label": "parcodeltapo.org"
+      },
+      {
+        "text": "The outline of the Po delta records a succession of river mouths. Old ridges of sand now stranded inland mark stretches of former Adriatic beach as the river built new land beyond them.",
+        "source": "https://iris.cnr.it/handle/20.500.14243/133964",
+        "label": "iris.cnr.it"
+      }
+    ]
+  },
+  {
+    "id": "river-dnieper",
+    "name": "Dnieper",
+    "options": [
+      {
+        "text": "A stretch of the Dnieper once had nine major rapids in succession. Filling the reservoir upstream of the Dnipro dam drowned them, turning a notorious obstacle into navigable water.",
+        "source": "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CD%5CN%5CDniproRapids.htm",
+        "label": "encyclopediaofukraine.com"
+      },
+      {
+        "text": "After the Kakhovka reservoir drained in 2023, willow seedlings took root on the exposed mud. Part of a lake bed on the lower Dnieper became young woodland within a few growing seasons.",
+        "source": "https://nauka.gov.ua/en/works/rw.9NKysm7T/",
+        "label": "nauka.gov.ua"
+      },
+      {
+        "text": "Rivers rising on the Valdai uplands empty into three different bodies of water. The Dnieper heads for the Black Sea, the Western Dvina for the Baltic, and the Volga for the Caspian.",
+        "source": "https://api.pageplace.de/preview/DT0400.9789633862056_A36189664/preview-9789633862056_A36189664.pdf",
+        "label": "api.pageplace.de"
+      }
+    ]
+  },
+  {
+    "id": "river-don",
+    "name": "Don",
+    "options": [
+      {
+        "text": "The Don and Volga come close in southern Russia, then part for different seas. Their connecting canal lets boats cross the divide between the Sea of Azov and the landlocked Caspian.",
+        "source": "https://radar.gsa.ac.uk/5257/1/Evans%20UNECE%20CHLM%2022Feb2016%20Report%20Roadmap.pdf",
+        "label": "radar.gsa.ac.uk"
+      },
+      {
+        "text": "An early medieval fortress lies beneath the Don. The site of Sarkel was excavated before the Tsimlyansk reservoir filled and submerged the old riverside settlement.",
+        "source": "https://www.hse.ru/en/edu/vkr/895286089?vision=enabled",
+        "label": "hse.ru"
+      },
+      {
+        "text": "The Don enters a sea shallow enough for its fresh water to transform an entire bay. Water at the eastern end of Taganrog Bay can be nearly fresh, while the Sea of Azov becomes saltier farther west.",
+        "source": "https://www.mdpi.com/2073-4441/16/23/3493",
+        "label": "mdpi.com"
+      }
+    ]
+  },
+  {
+    "id": "river-mississippi",
+    "name": "Mississippi",
+    "options": [
+      {
+        "text": "Left to itself, more of the lower Mississippi could take a shorter route to the sea through the Atchafalaya. The Old River Control structures keep the flow divided between the two channels.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/taming-the-mississippi-river-85519/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "The Mississippi’s active delta looks like a bird’s foot from above. Its narrow fingers are channels carrying sediment so far out into the Gulf that new land follows the branches of the river.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/mississippi-river-delta-8103/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "The Mississippi has left stripes across its own floodplain. Each time a bend shifted, a ridge or hollow could remain behind, so airborne images reveal a map of channels the river has since abandoned.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/mississippi-meanders-6887/",
+        "label": "science.nasa.gov"
+      }
+    ]
+  },
+  {
+    "id": "river-missouri",
+    "name": "Missouri",
+    "options": [
+      {
+        "text": "The United States’ longest river ends in another river. After crossing the Great Plains, the Missouri gives up its name to the Mississippi near St. Louis, still far from the sea.",
+        "source": "https://www.fws.gov/rivers/guidance/river/missouri-montana",
+        "label": "fws.gov"
+      },
+      {
+        "text": "The Great Falls of the Missouri were five separate waterfalls. For the Lewis and Clark expedition, getting past them meant hauling boats and supplies overland for weeks.",
+        "source": "https://www.nps.gov/articles/000/the-five-falls-of-the-missouri.htm",
+        "label": "nps.gov"
+      },
+      {
+        "text": "The Missouri begins among rivers named Jefferson, Madison and Gallatin. Their waters come together near Three Forks in Montana, well east of the Continental Divide.",
+        "source": "https://dnrc.mt.gov/_docs/water/Hydro_science_data/Missouri_Headwaters_Basin_Study_FinalReport.pdf",
+        "label": "dnrc.mt.gov"
+      }
+    ]
+  },
+  {
+    "id": "river-ohio",
+    "name": "Ohio",
+    "options": [
+      {
+        "text": "The Mississippi’s biggest tributary by volume is the Ohio. The much longer Missouri is a more obvious line on a map, but the Ohio basin generally contributes more water.",
+        "source": "https://www.lrd.usace.army.mil/Water-Information/Navigation/Ohio-River/History/",
+        "label": "lrd.usace.army.mil"
+      },
+      {
+        "text": "The Ohio begins at the tip of downtown Pittsburgh. The Allegheny and Monongahela lose their names there, and a third named river starts where the two meet.",
+        "source": "https://pubs.usgs.gov/sir/2012/5225/pdf/sir20125225.pdf",
+        "label": "pubs.usgs.gov"
+      },
+      {
+        "text": "Ice sheets helped assemble the modern Ohio. When glaciers blocked older north-flowing streams, water spilled across divides and carved parts of a new westward route.",
+        "source": "https://ohiodnr.gov/discover-and-learn/safety-conservation/about-odnr/geologic-survey/glacial-geology/ice-age-in-ohio",
+        "label": "ohiodnr.gov"
+      }
+    ]
+  },
+  {
+    "id": "river-columbia",
+    "name": "Columbia",
+    "options": [
+      {
+        "text": "Water leaving Columbia Lake in Canada initially travels northwest, away from the US border it will eventually cross. The Columbia loops around a mountain range before turning south.",
+        "source": "https://pubs.usgs.gov/gip/70039373/report.pdf",
+        "label": "pubs.usgs.gov"
+      },
+      {
+        "text": "Immense Ice Age floods raced down the Columbia Gorge. Water released from glacial Lake Missoula reached the Pacific by forcing its way through the same mountain gap as the Columbia.",
+        "source": "https://www.nps.gov/iafl/planyourvisit/park-brochure.htm",
+        "label": "nps.gov"
+      },
+      {
+        "text": "At the Columbia’s mouth, an outgoing river and ebb tide meet incoming Pacific swell. Waves can steepen and break abruptly over the shifting sandbar even when the sea farther out looks manageable.",
+        "source": "https://stateparks.oregon.gov/index.cfm?do=main.loadFile&load=_siteFiles%2Fpublications%2F%2F46058_Graveyard_of_Pacific_2020%28web%29101052.pdf",
+        "label": "stateparks.oregon.gov"
+      }
+    ]
+  },
+  {
+    "id": "river-mackenzie",
+    "name": "Mackenzie",
+    "options": [
+      {
+        "text": "The Mackenzie starts by draining an enormous lake. Water entering Great Slave Lake from the south leaves from its western end and heads north towards the Arctic Ocean.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/mackenzie-river-delta-canada-8320/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "In the Beaufort Sea, Mackenzie River water can spread as a buoyant layer over denser salt water. Its influence extends well offshore from the river mouth.",
+        "source": "https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/002/MR84679.PDF",
+        "label": "collectionscanada.gc.ca"
+      },
+      {
+        "text": "Spring can travel down the Mackenzie as a moving front. Open water and broken ice advance from the warmer upstream reaches towards a delta that may still be frozen.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/breakup-along-the-mackenzie-river-146813/",
+        "label": "science.nasa.gov"
+      }
+    ]
+  },
+  {
+    "id": "river-yukon",
+    "name": "Yukon",
+    "options": [
+      {
+        "text": "A Chinook salmon entering the Yukon from the Bering Sea can swim more than 3,000 kilometres inland to spawn. Some finish in Canadian streams close to the mountains above the Pacific coast.",
+        "source": "https://publications.gc.ca/collections/collection_2025/mpo-dfo/fs97-6/Fs97-6-3717-eng.pdf",
+        "label": "publications.gc.ca"
+      },
+      {
+        "text": "Two great Alaskan rivers share the name of a delta without joining each other. The Yukon and Kuskokwim reach the Bering Sea separately across the same broad coastal lowland.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/yukon-delta-alaska-72762/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "The Yukon can flood a town even before all the river ice has melted. Ice breaking upstream can lodge at a bend and briefly dam the river, raising the water behind it.",
+        "source": "https://www.nps.gov/articles/aps-18-1-9.htm",
+        "label": "nps.gov"
+      }
+    ]
+  },
+  {
+    "id": "river-st-lawrence",
+    "name": "St. Lawrence",
+    "options": [
+      {
+        "text": "Water leaving Lake Ontario enters the St. Lawrence as fresh water, yet farther downstream the same river has tides and beluga whales. The transition to ocean conditions takes place over a long stretch of estuary.",
+        "source": "https://www.planstlaurent.qc.ca/en/st-lawrence-river",
+        "label": "planstlaurent.qc.ca"
+      },
+      {
+        "text": "An ocean-going ship can use the St. Lawrence to climb into the Great Lakes. Locks between Montreal and Lake Ontario lift ships past the drop that once made the river’s rapids a barrier.",
+        "source": "https://greatlakes-seaway.com/en/the-seaway/our-locks-and-channels/",
+        "label": "greatlakes-seaway.com"
+      },
+      {
+        "text": "At the mouth of the Saguenay, deep salt water in the St. Lawrence is forced upwards over a rise in the seabed. The food concentrated there helps draw whales to a river junction.",
+        "source": "https://parcmarin.qc.ca/get-to-know/",
+        "label": "parcmarin.qc.ca"
+      }
+    ]
+  },
+  {
+    "id": "river-rio-grande",
+    "name": "Rio Grande",
+    "options": [
+      {
+        "text": "When the Rio Grande moved at El Paso, the US–Mexico border became a question about how quickly a river can change. The Chamizal dispute ended in a treaty and a newly engineered channel.",
+        "source": "https://www.nps.gov/cham/learn/historyculture/conflict.htm",
+        "label": "nps.gov"
+      },
+      {
+        "text": "Much of the water flowing through Big Bend comes from Mexico’s Río Conchos. The Rio Grande can reach their junction with remarkably little water left from its Rocky Mountain headwaters.",
+        "source": "https://www.nps.gov/bibe/learn/nature/riogrand.htm?ya_src=serp300",
+        "label": "nps.gov"
+      },
+      {
+        "text": "The same river has different names on opposite banks of the international border. It is the Rio Grande in the United States and the Río Bravo del Norte in Mexico.",
+        "source": "https://www.fws.gov/rivers/river/rio-grande-texas",
+        "label": "fws.gov"
+      }
+    ]
+  },
+  {
+    "id": "river-colorado",
+    "name": "Colorado",
+    "options": [
+      {
+        "text": "The Colorado has sometimes turned north near the end of its journey. Sediment on its delta could divert water into the below-sea-level Salton basin, filling a lake instead of sending the flow to the Gulf of California.",
+        "source": "https://pubs.usgs.gov/publication/sir20235042/full",
+        "label": "pubs.usgs.gov"
+      },
+      {
+        "text": "The Colorado carved the Grand Canyon, yet its last stretch can be dry. So much water is withdrawn upstream that its old delta in Mexico often receives little or no river flow.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/colorado-river-delta-1288/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "In 2014 a deliberately released pulse of water travelled down the Colorado’s normally dry channel in Mexico. Water soaked into the sand on the way, briefly bringing stretches of the old river corridor back to life.",
+        "source": "https://www.usgs.gov/news/featured-story/a-river-ran-through-it-and-brought-life-least-a-while",
+        "label": "usgs.gov"
+      }
+    ]
+  },
+  {
+    "id": "river-amazon",
+    "name": "Amazon",
+    "options": [
+      {
+        "text": "At Manaus, the dark Rio Negro and sandy-coloured Solimões run side by side for kilometres. Their differences in speed, temperature and sediment keep a visible seam in the Amazon downstream of the meeting.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/meeting-of-the-waters-79111/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "You can leave the mouth of the Amazon and still be sailing in its water far out at sea. A plume of relatively fresh river water spreads over the saltier Atlantic surface.",
+        "source": "https://www.esa.int/media/earth-from-space-the-amazon-plume-en-378119",
+        "label": "esa.int"
+      },
+      {
+        "text": "Much of the mud the Amazon delivers to the Atlantic comes from the Andes. Grains eroded from mountains near the Pacific cross almost the full width of South America on the way to the opposite ocean.",
+        "source": "https://www.pnas.org/doi/pdf/10.1073/pnas.2306229121",
+        "label": "pnas.org"
+      }
+    ]
+  },
+  {
+    "id": "river-parana",
+    "name": "Paraná",
+    "options": [
+      {
+        "text": "Where the Paraguay and Paraná meet, their waters can stay visibly separate. Satellite photographs show two colours travelling down one channel near the Argentine city of Corrientes.",
+        "source": "https://science.nasa.gov/resource/parana-river-argentina-and-paraguay/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "Building the Itaipú reservoir drowned the great Sete Quedas waterfalls on the Paraná. The falls had separated fish populations, so their disappearance also redrew an underwater boundary.",
+        "source": "https://www.scielo.br/scielo.php?lng=en&pid=S1679-62252024000100302&script=sci_arttext&tlng=en",
+        "label": "scielo.br"
+      },
+      {
+        "text": "The Paraná delta is growing towards Buenos Aires. Its many branches drop sediment as they enter the broad Río de la Plata, extending islands at the front of the delta.",
+        "source": "https://cauceecologico.org/wp-content/uploads/2020/02/IF-2019-07624101-APN-SIPHMI-DELTA.pdf",
+        "label": "cauceecologico.org"
+      }
+    ]
+  },
+  {
+    "id": "river-orinoco",
+    "name": "Orinoco",
+    "options": [
+      {
+        "text": "The Orinoco has a natural exit into the Amazon basin. Part of its flow peels off through the Casiquiare and reaches the Rio Negro, while the rest continues towards the Orinoco’s own delta.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/when-rivers-take-a-weird-turn-154394/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "At Ciudad Guayana, the Caroní sends a dark tongue of water into the muddier Orinoco. From space, it is possible to tell which tributary supplied the water even after it entered the main river.",
+        "source": "https://science.nasa.gov/earth/earth-observatory/ciudad-guayana-venezuela-6215/",
+        "label": "science.nasa.gov"
+      },
+      {
+        "text": "The Atlantic tide reaches into forests at the Orinoco’s mouth. The delta’s branching channels carry water through a landscape that feels both the river’s floods and the rhythm of the sea.",
+        "source": "https://www.unesco.org/en/mab/delta-del-orinoco",
+        "label": "unesco.org"
+      }
+    ]
+  },
+  {
+    "id": "river-madeira",
+    "name": "Madeira",
+    "options": [
+      {
+        "text": "The Madeira carries an outsized share of the Amazon’s mud. Its headwaters erode the Andes in Peru and Bolivia, sending fine sediment into a much flatter part of Brazil.",
+        "source": "https://www.sciencedirect.com/science/article/pii/S0022169417304699",
+        "label": "sciencedirect.com"
+      },
+      {
+        "text": "A catfish in the Madeira basin can begin life in the Andean foothills, drift towards the Amazon estuary and later swim back upstream. Dams on the Madeira have interrupted that journey between opposite ends of the basin.",
+        "source": "https://sinia.minam.gob.pe/sites/default/files/archivos/public/docs/COMPENDIO%202024_V3.pdf",
+        "label": "sinia.minam.gob.pe"
+      },
+      {
+        "text": "Madeira means wood in Portuguese. During high flows the river undercuts its banks and carries whole tree trunks downstream, giving the river a name you can see floating on its surface.",
+        "source": "https://philip.inpa.gov.br/publ_livres/Dossie/Mad/Outros%20documentos/Muddy%20Waters_Madeira%20Article%20English-IRN.pdf",
+        "label": "philip.inpa.gov.br"
+      }
+    ]
+  },
+  {
+    "id": "river-murray",
+    "name": "Murray",
+    "options": [
+      {
+        "text": "Along most of the border between New South Wales and Victoria, the boundary follows the Murray’s southern bank. A boat out in midstream is on the New South Wales side.",
+        "source": "https://www.land.vic.gov.au/__data/assets/pdf_file/0041/498938/NSW-VIC_Border_Determination.pdf",
+        "label": "land.vic.gov.au"
+      },
+      {
+        "text": "Even Australia’s longest river can struggle to keep its mouth open. Sand builds up where the Murray reaches the sea, and dredges have been used to maintain the opening when river flows are low.",
+        "source": "https://data.environment.sa.gov.au/Content/Publications/RC2023_RC_WA_SW_MurrayMouthBarrageOutflowAndDredging.pdf",
+        "label": "data.environment.sa.gov.au"
+      },
+      {
+        "text": "The Murray passes through a lake before it reaches the ocean. Barrages near Lake Alexandrina separate fresh water in the Lower Lakes from saltier water towards the Coorong and the sea.",
+        "source": "https://www.environment.sa.gov.au/topics/water-and-river-murray/basin-river-murray-lakes-and-the-coorong/about-the-river-murray/coorong-lower-lakes-and-murray-mouth",
+        "label": "environment.sa.gov.au"
+      }
+    ]
+  },
+  {
+    "id": "river-darling",
+    "name": "Darling",
+    "options": [
+      {
+        "text": "The Darling begins when two already substantial rivers meet. Water from the Barwon and Culgoa takes the name Darling downstream of their junction and eventually reaches the Murray at Wentworth.",
+        "source": "https://www.parliament.vic.gov.au/4a2496/globalassets/tabled-paper-documents/tabled-paper-9065/attachment-1---murray-darling-basin-authority-annual-report-2023-2024.pdf",
+        "label": "parliament.vic.gov.au"
+      },
+      {
+        "text": "In a dry spell the lower Darling can break into a chain of waterholes. They become refuges for fish until returning flows reconnect them into a river.",
+        "source": "https://www.dcceew.gov.au/cewh/water-region/lower-darling-baaka-region/about",
+        "label": "dcceew.gov.au"
+      },
+      {
+        "text": "A flood on the Darling can be stored beside the river itself. Near Menindee, channels carry water into a chain of natural lakes, where regulators now control part of the exchange with the river.",
+        "source": "https://www.waternsw.com.au/__data/assets/pdf_file/0003/244083/WaterNSW-Menindee-Flood-Operations-Review-November-2023.pdf",
+        "label": "waternsw.com.au"
+      }
+    ]
   }
 ]
