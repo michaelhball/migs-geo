@@ -3,3 +3,5 @@
 
 [hidden]{display:none!important}section,details{margin:1.5rem 0}details summary{cursor:pointer}
 .comparison{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.8rem}.comparison button{background:white;border:1px solid #aebbb1;border-radius:5px;padding:.35rem .8rem;cursor:pointer}
+#terms dt { font-weight: 650; margin-top: .8rem; }
+#terms dd { margin: .1rem 0; }
