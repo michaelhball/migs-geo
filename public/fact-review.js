@@ -1,6 +1,8 @@
 
 const search = document.querySelector("#search");
 const scope = document.querySelector("#scope");
+const initialScope = new URLSearchParams(location.search).get("scope");
+if (Array.from(scope.options).some(option => option.value === initialScope)) scope.value = initialScope;
 const summary = document.querySelector("#summary");
 let places = [];
 const articles = new Map();
@@ -54,12 +56,15 @@ function refresh() {
   let waiting = 0;
   for (const p of places) {
     if (!normalize(p.name).includes(term)) continue;
+    // Bundled river IDs are assigned before the optional study pack is installed.
+    if (scope.value === "rivers" && !p.id.startsWith("river-")) continue;
+    const inScope = scope.value !== "studying" || p.studying;
     if (p.awaitingSuggestions && !p.finishingComment) {
-      if (scope.value === "all" || p.studying) waiting++;
+      if (inScope) waiting++;
       continue;
     }
     if (p.options.some(o=>o.id===p.savedChoice)) (hasOffer(p) ? offers : selected).push(p);
-    else if (scope.value==="all" || p.studying) (p.options.length ? remaining : missing).push(p);
+    else if (inScope) (p.options.length ? remaining : missing).push(p);
   }
   drawSection(pending, remaining);
   researchDetails.hidden=!missing.length;
@@ -169,7 +174,14 @@ function render(p) {
   return {article,badge,showOffer};
 }
 window.addEventListener("beforeunload",e=>{if(saving.size){e.preventDefault();e.returnValue=""}});
-search.oninput = scope.onchange = refresh;
+search.oninput = refresh;
+scope.onchange = () => {
+  const url = new URL(location.href);
+  if (scope.value === "studying") url.searchParams.delete("scope");
+  else url.searchParams.set("scope", scope.value);
+  history.replaceState(null, "", url);
+  refresh();
+};
 let loading=false;
 async function loadPlaces(){
   if(loading || saving.size)return;
