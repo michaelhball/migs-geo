@@ -49,7 +49,7 @@ Create a location with an approximate marker:
 
 Use a GeoJSON `Polygon` or `MultiPolygon` for automatic map checking. Coordinates are **[longitude, latitude]**, rings must be closed, and longitude/latitude must be within ±180/±90. Point locations are self-graded. `center` is a `[longitude, latitude]` location for future framing uses; geometry is used to frame the current map. `small:true` allows a 3 km near-boundary tolerance. Polygon boundaries are atlas approximations, not survey data.
 
-Kinds: `country`, `territory`, `water`, `region`; all four are enabled by default. The `region` kind covers broader places such as continents and Scandinavia. The separate `region` field is any string used by the “Parts of the world” study filter; an empty `settings.regions` array includes the whole world. Display notes are plain text; imported HTML is displayed without markup. Names/aliases are compared without case, accents, punctuation, or an initial “the”.
+Kinds: `country`, `territory`, `water`, `region`; all four are enabled by default. The `region` kind covers broader places such as continents and Scandinavia. The separate `region` field is any string used by the “Parts of the world” study filter; an empty `settings.regions` array includes the whole world. Display notes are plain text; imported HTML is displayed without markup. Typed names and aliases treat “&” and “and” as equivalent and ignore case, accents, other punctuation, and an initial “the”.
 
 Creating/editing a place never resets its cards. Changes increment card versions so an older question cannot overwrite a newer edit. The two card IDs are `<place-id>:locate` and `<place-id>:identify`.
 

@@ -400,6 +400,13 @@ test("typing accepts case/accents/aliases but does not accept a different place"
     }),
   );
 });
+test("typed place names accept an ampersand for and", () => {
+  const kitts = atlas.find(place => place.id === "saint-kitts-and-nevis");
+  assert.equal(checkAnswer(kitts, "identify", {text:"Saint Kitts & Nevis"}).correct, true);
+  assert.equal(checkAnswer(kitts, "identify", {text:"Saint Kitts & Tobago"}).correct, false);
+  const trinidad = atlas.find(place => place.id === "trinidad-and-tobago");
+  assert.equal(checkAnswer(trinidad, "identify", {text:"Trinidad&Tobago"}).correct, true);
+});
 test("available new cards come before the shuffled due reviews", () => {
   const { store: s, setTime } = setup();
   s.setSettings({ modes: ["locate"], burySiblings: false });

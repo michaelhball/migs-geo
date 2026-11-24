@@ -54,6 +54,7 @@ const normalize = (s) =>
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/^the /, "")
+    .replaceAll("&", "and")
     .replace(/[^a-z0-9]/g, "");
 export function validateGeometry(g) {
   if (!g || !["Point", "Polygon", "MultiPolygon","MultiLineString"].includes(g.type))
