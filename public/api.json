@@ -862,7 +862,8 @@
                         "minimum": 0,
                         "maximum": 500
                       },
-                      "cityCountry": { "type": "string", "default": "", "description": "Optional city pack, ISO two-letter country code; empty disables city study." },
+                      "cityCountries": { "type": "array", "items": { "type": "string" }, "default": [], "description": "ISO two-letter country codes for city study. An empty array disables cities." },
+                      "cityCountry": { "type": "string", "deprecated": true, "description": "First selected code or empty. When patched alone, replaces the cityCountries selection." },
                       "reviewsPerDay": {
                         "type": "integer",
                         "minimum": 0,
@@ -1220,7 +1221,8 @@
             "minimum": 0,
             "maximum": 500
           },
-          "cityCountry": { "type": "string", "default": "", "description": "Optional city pack, ISO two-letter country code; empty disables city study." },
+          "cityCountries": { "type": "array", "items": { "type": "string" }, "default": [], "description": "ISO two-letter country codes for city study. An empty array disables cities." },
+          "cityCountry": { "type": "string", "deprecated": true, "description": "First selected code or empty. When patched alone, replaces the cityCountries selection." },
           "reviewsPerDay": {
             "type": "integer",
             "minimum": 0,

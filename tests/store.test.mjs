@@ -684,6 +684,35 @@ test("city packs switch countries without losing city progress", () => {
   s.db.close();
 });
 
+test("multiple city countries share the geography queue and round-trip through backups", () => {
+  const s = createStore(":memory:", []);
+  try {
+    const activeCities = () => s.editorial.list().filter(p => p.studying && p.id.startsWith("city-"));
+    assert.deepEqual(s.settings().cityCountries, []);
+    s.setSettings({cityCountries:["NZ","DE","NZ"]});
+    assert.deepEqual(s.settings().cityCountries, ["NZ","DE"]);
+    assert.equal(s.settings().cityCountry, "NZ");
+    assert.equal(activeCities().length, 20);
+    assert.deepEqual(new Set(activeCities().map(p => s.place(p.id).countryCode)), new Set(["NZ","DE"]));
+    assert.equal(s.cards().length, 40);
+    assert.throws(() => s.setSettings({cityCountries:["NZ","XX"]}), /country codes/);
+    s.restore(s.exportData());
+    assert.equal(activeCities().length, 20);
+    s.setSettings({cityCountries:["DE"]});
+    assert.equal(activeCities().length, 10);
+    assert.ok(activeCities().every(p => s.place(p.id).countryCode === "DE"));
+    const legacy = s.exportData();
+    delete legacy.settings.cityCountries;
+    s.restore(legacy);
+    assert.deepEqual(s.settings().cityCountries, ["DE"]);
+    s.setSettings({cityCountries:[]});
+    assert.equal(s.question().card, null);
+    assert.equal(s.cards().length, 40);
+  } finally {
+    s.db.close();
+  }
+});
+
 test("desert cards check interior pins and keep their schedule when switched off", () => {
   const store = createStore(":memory:", []);
   try {

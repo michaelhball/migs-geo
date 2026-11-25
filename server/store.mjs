@@ -32,6 +32,7 @@ export const defaults = {
   lakeCutoffKm2: 0,
   lakeMinimumKm2: 0,
   cityCountry: "",
+  cityCountries: [],
   activeDeck: "geography",
   newPerDay: 15,
   reviewsPerDay: 200,
@@ -87,11 +88,20 @@ export function validateGeometry(g) {
     throw Error("Invalid coordinates or unclosed polygon ring.");
   return g;
 }
+function withCitySelection(input) {
+  if (!Object.hasOwn(input, "cityCountries") && !Object.hasOwn(input, "cityCountry")) return input;
+  const codes = Object.hasOwn(input, "cityCountries") ? input.cityCountries
+    : input.cityCountry === "" ? [] : [input.cityCountry];
+  if (!Array.isArray(codes) || codes.some(code => typeof code !== "string" || !Object.hasOwn(cities, code))) {
+    throw Error("Choose supported city country codes.");
+  }
+  const cityCountries = [...new Set(codes)];
+  return {...input, cityCountries, cityCountry:cityCountries[0] ?? ""};
+}
 export function validateSettings(s) {
-  s = { lakeMinimumKm2:0, lakeCutoffKm2:0, cityCountry:"", activeDeck: "geography", reviewsPerDay: defaults.reviewsPerDay, ...s };
+  s = { lakeMinimumKm2:0, lakeCutoffKm2:0, cityCountry:"", cityCountries:[], activeDeck: "geography", reviewsPerDay: defaults.reviewsPerDay, ...withCitySelection(s) };
   if (!Number.isFinite(s.lakeCutoffKm2) || s.lakeCutoffKm2 < 0) throw Error("Lake cutoff must be a nonnegative area in km².");
   if (!Number.isFinite(s.lakeMinimumKm2) || s.lakeMinimumKm2 < 0 || s.lakeMinimumKm2 > s.lakeCutoffKm2) throw Error("Small lake minimum must be between zero and the inland lake cutoff.");
-  if (s.cityCountry !== "" && (typeof s.cityCountry !== "string" || !Object.hasOwn(cities, s.cityCountry))) throw Error("Unknown city country.");
   if (!["geography","flags","vocabulary"].includes(s.activeDeck)) throw Error("Invalid deck.");
   if (!Number.isInteger(s.newPerDay) || s.newPerDay < 0 || s.newPerDay > 500)
     throw Error("New cards per day must be 0–500.");
@@ -287,7 +297,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     }
   };
   const settings = () =>
-    ({ ...defaults, ...parse(db.prepare("SELECT data FROM settings WHERE id=1").get().data) });
+    ({ ...defaults, ...withCitySelection(parse(db.prepare("SELECT data FROM settings WHERE id=1").get().data)) });
   const scheduler = () =>
     fsrs({
       request_retention: settings().retention,
@@ -305,7 +315,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
   function enabledPlace(p, s) {
     if (p.kind === "vocabulary") return !p.archived && s.activeDeck === "vocabulary";
     if (p.archived || (s.regions.length && !s.regions.includes(p.region))) return false;
-    if (p.kind === "city") return !!s.cityCountry && p.countryCode === s.cityCountry;
+    if (p.kind === "city") return s.cityCountries.includes(p.countryCode);
     let kind = p.kind;
     if (kind === "lake") {
       const area = areaKm2(p.geometry);
@@ -963,13 +973,12 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     return { restored: true, places: ids.size, cards: cids.size };
   }
   function installMapPacks(s) {
-    const country = s.cityCountry;
-    const cityPlaces = (cities[country] || []).map(([id,name,lon,lat]) => ({
+    const cityPlaces = s.cityCountries.flatMap(country => cities[country].map(([id,name,lon,lat]) => ({
       id:"city-"+id, name, countryCode:country, kind:"city", region:cityRegions[country] || "World",
       aliases:[], tags:[], small:false, approximate:false, archived:false,
       source:"Natural Earth populated places", info:"",
       geometry:{type:"Point",coordinates:[lon,lat]}, center:[lon,lat],
-    }));
+    })));
     const words = s.modes.some(mode => vocabularyModes.includes(mode)) ? vocabularyPlaces : [];
     for (const p of [...words, ...physicalPlaces.filter(p=>s.kinds.includes(p.kind)), ...(s.kinds.some(k => k === "lake" || k === "smallLake") ? lakePlaces : []), ...cityPlaces]) {
       if ( db.prepare("SELECT id FROM places WHERE id=?").get(p.id)) continue;
@@ -1034,7 +1043,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       return destination;
     },
     setSettings: (patch) => {
-      const s = validateSettings({ ...settings(), ...patch });
+      const s = validateSettings({ ...settings(), ...withCitySelection(patch) });
       tx(() => {
         installMapPacks(s);
         addOptionalCards(s.modes);
