@@ -54,7 +54,9 @@ const normalize = (s) =>
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
-    .replace(/^the /, "")
+    .trim()
+    .replace(/^the\s+/, "")
+    .replace(/\brepublic\s+of\s+the\b/g, "republic of")
     .replaceAll("&", "and")
     .replace(/[^a-z0-9]/g, "");
 export function validateGeometry(g) {

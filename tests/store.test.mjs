@@ -407,6 +407,18 @@ test("typed place names accept an ampersand for and", () => {
   const trinidad = atlas.find(place => place.id === "trinidad-and-tobago");
   assert.equal(checkAnswer(trinidad, "identify", {text:"Trinidad&Tobago"}).correct, true);
 });
+test("the article in the two Congo republic names is optional", () => {
+  const republic = atlas.find(p => p.id === "republic-of-the-congo");
+  const democratic = atlas.find(p => p.id === "democratic-republic-of-the-congo");
+  for (const [place, other, answer] of [
+    [republic, democratic, "The Republic of Congo"],
+    [democratic, republic, "Democratic Republic of Congo"],
+  ]) {
+    assert.equal(checkAnswer(place, "identify", {text:answer}).correct, true);
+    assert.equal(checkAnswer(other, "identify", {text:answer}).correct, false);
+    assert.equal(checkAnswer(place, "identify", {text:"Congo"}).correct, false);
+  }
+});
 test("available new cards come before the shuffled due reviews", () => {
   const { store: s, setTime } = setup();
   s.setSettings({ modes: ["locate"], burySiblings: false });
