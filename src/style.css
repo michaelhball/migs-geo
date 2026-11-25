@@ -885,6 +885,10 @@ kbd {
   width: 170px;
   padding-top: 3px;
 }
+.checkbox-stack select {
+  width: 100%;
+  min-width: 0;
+}
 .checkbox-stack label {
   display: flex;
   align-items: center;

@@ -98,6 +98,6 @@ Tests cover scheduling, daily limits, practice isolation, stale/duplicate submis
 
 Code: MIT. Ultimate Geography's non-image content is public domain ([license](data/sources/ULTIMATE-GEOGRAPHY-LICENSE.md)); no original deck images are used. Natural Earth map data is [public domain](https://www.naturalearthdata.com/about/terms-of-use/). [Leaflet](https://leafletjs.com/) is BSD-2-Clause; [ts-fsrs](https://github.com/open-spaced-repetition/ts-fsrs) is MIT.
 
-Browse → Terrain shows offline hillshade on the atlas as you pan and zoom. New Zealand’s main islands include an additional regional detail level. In Settings, “Cities of a country” adds up to ten major city locations to Geography. Set it to Off to pause city study.
+Browse → Terrain shows offline hillshade on the atlas as you pan and zoom. New Zealand’s main islands include an additional regional detail level. In Settings, “Cities by country” adds up to ten city locations per selected country to Geography. Add countries individually or uncheck a country to pause its cities.
 
 For local development, use the LTS release in `.nvmrc`. On macOS and Linux, `npm start` and `npm run dev` also recognize a Node distribution installed in `.runtime/` at the project root.

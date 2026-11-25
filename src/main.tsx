@@ -319,6 +319,7 @@ function App() {
         ),
     )
     .sort((a, b) => a.name.localeCompare(b.name));
+  const selectedCityCountries: string[] = settings?.cityCountries ?? (settings?.cityCountry ? [settings.cityCountry] : []);
   const vocabularyEnabled = settings?.modes.some((mode:string) => vocabularyModes.includes(mode));
   const flagsEnabled = settings?.modes.some((mode:string) => ["flag","fromFlag"].includes(mode)) || settings?.activeDeck === "flags";
   const vocabularyDeck = settings?.activeDeck === "vocabulary";
@@ -1166,13 +1167,24 @@ function App() {
                     ))}
                   </div>
                 </div>
-                <label className="setting-row">
-                  <span>Cities of a country<small>Study up to ten major cities in both map directions.</small></span>
-                  <select value={settings.cityCountry || ""} onChange={e=>saveSettings({cityCountry:e.target.value})}>
-                    <option value="">Off</option>
-                    {cityOptions.map(({code,name})=><option key={code} value={code}>{name}</option>)}
-                  </select>
-                </label>
+                <div className="setting-row">
+                  <span>Cities by country<small>Study up to ten cities per selected country in both map directions.</small></span>
+                  <div className="checkbox-stack">
+                    {cityOptions.filter(({code}) => selectedCityCountries.includes(code)).map(({code,name}) => (
+                      <label key={code}>
+                        <input type="checkbox" checked disabled={busy}
+                          onChange={() => saveSettings({cityCountries:selectedCityCountries.filter((c) => c !== code)})} />
+                        {name}
+                      </label>
+                    ))}
+                    <select aria-label="Add a country for city study" value="" disabled={busy}
+                      onChange={e => saveSettings({cityCountries:[...selectedCityCountries,e.target.value]})}>
+                      <option value="" disabled>Add country…</option>
+                      {cityOptions.filter(({code}) => !selectedCityCountries.includes(code)).map(({code,name}) =>
+                        <option key={code} value={code}>{name}</option>)}
+                    </select>
+                  </div>
+                </div>
                 <div className="setting-row">
                   <span>
                     Parts of the world
