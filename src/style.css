@@ -896,6 +896,21 @@ kbd {
     padding-right: 10px;
   }
 }
+.direction-group {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.direction-group + .direction-group {
+  margin-top: 20px;
+}
+.direction-group legend {
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
 .option-list {
   display: grid;
   gap: 12px 24px;

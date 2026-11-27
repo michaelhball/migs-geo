@@ -38,6 +38,7 @@ const modeNames: Record<string,string> = {
   fromCapital: "Capital → place", flag: "Place → flag", fromFlag: "Flag → place",
 };
 const mapModes = ["locate", "identify"];
+const mapDeck = {id: "geography", name: "Geography", modes: mapModes};
 const vocabularyModes = ["term", "define"];
 const studyDecks = [
   { id: "flags", name: "Flags", modes: ["flag", "fromFlag"] },
@@ -1163,16 +1164,29 @@ function App() {
               </section>
               <section className="settings-section" aria-labelledby="map-directions-title">
                 <h2 id="map-directions-title">Question directions</h2>
-                <div className="option-list">
-                  {mapModes.map(mode => (
-                    <label key={mode}>
-                      <input type="checkbox" checked={settings.modes.includes(mode)} disabled={busy}
-                        onChange={e => saveSettings({modes:e.target.checked
-                          ? [...settings.modes, mode] : settings.modes.filter((m:string) => m !== mode)})} />
-                      {modeNames[mode]}
-                    </label>
-                  ))}
-                </div>
+                {[mapDeck, ...enabledDecks].map(deck => {
+                  const selected = deck.modes.filter(mode => settings.modes.includes(mode));
+                  return (
+                    <fieldset className="direction-group" key={deck.id}>
+                      {enabledDecks.length > 0 && <legend>{deck.name}</legend>}
+                      <div className="option-list">
+                        {deck.modes.map(mode => {
+                          const checked = selected.includes(mode);
+                          const lastDirection = checked && (settings.modes.length === 1 ||
+                            (deck.id !== "geography" && selected.length === 1));
+                          return (
+                            <label key={mode}>
+                              <input type="checkbox" checked={checked} disabled={busy || lastDirection}
+                                onChange={e => saveSettings({modes:e.target.checked
+                                  ? [...settings.modes, mode] : settings.modes.filter((m:string) => m !== mode)})} />
+                              {modeNames[mode]}
+                            </label>
+                          );
+                        })}
+                      </div>
+                    </fieldset>
+                  );
+                })}
               </section>
               <section className="settings-section" aria-labelledby="place-types-title">
                 <h2 id="place-types-title">Place types</h2>
