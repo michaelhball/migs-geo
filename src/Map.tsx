@@ -41,6 +41,8 @@ const highlightStyles = {
   },
   neutral: { color: "#98763c", fillColor: "#d7bf8d", legend: "legend-neutral" },
 };
+const worldView = L.latLngBounds([-60, -180], [84, 180]);
+const worldPadding = L.point(16, 16);
 const worldOffsets = [-360, 0, 360];
 const shiftCoordinates = (offset: number) => (c: number[]) =>
   L.latLng(c[1], c[0] + offset);
@@ -67,13 +69,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
         ? "incorrect"
         : "neutral";
   const home = () =>
-    map.current?.fitBounds(
-      [
-        [-60, -180],
-        [84, 180],
-      ],
-      { padding: [16, 16], animate: false },
-    );
+    map.current?.fitBounds(worldView, { padding: worldPadding, animate: false });
   const framePlace = (context = false) => {
     const m = map.current,
       g = latest.current.geometry;
@@ -170,9 +166,20 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     m.getPane("lakes")!.style.pointerEvents = "none";
     m.createPane("answers");
     m.getPane("answers")!.style.zIndex = "420";
-    m.createPane("divisions");
-    m.getPane("divisions")!.style.zIndex = "425";
-    m.getPane("divisions")!.style.pointerEvents = "none";
+    const divisions = m.createPane("divisions");
+    divisions.style.zIndex = "425";
+    divisions.style.pointerEvents = "none";
+    // Measure from the fitted world view so phones and wide screens open equally cleanly.
+    const subdivisionThreshold = () =>
+      m.getBoundsZoom(worldView, false, worldPadding.multiplyBy(2)) + 0.5;
+    let subdivisionZoom = subdivisionThreshold();
+    const updateDivisions = () => { divisions.hidden = m.getZoom() < subdivisionZoom; };
+    m.on("zoom", updateDivisions);
+    m.on("resize", () => {
+      subdivisionZoom = subdivisionThreshold();
+      updateDivisions();
+    });
+    updateDivisions();
     m.createPane("pins");
     m.getPane("pins")!.style.zIndex = "450";
     for (let lon = -540; lon <= 540; lon += 30)
