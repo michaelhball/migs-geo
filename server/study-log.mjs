@@ -176,7 +176,7 @@ export function validateStudyLog(data, cardIds, placeIds, reviews) {
       !snapshot?.place ||
       typeof snapshot.place.name !== "string" ||
       typeof snapshot.place.region !== "string" ||
-      !["country", "territory", "water", "region", "river", "range", "desert", "lake", "city", "usState", "vocabulary"].includes(
+      !["country", "territory", "water", "region", "river", "range", "desert", "lake", "city", "usState", "canadaProvince", "australiaState", "vocabulary"].includes(
         snapshot.place.kind,
       ) ||
       !Array.isArray(snapshot.place.tags) ||

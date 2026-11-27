@@ -26,7 +26,7 @@ The Browse terrain viewer uses GMT's pixel-registered 10 arc-minute SRTM15+ v2.7
 
 English capital names, hints, notes and flag similarity notes, plus unmodified flag images, come from [Ultimate Geography](https://github.com/anki-geo/ultimate-geography/tree/46ce8fe14ec84eb39763310179f25d6ff9ca4c73). The existing East Timor card maps to the upstream Timor-Leste record. Per-image source and license details are in public/flags/sources.csv and public/flags/LICENSE.md.
 
-US state cards and the permanent state boundary layer come from the same Natural Earth administrative polygons. Shared edges are drawn once across the atlas. The pack covers all 50 states.
+US, Canadian and Australian subdivision cards and permanent interior borders use the same Natural Earth administrative polygons. Shared edges are drawn once. The US pack includes 50 states, Canada includes all 13 provinces and territories, and Australia includes its six states, the Northern Territory and the Australian Capital Territory. The generator groups [Lord Howe Island with New South Wales](https://www.lhib.nsw.gov.au/environment/world-heritage) and [Macquarie Island with Tasmania](https://parks.tas.gov.au/explore-our-parks/macquarie-island-world-heritage-area).
 
 City packs use Natural Earth's public-domain 1:10m populated places (the same revision as the atlas). Each country offers up to ten distinct city names ranked by the source's population estimate. The ranking selects study examples and is not a current census.
 

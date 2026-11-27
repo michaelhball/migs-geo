@@ -26,7 +26,7 @@ type Props = {
   explore?: boolean;
   name?: string;
   kind?: string;
-  usStateId?: string;
+  studyBounds?: [number, number, number, number];
   resetKey?: string;
   revealed?: boolean;
   correct?: boolean | null;
@@ -220,6 +220,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
         if (!mounted) return;
         countryBoundary.current = indexCountryBoundaries(world);
         const groups: CountryBoundary[] = world.boundaries;
+        const subdivisionBorders = Object.values<number[][][]>(world.subdivisionBorders).flat();
         const grouped = new Set(groups.flatMap(group => group.members.map(i => world.features[i])));
         const details: (() => void)[] = [];
         // Update detail before the renderer projects the next settled view.
@@ -267,7 +268,7 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
             details.push(updateLakes);
             updateLakes();
           }
-          L.polyline(world.usStateBorders.map((line: number[][]) => line.map(shiftCoordinates(offset))), {
+          L.polyline(subdivisionBorders.map(line => line.map(shiftCoordinates(offset))), {
             pane: "divisions", interactive: false, color: "#78857c",
             weight: 0.9, opacity: 0.75, dashArray: "3 3",
           }).addTo(m);
@@ -386,14 +387,12 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     // Reveal only adds the answer overlay. Preserve the user's exact viewport
     // and selection; the focus control remains available for deliberate zooming.
     if (props.revealed) return;
-    if (props.usStateId) {
-      const bounds: L.LatLngBoundsExpression = props.usStateId === "alaska" ? [[50,-190],[72,-129]]
-        : props.usStateId === "hawaii" ? [[18.5,-161.5],[22.8,-154.3]]
-        : [[24,-125],[50,-66]];
-      map.current?.fitBounds(bounds, {padding:[22,22], animate:false});
+    if (props.studyBounds) {
+      const [west, south, east, north] = props.studyBounds;
+      map.current?.fitBounds([[south,west],[north,east]], {padding:[22,22], animate:false});
     } else if (props.geometry) framePlace(!props.explore);
     else home();
-  }, [props.geometry, props.resetKey, props.revealed, props.explore, props.usStateId, ready]);
+  }, [props.geometry, props.resetKey, props.revealed, props.explore, props.studyBounds, ready]);
   useEffect(() => {
     const group = pin.current,
       m = map.current;

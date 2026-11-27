@@ -98,7 +98,7 @@ Tests cover scheduling, daily limits, practice isolation, stale/duplicate submis
 
 Code: MIT. Ultimate Geography's non-image content is public domain ([license](data/sources/ULTIMATE-GEOGRAPHY-LICENSE.md)); no original deck images are used. Natural Earth map data is [public domain](https://www.naturalearthdata.com/about/terms-of-use/). [Leaflet](https://leafletjs.com/) is BSD-2-Clause; [ts-fsrs](https://github.com/open-spaced-repetition/ts-fsrs) is MIT.
 
-US state borders appear throughout the atlas. Enable **US states** under Settings → Place types to study all 50 in both map directions. State questions open on the contiguous US, Alaska, or Hawaii as appropriate. Alaska and Hawaii share their existing territory cards.
+The atlas always shows internal borders in the US, Canada, and Australia. In **Settings → Place types**, independently enable US states (50), Canadian provinces and territories (13), or Australian states and territories (8). All three start unchecked. Each pack offers both map directions in a country-wide view, with regional views for Alaska and Hawaii. Those two states reuse their existing territory cards.
 
 Browse → Terrain shows offline hillshade on the atlas as you pan and zoom. New Zealand’s main islands include an additional regional detail level. In Settings, “Cities by country” adds up to ten city locations per selected country to Geography. Add countries individually or uncheck a country to pause its cities.
 

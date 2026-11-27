@@ -45,6 +45,7 @@ const kindNames: any = {
   lake: "Inland lakes",
   river:"River", range:"Mountain range", desert:"Desert",
   region: "Region / continent", usState: "US state",
+  canadaProvince: "Canadian province / territory", australiaState: "Australian state / territory",
 };
 const countryNames = new Intl.DisplayNames(["en"], {type:"region"});
 const cityOptions = cityCountries.map(code=>({code,name:countryNames.of(code) || code})).sort((a,b)=>a.name.localeCompare(b.name));
@@ -468,7 +469,7 @@ function App() {
                   onSelect={p => question?.card?.trace ? setTrace(prev => [...prev,p]) : setPoint(p)}
                   name={result?.place.name}
                   kind={question?.card?.kind}
-                  usStateId={question?.card?.kind === "usState" ? question.card.id.split(":")[0] : undefined}
+                  studyBounds={question?.card?.mapBounds}
                   revealed={!!result}
                   correct={result?.correct}
                   resetKey={question?.token || "home"}
@@ -570,7 +571,10 @@ function App() {
                                 : question.card.mode === "flag" ? `Choose the flag of ${question.card.name}`
                                 : question.card.mode === "capital" ? "Name the capital"
                                 : question.card.mode === "fromCapital" ? "Which place has this capital?"
-                                : question.card.kind === "usState" ? "Name the highlighted US state" : "Name the highlighted place"}
+                                : question.card.kind === "usState" ? "Name the highlighted US state"
+                                : question.card.kind === "canadaProvince" ? "Name the highlighted province or territory"
+                                : question.card.kind === "australiaState" ? "Name the highlighted state or territory"
+                                : "Name the highlighted place"}
                             </h2>
                             {!vocabularyModes.includes(question.card.mode) && <p>
                               {question.card.mode === "locate"
@@ -1149,7 +1153,7 @@ function App() {
                     </small>
                   </span>
                   <div className="checkbox-stack">
-                    {Object.entries({...kindNames, usState:"US states", smallLake:"Small lakes"}).map(([key, label]) => (
+                    {Object.entries({...kindNames, usState:"US states", canadaProvince:"Canadian provinces and territories", australiaState:"Australian states and territories", smallLake:"Small lakes"}).map(([key, label]) => (
                       <label key={key}>
                         <input
                           type="checkbox"

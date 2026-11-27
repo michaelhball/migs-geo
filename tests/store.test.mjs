@@ -1039,3 +1039,43 @@ test("US states are optional and share Alaska and Hawaii's original card histori
     s.db.close();
   }
 });
+
+test("Canadian and Australian subdivision packs are independent and preserve reviews", () => {
+  const s = createStore(":memory:", []);
+  try {
+    const packs = ["canadaProvince", "australiaState"];
+    assert.ok(packs.every(k => !s.settings().kinds.includes(k)));
+    const active = () => s.editorial.list().filter(p => p.studying);
+    const cases = [
+      ["canadaProvince",13,"ca-province-on",[-75.69,45.42],[-73.57,45.5],"Quebec"],
+      ["australiaState",8,"au-state-act",[149.13,-35.28],[151.21,-33.87],"New South Wales"],
+    ];
+    for (const [kind,count,id,inside,outside,other] of cases) {
+      s.setSettings({kinds:[kind]});
+      assert.equal(active().length,count);
+      const q = s.question({practice:true,placeId:id,mode:"locate"});
+      assert.equal(q.card.kind,kind);
+      assert.equal(q.card.geometry,null);
+      const [w,south,e,north] = q.card.mapBounds;
+      assert.ok(inside[0]>w && inside[0]<e && inside[1]>south && inside[1]<north);
+      assert.equal(s.check(q.token,{point:inside}).correct,true);
+      assert.equal(s.check(q.token,{point:outside}).message,"Your pin is in "+other+".");
+      const card = s.question({practice:true,placeId:id,mode:"identify"});
+      assert.equal(card.card.name,null);
+      assert.deepEqual(card.card.mapBounds,q.card.mapBounds);
+      assert.equal(s.check(card.token,{text:s.place(id).name}).correct,true);
+      const scheduled=s.question();
+      s.check(scheduled.token,{reveal:true});
+      s.review(scheduled.token,3);
+    }
+    s.setSettings({kinds:packs});
+    assert.equal(active().length,21);
+    s.restore(s.exportData());
+    assert.equal(s.cards().filter(c=>c.reps>0).length,2);
+    s.setSettings({kinds:["country"]});
+    assert.equal(active().length,0);
+    s.setSettings({kinds:["usState",...packs]});
+    assert.equal(active().length,71);
+    assert.equal(s.cards().length,142);
+  } finally {s.db.close();}
+});

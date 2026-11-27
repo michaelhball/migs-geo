@@ -4,7 +4,7 @@ from urllib.request import urlretrieve
 root=Path(__file__).resolve().parents[1]/'data/sources'
 root.mkdir(parents=True,exist_ok=True)
 revision='ca96624a56bd078437bca8184e78163e5039ad19'
-layers={'map-units':'ne_10m_admin_0_map_units','marine':'ne_10m_geography_marine_polys','lakes':'ne_10m_lakes','regions':'ne_10m_geography_regions_polys','disputed':'ne_10m_admin_0_disputed_areas','us-states':'ne_10m_admin_1_states_provinces'}
+layers={'map-units':'ne_10m_admin_0_map_units','marine':'ne_10m_geography_marine_polys','lakes':'ne_10m_lakes','regions':'ne_10m_geography_regions_polys','disputed':'ne_10m_admin_0_disputed_areas','admin-1':'ne_10m_admin_1_states_provinces'}
 for name,layer in layers.items():
     target=root/(name+'.geojson')
     if target.exists():continue
