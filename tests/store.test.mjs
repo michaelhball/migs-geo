@@ -992,3 +992,50 @@ test("all river fact choices are available before their cards are enabled", () =
     store.db.close();
   }
 });
+
+test("US states are optional and share Alaska and Hawaii's original card histories", () => {
+  const s = createStore(":memory:", atlas);
+  try {
+    const original = s.settings();
+    const studied = () => s.editorial.list().filter(p => p.studying);
+    const before = studied().length;
+    assert.ok(!original.kinds.includes("usState"));
+    assert.ok(!s.cards().some(c => c.place_id.startsWith("us-state-")));
+    s.updateCard("alaska:identify", {suspended:true});
+    const alaska = s.getCard("alaska:identify");
+    s.setSettings({kinds:[...original.kinds,"usState"]});
+    assert.equal(studied().length, before + 48);
+    assert.deepEqual(s.getCard("alaska:identify"), alaska);
+    s.setSettings({kinds:["usState"]});
+    assert.equal(studied().length, 50);
+    const ids = new Set(studied().map(p => p.id));
+    assert.equal(s.cards().filter(c => ids.has(c.place_id)).length, 100);
+    for (const placeId of ["alaska","hawaii","us-state-ga","us-state-ri"]) {
+      const q = s.question({practice:true,placeId,mode:"identify"});
+      assert.equal(q.card.kind,"usState");
+      assert.ok(q.card.geometry);
+      assert.equal(q.card.name,null);
+      assert.equal(s.check(q.token,{text:s.place(placeId).name}).correct,true);
+    }
+    const q = s.question({practice:true,placeId:"us-state-ga",mode:"locate"});
+    assert.equal(q.card.name,"Georgia");
+    assert.equal(q.card.geometry,null);
+    assert.equal(s.check(q.token,{point:[-84.39,33.75]}).correct,true);
+    const wrong = s.check(q.token,{point:[-86.8,33.52]});
+    assert.equal(wrong.correct,false);
+    assert.match(wrong.message,/Alabama/);
+    const scheduled = s.question();
+    assert.equal(scheduled.card.kind,"usState");
+    s.check(scheduled.token,{reveal:true});
+    s.review(scheduled.token,3);
+    const memory = s.getCard(scheduled.card.id).memory;
+    s.restore(s.exportData());
+    s.setSettings({kinds:original.kinds});
+    assert.equal(studied().length,before);
+    s.setSettings({kinds:["usState"]});
+    assert.deepEqual(s.getCard(scheduled.card.id).memory,memory);
+    assert.equal(studied().length,50);
+  } finally {
+    s.db.close();
+  }
+});

@@ -44,7 +44,7 @@ const kindNames: any = {
   water: "Oceans, seas & gulfs",
   lake: "Inland lakes",
   river:"River", range:"Mountain range", desert:"Desert",
-  region: "Region / continent",
+  region: "Region / continent", usState: "US state",
 };
 const countryNames = new Intl.DisplayNames(["en"], {type:"region"});
 const cityOptions = cityCountries.map(code=>({code,name:countryNames.of(code) || code})).sort((a,b)=>a.name.localeCompare(b.name));
@@ -313,7 +313,8 @@ function App() {
   const filtered = places
     .filter(
       (p) =>
-        (kind === "all" || p.kind === kind) &&
+        (kind === "all" || p.kind === kind ||
+          (kind === "usState" && p.kind === "territory" && ["alaska","hawaii"].includes(p.id))) &&
         [p.name, ...p.aliases].some((s) =>
           s.toLowerCase().includes(search.toLowerCase()),
         ),
@@ -467,6 +468,7 @@ function App() {
                   onSelect={p => question?.card?.trace ? setTrace(prev => [...prev,p]) : setPoint(p)}
                   name={result?.place.name}
                   kind={question?.card?.kind}
+                  usStateId={question?.card?.kind === "usState" ? question.card.id.split(":")[0] : undefined}
                   revealed={!!result}
                   correct={result?.correct}
                   resetKey={question?.token || "home"}
@@ -568,7 +570,7 @@ function App() {
                                 : question.card.mode === "flag" ? `Choose the flag of ${question.card.name}`
                                 : question.card.mode === "capital" ? "Name the capital"
                                 : question.card.mode === "fromCapital" ? "Which place has this capital?"
-                                : "Name the highlighted place"}
+                                : question.card.kind === "usState" ? "Name the highlighted US state" : "Name the highlighted place"}
                             </h2>
                             {!vocabularyModes.includes(question.card.mode) && <p>
                               {question.card.mode === "locate"
@@ -1147,7 +1149,7 @@ function App() {
                     </small>
                   </span>
                   <div className="checkbox-stack">
-                    {Object.entries({...kindNames, smallLake:"Small lakes"}).map(([key, label]) => (
+                    {Object.entries({...kindNames, usState:"US states", smallLake:"Small lakes"}).map(([key, label]) => (
                       <label key={key}>
                         <input
                           type="checkbox"

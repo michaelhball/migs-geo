@@ -105,6 +105,8 @@ Optional question directions are `capital` (type the capital), `fromCapital` (na
 
 Optional Geography place types `river` and `range` add Natural Earth paths and areas on first enable. River locate questions set `card.trace` and accept `answer.path`, an ordered list of at least two longitude/latitude pairs. The checked path is logged and compared visually with the atlas course; the user grades recall. Range questions use polygon checks.
 
+Include `usState` in `settings.kinds` to study the 50 US states in Geography. This option is off by default. Both map directions use the existing scheduler. Alaska and Hawaii reuse the original territory cards and their review history. A state question has `card.kind = "usState"`, including those two when the pack is enabled. The atlas displays unlabeled state boundaries at every zoom regardless of study settings.
+
 Set `settings.cityCountries` to an array of supported ISO two-letter country codes, for example `["NZ","DE"]`, to study up to ten cities per country in Geography. An empty array switches city study off. Removing and re-adding countries preserves their card schedules. The legacy `cityCountry` field reads the first selected code or an empty string. Patching that field alone replaces the selection with one country or clears it. When both fields are supplied, `cityCountries` takes precedence. City locate answers accept pins within 25 km of the reference point.
 
 The opt-in physical atlas offers 45 named river courses, 36 mountain ranges and 24 desert areas. Choose `river`, `range`, or `desert` in settings.kinds. The bundled geometry comes from Natural Earth; deserts and ranges accept pins inside their mapped area.

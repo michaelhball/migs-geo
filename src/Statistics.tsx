@@ -50,6 +50,7 @@ const names: Record<string, string> = {
   capital: "Place → capital", fromCapital: "Capital → place",
   flag: "Place → flag", fromFlag: "Flag → place", term:"Definition → word", define:"Word → definition",
   country: "Countries",
+  usState: "US states",
   territory: "Territories / islands",
   water: "Bodies of water",
   region: "Regions / continents",

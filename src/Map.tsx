@@ -26,6 +26,7 @@ type Props = {
   explore?: boolean;
   name?: string;
   kind?: string;
+  usStateId?: string;
   resetKey?: string;
   revealed?: boolean;
   correct?: boolean | null;
@@ -385,9 +386,14 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
     // Reveal only adds the answer overlay. Preserve the user's exact viewport
     // and selection; the focus control remains available for deliberate zooming.
     if (props.revealed) return;
-    if (props.geometry) framePlace(!props.explore);
+    if (props.usStateId) {
+      const bounds: L.LatLngBoundsExpression = props.usStateId === "alaska" ? [[50,-190],[72,-129]]
+        : props.usStateId === "hawaii" ? [[18.5,-161.5],[22.8,-154.3]]
+        : [[24,-125],[50,-66]];
+      map.current?.fitBounds(bounds, {padding:[22,22], animate:false});
+    } else if (props.geometry) framePlace(!props.explore);
     else home();
-  }, [props.geometry, props.resetKey, props.revealed, props.explore, ready]);
+  }, [props.geometry, props.resetKey, props.revealed, props.explore, props.usStateId, ready]);
   useEffect(() => {
     const group = pin.current,
       m = map.current;

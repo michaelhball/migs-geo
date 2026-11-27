@@ -16,6 +16,7 @@ import cities from "./cities.json" with {type:"json"};
 import {areaKm2} from "./lake-area.mjs";
 import lakeLocations from "./lake-locations.json" with {type:"json"};
 import lakePlaces from "./lake-places.json" with {type:"json"};
+import usStates from "./us-states.json" with {type:"json"};
 import physicalPlaces from "./physical-places.json" with {type:"json"};
 import facts from "./geography-facts.json" with { type: "json" };
 import vocabulary from "../data/vocabulary.json" with {type:"json"};
@@ -115,7 +116,7 @@ export function validateSettings(s) {
     !Array.isArray(s.kinds) ||
     !s.kinds.length ||
     s.kinds.some(
-      (k) => !["country", "territory", "water", "region","river","range","desert","lake","smallLake"].includes(k),
+      (k) => !["country", "territory", "water", "region","river","range","desert","lake","smallLake","usState"].includes(k),
     )
   )
     throw Error("Choose at least one valid place type.");
@@ -155,6 +156,10 @@ const distance = (a, b) => {
   );
 };
 const isFlag = mode => mode === "flag" || mode === "fromFlag";
+// Alaska and Hawaii already have cards in the original territory collection.
+function isUsState(p) {
+  return p.kind === "usState" || (p.kind === "territory" && (p.id === "alaska" || p.id === "hawaii"));
+}
 function cardDeck(mode) {
   if (vocabularyModes.includes(mode)) return "vocabulary";
   return isFlag(mode) ? "flags" : "geography";
@@ -318,6 +323,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     if (p.kind === "vocabulary") return !p.archived && s.activeDeck === "vocabulary";
     if (p.archived || (s.regions.length && !s.regions.includes(p.region))) return false;
     if (p.kind === "city") return s.cityCountries.includes(p.countryCode);
+    if (isUsState(p) && s.kinds.includes("usState")) return true;
     let kind = p.kind;
     if (kind === "lake") {
       const area = areaKm2(p.geometry);
@@ -372,7 +378,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     )
       throw Error("A valid ID and name (1–160 characters) are required.");
     if (
-      !["country", "territory", "water", "region","river","range","desert","lake","city","vocabulary"].includes(p.kind) ||
+      !["country", "territory", "water", "region","river","range","desert","lake","city","usState","vocabulary"].includes(p.kind) ||
       !Array.isArray(p.aliases) ||
       p.aliases.some((a) => typeof a !== "string") ||
       !Array.isArray(p.tags) ||
@@ -604,7 +610,10 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     }
     const p = place(card.place_id),
       token = randomUUID();
-    studyLog.start(token, card, p, settings(), practice);
+    const config = settings();
+    const studyPlace = p.kind === "territory" && isUsState(p) && config.kinds.includes("usState")
+      ? {...p, kind:"usState"} : p;
+    studyLog.start(token, card, studyPlace, config, practice);
     attempts.set(token, { card, practice, started: +clock(), checked: false });
     if (attempts.size > 1000) attempts.delete(attempts.keys().next().value);
     return {
@@ -615,7 +624,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         mode: card.mode,
         state: card.state,
         version: card.version,
-        kind: p.kind,
+        kind: studyPlace.kind,
         name: ["locate", "capital", "flag", "define"].includes(card.mode) ? p.name : null,
         ...(card.mode === "term" && {definition:p.info}),
         ...(card.mode === "define" && {definitions:definitionChoices(p)}),
@@ -665,11 +674,12 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     if (a.card.mode === "locate" && a.result.correct === false && !answer.reveal) {
       const matches = places().filter(candidate =>
         !candidate.archived && candidate.kind !== "vocabulary" && !candidate.approximate && candidate.geometry.type !== "Point" &&
-        (["country","territory","water"].includes(candidate.kind) || (p.kind === "lake" && candidate.kind === "lake")) && ["Polygon","MultiPolygon"].includes(candidate.geometry.type) && booleanPointInPolygon(answer.point, candidate.geometry)
+        (["country","territory","water"].includes(candidate.kind) || (isUsState(p) && isUsState(candidate)) || (p.kind === "lake" && candidate.kind === "lake")) && ["Polygon","MultiPolygon"].includes(candidate.geometry.type) && booleanPointInPolygon(answer.point, candidate.geometry)
       );
       const lakes = matches.filter(candidate => candidate.kind === "lake");
       const land = matches.filter(candidate => ["country", "territory"].includes(candidate.kind));
-      const candidates = lakes.length ? lakes : land.length ? land : matches;
+      const states = isUsState(p) ? matches.filter(isUsState) : [];
+      const candidates = states.length ? states : lakes.length ? lakes : land.length ? land : matches;
       const names = candidates.map(candidate => candidate.name);
       if (names.length) a.result.message = `Your pin is in ${names.join(" / ")}.`;
     }
@@ -841,7 +851,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         p.tags.some((t) => typeof t !== "string") ||
         !Array.isArray(p.aliases) ||
         p.aliases.some((a) => typeof a !== "string") ||
-        !["country", "territory", "water", "region","river","range","desert","lake","city","vocabulary"].includes(p.kind)
+        !["country", "territory", "water", "region","river","range","desert","lake","city","usState","vocabulary"].includes(p.kind)
       )
         throw Error("Invalid place in backup.");
     }
@@ -982,7 +992,8 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       geometry:{type:"Point",coordinates:[lon,lat]}, center:[lon,lat],
     })));
     const words = s.modes.some(mode => vocabularyModes.includes(mode)) ? vocabularyPlaces : [];
-    for (const p of [...words, ...physicalPlaces.filter(p=>s.kinds.includes(p.kind)), ...(s.kinds.some(k => k === "lake" || k === "smallLake") ? lakePlaces : []), ...cityPlaces]) {
+    const states = s.kinds.includes("usState") ? usStates : [];
+    for (const p of [...states, ...words, ...physicalPlaces.filter(p=>s.kinds.includes(p.kind)), ...(s.kinds.some(k => k === "lake" || k === "smallLake") ? lakePlaces : []), ...cityPlaces]) {
       if ( db.prepare("SELECT id FROM places WHERE id=?").get(p.id)) continue;
       db.prepare("INSERT INTO places VALUES(?,?,0)").run(p.id, encode(p));
       for (const mode of p.kind === "vocabulary" ? vocabularyModes : ["locate","identify"]) {

@@ -335,7 +335,7 @@
                     "type": "string"
                   },
                   "kind": {
-                    "enum": ["country", "territory", "water", "region","river","range","desert","lake"]
+                    "enum": ["country", "territory", "water", "region","river","range","desert","lake","usState"]
                   },
                   "region": {
                     "type": "string"
@@ -881,7 +881,7 @@
                         "type": "array",
                         "minItems": 1,
                         "items": {
-                          "enum": ["country", "territory", "water", "region","river","range","desert","lake","smallLake"]
+                          "enum": ["country", "territory", "water", "region","river","range","desert","lake","usState","smallLake"]
                         }
                       },
                       "regions": {
@@ -918,7 +918,7 @@
                           "type": "string"
                         },
                         "kind": {
-                          "enum": ["country", "territory", "water", "region","river","range","desert","lake"]
+                          "enum": ["country", "territory", "water", "region","river","range","desert","lake","usState"]
                         },
                         "region": {
                           "type": "string"
@@ -1161,7 +1161,7 @@
             "type": "string"
           },
           "kind": {
-            "enum": ["country", "territory", "water", "region","river","range","desert","lake"]
+            "enum": ["country", "territory", "water", "region","river","range","desert","lake","usState"]
           },
           "region": {
             "type": "string"
@@ -1241,7 +1241,7 @@
             "type": "array",
             "minItems": 1,
             "items": {
-              "enum": ["country", "territory", "water", "region","river","range","desert","lake","smallLake"]
+              "enum": ["country", "territory", "water", "region","river","range","desert","lake","usState","smallLake"]
             }
           },
           "regions": {
