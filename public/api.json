@@ -605,7 +605,7 @@
                     "type": "string"
                   },
                   "mode": {
-                    "enum": ["locate", "identify", "capital", "fromCapital", "flag", "fromFlag"]
+                    "enum": ["locate", "identify", "capital", "fromCapital", "flag", "fromFlag", "term", "define"]
                   }
                 },
                 "required": []
@@ -862,6 +862,7 @@
                         "minimum": 0,
                         "maximum": 500
                       },
+                      "activeDeck": {"type":"string","enum":["geography","flags","capitals","vocabulary"],"default":"geography"},
                       "cityCountries": { "type": "array", "items": { "type": "string" }, "default": [], "description": "ISO two-letter country codes for city study. An empty array disables cities." },
                       "cityCountry": { "type": "string", "deprecated": true, "description": "First selected code or empty. When patched alone, replaces the cityCountries selection." },
                       "reviewsPerDay": {
@@ -894,7 +895,7 @@
                         "type": "array",
                         "minItems": 1,
                         "items": {
-                          "enum": ["locate", "identify", "capital", "fromCapital", "flag", "fromFlag"]
+                          "enum": ["locate", "identify", "capital", "fromCapital", "flag", "fromFlag", "term", "define"]
                         }
                       },
                       "burySiblings": {
@@ -1221,6 +1222,7 @@
             "minimum": 0,
             "maximum": 500
           },
+          "activeDeck": {"type":"string","enum":["geography","flags","capitals","vocabulary"],"default":"geography"},
           "cityCountries": { "type": "array", "items": { "type": "string" }, "default": [], "description": "ISO two-letter country codes for city study. An empty array disables cities." },
           "cityCountry": { "type": "string", "deprecated": true, "description": "First selected code or empty. When patched alone, replaces the cityCountries selection." },
           "reviewsPerDay": {
@@ -1254,7 +1256,7 @@
             "type": "array",
             "minItems": 1,
             "items": {
-              "enum": ["locate", "identify", "capital", "fromCapital", "flag", "fromFlag"]
+              "enum": ["locate", "identify", "capital", "fromCapital", "flag", "fromFlag", "term", "define"]
             }
           },
           "burySiblings": {

@@ -112,7 +112,7 @@ export function validateSettings(s) {
   s = { lakeMinimumKm2:0, lakeCutoffKm2:0, cityCountry:"", cityCountries:[], activeDeck: "geography", reviewsPerDay: defaults.reviewsPerDay, ...withCitySelection(s) };
   if (!Number.isFinite(s.lakeCutoffKm2) || s.lakeCutoffKm2 < 0) throw Error("Lake cutoff must be a nonnegative area in km².");
   if (!Number.isFinite(s.lakeMinimumKm2) || s.lakeMinimumKm2 < 0 || s.lakeMinimumKm2 > s.lakeCutoffKm2) throw Error("Small lake minimum must be between zero and the inland lake cutoff.");
-  if (!["geography","flags","vocabulary"].includes(s.activeDeck)) throw Error("Invalid deck.");
+  if (!["geography","flags","capitals","vocabulary"].includes(s.activeDeck)) throw Error("Invalid deck.");
   if (!Number.isInteger(s.newPerDay) || s.newPerDay < 0 || s.newPerDay > 500)
     throw Error("New cards per day must be 0–500.");
   if (!Number.isInteger(s.reviewsPerDay) || s.reviewsPerDay < 0 || s.reviewsPerDay > 5000)
@@ -139,7 +139,7 @@ export function validateSettings(s) {
     typeof s.burySiblings !== "boolean"
   )
     throw Error("Invalid filters.");
-  if (s.activeDeck === "vocabulary" && !s.modes.some(mode => vocabularyModes.includes(mode))) {
+  if (s.activeDeck !== "geography" && !s.modes.some(mode => cardDeck(mode) === s.activeDeck)) {
     s = {...s, activeDeck:"geography"};
   }
   return Object.fromEntries(Object.keys(defaults).map((k) => [k, s[k]]));
@@ -170,6 +170,7 @@ function subdivisionKind(p) {
 }
 function cardDeck(mode) {
   if (vocabularyModes.includes(mode)) return "vocabulary";
+  if (mode === "capital" || mode === "fromCapital") return "capitals";
   return isFlag(mode) ? "flags" : "geography";
 }
 function flagChoices(id, token) {
@@ -330,6 +331,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
   function enabledPlace(p, s) {
     if (p.kind === "vocabulary") return !p.archived && s.activeDeck === "vocabulary";
     if (p.archived || (s.regions.length && !s.regions.includes(p.region))) return false;
+    if (s.activeDeck === "flags" || s.activeDeck === "capitals") return true;
     if (p.kind === "city") return s.cityCountries.includes(p.countryCode);
     if (p.kind === "territory" && s.kinds.includes(subdivisionKind(p))) return true;
     let kind = p.kind;

@@ -647,7 +647,7 @@ test("optional directions are isolated by deck and round-trip with ratings", () 
   assert.equal(store.cards().length, 2);
   for (const mode of ["capital","fromCapital","flag","fromFlag"]) {
     const flags = ["flag","fromFlag"].includes(mode);
-    store.setSettings({modes:[mode], activeDeck:flags ? "flags" : "geography", burySiblings:false});
+    store.setSettings({modes:[mode], activeDeck:flags ? "flags" : "capitals", burySiblings:false});
     const q = store.question();
     assert.equal(q.card.mode,mode);
     const text = mode === "capital" ? "Paris" : "France";
@@ -660,6 +660,28 @@ test("optional directions are isolated by deck and round-trip with ratings", () 
   assert.equal(copy.cards().length,6);
   copy.db.close();
   store.db.close();
+});
+
+test("capitals use their own daily allowance and keep their schedule when disabled", () => {
+  const store = createStore(":memory:", atlas.filter(p => p.id === "france"));
+  try {
+    const modes = ["locate", "capital"];
+    store.setSettings({modes, newPerDay:1});
+    const map = store.question();
+    assert.equal(map.card.mode, "locate");
+    store.check(map.token, {reveal:true});
+    store.review(map.token, 4);
+    store.setSettings({activeDeck:"capitals", kinds:["water"]});
+    const capital = store.question();
+    assert.equal(capital.card.mode, "capital");
+    assert.ok(store.check(capital.token, {text:"Paris"}).correct);
+    store.review(capital.token, 4);
+    const memory = store.getCard(capital.card.id).memory;
+    assert.equal(store.setSettings({modes:["locate"]}).activeDeck, "geography");
+    store.setSettings({modes, activeDeck:"capitals"});
+    assert.deepEqual(store.getCard(capital.card.id).memory, memory);
+    assert.equal(store.queue().counts.new, 0);
+  } finally { store.db.close(); }
 });
 
 test("rivers opt in to traced and named cards and preserve submitted paths", () => {
