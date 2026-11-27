@@ -100,6 +100,6 @@ Code: MIT. Ultimate Geography's non-image content is public domain ([license](da
 
 Zoom in one step from the world view to see internal borders in the US, Canada, and Australia. In **Settings → Place types**, independently enable US states (50), Canadian provinces and territories (13), or Australian states and territories (8). All three start unchecked. Each pack offers both map directions in a country-wide view, with regional views for Alaska and Hawaii. Those two states reuse their existing territory cards.
 
-Browse → Terrain shows offline hillshade on the atlas as you pan and zoom. New Zealand’s main islands include an additional regional detail level. In Settings, “Cities by country” adds up to ten city locations per selected country to Geography. Add countries individually or uncheck a country to pause its cities.
+Browse → Terrain shows offline hillshade on the atlas as you pan and zoom. New Zealand’s main islands include an additional regional detail level. In Settings → Place types, “Cities by country” adds up to ten city locations per selected country to Geography. Add countries individually or uncheck a country to pause its cities. Question directions controls the two map prompts. Under Other study decks, enable Flags, Capitals, or Geography vocabulary, then choose the deck on Study.
 
 For local development, use the LTS release in `.nvmrc`. On macOS and Linux, `npm start` and `npm run dev` also recognize a Node distribution installed in `.runtime/` at the project root.

@@ -37,7 +37,13 @@ const modeNames: Record<string,string> = {
   term:"Definition → word", define:"Word → definition",
   fromCapital: "Capital → place", flag: "Place → flag", fromFlag: "Flag → place",
 };
+const mapModes = ["locate", "identify"];
 const vocabularyModes = ["term", "define"];
+const studyDecks = [
+  { id: "flags", name: "Flags", modes: ["flag", "fromFlag"] },
+  { id: "capitals", name: "Capitals", modes: ["capital", "fromCapital"] },
+  { id: "vocabulary", name: "Geography vocabulary", modes: vocabularyModes },
+];
 const kindNames: any = {
   country: "Country",
   territory: "Territory / island",
@@ -322,10 +328,11 @@ function App() {
     )
     .sort((a, b) => a.name.localeCompare(b.name));
   const selectedCityCountries: string[] = settings?.cityCountries ?? (settings?.cityCountry ? [settings.cityCountry] : []);
-  const vocabularyEnabled = settings?.modes.some((mode:string) => vocabularyModes.includes(mode));
-  const flagsEnabled = settings?.modes.some((mode:string) => ["flag","fromFlag"].includes(mode)) || settings?.activeDeck === "flags";
-  const vocabularyDeck = settings?.activeDeck === "vocabulary";
-  const mapCardCount = cards.filter(c => !vocabularyModes.includes(c.mode)).length;
+  const enabledDecks = studyDecks.filter(deck => deck.modes.some(mode => settings?.modes.includes(mode)));
+  const activeSubject = studyDecks.find(deck => deck.id === settings?.activeDeck);
+  const vocabularyDeck = activeSubject?.id === "vocabulary";
+  const activeCardCount = cards.filter(c => (activeSubject?.modes ?? mapModes).includes(c.mode)).length;
+  const placeCardCount = cards.filter(c => !vocabularyModes.includes(c.mode)).length;
   const totalDue = stats
     ? stats.counts.new + stats.counts.review + stats.counts.learning
     : 0;
@@ -434,11 +441,10 @@ function App() {
                   </span>
                 </div>
               </div>
-              {flagsEnabled || vocabularyEnabled ? (
+              {enabledDecks.length > 0 ? (
                 <label>Study deck <select value={settings.activeDeck} disabled={busy} onChange={e => saveSettings({activeDeck:e.target.value})}>
                   <option value="geography">Geography</option>
-                  {flagsEnabled && <option value="flags">Flags</option>}
-                  {vocabularyEnabled && <option value="vocabulary">Geography vocabulary</option>}
+                  {enabledDecks.map(deck => <option key={deck.id} value={deck.id}>{deck.name}</option>)}
                 </select></label>
               ) : null}
               <div className="study-layout">
@@ -485,7 +491,7 @@ function App() {
                               ? "Daily review limit reached"
                             : "Nothing due right now"}
                         </h2>
-                        {!vocabularyDeck && <p>Countries, territories, water, and regions.</p>}
+                        {activeSubject && <p>{activeSubject.name}</p>}
                         {!totalDue && stats.reviewLimit?.deferred > 0 && (
                           <p>{stats.reviewLimit.deferred} reviews are waiting. Continue after 4am, or raise the limit in Settings.</p>
                         )}
@@ -511,11 +517,8 @@ function App() {
                       </div>
                       <div className="panel-foot">
                         <span>
-                          {vocabularyDeck ? `${cards.length - mapCardCount} vocabulary cards` : `${places.length} places · ${mapCardCount} cards`}
+                          {activeSubject ? `${activeCardCount} cards` : `${places.length} places · ${activeCardCount} cards`}
                         </span>
-                        <p>
-                          Choose question directions in Settings.
-                        </p>
                         <button
                           className="text-button"
                           onClick={() => navigate("settings")}
@@ -770,7 +773,7 @@ function App() {
                 <div>
                   <h1>Browse</h1>
                   <span className="subtle">
-                    {places.length} places · {mapCardCount} cards
+                    {places.length} places · {placeCardCount} cards
                   </span>
                 </div>
                 <button className="secondary" onClick={createDraft}>
@@ -1115,83 +1118,6 @@ function App() {
                   </select>
                 </label>
                 <div className="setting-row">
-                  <span>Geography vocabulary<small><a href="/vocabulary.html">View words and definitions</a></small></span>
-                  <label><input type="checkbox" checked={Boolean(vocabularyEnabled)} onChange={e => {
-                    const otherModes = settings.modes.filter((mode:string) => !vocabularyModes.includes(mode));
-                    saveSettings({modes:e.target.checked ? [...otherModes, ...vocabularyModes]
-                      : otherModes.length ? otherModes : ["locate", "identify"]});
-                  }} /> Enable vocabulary deck</label>
-                </div>
-                <div className="setting-row">
-                  <span>Question directions</span>
-                  <div className="checkbox-stack">
-                    {Object.entries(modeNames).filter(([key]) => !vocabularyModes.includes(key)).map(([key, label]) => (
-                      <label key={key}>
-                        <input
-                          type="checkbox"
-                          checked={settings.modes.includes(key)}
-                          onChange={(e) =>
-                            saveSettings({
-                              modes: e.target.checked
-                                ? [...settings.modes, key]
-                                : settings.modes.filter(
-                                    (m: string) => m !== key,
-                                  ),
-                            })
-                          }
-                        />
-                        {label}{["flag","fromFlag"].includes(key) ? " (Flags deck)" : ""}
-                      </label>
-                    ))}
-                  </div>
-                </div>
-                <div className="setting-row">
-                  <span>
-                    Place types
-                    <small>
-                      Regions include continents and areas such as Scandinavia.
-                    </small>
-                  </span>
-                  <div className="checkbox-stack">
-                    {Object.entries({...kindNames, usState:"US states", canadaProvince:"Canadian provinces and territories", australiaState:"Australian states and territories", smallLake:"Small lakes"}).map(([key, label]) => (
-                      <label key={key}>
-                        <input
-                          type="checkbox"
-                          checked={settings.kinds.includes(key)}
-                          onChange={(e) =>
-                            saveSettings({
-                              kinds: e.target.checked
-                                ? [...settings.kinds, key]
-                                : settings.kinds.filter(
-                                    (m: string) => m !== key,
-                                  ),
-                            })
-                          }
-                        />
-                        {String(label)}
-                      </label>
-                    ))}
-                  </div>
-                </div>
-                <div className="setting-row">
-                  <span>Cities by country<small>Study up to ten cities per selected country in both map directions.</small></span>
-                  <div className="checkbox-stack">
-                    {cityOptions.filter(({code}) => selectedCityCountries.includes(code)).map(({code,name}) => (
-                      <label key={code}>
-                        <input type="checkbox" checked disabled={busy}
-                          onChange={() => saveSettings({cityCountries:selectedCityCountries.filter((c) => c !== code)})} />
-                        {name}
-                      </label>
-                    ))}
-                    <select aria-label="Add a country for city study" value="" disabled={busy}
-                      onChange={e => saveSettings({cityCountries:[...selectedCityCountries,e.target.value]})}>
-                      <option value="" disabled>Add country…</option>
-                      {cityOptions.filter(({code}) => !selectedCityCountries.includes(code)).map(({code,name}) =>
-                        <option key={code} value={code}>{name}</option>)}
-                    </select>
-                  </div>
-                </div>
-                <div className="setting-row">
                   <span>
                     Parts of the world
                     <small>Leave empty to study the whole world.</small>
@@ -1234,6 +1160,68 @@ function App() {
                     }
                   />
                 </label>
+              </section>
+              <section className="settings-section" aria-labelledby="map-directions-title">
+                <h2 id="map-directions-title">Question directions</h2>
+                <div className="option-list">
+                  {mapModes.map(mode => (
+                    <label key={mode}>
+                      <input type="checkbox" checked={settings.modes.includes(mode)} disabled={busy}
+                        onChange={e => saveSettings({modes:e.target.checked
+                          ? [...settings.modes, mode] : settings.modes.filter((m:string) => m !== mode)})} />
+                      {modeNames[mode]}
+                    </label>
+                  ))}
+                </div>
+              </section>
+              <section className="settings-section" aria-labelledby="place-types-title">
+                <h2 id="place-types-title">Place types</h2>
+                <div className="option-list place-type-options">
+                  {Object.entries({...kindNames, usState:"US states", canadaProvince:"Canadian provinces and territories", australiaState:"Australian states and territories", smallLake:"Small lakes"}).map(([key, label]) => (
+                    <label key={key}>
+                      <input type="checkbox" checked={settings.kinds.includes(key)} disabled={busy}
+                        onChange={e => saveSettings({kinds:e.target.checked
+                          ? [...settings.kinds, key] : settings.kinds.filter((k:string) => k !== key)})} />
+                      {String(label)}
+                    </label>
+                  ))}
+                </div>
+                <section className="cities-by-country" aria-labelledby="cities-title">
+                  <h3 id="cities-title">Cities by country</h3>
+                  <p>Study up to ten cities per selected country.</p>
+                  <div className="checkbox-stack">
+                    {cityOptions.filter(({code}) => selectedCityCountries.includes(code)).map(({code,name}) => (
+                      <label key={code}>
+                        <input type="checkbox" checked disabled={busy}
+                          onChange={() => saveSettings({cityCountries:selectedCityCountries.filter((c) => c !== code)})} />
+                        {name}
+                      </label>
+                    ))}
+                    <select aria-label="Add a country for city study" value="" disabled={busy}
+                      onChange={e => saveSettings({cityCountries:[...selectedCityCountries,e.target.value]})}>
+                      <option value="" disabled>Add country…</option>
+                      {cityOptions.filter(({code}) => !selectedCityCountries.includes(code)).map(({code,name}) =>
+                        <option key={code} value={code}>{name}</option>)}
+                    </select>
+                  </div>
+                </section>
+              </section>
+              <section className="settings-section" aria-labelledby="other-decks-title">
+                <h2 id="other-decks-title">Other study decks</h2>
+                <div className="option-list">
+                  {studyDecks.map(deck => (
+                    <label key={deck.id}>
+                      <input type="checkbox" checked={enabledDecks.includes(deck)} disabled={busy}
+                        onChange={e => {
+                          const remaining = settings.modes.filter((mode:string) => !deck.modes.includes(mode));
+                          const modes = e.target.checked ? [...remaining, ...deck.modes] : remaining;
+                          saveSettings({modes:modes.length ? modes : mapModes});
+                        }} />
+                      {deck.name}
+                    </label>
+                  ))}
+                </div>
+                <a className="vocabulary-list-link" href="/vocabulary.html">View words and definitions</a>
               </section>
               <section className="settings-section">
                 <h2>Progress</h2>
@@ -1401,8 +1389,7 @@ function App() {
                 <p>
                   Natural Earth is a generalized atlas. Disputed boundaries
                   follow its conventions. Celtic Sea, Bering Strait, Balkan
-                  Peninsula, and Oceania use approximate study markers. Flags
-                  and capitals are not included.
+                  Peninsula, and Oceania use approximate study markers.
                 </p>
               </section>
             </main>

@@ -879,6 +879,36 @@ kbd {
   width: 95px;
   font-size: 13px;
 }
+.option-list {
+  display: grid;
+  gap: 12px 24px;
+}
+.option-list label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+.place-type-options {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.cities-by-country {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.cities-by-country h3 {
+  font-size: 14px;
+  margin: 0;
+}
+.cities-by-country p {
+  margin: 6px 0 12px;
+}
+.vocabulary-list-link {
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 12px;
+}
 .checkbox-stack {
   display: grid;
   gap: 10px;
