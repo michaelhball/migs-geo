@@ -266,6 +266,10 @@ export const Atlas = forwardRef<MapHandle, Props>(function Atlas(props, ref) {
             details.push(updateLakes);
             updateLakes();
           }
+          L.polyline(world.usStateBorders.map((line: number[][]) => line.map(shiftCoordinates(offset))), {
+            pane: "divisions", interactive: false, color: "#78857c",
+            weight: 0.9, opacity: 0.75, dashArray: "3 3",
+          }).addTo(m);
           for (const boundary of groups) {
             const project = shiftCoordinates(offset);
             L.polyline(boundary.outer.map(line => line.map(project)), {

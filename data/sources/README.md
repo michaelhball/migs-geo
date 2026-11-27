@@ -8,6 +8,7 @@ Natural Earth vectors: `nvkelso/natural-earth-vector`, revision
 - `ne_10m_lakes`
 - `ne_10m_geography_regions_polys`
 - `ne_10m_admin_0_disputed_areas`
+- `ne_10m_admin_1_states_provinces`
 
 Natural Earth data is public domain: https://www.naturalearthdata.com/about/terms-of-use/
 
@@ -24,6 +25,8 @@ Balkan Peninsula maps to the `BALKAN PEN.` / `Balkans` feature (`WIKIDATAID: Q23
 The Browse terrain viewer uses GMT's pixel-registered 10 arc-minute SRTM15+ v2.7 relief grid (Tozer et al., 2019, https://doi.org/10.1029/2019EA000658). Download earth_relief_10m_p.grd from https://oceania.generic-mapping-tools.org/server/earth/earth_relief/ and run `gdal_translate -unscale -ot Int16 -of ENVI earth_relief_10m_p.grd relief.bin` on a little-endian host, then `gzip -nc relief.bin > public/data/relief.i16.gz`. The asset stores metres in north-to-south rows. Heights are exaggerated in the viewer to show regional relief.
 
 English capital names, hints, notes and flag similarity notes, plus unmodified flag images, come from [Ultimate Geography](https://github.com/anki-geo/ultimate-geography/tree/46ce8fe14ec84eb39763310179f25d6ff9ca4c73). The existing East Timor card maps to the upstream Timor-Leste record. Per-image source and license details are in public/flags/sources.csv and public/flags/LICENSE.md.
+
+US state cards and the permanent state boundary layer come from the same Natural Earth administrative polygons. Shared edges are drawn once across the atlas. The pack covers all 50 states.
 
 City packs use Natural Earth's public-domain 1:10m populated places (the same revision as the atlas). Each country offers up to ten distinct city names ranked by the source's population estimate. The ranking selects study examples and is not a current census.
 

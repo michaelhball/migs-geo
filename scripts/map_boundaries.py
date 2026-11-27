@@ -2,11 +2,11 @@ from collections import defaultdict
 from itertools import groupby
 
 
-def boundaries(features, simplify):
+def boundaries(features, simplify, country_key="ADM0_A3"):
     """Classify shared edges before neighboring polygons are simplified independently."""
     countries = defaultdict(list)
     for index, feature in enumerate(features):
-        countries[feature["properties"]["ADM0_A3"]].append(index)
+        countries[feature["properties"][country_key]].append(index)
     groups = []
     for members in countries.values():
         if len(members) == 1:

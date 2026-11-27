@@ -159,6 +159,29 @@ deck.append({
 })
 base={'type':'FeatureCollection','features':[{'type':'Feature','properties':{'name':props(f).get('name_long') or props(f).get('name')},'geometry':compact(f['geometry'])} for f in land]}
 base['boundaries'] = boundaries(land, simplify)
+us_units = [f for f in read('us-states') if props(f)['adm0_a3'] == 'USA']
+# Use only shared interior edges. The atlas already draws coasts and national borders.
+us_group, = boundaries(us_units, lambda line: line, country_key='adm0_a3')
+base['usStateBorders'] = us_group['inner']
+states = []
+for f in us_units:
+    p = props(f)
+    if p['type_en'] != 'State':
+        continue
+    code, name = p['postal'], p['name_en']
+    place_id = name.lower() if code in ('AK', 'HI') else 'us-state-' + code.lower()
+    # Round identically to the border layer, preserving shared river bends.
+    state_geometry = {'type':'MultiPolygon', 'coordinates':[
+        [[[round(x,5), round(y,5)] for x,y in ring] for ring in polygon]
+        for polygon in polygons(f)
+    ]}
+    states.append({'id':place_id, 'name':name, 'kind':'usState', 'region':'North America',
+        'countryCode':'US', 'aliases':[], 'tags':[], 'info':'', 'source':'Natural Earth 1:10m',
+        'geometry':state_geometry, 'center':[p['longitude'],p['latitude']], 'approximate':False, 'small':False})
+if len(states) != 50 or len({s['id'] for s in states}) != 50 or not base['usStateBorders']:
+    raise ValueError('Expected all 50 US states and their shared boundaries')
+(ROOT/'server/us-states.json').write_text(json.dumps(sorted(states,key=lambda s:s['name']),separators=(',',':')))
+
 # Keep studied shorelines visible at every scale, at their actual map size.
 lake_bands = {}
 for lake in lakes:

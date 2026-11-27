@@ -28,3 +28,21 @@ test("the base lake layer includes the complete study shorelines at world zoom",
     for (const polygon of place.geometry.coordinates) assert.ok(rings.has(JSON.stringify(polygon)), id);
   }
 });
+
+test("the atlas shows interior US borders along the state card polygons", async () => {
+  const {default: states} = await import("../server/us-states.json", {with:{type:"json"}});
+  const vertices = new Set(world.usStateBorders.flat().map(p => p.join(",")));
+  assert.equal(states.length, 50);
+  for (const state of states.filter(p => !["alaska","hawaii"].includes(p.id))) {
+    assert.ok(state.geometry.coordinates.some(poly => poly[0].some(p => vertices.has(p.join(",")))), state.name);
+  }
+  const edgeKey = (a,b) => [a.join(","),b.join(",")].sort().join("/");
+  const edges = new Set();
+  for (const line of world.usStateBorders) {
+    for (let i = 1; i < line.length; i++) {
+      const key = edgeKey(line[i-1], line[i]);
+      assert.ok(!edges.has(key), "draw each shared edge once");
+      edges.add(key);
+    }
+  }
+});
