@@ -34,7 +34,7 @@ async function api(route: string, method = "GET", data?: any) {
 const reviewShuffle = crypto.randomUUID();
 const modeNames: Record<string,string> = {
   locate: "Place → map", identify: "Map → place", capital: "Place → capital",
-  term:"Definition → word", define:"Word → definition",
+  population:"City → population", term:"Definition → word", define:"Word → definition",
   fromCapital: "Capital → place", flag: "Place → flag", fromFlag: "Flag → place",
 };
 const mapModes = ["locate", "identify"];
@@ -43,6 +43,7 @@ const vocabularyModes = ["term", "define"];
 const studyDecks = [
   { id: "flags", name: "Flags", modes: ["flag", "fromFlag"] },
   { id: "capitals", name: "Capitals", modes: ["capital", "fromCapital"] },
+  { id: "populations", name: "City populations", modes: ["population"] },
   { id: "vocabulary", name: "Geography vocabulary", modes: vocabularyModes },
 ];
 const kindNames: any = {
@@ -117,7 +118,7 @@ function App() {
     ]);
     setStats(s);
     setSettings(c);
-    setPlaces(p.filter((place:any) => place.kind !== "vocabulary"));
+    setPlaces(p.filter((place:any) => !["vocabulary","population"].includes(place.kind)));
     setCards(k);
   }
   async function run(fn: () => Promise<void>) {
@@ -333,7 +334,10 @@ function App() {
   const activeSubject = studyDecks.find(deck => deck.id === settings?.activeDeck);
   const vocabularyDeck = activeSubject?.id === "vocabulary";
   const activeCardCount = cards.filter(c => (activeSubject?.modes ?? mapModes).includes(c.mode)).length;
-  const placeCardCount = cards.filter(c => !vocabularyModes.includes(c.mode)).length;
+  const placeCardCount = cards.filter(c => c.mode !== "population" && !vocabularyModes.includes(c.mode)).length;
+  const populationQuestion = question?.card?.mode === "population";
+  const answerLabel = populationQuestion ? "Population" : question?.card?.mode === "term" ? "Word"
+    : question?.card?.mode === "capital" ? "Capital" : "Place name";
   const totalDue = stats
     ? stats.counts.new + stats.counts.review + stats.counts.learning
     : 0;
@@ -450,9 +454,15 @@ function App() {
               ) : null}
               <div className="study-layout">
                 {vocabularyDeck && !question?.card ? <div className="fact-display"><a href="/vocabulary.html">Geography vocabulary list</a></div>
-                : question?.card && !["locate","identify"].includes(question.card.mode) ? (
+                : activeSubject?.id === "populations" && !question?.card ? (
+                  <div className="fact-display"><strong>City populations</strong></div>
+                ) : question?.card && !["locate","identify"].includes(question.card.mode) ? (
                   <div className="fact-display">
-                    {question.card.mode === "term" ? <p className="word-prompt">{question.card.definition}</p>
+                    {populationQuestion ? <>
+                      <strong>{question.card.name}</strong>
+                      <span>{question.card.country}</span>
+                      <small>{question.card.area} · {question.card.year}</small>
+                    </> : question.card.mode === "term" ? <p className="word-prompt">{question.card.definition}</p>
                     : question.card.mode === "define" ? <strong>{question.card.name}</strong>
                     : question.card.mode === "flag" && !result ? <div className="flag-choices">
                       {question.card.choices.map((choice:any, index:number) => <button key={choice.id}
@@ -562,13 +572,14 @@ function App() {
                       <div className="panel-content">
                         <div className="card-meta">
                           <span>{states[question.card.state]}</span>
-                          <span>{question.card.kind === "vocabulary" ? "Vocabulary" : (kindNames[question.card.kind] || "City")}</span>
+                          <span>{populationQuestion ? "City population" : question.card.kind === "vocabulary" ? "Vocabulary" : (kindNames[question.card.kind] || "City")}</span>
                         </div>
                         {!result ? (
                           <>
                             <h2>
                               {question.card.mode === "locate"
                                 ? `Find ${question.card.name}`
+                                : populationQuestion ? "About how many people lived here?"
                                 : question.card.mode === "term" ? "What is the word?"
                                 : question.card.mode === "define" ? "Which definition fits?"
                                 : question.card.mode === "fromFlag" ? "Which place uses this flag?"
@@ -583,6 +594,7 @@ function App() {
                             {!vocabularyModes.includes(question.card.mode) && <p>
                               {question.card.mode === "locate"
                                 ? question.card.trace ? "Click successive points along the river, then check your trace." : "Click the map to select your answer. Drag to move and scroll to zoom."
+                                : populationQuestion ? "An estimate within 25% counts. You can enter 250k or 1.5 million."
                                 : question.card.mode === "flag" ? "Select a flag, then check your answer." : "Type the name, then check your answer."}
                             </p>}
                             {question.card.mode === "define" && <div className="definition-options">
@@ -599,13 +611,13 @@ function App() {
                                 }}
                               >
                                 <label className="sr-only" htmlFor="answer">
-                                  {question.card.mode === "term" ? "Word" : question.card.mode === "capital" ? "Capital" : "Place name"}
+                                  {answerLabel}
                                 </label>
                                 <input
                                   id="answer"
                                   autoFocus
                                   autoComplete="off"
-                                  placeholder={question.card.mode === "term" ? "Word" : question.card.mode === "capital" ? "Capital" : "Place name"}
+                                  placeholder={answerLabel}
                                   value={text}
                                   onChange={(e) => setText(e.target.value)}
                                 />
@@ -673,12 +685,20 @@ function App() {
                                       : "Check your answer"}
                               </span>
                             </div>
-                            <h2>{question.card.mode === "capital" ? result.facts.capital : result.place.name}</h2>
+                            <h2>{populationQuestion ? `About ${result.population.label} people` : question.card.mode === "capital" ? result.facts.capital : result.place.name}</h2>
                             {result.facts && <p>{question.card.mode.toLowerCase().includes("flag") ? result.facts.flag_similarity : result.facts.capital_info}</p>}
                             {!["locate","flag"].includes(question.card.mode) && result.correct === false && !result.revealed ? (
                               <p>Your answer was <strong>{text.trim()}</strong>.</p>
                             ) : (
                               <p>{result.message}</p>
+                            )}
+                            {result.population && (
+                              <div className="place-info">
+                                <p>{result.population.cue}</p>
+                                <a href={result.population.source} target="_blank" rel="noreferrer">
+                                  {result.population.year} population source
+                                </a>
+                              </div>
                             )}
                             {result.place.info && (
                               <p className="place-info">
@@ -953,14 +973,20 @@ function App() {
                     </div>
                   ) : (
                     <>
-                      <Atlas
+                      {selected?.kind === "population" ? (
+                        <div className="fact-display">
+                          <strong>{selected.population.people.toLocaleString("en")}</strong>
+                          <span>{selected.population.area} · {selected.population.year}</span>
+                          <a href={selected.source} target="_blank" rel="noreferrer">Population source</a>
+                        </div>
+                      ) : <Atlas
                         geometry={selected?.geometry}
                         center={selected?.center}
                         name={selected?.name}
                         kind={selected?.kind}
                         explore
                         resetKey={selected?.id}
-                      />
+                      />}
                       <div className="place-details">
                         {selected ? (
                           <>
@@ -971,9 +997,9 @@ function App() {
                                 </span>
                                 <h2>{selected.name}</h2>
                               </div>
-                              <button className="secondary" onClick={editPlace}>
+                              {selected.center && <button className="secondary" onClick={editPlace}>
                                 Edit
-                              </button>
+                              </button>}
                             </div>
                             <details key={selected.id}><summary>Details and cards</summary>
                             {selected.info && <p>{plain(selected.info)}</p>}

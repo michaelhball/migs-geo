@@ -45,7 +45,7 @@ type Report = {
   confusions: { cardId: string; name: string; answer: string; count: number }[];
 };
 const names: Record<string, string> = {
-  locate: "Place → map",
+  population: "City population", locate: "Place → map",
   identify: "Map → place",
   capital: "Place → capital", fromCapital: "Capital → place",
   flag: "Place → flag", fromFlag: "Flag → place", term:"Definition → word", define:"Word → definition",

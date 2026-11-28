@@ -103,3 +103,5 @@ Zoom in one step from the world view to see internal borders in the US, Canada, 
 Browse → Terrain shows offline hillshade on the atlas as you pan and zoom. New Zealand’s main islands include an additional regional detail level. In Settings → Place types, “Cities by country” adds up to ten city locations per selected country to Geography. Add countries individually or uncheck a country to pause its cities. Question directions shows the two map prompts and the directions for each enabled study deck. Enable Flags, Capitals, or Geography vocabulary under Other study decks, choose one or both directions, then select the deck on Study.
 
 For local development, use the LTS release in `.nvmrc`. On macOS and Linux, `npm start` and `npm run dev` also recognize a Node distribution installed in `.runtime/` at the project root.
+
+**City populations** is an optional deck under Settings → Other study decks. Estimate how many people live in a city using the year and boundary on the card. Answers within 25% count. After answering, you see a rounded population, a comparison to help remember it, and the source.
