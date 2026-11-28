@@ -173,3 +173,23 @@ test("adopting an existing on-disk database keeps a pre-migration snapshot", () 
     rmSync(dir, { recursive: true, force: true });
   }
 });
+
+test("the population-mode migration preserves rated and open attempts with their checks", () => {
+  const original = createStore(":memory:", [{id:"sample",name:"Sample",geometry:{type:"Point",coordinates:[1,2]}}]);
+  try {
+    const q = original.question();
+    original.check(q.token, {reveal:true});
+    original.review(q.token, 3);
+    const open = original.question({practice:true,placeId:"sample"});
+    original.check(open.token,{reveal:true});
+    const before = original.exportData();
+    // Rebuild the log under the actual previous mode constraint, retaining its rows.
+    original.db.exec(migrations[6]);
+    original.db.exec("PRAGMA user_version=7");
+    migrate(original.db);
+    const after = original.exportData();
+    for (const field of ["studyLog","reviews","cards","settings"])
+      assert.deepEqual(after[field], before[field]);
+    assert.deepEqual(original.db.prepare("PRAGMA foreign_key_check").all(),[]);
+  } finally { original.db.close(); }
+});

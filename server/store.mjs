@@ -21,6 +21,7 @@ import australiaStates from "./australia-states.json" with {type:"json"};
 import usStates from "./us-states.json" with {type:"json"};
 import physicalPlaces from "./physical-places.json" with {type:"json"};
 import facts from "./geography-facts.json" with { type: "json" };
+import {populationPlaces, populationFeedback, checkPopulation, validatePopulation} from "./population.mjs";
 import vocabulary from "../data/vocabulary.json" with {type:"json"};
 
 const subdivisionPacks = {usState:usStates, canadaProvince:canadaProvinces, australiaState:australiaStates};
@@ -35,7 +36,7 @@ const vocabularyPlaces = vocabulary.map(({term, definition, group, aliases = []}
   approximate: false, small: false, archived: false,
 }));
 const optionalModes = { capital: "capital", fromCapital: "capital", flag: "flag", fromFlag: "flag" };
-const modes = ["locate", "identify", ...Object.keys(optionalModes), ...vocabularyModes];
+const modes = ["locate", "identify", ...Object.keys(optionalModes), ...vocabularyModes, "population"];
 export const defaults = {
   lakeCutoffKm2: 0,
   lakeMinimumKm2: 0,
@@ -112,7 +113,7 @@ export function validateSettings(s) {
   s = { lakeMinimumKm2:0, lakeCutoffKm2:0, cityCountry:"", cityCountries:[], activeDeck: "geography", reviewsPerDay: defaults.reviewsPerDay, ...withCitySelection(s) };
   if (!Number.isFinite(s.lakeCutoffKm2) || s.lakeCutoffKm2 < 0) throw Error("Lake cutoff must be a nonnegative area in km².");
   if (!Number.isFinite(s.lakeMinimumKm2) || s.lakeMinimumKm2 < 0 || s.lakeMinimumKm2 > s.lakeCutoffKm2) throw Error("Small lake minimum must be between zero and the inland lake cutoff.");
-  if (!["geography","flags","capitals","vocabulary"].includes(s.activeDeck)) throw Error("Invalid deck.");
+  if (!["geography","flags","capitals","vocabulary","populations"].includes(s.activeDeck)) throw Error("Invalid deck.");
   if (!Number.isInteger(s.newPerDay) || s.newPerDay < 0 || s.newPerDay > 500)
     throw Error("New cards per day must be 0–500.");
   if (!Number.isInteger(s.reviewsPerDay) || s.reviewsPerDay < 0 || s.reviewsPerDay > 5000)
@@ -168,7 +169,13 @@ function subdivisionKind(p) {
   if (p.kind === "territory" && (p.id === "alaska" || p.id === "hawaii")) return "usState";
   return Object.hasOwn(subdivisionPacks, p.kind) ? p.kind : null;
 }
+function defaultCardModes(kind) {
+  if (kind === "population") return ["population"];
+  return kind === "vocabulary" ? vocabularyModes : ["locate", "identify"];
+}
+const textOnly = kind => kind === "vocabulary" || kind === "population";
 function cardDeck(mode) {
+  if (mode === "population") return "populations";
   if (vocabularyModes.includes(mode)) return "vocabulary";
   if (mode === "capital" || mode === "fromCapital") return "capitals";
   return isFlag(mode) ? "flags" : "geography";
@@ -192,6 +199,7 @@ export function checkAnswer(p, mode, answer) {
       revealed: true,
       message: "Answer revealed. Use Again if you did not recall it.",
     };
+  if (mode === "population") return checkPopulation(p, answer);
   if (mode !== "locate") {
     if (typeof answer?.text !== "string" || !answer.text.trim())
       throw Error("Enter a name, or reveal the answer.");
@@ -329,6 +337,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       .all()
       .map((p) => ({ ...parse(p.data), archived: !!p.archived })));
   function enabledPlace(p, s) {
+    if (p.kind === "population") return !p.archived && s.activeDeck === "populations";
     if (p.kind === "vocabulary") return !p.archived && s.activeDeck === "vocabulary";
     if (p.archived || (s.regions.length && !s.regions.includes(p.region))) return false;
     if (s.activeDeck === "flags" || s.activeDeck === "capitals") return true;
@@ -346,7 +355,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     const s = settings();
     const eligible = new Set(cards().filter(c => !c.suspended && s.modes.includes(c.mode) &&
       cardDeck(c.mode) === s.activeDeck).map(c => c.place_id));
-    return places().filter(p => !p.archived && p.kind !== "vocabulary").map(p => ({
+    return places().filter(p => !p.archived && !textOnly(p.kind)).map(p => ({
       id:p.id, name:p.name, studying:enabledPlace(p,s) && eligible.has(p.id),
     }));
   });
@@ -388,7 +397,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     )
       throw Error("A valid ID and name (1–160 characters) are required.");
     if (
-      !["country", "territory", "water", "region","river","range","desert","lake","city",...Object.keys(subdivisionPacks),"vocabulary"].includes(p.kind) ||
+      !["country", "territory", "water", "region","river","range","desert","lake","city",...Object.keys(subdivisionPacks),"vocabulary","population"].includes(p.kind) ||
       !Array.isArray(p.aliases) ||
       p.aliases.some((a) => typeof a !== "string") ||
       !Array.isArray(p.tags) ||
@@ -398,9 +407,10 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       typeof p.source !== "string"
     )
       throw Error("Invalid place fields.");
-    if (existing && (existing.kind === "vocabulary") !== (p.kind === "vocabulary")) throw Error("Cannot convert a place to or from a vocabulary entry.");
-    if (p.kind === "vocabulary") {
-      if (!p.info.trim()) throw Error("A vocabulary definition is required.");
+    if (existing && existing.kind !== p.kind && (textOnly(existing.kind) || textOnly(p.kind))) throw Error("Cannot change the type of a text-only entry.");
+    if (textOnly(p.kind)) {
+      if (p.kind === "population") validatePopulation(p);
+      if (p.kind === "vocabulary" && !p.info.trim()) throw Error("A vocabulary definition is required.");
       p.geometry = p.center = null;
       p.approximate = false;
     } else {
@@ -420,7 +430,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       db.prepare(
         "INSERT INTO places VALUES(?,?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data,archived=excluded.archived",
       ).run(p.id, encode(p), p.archived ? 1 : 0);
-      for (const mode of p.kind === "vocabulary" ? vocabularyModes : ["locate", "identify"]) {
+      for (const mode of defaultCardModes(p.kind)) {
         const memory = createEmptyCard(clock());
         db.prepare(
           "INSERT OR IGNORE INTO cards(id,place_id,mode,memory,due,state) VALUES(?,?,?,?,?,0)",
@@ -636,7 +646,8 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         version: card.version,
         kind: studyPlace.kind,
         ...(studyPlace.kind === pack && {mapBounds:(p.id === "alaska" || p.id === "hawaii") ? subdivisionBounds[p.id] : subdivisionBounds[pack]}),
-        name: ["locate", "capital", "flag", "define"].includes(card.mode) ? p.name : null,
+        name: ["locate", "capital", "flag", "define", "population"].includes(card.mode) ? p.name : null,
+        ...(card.mode === "population" && {country:p.region, year:p.population.year, area:p.population.area}),
         ...(card.mode === "term" && {definition:p.info}),
         ...(card.mode === "define" && {definitions:definitionChoices(p)}),
         ...(card.mode === "fromCapital" && { capital: facts[p.id].capital, hint: facts[p.id].capital_hint }),
@@ -682,10 +693,11 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     if (a.saved) throw Error("This question has already been rated.");
     const p = place(a.card.place_id);
     a.result = checkAnswer(p, a.card.mode, answer);
+    if (a.card.mode === "population") a.result.population = populationFeedback(p, places());
     if (a.card.mode === "locate" && a.result.correct === false && !answer.reveal) {
       const pack = subdivisionKind(p);
       const matches = places().filter(candidate =>
-        !candidate.archived && candidate.kind !== "vocabulary" && !candidate.approximate && candidate.geometry.type !== "Point" &&
+        !candidate.archived && !textOnly(candidate.kind) && !candidate.approximate && candidate.geometry.type !== "Point" &&
         (["country","territory","water"].includes(candidate.kind) || (pack && subdivisionKind(candidate) === pack) || (p.kind === "lake" && candidate.kind === "lake")) && ["Polygon","MultiPolygon"].includes(candidate.geometry.type) && booleanPointInPolygon(answer.point, candidate.geometry)
       );
       const lakes = matches.filter(candidate => candidate.kind === "lake");
@@ -843,9 +855,13 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
     const restoredSettings = validateSettings(data.settings);
     const ids = new Set(data.places.map((p) => p.id));
     if (ids.size !== data.places.length) throw Error("Duplicate place IDs.");
+    const populationIds = new Set(data.places.filter(p => p.kind === "population").map(p => p.id));
     const vocabIds = new Set(data.places.filter(p => p.kind === "vocabulary").map(p => p.id));
     for (const p of data.places) {
-      if (p.kind === "vocabulary") {
+      if (p.kind === "population") {
+        validatePopulation(p);
+        if (p.geometry !== null || p.center !== null) throw Error("Invalid population entry.");
+      } else if (p.kind === "vocabulary") {
         if (p.geometry !== null || p.center !== null || typeof p.info !== "string" || !p.info.trim()) throw Error("Invalid vocabulary entry.");
       } else {
         validateGeometry(p.geometry);
@@ -863,7 +879,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         p.tags.some((t) => typeof t !== "string") ||
         !Array.isArray(p.aliases) ||
         p.aliases.some((a) => typeof a !== "string") ||
-        !["country", "territory", "water", "region","river","range","desert","lake","city",...Object.keys(subdivisionPacks),"vocabulary"].includes(p.kind)
+        !["country", "territory", "water", "region","river","range","desert","lake","city",...Object.keys(subdivisionPacks),"vocabulary","population"].includes(p.kind)
       )
         throw Error("Invalid place in backup.");
     }
@@ -872,6 +888,7 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
         !c ||
         !ids.has(c.place_id) ||
         !modes.includes(c.mode) ||
+        (c.mode === "population") !== populationIds.has(c.place_id) ||
         vocabularyModes.includes(c.mode) !== vocabIds.has(c.place_id) ||
         (Object.hasOwn(optionalModes,c.mode) && !facts[c.place_id]?.[optionalModes[c.mode]]) ||
         c.id !== `${c.place_id}:${c.mode}` ||
@@ -1004,11 +1021,12 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
       geometry:{type:"Point",coordinates:[lon,lat]}, center:[lon,lat],
     })));
     const words = s.modes.some(mode => vocabularyModes.includes(mode)) ? vocabularyPlaces : [];
+    const populations = s.modes.includes("population") ? populationPlaces : [];
     const states = s.kinds.flatMap(kind => subdivisionPacks[kind] ?? []);
-    for (const p of [...states, ...words, ...physicalPlaces.filter(p=>s.kinds.includes(p.kind)), ...(s.kinds.some(k => k === "lake" || k === "smallLake") ? lakePlaces : []), ...cityPlaces]) {
+    for (const p of [...states, ...words, ...populations, ...physicalPlaces.filter(p=>s.kinds.includes(p.kind)), ...(s.kinds.some(k => k === "lake" || k === "smallLake") ? lakePlaces : []), ...cityPlaces]) {
       if ( db.prepare("SELECT id FROM places WHERE id=?").get(p.id)) continue;
       db.prepare("INSERT INTO places VALUES(?,?,0)").run(p.id, encode(p));
-      for (const mode of p.kind === "vocabulary" ? vocabularyModes : ["locate","identify"]) {
+      for (const mode of defaultCardModes(p.kind)) {
         const memory = createEmptyCard(clock());
         db.prepare("INSERT INTO cards(id,place_id,mode,memory,due,state) VALUES(?,?,?,?,?,0)")
           .run(p.id+":"+mode,p.id,mode,encode(memory),+memory.due);
@@ -1019,6 +1037,14 @@ export function createStore(filename, seed = [], clock = () => new Date()) {
   tx(() => installMapPacks(settings()));
   return {
     editorial,
+    populations: () => {
+      const entries = new Map(populationPlaces.map(p => [p.id, p]));
+      for (const p of places()) {
+        if (p.kind === "population" && !p.archived) entries.set(p.id, p);
+        else entries.delete(p.id);
+      }
+      return [...entries.values()].map(p => ({id:p.id, name:p.name, country:p.region, ...p.population, source:p.source}));
+    },
     vocabulary: () => {
       const terms = new Map(vocabularyPlaces.map(p => [p.id,p]));
       for (const p of places()) {

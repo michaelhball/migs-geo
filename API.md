@@ -138,3 +138,9 @@ Run `node scripts/collect-fact-review.mjs` for a single editorial collection pas
 `GET /api/vocabulary` lists the words, definitions, groups and accepted aliases before the pack is installed. The searchable list is at `/vocabulary.html`. Add `term` (type the word for a definition) and/or `define` (select a definition for a word) to the existing settings modes to enable the optional pack. Then set `activeDeck` to `vocabulary` to study it. Disabling both directions returns the active deck to geography. The daily limits are counted per deck. Word cards use the same check, rate, logging, backup and restore endpoints as geography cards.
 
 Vocabulary entries use `kind: "vocabulary"`, a word in `name`, its definition in `info`, a topic group in `region`, and null geometry and center. Installed entries and custom words can be managed through the places and cards API.
+
+## City populations
+
+`GET /api/populations` lists the city, country, number of people, reference year, boundary, and source without installing any cards. The deck starts disabled. Add `population` to `settings.modes` and select `settings.activeDeck = "populations"` to study it separately. Removing the mode retains all schedules. A population question gives the city, country, year and boundary. Submit `answer.text` in people (e.g. `420,000`, `420k` or `0.42 million`). The inclusive tolerance is ±25% of the reference. Checks and reveals return `population` with the rounded label, source and memory cue. The study log keeps the original answer and the reference used to assess it.
+
+Installed records use `kind: "population"`, country in `region`, an HTTPS `source`, null geometry and center, and `population: {people, year, area}`. Use the regular places API to add a city or revise a reference.

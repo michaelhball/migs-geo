@@ -1101,3 +1101,44 @@ test("Canadian and Australian subdivision packs are independent and preserve rev
     assert.equal(s.cards().length,142);
   } finally {s.db.close();}
 });
+
+test("city population estimates are opt-in, approximate and isolated from map schedules", () => {
+  const {store} = setup();
+  const copy = createStore(":memory:");
+  try {
+    const city = store.populations().find(p => p.name === "Christchurch");
+    const id = city.id + ":population";
+    assert.equal(city.people, 419200);
+    assert.equal(store.populations().length, 245);
+    assert.ok(!store.cards().some(c => c.mode === "population"));
+    store.setSettings({modes:["identify","population"]});
+    assert.equal(store.question().card.mode,"identify");
+    store.setSettings({activeDeck:"populations", regions:["elsewhere"]});
+    const q = store.question();
+    assert.equal(q.card.mode,"population");
+    assert.ok(q.card.country && q.card.area && q.card.year);
+    assert.ok(!("people" in q.card || "population" in q.card));
+    const pick = store.question({practice:true,placeId:city.id});
+    for (const text of ["420,000", "420k", "0.42 million", "314400", "524000"])
+      assert.equal(store.check(pick.token,{text}).correct,true);
+    for (const text of ["314399","524001","4.2M"])
+      assert.equal(store.check(pick.token,{text}).correct,false);
+    for (const text of ["4,2k","4e5","", "-420","12m people??"])
+      assert.throws(()=>store.check(pick.token,{text}),/population/);
+    const shown = store.check(pick.token,{reveal:true}).population;
+    assert.match(shown.cue,/twice the population of Wellington/);
+    assert.equal(shown.source,city.source);
+    assert.equal(shown.label,"420,000");
+    store.check(q.token,{reveal:true});
+    const saved = store.review(q.token,3).card;
+    store.setSettings({modes:["identify"]});
+    assert.equal(store.settings().activeDeck,"geography");
+    store.setSettings({modes:["identify","population"],activeDeck:"populations"});
+    copy.restore(store.exportData());
+    assert.deepEqual(copy.getCard(saved.id).memory,saved.memory);
+    assert.equal(copy.populations().length,245);
+    assert.throws(()=>copy.updatePlace(city.id,{population:{people:-4}}),/population/);
+    assert.equal(copy.cards().filter(c=>c.place_id===city.id).length,1);
+    assert.equal(copy.getCard(id).mode,"population");
+  } finally {store.db.close();copy.db.close();}
+});
